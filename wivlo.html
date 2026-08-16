@@ -3,60 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wivlo | Yohan Portfolio</title>
-    <meta
-      name="description"
-      content="Wivlo product case focused on editor-first writing, references, AI actions, projects, and Wivlo AI."
-    />
+    <title>Wivlo | Product Design Case Study</title>
+    <meta name="description" content="Wivloを問題定義、Editor-first UX、AI context design、Web・iOS実装まで設計したProduct Design Case Study。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/wivlo/wivlo-icon.png" />
     <link rel="stylesheet" href="wivlo.css" />
     <link rel="stylesheet" href="wivlo-responsive.css" />
     <link rel="stylesheet" href="wivlo-tune.css" />
     <link rel="stylesheet" href="site-header.css" />
   </head>
-  <body class="wivlo-product-page">
+  <body class="wivlo-product-page wivlo-case-study-page">
     <header class="case-header product-header project-page-header">
       <a class="back-link" href="index.html#projects">← Portfolio</a>
-      <nav class="case-nav" aria-label="Wivlo sections">
-        <a href="#product">Product</a><a href="#reference">Reference</a><a href="#mobile">Mobile</a><a href="#outcome">Outcome</a>
+      <nav class="case-nav" aria-label="Wivlo case study sections">
+        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#decision">Decision</a><a href="#ai-logic">AI Logic</a><a href="#shipped">Shipped</a>
       </nav>
     </header>
 
     <main>
-      <section class="wivlo-hero" id="product">
+      <section class="wivlo-hero" id="overview">
         <div class="wivlo-hero-copy">
-          <div class="wivlo-brand-lockup">
-            <img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" />
-            <span>Wivlo</span>
-          </div>
-          <p class="product-kicker">AI-native writing workspace</p>
-          <h1>書いた記録を、<wbr>次の作業へ戻す。</h1>
-          <p class="wivlo-hero-lead">
-            Wivloは、散らばったノートや資料をReferenceとして呼び出し、
-            AI Actionで新しい文書へつなげるwriting workspaceです。
-          </p>
-          <div class="product-pills" aria-label="Wivlo product roles">
-            <span>2026.04 - Present</span>
-            <span>Founder / Product Designer / Developer</span>
-            <span>Web / iOS / Desktop</span>
-            <span>Editor-first AI UX</span>
-          </div>
+          <div class="wivlo-brand-lockup"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><span>Wivlo</span></div>
+          <p class="product-kicker">AI-native knowledge workspace</p>
+          <h1>書いた記録を、<wbr>次の仕事へ戻す。</h1>
+          <p class="wivlo-hero-lead">一度作った記録を、次の仕事のcontextとして育て続ける。人が書き手であり続けるためのAI UXを、Web・iOSの実装と運用まで一人でつないだプロダクトです。</p>
           <div class="product-links" aria-label="Wivlo product links">
-            <a href="https://wivlo.io" target="_blank" rel="noreferrer">wivlo.io ↗</a>
+            <a href="https://wivlo.io" target="_blank" rel="noreferrer">Live product ↗</a>
             <a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a>
           </div>
         </div>
-
         <div class="wivlo-stage" aria-label="Wivlo desktop product preview">
           <figure class="browser-frame">
             <div class="browser-dots"><span></span><span></span><span></span></div>
-            <img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="Wivlo desktop editor product screen" />
+            <img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="WivloのデスクトップEditor画面" />
           </figure>
           <div class="floating-chip chip-reference">@ Reference</div>
           <div class="floating-chip chip-action">/ AI Action</div>
@@ -64,133 +45,136 @@
         </div>
       </section>
 
-      <section class="product-flow-band">
-        <p>Capture</p>
-        <span></span>
-        <p>Connect</p>
-        <span></span>
-        <p>Retrieve</p>
-        <span></span>
-        <p>Reuse</p>
+      <section class="case-facts" aria-label="Project overview">
+        <article><span>Role</span><b>Founder / Product Designer / Developer</b></article>
+        <article><span>Period</span><b>2026.04 — Present</b></article>
+        <article><span>Scope</span><b>Strategy / UX / UI / AI Logic / Build</b></article>
+        <article><span>Status</span><b>Web live / iOS launched</b></article>
       </section>
 
-      <section class="product-problem-section">
+      <section class="problem-story" id="problem">
         <div class="product-section-copy">
-          <p class="product-kicker">Pain Point</p>
-          <h2>メモのボトルネックは、<wbr>保存ではなく<wbr>思い出して再利用すること。</h2>
-          <p>
-            Notion、Obsidian、Apple Notes、ChatGPTなどを比較しながら、
-            既存ツールはCapture、Organize、Searchまでは強い一方で、
-            書く瞬間に過去の文脈を戻す体験が弱いと整理しました。
-          </p>
+          <p class="product-kicker">Problem framing</p>
+          <h2>記録は増えるのに、<wbr>知識は仕事へ戻ってこない。</h2>
+          <p>企画はNotion、調査はChatGPT、思いつきはApple Notes、資料はDriveに残る。問題は情報の分散だけではなく、captureした記録と次のcreationの間で文脈が失われることでした。</p>
         </div>
-        <div class="problem-metrics">
-          <article>
-            <b class="pain-brand"><img class="pain-logo pain-logo-notion" src="assets/wivlo/notion.png" alt="Notion logo" />Notion</b>
-            <span>保存と整理は強いが、ページが増えるほど再利用が重くなる。</span>
-          </article>
-          <article>
-            <b class="pain-brand"><img class="pain-logo pain-logo-obsidian" src="assets/wivlo/obsidian.png" alt="Obsidian logo" />Obsidian</b>
-            <span>接続は強いが、リンクや構造をユーザーが管理し続ける必要がある。</span>
-          </article>
-          <article>
-            <b class="pain-brand"><img class="pain-logo pain-logo-notes" src="assets/wivlo/apple-notes.webp" alt="Apple Notes logo" />Apple Notes</b>
-            <span>素早く書けるが、後から分類、検索、再利用する力が弱い。</span>
-          </article>
-          <article>
-            <b class="pain-brand"><img class="pain-logo pain-logo-chatgpt" src="assets/wivlo/chatgpt.webp" alt="ChatGPT logo" />ChatGPT</b>
-            <span>良い回答が会話の中に埋もれ、また別の保存先に移す必要がある。</span>
-          </article>
+        <div class="fragmented-flow" aria-label="Fragmented knowledge workflow">
+          <span>Idea</span><i>→</i><span>Chat / Web</span><i>→</i><span>Notes / Notion</span><i>→</i><span>Forgotten</span><i>→</i><span>Search again</span>
+        </div>
+        <div class="friction-grid">
+          <article><span>01 / Recall</span><h3>場所ではなく、断片だけを覚えている。</h3><p>正確なタイトルや保存先を思い出せず、検索の入口に立てません。</p></article>
+          <article><span>02 / Fragmentation</span><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
+          <article><span>03 / Context loss</span><h3>見つけても、次の作業へつながらない。</h3><p>検索、コピー、前提説明を繰り返すたび、記録は未来の入力になれません。</p></article>
         </div>
       </section>
 
-      <section class="product-feature feature-reference" id="reference">
+      <section class="strategy-section">
+        <div class="hmw-card">
+          <p class="product-kicker">Product thesis</p>
+          <blockquote>すべてのアウトプットを、確認でき、編集でき、次の仕事で再利用できるcontextにする。</blockquote>
+        </div>
+        <div class="principle-strip case-principles">
+          <div><span>01</span><b>Capture before structure</b><p>整理を要求せず、思考を先に残せる。</p></div>
+          <div><span>02</span><b>Context at the point of work</b><p>検索画面ではなく、書く瞬間へ文脈を戻す。</p></div>
+          <div><span>03</span><b>Inspectable AI</b><p>AIが何を知っているかをユーザーが確認できる。</p></div>
+          <div><span>04</span><b>Artifacts, not answers</b><p>結果を会話に閉じず、次も使える文書にする。</p></div>
+        </div>
+        <div class="core-flow" aria-label="Wivlo core user flow">
+          <article><span>01</span><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
+          <article><span>02</span><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
+          <article><span>03</span><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
+          <article><span>04</span><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
+          <article><span>05</span><b>Create</b><p>Editable note</p></article>
+        </div>
+      </section>
+
+      <section class="product-evolution decision-section" id="decision">
+        <div class="product-section-copy">
+          <p class="product-kicker">Key UX decision</p>
+          <h2>Prompt boxではなく、<wbr>二つの操作でAIとの契約を作る。</h2>
+          <p><strong>@ は「AIが何を知るか」</strong>、<strong>/ は「AIが何をするか」</strong>を決めます。context selectionとtransformationを分けることで、Editorの主導権をユーザーに残しました。</p>
+        </div>
+        <div class="evolution-rail exploration-rail">
+          <article><b>A</b><h3>Editor | Chat</h3><p>常設Chatが視線と画面を占有し、AIとの対話が中心になる。</p><div class="layout-sketch split-sketch"><i></i><i></i></div></article>
+          <article><b>B</b><h3>Prompt → Document</h3><p>生成は速いが、ユーザーがAI出力のレビュー役になる。</p><div class="layout-sketch stack-sketch"><i></i><i></i></div></article>
+          <article class="is-final"><b>Final</b><h3>@ Context + / Action</h3><p>AIの知識と行動を分け、Editorの中で必要な瞬間だけ接続する。</p><div class="layout-sketch editor-sketch"><i></i><i></i><em>@ /</em></div></article>
+        </div>
+      </section>
+
+      <section class="product-feature feature-reference">
         <div class="product-section-copy sticky-copy">
           <p class="product-kicker">@ Reference</p>
           <h2>必要な記録だけを、<wbr>今の文書につなげる。</h2>
-          <p>
-            @でノートやProjectを呼び出し、Editorの横で確認しながら文書に接続します。
-            すべてをAIに渡すのではなく、ユーザーが選んだ文脈から始める設計にしました。
-          </p>
+          <p>Referenceは単なる添付ではなく、AIとのcontext contractです。自動取得だけに頼らず、ユーザーが根拠を明示的に選び、Editorの隣で原文まで確認できるようにしました。</p>
+          <ul class="feature-list"><li>参照範囲をユーザーが決める</li><li>原文へ戻れる導線を残す</li><li>AI結果を編集可能なブロックにする</li></ul>
         </div>
         <figure class="product-screen large-screen">
-          <img src="assets/wivlo/wivlo-reference-panel-light.jpg" alt="Wivlo reference panel next to the editor" />
+          <img src="assets/wivlo/wivlo-reference-panel-light.jpg" alt="Editorの横で参照ノートを選ぶWivlo Reference panel" />
+          <figcaption>Explicit reference keeps context inspectable before generation.</figcaption>
         </figure>
       </section>
 
-      <section class="ai-product-band">
-        <div>
-          <p class="product-kicker">Wivlo AI</p>
-          <h2>回答を作って<wbr>終わらせない。</h2>
-          <p>
-            AI ChatとAI Actionは、選択したノートやProjectを文脈として扱います。
-            <br />
-            結果は独立した会話ではなく、編集できる文書へ戻します。
-          </p>
-        </div>
-        <figure class="phone-product-shot">
-          <img src="assets/wivlo/wivlo-app-ai-ios.png" alt="Wivlo mobile AI chat screen" />
-        </figure>
-      </section>
-
-      <section class="product-narrative">
+      <section class="ai-logic-section" id="ai-logic">
         <div class="product-section-copy">
-          <p class="product-kicker">Product Narrative</p>
-          <h2>機能ではなく、<wbr>記録が再び使えるまでの価値を伝える。</h2>
-          <p>
-            App Storeでは機能名を並べるのではなく、Wivloを使った後に何が変わるかを軸に訴求を設計しました。
-            そのメッセージを、Explore、Recall、Keepの3つの体験価値に整理しています。
-          </p>
+          <p class="product-kicker">Designing the AI logic</p>
+          <h2>AI機能ではなく、<wbr>context boundaryを設計する。</h2>
+          <p>すべてのノートを毎回送るのではなく、ユーザーが選ぶcontextとシステムが探すcontextの役割を分けました。タスク別に候補を組み立て、数と文字量に上限を置くことで、信頼・速度・コストを同じUX問題として扱いました。</p>
         </div>
-        <div class="narrative-grid">
-          <article>
-            <span>01 / Explore</span>
-            <h3>一つのアイデアを、<wbr>ノートの中で深める。</h3>
-            <p>書く場所とAIを分断せず、選んだ文脈から考えを広げ、その結果を編集できる文書へ戻します。</p>
-          </article>
-          <article>
-            <span>02 / Recall</span>
-            <h3>自分の記録から、<wbr>必要な情報へ戻る。</h3>
-            <p>正確なタイトルや保存場所を思い出せなくても、SearchとReferenceから関連する記録と根拠を確認できます。</p>
-          </article>
-          <article>
-            <span>03 / Keep</span>
-            <h3>AIとの作業も、<wbr>次に使える記録にする。</h3>
-            <p>会話や生成結果を一度きりの回答にせず、文書として残し、整理された知識の一部として再利用できる状態へつなげます。</p>
-          </article>
+        <div class="ai-system-map" aria-label="Wivlo AI context architecture">
+          <div class="system-stage input-stage"><span>Input</span><div><b>Current draft</b><b>@ References</b><b>User prompt</b></div></div><i>↓</i>
+          <div class="system-stage policy-stage"><span>Context policy</span><div><b>Feature-specific retrieval</b><b>Ranking</b><b>Context limit</b></div><small>Max 12 notes · 2,600 chars / note · 12,000 chars total</small></div><i>↓</i>
+          <div class="system-stage model-stage"><span>Processing</span><div><b>Deterministic signals</b><b>Embedding / Retrieval</b><b>LLM</b></div></div><i>↓</i>
+          <div class="system-stage output-stage"><span>Output</span><div><b>Answer</b><b>Sources</b><b>Editable block</b></div></div>
+        </div>
+        <div class="logic-grid">
+          <article><span>System logic</span><b>速く、予測可能に</b><p>更新日時、頻度、tag、connectionなどの明確な行動シグナル。</p></article>
+          <article><span>Retrieval</span><b>必要な候補を狭める</b><p>自然言語検索、関連ノート、memory metadata、semantic similarity。</p></article>
+          <article><span>LLM</span><b>意味を扱う場面だけ</b><p>要約、文章改善、質問解釈、構造化、writing assistance。</p></article>
         </div>
       </section>
 
-      <section class="mobile-showcase" id="mobile">
-        <div class="mobile-copy">
-          <p class="product-kicker">Mobile</p>
-          <h2>モバイルでは、<wbr>すぐ書けることを優先した。</h2>
-          <p>
-            Home、AI Chat、Searchを下部タブに整理し、作成アクションは右下に配置しました。
-            <br />
-            片手操作時に親指が届きやすい位置から、すぐノートを書ける状態を作りました。
-          </p>
-        </div>
-        <div class="mobile-device-row">
-          <figure class="phone-product-shot">
-            <img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo mobile home screen" />
-          </figure>
-          <div class="mobile-notes">
-            <article><b>Home</b><span>最近の記録へ戻る。</span></article>
-            <article><b>AI Chat</b><span>選んだ文脈から考える。</span></article>
-            <article><b>Search</b><span>原文へ戻る。</span></article>
+      <section class="product-context-section">
+        <div class="context-copy">
+          <p class="product-kicker">One product, two contexts</p>
+          <h2>Mobileで集め、Desktopで考え、<wbr>結果を次のcontextへ戻す。</h2>
+          <p>DesktopとMobileを画面サイズの違いではなく、同じknowledge loopの異なる瞬間として設計しました。Capture → Synthesis → Artifact → Future contextがプラットフォームをまたいで循環します。</p>
+          <div class="platform-contexts">
+            <article><span>Desktop</span><h3>Write · Compare · Reuse</h3><p>長文Editor、複数Reference、反復的なAI Action。</p></article>
+            <article><span>Mobile</span><h3>Text · Voice · Search</h3><p>Quick capture、音声メモと文字起こし、自然言語検索。</p></article>
           </div>
         </div>
+        <div class="device-pair">
+          <figure class="phone-product-shot"><img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo mobile home screen" /></figure>
+          <figure class="phone-product-shot"><img src="assets/wivlo/wivlo-app-ai-ios.png" alt="Wivlo mobile AI chat screen" /></figure>
+        </div>
       </section>
 
-      <section class="product-outcome" id="outcome">
-        <p class="product-kicker">Learning</p>
-        <h2>機能を増やすより、<wbr>文脈が戻る場所を明確にする。</h2>
-        <div class="outcome-grid product-outcome-grid">
-          <p>中心をEditorに置く。</p>
-          <p>Referenceで根拠を近くに置く。</p>
-          <p>AIの結果を文書へ戻す。</p>
+      <section class="build-section">
+        <div class="product-section-copy">
+          <p class="product-kicker">From design to production</p>
+          <h2>デザイン判断を、<wbr>動くプロダクトまでつなぐ。</h2>
+          <p>AI-assisted developmentを使い、問題定義、UX/UI、AI logic、実装、QA、配信後の改善を一つのループとして担当しました。広いproductivity suiteから始め、実装を通じて「contextを複利化するEditor」へproduct thesisを絞り込みました。</p>
         </div>
+        <div class="build-flow" aria-label="Solo product development flow">
+          <span>Problem</span><i>→</i><span>Strategy</span><i>→</i><span>UX / UI</span><i>→</i><span>AI Logic</span><i>→</i><span>Build</span><i>→</i><span>QA</span><i>→</i><span>Ship</span>
+        </div>
+        <div class="stack-list"><span>Next.js</span><span>React</span><span>Expo</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span><span>App Store</span></div>
+      </section>
+
+      <section class="shipped-section" id="shipped">
+        <div class="product-section-copy">
+          <p class="product-kicker">Shipped, not projected</p>
+          <h2>数字を作らず、<wbr>実際に届けた範囲を示す。</h2>
+          <p>公開できる利用指標がない段階では、誇張した成果ではなく、使えるプロダクトと実装した中核体験を結果として整理しました。</p>
+        </div>
+        <div class="shipped-grid">
+          <article><span>01</span><b>Web product live</b><p>認証、Editor、Search、Reference、AI workflowを運用。</p></article>
+          <article><span>02</span><b>iOS App Store launch</b><p>Mobile capture、AI Chat、Search、voice workflowを配信。</p></article>
+          <article><span>03</span><b>Context system implemented</b><p>Reference、memory、related notes、source-backed outputを接続。</p></article>
+          <article><span>04</span><b>End-to-end ownership</b><p>設計判断をproduction code、QA、deploymentまで継続。</p></article>
+        </div>
+        <blockquote class="learning-quote">AI-native productの差は、答えの派手さではなく、何をcontextにし、誰がそれを決め、結果が次にどう残るかで生まれる。</blockquote>
+        <p class="source-note">Scope note — 公開ユーザー数やretentionは未掲載。2026年8月時点で実装・公開済みの範囲のみを記載しています。</p>
       </section>
     </main>
     <script src="project-i18n.js"></script>
