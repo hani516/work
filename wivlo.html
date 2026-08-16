@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wivlo | Yohan Portfolio</title>
+    <meta
+      name="description"
+      content="Wivlo product case focused on editor-first writing, references, AI actions, projects, and Wivlo AI."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/wivlo/wivlo-icon.png" />
+    <link rel="stylesheet" href="wivlo.css" />
+    <link rel="stylesheet" href="wivlo-responsive.css" />
+    <link rel="stylesheet" href="wivlo-tune.css" />
+    <link rel="stylesheet" href="site-header.css" />
+  </head>
+  <body class="wivlo-product-page">
+    <header class="case-header product-header project-page-header">
+      <a class="back-link" href="index.html#projects">← Portfolio</a>
+      <nav class="case-nav" aria-label="Wivlo sections">
+        <a href="#product">Product</a><a href="#reference">Reference</a><a href="#mobile">Mobile</a><a href="#outcome">Outcome</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wivlo-hero" id="product">
+        <div class="wivlo-hero-copy">
+          <div class="wivlo-brand-lockup">
+            <img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" />
+            <span>Wivlo</span>
+          </div>
+          <p class="product-kicker">AI-native writing workspace</p>
+          <h1>書いた記録を、<wbr>次の作業へ戻す。</h1>
+          <p class="wivlo-hero-lead">
+            Wivloは、散らばったノートや資料をReferenceとして呼び出し、
+            AI Actionで新しい文書へつなげるwriting workspaceです。
+          </p>
+          <div class="product-pills" aria-label="Wivlo product roles">
+            <span>2026.04 - Present</span>
+            <span>Founder / Product Designer / Developer</span>
+            <span>Web / iOS / Desktop</span>
+            <span>Editor-first AI UX</span>
+          </div>
+          <div class="product-links" aria-label="Wivlo product links">
+            <a href="https://wivlo.io" target="_blank" rel="noreferrer">wivlo.io ↗</a>
+            <a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a>
+          </div>
+        </div>
+
+        <div class="wivlo-stage" aria-label="Wivlo desktop product preview">
+          <figure class="browser-frame">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="Wivlo desktop editor product screen" />
+          </figure>
+          <div class="floating-chip chip-reference">@ Reference</div>
+          <div class="floating-chip chip-action">/ AI Action</div>
+          <div class="floating-chip chip-editor">Editor is the center</div>
+        </div>
+      </section>
+
+      <section class="product-flow-band">
+        <p>Capture</p>
+        <span></span>
+        <p>Connect</p>
+        <span></span>
+        <p>Retrieve</p>
+        <span></span>
+        <p>Reuse</p>
+      </section>
+
+      <section class="product-problem-section">
+        <div class="product-section-copy">
+          <p class="product-kicker">Pain Point</p>
+          <h2>メモのボトルネックは、<wbr>保存ではなく<wbr>思い出して再利用すること。</h2>
+          <p>
+            Notion、Obsidian、Apple Notes、ChatGPTなどを比較しながら、
+            既存ツールはCapture、Organize、Searchまでは強い一方で、
+            書く瞬間に過去の文脈を戻す体験が弱いと整理しました。
+          </p>
+        </div>
+        <div class="problem-metrics">
+          <article>
+            <b class="pain-brand"><img class="pain-logo pain-logo-notion" src="assets/wivlo/notion.png" alt="Notion logo" />Notion</b>
+            <span>保存と整理は強いが、ページが増えるほど再利用が重くなる。</span>
+          </article>
+          <article>
+            <b class="pain-brand"><img class="pain-logo pain-logo-obsidian" src="assets/wivlo/obsidian.png" alt="Obsidian logo" />Obsidian</b>
+            <span>接続は強いが、リンクや構造をユーザーが管理し続ける必要がある。</span>
+          </article>
+          <article>
+            <b class="pain-brand"><img class="pain-logo pain-logo-notes" src="assets/wivlo/apple-notes.webp" alt="Apple Notes logo" />Apple Notes</b>
+            <span>素早く書けるが、後から分類、検索、再利用する力が弱い。</span>
+          </article>
+          <article>
+            <b class="pain-brand"><img class="pain-logo pain-logo-chatgpt" src="assets/wivlo/chatgpt.webp" alt="ChatGPT logo" />ChatGPT</b>
+            <span>良い回答が会話の中に埋もれ、また別の保存先に移す必要がある。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-feature feature-reference" id="reference">
+        <div class="product-section-copy sticky-copy">
+          <p class="product-kicker">@ Reference</p>
+          <h2>必要な記録だけを、<wbr>今の文書につなげる。</h2>
+          <p>
+            @でノートやProjectを呼び出し、Editorの横で確認しながら文書に接続します。
+            すべてをAIに渡すのではなく、ユーザーが選んだ文脈から始める設計にしました。
+          </p>
+        </div>
+        <figure class="product-screen large-screen">
+          <img src="assets/wivlo/wivlo-reference-panel-light.jpg" alt="Wivlo reference panel next to the editor" />
+        </figure>
+      </section>
+
+      <section class="ai-product-band">
+        <div>
+          <p class="product-kicker">Wivlo AI</p>
+          <h2>回答を作って<wbr>終わらせない。</h2>
+          <p>
+            AI ChatとAI Actionは、選択したノートやProjectを文脈として扱います。
+            <br />
+            結果は独立した会話ではなく、編集できる文書へ戻します。
+          </p>
+        </div>
+        <figure class="phone-product-shot">
+          <img src="assets/wivlo/wivlo-app-ai-ios.png" alt="Wivlo mobile AI chat screen" />
+        </figure>
+      </section>
+
+      <section class="product-narrative">
+        <div class="product-section-copy">
+          <p class="product-kicker">Product Narrative</p>
+          <h2>機能ではなく、<wbr>記録が再び使えるまでの価値を伝える。</h2>
+          <p>
+            App Storeでは機能名を並べるのではなく、Wivloを使った後に何が変わるかを軸に訴求を設計しました。
+            そのメッセージを、Explore、Recall、Keepの3つの体験価値に整理しています。
+          </p>
+        </div>
+        <div class="narrative-grid">
+          <article>
+            <span>01 / Explore</span>
+            <h3>一つのアイデアを、<wbr>ノートの中で深める。</h3>
+            <p>書く場所とAIを分断せず、選んだ文脈から考えを広げ、その結果を編集できる文書へ戻します。</p>
+          </article>
+          <article>
+            <span>02 / Recall</span>
+            <h3>自分の記録から、<wbr>必要な情報へ戻る。</h3>
+            <p>正確なタイトルや保存場所を思い出せなくても、SearchとReferenceから関連する記録と根拠を確認できます。</p>
+          </article>
+          <article>
+            <span>03 / Keep</span>
+            <h3>AIとの作業も、<wbr>次に使える記録にする。</h3>
+            <p>会話や生成結果を一度きりの回答にせず、文書として残し、整理された知識の一部として再利用できる状態へつなげます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mobile-showcase" id="mobile">
+        <div class="mobile-copy">
+          <p class="product-kicker">Mobile</p>
+          <h2>モバイルでは、<wbr>すぐ書けることを優先した。</h2>
+          <p>
+            Home、AI Chat、Searchを下部タブに整理し、作成アクションは右下に配置しました。
+            <br />
+            片手操作時に親指が届きやすい位置から、すぐノートを書ける状態を作りました。
+          </p>
+        </div>
+        <div class="mobile-device-row">
+          <figure class="phone-product-shot">
+            <img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo mobile home screen" />
+          </figure>
+          <div class="mobile-notes">
+            <article><b>Home</b><span>最近の記録へ戻る。</span></article>
+            <article><b>AI Chat</b><span>選んだ文脈から考える。</span></article>
+            <article><b>Search</b><span>原文へ戻る。</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-outcome" id="outcome">
+        <p class="product-kicker">Learning</p>
+        <h2>機能を増やすより、<wbr>文脈が戻る場所を明確にする。</h2>
+        <div class="outcome-grid product-outcome-grid">
+          <p>中心をEditorに置く。</p>
+          <p>Referenceで根拠を近くに置く。</p>
+          <p>AIの結果を文書へ戻す。</p>
+        </div>
+      </section>
+    </main>
+    <script src="project-i18n.js"></script>
+    <script src="case-reveal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kim Yohan | Product Designer</title>
+    <meta name="description" content="ユーザーデータと行動観察をもとに、プロダクトを設計・改善するKim Yohanのポートフォリオ。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="site-header.css" />
+  </head>
+  <body>
+    <div class="cursor-aura" aria-hidden="true"></div>
+    <header class="site-header" data-elevate>
+      <a class="brand" href="#top" aria-label="Go to top"><span class="brand-mark">Y</span><span>Yohan</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about" data-i18n="navAbout">プロフィール</a>
+        <a href="#projects" data-i18n="navProjects">個人プロジェクト</a>
+        <a href="#company" data-i18n="navCompany">会社プロジェクト</a>
+        <a href="#contact" data-i18n="navContact">連絡</a>
+      </nav>
+      <div class="language-switch" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja">JP</button>
+        <button class="lang-button" type="button" data-lang="en">EN</button>
+        <button class="lang-button" type="button" data-lang="ko">KR</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="profile-hero page-shell" id="about">
+        <figure class="profile-photo reveal"><img src="assets/profile/yohan-profile.webp" alt="Kim Yohan profile photo" /></figure>
+        <div class="profile-copy">
+          <p class="section-label reveal">Kim Yohan / Product Designer</p>
+          <h1 class="reveal" data-i18n="heroTitle">ユーザーデータと<wbr>行動観察から、<wbr><span class="nowrap">プロダクトを作り、</span><wbr>改善する。</h1>
+          <p class="profile-lead reveal" data-i18n="heroBody">課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。</p>
+          <div class="profile-actions reveal">
+            <a class="button primary magnetic" href="#projects" data-i18n="viewProjects">View Project</a>
+            <a class="button secondary magnetic" href="#contact" data-i18n="contactButton">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-band">
+        <div class="page-shell about-layout">
+          <div class="section-heading reveal"><p class="section-label" data-i18n="aboutLabel">Profile</p><h2 data-i18n="aboutTitle">デザインと実装、<wbr>両方の視点で考えます。</h2></div>
+          <div class="profile-facts reveal">
+            <article><span data-i18n="experienceLabel">Experience</span><strong>Tika & Gross</strong><p data-i18n="experienceBody">2022.03〜 / 大阪<br />LaLaTulleのUIUX、ページ分析・改善、クリエイティブ制作</p></article>
+            <article><span data-i18n="educationLabel">Education</span><strong>Sangmyung University</strong><p data-i18n="educationBody">2020.02 卒業 / Seoul<br />Global Business・Geography 専攻</p></article>
+            <article><span data-i18n="focusLabel">Focus</span><strong>Product Design</strong><p data-i18n="focusBody">UX Strategy / UI Design<br />Prototype / Frontend / Analytics</p></article>
+            <article><span data-i18n="languageLabel">Languages</span><strong>JP / KR / EN</strong><p data-i18n="languageBody">日本語を中心に、韓国語と英語にも対応</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section personal-section" id="projects">
+        <div class="page-shell">
+          <div class="section-heading reveal"><p class="section-label" data-i18n="personalLabel">Personal & Collaborative Projects</p><h2 data-i18n="personalTitle">個人リリースプロダクト</h2><p data-i18n="personalIntro">プロダクトの定義からUX、UI、実装または開発連携まで担当しました。</p></div>
+          <div class="project-list">
+            <article class="project-row project-wivlo reveal" data-project-href="wivlo.html">
+              <div class="project-index">01</div>
+              <div class="project-summary"><div class="project-name"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo icon" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p><div class="project-tags"><span>Web</span><span>iOS</span><span>AI UX</span><span>Design & Development</span></div><div class="project-actions"><a href="wivlo.html">Case Study →</a><a href="https://wivlo.io" target="_blank" rel="noreferrer">wivlo.io ↗</a><a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
+              <a class="project-preview wivlo-preview" href="wivlo.html" aria-label="Open Wivlo case study"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="Wivlo web editor" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo iOS home" /></a>
+            </article>
+            <article class="project-row reveal" data-project-href="trami.html">
+              <div class="project-index">02</div>
+              <div class="project-summary"><div class="project-name"><img src="assets/trami/trami-icon.png" alt="Trami icon" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始める、記録する、振り返る流れをシンプルにした個人開発のフィットネスアプリ。</p><div class="project-tags"><span>iOS</span><span>Flutter</span><span>Personal Project</span></div><div class="project-actions"><a href="trami.html">Case Study →</a><a href="https://apps.apple.com/jp/app/trami/id6753889745" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
+              <a class="project-preview" href="trami.html" aria-label="Open Trami case study"><img src="assets/trami/trami-hero-ui.webp" alt="Trami app screens" /></a>
+            </article>
+            <article class="project-row reveal" data-project-href="blinq.html">
+              <div class="project-index">03</div>
+              <div class="project-summary"><div class="project-name"><img src="assets/blinq/blinq-icon.png" alt="Blinq icon" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じカレンダーで管理する、デザイナー1名・開発者1名の協業モバイルプロジェクト。</p><div class="project-tags"><span>Mobile App</span><span>Collaboration</span><span>Product Design</span></div><div class="project-actions"><a href="blinq.html">Case Study →</a></div></div>
+              <a class="project-preview" href="blinq.html" aria-label="Open Blinq case study"><img src="assets/blinq/blinq-hero-ui.webp" alt="Blinq calendar app" /></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section page-shell" id="company">
+        <div class="section-heading reveal"><p class="section-label" data-i18n="companyLabel">Company Experience</p><h2 data-i18n="companyTitle">会社で進めた<wbr>プロダクト改善。</h2><p data-i18n="companyIntro">検索流入、商品閲覧、購入行動をデータで確認しながら、EC体験を改善しました。</p></div>
+        <article class="company-project reveal" data-project-href="lalatulle.html">
+          <div class="project-copy">
+            <div class="project-meta"><span data-i18n="companyProjectType">Company UX Improvement</span><span>2025</span></div>
+            <h3><a href="lalatulle.html">LaLaTulle</a></h3>
+            <p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p>
+            <div class="project-tags"><span>SEO / IA</span><span>GA4</span><span>AB Test</span><span>EC UX</span></div>
+            <div class="project-actions company-actions"><a href="lalatulle.html" data-i18n="readCase">ケーススタディを見る →</a><a href="https://www.lalatulle.jp/c/costume/halloween" target="_blank" rel="noreferrer">Halloween Page ↗</a><a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">LaLaTulle Top ↗</a></div>
+          </div>
+          <a class="company-visual" href="lalatulle.html" aria-label="Open LaLaTulle case study"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="LaLaTulle Halloween and product detail screens" /></a>
+        </article>
+      </section>
+
+      <section class="contact-section page-shell" id="contact">
+        <div class="contact-copy reveal"><p class="section-label">Contact</p><h2 data-i18n="contactTitle">プロダクトとUXについて、<wbr>話しましょう。</h2><p data-i18n="contactBody">採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。</p></div>
+        <div class="contact-links reveal">
+          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>プロフィールを見る ↗</strong></a>
+          <a class="contact-link magnetic" href="https://github.com/hani516/work" target="_blank" rel="noreferrer"><span>GitHub</span><strong data-i18n="githubCta">リポジトリを見る ↗</strong></a>
+          <button class="contact-link email-copy magnetic" type="button" data-copy-email><span>Email</span><strong>kim93yohan@gmail.com</strong></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-shell"><span>© 2026 Kim Yohan</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
+    <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
