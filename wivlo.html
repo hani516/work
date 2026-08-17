@@ -18,7 +18,7 @@
     <header class="case-header product-header project-page-header">
       <a class="back-link" href="index.html#projects">← Portfolio</a>
       <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#decision">Decision</a><a href="#ai-logic">AI Logic</a><a href="#shipped">Shipped</a>
+        <a href="#overview">Overview</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#super-tag">Super Tag</a><a href="#shipped">Shipped</a>
       </nav>
     </header>
 
@@ -130,6 +130,75 @@
           <article><span>System logic</span><b>速く、予測可能に</b><p>更新日時、頻度、tag、connectionなどの明確な行動シグナル。</p></article>
           <article><span>Retrieval</span><b>必要な候補を狭める</b><p>自然言語検索、関連ノート、memory metadata、semantic similarity。</p></article>
           <article><span>LLM</span><b>意味を扱う場面だけ</b><p>要約、文章改善、質問解釈、構造化、writing assistance。</p></article>
+        </div>
+      </section>
+
+      <section class="agent-section" id="ai-agent">
+        <div class="product-section-copy agent-intro">
+          <p class="product-kicker">AI Agent / Interaction redesign</p>
+          <h2>呼び出すAIから、<wbr>変化に気づくAIへ。</h2>
+          <p>一般的な文書AIは、ユーザーがボタンを探し、パネルを開き、指示して初めて動きます。WivloではAgentを初期表示し、文書の変化量をきっかけに、今必要な支援を先回りして提示する設計に変えました。</p>
+        </div>
+        <div class="agent-comparison" aria-label="Passive AI and Wivlo AI Agent comparison">
+          <article class="agent-state passive-state">
+            <div class="agent-state-heading"><span>Before / Passive AI</span><b>Open → Ask → Wait</b></div>
+            <div class="passive-panel-visual" aria-hidden="true">
+              <div class="passive-document"><i></i><i></i><i></i><i></i></div>
+              <span class="passive-open-ai">Open AI</span>
+            </div>
+            <p>機能の存在を覚え、作業を止めて、毎回AIを起動する必要がある。</p>
+          </article>
+          <article class="agent-state proactive-state">
+            <div class="agent-state-heading"><span>Wivlo / Proactive Agent</span><b>Observe → Suggest → Apply</b></div>
+            <div class="agent-editor-visual" aria-hidden="true">
+              <div class="agent-document"><strong>Product direction</strong><i></i><i></i><i></i><i></i><i></i></div>
+              <aside><small>Wivlo Agent</small><b>次に整理できること</b><span>論点を3つに分ける</span><span>過去の調査ノートを参照</span></aside>
+            </div>
+            <p>Agentは常に見える位置にあり、書く行為を止めずに次の一手と過去の記録を示す。</p>
+          </article>
+        </div>
+        <div class="agent-lifecycle">
+          <article><span>While writing</span><h3>変化量をトリガーに支援する</h3><p>一定の変更量に達した時点で文書を読み、next stepと関連する過去ノートを提示します。</p><div class="agent-signal"><i></i><i></i><i></i><i></i><b>Suggestion</b></div></article>
+          <article><span>After writing</span><h3>整理作業を引き受ける</h3><p>編集が落ち着いた後は、要約、tag候補、関連文書の接続をまとめて準備します。</p><div class="agent-output"><b>Summary</b><b>Tags</b><b>Related notes</b></div></article>
+          <p class="agent-guardrail"><strong>Design guardrail</strong> Agentは提案までを担い、文書を自動で上書きしない。採用する内容とタイミングはユーザーが決めます。</p>
+        </div>
+      </section>
+
+      <section class="branch-link-section" id="branch-links">
+        <div class="product-section-copy">
+          <p class="product-kicker">Branch &amp; Document Links</p>
+          <h2>つながりではなく、<wbr>関係の意味を保存する。</h2>
+          <p>すべてを同じlinkとして扱うと、なぜ二つの文書がつながったのかが失われます。Wivloでは、思考の派生を残すBranchと、文書同士を参照するLinkを別の操作として設計しました。</p>
+        </div>
+        <div class="relationship-model">
+          <div class="branch-diagram" aria-label="Branch note lineage diagram">
+            <article class="origin-note"><span>Origin note</span><b>プロダクト戦略</b><p>選択した段落と、その時点の文脈</p><em>Selected passage</em></article>
+            <div class="branch-path"><i></i><b>Branch</b></div>
+            <article class="child-note"><span>Branch note</span><b>新しい仮説</b><p>通常のノートとして編集を続ける</p></article>
+          </div>
+          <div class="relationship-decisions">
+            <article><span>Branch</span><h3>思考のlineage</h3><p>選択範囲から新しいノートを作り、起点ノート、原文snapshot、section情報を保存します。</p></article>
+            <article><span>Document Link</span><h3>明示的な参照関係</h3><p>別々の文書を直接つなぎ、必要な記録へ戻る経路をEditor内に残します。</p></article>
+            <article><span>Interface</span><h3>OriginとBranchesを両側に表示</h3><p>派生先では起点を、親ノートでは派生一覧を確認でき、移動しても出発点を失いません。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="super-tag-section" id="super-tag">
+        <div class="super-tag-copy">
+          <p class="product-kicker">Web experiment / Super Tag</p>
+          <h2>繰り返す文書構造を、<wbr>書き直さない。</h2>
+          <p>会議メモやリサーチノートのように、内容は変わっても構造は繰り返されます。Web版では、Editorで選択した構造を再利用可能なtemplateへ変換し、呼び出し語から現在のノートへ挿入できるSuper Tagを実験しています。</p>
+          <p class="experiment-note"><strong>Experiment scope</strong> 自動検出ではなく、ユーザーが選択・保存する方式から検証しています。</p>
+        </div>
+        <div class="supertag-product" aria-label="Super Tag creation and reuse flow">
+          <div class="supertag-toolbar"><span>Super Tag</span><b>＋ Create from selection</b></div>
+          <div class="supertag-templates">
+            <article><span>01</span><b>会議メモ</b><p>日時 · 議題 · 決定事項 · Action</p></article>
+            <article><span>02</span><b>Project brief</b><p>背景 · 目標 · Scope · Next step</p></article>
+            <article><span>03</span><b>Research note</b><p>Source · Finding · Evidence · Question</p></article>
+          </div>
+          <div class="supertag-flow"><span>Select structure</span><i>→</i><span>AI template</span><i>→</i><span>Save trigger</span><i>→</i><span>Insert again</span></div>
         </div>
       </section>
 
