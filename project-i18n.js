@@ -6,8 +6,8 @@ const projectKey = document.body.classList.contains("wivlo-product-page")
     ? "trami"
     : document.body.classList.contains("project-blinq")
       ? "blinq"
-      : document.body.classList.contains("project-belupp")
-        ? "belupp"
+      : document.body.classList.contains("project-looplit")
+        ? "looplit"
       : document.body.classList.contains("project-lalatulle")
         ? "lalatulle"
         : null;
@@ -237,30 +237,30 @@ const projectTranslations = {
       ".reflection blockquote": "독창성은 정보의 조합에서 만들고 조작 방법은 사용자가 이미 아는 규칙에 맞춥니다.",
     },
   },
-  belupp: {
+  looplit: {
     en: {
       ".case-nav a": ["Problem", "Flow", "AI Review", "Outcome"],
       ".case-hero h2": "Turn meeting records into work the team can execute.",
-      ".case-hero .case-lead": "Belupp is a web workspace connecting AI meeting notes, company and team schedules, and assigned work as one operating flow from discussion to execution.",
+      ".case-hero .case-lead": "Looplit is a web workspace connecting AI meeting notes, company and team schedules, and assigned work as one operating flow from discussion to execution.",
       "#problem h2": "Meeting notes remain, but the work that follows starts somewhere else.",
       "#problem .section-copy p": "After documenting a meeting, teams register schedules, assign owners, and track progress across separate tools. Each transfer weakens the connection to the original discussion and team context.",
       "#problem .problem-grid h3": ["Records stop before execution", "The same information is re-entered", "The evidence disappears"],
       "#problem .problem-grid p": ["Next steps stay in the meeting note instead of becoming assigned work.", "The same decision is copied into notes, calendars, and task tools.", "When only the summary moves, returning to the original statement becomes difficult."],
       "#strategy h2": "Connect features in the order that work moves.",
       "#strategy .section-copy p": "Recording, organization, scheduling, assignment, and follow-up form one continuous flow. Information from a meeting moves into action while remaining inspectable.",
-      ".belupp-flow article span": ["Meeting audio", "Summary and decisions", "Next schedule", "Assigned work", "Progress review"],
+      ".looplit-flow article span": ["Meeting audio", "Summary and decisions", "Next schedule", "Assigned work", "Progress review"],
       "#ai h2": "AI creates reviewable candidates instead of making the decision.",
-      "#ai .feature-copy > p:not(.section-label)": "Belupp transcribes speakers and structures summaries, decisions, and action candidates. It does not invent owners or deadlines; only reviewed content becomes team work.",
+      "#ai .feature-copy > p:not(.section-label)": "Looplit transcribes speakers and structures summaries, decisions, and action candidates. It does not invent owners or deadlines; only reviewed content becomes team work.",
       "#ai .feature-copy li": ["Connect summaries and decisions to the full transcript", "Show next steps as candidates before confirmation", "Add owner, due date, priority, and status after approval"],
       ".review-source p": "‘Ship mobile first and confirm the scope by next week.’",
       ".review-candidate strong": "Confirm the mobile release scope",
       ".review-candidate p": "Owner and due date not confirmed",
       ".review-actions span": "Edit",
       ".review-actions strong": "Confirm as work",
-      ".belupp-system-section h2": "Build a structure where the same information does not need to be carried repeatedly.",
-      ".belupp-system-section .section-copy p": "Meetings, schedules, and assigned work are connected through team and project context instead of ending as separate features.",
-      ".belupp-principles h3": ["Record once, keep using it", "Separate proposal from confirmation", "Preserve whose work it is"],
-      ".belupp-principles p": ["Connect meeting decisions and next steps to schedules and assigned work.", "Keep human confirmation as an explicit action before applying AI output.", "Attach meetings, schedules, and work to the relevant team and project."],
+      ".looplit-system-section h2": "Build a structure where the same information does not need to be carried repeatedly.",
+      ".looplit-system-section .section-copy p": "Meetings, schedules, and assigned work are connected through team and project context instead of ending as separate features.",
+      ".looplit-principles h3": ["Record once, keep using it", "Separate proposal from confirmation", "Preserve whose work it is"],
+      ".looplit-principles p": ["Connect meeting decisions and next steps to schedules and assigned work.", "Keep human confirmation as an explicit action before applying AI output.", "Attach meetings, schedules, and work to the relevant team and project."],
       "#outcome h2": "Built the core meeting-to-execution flow as a working web product.",
       "#outcome .section-copy p": "The current implementation connects recording, speaker-aware transcription, structured AI output, transcript references, schedules, and assigned work in one workspace. Public usage metrics are not yet available, so validation currently focuses on information continuity and Human Review.",
       ".reflection blockquote": "The value of AI meeting notes depends not only on summary quality, but on whether decisions can be reviewed and safely connected to the next task."
@@ -268,14 +268,14 @@ const projectTranslations = {
     ko: {
       ".case-nav a": ["문제", "제품 흐름", "AI 검토", "결과"],
       ".case-hero h2": "회의 기록을 실행 가능한 업무로 연결합니다.",
-      ".case-hero .case-lead": "Belupp는 AI 회의록, 회사·팀 일정, 담당 업무를 회의부터 실행까지 하나의 운영 흐름으로 연결한 웹 워크스페이스입니다.",
+      ".case-hero .case-lead": "Looplit는 AI 회의록, 회사·팀 일정, 담당 업무를 회의부터 실행까지 하나의 운영 흐름으로 연결한 웹 워크스페이스입니다.",
       "#problem h2": "회의록은 남지만, 그다음 일은 다른 곳에서 시작됩니다.",
       "#problem .section-copy p": "회의 내용을 정리한 뒤 일정 등록, 담당자 지정, 진행 확인은 여러 도구로 분리됩니다. 같은 결정을 옮길수록 원래 발언과 팀 맥락의 연결이 약해집니다.",
       "#problem .problem-grid h3": ["기록과 실행의 단절", "정보 재입력", "근거의 소실"],
       "#problem .problem-grid p": ["회의록의 Next step이 담당 업무로 전환되지 않고 멈춥니다.", "같은 내용을 회의록, 캘린더, 업무 도구에 반복해서 옮깁니다.", "요약만 이동하면 판단에 사용한 원문으로 돌아가기 어렵습니다."],
       "#strategy h2": "기능을 나열하지 않고 일이 움직이는 순서로 연결했습니다.",
       "#strategy .section-copy p": "녹음, 정리, 일정, 담당, 후속 확인을 하나의 흐름으로 설계했습니다. 회의에서 나온 정보가 검토 가능한 상태를 유지한 채 다음 행동으로 이동합니다.",
-      ".belupp-flow article span": ["회의 음성", "요약·결정", "다음 일정", "담당 업무", "진행 확인"],
+      ".looplit-flow article span": ["회의 음성", "요약·결정", "다음 일정", "담당 업무", "진행 확인"],
       "#ai h2": "AI가 결정하지 않고, 확인할 수 있는 후보를 만듭니다.",
       "#ai .feature-copy > p:not(.section-label)": "회의 음성을 화자별로 전사하고 요약, 결정, Action candidate를 구조화합니다. 담당자와 기한을 추측해 확정하지 않고 사람이 확인한 내용만 팀 업무에 반영합니다.",
       "#ai .feature-copy li": ["요약과 결정을 전체 Transcript에 연결", "Next step을 확정 전 후보로 표시", "승인 후 담당자, 기한, 우선순위, 상태 부여"],
@@ -284,10 +284,10 @@ const projectTranslations = {
       ".review-candidate p": "담당자·기한 미확정",
       ".review-actions span": "수정하기",
       ".review-actions strong": "업무로 확정",
-      ".belupp-system-section h2": "같은 정보를 여러 번 운반하지 않아도 되는 구조를 만들었습니다.",
-      ".belupp-system-section .section-copy p": "회의, 일정, 담당 업무를 별도 기능으로 끝내지 않고 팀과 프로젝트 맥락으로 연결했습니다.",
-      ".belupp-principles h3": ["한 번 기록하고 계속 사용", "제안과 확정 분리", "누구의 일인지 유지"],
-      ".belupp-principles p": ["회의의 결정과 Next step을 일정과 담당 업무로 연결합니다.", "AI 출력 적용 전에 사람의 확인을 명시적인 조작으로 남깁니다.", "회의, 일정, 업무를 관련 팀과 프로젝트에 연결합니다."],
+      ".looplit-system-section h2": "같은 정보를 여러 번 운반하지 않아도 되는 구조를 만들었습니다.",
+      ".looplit-system-section .section-copy p": "회의, 일정, 담당 업무를 별도 기능으로 끝내지 않고 팀과 프로젝트 맥락으로 연결했습니다.",
+      ".looplit-principles h3": ["한 번 기록하고 계속 사용", "제안과 확정 분리", "누구의 일인지 유지"],
+      ".looplit-principles p": ["회의의 결정과 Next step을 일정과 담당 업무로 연결합니다.", "AI 출력 적용 전에 사람의 확인을 명시적인 조작으로 남깁니다.", "회의, 일정, 업무를 관련 팀과 프로젝트에 연결합니다."],
       "#outcome h2": "회의부터 실행까지의 핵심 흐름을 동작하는 웹 제품으로 구축했습니다.",
       "#outcome .section-copy p": "녹음, 화자별 전사, 구조화된 AI 결과, Transcript Reference, 일정, 담당 업무를 하나의 워크스페이스에 구현했습니다. 공개 사용 지표는 아직 없어 정보 연결과 Human Review 검증을 우선하고 있습니다.",
       ".reflection blockquote": "AI 회의록의 가치는 요약 완성도만이 아니라, 결정을 검토하고 다음 업무로 안전하게 연결할 수 있는 구조에서 결정됩니다."

@@ -116,6 +116,12 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
 .hero-visual img { display: block; width: 92%; max-height: 590px; object-fit: contain; mix-blend-mode: multiply; }
 .project-lalatulle .hero-visual img { width: 96%; mix-blend-mode: normal; }
+.case-image-placeholder { display: flex; min-width: 0; flex-direction: column; align-items: center; justify-content: center; background: #ececee; color: #77777d; text-align: center; }
+.case-image-placeholder span { font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.case-image-placeholder strong { margin-top: 12px; color: #65656b; font-size: clamp(16px,2vw,22px); font-weight: 550; }
+.case-image-placeholder small { margin-top: 7px; color: #929298; font-size: 11px; }
+.wide-placeholder { min-height: 560px; }
+.feature-media.case-image-placeholder { min-height: 520px; }
 
 .case-section { padding-block: 112px; border-top: 1px solid var(--line); }
 .section-intro { display: grid; grid-template-columns: 0.48fr 1.2fr; gap: 64px; margin-bottom: 56px; }

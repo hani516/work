@@ -18,8 +18,7 @@
       <a class="brand" href="#top" aria-label="Go to top"><span class="brand-mark">Y</span><span>Yohan</span></a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about" data-i18n="navAbout">プロフィール</a>
-        <a href="#projects" data-i18n="navProjects">個人プロジェクト</a>
-        <a href="#company" data-i18n="navCompany">会社プロジェクト</a>
+        <a href="#projects" data-i18n="navProjects">プロジェクト</a>
         <a href="#contact" data-i18n="navContact">連絡</a>
       </nav>
       <div class="language-switch" aria-label="Language selector">
@@ -55,46 +54,32 @@
         </div>
       </section>
 
-      <section class="portfolio-section personal-section" id="projects">
+      <section class="portfolio-section selected-projects" id="projects">
         <div class="page-shell">
-          <div class="section-heading reveal"><p class="section-label" data-i18n="personalLabel">Personal & Collaborative Projects</p><h2 data-i18n="personalTitle">個人リリースプロダクト</h2><p data-i18n="personalIntro">プロダクトの定義からUX、UI、実装または開発連携まで担当しました。</p></div>
-          <div class="project-list">
-            <article class="project-row project-wivlo reveal" data-project-href="wivlo.html">
-              <div class="project-index">01</div>
-              <div class="project-summary"><div class="project-name"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo icon" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p><div class="project-tags"><span>Web</span><span>iOS</span><span>AI UX</span><span>Design & Development</span></div><div class="project-actions"><a href="wivlo.html">Case Study →</a><a href="https://wivlo.io" target="_blank" rel="noreferrer">wivlo.io ↗</a><a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
-              <a class="project-preview wivlo-preview" href="wivlo.html" aria-label="Open Wivlo case study"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="Wivlo web editor" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo iOS home" /></a>
+          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">プロダクトを、<wbr>5つの異なる課題から。</h2><p data-i18n="selectedIntro">個人リリース、協業、会社での改善を、プロダクトごとのケーススタディにまとめました。</p></div>
+          <div class="project-panels reveal" aria-label="Selected project case studies">
+            <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
+              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p><div class="panel-links"><a href="wivlo.html">Case Study →</a><a href="https://wivlo.io" target="_blank" rel="noreferrer">Web ↗</a><a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
+              <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="" /></div>
             </article>
-            <article class="project-row reveal" data-project-href="trami.html">
-              <div class="project-index">02</div>
-              <div class="project-summary"><div class="project-name"><img src="assets/trami/trami-icon.png" alt="Trami icon" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始める、記録する、振り返る流れをシンプルにした個人開発のフィットネスアプリ。</p><div class="project-tags"><span>iOS</span><span>Flutter</span><span>Personal Project</span></div><div class="project-actions"><a href="trami.html">Case Study →</a><a href="https://apps.apple.com/jp/app/trami/id6753889745" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
-              <a class="project-preview" href="trami.html" aria-label="Open Trami case study"><img src="assets/trami/trami-hero-ui.webp" alt="Trami app screens" /></a>
+            <article class="project-panel panel-trami" data-project-href="trami.html">
+              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><img src="assets/trami/trami-icon.png" alt="" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始める、記録する、振り返る流れをシンプルにした個人開発のフィットネスアプリ。</p><div class="panel-links"><a href="trami.html">Case Study →</a><a href="https://apps.apple.com/jp/app/trami/id6753889745" target="_blank" rel="noreferrer">App Store ↗</a></div></div>
+              <div class="panel-visual" aria-hidden="true"><img src="assets/trami/trami-hero-ui.webp" alt="" /></div>
             </article>
-            <article class="project-row reveal" data-project-href="blinq.html">
-              <div class="project-index">03</div>
-              <div class="project-summary"><div class="project-name"><img src="assets/blinq/blinq-icon.png" alt="Blinq icon" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じカレンダーで管理する、デザイナー1名・開発者1名の協業モバイルプロジェクト。</p><div class="project-tags"><span>Mobile App</span><span>Collaboration</span><span>Product Design</span></div><div class="project-actions"><a href="blinq.html">Case Study →</a></div></div>
-              <a class="project-preview" href="blinq.html" aria-label="Open Blinq case study"><img src="assets/blinq/blinq-hero-ui.webp" alt="Blinq calendar app" /></a>
+            <article class="project-panel panel-blinq" data-project-href="blinq.html">
+              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Collaborative · Mobile</span><div class="panel-title"><img src="assets/blinq/blinq-icon.png" alt="" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じカレンダーで管理する、デザイナー1名・開発者1名の協業モバイルプロジェクト。</p><div class="panel-links"><a href="blinq.html">Case Study →</a></div></div>
+              <div class="panel-visual panel-image-placeholder" aria-hidden="true"><span>IMAGE</span><small>Blinq product UI</small></div>
             </article>
-            <article class="project-row project-belupp reveal" data-project-href="belupp.html">
-              <div class="project-index">04</div>
-              <div class="project-summary"><div class="project-name"><span class="belupp-mark" aria-hidden="true">B</span><h3><a href="belupp.html">Belupp</a></h3></div><p data-i18n="beluppBody">AI議事録、会社・チームの予定、担当業務を、<span class="nowrap">会議から実行まで</span>一つの流れにつなぐWeb workspace。</p><div class="project-tags"><span>Web</span><span>AI Meeting Notes</span><span>Product Design</span><span>Development</span></div><div class="project-actions"><a href="belupp.html">Case Study →</a></div></div>
-              <a class="project-preview belupp-preview" href="belupp.html" aria-label="Open Belupp case study"><img src="assets/belupp/belupp-hero-ui.png" alt="Belupp meeting workspace landing screen" /></a>
+            <article class="project-panel panel-looplit" data-project-href="looplit.html">
+              <div class="panel-copy"><span class="panel-number">04</span><span class="panel-type">Personal · Web</span><div class="panel-title"><span class="looplit-mark" aria-hidden="true">L</span><h3><a href="looplit.html">Looplit</a></h3></div><p data-i18n="looplitBody">AI議事録、会社・チームの予定、担当業務を、<span class="nowrap">会議から実行まで</span>一つの流れにつなぐWeb workspace。</p><div class="panel-links"><a href="looplit.html">Case Study →</a></div></div>
+              <div class="panel-visual panel-image-placeholder" aria-hidden="true"><span>IMAGE</span><small>Looplit product UI</small></div>
+            </article>
+            <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
+              <div class="panel-copy"><span class="panel-number">05</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p><div class="panel-links"><a href="lalatulle.html" data-i18n="readCase">ケーススタディを見る →</a><a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">Website ↗</a></div></div>
+              <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="" /></div>
             </article>
           </div>
         </div>
-      </section>
-
-      <section class="portfolio-section page-shell" id="company">
-        <div class="section-heading reveal"><p class="section-label" data-i18n="companyLabel">Company Experience</p><h2 data-i18n="companyTitle">EC体験を、<wbr>データと仮説で改善する。</h2><p data-i18n="companyIntro">検索流入、商品閲覧、購入行動をデータで確認しながら、EC体験を改善しました。</p></div>
-        <article class="company-project reveal" data-project-href="lalatulle.html">
-          <div class="project-copy">
-            <div class="project-meta"><span data-i18n="companyProjectType">Company UX Improvement</span><span>2025</span></div>
-            <h3><a href="lalatulle.html">LaLaTulle</a></h3>
-            <p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p>
-            <div class="project-tags"><span>SEO / IA</span><span>GA4</span><span>AB Test</span><span>EC UX</span></div>
-            <div class="project-actions company-actions"><a href="lalatulle.html" data-i18n="readCase">ケーススタディを見る →</a><a href="https://www.lalatulle.jp/c/costume/halloween" target="_blank" rel="noreferrer">Halloween Page ↗</a><a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">LaLaTulle Top ↗</a></div>
-          </div>
-          <a class="company-visual" href="lalatulle.html" aria-label="Open LaLaTulle case study"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="LaLaTulle Halloween and product detail screens" /></a>
-        </article>
       </section>
 
       <section class="contact-section page-shell" id="contact">
