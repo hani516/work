@@ -1,0 +1,46 @@
+.project-belupp { --belupp: #1d5945; --belupp-dark: #123f30; --belupp-soft: #edf4ef; --belupp-lime: #c9f277; }
+.belupp-logo { display: grid; width: 50px; height: 50px; place-items: center; border-radius: 12px; background: var(--belupp); color: var(--belupp-lime); font: 700 24px/1 Inter, sans-serif; }
+.belupp-hero-visual { background: #f2f4ee; }
+.belupp-hero-visual img { width: 94%; height: 88%; border: 1px solid #d8ddd6; border-radius: 8px; object-fit: cover; object-position: top center; box-shadow: 0 20px 50px rgba(24,55,42,.11); }
+.belupp-flow { display: grid; grid-template-columns: repeat(4, minmax(18px,auto) minmax(0,1fr)) minmax(0,1fr); align-items: center; gap: 12px; margin-top: 54px; }
+.belupp-flow article { min-height: 138px; padding: 20px; border: 1px solid #d8ddd8; border-radius: 8px; background: #fff; }
+.belupp-flow article:first-child { background: var(--belupp); color: #fff; }
+.belupp-flow b, .belupp-flow strong, .belupp-flow span { display: block; }
+.belupp-flow b { color: var(--belupp); font-size: 11px; }
+.belupp-flow article:first-child b { color: var(--belupp-lime); }
+.belupp-flow strong { margin-top: 26px; font-size: 16px; }
+.belupp-flow span { margin-top: 8px; color: #737b76; font-size: 12px; }
+.belupp-flow article:first-child span { color: #d8e6dd; }
+.belupp-flow i { color: var(--belupp); font-size: 18px; font-style: normal; }
+.belupp-product-shot { margin-top: 34px; height: 610px; background: #edf1eb; }
+.belupp-product-shot img { width: 92%; height: 88%; object-fit: cover; object-position: top center; border-radius: 8px; box-shadow: 0 18px 52px rgba(24,55,42,.12); }
+.belupp-ai-layout { align-items: center; }
+.belupp-ai-layout .feature-copy h2 { font-size: 38px; }
+.project-belupp .nowrap { white-space: nowrap; }
+.belupp-review-visual { padding: 54px; border: 1px solid #d7ddd8; border-radius: 8px; background: #f2f5f1; }
+.review-source, .review-candidate { padding: 24px; border: 1px solid #d9ded9; border-radius: 8px; background: #fff; }
+.review-source small, .review-candidate small { color: var(--belupp); font: 700 10px/1 Inter, sans-serif; }
+.review-source p { margin: 15px 0 0; color: #4e5852; font-size: 14px; line-height: 1.75; }
+.review-arrow { display: block; padding: 14px 0; color: var(--belupp); text-align: center; }
+.review-candidate { border-color: #a8c5b4; }
+.review-candidate strong { display: block; margin-top: 14px; font-size: 17px; }
+.review-candidate p { margin: 8px 0 0; color: #7a817d; font-size: 12px; }
+.review-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+.review-actions span, .review-actions strong { padding: 13px; border-radius: 6px; background: #fff; text-align: center; font-size: 11px; }
+.review-actions strong { background: var(--belupp); color: #fff; }
+.belupp-system-section { background: var(--belupp-soft); }
+.belupp-principles article { background: rgba(255,255,255,.75); }
+.belupp-principles .index-no { color: var(--belupp); }
+
+@media (max-width: 900px) {
+  .belupp-flow { grid-template-columns: 1fr; }
+  .belupp-flow i { transform: rotate(90deg); text-align: center; }
+  .belupp-product-shot { height: 440px; }
+}
+
+@media (max-width: 520px) {
+  .belupp-ai-layout .feature-copy h2 { font-size: 26px; }
+  .belupp-review-visual { padding: 20px; }
+  .review-actions { grid-template-columns: 1fr; }
+  .belupp-product-shot { height: 300px; }
+}

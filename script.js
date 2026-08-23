@@ -19,6 +19,7 @@ const translations = {
     wivloBody: "自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。",
     tramiBody: "運動を始める、記録する、振り返る流れをシンプルにした個人開発のフィットネスアプリ。",
     blinqBody: "予定と支出を同じカレンダーで管理する、デザイナー1名・開発者1名の協業モバイルプロジェクト。",
+    beluppBody: "AI議事録、会社・チームの予定、担当業務を、<span class=\"nowrap\">会議から実行まで</span>一つの流れにつなぐWeb workspace。",
     contactTitle: "プロダクトとUXについて、<wbr>話しましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る ↗", backTop: "Back to top",
   },
   en: {
@@ -41,6 +42,7 @@ const translations = {
     wivloBody: "A knowledge workspace that brings personal records back as references and turns them into the next editable document with AI.",
     tramiBody: "A personally designed and developed fitness app focused on starting, recording, and reviewing workouts.",
     blinqBody: "A collaborative mobile project by one designer and one developer, combining schedules and spending in one calendar.",
+    beluppBody: "A web workspace connecting AI meeting notes, team schedules, and assigned work from discussion through execution.",
     contactTitle: "Let’s talk about products and UX.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository ↗", backTop: "Back to top",
   },
   ko: {
@@ -63,6 +65,7 @@ const translations = {
     wivloBody: "내 기록을 Reference로 불러오고 AI와 함께 다음 문서로 재사용하는 지식 워크스페이스.",
     tramiBody: "운동 시작, 기록, 회고 흐름을 단순하게 만든 개인 개발 피트니스 앱.",
     blinqBody: "일정과 지출을 하나의 캘린더에서 관리하는 디자이너 1명·개발자 1명의 협업 모바일 프로젝트.",
+    beluppBody: "AI 회의록, 회사·팀 일정, 담당 업무를 회의부터 실행까지 하나의 흐름으로 연결한 웹 워크스페이스.",
     contactTitle: "프로덕트와 UX에 대해 이야기해요.", contactBody: "채용, 포트폴리오, 협업 관련 연락은 아래 링크를 이용해 주세요.", githubCta: "저장소 보기 ↗", backTop: "맨 위로",
   },
 };

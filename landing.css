@@ -75,6 +75,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wivlo); outline
 .project-index { align-self: start; padding-top: 8px; color: var(--muted); font-size: 11px; }
 .project-name { display: flex; align-items: center; gap: 14px; }
 .project-name img { width: 46px; height: 46px; border-radius: 11px; object-fit: contain; }
+.belupp-mark { display: grid; width: 46px; height: 46px; place-items: center; border-radius: 11px; background: #1d5945; color: #c9f277; font: 700 22px/1 Inter, sans-serif; }
 .project-name h3 { margin: 0; font-size: clamp(30px,4vw,48px); line-height: 1; font-weight: 620; }
 .project-summary > p { max-width: 520px; margin: 24px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
 .project-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
@@ -85,6 +86,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--wivlo); outline
 .wivlo-preview { background: #f0f2fb; }
 .wivlo-preview > img:first-child { width: 86%; height: auto; box-shadow: 0 16px 36px rgba(24,24,26,.1); }
 .wivlo-preview > img:last-child { position: absolute; right: 6%; bottom: -8%; width: 22%; height: 78%; filter: drop-shadow(0 12px 20px rgba(24,24,26,.16)); }
+.belupp-preview { background: #f2f4ee; }
+.belupp-preview > img { width: 94%; height: 88%; border: 1px solid #d9ddd5; border-radius: 8px; background: #fff; object-fit: cover; object-position: top center; box-shadow: 0 16px 36px rgba(25,55,42,.1); }
 
 .contact-section { display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: end; padding-block: 128px; }
 .contact-copy h2 { max-width: 520px; margin: 0; font-size: clamp(30px,4.4vw,48px); line-height: 1.35; font-weight: 600; text-wrap: balance; }
