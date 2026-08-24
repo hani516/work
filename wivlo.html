@@ -13,43 +13,30 @@
     <link rel="stylesheet" href="wivlo-responsive.css" />
     <link rel="stylesheet" href="wivlo-tune.css" />
     <link rel="stylesheet" href="site-header.css" />
+    <link rel="stylesheet" href="project-hero.css" />
   </head>
   <body class="wivlo-product-page wivlo-case-study-page">
     <header class="case-header product-header project-page-header">
       <a class="back-link" href="index.html#projects">← Portfolio</a>
       <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#shipped">Shipped</a>
+        <a href="#overview">Overview</a><a href="#service-analysis">Analysis</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#shipped">Shipped</a>
       </nav>
     </header>
 
     <main>
-      <section class="wivlo-hero" id="overview">
-        <div class="wivlo-hero-copy">
-          <div class="wivlo-brand-lockup"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><span>Wivlo</span></div>
-          <p class="product-kicker">AI-native knowledge workspace</p>
-          <h1>記録を参照し、AIで文書を編集する。</h1>
-          <p class="wivlo-hero-lead">ノート、Reference、AI Action、AI ChatをEditorで使用できるknowledge workspaceです。WebとiOSのUX設計、UI、実装、リリースを担当しました。</p>
-          <div class="product-links" aria-label="Wivlo product links">
+      <section class="case-hero wivlo-hero project-hero" id="overview">
+        <div class="wivlo-hero-copy project-hero-copy">
+          <div class="case-brand project-hero-brand"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><p class="case-kicker">AI-native knowledge workspace</p></div>
+          <h1>Wivlo</h1>
+          <h2>記録を参照し、AIで文書を編集する。</h2>
+          <p class="wivlo-hero-lead case-lead">ノート、Reference、AI Action、AI ChatをEditorで使用できるknowledge workspaceです。WebとiOSのUX設計、UI、実装、リリースを担当しました。</p>
+          <div class="case-meta" aria-label="Project metadata"><span>2026.04 — Present</span><span>Founder / Product Designer / Developer</span><span>Strategy / UX / UI / AI Logic / Build</span><span>Web / iOS</span></div>
+          <div class="product-links case-links" aria-label="Wivlo product links">
             <a href="https://wivlo.io" target="_blank" rel="noreferrer">Live product ↗</a>
             <a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a>
           </div>
         </div>
-        <div class="wivlo-stage" aria-label="Wivlo desktop product preview">
-          <figure class="browser-frame">
-            <div class="browser-dots"><span></span><span></span><span></span></div>
-            <img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="WivloのデスクトップEditor画面" />
-          </figure>
-          <div class="floating-chip chip-reference">@ Reference</div>
-          <div class="floating-chip chip-action">/ AI Action</div>
-          <div class="floating-chip chip-editor">Editor is the center</div>
-        </div>
-      </section>
-
-      <section class="case-facts" aria-label="Project overview">
-        <article><span>Role</span><b>Founder / Product Designer / Developer</b></article>
-        <article><span>Period</span><b>2026.04 — Present</b></article>
-        <article><span>Scope</span><b>Strategy / UX / UI / AI Logic / Build</b></article>
-        <article><span>Status</span><b>Web live / iOS launched</b></article>
+        <figure class="hero-visual project-hero-visual wivlo-stage" aria-label="Wivlo desktop product preview"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="WivloのデスクトップEditor画面" /></figure>
       </section>
 
       <section class="problem-story" id="problem">
@@ -62,9 +49,46 @@
           <span>Idea</span><i>→</i><span>Chat / Web</span><i>→</i><span>Notes / Notion</span><i>→</i><span>Forgotten</span><i>→</i><span>Search again</span>
         </div>
         <div class="friction-grid">
-          <article><span>01 / Recall</span><i class="problem-symbol symbol-recall" aria-hidden="true"></i><h3>保存場所や正確なタイトルを思い出せない。</h3><p>内容の一部だけを覚えている場合、キーワード検索を始めにくい。</p></article>
-          <article><span>02 / Fragmentation</span><i class="problem-symbol symbol-fragmented" aria-hidden="true"></i><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
-          <article><span>03 / Context loss</span><i class="problem-symbol symbol-context-loss" aria-hidden="true"></i><h3>見つけた情報を文書へ再入力する必要がある。</h3><p>検索結果をコピーし、前提を説明してから文書に追加していました。</p></article>
+          <article><span>01 / Recall</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><h3>保存場所や正確なタイトルを思い出せない。</h3><p>内容の一部だけを覚えている場合、キーワード検索を始めにくい。</p></article>
+          <article><span>02 / Fragmentation</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
+          <article><span>03 / Context loss</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#file-input"></use></svg><h3>見つけた情報を文書へ再入力する必要がある。</h3><p>検索結果をコピーし、前提を説明してから文書に追加していました。</p></article>
+        </div>
+      </section>
+
+      <section class="service-analysis-section" id="service-analysis">
+        <div class="product-section-copy">
+          <p class="product-kicker">Existing service analysis</p>
+          <h2>既存サービスが最適化している作業と、再利用時に残る工程を比較した。</h2>
+          <p>機能数ではなく、記録した情報を次の文書で使うまでに必要な操作を比較しました。</p>
+        </div>
+        <div class="service-landscape" aria-label="Notion、Obsidian、Apple Notes、Google Docs、Memの比較">
+          <article>
+            <header><span class="service-logo"><img src="assets/wivlo/notion.png" alt="Notion logo" /></span><strong>Notion</strong></header>
+            <dl><div><dt>Primary use</dt><dd>ページとDatabaseで情報を構造化する。</dd></div><div><dt>Reuse step</dt><dd>対象ページを探し、複数ページを開いて内容を組み合わせる。</dd></div></dl>
+          </article>
+          <article class="is-obsidian">
+            <header><span class="service-logo"><img src="assets/wivlo/obsidian.png" alt="Obsidian logo" /></span><strong>Obsidian</strong></header>
+            <dl><div><dt>Primary use</dt><dd>Local fileとLinkでノートを接続する。</dd></div><div><dt>Reuse step</dt><dd>Link、Property、Graphの構造をユーザーが管理する。</dd></div></dl>
+          </article>
+          <article>
+            <header><span class="service-logo"><img src="assets/wivlo/apple-notes.webp" alt="Apple Notes logo" /></span><strong>Apple Notes</strong></header>
+            <dl><div><dt>Primary use</dt><dd>すぐに記録し、端末間で同期する。</dd></div><div><dt>Reuse step</dt><dd>過去の内容を探し、新しい文書へ手動で移す。</dd></div></dl>
+          </article>
+          <article>
+            <header><span class="service-logo"><img src="assets/wivlo/google-docs.jpg" alt="Google Docs logo" /></span><strong>Google Docs</strong></header>
+            <dl><div><dt>Primary use</dt><dd>文書を共同編集し、完成した内容を共有する。</dd></div><div><dt>Reuse step</dt><dd>過去文書を探し、必要な部分を新しい文書へコピーする。</dd></div></dl>
+          </article>
+          <article>
+            <header><span class="service-logo"><img src="assets/wivlo/mem.jpg" alt="Mem logo" /></span><strong>Mem</strong></header>
+            <dl><div><dt>Primary use</dt><dd>AI Searchと関連ノートで過去の記録を見つける。</dd></div><div><dt>Reuse step</dt><dd>検索結果と、編集中の文書で使う参照範囲を分けて扱う。</dd></div></dl>
+          </article>
+        </div>
+        <div class="analysis-synthesis" aria-label="既存サービス分析からWivloの設計判断までの流れ">
+          <div class="analysis-signals"><span>Capture</span><span>Structure</span><span>Connect</span><span>Search</span><span>Collaborate</span></div>
+          <i aria-hidden="true">→</i>
+          <div class="analysis-gap"><small>Observed task</small><strong>Search → Open → Copy → Rebuild context</strong></div>
+          <i aria-hidden="true">→</i>
+          <div class="analysis-wivlo"><small>Wivlo decision</small><strong>Reference + Editor</strong><p>選択した記録と原文をEditorの横に置き、AI結果を編集可能な文書へ戻す。</p></div>
         </div>
       </section>
 
@@ -80,11 +104,11 @@
           <div><span>04</span><b>Artifacts, not answers</b><p>結果を会話に閉じず、次も使える文書にする。</p></div>
         </div>
         <div class="core-flow" aria-label="Wivlo core user flow">
-          <article><span>01</span><i class="flow-symbol flow-capture" aria-hidden="true"></i><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
-          <article><span>02</span><i class="flow-symbol flow-connect" aria-hidden="true"></i><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
-          <article><span>03</span><i class="flow-symbol flow-retrieve" aria-hidden="true"></i><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
-          <article><span>04</span><i class="flow-symbol flow-reuse" aria-hidden="true"></i><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
-          <article><span>05</span><i class="flow-symbol flow-create" aria-hidden="true"></i><b>Create</b><p>Editable note</p></article>
+          <article><span>01</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
+          <article><span>02</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#tags"></use></svg><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
+          <article><span>03</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
+          <article><span>04</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
+          <article><span>05</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg><b>Create</b><p>Editable note</p></article>
         </div>
       </section>
 
@@ -99,6 +123,13 @@
           <article><b>B</b><h3>Prompt → Document</h3><p>生成は速いが、ユーザーがAI出力のレビュー役になる。</p><div class="layout-sketch stack-sketch"><i></i><i></i></div></article>
           <article class="is-final"><b>Final</b><h3>@ Context + / Action</h3><p>AIの知識と行動を分け、Editorの中で必要な瞬間だけ接続する。</p><div class="layout-sketch editor-sketch"><i></i><i></i><em>@ /</em></div></article>
         </div>
+        <div class="reference-interaction-flow" aria-label="Reference選択からAI結果を文書へ戻すまでの操作">
+          <article><span>01 / Scope</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><strong>@ を入力する</strong><p>今回使うノートだけを検索する。</p></article><i aria-hidden="true">→</i>
+          <article><span>02 / Inspect</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg><strong>Referenceを選ぶ</strong><p>原文をEditorの横で確認する。</p></article><i aria-hidden="true">→</i>
+          <article><span>03 / Action</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><strong>/ を入力する</strong><p>要約・構造化などの処理を選ぶ。</p></article><i aria-hidden="true">→</i>
+          <article><span>04 / Continue</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><strong>文書へ戻す</strong><p>結果を挿入し、そのまま編集を続ける。</p></article>
+        </div>
+        <div class="interaction-tradeoff"><span>Interaction trade-off</span><p>@ と / には学習コストが残ります。一方で、参照範囲とAI処理を別々の操作として固定し、AIが勝手に文脈を決める状態を避けました。</p></div>
       </section>
 
       <section class="product-feature feature-reference">
