@@ -10,7 +10,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 
 body {
   margin: 0;
@@ -19,9 +19,14 @@ body {
   font-family: Inter, "Noto Sans JP", "Noto Sans KR", sans-serif;
   font-weight: 400;
   line-break: strict;
-  word-break: normal;
+  word-break: auto-phrase;
   overflow-wrap: break-word;
 }
+
+:lang(en) { word-break: normal; }
+:lang(ko) { word-break: keep-all; }
+h1, h2, h3, blockquote { text-wrap: balance; }
+p, li { text-wrap: pretty; }
 
 body.project-trami { --accent: #ef9d21; --accent-soft: #fff7e9; }
 body.project-blinq { --accent: #42abc8; --accent-soft: #edf9fc; }

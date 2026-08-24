@@ -18,7 +18,7 @@
     <header class="case-header product-header project-page-header">
       <a class="back-link" href="index.html#projects">← Portfolio</a>
       <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#super-tag">Super Tag</a><a href="#shipped">Shipped</a>
+        <a href="#overview">Overview</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#shipped">Shipped</a>
       </nav>
     </header>
 
@@ -27,8 +27,8 @@
         <div class="wivlo-hero-copy">
           <div class="wivlo-brand-lockup"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><span>Wivlo</span></div>
           <p class="product-kicker">AI-native knowledge workspace</p>
-          <h1>書いた記録を、<wbr>次の仕事へ戻す。</h1>
-          <p class="wivlo-hero-lead">一度作った記録を、次の仕事のcontextとして育て続ける。人が書き手であり続けるためのAI UXを、Web・iOSの実装と運用まで一人でつないだプロダクトです。</p>
+          <h1>記録を参照し、AIで文書を編集する。</h1>
+          <p class="wivlo-hero-lead">ノート、Reference、AI Action、AI ChatをEditorで使用できるknowledge workspaceです。WebとiOSのUX設計、UI、実装、リリースを担当しました。</p>
           <div class="product-links" aria-label="Wivlo product links">
             <a href="https://wivlo.io" target="_blank" rel="noreferrer">Live product ↗</a>
             <a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a>
@@ -55,43 +55,43 @@
       <section class="problem-story" id="problem">
         <div class="product-section-copy">
           <p class="product-kicker">Problem framing</p>
-          <h2>記録は増えるのに、<wbr>知識は仕事へ戻ってこない。</h2>
-          <p>企画はNotion、調査はChatGPT、思いつきはApple Notes、資料はDriveに残る。問題は情報の分散だけではなく、captureした記録と次のcreationの間で文脈が失われることでした。</p>
+          <h2>保存した記録を、次の文書で再利用しにくい。</h2>
+          <p>企画はNotion、調査はChatGPT、思いつきはApple Notes、資料はDriveに保存していました。次の文書を作る際は、各ツールを検索して内容をコピーする必要がありました。</p>
         </div>
         <div class="fragmented-flow" aria-label="Fragmented knowledge workflow">
           <span>Idea</span><i>→</i><span>Chat / Web</span><i>→</i><span>Notes / Notion</span><i>→</i><span>Forgotten</span><i>→</i><span>Search again</span>
         </div>
         <div class="friction-grid">
-          <article><span>01 / Recall</span><h3>場所ではなく、断片だけを覚えている。</h3><p>正確なタイトルや保存先を思い出せず、検索の入口に立てません。</p></article>
-          <article><span>02 / Fragmentation</span><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
-          <article><span>03 / Context loss</span><h3>見つけても、次の作業へつながらない。</h3><p>検索、コピー、前提説明を繰り返すたび、記録は未来の入力になれません。</p></article>
+          <article><span>01 / Recall</span><i class="problem-symbol symbol-recall" aria-hidden="true"></i><h3>保存場所や正確なタイトルを思い出せない。</h3><p>内容の一部だけを覚えている場合、キーワード検索を始めにくい。</p></article>
+          <article><span>02 / Fragmentation</span><i class="problem-symbol symbol-fragmented" aria-hidden="true"></i><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
+          <article><span>03 / Context loss</span><i class="problem-symbol symbol-context-loss" aria-hidden="true"></i><h3>見つけた情報を文書へ再入力する必要がある。</h3><p>検索結果をコピーし、前提を説明してから文書に追加していました。</p></article>
         </div>
       </section>
 
       <section class="strategy-section">
         <div class="hmw-card">
           <p class="product-kicker">Product thesis</p>
-          <blockquote>すべてのアウトプットを、確認でき、編集でき、次の仕事で再利用できるcontextにする。</blockquote>
+          <blockquote>AIの出力を確認・編集できる文書として保存し、次の作業でも参照できるようにする。</blockquote>
         </div>
         <div class="principle-strip case-principles">
           <div><span>01</span><b>Capture before structure</b><p>整理を要求せず、思考を先に残せる。</p></div>
-          <div><span>02</span><b>Context at the point of work</b><p>検索画面ではなく、書く瞬間へ文脈を戻す。</p></div>
+          <div><span>02</span><b>Context in Editor</b><p>ReferenceをEditorの隣に表示する。</p></div>
           <div><span>03</span><b>Inspectable AI</b><p>AIが何を知っているかをユーザーが確認できる。</p></div>
           <div><span>04</span><b>Artifacts, not answers</b><p>結果を会話に閉じず、次も使える文書にする。</p></div>
         </div>
         <div class="core-flow" aria-label="Wivlo core user flow">
-          <article><span>01</span><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
-          <article><span>02</span><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
-          <article><span>03</span><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
-          <article><span>04</span><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
-          <article><span>05</span><b>Create</b><p>Editable note</p></article>
+          <article><span>01</span><i class="flow-symbol flow-capture" aria-hidden="true"></i><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
+          <article><span>02</span><i class="flow-symbol flow-connect" aria-hidden="true"></i><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
+          <article><span>03</span><i class="flow-symbol flow-retrieve" aria-hidden="true"></i><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
+          <article><span>04</span><i class="flow-symbol flow-reuse" aria-hidden="true"></i><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
+          <article><span>05</span><i class="flow-symbol flow-create" aria-hidden="true"></i><b>Create</b><p>Editable note</p></article>
         </div>
       </section>
 
       <section class="product-evolution decision-section" id="decision">
         <div class="product-section-copy">
           <p class="product-kicker">Key UX decision</p>
-          <h2>Prompt boxではなく、<wbr>二つの操作でAIとの契約を作る。</h2>
+          <h2>@で参照範囲を指定し、/でAI処理を選択する。</h2>
           <p><strong>@ は「AIが何を知るか」</strong>、<strong>/ は「AIが何をするか」</strong>を決めます。context selectionとtransformationを分けることで、Editorの主導権をユーザーに残しました。</p>
         </div>
         <div class="evolution-rail exploration-rail">
@@ -104,8 +104,8 @@
       <section class="product-feature feature-reference">
         <div class="product-section-copy sticky-copy">
           <p class="product-kicker">@ Reference</p>
-          <h2>必要な記録だけを、<wbr>今の文書につなげる。</h2>
-          <p>Referenceは単なる添付ではなく、AIとのcontext contractです。自動取得だけに頼らず、ユーザーが根拠を明示的に選び、Editorの隣で原文まで確認できるようにしました。</p>
+          <h2>選択した記録を、編集中の文書にReferenceとして追加する。</h2>
+          <p>ユーザーがノートをReferenceとして選択し、Editorの隣で原文を確認できるようにしました。AI Actionは選択されたReferenceを参照します。</p>
           <ul class="feature-list"><li>参照範囲をユーザーが決める</li><li>原文へ戻れる導線を残す</li><li>AI結果を編集可能なブロックにする</li></ul>
         </div>
         <figure class="product-screen large-screen">
@@ -117,7 +117,7 @@
       <section class="ai-logic-section" id="ai-logic">
         <div class="product-section-copy">
           <p class="product-kicker">Designing the AI logic</p>
-          <h2>AI機能ではなく、<wbr>context boundaryを設計する。</h2>
+          <h2>ユーザーが選ぶ文脈と、システムが検索する文脈を分ける。</h2>
           <p>すべてのノートを毎回送るのではなく、ユーザーが選ぶcontextとシステムが探すcontextの役割を分けました。タスク別に候補を組み立て、数と文字量に上限を置くことで、信頼・速度・コストを同じUX問題として扱いました。</p>
         </div>
         <div class="ai-system-map" aria-label="Wivlo AI context architecture">
@@ -136,7 +136,7 @@
       <section class="agent-section" id="ai-agent">
         <div class="product-section-copy agent-intro">
           <p class="product-kicker">AI Agent / Interaction redesign</p>
-          <h2>呼び出すAIから、<wbr>変化に気づくAIへ。</h2>
+          <h2>AI Agentを常時表示し、文書の変更後に提案を出す。</h2>
           <p>一般的な文書AIは、ユーザーがボタンを探し、パネルを開き、指示して初めて動きます。WivloではAgentを初期表示し、文書の変化量をきっかけに、今必要な支援を先回りして提示する設計に変えました。</p>
         </div>
         <div class="agent-comparison" aria-label="Passive AI and Wivlo AI Agent comparison">
@@ -158,8 +158,8 @@
           </article>
         </div>
         <div class="agent-lifecycle">
-          <article><span>While writing</span><h3>変化量をトリガーに支援する</h3><p>一定の変更量に達した時点で文書を読み、next stepと関連する過去ノートを提示します。</p><div class="agent-signal"><i></i><i></i><i></i><i></i><b>Suggestion</b></div></article>
-          <article><span>After writing</span><h3>整理作業を引き受ける</h3><p>編集が落ち着いた後は、要約、tag候補、関連文書の接続をまとめて準備します。</p><div class="agent-output"><b>Summary</b><b>Tags</b><b>Related notes</b></div></article>
+          <article><span>While writing</span><h3>文書の変更量をトリガーにする</h3><p>一定の変更量に達した時点で文書を読み、next stepと関連する過去ノートを提示します。</p><div class="agent-signal"><i></i><i></i><i></i><i></i><b>Suggestion</b></div></article>
+          <article><span>After writing</span><h3>編集後に要約、tag候補、関連文書を作成する</h3><p>編集が落ち着いた後に、3種類の候補をまとめて表示します。</p><div class="agent-output"><b>Summary</b><b>Tags</b><b>Related notes</b></div></article>
           <p class="agent-guardrail"><strong>Design guardrail</strong> Agentは提案までを担い、文書を自動で上書きしない。採用する内容とタイミングはユーザーが決めます。</p>
         </div>
       </section>
@@ -167,7 +167,7 @@
       <section class="branch-link-section" id="branch-links">
         <div class="product-section-copy">
           <p class="product-kicker">Branch &amp; Document Links</p>
-          <h2>つながりではなく、<wbr>関係の意味を保存する。</h2>
+          <h2>BranchとDocument Linkを別の関係として保存する。</h2>
           <p>すべてを同じlinkとして扱うと、なぜ二つの文書がつながったのかが失われます。Wivloでは、思考の派生を残すBranchと、文書同士を参照するLinkを別の操作として設計しました。</p>
         </div>
         <div class="relationship-model">
@@ -177,36 +177,18 @@
             <article class="child-note"><span>Branch note</span><b>新しい仮説</b><p>通常のノートとして編集を続ける</p></article>
           </div>
           <div class="relationship-decisions">
-            <article><span>Branch</span><h3>思考のlineage</h3><p>選択範囲から新しいノートを作り、起点ノート、原文snapshot、section情報を保存します。</p></article>
+            <article><span>Branch</span><h3>選択範囲からBranch noteを作成</h3><p>起点ノート、原文snapshot、section情報を保存します。</p></article>
             <article><span>Document Link</span><h3>明示的な参照関係</h3><p>別々の文書を直接つなぎ、必要な記録へ戻る経路をEditor内に残します。</p></article>
             <article><span>Interface</span><h3>OriginとBranchesを両側に表示</h3><p>派生先では起点を、親ノートでは派生一覧を確認でき、移動しても出発点を失いません。</p></article>
           </div>
         </div>
       </section>
 
-      <section class="super-tag-section" id="super-tag">
-        <div class="super-tag-copy">
-          <p class="product-kicker">Web experiment / Super Tag</p>
-          <h2>繰り返す文書構造を、<wbr>書き直さない。</h2>
-          <p>会議メモやリサーチノートのように、内容は変わっても構造は繰り返されます。Web版では、Editorで選択した構造を再利用可能なtemplateへ変換し、呼び出し語から現在のノートへ挿入できるSuper Tagを実験しています。</p>
-          <p class="experiment-note"><strong>Experiment scope</strong> 自動検出ではなく、ユーザーが選択・保存する方式から検証しています。</p>
-        </div>
-        <div class="supertag-product" aria-label="Super Tag creation and reuse flow">
-          <div class="supertag-toolbar"><span>Super Tag</span><b>＋ Create from selection</b></div>
-          <div class="supertag-templates">
-            <article><span>01</span><b>会議メモ</b><p>日時 · 議題 · 決定事項 · Action</p></article>
-            <article><span>02</span><b>Project brief</b><p>背景 · 目標 · Scope · Next step</p></article>
-            <article><span>03</span><b>Research note</b><p>Source · Finding · Evidence · Question</p></article>
-          </div>
-          <div class="supertag-flow"><span>Select structure</span><i>→</i><span>AI template</span><i>→</i><span>Save trigger</span><i>→</i><span>Insert again</span></div>
-        </div>
-      </section>
-
       <section class="product-context-section">
         <div class="context-copy">
           <p class="product-kicker">One product, two contexts</p>
-          <h2>Mobileで集め、Desktopで考え、<wbr>結果を次のcontextへ戻す。</h2>
-          <p>DesktopとMobileを画面サイズの違いではなく、同じknowledge loopの異なる瞬間として設計しました。Capture → Synthesis → Artifact → Future contextがプラットフォームをまたいで循環します。</p>
+          <h2>Mobileで記録し、Desktopで編集・参照する。</h2>
+          <p>MobileにはQuick capture、音声メモ、検索を配置し、Desktopには長文Editor、複数Reference、AI Actionを配置しました。</p>
           <div class="platform-contexts">
             <article><span>Desktop</span><h3>Write · Compare · Reuse</h3><p>長文Editor、複数Reference、反復的なAI Action。</p></article>
             <article><span>Mobile</span><h3>Text · Voice · Search</h3><p>Quick capture、音声メモと文字起こし、自然言語検索。</p></article>
@@ -221,7 +203,7 @@
       <section class="build-section">
         <div class="product-section-copy">
           <p class="product-kicker">From design to production</p>
-          <h2>デザイン判断を、<wbr>動くプロダクトまでつなぐ。</h2>
+          <h2>設計した機能をWebとiOSに実装し、リリースした。</h2>
           <p>AI-assisted developmentを使い、問題定義、UX/UI、AI logic、実装、QA、配信後の改善を一つのループとして担当しました。広いproductivity suiteから始め、実装を通じて「contextを複利化するEditor」へproduct thesisを絞り込みました。</p>
         </div>
         <div class="build-flow" aria-label="Solo product development flow">
@@ -233,8 +215,8 @@
       <section class="shipped-section" id="shipped">
         <div class="product-section-copy">
           <p class="product-kicker">Shipped, not projected</p>
-          <h2>数字を作らず、<wbr>実際に届けた範囲を示す。</h2>
-          <p>公開できる利用指標がない段階では、誇張した成果ではなく、使えるプロダクトと実装した中核体験を結果として整理しました。</p>
+          <h2>実装・リリースした機能を成果として整理する。</h2>
+          <p>公開できる利用指標はないため、現在動作しているWeb・iOS機能と実装範囲を記載しています。</p>
         </div>
         <div class="shipped-grid">
           <article><span>01</span><b>Web product live</b><p>認証、Editor、Search、Reference、AI workflowを運用。</p></article>
@@ -242,7 +224,7 @@
           <article><span>03</span><b>Context system implemented</b><p>Reference、memory、related notes、source-backed outputを接続。</p></article>
           <article><span>04</span><b>End-to-end ownership</b><p>設計判断をproduction code、QA、deploymentまで継続。</p></article>
         </div>
-        <blockquote class="learning-quote">AI-native productの差は、答えの派手さではなく、何をcontextにし、誰がそれを決め、結果が次にどう残るかで生まれる。</blockquote>
+        <blockquote class="learning-quote">AI機能では、参照する情報、ユーザーの選択範囲、出力の保存方法を一つの操作フローとして設計する必要がある。</blockquote>
         <p class="source-note">Scope note — 公開ユーザー数やretentionは未掲載。2026年8月時点で実装・公開済みの範囲のみを記載しています。</p>
       </section>
     </main>

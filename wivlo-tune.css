@@ -2,8 +2,7 @@
    Core layout, typography, and responsive rules live in wivlo.css. */
 
 .agent-section,
-.branch-link-section,
-.super-tag-section {
+.branch-link-section {
   width: min(var(--content), calc(100% - 48px));
   margin-inline: auto;
   padding: 122px 0;
@@ -11,8 +10,7 @@
 }
 
 .agent-intro,
-.branch-link-section > .product-section-copy,
-.super-tag-copy {
+.branch-link-section > .product-section-copy {
   max-width: 800px;
 }
 
@@ -64,8 +62,7 @@
 .agent-state > p,
 .agent-lifecycle p,
 .relationship-decisions p,
-.branch-diagram p,
-.supertag-templates p {
+.branch-diagram p {
   color: var(--text-soft);
   font-size: 12px;
   line-height: 1.75;
@@ -345,113 +342,9 @@
   margin: 0;
 }
 
-/* Super Tag */
-.super-tag-section {
-  display: grid;
-  grid-template-columns: 0.78fr 1.22fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.experiment-note {
-  margin-top: 28px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  font-size: 12px !important;
-}
-
-.supertag-product {
-  padding: 22px;
-  border: 1px solid rgba(100, 119, 204, 0.25);
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: var(--shadow-soft);
-}
-
-.supertag-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--line);
-}
-
-.supertag-toolbar > span {
-  color: var(--case-deep);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.supertag-toolbar > b {
-  padding: 8px 10px;
-  border-radius: 8px;
-  background: var(--case-deep);
-  color: #fff;
-  font-size: 9px;
-}
-
-.supertag-templates {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.supertag-templates article {
-  min-height: 170px;
-  padding: 17px;
-  border: 1px solid var(--line);
-  border-radius: 11px;
-  background: var(--surface);
-}
-
-.supertag-templates span {
-  color: var(--accent);
-  font-size: 9px;
-  font-weight: 700;
-}
-
-.supertag-templates b {
-  display: block;
-  margin-top: 34px;
-  color: var(--case-deep);
-  font-size: 12px;
-}
-
-.supertag-templates p {
-  margin: 8px 0 0;
-  font-size: 9px;
-}
-
-.supertag-flow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: 18px;
-  padding: 14px;
-  border-radius: 10px;
-  background: var(--case-tint);
-}
-
-.supertag-flow span,
-.supertag-flow i {
-  color: var(--case-deep);
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-}
-
-.supertag-flow i {
-  color: var(--accent);
-}
-
 @media (max-width: 900px) {
   .agent-comparison,
-  .relationship-model,
-  .super-tag-section {
+  .relationship-model {
     grid-template-columns: 1fr;
   }
 
@@ -459,14 +352,10 @@
     max-width: 720px;
   }
 
-  .super-tag-section {
-    gap: 48px;
-  }
 }
 
 @media (max-width: 680px) {
-  .agent-section,
-  .super-tag-section {
+  .agent-section {
     width: calc(100% - 24px);
     padding: 86px 0;
   }
@@ -485,8 +374,7 @@
 
   .agent-state,
   .agent-lifecycle > article,
-  .branch-diagram,
-  .supertag-product {
+  .branch-diagram {
     padding: 18px;
   }
 
@@ -513,31 +401,10 @@
     min-height: 205px;
   }
 
-  .supertag-templates {
-    grid-template-columns: 1fr;
-  }
-
-  .supertag-templates article {
-    min-height: 120px;
-  }
-
-  .supertag-templates b {
-    margin-top: 20px;
-  }
-
-  .supertag-flow {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .supertag-flow i {
-    transform: rotate(90deg);
-  }
 }
 
 @media (max-width: 420px) {
-  .agent-state-heading,
-  .supertag-toolbar {
+  .agent-state-heading {
     align-items: flex-start;
     flex-direction: column;
   }
