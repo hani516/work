@@ -3,260 +3,127 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wivlo | Product Design Case Study</title>
-    <meta name="description" content="Wivloを問題定義、Editor-first UX、AI context design、Web・iOS実装まで設計したProduct Design Case Study。" />
+    <title>Wivlo — AI Writing Workspace | Product Design Case Study</title>
+    <meta name="description" content="分散した情報を参照しながら、AIと文書を作るWriting Workspaceを設計・実装したProduct Design Case Study。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/wivlo/wivlo-icon.png" />
-    <link rel="stylesheet" href="wivlo.css" />
-    <link rel="stylesheet" href="wivlo-responsive.css" />
-    <link rel="stylesheet" href="wivlo-tune.css" />
     <link rel="stylesheet" href="site-header.css" />
     <link rel="stylesheet" href="project-hero.css" />
+    <link rel="stylesheet" href="wivlo-v2.css" />
   </head>
   <body class="wivlo-product-page wivlo-case-study-page">
-    <header class="case-header product-header project-page-header">
+    <header class="case-header project-page-header">
       <a class="back-link" href="index.html#projects">← Portfolio</a>
       <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#service-analysis">Analysis</a><a href="#ai-agent">AI Agent</a><a href="#branch-links">Branch &amp; Links</a><a href="#shipped">Shipped</a>
+        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#strategy">Strategy</a><a href="#experience">Experience</a><a href="#ai-design">AI Design</a><a href="#learnings">Learnings</a>
       </nav>
     </header>
 
     <main>
-      <section class="case-hero wivlo-hero project-hero" id="overview">
-        <div class="wivlo-hero-copy project-hero-copy">
-          <div class="case-brand project-hero-brand"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><p class="case-kicker">AI-native knowledge workspace</p></div>
+      <section class="project-hero wivlo-hero" id="overview">
+        <div class="project-hero-copy">
+          <div class="case-brand"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><p class="case-kicker">AI Writing Workspace</p></div>
           <h1>Wivlo</h1>
-          <h2>記録を参照し、AIで文書を編集する。</h2>
-          <p class="wivlo-hero-lead case-lead">ノート、Reference、AI Action、AI ChatをEditorで使用できるknowledge workspaceです。WebとiOSのUX設計、UI、実装、リリースを担当しました。</p>
-          <div class="case-meta" aria-label="Project metadata"><span>2026.04 — Present</span><span>Founder / Product Designer / Developer</span><span>Strategy / UX / UI / AI Logic / Build</span><span>Web / iOS</span></div>
-          <div class="product-links case-links" aria-label="Wivlo product links">
-            <a href="https://wivlo.io" target="_blank" rel="noreferrer">Live product ↗</a>
-            <a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a>
-          </div>
+          <h2>必要な情報を探しながら、<br />文書を完成させる。</h2>
+          <p class="case-lead">ノートや外部サービスの情報をEditorの文脈として使い、AIとの共同編集と委任を一つの作業空間で行うプロダクトです。</p>
+          <div class="case-meta" aria-label="Project metadata"><span>2026.04 — Present</span><span>Founder / Product Designer / Developer</span><span>Product Strategy / UX / UI / AI Interaction / Build</span><span>Web / iOS · Solo project</span></div>
+          <div class="case-links" aria-label="Wivlo product links"><a href="https://wivlo.io" target="_blank" rel="noreferrer">Live product ↗</a><a href="https://apps.apple.com/jp/app/wivlo/id6785180543" target="_blank" rel="noreferrer">App Store ↗</a></div>
         </div>
-        <figure class="hero-visual project-hero-visual wivlo-stage" aria-label="Wivlo desktop product preview"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="WivloのデスクトップEditor画面" /></figure>
+        <figure class="project-hero-visual wivlo-hero-screen"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="WivloのDesktop Editor画面" /></figure>
       </section>
 
-      <section class="problem-story" id="problem">
-        <div class="product-section-copy">
-          <p class="product-kicker">Problem framing</p>
-          <h2>保存した記録を、次の文書で再利用しにくい。</h2>
-          <p>企画はNotion、調査はChatGPT、思いつきはApple Notes、資料はDriveに保存していました。次の文書を作る際は、各ツールを検索して内容をコピーする必要がありました。</p>
-        </div>
-        <div class="fragmented-flow" aria-label="Fragmented knowledge workflow">
-          <span>Idea</span><i>→</i><span>Chat / Web</span><i>→</i><span>Notes / Notion</span><i>→</i><span>Forgotten</span><i>→</i><span>Search again</span>
-        </div>
-        <div class="friction-grid">
-          <article><span>01 / Recall</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><h3>保存場所や正確なタイトルを思い出せない。</h3><p>内容の一部だけを覚えている場合、キーワード検索を始めにくい。</p></article>
-          <article><span>02 / Fragmentation</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><h3>必要な根拠が複数のツールに散らばる。</h3><p>ノート、AI会話、資料を行き来するほど、作業中の文脈が途切れます。</p></article>
-          <article><span>03 / Context loss</span><svg class="problem-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#file-input"></use></svg><h3>見つけた情報を文書へ再入力する必要がある。</h3><p>検索結果をコピーし、前提を説明してから文書に追加していました。</p></article>
-        </div>
+      <section class="case-section overview-section" aria-labelledby="overview-title">
+        <div class="section-heading split-heading"><div><p class="section-index">01 / Overview</p><h2 id="overview-title">ノートを増やすのではなく、<br />既存の知識から成果物を作る。</h2></div><p>企画書、リサーチ、会議資料、ブログなどを作るとき、必要な情報を探す作業と書く作業が分断されます。WivloではEditorを中心に、ReferenceとAI Agentを同じ作業フローへ統合しました。</p></div>
+        <div class="product-thesis" aria-label="Wivlo product thesis"><article><span>Input</span><strong>Notes · Docs · Slack · Drive</strong></article><i aria-hidden="true">→</i><article class="is-accent"><span>Workspace</span><strong>Reference · Co-write · Delegate</strong></article><i aria-hidden="true">→</i><article><span>Output</span><strong>Brief · Report · Article · PRD</strong></article></div>
       </section>
 
-      <section class="service-analysis-section" id="service-analysis">
-        <div class="product-section-copy">
-          <p class="product-kicker">Existing service analysis</p>
-          <h2>既存サービスが最適化している作業と、再利用時に残る工程を比較した。</h2>
-          <p>機能数ではなく、記録した情報を次の文書で使うまでに必要な操作を比較しました。</p>
+      <section class="case-section problem-section" id="problem" aria-labelledby="problem-title">
+        <div class="section-heading split-heading"><div><p class="section-index">02 / Problem</p><h2 id="problem-title">書く前に、過去の情報を<br />探し直していた。</h2></div><p>保存した場所やタイトルを忘れるだけでなく、その記録が存在したこと自体も忘れます。結果として、同じ内容をもう一度調べ、似た文書を繰り返し作っていました。</p></div>
+        <div class="broken-workflow" aria-label="分断された従来のWriting workflow">
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><span>Find sources</span><small>Notion / Drive / Notes</small></article><i>→</i>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><span>Ask AI</span><small>Explain context again</small></article><i>→</i>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><span>Edit</span><small>Correct the output</small></article><i>→</i>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-input"></use></svg><span>Copy / Paste</span><small>Move to the document</small></article><i>→</i>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><span>Verify</span><small>Return to the source</small></article>
         </div>
-        <div class="service-landscape" aria-label="Notion、Obsidian、Apple Notes、Google Docs、Memの比較">
-          <article>
-            <header><span class="service-logo"><img src="assets/wivlo/notion.png" alt="Notion logo" /></span><strong>Notion</strong></header>
-            <dl><div><dt>Primary use</dt><dd>ページとDatabaseで情報を構造化する。</dd></div><div><dt>Reuse step</dt><dd>対象ページを探し、複数ページを開いて内容を組み合わせる。</dd></div></dl>
-          </article>
-          <article class="is-obsidian">
-            <header><span class="service-logo"><img src="assets/wivlo/obsidian.png" alt="Obsidian logo" /></span><strong>Obsidian</strong></header>
-            <dl><div><dt>Primary use</dt><dd>Local fileとLinkでノートを接続する。</dd></div><div><dt>Reuse step</dt><dd>Link、Property、Graphの構造をユーザーが管理する。</dd></div></dl>
-          </article>
-          <article>
-            <header><span class="service-logo"><img src="assets/wivlo/apple-notes.webp" alt="Apple Notes logo" /></span><strong>Apple Notes</strong></header>
-            <dl><div><dt>Primary use</dt><dd>すぐに記録し、端末間で同期する。</dd></div><div><dt>Reuse step</dt><dd>過去の内容を探し、新しい文書へ手動で移す。</dd></div></dl>
-          </article>
-          <article>
-            <header><span class="service-logo"><img src="assets/wivlo/google-docs.jpg" alt="Google Docs logo" /></span><strong>Google Docs</strong></header>
-            <dl><div><dt>Primary use</dt><dd>文書を共同編集し、完成した内容を共有する。</dd></div><div><dt>Reuse step</dt><dd>過去文書を探し、必要な部分を新しい文書へコピーする。</dd></div></dl>
-          </article>
-          <article>
-            <header><span class="service-logo"><img src="assets/wivlo/mem.jpg" alt="Mem logo" /></span><strong>Mem</strong></header>
-            <dl><div><dt>Primary use</dt><dd>AI Searchと関連ノートで過去の記録を見つける。</dd></div><div><dt>Reuse step</dt><dd>検索結果と、編集中の文書で使う参照範囲を分けて扱う。</dd></div></dl>
-          </article>
-        </div>
-        <div class="analysis-synthesis" aria-label="既存サービス分析からWivloの設計判断までの流れ">
-          <div class="analysis-signals"><span>Capture</span><span>Structure</span><span>Connect</span><span>Search</span><span>Collaborate</span></div>
-          <i aria-hidden="true">→</i>
-          <div class="analysis-gap"><small>Observed task</small><strong>Search → Open → Copy → Rebuild context</strong></div>
-          <i aria-hidden="true">→</i>
-          <div class="analysis-wivlo"><small>Wivlo decision</small><strong>Reference + Editor</strong><p>選択した記録と原文をEditorの横に置き、AI結果を編集可能な文書へ戻す。</p></div>
+        <div class="problem-evidence">
+          <article><span>01</span><strong>保存場所を思い出せない</strong><p>どのサービス、どのプロジェクト、どのノートに保存したかを先に思い出す必要がある。</p></article>
+          <article><span>02</span><strong>検索語を再現できない</strong><p>従来のキーワード検索では、過去に使った表現を覚えていないと候補を絞りにくい。</p></article>
+          <article><span>03</span><strong>同じ文書を作り直す</strong><p>過去の成果物を見つけられず、調査や構成から似た作業を繰り返す。</p></article>
+          <article><span>04</span><strong>AIと原文が離れている</strong><p>回答を得ても、根拠の確認と文書への反映は別の画面と操作になる。</p></article>
         </div>
       </section>
 
-      <section class="strategy-section">
-        <div class="hmw-card">
-          <p class="product-kicker">Product thesis</p>
-          <blockquote>AIの出力を確認・編集できる文書として保存し、次の作業でも参照できるようにする。</blockquote>
+      <section class="case-section research-section" aria-labelledby="research-title">
+        <div class="section-heading split-heading"><div><p class="section-index">03 / Research &amp; Insight</p><h2 id="research-title">比較したのは機能数ではなく、<br />再利用までに残る作業。</h2></div><p>記録、接続、共同編集、AI検索にはそれぞれ強いツールがあります。一方で、複数の情報を根拠として新しい文書へ変える工程は、ユーザー側に残っていました。</p></div>
+        <div class="competitor-strip" aria-label="Existing service analysis">
+          <article><img src="assets/wivlo/notion.png" alt="Notion logo" /><strong>Notion</strong><p>情報を構造化できるが、複数ページの探索と統合は手作業。</p></article>
+          <article><img src="assets/wivlo/obsidian.png" alt="Obsidian logo" /><strong>Obsidian</strong><p>知識を接続できるが、LinkとPropertyの維持が必要。</p></article>
+          <article><img src="assets/wivlo/apple-notes.webp" alt="Apple Notes logo" /><strong>Apple Notes</strong><p>記録は速いが、蓄積後の再利用は検索に依存。</p></article>
+          <article><img src="assets/wivlo/google-docs.jpg" alt="Google Docs logo" /><strong>Google Docs</strong><p>共同編集に強いが、過去文書の再構成は別作業。</p></article>
+          <article><img src="assets/wivlo/mem.jpg" alt="Mem logo" /><strong>Mem</strong><p>AI検索はできるが、検索結果と現在の執筆範囲が分かれる。</p></article>
         </div>
-        <div class="principle-strip case-principles">
-          <div><span>01</span><b>Capture before structure</b><p>整理を要求せず、思考を先に残せる。</p></div>
-          <div><span>02</span><b>Context in Editor</b><p>ReferenceをEditorの隣に表示する。</p></div>
-          <div><span>03</span><b>Inspectable AI</b><p>AIが何を知っているかをユーザーが確認できる。</p></div>
-          <div><span>04</span><b>Artifacts, not answers</b><p>結果を会話に閉じず、次も使える文書にする。</p></div>
-        </div>
-        <div class="core-flow" aria-label="Wivlo core user flow">
-          <article><span>01</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><b>Capture</b><p>Text / Image / Voice</p></article><i>→</i>
-          <article><span>02</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#tags"></use></svg><b>Connect</b><p>Tag / Project / Memory</p></article><i>→</i>
-          <article><span>03</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><b>Retrieve</b><p>Search / @ Reference</p></article><i>→</i>
-          <article><span>04</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><b>Reuse</b><p>AI Action / Chat</p></article><i>→</i>
-          <article><span>05</span><svg class="flow-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg><b>Create</b><p>Editable note</p></article>
+        <div class="insight-pivot"><div class="pivot-notes"><span>Initial question</span><p>どうすればノートを自動で整理できるか。</p><span>Explored</span><p>知識の状態や接続を可視化する案も検討した。</p></div><i aria-hidden="true">→</i><div class="pivot-conclusion"><span>Core insight</span><blockquote>ボトルネックは保存ではなく、既存の知識を使って成果物を作る工程にある。</blockquote></div></div>
+      </section>
+
+      <section class="case-section strategy-section" id="strategy" aria-labelledby="strategy-title">
+        <div class="section-heading split-heading"><div><p class="section-index">04 / Product Strategy</p><h2 id="strategy-title">Note Appから、<br />Writing Workspaceへ。</h2></div><p>情報の保存量や接続数を価値にせず、ユーザーが最終的に完成させたい文書を中心に製品の範囲を決め直しました。</p></div>
+        <div class="positioning-rail" aria-label="Wivlo positioning evolution"><article><span>01</span><strong>AI Note</strong><p>記録と自動整理が中心。既存ノートアプリとの差が機能単位に留まる。</p></article><i>→</i><article><span>02</span><strong>Knowledge Workspace</strong><p>検索と再利用へ拡張。ただし、成果物を作る場所がまだ曖昧だった。</p></article><i>→</i><article class="is-current"><span>03 / Current</span><strong>AI Writing Workspace</strong><p>Editorを中心に、Source、AI、Reviewを一つの作業として設計。</p></article></div>
+        <div class="strategy-decisions">
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><span>Center</span><h3>Editor first</h3><p>検索やChatではなく、文書を完成させる画面をプロダクトの中心に置く。</p></article>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><span>Context</span><h3>Sources beside writing</h3><p>必要な原文を探し、Previewし、引用する操作をEditorの隣に置く。</p></article>
+          <article><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><span>Control</span><h3>AI proposes, user decides</h3><p>AIは候補と作業結果を示し、適用と最終判断はユーザーに残す。</p></article>
         </div>
       </section>
 
-      <section class="product-evolution decision-section" id="decision">
-        <div class="product-section-copy">
-          <p class="product-kicker">Key UX decision</p>
-          <h2>@で参照範囲を指定し、/でAI処理を選択する。</h2>
-          <p><strong>@ は「AIが何を知るか」</strong>、<strong>/ は「AIが何をするか」</strong>を決めます。context selectionとtransformationを分けることで、Editorの主導権をユーザーに残しました。</p>
+      <section class="case-section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading split-heading"><div><p class="section-index">05 / Core Experience</p><h2 id="experience-title">Co-writeするときも、<br />Delegateするときも同じ文脈を使う。</h2></div><p>短い修正はEditor内で共同編集し、調査や長い初稿はAgentへ委任します。二つのモードがCurrent document、Project、外部Sourceを共有するように設計しました。</p></div>
+        <div class="experience-modes">
+          <article class="mode-card"><header><span>01 / Co-write</span><strong>書きながら、必要な根拠を使う</strong></header><div class="mode-workspace co-write-model" aria-label="Co-write interaction model"><div class="mock-editor"><small>Product brief</small><i></i><i></i><i></i><em>@ Reference</em></div><aside><small>Sources</small><b>2025 Research</b><b>Meeting notes</b><button type="button" tabindex="-1">Insert quote</button></aside></div><p>Notion、Slack、Drive、Wivlo内の記録を検索し、Previewした内容だけを挿入・引用する。</p></article>
+          <article class="mode-card is-delegate"><header><span>02 / Delegate</span><strong>長い作業を任せ、結果を検討する</strong></header><div class="mode-workspace delegate-model" aria-label="Delegate interaction model"><ol><li class="is-done">Understanding</li><li class="is-done">Finding context</li><li class="is-active">Drafting</li><li>Checking claims</li></ol><div><small>Review ready</small><strong>3 sections revised</strong><p>7 sources · +428 words</p><button type="button" tabindex="-1">Review changes</button></div></div><p>調査、初稿、根拠確認を別のWriting Runとして処理し、変更理由とSourceを確認してから採用する。</p></article>
         </div>
-        <div class="evolution-rail exploration-rail">
-          <article><b>A</b><h3>Editor | Chat</h3><p>常設Chatが視線と画面を占有し、AIとの対話が中心になる。</p><div class="layout-sketch split-sketch"><i></i><i></i></div></article>
-          <article><b>B</b><h3>Prompt → Document</h3><p>生成は速いが、ユーザーがAI出力のレビュー役になる。</p><div class="layout-sketch stack-sketch"><i></i><i></i></div></article>
-          <article class="is-final"><b>Final</b><h3>@ Context + / Action</h3><p>AIの知識と行動を分け、Editorの中で必要な瞬間だけ接続する。</p><div class="layout-sketch editor-sketch"><i></i><i></i><em>@ /</em></div></article>
-        </div>
-        <div class="reference-interaction-flow" aria-label="Reference選択からAI結果を文書へ戻すまでの操作">
-          <article><span>01 / Scope</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><strong>@ を入力する</strong><p>今回使うノートだけを検索する。</p></article><i aria-hidden="true">→</i>
-          <article><span>02 / Inspect</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg><strong>Referenceを選ぶ</strong><p>原文をEditorの横で確認する。</p></article><i aria-hidden="true">→</i>
-          <article><span>03 / Action</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><strong>/ を入力する</strong><p>要約・構造化などの処理を選ぶ。</p></article><i aria-hidden="true">→</i>
-          <article><span>04 / Continue</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><strong>文書へ戻す</strong><p>結果を挿入し、そのまま編集を続ける。</p></article>
-        </div>
-        <div class="interaction-tradeoff"><span>Interaction trade-off</span><p>@ と / には学習コストが残ります。一方で、参照範囲とAI処理を別々の操作として固定し、AIが勝手に文脈を決める状態を避けました。</p></div>
+        <div class="source-integrations" aria-label="Connected writing sources"><span>Writing context</span><div><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo" /><b>Wivlo</b></div><div><img src="assets/wivlo/notion-source.png" alt="Notion" /><b>Notion</b></div><div><img src="assets/wivlo/slack-source.svg" alt="Slack" /><b>Slack</b></div><div><img src="assets/wivlo/drive-source.svg" alt="Google Drive" /><b>Drive</b></div></div>
+        <div class="end-to-end-flow" aria-label="Sourceから完成文書までのWivlo task flow"><article><span>01</span><b>Create project</b></article><i>→</i><article><span>02</span><b>Connect sources</b></article><i>→</i><article><span>03</span><b>Start writing</b></article><i>→</i><article><span>04</span><b>Preview / Insert</b></article><i>→</i><article><span>05</span><b>Delegate</b></article><i>→</i><article><span>06</span><b>Review changes</b></article><i>→</i><article><span>07</span><b>Final document</b></article></div>
       </section>
 
-      <section class="product-feature feature-reference">
-        <div class="product-section-copy sticky-copy">
-          <p class="product-kicker">@ Reference</p>
-          <h2>選択した記録を、編集中の文書にReferenceとして追加する。</h2>
-          <p>ユーザーがノートをReferenceとして選択し、Editorの隣で原文を確認できるようにしました。AI Actionは選択されたReferenceを参照します。</p>
-          <ul class="feature-list"><li>参照範囲をユーザーが決める</li><li>原文へ戻れる導線を残す</li><li>AI結果を編集可能なブロックにする</li></ul>
+      <section class="ai-section" id="ai-design" aria-labelledby="ai-title"><div class="ai-inner">
+        <div class="section-heading split-heading"><div><p class="section-index">06 / AI Interaction Design</p><h2 id="ai-title">AIが動く条件と、<br />人が判断する境界を設計する。</h2></div><p>AI機能を一つのボタンとして扱わず、Intentの理解、Context探索、Sourceの順位付け、生成、引用、Reviewまでを連続したInteractionとして定義しました。</p></div>
+        <div class="ai-architecture" aria-label="Wivlo AI interaction architecture">
+          <article><span>01</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg><b>User intent</b><small>Goal / instruction</small></article><i>→</i>
+          <article><span>02</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><b>Retrieve</b><small>Project / sources</small></article><i>→</i>
+          <article><span>03</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><b>Rank</b><small>Relevance / scope</small></article><i>→</i>
+          <article><span>04</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><b>Generate</b><small>Draft / revise</small></article><i>→</i>
+          <article><span>05</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg><b>Cite</b><small>Source / claim</small></article><i>→</i>
+          <article class="is-human"><span>06</span><svg aria-hidden="true"><use href="assets/ui-icons.svg#check"></use></svg><b>User review</b><small>Accept / reject / edit</small></article>
         </div>
-        <figure class="product-screen large-screen">
-          <img src="assets/wivlo/wivlo-reference-panel-light.jpg" alt="Editorの横で参照ノートを選ぶWivlo Reference panel" />
-          <figcaption>Explicit reference keeps context inspectable before generation.</figcaption>
-        </figure>
+        <div class="ai-boundaries"><article><span>AI decides</span><p>関連候補の探索、初稿、変更案、Source候補、作業進行。</p></article><article><span>User decides</span><p>参照範囲、適用する変更、曖昧な判断、最終表現、公開。</p></article><article><span>System guardrail</span><p>原文を自動上書きせず、変更内容と根拠をReview可能な状態にする。</p></article></div>
+        <p class="resume-note"><strong>離脱後の復帰</strong> Writing Runは作業段階を記録し、完了後はSummary、変更量、Reference数を表示します。ユーザーは会話を最初から読み直さず、Reviewから再開できます。</p>
+      </div></section>
+
+      <section class="case-section interface-section" aria-labelledby="interface-title">
+        <div class="section-heading split-heading"><div><p class="section-index">07 / Key Interfaces</p><h2 id="interface-title">機能一覧ではなく、<br />判断が起きる画面だけを残す。</h2></div><p>DesktopではEditorとSourceの比較、Mobileでは記録と検索を優先しました。同じデータを使いながら、作業環境に合わせて操作密度を変えています。</p></div>
+        <div class="interface-gallery"><figure class="interface-main"><img src="assets/wivlo/wivlo-reference-panel-light.jpg" alt="Wivlo Editorの横でReferenceを確認する画面" /><figcaption><b>Editor + Source Panel</b><span>原文を確認しながら挿入・引用する。</span></figcaption></figure><figure class="interface-mobile"><div><img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo iOS Home画面" /><img src="assets/wivlo/wivlo-app-ai-ios.png" alt="Wivlo iOS AI画面" /></div><figcaption><b>Mobile capture &amp; search</b><span>片手で記録し、保存した情報へ戻る。</span></figcaption></figure></div>
       </section>
 
-      <section class="ai-logic-section" id="ai-logic">
-        <div class="product-section-copy">
-          <p class="product-kicker">Designing the AI logic</p>
-          <h2>ユーザーが選ぶ文脈と、システムが検索する文脈を分ける。</h2>
-          <p>すべてのノートを毎回送るのではなく、ユーザーが選ぶcontextとシステムが探すcontextの役割を分けました。タスク別に候補を組み立て、数と文字量に上限を置くことで、信頼・速度・コストを同じUX問題として扱いました。</p>
-        </div>
-        <div class="ai-system-map" aria-label="Wivlo AI context architecture">
-          <div class="system-stage input-stage"><span>Input</span><div><b>Current draft</b><b>@ References</b><b>User prompt</b></div></div><i>↓</i>
-          <div class="system-stage policy-stage"><span>Context policy</span><div><b>Feature-specific retrieval</b><b>Ranking</b><b>Context limit</b></div><small>Max 12 notes · 2,600 chars / note · 12,000 chars total</small></div><i>↓</i>
-          <div class="system-stage model-stage"><span>Processing</span><div><b>Deterministic signals</b><b>Embedding / Retrieval</b><b>LLM</b></div></div><i>↓</i>
-          <div class="system-stage output-stage"><span>Output</span><div><b>Answer</b><b>Sources</b><b>Editable block</b></div></div>
-        </div>
-        <div class="logic-grid">
-          <article><span>System logic</span><b>速く、予測可能に</b><p>更新日時、頻度、tag、connectionなどの明確な行動シグナル。</p></article>
-          <article><span>Retrieval</span><b>必要な候補を狭める</b><p>自然言語検索、関連ノート、memory metadata、semantic similarity。</p></article>
-          <article><span>LLM</span><b>意味を扱う場面だけ</b><p>要約、文章改善、質問解釈、構造化、writing assistance。</p></article>
-        </div>
+      <section class="case-section iteration-section" aria-labelledby="iteration-title">
+        <div class="section-heading split-heading"><div><p class="section-index">08 / Design Decisions</p><h2 id="iteration-title">AIの存在感より、<br />執筆の主導権を優先した。</h2></div><p>AIを目立たせるほど価値が伝わるとは限りません。書く、根拠を確かめる、変更を採用するという判断がユーザー側に残るようにInteractionを調整しました。</p></div>
+        <div class="decision-table"><article><span>01 / Workspace</span><div><small>Instead of</small><p>AI Chatを主画面にする</p></div><i>→</i><div><small>Decision</small><strong>Editorを中心に、AIをSide Panelへ置く</strong></div></article><article><span>02 / Output</span><div><small>Instead of</small><p>生成結果で原文を置き換える</p></div><i>→</i><div><small>Decision</small><strong>変更理由とSourceを確認して適用する</strong></div></article><article><span>03 / Relationships</span><div><small>Instead of</small><p>すべての接続を同じLinkにする</p></div><i>→</i><div><small>Decision</small><strong>派生するBranchと参照するLinkを分ける</strong></div></article></div>
       </section>
 
-      <section class="agent-section" id="ai-agent">
-        <div class="product-section-copy agent-intro">
-          <p class="product-kicker">AI Agent / Interaction redesign</p>
-          <h2>AI Agentを常時表示し、文書の変更後に提案を出す。</h2>
-          <p>一般的な文書AIは、ユーザーがボタンを探し、パネルを開き、指示して初めて動きます。WivloではAgentを初期表示し、文書の変化量をきっかけに、今必要な支援を先回りして提示する設計に変えました。</p>
-        </div>
-        <div class="agent-comparison" aria-label="Passive AI and Wivlo AI Agent comparison">
-          <article class="agent-state passive-state">
-            <div class="agent-state-heading"><span>Before / Passive AI</span><b>Open → Ask → Wait</b></div>
-            <div class="passive-panel-visual" aria-hidden="true">
-              <div class="passive-document"><i></i><i></i><i></i><i></i></div>
-              <span class="passive-open-ai">Open AI</span>
-            </div>
-            <p>機能の存在を覚え、作業を止めて、毎回AIを起動する必要がある。</p>
-          </article>
-          <article class="agent-state proactive-state">
-            <div class="agent-state-heading"><span>Wivlo / Proactive Agent</span><b>Observe → Suggest → Apply</b></div>
-            <div class="agent-editor-visual" aria-hidden="true">
-              <div class="agent-document"><strong>Product direction</strong><i></i><i></i><i></i><i></i><i></i></div>
-              <aside><small>Wivlo Agent</small><b>次に整理できること</b><span>論点を3つに分ける</span><span>過去の調査ノートを参照</span></aside>
-            </div>
-            <p>Agentは常に見える位置にあり、書く行為を止めずに次の一手と過去の記録を示す。</p>
-          </article>
-        </div>
-        <div class="agent-lifecycle">
-          <article><span>While writing</span><h3>文書の変更量をトリガーにする</h3><p>一定の変更量に達した時点で文書を読み、next stepと関連する過去ノートを提示します。</p><div class="agent-signal"><i></i><i></i><i></i><i></i><b>Suggestion</b></div></article>
-          <article><span>After writing</span><h3>編集後に要約、tag候補、関連文書を作成する</h3><p>編集が落ち着いた後に、3種類の候補をまとめて表示します。</p><div class="agent-output"><b>Summary</b><b>Tags</b><b>Related notes</b></div></article>
-          <p class="agent-guardrail"><strong>Design guardrail</strong> Agentは提案までを担い、文書を自動で上書きしない。採用する内容とタイミングはユーザーが決めます。</p>
-        </div>
+      <section class="case-section build-section" aria-labelledby="build-title">
+        <div class="section-heading split-heading"><div><p class="section-index">09 / Designer to Builder</p><h2 id="build-title">設計判断を、動く製品まで<br />自分でつなげた。</h2></div><p>1人でProduct Strategy、UX/UI、AIの実行条件、データ構造、Web/iOS実装、QA、配信を担当しました。開発は技術の展示ではなく、Interactionの仮説を実際に検証する手段として扱いました。</p></div>
+        <div class="build-loop" aria-label="Wivlo solo product development loop"><span>Frame</span><i>→</i><span>Design</span><i>→</i><span>Prototype</span><i>→</i><span>Build</span><i>→</i><span>QA</span><i>→</i><span>Release</span><i>↺</i></div>
+        <div class="build-scope"><span>Next.js</span><span>React</span><span>Expo</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span><span>App Store</span><span>Codex-assisted development</span></div>
       </section>
 
-      <section class="branch-link-section" id="branch-links">
-        <div class="product-section-copy">
-          <p class="product-kicker">Branch &amp; Document Links</p>
-          <h2>BranchとDocument Linkを別の関係として保存する。</h2>
-          <p>すべてを同じlinkとして扱うと、なぜ二つの文書がつながったのかが失われます。Wivloでは、思考の派生を残すBranchと、文書同士を参照するLinkを別の操作として設計しました。</p>
-        </div>
-        <div class="relationship-model">
-          <div class="branch-diagram" aria-label="Branch note lineage diagram">
-            <article class="origin-note"><span>Origin note</span><b>プロダクト戦略</b><p>選択した段落と、その時点の文脈</p><em>Selected passage</em></article>
-            <div class="branch-path"><i></i><b>Branch</b></div>
-            <article class="child-note"><span>Branch note</span><b>新しい仮説</b><p>通常のノートとして編集を続ける</p></article>
-          </div>
-          <div class="relationship-decisions">
-            <article><span>Branch</span><h3>選択範囲からBranch noteを作成</h3><p>起点ノート、原文snapshot、section情報を保存します。</p></article>
-            <article><span>Document Link</span><h3>明示的な参照関係</h3><p>別々の文書を直接つなぎ、必要な記録へ戻る経路をEditor内に残します。</p></article>
-            <article><span>Interface</span><h3>OriginとBranchesを両側に表示</h3><p>派生先では起点を、親ノートでは派生一覧を確認でき、移動しても出発点を失いません。</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="product-context-section">
-        <div class="context-copy">
-          <p class="product-kicker">One product, two contexts</p>
-          <h2>Mobileで記録し、Desktopで編集・参照する。</h2>
-          <p>MobileにはQuick capture、音声メモ、検索を配置し、Desktopには長文Editor、複数Reference、AI Actionを配置しました。</p>
-          <div class="platform-contexts">
-            <article><span>Desktop</span><h3>Write · Compare · Reuse</h3><p>長文Editor、複数Reference、反復的なAI Action。</p></article>
-            <article><span>Mobile</span><h3>Text · Voice · Search</h3><p>Quick capture、音声メモと文字起こし、自然言語検索。</p></article>
-          </div>
-        </div>
-        <div class="device-pair">
-          <figure class="phone-product-shot"><img src="assets/wivlo/wivlo-app-home-ios.png" alt="Wivlo mobile home screen" /></figure>
-          <figure class="phone-product-shot"><img src="assets/wivlo/wivlo-app-ai-ios.png" alt="Wivlo mobile AI chat screen" /></figure>
-        </div>
-      </section>
-
-      <section class="build-section">
-        <div class="product-section-copy">
-          <p class="product-kicker">From design to production</p>
-          <h2>設計した機能をWebとiOSに実装し、リリースした。</h2>
-          <p>AI-assisted developmentを使い、問題定義、UX/UI、AI logic、実装、QA、配信後の改善を一つのループとして担当しました。広いproductivity suiteから始め、実装を通じて「contextを複利化するEditor」へproduct thesisを絞り込みました。</p>
-        </div>
-        <div class="build-flow" aria-label="Solo product development flow">
-          <span>Problem</span><i>→</i><span>Strategy</span><i>→</i><span>UX / UI</span><i>→</i><span>AI Logic</span><i>→</i><span>Build</span><i>→</i><span>QA</span><i>→</i><span>Ship</span>
-        </div>
-        <div class="stack-list"><span>Next.js</span><span>React</span><span>Expo</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span><span>App Store</span></div>
-      </section>
-
-      <section class="shipped-section" id="shipped">
-        <div class="product-section-copy">
-          <p class="product-kicker">Shipped, not projected</p>
-          <h2>実装・リリースした機能を成果として整理する。</h2>
-          <p>公開できる利用指標はないため、現在動作しているWeb・iOS機能と実装範囲を記載しています。</p>
-        </div>
-        <div class="shipped-grid">
-          <article><span>01</span><b>Web product live</b><p>認証、Editor、Search、Reference、AI workflowを運用。</p></article>
-          <article><span>02</span><b>iOS App Store launch</b><p>Mobile capture、AI Chat、Search、voice workflowを配信。</p></article>
-          <article><span>03</span><b>Context system implemented</b><p>Reference、memory、related notes、source-backed outputを接続。</p></article>
-          <article><span>04</span><b>End-to-end ownership</b><p>設計判断をproduction code、QA、deploymentまで継続。</p></article>
-        </div>
-        <blockquote class="learning-quote">AI機能では、参照する情報、ユーザーの選択範囲、出力の保存方法を一つの操作フローとして設計する必要がある。</blockquote>
-        <p class="source-note">Scope note — 公開ユーザー数やretentionは未掲載。2026年8月時点で実装・公開済みの範囲のみを記載しています。</p>
+      <section class="case-section learning-section" id="learnings" aria-labelledby="learning-title">
+        <div class="section-heading split-heading"><div><p class="section-index">10 / Launch &amp; Learnings</p><h2 id="learning-title">リリース後は、<br />プロダクトと獲得を同時に検証する。</h2></div><p>WebとiOSを公開し、現在は初期ユーザー獲得の段階です。利用成果を断定せず、製品内の行動データと流入経路を計測できる状態を整えています。</p></div>
+        <div class="launch-grid"><article><span>Shipped</span><strong>Web / iOS</strong><p>Editor、Reference、AI workflow、Mobile captureと検索を公開。</p></article><article><span>Acquisition</span><strong>Blog / SEO / AEO</strong><p>検索意図に対応する記事と製品情報を継続的に公開。</p></article><article><span>Distribution</span><strong>Threads / Instagram Ads</strong><p>ターゲットと訴求軸を検証するための初期流入を作る。</p></article><article><span>Validation next</span><strong>Activation / AI apply / Return</strong><p>初回文書作成、AI変更の適用、継続利用を今後検証する。</p></article></div>
+        <blockquote class="final-learning">AI Writingの価値は、文章を自動生成することではなく、必要な根拠を探す負担を減らし、人が書くことに集中できる状態を作ることにある。</blockquote>
+        <div class="next-direction"><span>Next hypothesis</span><p>Notion、Slack、Driveとの接続を広げ、ユーザーが情報を探しに行かなくても、執筆に必要な文脈がWorkspaceへ集まる状態を検証する。</p></div>
+        <p class="scope-note">公開ユーザー数、Retention、成果指標は未掲載です。実装済みの機能と、現在検証中の獲得施策を分けて記載しています。</p>
       </section>
     </main>
     <script src="project-i18n.js"></script>
