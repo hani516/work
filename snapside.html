@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snapside — Product History Platform | Product Design Case Study</title>
+    <meta name="description" content="Notion、Figma、GitHub、Vercelなどに分散した変更を、一つのProduct Historyとして整理するSnapsideのUX/UI Case Study。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/snapside/snapside-icon.png" />
+    <link rel="stylesheet" href="site-header.css" />
+    <link rel="stylesheet" href="project-hero.css" />
+    <link rel="stylesheet" href="snapside.css" />
+    <link rel="stylesheet" href="portfolio-design.css" />
+    <link rel="stylesheet" href="case-layout.css" />
+  </head>
+  <body class="project-snapside">
+    <header class="case-header project-page-header">
+      <a class="back-link" href="index.html#projects">← Portfolio</a>
+      <nav class="case-nav" aria-label="Snapside case study sections">
+        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#principles">Principles</a><a href="#flow">Flow</a><a href="#screens">Screens</a><a href="#outcome">Outcome</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-hero snapside-hero" id="overview">
+        <div class="project-hero-copy">
+          <div class="case-brand"><img class="snapside-mark" src="assets/snapside/snapside-icon.png" alt="Snapside icon" /><p class="case-kicker">Product History Platform</p></div>
+          <h1>Snapside</h1>
+          <h2>プロダクトが作られるすべての瞬間を、<br />一つのHistoryにまとめる。</h2>
+          <p class="case-lead">普段使うツールを一度接続すると、分散した変更を自動で収集し、時系列とWorkstreamで確認できるProduct History Platformです。</p>
+          <div class="case-meta" aria-label="Project metadata"><span>Product Strategy / UX / UI / Design System</span><span>Web / Responsive / macOS</span><span>Notion / Figma / GitHub / Vercel / Supabase / Google Drive</span><span>Codex / Claude Code MCP</span></div>
+          <div class="case-links"><a href="https://app.snapside.io" target="_blank" rel="noreferrer">Live product ↗</a></div>
+        </div>
+        <div class="project-hero-visual snapside-history-preview" role="img" aria-label="複数サービスの変更を時系列でまとめたSnapsideのProduct History構造図">
+          <div class="preview-toolbar"><img src="assets/snapside/snapside-logo.png" alt="" /><span>Week 32</span></div>
+          <div class="preview-summary"><div><small>Connected sources</small><strong>6</strong></div><div><small>Changes this week</small><strong>24</strong></div><div class="preview-activity"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          <ol class="preview-timeline"><li><b>Notion</b><span>Product brief updated</span><time>09:20</time></li><li><b>Figma</b><span>Timeline interaction revised</span><time>11:45</time></li><li><b>GitHub</b><span>Pull request merged</span><time>15:10</time></li><li><b>Vercel</b><span>Production deployed</span><time>16:05</time></li></ol>
+        </div>
+      </section>
+
+
+      <nav class="case-index" aria-label="Case study chapters">
+        <a href="#problem"><span>01 / Context</span><strong data-case-en="Changes spread across tools" data-case-ko="여러 도구에 흩어진 변경 기록">複数ツールに分散する変更記録。</strong><i aria-hidden="true">↓</i></a>
+        <a href="#flow"><span>02 / Product flow</span><strong data-case-en="Connect, collect, and review" data-case-ko="연결하고, 수집하고, 확인하기">接続・収集・確認をつなぐ。</strong><i aria-hidden="true">↓</i></a>
+        <a href="#diff"><span>03 / Interaction</span><strong data-case-en="Inspect changes and return to the source" data-case-ko="변경 내용을 확인하고 원문으로 이동">変更内容を確認し、原文へ戻る。</strong><i aria-hidden="true">↓</i></a>
+      </nav>
+      <section class="snap-section background-section" aria-labelledby="background-title">
+        <div class="section-intro"><p class="section-index">01 / Background</p><div><h2 id="background-title">一つのプロダクトを、<br />複数のツールで作っている。</h2><p>企画、デザイン、コード、データ、配信の記録は各サービスに残ります。しかし、プロダクト全体で何がいつ変わったかを確認するには、それぞれを開き直す必要があります。</p></div></div>
+        <div class="tool-journey" aria-label="NotionからVercelまで分散する制作記録"><article><b>Notion</b><span>Plan</span></article><i>→</i><article><b>Figma</b><span>Design</span></article><i>→</i><article><b>GitHub</b><span>Build</span></article><i>→</i><article><b>Vercel</b><span>Release</span></article></div>
+        <div class="fragmented-result"><span>Each tool remembers its own activity.</span><strong>プロダクト全体の変更理由と流れは、どこにも残らない。</strong></div>
+      </section>
+
+      <section class="snap-section" id="problem" aria-labelledby="problem-title">
+        <div class="section-intro"><p class="section-index">02 / Problem</p><div><h2 id="problem-title">記録は存在する。<br />プロダクトの文脈が見えない。</h2><p>新しい管理作業を追加せず、すでに各ツールで発生している変更からProduct Historyを構成する必要がありました。</p></div></div>
+        <div class="problem-grid">
+          <article><span>01</span><h3>変更が分散する</h3><p>計画、画面、コード、配信の履歴が異なるサービスに保存される。</p></article>
+          <article><span>02</span><h3>理由を探し直す</h3><p>時間が経つと、何を変更したかだけでなく、その判断の背景も失われる。</p></article>
+          <article><span>03</span><h3>手動記録が続かない</h3><p>製品を作る作業とは別に、日報や作業ログを書く負担が生まれる。</p></article>
+          <article><span>04</span><h3>結果だけが残る</h3><p>完成画面だけでは、問題解決の過程と個人のContributionを説明しにくい。</p></article>
+          <article><span>05</span><h3>AIも文脈を失う</h3><p>AI Coding Toolが複数サービスの最新状態を一度に参照できない。</p></article>
+        </div>
+        <blockquote class="design-question">どうすれば新しい記録行動を求めずに、分散した変更を一つの製品史として残せるか。</blockquote>
+      </section>
+
+      <section class="snap-section insight-section" aria-labelledby="insight-title">
+        <div class="section-intro"><p class="section-index">03 / Research &amp; Insight</p><div><h2 id="insight-title">ユーザーは記録するためではなく、<br />プロダクトを作るために作業する。</h2><p>作業日誌の入力を習慣化させるのではなく、既存ツールで自然に発生するActivityをSourceとして扱う方針に変えました。</p></div></div>
+        <div class="behavior-contrast"><article><span>Additional behavior</span><strong>作業後に日誌を書く</strong><div class="behavior-line is-manual"><i></i><i></i><i></i><i></i></div><p>記憶と入力に依存し、忙しい時ほど記録が抜ける。</p></article><article class="is-selected"><span>Existing behavior</span><strong>普段のツールを一度つなぐ</strong><div class="behavior-line is-auto"><i></i><i></i><i></i><i></i></div><p>すでに発生した変更を自動収集し、確認だけをユーザーに残す。</p></article></div>
+        <div class="core-insight"><span>Core insight</span><p>意味のあるHistoryは、Activityの量ではなく、<strong>Source・時間・作業目的</strong>を一緒に読める状態から生まれる。</p></div>
+      </section>
+
+      <section class="snap-section" id="principles" aria-labelledby="principles-title">
+        <div class="section-intro"><p class="section-index">04 / Design Principles</p><div><h2 id="principles-title">収集は自動に。<br />確認はSourceに戻れる形に。</h2><p>大量の変更を派手に見せるのではなく、個人が必要な時に経緯を読み直せる静かなインターフェースを基準にしました。</p></div></div>
+        <div class="principle-grid">
+          <article><span>01</span><b>Connect once</b><p>プロジェクトに一度接続すると、その後の変更を自動で収集する。</p></article>
+          <article><span>02</span><b>Source-backed</b><p>各イベントから元ページ、File、Commit、Deploymentへ戻れる。</p></article>
+          <article><span>03</span><b>Timeline first</b><p>異なる形式の変更を、時間を共通軸として読み直す。</p></article>
+          <article><span>04</span><b>Personal by default</b><p>チーム報告より、個人の判断・成長・Contributionを中心にする。</p></article>
+          <article><span>05</span><b>Calm interface</b><p>多くのイベントを密度高く、優先順位を崩さず表示する。</p></article>
+        </div>
+      </section>
+
+      <section class="snap-section ia-section" aria-labelledby="ia-title">
+        <div class="section-intro"><p class="section-index">05 / Information Architecture</p><div><h2 id="ia-title">Projectを中心に、<br />時間・目的・接続状態を分ける。</h2><p>Timelineにすべてを詰め込まず、全体状態はOverview、時系列はTimeline、機能単位の流れはWorkstreamsで確認する構造にしました。</p></div></div>
+        <div class="ia-map" aria-label="Snapside information architecture"><div class="ia-root"><img src="assets/snapside/snapside-icon.png" alt="" /><b>Snapside</b></div><div class="ia-branches"><article><span>Home</span><small>Projects</small></article><article class="is-primary"><span>Project</span><small>Overview / Timeline / Workstreams</small></article><article><span>Integrations</span><small>Sources / MCP</small></article><article><span>Settings</span><small>Account / Language</small></article><article><span>Blog</span><small>KO / EN / JA</small></article><article><span>Desktop</span><small>Local Git / AI context</small></article></div></div>
+      </section>
+
+      <section class="snap-section flow-section" id="flow" aria-labelledby="flow-title">
+        <div class="section-intro"><p class="section-index">06 / Core User Flow</p><div><h2 id="flow-title">一度接続し、<br />作業のたびにHistoryが更新される。</h2><p>初期設定以降は記録のための操作を要求しません。ユーザーはWeekly TimelineやWorkstreamを読み、必要な時だけ原文に戻ります。</p></div></div>
+        <ol class="core-flow"><li><span>01</span><b>Create project</b><p>製品単位のContextを作る。</p></li><li><span>02</span><b>Connect sources</b><p>普段使うServiceを選ぶ。</p></li><li><span>03</span><b>Import history</b><p>既存の変更を取り込む。</p></li><li><span>04</span><b>Collect changes</b><p>新しいActivityを自動収集。</p></li><li><span>05</span><b>Review timeline</b><p>週・日単位で流れを読む。</p></li><li><span>06</span><b>Open workstream</b><p>機能単位で経緯を追う。</p></li><li><span>07</span><b>Use with AI</b><p>MCPから最新Contextを読む。</p></li></ol>
+        <div class="flow-note"><b>No extra logging step</b><span>ユーザーの主な操作は「接続」と「確認」。Historyを書くための入力画面をCore Flowに置かない。</span></div>
+      </section>
+
+      <section class="snap-section system-section" aria-labelledby="system-title">
+        <div class="section-intro"><p class="section-index">07 / System Model</p><div><h2 id="system-title">形式の違うActivityを、<br />同じProduct Eventへ変換する。</h2><p>MCPがHistoryを書くのではありません。各Integrationから収集・正規化されたHistoryを、CodexやClaude Codeが読み、プロジェクトのContextとして利用します。</p></div></div>
+        <div class="system-model" aria-label="Snapside product history normalization model"><div class="source-column"><span>Sources</span><b>Notion page</b><b>Figma file</b><b>Git commit / PR</b><b>Vercel deployment</b><b>Supabase / Drive</b></div><i>→</i><div class="normalize-column"><span>Normalize</span><b>Source</b><b>Actor</b><b>Timestamp</b><b>Change type</b><b>Original link</b></div><i>→</i><div class="history-column"><span>Product History</span><b>Timeline</b><b>Workstream</b><b>Overview</b></div><i>→</i><div class="ai-column"><span>Read via MCP</span><b>Codex</b><b>Claude Code</b></div></div>
+      </section>
+
+      <section class="snap-section notion-diff-section" id="diff" aria-labelledby="diff-title">
+        <div class="section-intro"><p class="section-index">08 / Interaction Detail</p><div><h2 id="diff-title">「更新された」ではなく、<br />何が変わったかを見せる。</h2><p>Notion Activityは更新時刻だけでは判断できません。前回Snapshotと現在の状態を比較し、追加・削除・修正を分けて表示します。</p></div></div>
+        <div class="diff-comparison"><article><span>Previous snapshot</span><i></i><i></i><i class="short"></i><i></i></article><div class="diff-result"><b>+ 3 added</b><b>- 1 removed</b><b>~ 2 modified</b></div><article><span>Current snapshot</span><i></i><i class="added"></i><i class="short added"></i><i class="modified"></i><i class="added"></i></article></div>
+        <div class="diff-decisions"><article><b>Summary first</b><p>変更量が多い時は要約を先に表示する。</p></article><article><b>Details on demand</b><p>BlockとPropertyの詳細は展開して確認する。</p></article><article><b>Return to source</b><p>元のNotion Pageへ移動するLinkを保持する。</p></article></div>
+      </section>
+
+      <section class="snap-section screens-section" id="screens" aria-labelledby="screens-title">
+        <div class="section-intro"><p class="section-index">09 / Key Screens</p><div><h2 id="screens-title">画面は役割ごとに分け、<br />同じEvent modelを共有する。</h2><p>以下は実際のProduct UIを配置する領域です。DashboardからDesktop Appまで、同じHistoryを異なる閲覧目的に合わせて見せます。</p></div></div>
+        <div class="screen-grid screen-grid-primary">
+<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 01</span><strong>Project Dashboard</strong><small>1440 × 900</small></div><figcaption>複数Projectと週間Activityを比較する。</figcaption></figure>
+<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 02</span><strong>Project Overview</strong><small>1440 × 900</small></div><figcaption>接続状態、最近の変更、活動量をまとめる。</figcaption></figure>
+<figure class="screen-placeholder"><div><span>SCREENSHOT 03</span><strong>Weekly Timeline</strong><small>1440 × 900</small></div><figcaption>週を基本単位として変更の流れを読む。</figcaption></figure>
+        </div>
+        <details class="case-disclosure screen-details"><summary><span data-case-en="More product screens" data-case-ko="추가 제품 화면 보기">その他の製品画面を見る</span><small>Daily / Workstream / Integrations / Diff / Desktop / Mobile</small></summary><div class="screen-grid">
+<figure class="screen-placeholder"><div><span>SCREENSHOT 04</span><strong>Daily Timeline</strong><small>1440 × 900</small></div><figcaption>選択した一日のEventだけに集中する。</figcaption></figure>
+<figure class="screen-placeholder"><div><span>SCREENSHOT 05</span><strong>Workstream</strong><small>1440 × 900</small></div><figcaption>企画からReleaseまでを機能単位で追う。</figcaption></figure>
+<figure class="screen-placeholder"><div><span>SCREENSHOT 06</span><strong>Integrations / MCP</strong><small>1440 × 900</small></div><figcaption>SourceとAI接続の状態を管理する。</figcaption></figure>
+<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 07</span><strong>Notion Diff</strong><small>1440 × 900</small></div><figcaption>Snapshot間の追加・削除・修正を確認する。</figcaption></figure>
+<figure class="screen-placeholder is-desktop"><div><span>SCREENSHOT 08</span><strong>macOS App</strong><small>Desktop</small></div><figcaption>Local GitとAI作業環境をProject Contextへつなぐ。</figcaption></figure>
+<figure class="screen-placeholder is-mobile"><div><span>SCREENSHOT 09</span><strong>Responsive Mobile</strong><small>390 × 844</small></div><figcaption>小さい画面ではTimelineの閲覧とSourceへの移動を優先する。</figcaption></figure>
+        </div></details>
+      </section>
+
+      <section class="snap-section design-system-section" aria-labelledby="design-system-title">
+        <div class="section-intro"><p class="section-index">10 / Design System</p><div><h2 id="design-system-title">ブランドは暖かく、<br />履歴画面は静かに。</h2><p>Orange Gradientはブランドと重要な進行状態に限定し、記録を読む面はWhiteとCharcoalを中心に構成しました。</p></div></div>
+        <div class="token-layout"><div class="token-scale"><span>Primitive</span><i>#FF5314</i><i>#FF9F20</i><i>#FFD25A</i><i>#18181A</i><i>#FFFFFF</i></div><i>→</i><div class="token-scale semantic"><span>Semantic</span><i>Brand</i><i>Foreground</i><i>Surface</i><i>Border</i><i>Status</i></div><i>→</i><div class="component-list"><span>Component</span><b>Button</b><b>Input</b><b>Tabs</b><b>Badge</b><b>Card</b><b>Modal</b><b>Tooltip</b><b>Navigation</b></div></div>
+        <p class="accessibility-note"><b>Interaction states</b> Hover、Focus、Loading、Error、Disabledを共通Tokenで管理し、Light / Dark modeのContrastを同じSemantic roleで維持する。</p>
+      </section>
+
+      <section class="snap-section outcome-section" id="outcome" aria-labelledby="outcome-title">
+        <div class="section-intro"><p class="section-index">11 / Outcome &amp; Retrospective</p><div><h2 id="outcome-title">結果だけでなく、<br />作ってきた過程を説明できる。</h2><p>定量成果を作らず、現在実装した体験と、次に検証する課題を分けて整理しました。</p></div></div>
+        <div class="outcome-grid"><article><span>Shipped</span><strong>Unified timeline</strong><p>複数Serviceの変更を一つの時系列で確認する。</p></article><article><span>Shipped</span><strong>Source-backed history</strong><p>各Eventから元の記録へ戻り、Contextを確認する。</p></article><article><span>Shipped</span><strong>Workstreams</strong><p>異なるToolの変更を機能と作業目的でまとめる。</p></article><article><span>Shipped</span><strong>MCP context</strong><p>収集済みHistoryをAI Toolが読み、最新のProject Contextとして使う。</p></article></div>
+        <div class="retrospective"><article><span>Learned</span><h3>Activity FeedとProduct Historyは違う。</h3><p>Eventを時系列に並べるだけでは、変更の目的とまとまりは伝わりません。Sourceを保ちながらWorkstreamへ束ねる設計が必要でした。</p></article><article><span>Next</span><h3>自動分類と情報量のBalanceを検証する。</h3><p>AIによる変更要約とWorkstream分類を強化しながら、誤分類を直せるControlと、過剰な通知を防ぐ密度設計を検証します。</p></article></div>
+        <blockquote class="closing-message">ツールはそれぞれのActivityを記憶する。Snapsideは、プロダクトが作られた流れを記憶する。</blockquote>
+        <p class="scope-note">Scope note — 利用者数、時間削減、満足度などの未検証指標は掲載していません。</p>
+      </section>
+    </main>
+
+    <footer class="snapside-footer"><a href="wivlo.html">← Wivlo</a><a href="index.html#projects">All projects →</a></footer>
+    <script src="project-i18n.js"></script>
+    <script src="case-reveal.js"></script>
+    <script src="case-viewer.js"></script>
+  </body>
+</html>

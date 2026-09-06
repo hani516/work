@@ -136,11 +136,6 @@ body {
   object-position: left top;
 }
 
-.trami-image-slot img {
-  max-height: 230px;
-  object-position: center top;
-}
-
 .slot-topbar {
   display: flex;
   gap: 6px;

@@ -11,9 +11,9 @@
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="landing.css" />
     <link rel="stylesheet" href="site-header.css" />
+    <link rel="stylesheet" href="portfolio-design.css" />
   </head>
   <body>
-    <div class="cursor-aura" aria-hidden="true"></div>
     <header class="site-header" data-elevate>
       <a class="brand" href="#top" aria-label="Go to top"><span class="brand-mark">Y</span><span>Yohan</span></a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -32,12 +32,33 @@
       <section class="profile-hero page-shell" id="about">
         <figure class="profile-photo reveal"><img src="assets/profile/yohan-profile.webp" alt="Kim Yohan profile photo" /></figure>
         <div class="profile-copy">
-          <p class="section-label reveal">Kim Yohan / Product Designer</p>
-          <h1 class="reveal" data-i18n="heroTitle">ユーザーデータと行動観察から、プロダクトを作り、改善する。</h1>
+          <p class="section-label reveal">Product Designer · Osaka, Japan</p>
+          <h1 class="reveal">Kim Yohan<span class="name-period">.</span></h1>
+          <h2 class="profile-statement reveal" data-i18n="heroTitle">ユーザーデータと行動観察から、プロダクトを作り、改善する。</h2>
           <p class="profile-lead reveal" data-i18n="heroBody">課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。</p>
           <div class="profile-actions reveal">
             <a class="button primary magnetic" href="#projects" data-i18n="viewProjects">View Project</a>
             <a class="button secondary magnetic" href="#contact" data-i18n="contactButton">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section selected-projects" id="projects">
+        <div class="page-shell">
+          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">3つのプロジェクト。</h2><p data-i18n="selectedIntro">個人プロダクトと、会社で担当した改善プロジェクトを紹介します。</p></div>
+          <div class="project-panels reveal" aria-label="Selected project case studies">
+            <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
+              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p></div>
+              <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="" /></div>
+            </article>
+            <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
+              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p></div>
+              <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="" /></div>
+            </article>
+            <article class="project-panel panel-snapside" data-project-href="snapside.html">
+              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-icon.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトが作られた過程を自動で記録し、変更の履歴を振り返れるProduct History Workspace。</p></div>
+              <div class="panel-visual panel-visual-snapside" aria-hidden="true"><img src="assets/snapside/snapside-logo.png" alt="" /><div class="history-lines"><i></i><i></i><i></i></div></div>
+            </article>
           </div>
         </div>
       </section>
@@ -50,34 +71,6 @@
             <article><span data-i18n="educationLabel">Education</span><strong>Sangmyung University</strong><p data-i18n="educationBody">2020.02 卒業 / Seoul<br />Global Business・Geography 専攻</p></article>
             <article><span data-i18n="focusLabel">Focus</span><strong>Product Design</strong><p data-i18n="focusBody">UX Strategy / UI Design<br />Prototype / Frontend / Analytics</p></article>
             <article><span data-i18n="languageLabel">Languages</span><strong>JP / KR / EN</strong><p data-i18n="languageBody">日本語を中心に、韓国語と英語にも対応</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio-section selected-projects" id="projects">
-        <div class="page-shell">
-          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">5つのプロジェクト。</h2><p data-i18n="selectedIntro">個人リリース、協業、会社で担当した改善プロジェクトを紹介します。</p></div>
-          <div class="project-panels reveal" aria-label="Selected project case studies">
-            <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
-              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p></div>
-              <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="" /></div>
-            </article>
-            <article class="project-panel panel-trami" data-project-href="trami.html">
-              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><img src="assets/trami/trami-icon.png" alt="" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始める、記録する、振り返る流れをシンプルにした個人開発のフィットネスアプリ。</p></div>
-              <div class="panel-visual" aria-hidden="true"><img src="assets/trami/trami-hero-ui.webp" alt="" /></div>
-            </article>
-            <article class="project-panel panel-blinq" data-project-href="blinq.html">
-              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Collaborative · Mobile</span><div class="panel-title"><img src="assets/blinq/blinq-icon.png" alt="" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じカレンダーで管理する、デザイナー1名・開発者1名の協業モバイルプロジェクト。</p></div>
-              <div class="panel-visual panel-image-placeholder" aria-hidden="true"><span>IMAGE</span><small>Blinq product UI</small></div>
-            </article>
-            <article class="project-panel panel-looplit" data-project-href="looplit.html">
-              <div class="panel-copy"><span class="panel-number">04</span><span class="panel-type">Personal · Web</span><div class="panel-title"><span class="looplit-mark" aria-hidden="true">L</span><h3><a href="looplit.html">Looplit</a></h3></div><p data-i18n="looplitBody">AI議事録、会社・チームの予定、担当業務を、<span class="nowrap">会議から実行まで</span>一つの流れにつなぐWeb workspace。</p></div>
-              <div class="panel-visual panel-image-placeholder" aria-hidden="true"><span>IMAGE</span><small>Looplit product UI</small></div>
-            </article>
-            <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
-              <div class="panel-copy"><span class="panel-number">05</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p></div>
-              <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="" /></div>
-            </article>
           </div>
         </div>
       </section>

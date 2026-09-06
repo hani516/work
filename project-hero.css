@@ -25,8 +25,7 @@ body .project-hero::before { content: none; }
   margin: 0 0 32px;
 }
 
-.project-hero .case-brand img,
-.project-hero .case-brand .looplit-logo {
+.project-hero .case-brand img {
   width: 44px;
   height: 44px;
   flex: 0 0 44px;
