@@ -13,7 +13,6 @@ body h1,body h2,body h3 { letter-spacing:0; }
 .section-label { font-weight:500; }
 .profile-actions { gap:26px; margin-top:26px; }
 .profile-actions .button { min-height:44px; padding:0; gap:16px; border:0; border-bottom:1px solid #222325; border-radius:0; background:transparent; color:#222325; font-size:12px; font-weight:500; }
-.profile-actions .button::after { content:"↗"; font-size:16px; }
 .profile-actions .secondary { color:#68696d; border-color:#ddd; }
 .portfolio-section { padding-block:36px 92px; }
 .selected-projects { overflow:visible; }
@@ -41,7 +40,6 @@ body h1,body h2,body h3 { letter-spacing:0; }
 .project-panels .project-panel .panel-title { grid-column:1/-1; flex-direction:row; align-items:center; gap:10px; min-height:28px; margin-top:14px; }
 .project-panels .project-panel .panel-title img { width:26px; height:26px; flex:0 0 26px; border-radius:5px; }
 .project-panels .project-panel .panel-title h3 { font-size:23px; font-weight:500; }
-.panel-title a::after { content:"↗"; position:absolute; right:0; color:#808086; font-size:18px; }
 .panel-title a::before { content:""; position:absolute; inset:0; z-index:3; }
 .project-panel:focus-within { outline:2px solid #7284d1; outline-offset:8px; border-radius:6px; }
 .project-panel:focus-within a { outline:none; }

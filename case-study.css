@@ -191,7 +191,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .primary-nav-row span { display: grid; min-height: 62px; place-items: center; border: 1px solid var(--line); border-radius: 6px; background: #fff; font-size: 12px; font-weight: 600; text-align: center; }
 .primary-nav-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 24px; }
 .primary-nav-row span { min-height: 72px; border-color: #c9c9ce; }
+.navigation-before-shot,
 .navigation-after-shot { margin-top: 24px; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.navigation-before-shot img,
 .navigation-after-shot img { display: block; width: 100%; height: auto; }
 .secondary-menu { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; padding: 14px; border-radius: 6px; background: #eeeef0; }
 .secondary-menu b { margin-right: auto; color: var(--muted); font-size: 10px; text-transform: uppercase; }

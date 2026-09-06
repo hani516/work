@@ -11,17 +11,18 @@
     <link rel="icon" type="image/png" href="assets/snapside/snapside-icon.png" />
     <link rel="stylesheet" href="site-header.css" />
     <link rel="stylesheet" href="project-hero.css" />
-    <link rel="stylesheet" href="snapside.css" />
+    <link rel="stylesheet" href="snapside.css?v=4" />
     <link rel="stylesheet" href="portfolio-design.css" />
-    <link rel="stylesheet" href="case-layout.css" />
-    <link rel="stylesheet" href="portfolio-final.css" />
+    <link rel="stylesheet" href="case-layout.css?v=6" />
+    <link rel="stylesheet" href="portfolio-final.css?v=10" />
   </head>
   <body class="project-snapside">
     <header class="case-header project-page-header">
-      <a class="back-link" href="index.html#projects">← Portfolio</a>
+      <a class="back-link" href="index.html#projects">Portfolio</a>
       <nav class="case-nav" aria-label="Snapside case study sections">
         <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#principles">Principles</a><a href="#flow">Flow</a><a href="#screens">Screens</a><a href="#outcome">Outcome</a>
       </nav>
+      <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
     </header>
 
     <main>
@@ -32,39 +33,71 @@
           <h2>プロダクトが作られるすべての瞬間を、<br />一つのHistoryにまとめる。</h2>
           <p class="case-lead">普段使うツールを一度接続すると、分散した変更を自動で収集し、時系列とWorkstreamで確認できるProduct History Platformです。</p>
           <div class="case-meta" aria-label="Project metadata"><span>Product Strategy / UX / UI / Design System</span><span>Web / Responsive / macOS</span><span>Notion / Figma / GitHub / Vercel / Supabase / Google Drive</span><span>Codex / Claude Code MCP</span></div>
-          <div class="case-links"><a href="https://app.snapside.io" target="_blank" rel="noreferrer">Live product ↗</a></div>
+          <div class="case-links"><a class="live-product-button" href="https://snapside.io" target="_blank" rel="noreferrer">Live Product</a></div>
         </div>
-        <figure class="project-hero-visual snapside-hero-screen"><img src="assets/snapside/snapside-overview.png" alt="Snapside Project Overview screen" /></figure>
+        <figure class="project-hero-visual snapside-hero-screen"><img src="assets/snapside/snapside-live-overview.jpg" alt="実際のSnapside Project Overview画面" /></figure>
       </section>
 
 
       <nav class="case-index" aria-label="Case study chapters">
-        <a href="#problem"><span>01 / Context</span><strong data-case-en="Changes spread across tools" data-case-ko="여러 도구에 흩어진 변경 기록">複数ツールに分散する変更記録。</strong><i aria-hidden="true">↓</i></a>
-        <a href="#flow"><span>02 / Product flow</span><strong data-case-en="Connect, collect, and review" data-case-ko="연결하고, 수집하고, 확인하기">接続・収集・確認をつなぐ。</strong><i aria-hidden="true">↓</i></a>
-        <a href="#diff"><span>03 / Interaction</span><strong data-case-en="Inspect changes and return to the source" data-case-ko="변경 내용을 확인하고 원문으로 이동">変更内容を確認し、原文へ戻る。</strong><i aria-hidden="true">↓</i></a>
+        <a href="#problem"><span>01 / Context</span><strong data-case-en="Changes spread across tools" data-case-ko="여러 도구에 흩어진 변경 기록">複数ツールに分散する変更記録。</strong></a>
+        <a href="#flow"><span>02 / Product flow</span><strong data-case-en="Connect, collect, and review" data-case-ko="연결하고, 수집하고, 확인하기">接続・収集・確認をつなぐ。</strong></a>
+        <a href="#diff"><span>03 / Interaction</span><strong data-case-en="Inspect changes and return to the source" data-case-ko="변경 내용을 확인하고 원문으로 이동">変更内容を確認し、原文へ戻る。</strong></a>
       </nav>
       <section class="snap-section background-section" aria-labelledby="background-title">
         <div class="section-intro"><p class="section-index">01 / Background</p><div><h2 id="background-title">一つのプロダクトを、<br />複数のツールで作っている。</h2><p>企画、デザイン、コード、データ、配信の記録は各サービスに残ります。しかし、プロダクト全体で何がいつ変わったかを確認するには、それぞれを開き直す必要があります。</p></div></div>
-        <div class="tool-journey" aria-label="NotionからVercelまで分散する制作記録"><article><b>Notion</b><span>Plan</span></article><i>→</i><article><b>Figma</b><span>Design</span></article><i>→</i><article><b>GitHub</b><span>Build</span></article><i>→</i><article><b>Vercel</b><span>Release</span></article></div>
+        <div class="tool-journey" aria-label="NotionからVercelまで分散する制作記録"><article><img src="assets/snapside/tool-notion.svg" alt="" /><div><b>Notion</b><span>Plan</span></div></article><i>→</i><article><img src="assets/snapside/tool-figma.svg" alt="" /><div><b>Figma</b><span>Design</span></div></article><i>→</i><article><img src="assets/snapside/tool-github.svg" alt="" /><div><b>GitHub</b><span>Build</span></div></article><i>→</i><article><img src="assets/snapside/tool-vercel.svg" alt="" /><div><b>Vercel</b><span>Release</span></div></article></div>
         <div class="fragmented-result"><span>Each tool remembers its own activity.</span><strong>プロダクト全体の変更理由と流れは、どこにも残らない。</strong></div>
       </section>
 
       <section class="snap-section" id="problem" aria-labelledby="problem-title">
         <div class="section-intro"><p class="section-index">02 / Problem</p><div><h2 id="problem-title">記録は存在する。<br />プロダクトの文脈が見えない。</h2><p>新しい管理作業を追加せず、すでに各ツールで発生している変更からProduct Historyを構成する必要がありました。</p></div></div>
         <div class="problem-grid">
-          <article><span>01</span><h3>変更が分散する</h3><p>計画、画面、コード、配信の履歴が異なるサービスに保存される。</p></article>
-          <article><span>02</span><h3>理由を探し直す</h3><p>時間が経つと、何を変更したかだけでなく、その判断の背景も失われる。</p></article>
-          <article><span>03</span><h3>手動記録が続かない</h3><p>製品を作る作業とは別に、日報や作業ログを書く負担が生まれる。</p></article>
-          <article><span>04</span><h3>結果だけが残る</h3><p>完成画面だけでは、問題解決の過程と個人のContributionを説明しにくい。</p></article>
-          <article><span>05</span><h3>AIも文脈を失う</h3><p>AI Coding Toolが複数サービスの最新状態を一度に参照できない。</p></article>
+          <article><div class="problem-mark"><svg aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg><span>01</span></div><h3>変更が分散する</h3><p>計画、画面、コード、配信の履歴が異なるサービスに保存される。</p></article>
+          <article><div class="problem-mark"><svg aria-hidden="true"><use href="assets/ui-icons.svg#search"></use></svg><span>02</span></div><h3>理由を探し直す</h3><p>時間が経つと、何を変更したかだけでなく、その判断の背景も失われる。</p></article>
+          <article><div class="problem-mark"><svg aria-hidden="true"><use href="assets/ui-icons.svg#clipboard"></use></svg><span>03</span></div><h3>手動記録が続かない</h3><p>製品を作る作業とは別に、日報や作業ログを書く負担が生まれる。</p></article>
+          <article><div class="problem-mark"><svg aria-hidden="true"><use href="assets/ui-icons.svg#eye"></use></svg><span>04</span></div><h3>結果だけが残る</h3><p>完成画面だけでは、問題解決の過程と個人のContributionを説明しにくい。</p></article>
+          <article><div class="problem-mark"><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg><span>05</span></div><h3>AIも文脈を失う</h3><p>AI Coding Toolが複数サービスの最新状態を一度に参照できない。</p></article>
         </div>
-        <blockquote class="design-question">どうすれば新しい記録行動を求めずに、分散した変更を一つの製品史として残せるか。</blockquote>
+        <blockquote class="design-question"><span>Design question</span><strong>どうすれば新しい記録行動を求めずに、分散した変更を一つの製品史として残せるか。</strong></blockquote>
       </section>
 
-      <section class="snap-section insight-section" aria-labelledby="insight-title">
-        <div class="section-intro"><p class="section-index">03 / Research &amp; Insight</p><div><h2 id="insight-title">ユーザーは記録するためではなく、<br />プロダクトを作るために作業する。</h2><p>作業日誌の入力を習慣化させるのではなく、既存ツールで自然に発生するActivityをSourceとして扱う方針に変えました。</p></div></div>
-        <div class="behavior-contrast"><article><span>Additional behavior</span><strong>作業後に日誌を書く</strong><div class="behavior-line is-manual"><i></i><i></i><i></i><i></i></div><p>記憶と入力に依存し、忙しい時ほど記録が抜ける。</p></article><article class="is-selected"><span>Existing behavior</span><strong>普段のツールを一度つなぐ</strong><div class="behavior-line is-auto"><i></i><i></i><i></i><i></i></div><p>すでに発生した変更を自動収集し、確認だけをユーザーに残す。</p></article></div>
-        <div class="core-insight"><span>Core insight</span><p>意味のあるHistoryは、Activityの量ではなく、<strong>Source・時間・作業目的</strong>を一緒に読める状態から生まれる。</p></div>
+      <section class="snap-section insight-section" id="landscape" aria-labelledby="insight-title">
+        <div class="section-intro"><p class="section-index">03 / Competitive Landscape</p><div><h2 id="insight-title">プロジェクト管理ツールとは、<br />記録する対象が異なる。</h2><p>公式ドキュメントを基に、各サービスの基本単位とユーザーが更新する情報を比較しました。3サービスは計画した仕事の進行を管理し、Snapsideは制作ツールで実際に発生した変更を収集します。</p></div></div>
+        <p class="landscape-method" data-case-en="Research scope · Official product pages and help documentation" data-case-ko="조사 범위 · 공식 제품 페이지와 도움말 문서">調査範囲 · 公式プロダクトページ / ヘルプドキュメント</p>
+        <div class="tracker-landscape" aria-label="Jira、Asana、Linearの役割比較">
+          <article>
+            <header><img src="assets/snapside/tracker-jira.svg" alt="Jira logo" /><div><h3>Jira</h3><small>Plan &amp; track work</small></div></header>
+            <dl><div><dt>Core object</dt><dd>Work item</dd></div><div><dt>Structure</dt><dd>Board / Backlog / Sprint</dd></div><div><dt>User input</dt><dd data-case-en="Create items; update owner, priority, and status" data-case-ko="항목을 만들고 담당자, 우선순위, 상태를 갱신">項目を作成し、担当・優先度・状態を更新</dd></div></dl>
+          </article>
+          <article>
+            <header><img src="assets/snapside/tracker-asana.svg" alt="Asana logo" /><div><h3>Asana</h3><small>Coordinate work</small></div></header>
+            <dl><div><dt>Core object</dt><dd>Task</dd></div><div><dt>Structure</dt><dd>Project / Portfolio / Goal</dd></div><div><dt>User input</dt><dd data-case-en="Assign tasks; maintain due dates, dependencies, and progress" data-case-ko="Task를 배정하고 기한, 의존 관계, 진행 상태를 관리">Taskを割り当て、期限・依存関係・進捗を管理</dd></div></dl>
+          </article>
+          <article>
+            <header><img src="assets/snapside/tracker-linear.svg" alt="Linear logo" /><div><h3>Linear</h3><small>Build software</small></div></header>
+            <dl><div><dt>Core object</dt><dd>Issue</dd></div><div><dt>Structure</dt><dd>Project / Cycle / Initiative</dd></div><div><dt>User input</dt><dd data-case-en="Prioritize issues; update assignee and workflow state" data-case-ko="Issue의 우선순위를 정하고 담당자와 Workflow 상태를 갱신">Issueを優先付けし、担当者とWorkflowを更新</dd></div></dl>
+          </article>
+        </div>
+        <div class="landscape-sources">
+          <span data-case-en="Official sources" data-case-ko="공식 자료">公式資料</span>
+          <a href="https://www.atlassian.com/software/jira/guides/boards/overview" target="_blank" rel="noreferrer">Jira Boards</a>
+          <a href="https://help.asana.com/s/article/asana-hierarchy?language=en_US" target="_blank" rel="noreferrer">Asana hierarchy</a>
+          <a href="https://linear.app/docs/conceptual-model" target="_blank" rel="noreferrer">Linear model</a>
+        </div>
+        <div class="landscape-comparison" role="table" aria-label="Project management tools and Snapside comparison">
+          <div class="comparison-row comparison-head" role="row"><span role="columnheader">Product</span><span role="columnheader">Primary record</span><span role="columnheader">Explains</span><span role="columnheader">Maintenance</span></div>
+          <div class="comparison-row" role="row"><strong role="cell">Jira</strong><span role="cell">Work item</span><span role="cell" data-case-en="What work is planned and its current state" data-case-ko="어떤 작업을 계획했고 현재 상태가 무엇인지">何を計画し、現在どの状態か</span><span role="cell" data-case-en="Create and update work items" data-case-ko="Work item 생성과 상태 갱신">Work itemを作成・更新</span></div>
+          <div class="comparison-row" role="row"><strong role="cell">Asana</strong><span role="cell">Task</span><span role="cell" data-case-en="Who does what, by when, toward which goal" data-case-ko="누가 무엇을 언제까지 어떤 목표로 수행하는지">誰が・何を・いつまでに行うか</span><span role="cell" data-case-en="Maintain tasks, dates, and progress" data-case-ko="Task, 일정, 진행률 관리">Task・日程・進捗を管理</span></div>
+          <div class="comparison-row" role="row"><strong role="cell">Linear</strong><span role="cell">Issue</span><span role="cell" data-case-en="Which software issue moves through which cycle" data-case-ko="어떤 소프트웨어 Issue가 어떤 Cycle에서 진행되는지">どのIssueを、どのCycleで進めるか</span><span role="cell" data-case-en="Triage and update workflow state" data-case-ko="Issue 분류와 Workflow 상태 갱신">Issueを整理しWorkflowを更新</span></div>
+          <div class="comparison-row is-snapside" role="row"><strong role="cell">Snapside</strong><span role="cell">Product event</span><span role="cell" data-case-en="What actually changed across production tools, and in what sequence" data-case-ko="제작 도구에서 실제로 무엇이 어떤 순서로 바뀌었는지">制作ツールで、実際に何がどの順序で変わったか</span><span role="cell" data-case-en="Connect sources once; review collected events" data-case-ko="Source를 한 번 연결하고 수집된 Event를 확인">Sourceを一度接続し、収集結果を確認</span></div>
+        </div>
+        <div class="product-boundary" aria-label="Project trackerとSnapsideの役割の違い">
+          <div class="boundary-side"><span>Project trackers</span><strong>Plan &amp; Track</strong><p>ユーザーがTaskとStatusを入力・更新する。</p></div>
+          <div class="boundary-flow" aria-hidden="true"><i></i><b>Different role</b><i></i></div>
+          <div class="boundary-side is-snapside"><img src="assets/snapside/snapside-icon.png" alt="" /><span>Snapside</span><strong>Collect &amp; Reconstruct</strong><p>Notion、Figma、GitHub、Vercelで発生した変更を収集し、時間順にまとめる。</p></div>
+        </div>
+        <div class="landscape-decision"><span>Design implication</span><p data-case-en="I did not add another task-management layer. Snapside starts from <strong>source-backed changes that have already occurred</strong>, then reconstructs their sequence at the product level." data-case-ko="또 하나의 Task 관리 계층을 만들지 않았습니다. Snapside는 <strong>각 Source에서 이미 발생한 변경</strong>을 수집하고 제품 단위의 순서로 재구성합니다.">Task管理のレイヤーは追加しませんでした。Snapsideは<strong>各Sourceですでに発生した変更</strong>を起点に、プロダクト単位の流れを再構成します。</p></div>
       </section>
 
       <section class="snap-section" id="principles" aria-labelledby="principles-title">
@@ -85,13 +118,49 @@
 
       <section class="snap-section flow-section" id="flow" aria-labelledby="flow-title">
         <div class="section-intro"><p class="section-index">06 / Core User Flow</p><div><h2 id="flow-title">一度接続し、<br />作業のたびにHistoryが更新される。</h2><p>初期設定以降は記録のための操作を要求しません。ユーザーはWeekly TimelineやWorkstreamを読み、必要な時だけ原文に戻ります。</p></div></div>
-        <ol class="core-flow"><li><span>01</span><b>Create project</b><p>製品単位のContextを作る。</p></li><li><span>02</span><b>Connect sources</b><p>普段使うServiceを選ぶ。</p></li><li><span>03</span><b>Import history</b><p>既存の変更を取り込む。</p></li><li><span>04</span><b>Collect changes</b><p>新しいActivityを自動収集。</p></li><li><span>05</span><b>Review timeline</b><p>週・日単位で流れを読む。</p></li><li><span>06</span><b>Open workstream</b><p>機能単位で経緯を追う。</p></li><li><span>07</span><b>Use with AI</b><p>MCPから最新Contextを読む。</p></li></ol>
+        <ol class="core-flow" aria-label="Snapside core user flow">
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#plus"></use></svg></div><span>01</span><b>Create project</b><p>製品単位のContextを作る。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#network"></use></svg></div><span>02</span><b>Connect sources</b><p>普段使うServiceを選ぶ。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-input"></use></svg></div><span>03</span><b>Import history</b><p>既存の変更を取り込む。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#history"></use></svg></div><span>04</span><b>Collect changes</b><p>新しいActivityを自動収集。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#calendar"></use></svg></div><span>05</span><b>Review timeline</b><p>週・日単位で流れを読む。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#layers"></use></svg></div><span>06</span><b>Open workstream</b><p>機能単位で経緯を追う。</p></li>
+          <li><div class="flow-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#sparkles"></use></svg></div><span>07</span><b>Use with AI</b><p>MCPから最新Contextを読む。</p></li>
+        </ol>
         <div class="flow-note"><b>No extra logging step</b><span>ユーザーの主な操作は「接続」と「確認」。Historyを書くための入力画面をCore Flowに置かない。</span></div>
       </section>
 
-      <section class="snap-section system-section" aria-labelledby="system-title">
+      <section class="snap-section system-section" id="system" aria-labelledby="system-title">
         <div class="section-intro"><p class="section-index">07 / System Model</p><div><h2 id="system-title">形式の違うActivityを、<br />同じProduct Eventへ変換する。</h2><p>MCPがHistoryを書くのではありません。各Integrationから収集・正規化されたHistoryを、CodexやClaude Codeが読み、プロジェクトのContextとして利用します。</p></div></div>
-        <div class="system-model" aria-label="Snapside product history normalization model"><div class="source-column"><span>Sources</span><b>Notion page</b><b>Figma file</b><b>Git commit / PR</b><b>Vercel deployment</b><b>Supabase / Drive</b></div><i>→</i><div class="normalize-column"><span>Normalize</span><b>Source</b><b>Actor</b><b>Timestamp</b><b>Change type</b><b>Original link</b></div><i>→</i><div class="history-column"><span>Product History</span><b>Timeline</b><b>Workstream</b><b>Overview</b></div><i>→</i><div class="ai-column"><span>Read via MCP</span><b>Codex</b><b>Claude Code</b></div></div>
+        <div class="system-model" aria-label="Snapside product history normalization model"><div class="source-column"><span>Sources</span><div class="source-item"><img src="assets/snapside/tool-notion.svg" alt="" /><b>Notion page</b></div><div class="source-item"><img src="assets/snapside/tool-figma.svg" alt="" /><b>Figma file</b></div><div class="source-item"><img src="assets/snapside/tool-github.svg" alt="" /><b>Git commit / PR</b></div><div class="source-item"><img src="assets/snapside/tool-vercel.svg" alt="" /><b>Vercel deployment</b></div><div class="source-item"><img src="assets/snapside/tool-supabase.svg" alt="" /><b>Supabase</b></div><div class="source-item"><img src="assets/snapside/tool-google-drive.svg" alt="" /><b>Google Drive</b></div></div><i>→</i><div class="normalize-column"><span>Normalize</span><b>Source</b><b>Actor</b><b>Timestamp</b><b>Change type</b><b>Original link</b></div><i>→</i><div class="history-column"><span>Product History</span><b>Timeline</b><b>Workstream</b><b>Overview</b></div><i>→</i><div class="ai-column"><span>Read via MCP</span><b>Codex</b><b>Claude Code</b></div></div>
+        <div class="mcp-context-comparison" id="ai-context">
+          <header><span>AI Context Design</span><h3>各Sourceへ直接アクセスする代わりに、<br />プロダクト全体のHistoryを渡す。</h3><p>AI Toolごとに複数Serviceを接続して個別に読み解くのではなく、Snapsideで収集・正規化した同じContextをCodexとClaude Codeから利用します。</p></header>
+          <div class="mcp-paths">
+            <article class="mcp-path is-direct">
+              <div class="mcp-path-heading"><span>Direct access</span><h4>Serviceごとに接続・探索</h4></div>
+              <div class="direct-source-map" aria-label="AI tools directly access separate sources">
+                <div class="agent-pair"><b>Codex</b><b>Claude Code</b></div>
+                <div class="source-spokes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+                <div class="source-logo-row"><img src="assets/snapside/tool-notion.svg" alt="Notion" /><img src="assets/snapside/tool-figma.svg" alt="Figma" /><img src="assets/snapside/tool-github.svg" alt="GitHub" /><img src="assets/snapside/tool-vercel.svg" alt="Vercel" /></div>
+              </div>
+              <p>Sourceごとに形式と時間軸が異なるため、AI側でプロダクト全体の順序と関係を組み直す必要がある。</p>
+            </article>
+            <article class="mcp-path is-snapside">
+              <div class="mcp-path-heading"><span>Via Snapside MCP</span><h4>一つのProduct Contextを共有</h4></div>
+              <div class="snapside-context-map" aria-label="AI tools access normalized product history through Snapside MCP">
+                <div class="agent-pair"><b>Codex</b><b>Claude Code</b></div><i aria-hidden="true">→</i>
+                <div class="snapside-node"><img src="assets/snapside/snapside-icon.png" alt="" /><b>Snapside MCP</b><span>Timeline · Workstream · Source</span></div>
+              </div>
+              <p>ツールをまたぐ変更順序、作業目的、元のSource linkを同じContextとして読み、必要な時だけ原文へ戻れる。</p>
+            </article>
+          </div>
+          <div class="mcp-benefits" aria-label="Benefits of using Snapside MCP">
+            <div><span>01</span><b>One connection</b><p>AI Tool側の接続先をSnapside MCPにまとめる。</p></div>
+            <div><span>02</span><b>Cross-tool context</b><p>異なるActivityを時間とWorkstreamで横断して読む。</p></div>
+            <div><span>03</span><b>Source-backed</b><p>要約だけで終わらず、元の記録まで確認する。</p></div>
+            <div><span>04</span><b>Shared context</b><p>CodexとClaude Codeが同じProduct Historyを利用する。</p></div>
+          </div>
+        </div>
       </section>
 
       <section class="snap-section notion-diff-section" id="diff" aria-labelledby="diff-title">
@@ -101,22 +170,23 @@
       </section>
 
       <section class="snap-section screens-section" id="screens" aria-labelledby="screens-title">
-        <div class="section-intro"><p class="section-index">09 / Key Screens</p><div><h2 id="screens-title">画面は役割ごとに分け、<br />同じEvent modelを共有する。</h2><p>Overviewでは全体状態、Timelineでは変更の順序、Integrationsでは収集元を確認します。Mobileでは履歴の確認と原文への移動を優先しました。</p></div></div>
+        <div class="section-intro"><p class="section-index">09 / Key Screens</p><div><h2 id="screens-title">画面は役割ごとに分け、<br />同じEvent modelを共有する。</h2><p>Overviewでは全体状態、Timelineでは変更の順序、Integrationsでは収集元、Workstreamsでは機能単位のまとまりを確認します。</p></div></div>
         <div class="product-screen-story">
-          <figure class="product-shot is-overview"><img src="assets/snapside/snapside-overview.png" alt="Snapside Project Overview screen" /><figcaption><span>01 / Overview</span><strong data-case-en="Review connections, recent changes, and activity in one screen." data-case-ko="연결 상태, 최근 변경, 활동량을 한 화면에서 확인합니다.">接続状態、最近の変更、活動量を一つの画面で確認する。</strong></figcaption></figure>
-          <figure class="product-shot is-timeline"><img src="assets/snapside/snapside-timeline.png" alt="Snapside weekly timeline screen" /><figcaption><span>02 / Timeline</span><strong data-case-en="Read the sequence of changes across tools, week by week." data-case-ko="도구를 넘나드는 변경 순서를 주 단위로 확인합니다.">週を基本単位にして、ツールをまたぐ変更の順序を読む。</strong></figcaption></figure>
-          <div class="product-shot-pair">
-            <figure class="product-shot"><img src="assets/snapside/snapside-integrations.png" alt="Snapside integrations and MCP connection screen" /><figcaption><span>03 / Integrations</span><strong data-case-en="Manage the connection status of sources and AI agents." data-case-ko="Source와 AI Agent의 연결 상태를 관리합니다.">SourceとAI Agentの接続状態を管理する。</strong></figcaption></figure>
-            <figure class="product-shot is-mobile"><img src="assets/snapside/snapside-mobile.png" alt="Snapside responsive mobile overview screen" /><figcaption><span>04 / Mobile</span><strong data-case-en="Prioritize history review and source access on small screens." data-case-ko="작은 화면에서는 이력 확인과 원문 이동을 우선합니다.">小さい画面では履歴の確認と原文への移動を優先する。</strong></figcaption></figure>
+          <figure class="product-shot is-overview"><img src="assets/snapside/snapside-live-overview.jpg" alt="実際のSnapside Project Overview画面" /><figcaption><span>01 / Overview</span><strong data-case-en="Review connections, recent changes, and activity in one screen." data-case-ko="연결 상태, 최근 변경, 활동량을 한 화면에서 확인합니다.">接続状態、最近の変更、活動量を一つの画面で確認する。</strong></figcaption></figure>
+          <figure class="product-shot is-timeline"><img src="assets/snapside/snapside-live-timeline.jpg" alt="実際のSnapside Weekly Timeline画面" /><figcaption><span>02 / Timeline</span><strong data-case-en="Read the sequence of changes across tools, week by week." data-case-ko="도구를 넘나드는 변경 순서를 주 단위로 확인합니다.">週を基本単位にして、ツールをまたぐ変更の順序を読む。</strong></figcaption></figure>
+          <div class="product-shot-pair is-web-pair">
+            <figure class="product-shot"><img src="assets/snapside/snapside-live-integrations.jpg" alt="実際のSnapside Integrations画面" /><figcaption><span>03 / Integrations</span><strong data-case-en="Manage the connection status of sources and AI agents." data-case-ko="Source와 AI Agent의 연결 상태를 관리합니다.">SourceとAI Agentの接続状態を管理する。</strong></figcaption></figure>
+            <figure class="product-shot"><img src="assets/snapside/snapside-live-workstreams.jpg" alt="実際のSnapside Workstreams画面" /><figcaption><span>04 / Workstreams</span><strong data-case-en="Group product events by feature and work objective." data-case-ko="제품 이벤트를 기능과 작업 목적별로 묶습니다.">Product Eventを機能と作業目的ごとにまとめる。</strong></figcaption></figure>
           </div>
         </div>
       </section>
 
-      <section class="snap-section design-system-section" aria-labelledby="design-system-title">
-        <div class="section-intro"><p class="section-index">10 / Design System</p><div><h2 id="design-system-title">ブランドは暖かく、<br />履歴画面は静かに。</h2><p>Orange Gradientはブランドと重要な進行状態に限定し、記録を読む面はWhiteとCharcoalを中心に構成しました。</p></div></div>
-        <figure class="design-system-shot"><img src="assets/snapside/snapside-design-system.png" alt="Snapside design system overview" /></figure>
-        <div class="token-layout"><div class="token-scale"><span>Primitive</span><i>#FF5314</i><i>#FF9F20</i><i>#FFD25A</i><i>#18181A</i><i>#FFFFFF</i></div><i>→</i><div class="token-scale semantic"><span>Semantic</span><i>Brand</i><i>Foreground</i><i>Surface</i><i>Border</i><i>Status</i></div><i>→</i><div class="component-list"><span>Component</span><b>Button</b><b>Input</b><b>Tabs</b><b>Badge</b><b>Card</b><b>Modal</b><b>Tooltip</b><b>Navigation</b></div></div>
-        <p class="accessibility-note"><b>Interaction states</b> Hover、Focus、Loading、Error、Disabledを共通Tokenで管理し、Light / Dark modeのContrastを同じSemantic roleで維持する。</p>
+      <section class="snap-section design-system-section" id="design-system" aria-labelledby="design-system-title">
+        <div class="section-intro"><p class="section-index">10 / Design System</p><div><h2 id="design-system-title">Design Systemは、<br />Figmaで確認できます。</h2><p>Token、Component、Interaction state、Light / Dark modeの仕様を一つのFigma fileに整理しています。</p></div></div>
+        <div class="figma-design-link">
+          <div><span>Snapside Design System</span><strong>Figma</strong></div>
+          <a class="figma-link-button" href="https://www.figma.com/design/uocG2cepP52iAa0tjHyMwl/Snapside" target="_blank" rel="noopener noreferrer">View in Figma</a>
+        </div>
       </section>
 
       <section class="snap-section outcome-section" id="outcome" aria-labelledby="outcome-title">
@@ -128,8 +198,8 @@
       </section>
     </main>
 
-    <footer class="snapside-footer"><a href="wivlo.html">← Wivlo</a><a href="index.html#projects">All projects →</a></footer>
-    <script src="project-i18n.js"></script>
+    <footer class="snapside-footer"><a href="wivlo.html">Wivlo</a><a href="trami.html">Trami</a></footer>
+    <script src="project-i18n.js?v=20260906-3"></script>
     <script src="case-reveal.js"></script>
     <script src="case-viewer.js"></script>
   </body>

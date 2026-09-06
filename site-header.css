@@ -66,6 +66,11 @@ body .project-page-header,
 .project-page-header .case-nav { display: flex; align-self: stretch; align-items: center; gap: 28px; color: #66666d; }
 .project-page-header .case-nav a { position: relative; display: flex; height: 100%; align-items: center; color: inherit; font-size: 12px; font-weight: 600; text-decoration: none; }
 .project-page-header .case-nav a:hover { color: #18181a; }
+.project-page-header .project-language-switch { display: flex; align-items: center; gap: 3px; margin-left: 22px; }
+.project-page-header .lang-button { min-width: 32px; height: 30px; padding: 0 8px; border: 0; border-radius: 5px; background: transparent; color: #77777e; cursor: pointer; font-size: 10px; font-weight: 650; }
+.project-page-header .lang-button:hover { background: #f0f0f2; color: #18181a; }
+.project-page-header .lang-button.active { background: #18181a; color: #fff; }
+.project-page-header .lang-button:focus-visible { outline: 2px solid #7284d1; outline-offset: 2px; }
 .project-page-header + main section[id],
 .site-header + main section[id] { scroll-margin-top: 82px; }
 
@@ -73,6 +78,7 @@ body .project-page-header,
   .site-header { grid-template-columns: 1fr auto; }
   .site-header .nav-links { display: none; }
   .project-page-header .case-nav { display: none; }
+  .project-page-header .project-language-switch { margin-left: auto; }
 }
 
 @media (max-width: 620px) {

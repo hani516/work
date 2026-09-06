@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="landing.css" />
     <link rel="stylesheet" href="site-header.css" />
     <link rel="stylesheet" href="portfolio-design.css" />
-    <link rel="stylesheet" href="portfolio-final.css" />
+    <link rel="stylesheet" href="portfolio-final.css?v=9" />
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -44,26 +44,6 @@
         </div>
       </section>
 
-      <section class="portfolio-section selected-projects" id="projects">
-        <div class="page-shell">
-          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">3つのプロジェクト。</h2><p data-i18n="selectedIntro">個人プロダクトと、会社で担当した改善プロジェクトを紹介します。</p></div>
-          <div class="project-panels reveal" aria-label="Selected project case studies">
-            <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
-              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p></div>
-              <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-hero-ui.webp" alt="" /></div>
-            </article>
-            <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
-              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p></div>
-              <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="" /><img src="assets/wivlo/wivlo-app-home-ios.png" alt="" /></div>
-            </article>
-            <article class="project-panel panel-snapside" data-project-href="snapside.html">
-              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-icon.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトが作られた過程を自動で記録し、変更の履歴を振り返れるProduct History Workspace。</p></div>
-              <div class="panel-visual panel-visual-snapside" aria-hidden="true"><img src="assets/snapside/snapside-overview.png" alt="" /></div>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="about-band">
         <div class="page-shell about-layout">
           <div class="section-heading reveal"><p class="section-label" data-i18n="aboutLabel">Profile</p><h2 data-i18n="aboutTitle">デザインと実装、両方の視点で考えます。</h2></div>
@@ -73,14 +53,63 @@
             <article><span data-i18n="focusLabel">Focus</span><strong>Product Design</strong><p data-i18n="focusBody">UX Strategy / UI Design<br />Prototype / Frontend / Analytics</p></article>
             <article><span data-i18n="languageLabel">Languages</span><strong>JP / KR / EN</strong><p data-i18n="languageBody">日本語を中心に、韓国語と英語にも対応</p></article>
           </div>
+          <div class="capability-heading reveal">
+            <p class="section-label" data-i18n="capabilityLabel">Capabilities</p>
+            <p data-i18n="capabilityIntro">課題の発見から検証と実装まで、プロダクトづくりに必要な工程を横断して担当します。</p>
+          </div>
+          <div class="capability-grid reveal" aria-label="Product design capabilities">
+            <article>
+              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#target"></use></svg></span><div><small>01</small><h3>Product / UX</h3></div></header>
+              <ul data-i18n="uxSkills"><li>課題定義</li><li>ユーザーリサーチ</li><li>インタビュー・行動観察</li><li>情報設計・User Flow</li><li>Interaction Design</li><li>Usability Test・A/B Test</li></ul>
+            </article>
+            <article>
+              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg></span><div><small>02</small><h3>UI / Visual</h3></div></header>
+              <ul data-i18n="uiSkills"><li>UI Design</li><li>Design System</li><li>Prototyping</li><li>Responsive Design</li><li>Figma</li><li>Photoshop</li></ul>
+            </article>
+            <article>
+              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#chart"></use></svg></span><div><small>03</small><h3>Data / Analysis</h3></div></header>
+              <ul data-i18n="dataSkills"><li>GA4</li><li>Search Console</li><li>Clarity・Heatmap</li><li>Lighthouse</li><li>仮説検証</li><li>Data-informed Iteration</li></ul>
+            </article>
+            <article>
+              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg></span><div><small>04</small><h3>Build</h3></div></header>
+              <ul data-i18n="buildSkills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Codex</li><li>AI-assisted Development</li><li>Prototype Implementation</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section selected-projects" id="projects">
+        <div class="page-shell">
+          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">5つのプロジェクト。</h2><p data-i18n="selectedIntro">個人プロダクト、協業プロダクト、会社で担当した改善プロジェクトを紹介します。</p></div>
+          <div class="project-panels reveal" aria-label="Selected project case studies">
+            <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
+              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p></div>
+              <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-live-home.jpg" alt="" /></div>
+            </article>
+            <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
+              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p></div>
+              <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-live-dashboard.jpg" alt="" /></div>
+            </article>
+            <article class="project-panel panel-snapside" data-project-href="snapside.html">
+              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-icon.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトが作られた過程を自動で記録し、変更の履歴を振り返れるProduct History Workspace。</p></div>
+              <div class="panel-visual panel-visual-snapside" aria-hidden="true"><img src="assets/snapside/snapside-live-overview.jpg" alt="" /></div>
+            </article>
+            <article class="project-panel panel-trami" data-project-href="trami.html">
+              <div class="panel-copy"><span class="panel-number">04</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><img src="assets/trami/trami-icon.png" alt="" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始めるまでの入力を減らし、記録と振り返りを一つの流れにしたフィットネスアプリ。</p></div>
+              <div class="panel-visual panel-visual-mobile" aria-hidden="true"><img src="assets/trami/trami-hero-ui.webp" alt="" /></div>
+            </article>
+            <article class="project-panel panel-blinq" data-project-href="blinq.html">
+              <div class="panel-copy"><span class="panel-number">05</span><span class="panel-type">Collaborative · Mobile</span><div class="panel-title"><img src="assets/blinq/blinq-icon.png" alt="" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じ日付で確認できるように設計した、デザイナーと開発者の協業モバイルプロダクト。</p></div>
+              <div class="panel-visual panel-visual-mobile" aria-hidden="true"><img src="assets/blinq/blinq-hero-ui.webp" alt="" /></div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="contact-section page-shell" id="contact">
         <div class="contact-copy reveal"><p class="section-label">Contact</p><h2 data-i18n="contactTitle">プロダクトとUXについて、話しましょう。</h2><p data-i18n="contactBody">採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。</p></div>
         <div class="contact-links reveal">
-          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>プロフィールを見る ↗</strong></a>
-          <a class="contact-link magnetic" href="https://github.com/hani516/work" target="_blank" rel="noreferrer"><span>GitHub</span><strong data-i18n="githubCta">リポジトリを見る ↗</strong></a>
+          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>プロフィールを見る</strong></a>
           <button class="contact-link email-copy magnetic" type="button" data-copy-email><span>Email</span><strong>kim93yohan@gmail.com</strong></button>
         </div>
       </section>
@@ -88,6 +117,6 @@
 
     <footer class="site-footer page-shell"><span>© 2026 Kim Yohan</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js"></script>
+    <script src="script.js?v=7"></script>
   </body>
 </html>

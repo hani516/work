@@ -6,7 +6,11 @@ const projectKey = document.body.classList.contains("wivlo-product-page")
     ? "snapside"
     : document.body.classList.contains("project-lalatulle")
       ? "lalatulle"
-      : null;
+      : document.body.classList.contains("project-trami")
+        ? "trami"
+        : document.body.classList.contains("project-blinq")
+          ? "blinq"
+          : null;
 
 const projectTranslations = {
   wivlo: {
@@ -141,12 +145,11 @@ const projectTranslations = {
       ".project-lalatulle main > section:nth-of-type(6) .metric-grid span": ["Total clicks / Google Search Console", "Average CTR / Google Search Console", "Peak search position during the season", "Views / GA4 Organic Search", "Active users / GA4 Organic Search", "Returning users / GA4 Organic Search"],
       ".seo-rank-card strong": "Peak #2",
       ".seo-rank-card p": "Peak ranking for major keywords during the season",
-      "#landing h2": "Reduce the menu icons from seven to three.",
+      "#landing h2": "Reduce the menu icons from six to three.",
       "#landing .section-copy p": "The header now shows Search, Favorites, and Cart. New, Ranking, and Sale moved to the navigation below, and the standalone Blog icon was removed.",
       ".lalatulle-evidence-map strong": ["Low usage of the Blog menu and Sale page", "Core brands were excluded from discounts", "Quick Search received clicks even near the bottom", "Limit primary actions to three"],
       ".lalatulle-evidence-map p": ["Lower their priority as standalone primary paths.", "There was little reason to center Sale in the main slider.", "Use this as evidence to move it to a more discoverable upper position.", "Keep Search, Favorites, and Cart on top and move the rest down one level."],
-      ".before-state .nav-icon-grid span": ["Search", "New", "Ranking", "Sale", "Favorites", "Cart", "Blog"],
-      ".before-state > p": "Seven items with different purposes sat at the same level, obscuring the priority of frequent actions.",
+      ".before-state > p": "Six items with different purposes sat at the same level, obscuring the priority of frequent actions.",
       ".after-state > p": "Brand, Category, New, Sale, and Ranking moved below the logo. Blog remained in the main slider, and the archive link moved to the lower More view.",
       ".navigation-decisions h3": ["Keep Search, Favorites, and Cart in the header", "Remove the standalone Blog icon", "Remove the Sale banner from the main slider"],
       ".navigation-decisions p": ["Brand, Category, New, Sale, and Ranking moved to the navigation below the logo.", "The Blog menu had a low click rate and remained accessible from the main slider.", "Traffic to the Sale page was low and core brands were excluded from discounts, so the slider changed to feature and blog banners."],
@@ -185,12 +188,11 @@ const projectTranslations = {
       ".project-lalatulle main > section:nth-of-type(6) .metric-grid span": ["Total clicks / Google Search Console", "Average CTR / Google Search Console", "시즌 최고 검색 순위", "Views / GA4 Organic Search", "Active users / GA4 Organic Search", "Returning users / GA4 Organic Search"],
       ".seo-rank-card strong": "최고 2위",
       ".seo-rank-card p": "시즌 중 주요 키워드 최고 검색 순위",
-      "#landing h2": "메뉴 아이콘을 7개에서 3개로 줄였습니다.",
+      "#landing h2": "메뉴 아이콘을 6개에서 3개로 줄였습니다.",
       "#landing .section-copy p": "헤더에는 검색, 즐겨찾기, 장바구니만 표시했습니다. 신상품, 랭킹, 세일은 아래 내비게이션으로 이동하고 블로그 단독 아이콘은 삭제했습니다.",
       ".lalatulle-evidence-map strong": ["블로그 메뉴와 Sale 페이지 이용이 적음", "주력 브랜드는 할인 대상에서 제외", "하단의 간편 검색에도 클릭 발생", "주요 조작을 세 개로 제한"],
       ".lalatulle-evidence-map p": ["독립된 주요 경로로 유지할 우선순위를 낮췄습니다.", "Sale을 메인 슬라이드 중심에 둘 이유가 약했습니다.", "발견하기 쉬운 상단으로 옮기는 근거로 사용했습니다.", "검색, 즐겨찾기, 장바구니는 상단에 두고 나머지는 아래 계층으로 이동했습니다."],
-      ".before-state .nav-icon-grid span": ["검색", "신상품", "랭킹", "세일", "즐겨찾기", "장바구니", "블로그"],
-      ".before-state > p": "목적이 다른 7개 항목이 같은 계층에 배치돼 자주 쓰는 조작의 우선순위가 보이지 않았습니다.",
+      ".before-state > p": "목적이 다른 6개 항목이 같은 계층에 배치돼 자주 쓰는 조작의 우선순위가 보이지 않았습니다.",
       ".after-state > p": "Brand, Category, New, Sale, Ranking은 로고 아래로 이동했습니다. 블로그는 메인 슬라이드에 유지하고 목록 링크는 하단 More view로 옮겼습니다.",
       ".navigation-decisions h3": ["검색·즐겨찾기·장바구니를 헤더에 유지", "블로그 단독 아이콘 삭제", "메인 슬라이드의 Sale 배너 삭제"],
       ".navigation-decisions p": ["Brand, Category, New, Sale, Ranking은 로고 아래 내비게이션으로 이동했습니다.", "블로그 메뉴 클릭률이 낮고 메인 슬라이드에서도 접근할 수 있어 단독 아이콘을 제거했습니다.", "세일 페이지 유입이 적고 주력 브랜드는 할인 대상이 아니어서 특집 및 블로그 배너로 변경했습니다."],
@@ -317,39 +319,42 @@ projectTranslations.snapside = {
     ".snapside-hero h2": "Bring every moment of building a product into one history.",
     ".snapside-hero .case-lead": "Connect the tools you already use once. Snapside automatically collects distributed changes and makes them readable through timelines and workstreams.",
     ".background-section h2": "One product is built across multiple tools.",
-    ".background-section .section-intro p": "Plans, designs, code, data, and releases remain in separate services. Understanding what changed across the product requires reopening every tool.",
+    ".background-section .section-intro > div > p": "Plans, designs, code, data, and releases remain in separate services. Understanding what changed across the product requires reopening every tool.",
     ".fragmented-result strong": "The reason and sequence behind changes are not preserved at the product level.",
     "#problem h2": "The records exist, but the product context does not.",
-    "#problem .section-intro p": "The system needed to construct a product history from existing tool activity without creating another logging task.",
+    "#problem .section-intro > div > p": "The system needed to construct a product history from existing tool activity without creating another logging task.",
     ".problem-grid h3": ["Changes are distributed", "Reasons must be rediscovered", "Manual logs do not last", "Only the result remains", "AI loses context too"],
     ".problem-grid p": ["Plans, screens, code, and releases are stored in different services.", "Over time, both the change and the reasoning behind it become difficult to recover.", "Daily logs become extra work that competes with building the product.", "Finished screens alone cannot explain the problem-solving process or individual contribution.", "AI coding tools cannot access the latest state across every connected service at once."],
-    ".design-question": "How can distributed changes become one product history without asking users to create another record?",
-    ".insight-section h2": "People work to build products, not to document their work.",
-    ".insight-section .section-intro p": "Instead of making work journals a new habit, I treated activity already created in existing tools as the source.",
-    ".behavior-contrast strong": ["Write a work log after building", "Connect everyday tools once"],
-    ".behavior-contrast p": ["It depends on memory and manual input, so gaps increase when work gets busy.", "Changes are collected automatically; the user only reviews what matters."],
-    ".core-insight p": "Meaningful history comes not from the number of activities, but from reading <strong>source, time, and work intent</strong> together.",
+    ".design-question strong": "How can distributed changes become one product history without asking users to create another record?",
+    ".insight-section h2": "Project management tools record a different layer of work.",
+    ".insight-section .section-intro > div > p": "I reviewed each product's core object and the information users maintain using official documentation. The three services manage planned work; Snapside collects changes that actually occur in production tools.",
+    ".boundary-side p": ["Users enter and update tasks and status.", "Collect changes from Notion, Figma, GitHub, and Vercel and organize them chronologically."],
     "#principles h2": "Automate collection. Keep every record traceable to its source.",
-    "#principles .section-intro p": "The interface stays calm and readable so individuals can revisit the process when needed instead of being overwhelmed by activity.",
+    "#principles .section-intro > div > p": "The interface stays calm and readable so individuals can revisit the process when needed instead of being overwhelmed by activity.",
     ".principle-grid p": ["Connect a source to a project once and collect subsequent changes automatically.", "Return from every event to its original page, file, commit, or deployment.", "Use time as the common axis across different forms of change.", "Focus on individual decisions, growth, and contribution rather than team reporting.", "Present dense event history without breaking its priority hierarchy."],
     ".ia-section h2": "Separate time, intent, and connection status around the project.",
-    ".ia-section .section-intro p": "Overview shows overall status, Timeline shows sequence, and Workstreams show feature-level progress instead of forcing everything into one feed.",
+    ".ia-section .section-intro > div > p": "Overview shows overall status, Timeline shows sequence, and Workstreams show feature-level progress instead of forcing everything into one feed.",
     "#flow h2": "Connect once. Let the history update as work happens.",
-    "#flow .section-intro p": "After setup, users do not perform extra logging. They read weekly timelines or workstreams and return to a source only when needed.",
+    "#flow .section-intro > div > p": "After setup, users do not perform extra logging. They read weekly timelines or workstreams and return to a source only when needed.",
     ".core-flow p": ["Create a product-level context.", "Select the services already in use.", "Import existing changes.", "Collect new activity automatically.", "Read progress by week or day.", "Follow the history of one feature.", "Read the latest context through MCP."],
     ".flow-note span": "The main user actions are connecting and reviewing. There is no manual history-writing step in the core flow.",
     ".system-section h2": "Normalize different activities into the same product event.",
-    ".system-section .section-intro p": "MCP does not write the history. Codex and Claude Code read the product history already collected and normalized from each integration.",
+    ".system-section .section-intro > div > p": "MCP does not write the history. Codex and Claude Code read the product history already collected and normalized from each integration.",
+    ".mcp-context-comparison h3": "Give AI the product history instead of reconnecting every source.",
+    ".mcp-context-comparison > header > p": "Instead of connecting each AI tool to multiple services and reconstructing context repeatedly, Codex and Claude Code read the same context already collected and normalized by Snapside.",
+    ".mcp-path h4": ["Connect to and inspect each service", "Share one product context"],
+    ".mcp-path > p": ["Each source uses a different format and timeline, so the AI must reconstruct the product-wide sequence and relationships.", "Read cross-tool sequence, work intent, and original source links as one context, then return to the source only when needed."],
+    ".mcp-benefits p": ["Use Snapside MCP as the AI tool's connection point.", "Read different activities across time and workstreams.", "Verify the original record instead of stopping at a summary.", "Let Codex and Claude Code use the same product history."],
     ".notion-diff-section h2": "Show what changed, not only that an update occurred.",
-    ".notion-diff-section .section-intro p": "A Notion update timestamp is not enough. Snapside compares the previous snapshot with the current state and separates additions, removals, and modifications.",
+    ".notion-diff-section .section-intro > div > p": "A Notion update timestamp is not enough. Snapside compares the previous snapshot with the current state and separates additions, removals, and modifications.",
     ".diff-decisions p": ["Show a summary first when the change volume is high.", "Expand block and property details only when needed.", "Keep a direct route back to the original Notion page."],
     "#screens h2": "Separate screens by purpose while sharing one event model.",
-    "#screens .section-intro p": "These frames are reserved for current product screenshots. From Dashboard to the desktop app, each screen presents the same history for a different review task.",
-    ".design-system-section h2": "Keep the brand warm and the history interface calm.",
-    ".design-system-section .section-intro p": "Orange gradients are reserved for brand and key progress states. Reading surfaces use white and charcoal.",
-    ".accessibility-note": "<b>Interaction states</b> Hover, Focus, Loading, Error, and Disabled share semantic tokens, with consistent contrast across Light and Dark mode.",
+    "#screens .section-intro > div > p": "Overview shows product status, Timeline shows chronological changes, Integrations shows connected sources, and Workstreams groups events by feature.",
+    ".design-system-section h2": "Explore the design system in Figma.",
+    ".design-system-section .section-intro > div > p": "Tokens, components, interaction states, and Light / Dark mode specifications are organized in one Figma file.",
+    ".figma-link-button": "View in Figma",
     "#outcome h2": "Explain the process, not only the final result.",
-    "#outcome .section-intro p": "Implemented experiences and hypotheses that still need validation are stated separately without invented performance metrics.",
+    "#outcome .section-intro > div > p": "Implemented experiences and hypotheses that still need validation are stated separately without invented performance metrics.",
     ".outcome-grid p": ["Review changes from multiple services in one sequence.", "Return from each event to its original record and verify context.", "Group changes across tools by feature and work intent.", "Let AI tools read the collected history as current project context."],
     ".retrospective h3": ["An activity feed is not a product history.", "Test the balance between automatic grouping and information density."],
     ".retrospective p": ["A chronological list alone does not explain why changes belong together. The design needed to preserve sources while grouping events into workstreams.", "Next, improve AI summaries and workstream classification while preserving correction controls and avoiding excessive notification density."],
@@ -361,39 +366,42 @@ projectTranslations.snapside = {
     ".snapside-hero h2": "프로덕트가 만들어지는 모든 순간을 하나의 히스토리로 모읍니다.",
     ".snapside-hero .case-lead": "평소 사용하는 도구를 한 번 연결하면 분산된 변경을 자동으로 수집하고, 타임라인과 Workstream으로 확인할 수 있는 Product History Platform입니다.",
     ".background-section h2": "하나의 프로덕트를 여러 도구에서 만들고 있습니다.",
-    ".background-section .section-intro p": "기획, 디자인, 코드, 데이터, 배포 기록은 각 서비스에 남습니다. 하지만 프로덕트 전체에서 무엇이 변했는지 확인하려면 모든 도구를 다시 열어야 합니다.",
+    ".background-section .section-intro > div > p": "기획, 디자인, 코드, 데이터, 배포 기록은 각 서비스에 남습니다. 하지만 프로덕트 전체에서 무엇이 변했는지 확인하려면 모든 도구를 다시 열어야 합니다.",
     ".fragmented-result strong": "프로덕트 전체의 변경 이유와 진행 흐름은 어느 한곳에도 남지 않습니다.",
     "#problem h2": "기록은 존재하지만 프로덕트의 맥락은 보이지 않습니다.",
-    "#problem .section-intro p": "새로운 관리 작업을 추가하지 않고, 이미 각 도구에서 발생한 변경으로 Product History를 구성해야 했습니다.",
+    "#problem .section-intro > div > p": "새로운 관리 작업을 추가하지 않고, 이미 각 도구에서 발생한 변경으로 Product History를 구성해야 했습니다.",
     ".problem-grid h3": ["변경이 분산됨", "이유를 다시 찾아야 함", "수동 기록이 지속되지 않음", "결과만 남음", "AI도 맥락을 잃음"],
     ".problem-grid p": ["기획, 화면, 코드, 배포 기록이 서로 다른 서비스에 저장됩니다.", "시간이 지나면 무엇을 변경했는지뿐 아니라 판단 배경도 찾기 어려워집니다.", "제품을 만드는 일과 별개로 작업 일지를 작성해야 하는 부담이 생깁니다.", "완성된 화면만으로는 문제 해결 과정과 개인의 기여를 설명하기 어렵습니다.", "AI 코딩 도구가 연결된 모든 서비스의 최신 상태를 한 번에 확인하기 어렵습니다."],
-    ".design-question": "새로운 기록 행동을 요구하지 않고 분산된 변경을 하나의 제품 히스토리로 남기려면 어떻게 해야 할까?",
-    ".insight-section h2": "사용자는 기록하기 위해서가 아니라 프로덕트를 만들기 위해 작업합니다.",
-    ".insight-section .section-intro p": "작업 일지 작성을 새로운 습관으로 요구하지 않고, 기존 도구에서 자연스럽게 발생하는 Activity를 Source로 사용했습니다.",
-    ".behavior-contrast strong": ["작업 후 일지를 직접 작성", "평소 사용하는 도구를 한 번 연결"],
-    ".behavior-contrast p": ["기억과 수동 입력에 의존해 바쁠수록 기록이 누락됩니다.", "이미 발생한 변경을 자동으로 수집하고 사용자에게는 필요한 확인만 남깁니다."],
-    ".core-insight p": "의미 있는 History는 Activity의 양이 아니라 <strong>Source, 시간, 작업 목적</strong>을 함께 읽을 수 있을 때 만들어집니다.",
+    ".design-question strong": "새로운 기록 행동을 요구하지 않고 분산된 변경을 하나의 제품 히스토리로 남기려면 어떻게 해야 할까?",
+    ".insight-section h2": "프로젝트 관리 도구와는 기록하는 대상이 다릅니다.",
+    ".insight-section .section-intro > div > p": "공식 문서를 바탕으로 각 서비스의 기본 단위와 사용자가 관리하는 정보를 비교했습니다. 세 서비스는 계획한 작업의 진행을 관리하고, Snapside는 제작 도구에서 실제로 발생한 변경을 수집합니다.",
+    ".boundary-side p": ["사용자가 Task와 Status를 입력하고 갱신합니다.", "Notion, Figma, GitHub, Vercel에서 발생한 변경을 수집해 시간순으로 정리합니다."],
     "#principles h2": "수집은 자동으로, 확인은 Source로 돌아갈 수 있게 설계합니다.",
-    "#principles .section-intro p": "많은 변경을 과장해서 보여주지 않고, 개인이 필요할 때 제작 과정을 다시 읽을 수 있는 차분한 인터페이스를 기준으로 삼았습니다.",
+    "#principles .section-intro > div > p": "많은 변경을 과장해서 보여주지 않고, 개인이 필요할 때 제작 과정을 다시 읽을 수 있는 차분한 인터페이스를 기준으로 삼았습니다.",
     ".principle-grid p": ["프로젝트에 Source를 한 번 연결하고 이후 변경을 자동으로 수집합니다.", "각 Event에서 원본 페이지, 파일, 커밋, 배포 기록으로 돌아갑니다.", "형식이 다른 변경을 시간을 공통 축으로 다시 읽습니다.", "팀 보고보다 개인의 판단, 성장, 기여 과정을 중심에 둡니다.", "많은 Event를 우선순위가 무너지지 않도록 밀도 있게 표시합니다."],
     ".ia-section h2": "Project를 중심으로 시간, 목적, 연결 상태를 분리합니다.",
-    ".ia-section .section-intro p": "모든 것을 한 피드에 넣지 않고 전체 상태는 Overview, 시간 흐름은 Timeline, 기능별 진행은 Workstreams에서 확인합니다.",
+    ".ia-section .section-intro > div > p": "모든 것을 한 피드에 넣지 않고 전체 상태는 Overview, 시간 흐름은 Timeline, 기능별 진행은 Workstreams에서 확인합니다.",
     "#flow h2": "한 번 연결하면 작업할 때마다 History가 갱신됩니다.",
-    "#flow .section-intro p": "초기 설정 이후 기록을 위한 별도 조작을 요구하지 않습니다. 주간 Timeline과 Workstream을 확인하고 필요할 때만 원문으로 돌아갑니다.",
+    "#flow .section-intro > div > p": "초기 설정 이후 기록을 위한 별도 조작을 요구하지 않습니다. 주간 Timeline과 Workstream을 확인하고 필요할 때만 원문으로 돌아갑니다.",
     ".core-flow p": ["제품 단위의 Context를 만듭니다.", "평소 사용하는 서비스를 선택합니다.", "기존 변경 기록을 가져옵니다.", "새 Activity를 자동으로 수집합니다.", "주간·일간 단위로 흐름을 읽습니다.", "기능 단위로 진행 과정을 확인합니다.", "MCP를 통해 최신 Context를 조회합니다."],
     ".flow-note span": "사용자의 주요 조작은 연결과 확인입니다. History를 직접 작성하는 단계를 Core Flow에 포함하지 않았습니다.",
     ".system-section h2": "형식이 다른 Activity를 동일한 Product Event로 변환합니다.",
-    ".system-section .section-intro p": "MCP가 History를 직접 작성하지 않습니다. 각 Integration에서 수집하고 정규화한 History를 Codex와 Claude Code가 읽어 프로젝트 Context로 활용합니다.",
+    ".system-section .section-intro > div > p": "MCP가 History를 직접 작성하지 않습니다. 각 Integration에서 수집하고 정규화한 History를 Codex와 Claude Code가 읽어 프로젝트 Context로 활용합니다.",
+    ".mcp-context-comparison h3": "각 Source를 다시 연결하지 않고 프로덕트 전체 History를 AI에 전달합니다.",
+    ".mcp-context-comparison > header > p": "AI Tool마다 여러 서비스를 연결하고 맥락을 다시 조합하지 않습니다. Snapside가 수집하고 정규화한 동일한 Context를 Codex와 Claude Code가 함께 사용합니다.",
+    ".mcp-path h4": ["서비스별 연결과 탐색", "하나의 Product Context 공유"],
+    ".mcp-path > p": ["Source마다 형식과 시간축이 달라 AI가 프로덕트 전체의 순서와 관계를 다시 구성해야 합니다.", "도구를 넘나드는 변경 순서, 작업 목적, 원본 Source link를 하나의 Context로 읽고 필요할 때만 원문으로 돌아갑니다."],
+    ".mcp-benefits p": ["AI Tool의 연결 지점을 Snapside MCP로 통합합니다.", "서로 다른 Activity를 시간과 Workstream 기준으로 함께 읽습니다.", "요약에서 끝내지 않고 원본 기록을 검증합니다.", "Codex와 Claude Code가 동일한 Product History를 사용합니다."],
     ".notion-diff-section h2": "업데이트됐다는 사실이 아니라 무엇이 달라졌는지 보여줍니다.",
-    ".notion-diff-section .section-intro p": "Notion의 수정 시각만으로는 변경 내용을 알 수 없습니다. 이전 Snapshot과 현재 상태를 비교해 추가, 삭제, 수정을 구분합니다.",
+    ".notion-diff-section .section-intro > div > p": "Notion의 수정 시각만으로는 변경 내용을 알 수 없습니다. 이전 Snapshot과 현재 상태를 비교해 추가, 삭제, 수정을 구분합니다.",
     ".diff-decisions p": ["변경량이 많으면 요약을 먼저 보여줍니다.", "Block과 Property 상세는 필요할 때 펼칩니다.", "원본 Notion Page로 이동하는 경로를 유지합니다."],
     "#screens h2": "화면의 역할은 나누고 하나의 Event model을 공유합니다.",
-    "#screens .section-intro p": "현재 제품 스크린샷을 배치할 영역입니다. Dashboard부터 Desktop App까지 동일한 History를 서로 다른 확인 목적에 맞게 보여줍니다.",
-    ".design-system-section h2": "브랜드는 따뜻하게, History 화면은 차분하게 구성합니다.",
-    ".design-system-section .section-intro p": "Orange Gradient는 브랜드와 중요한 진행 상태에만 사용하고 기록을 읽는 화면은 White와 Charcoal을 중심으로 구성했습니다.",
-    ".accessibility-note": "<b>Interaction states</b> Hover, Focus, Loading, Error, Disabled 상태를 Semantic Token으로 관리하고 Light와 Dark mode에서 동일한 Contrast 기준을 유지합니다.",
+    "#screens .section-intro > div > p": "Overview에서는 전체 상태, Timeline에서는 변경 순서, Integrations에서는 연결된 소스, Workstreams에서는 기능 단위 흐름을 확인합니다.",
+    ".design-system-section h2": "Design System은 Figma에서 확인할 수 있습니다.",
+    ".design-system-section .section-intro > div > p": "Token, Component, Interaction state, Light / Dark mode 사양을 하나의 Figma 파일에 정리했습니다.",
+    ".figma-link-button": "Figma에서 보기",
     "#outcome h2": "결과뿐 아니라 만들어온 과정을 설명할 수 있습니다.",
-    "#outcome .section-intro p": "근거 없는 성과 수치를 만들지 않고 현재 구현한 경험과 앞으로 검증해야 할 가설을 구분했습니다.",
+    "#outcome .section-intro > div > p": "근거 없는 성과 수치를 만들지 않고 현재 구현한 경험과 앞으로 검증해야 할 가설을 구분했습니다.",
     ".outcome-grid p": ["여러 서비스의 변경을 하나의 시간 흐름으로 확인합니다.", "각 Event에서 원본 기록으로 돌아가 Context를 검토합니다.", "서로 다른 도구의 변경을 기능과 작업 목적으로 묶습니다.", "수집된 History를 AI Tool이 최신 Project Context로 읽습니다."],
     ".retrospective h3": ["Activity Feed와 Product History는 다릅니다.", "자동 분류와 정보 밀도의 균형을 검증합니다."],
     ".retrospective p": ["Event를 시간순으로 나열하는 것만으로는 변경의 목적과 관계가 드러나지 않습니다. Source를 유지하면서 Workstream으로 묶는 설계가 필요했습니다.", "AI 변경 요약과 Workstream 분류를 고도화하면서 오분류를 수정할 Control과 과도한 알림을 막는 밀도 설계를 검증합니다."],
@@ -402,11 +410,270 @@ projectTranslations.snapside = {
   }
 };
 
+projectTranslations.lalatulle = {
+  en: {
+    ".case-nav a": ["Halloween Page", "Landing Page / PDP"],
+    ".case-hero h2": "Improve each page from acquisition through purchase.",
+    ".case-hero .case-lead": "I analyzed, designed, and validated the Halloween Page's SEO and information structure, product discovery on the Landing Page, and purchase decisions on the PDP.",
+    ".project-scope-nav strong": ["Halloween Page", "Landing Page / PDP"],
+    ".halloween-context h2": "Address stalled rankings, an outdated structure, and a long page together.",
+    ".halloween-context .section-copy p": "The page had not received a structural update for several years, and major keywords remained around positions 7–9. The page was long, scroll reach was low, and cosplay-category sales showed little change.",
+    ".lalatulle-signal-grid strong": ["Rank 7–9", "Flat sales", "No structural update", "Low scroll reach"],
+    ".lalatulle-signal-grid p": ["Major keyword rankings had stalled.", "Cosplay-category sales showed little change over several years.", "The previous refresh focused on banners and background visuals.", "Few users reached the lower sections of the long page."],
+    ".benchmark-section h2": "Use competitor research to define the scope of this redesign.",
+    ".benchmark-section .section-copy p": "I compared Sugar, VanityME, Clearstone, and BODYLINE, then focused on five areas directly related to the Halloween Page structure.",
+    ".benchmark-findings p": ["Sugar and VanityME organize product discovery around touch input and smaller screens. LaLaTulle still retained a long desktop-oriented layout.", "Competitors exposed category choices through shorter paths. LaLaTulle stacked product groups vertically, increasing the scroll required to reach a target.", "Some competitor pages supported product lists with selection guides and FAQs. This led to adding content that answered search intent near the bottom.", "The existing casual visual tone did not match LaLaTulle's higher-priced assortment. I shifted the page toward imagery that communicated product value.", "I separated image and script weight as a technical issue, reviewed HTML and image operations, and used Lighthouse for validation."],
+    ".benchmark-scope-note p": "Product assortment, price range, app development, and social marketing could not be solved by a page redesign, so I separated them from the implementation scope.",
+    ".halloween-execution h2": "Redesign HTML, category navigation, lower-page content, and visual direction.",
+    ".halloween-execution .section-copy p": "I updated not only the visual layer, but also the structure read by search engines and the paths used by customers.",
+    ".execution-grid p": ["Correct mixed h2 and h3 levels across equivalent categories.", "Replace long vertical category sections with tabs to reduce scrolling.", "Add an FAQ and implement FAQPage structured data.", "Add links from subcategory pages back to the Halloween Page.", "Add a recommendation slider, Quick Search, and Q&A near the bottom.", "Replace casual banners with visuals aligned to the product price range."],
+    ".rank-decision-section h2": "Do not revert from ranking movement alone; review on-page behavior as well.",
+    ".rank-decision-section .section-copy p": "After the structural change, ranking fell to around 15 near September 10. I discussed a rollback with SEO, advertising, and store stakeholders, then proposed observing one more week because per-user behavior had not worsened.",
+    ".decision-dialogue p": ["A return to the previous design was proposed after the ranking decline.", "Separate ranking and on-page behavior, then observe for one week.", "Views and events per active user and engagement rate had not worsened."],
+    ".analytics-section h2": "Per-user behavior did not worsen while ranking fluctuated.",
+    ".analytics-section .section-copy p": "This compares September 14–16 with the full month of August. Because the periods differ, total users and events were excluded; per-user metrics and rates are used only as directional evidence.",
+    ".halloween-outcomes strong": ["92", "Average #2", "YoY increase"],
+    ".halloween-outcomes p": ["Reworked HTML and structured data.", "Major keywords from September 28 to October 1.", "Organic-channel purchases exceeded the previous year."],
+    ".outcome-caveat": "In early October, ranking returned to 7–9 after upper-page content changes, product removals, and fewer new arrivals. I documented content and assortment conditions rather than attributing the result to structure alone.",
+    "#landing h2": "Reorder entry points around the customer's purchase intent.",
+    "#landing .section-copy p": "I revised Navigation, First View, and Quick Search, then carried a PDP hypothesis from usability testing into an AB test.",
+    ".landing-decision-summary p": ["Keep Search, Favorites, and Cart in the top row.", "Make features and blog content central to First View.", "Move category discovery higher on the page.", "Validate the PDP hypothesis across the purchase flow."],
+    ".landing-navigation-section h2": "Reduce the menu icons from six to three.",
+    ".landing-navigation-section .section-copy p": "The top row is limited to Search, Favorites, and Cart. New, Ranking, and Sale moved below the logo, while the low-use standalone Blog icon was removed.",
+    ".before-state > p": "Six actions with different purposes occupied the same hierarchy.",
+    ".after-state > p": "Daily actions and product categories were separated into upper and lower levels.",
+    ".sale-priority-section h2": "Keep Sale, but lower its priority in First View.",
+    ".sale-priority-section .section-copy p": "Core customers are professional hosts in their mid-20s to mid-30s, and key products cost ¥20,000–30,000. Major brands cannot be discounted, and little Landing Page traffic moved to the Sale Page.",
+    ".sale-evidence-grid strong": ["Mid-20s to mid-30s", "¥20,000–30,000", "Core brands not discountable", "Low Sale traffic"],
+    ".sale-evidence-grid p": ["Customers selecting dresses for professional use.", "The core product price range.", "Discounts are limited to outlet stock and selected brands.", "Mini and Long Dress categories received more visits."],
+    ".banner-priority-diagram .is-primary p": "Prioritize products, features, and editorial content.",
+    ".banner-decision-note": "The Sale route remained as a slim banner below the square carousel. Feature and Blog visits increased, and no major negative impact on Sale revenue was observed.",
+    ".quick-search-section h3": "Move Quick Search from the lower page to directly below the main carousel.",
+    ".quick-search-section .search-priority-copy > p:last-child": "Heatmaps showed clicks even in the lower position. I moved it higher to increase access to Mini Dress, Long Dress, and other product categories.",
+    ".pdp-test-section h2": "Observe purchase decisions in usability testing, then AB-test the PDP hypothesis.",
+    ".pdp-test-section .feature-copy > p:not(.section-label)": "A real-time viewer count appeared only when a product exceeded a set number of views in the previous 24 hours. It disappeared after ten seconds instead of pressuring every customer continuously.",
+    ".pdp-test-section li": ["A: no purchase-support UI", "B: show viewer count only when the condition is met", "Validate display conditions with Firebase"],
+    ".pdp-result-section h2": "Some metrics improved, but the full purchase flow did not.",
+    ".pdp-result-section .section-copy p": "Add-to-cart and purchase rates rose slightly, while checkout-start rate declined. I ended the test after comparing the limited effect with Firebase operating cost.",
+    ".pdp-result-section .metric-grid span": ["Add-to-cart rate", "Checkout-start rate", "Purchase rate"],
+    ".pdp-result-section .decision-grid h3": ["Separate local movement from overall outcome", "Measure through key conversion stages", "Treat stopping as a design decision"],
+    ".pdp-result-section .decision-grid p": ["Do not call the overall purchase experience successful from cart additions alone.", "Evaluate checkout start and completion continuously.", "Compare limited impact with operating cost and choose not to continue."],
+    ".reflection blockquote": "I separated acquisition, on-page behavior, and the purchase flow instead of judging the work from one ranking or conversion metric."
+  },
+  ko: {
+    ".case-nav a": ["할로윈 페이지", "랜딩 페이지 / PDP"],
+    ".case-hero h2": "유입부터 구매까지 페이지 단위로 개선했습니다.",
+    ".case-hero .case-lead": "Halloween Page의 SEO와 정보 구조, Landing Page의 상품 탐색, PDP의 구매 판단을 대상으로 분석·설계·검증했습니다.",
+    ".project-scope-nav strong": ["할로윈 페이지", "랜딩 페이지 / PDP"],
+    ".halloween-context h2": "정체된 검색 순위, 오래된 구조, 긴 스크롤을 함께 개선했습니다.",
+    ".halloween-context .section-copy p": "수년간 큰 구조 변경이 없었고 주요 키워드는 7~9위에 머물렀습니다. 페이지는 길지만 하단 도달률이 낮았고 코스프레 카테고리 매출에도 큰 변화가 없었습니다.",
+    ".lalatulle-signal-grid strong": ["검색 순위 7~9위", "매출 정체", "구조 개편 없음", "낮은 스크롤 도달률"],
+    ".lalatulle-signal-grid p": ["주요 키워드 검색 순위가 정체됐습니다.", "수년간 코스프레 카테고리 매출의 변화가 크지 않았습니다.", "이전 개선은 배너와 배경 교체가 중심이었습니다.", "긴 페이지의 하단까지 도달하는 사용자가 적었습니다."],
+    ".benchmark-section h2": "경쟁사 조사를 바탕으로 이번 개선 범위를 정했습니다.",
+    ".benchmark-section .section-copy p": "Sugar, VanityME, Clearstone, BODYLINE을 비교하고 Halloween Page 구조 변경과 직접 연결되는 다섯 관점을 정리했습니다.",
+    ".benchmark-findings p": ["Sugar와 VanityME는 터치 조작과 작은 화면에 맞춰 상품 탐색을 구성했습니다. LaLaTulle에는 데스크톱 중심의 긴 구조가 남아 있었습니다.", "경쟁사는 카테고리 선택지를 짧은 동선으로 보여줬습니다. LaLaTulle은 카테고리별 상품이 세로로 이어져 목표 상품까지 스크롤이 길었습니다.", "일부 경쟁 페이지는 상품 목록과 함께 선택 가이드와 FAQ를 제공했습니다. 검색 의도에 답하는 보조 정보를 하단에 추가하는 판단으로 연결했습니다.", "LaLaTulle의 높은 가격대와 기존의 캐주얼한 표현이 맞지 않았습니다. 상품 가치가 전달되는 비주얼로 변경했습니다.", "이미지와 스크립트가 많은 문제를 기술 과제로 분리하고 HTML 구조와 이미지 운영을 검토한 뒤 Lighthouse로 확인했습니다."],
+    ".benchmark-scope-note p": "상품 수, 가격대, 앱 개발, SNS 전략은 페이지 개선만으로 해결할 수 없어 이번 구현 범위에서 분리했습니다.",
+    ".halloween-execution h2": "HTML, 카테고리 이동, 하단 콘텐츠와 비주얼을 다시 설계했습니다.",
+    ".halloween-execution .section-copy p": "화면만 바꾸지 않고 검색엔진이 읽는 구조와 사용자가 이동하는 구조를 함께 정리했습니다.",
+    ".execution-grid p": ["같은 계층의 카테고리에 혼재한 h2와 h3를 정리했습니다.", "세로로 이어진 카테고리를 탭으로 전환해 스크롤을 줄였습니다.", "FAQ와 FAQPage 구조화 데이터를 추가했습니다.", "하위 카테고리에서 Halloween Page로 돌아가는 링크를 추가했습니다.", "하단에 추천 슬라이더, 간편 검색, Q&A를 추가했습니다.", "캐주얼한 배너를 상품 가격대에 맞는 표현으로 변경했습니다."],
+    ".rank-decision-section h2": "순위 하락만으로 되돌리지 않고 페이지 안의 행동도 함께 판단했습니다.",
+    ".rank-decision-section .section-copy p": "구조 변경 후 9월 10일경 검색 순위가 약 15위까지 하락했습니다. SEO·광고 담당자와 점장에게 이전 구조로 되돌리는 안이 제기됐지만 사용자당 행동이 나빠지지 않아 1주일 더 관찰하자고 제안했습니다.",
+    ".decision-dialogue p": ["검색 순위 하락 후 이전 디자인으로 되돌리는 안이 나왔습니다.", "순위와 페이지 행동을 분리해 1주일 관찰한 뒤 판단합니다.", "사용자당 조회·이벤트와 참여율은 나빠지지 않았습니다."],
+    ".analytics-section h2": "검색 순위가 변하는 동안에도 사용자당 행동은 악화되지 않았습니다.",
+    ".analytics-section .section-copy p": "9월 14~16일과 8월 전체를 비교한 자료입니다. 기간 길이가 달라 총 사용자와 총 이벤트는 제외하고 사용자당 지표와 비율만 방향성 확인에 사용했습니다.",
+    ".halloween-outcomes strong": ["92", "평균 2위", "전년 대비 증가"],
+    ".halloween-outcomes p": ["HTML과 구조화 데이터를 정비했습니다.", "9월 28일~10월 1일 주요 키워드 기준입니다.", "Organic 채널 구매가 전년보다 증가했습니다."],
+    ".outcome-caveat": "10월 초 상단 콘텐츠 변경, 상품 삭제, 신상품 감소 후 순위는 7~9위로 돌아갔습니다. 성과 원인을 구조만으로 단정하지 않고 콘텐츠와 상품 상태를 함께 기록했습니다.",
+    "#landing h2": "고객의 구매 목적에 맞게 진입 요소의 우선순위를 변경했습니다.",
+    "#landing .section-copy p": "Navigation, First View, 간편 검색의 순서를 수정하고 PDP에서는 UT로 확인한 가설을 AB 테스트까지 진행했습니다.",
+    ".landing-decision-summary p": ["검색, 즐겨찾기, 장바구니를 상단에 유지합니다.", "특집과 Blog를 First View의 중심에 둡니다.", "카테고리 탐색을 페이지 상단으로 이동합니다.", "PDP 가설을 구매 흐름에서 검증합니다."],
+    ".landing-navigation-section h2": "메뉴 아이콘을 6개에서 3개로 줄였습니다.",
+    ".landing-navigation-section .section-copy p": "상단에는 검색, 즐겨찾기, 장바구니만 남겼습니다. 신상품, 랭킹, 세일은 로고 아래로 옮기고 이용이 적었던 Blog 단독 아이콘은 삭제했습니다.",
+    ".before-state > p": "목적이 다른 여섯 개 조작이 같은 계층에 있었습니다.",
+    ".after-state > p": "일상 조작과 상품 카테고리를 위아래 계층으로 분리했습니다.",
+    ".sale-priority-section h2": "Sale을 없애지 않고 First View에서 우선순위를 낮췄습니다.",
+    ".sale-priority-section .section-copy p": "핵심 고객은 20대 중반~30대 중반의 프로 캐스트이며 주력 상품은 20,000~30,000엔입니다. 인기 브랜드는 할인할 수 없고 Landing Page에서 Sale Page로 이동하는 비율도 낮았습니다.",
+    ".sale-evidence-grid strong": ["20대 중반~30대 중반", "¥20,000~30,000", "주력 브랜드 할인 불가", "낮은 Sale 유입"],
+    ".sale-evidence-grid p": ["업무에 착용할 드레스를 찾는 고객입니다.", "주력 상품의 가격대입니다.", "아울렛과 일부 브랜드만 할인할 수 있습니다.", "Mini·Long Dress 카테고리 방문이 더 많았습니다."],
+    ".banner-priority-diagram .is-primary p": "상품, 특집, 읽을거리를 중심으로 표시합니다.",
+    ".banner-decision-note": "Sale 경로는 없애지 않고 정사각형 캐러셀 아래의 얇은 배너로 이동했습니다. 특집과 Blog 유입은 증가했고 Sale 매출의 큰 부정적 영향은 확인되지 않았습니다.",
+    ".quick-search-section h3": "하단에서도 사용되던 간편 검색을 메인 캐러셀 바로 아래로 옮겼습니다.",
+    ".quick-search-section .search-priority-copy > p:last-child": "하단 배치 상태에서도 Heatmap 클릭이 확인됐습니다. Mini Dress와 Long Dress 등 카테고리 이동을 늘리기 위해 더 잘 보이는 위치로 옮겼습니다.",
+    ".pdp-test-section h2": "UT로 구매 판단을 관찰하고 PDP 가설을 AB 테스트했습니다.",
+    ".pdp-test-section .feature-copy > p:not(.section-label)": "직전 24시간 동안 일정 횟수 이상 조회된 상품에만 실시간 조회 인원을 표시했습니다. 모든 사용자에게 계속 구매를 재촉하지 않도록 10초 후 사라지게 했습니다.",
+    ".pdp-test-section li": ["A: 구매 촉진 UI 없음", "B: 조건 충족 시에만 조회 인원 표시", "Firebase로 표시 조건 검증"],
+    ".pdp-result-section h2": "일부 지표는 개선됐지만 구매 흐름 전체가 개선되지는 않았습니다.",
+    ".pdp-result-section .section-copy p": "장바구니 추가율과 구매율은 소폭 상승했지만 구매 시작률은 하락했습니다. 제한적인 효과와 Firebase 운영 비용을 비교해 테스트를 종료했습니다.",
+    ".pdp-result-section .metric-grid span": ["장바구니 추가율", "구매 시작률", "구매율"],
+    ".pdp-result-section .decision-grid h3": ["국소 변화와 전체 성과 구분", "주요 전환 단계까지 측정", "종료도 설계 판단으로"],
+    ".pdp-result-section .decision-grid p": ["장바구니 추가만으로 구매 경험 전체가 성공했다고 판단하지 않습니다.", "구매 시작과 완료까지 연속해 평가합니다.", "제한적인 효과와 운영 비용을 비교해 계속하지 않기로 했습니다."],
+    ".reflection blockquote": "하나의 순위나 전환율만으로 판단하지 않고 검색 유입, 페이지 행동, 구매 흐름을 나누어 검증했습니다."
+  }
+};
+
+projectTranslations.trami = {
+    en: {
+      ".case-nav a": ["Overview", "Problem", "Insight", "Strategy", "Experience", "Outcome"],
+      ".case-hero h2": "Start a workout from Home with one tap.",
+      ".case-hero .case-lead": "A focused fitness app for people who want to exercise without getting stuck in the preparation required to track it.",
+      "#overview h2": "Use three functions: Workout, Plan, and Review.",
+      "#overview .section-copy p": "I handled planning, interviews with ten people, information architecture, UI, implementation, and App Store release.",
+      ".trami-product-model p": ["Start a workout and record its duration.", "Decide when to exercise next.", "Review the saved record after finishing."],
+      "#problem h2": "Interviews with ten people identified pre-workout friction and tracking effort.",
+      "#problem .section-copy p": "Conversations with ten people who exercise or are interested in fitness showed that fatigue and routine mattered, but the friction before starting and the burden of tracking also stopped action.",
+      ".field-research-header h3": "Through conversations with people who recently exercised or were interested in fitness, I observed the points where routines and consistency broke down.",
+      ".field-research-note": "Four representative types were organized from conversations and behavioral observations with ten people. This was exploratory research for forming an initial hypothesis, not a quantitative result.",
+      ".participant-card header strong": ["31 · Woman", "28 · Woman", "31 · Woman", "28 · Woman"],
+      ".participant-card blockquote": ["Work fatigue kept me away from a studio near home for six weeks.", "I want slimmer legs, but I do not know what exercise to start or how.", "I was encouraged to track workouts, but entry felt tedious and I could not add meal photos.", "I know I need to exercise, but going to a gym itself feels like a high barrier."],
+      ".field-synthesis div p": ["Fatigue, uncertainty about how to start, and psychological barriers around place stop exercise before it begins.", "When tracking requires too many steps, people find it harder to keep using the app after exercise."],
+      ".synthesis-decision strong": "Reduce decisions before starting and the effort required to track.",
+      "#insight h2": "Three competitor apps required multiple choices before starting a workout.",
+      "#insight .section-copy p": "The three App Store fitness apps included ads, meals, steps, rankings, and other functions. Trami limits the primary Home action to starting a workout.",
+      ".trami-comparison h3": ["More information and choices", "Start a workout in one tap"],
+      ".trami-comparison p": ["Broad goals are supported, but users must understand and choose more before starting.", "One primary CTA on Home makes the first action explicit."],
+      "#strategy h2": "Start the timer before requesting detailed input.",
+      "#strategy .section-copy p": "The timer starts immediately. Exercise details can be added later when needed.",
+      ".trami-hmw blockquote": "How might we prevent workout preparation from becoming the reason to stop on a tired day?",
+      ".trami-choice-map article > strong": ["Enter details before starting", "Start the timer first"],
+      ".trami-choice-map article > p": ["The record becomes precise, but decisions and input increase before exercise begins.", "Keep the first action singular and add details only when needed during exercise."],
+      ".choice-steps i": ["Exercise", "Set", "Reps", "Timer", "Optional detail"],
+      ".choice-pivot strong": "Do not block the start",
+      ".trami-principles p": ["Make starting a workout the only first decision on Home.", "Start the timer before detailed setup so tracking does not block action.", "Let people add exercises and sets only when they need them."],
+      "#experience h2": "Use four screens: Home, Timer, Save, and Report.",
+      "#experience .section-copy p": "Start tracking with one tap from Home, save after finishing, and then show the report.",
+      ".trami-experience-flow p": ["Start from the primary CTA", "Focus on the timer", "Save the record", "Review the report"],
+      "#outcome h2": "Prioritize the timer and make detailed tracking optional.",
+      "#outcome .section-copy p": "During exercise, details stay secondary to the timer and finish action. Exercise type, sets, and reps can be added when needed, and the result remains available in the report.",
+      ".trami-interaction-decisions h3": ["Prioritize the timer and finish action", "Add workout details", "Show the report after saving"],
+      ".trami-interaction-decisions p": ["Display secondary information smaller than the timer.", "Use the add button to enter exercise type, sets, and reps.", "Review the saved duration and workout details."],
+      ".trami-outcomes span": ["Start a workout from Home", "Owned research, UI, and implementation", "Released on the App Store in January 2026"],
+      ".trami-learning blockquote": "Reduce input before workout start and move optional details after the timer begins.",
+      ".trami-learning p": "Post-release retention and usage frequency remain metrics for future validation.",
+    },
+    ko: {
+      ".case-nav a": ["개요", "문제", "경쟁 분석", "전략", "핵심 경험", "결과"],
+      ".section-label": ["01 / 제품 개요", "02 / 문제 정의", "03 / 경쟁 분석", "04 / 제품 전략", "05 / 핵심 경험", "06 / 인터랙션과 결과"],
+      ".case-hero h2": "홈에서 한 번의 탭으로 운동을 시작합니다.",
+      ".case-hero .case-lead": "운동을 계속하고 싶은 사람이 기록 준비에서 멈추지 않도록 만든 단순한 피트니스 앱입니다.",
+      "#overview h2": "운동, 계획, 확인의 3개 기능으로 구성합니다.",
+      "#overview .section-copy p": "기획, 10명 인터뷰, 정보 구조, UI, 구현, App Store 출시까지 담당했습니다.",
+      ".trami-product-model p": ["운동을 시작하고 시간을 기록합니다.", "다음 운동 날짜를 정합니다.", "운동 후 저장한 기록을 확인합니다."],
+      "#problem h2": "10명과의 인터뷰에서 운동 전 부담과 기록의 번거로움을 확인했습니다.",
+      "#problem .section-copy p": "운동 경험 또는 관심이 있는 10명과의 대화에서 피로와 생활 리듬뿐 아니라 시작 전의 부담과 기록의 번거로움도 행동을 멈추게 한다고 정리했습니다.",
+      ".field-research-header h3": "최근 운동 경험이 있거나 관심이 있는 사람을 대상으로 운동 습관과 지속이 끊기는 지점을 대화 기반으로 관찰했습니다.",
+      ".field-research-note": "총 10명과의 대화 및 행동 관찰에서 대표적인 4가지 유형을 정리했습니다. 정량 결과가 아니라 초기 가설을 만들기 위한 탐색적 리서치입니다.",
+      ".participant-card header strong": ["31세 · 여성", "28세 · 여성", "31세 · 여성", "28세 · 여성"],
+      ".participant-card header small": ["회사원 · 일본", "회사원 · 일본", "회사원 · 한국", "회사원 · 일본"],
+      ".participant-card blockquote": ["업무 피로로 집에서 가까운 교실에도 한 달 반 동안 가지 못했다.", "다리를 빼고 싶지만 무슨 운동을 어떻게 시작해야 할지 모르겠다.", "기록 습관을 추천받았지만 입력이 번거롭고 식단 사진도 추가할 수 없었다.", "운동이 필요하다는 건 알지만 헬스장에 가는 것 자체가 큰 장벽이다."],
+      ".field-synthesis div p": ["피로, 시작 방법, 장소에 대한 심리적 장벽이 운동 시작을 막습니다.", "기록 단계가 많으면 운동 후에도 앱을 계속 사용하기 어렵습니다."],
+      ".synthesis-decision strong": "시작 전 판단과 기록에 필요한 수고를 줄입니다.",
+      "#insight h2": "경쟁 앱 3개에서는 운동 시작 전에 여러 선택이 필요했습니다.",
+      "#insight .section-copy p": "App Store 피트니스 앱 3개에는 광고, 식사, 걸음 수, 랭킹 등의 기능이 있었습니다. Trami는 홈의 주요 조작을 운동 시작으로 제한했습니다.",
+      ".trami-comparison h3": ["많은 정보와 선택지", "한 번의 탭으로 운동 시작"],
+      ".trami-comparison p": ["넓은 목적을 지원하지만 시작 전에 이해하고 고를 항목이 늘어납니다.", "홈의 주요 CTA를 하나로 줄여 첫 행동을 명확하게 합니다."],
+      "#strategy h2": "상세 입력보다 먼저 타이머를 시작합니다.",
+      "#strategy .section-copy p": "바로 타이머를 시작하고 필요한 운동 정보는 나중에 선택적으로 추가합니다.",
+      ".trami-hmw blockquote": "피곤한 날에도 기록 준비가 운동을 포기하는 이유가 되지 않게 하려면 어떻게 해야 할까?",
+      ".trami-choice-map article > strong": ["상세 입력 후 시작", "타이머 먼저 시작"],
+      ".trami-choice-map article > p": ["기록은 정확해지지만 운동 전에 판단과 입력이 늘어납니다.", "첫 조작을 하나로 만들고 운동 중 필요할 때만 상세 정보를 추가합니다."],
+      ".choice-steps i": ["종목", "세트", "횟수", "타이머", "선택 상세"],
+      ".choice-pivot strong": "시작을 막지 않기",
+      ".trami-principles p": ["홈에서 첫 선택을 운동 시작 하나로 만듭니다.", "상세 설정보다 타이머를 먼저 시작해 기록이 행동을 막지 않게 합니다.", "종목과 세트는 필요한 사람만 나중에 추가합니다."],
+      "#experience h2": "홈, 타이머, 저장, 리포트의 4개 화면으로 구성합니다.",
+      "#experience .section-copy p": "홈에서 한 번의 탭으로 측정을 시작하고 종료 후 저장한 다음 리포트를 표시합니다.",
+      ".trami-experience-flow p": ["주요 CTA에서 시작", "타이머에 집중", "기록 저장", "리포트 확인"],
+      "#outcome h2": "타이머를 우선하고 상세 기록은 선택 사항으로 둡니다.",
+      "#outcome .section-copy p": "운동 중에는 상세 항목보다 타이머와 종료 조작을 우선합니다. 필요할 때만 종목, 세트, 횟수를 추가하고 결과는 리포트에서 확인할 수 있습니다.",
+      ".trami-interaction-decisions h3": ["타이머와 종료 조작 우선", "운동 상세 추가", "저장 후 리포트 표시"],
+      ".trami-interaction-decisions p": ["보조 정보는 타이머보다 작게 표시합니다.", "추가 버튼에서 운동 종목, 세트, 횟수를 입력합니다.", "저장한 운동 시간과 상세 기록을 확인합니다."],
+      ".trami-outcomes span": ["홈에서 운동 시작", "조사부터 UI·구현까지 담당", "2026년 1월 App Store 출시"],
+      ".trami-learning blockquote": "운동 시작 전 입력을 줄이고 선택적인 상세 기록은 타이머 시작 후로 분리했습니다.",
+      ".trami-learning p": "출시 후 지속률과 사용 빈도는 앞으로 검증할 지표입니다.",
+    },
+  };
+
+projectTranslations.blinq = {
+    en: {
+      ".case-hero h2": "Show schedules and spending in the same calendar.",
+      ".case-hero .case-lead": "Blinq combines a budget tracker and calendar so users can check schedules and spending for the same date.",
+      "#problem h2": "A number shows how much was spent, but not why it happened.",
+      "#problem .section-copy p": "Budget apps record categories while calendars record plans. For travel, appointments, or dining, users had to move between two apps to recover the context behind spending.",
+      "#problem .problem-grid h3": ["The context of spending is missing", "Switching between apps", "Future spending is hard to anticipate"],
+      "#problem .problem-grid p": ["Amount and category alone make it difficult to remember the activity behind a purchase.", "Plans and expenses are recorded separately, requiring repeated movement between apps.", "When plans and spending are separated, estimating the cost of a similar future plan becomes harder."],
+      "#model h2": "Use the date to show schedules and spending in one view.",
+      "#model .section-copy p": "Plans appear above the calendar and finances below, allowing events and amounts from the same day to be reviewed together.",
+      ".blinq-model-group:first-child article small": ["Event and time", "Income and expense"],
+      ".blinq-date-hub small": "Connect information by the same date",
+      ".blinq-model-group.is-output article small": ["Schedule + finance", "Finance only", "Schedule only"],
+      "#model .visual-caption p": "Alongside the combined calendar, users can switch to finance-only or schedule-only views when they want to reduce information density.",
+      ".split-feature .feature-copy h2": "Switch among Combined, Budget, and Schedule views.",
+      ".split-feature .feature-copy > p:not(.section-label)": "Combined, finance, and schedule states share the same calendar base, with details for the selected date shown in the same view.",
+      ".split-feature .feature-copy li": ["Combined: show schedules and finances together", "Finance: show monthly income, expenses, and entries", "Schedule: show plans only"],
+      "#iteration h2": "The Home-button mode switch was difficult to understand.",
+      "#iteration .section-copy p": "Post-release observation showed that users did not understand that pressing Home switched among three calendars.",
+      ".blinq-reasoning strong": ["One Home button switched among three views.", "The problem was navigation exposure, not the information model.", "Show five destinations in the Tab Bar."],
+      ".blinq-reasoning p": ["Users could not predict what would appear before pressing the button.", "Keep the date-based model and change only how destinations are exposed.", "The number of items increases, but current location and destination become visible before interaction."],
+      "#iteration .visual-caption p": "The three switching modes became five items: Budget, Finance, Home, Schedule, and Settings.",
+      "#outcome h2": "Replace the hidden mode switch with five Tab Bar items.",
+      "#outcome .section-copy p": "The repeated Home-button interaction was unclear, so Budget, Finance, Home, Schedule, and Settings became separate destinations.",
+      "#outcome .decision-grid h3": ["Unify context by date", "Observe behavior after release", "Make destinations explicit"],
+      "#outcome .decision-grid p": ["Plans and spending share one timeline so users can review the context behind events.", "Actual behavior revealed a navigation structure that required explanation.", "Hidden mode switching was replaced with predictable Tab Bar destinations."],
+      ".reflection blockquote": "Keep the information model and change the Tab Bar interaction that users found unclear.",
+    },
+    ko: {
+      ".case-nav a": ["문제", "모델", "개선", "결과"],
+      ".case-hero h2": "일정과 지출을 같은 캘린더에 표시합니다.",
+      ".case-hero .case-lead": "Blinq는 가계부와 캘린더를 결합해 같은 날짜의 일정과 지출을 확인하는 모바일 앱입니다.",
+      "#problem h2": "금액은 알 수 있지만 왜 사용했는지는 돌아보기 어렵습니다.",
+      "#problem .section-copy p": "가계부는 지출 카테고리를, 캘린더는 일정을 기록합니다. 여행, 병원, 모임처럼 일정과 지출이 연결되는 상황에서는 맥락을 확인하기 위해 두 앱을 오가야 했습니다.",
+      "#problem .problem-grid h3": ["지출의 배경이 보이지 않음", "앱 전환의 번거로움", "다음 지출을 예상하기 어려움"],
+      "#problem .problem-grid p": ["금액과 카테고리만으로는 그날의 행동을 기억하기 어렵습니다.", "일정과 지출을 따로 기록해 확인과 입력 때마다 이동이 발생합니다.", "과거 일정과 지출이 분리되면 비슷한 일정에 필요한 금액을 예상하기 어렵습니다."],
+      "#model h2": "날짜를 기준으로 일정과 수입·지출을 한 화면에 표시합니다.",
+      "#model .section-copy p": "캘린더 위에는 일정, 아래에는 수입·지출을 배치해 같은 날짜의 사건과 금액을 함께 확인하게 했습니다.",
+      ".blinq-model-group:first-child article small": ["일정·시간", "수입·지출"],
+      ".blinq-date-hub small": "같은 날짜로 정보 연결",
+      ".blinq-model-group.is-output article small": ["일정 + 수입·지출", "수입·지출만", "일정만"],
+      "#model .visual-caption p": "통합 캘린더와 함께 정보량을 줄이고 싶은 사용자를 위해 가계부만, 일정만 보는 화면도 제공했습니다.",
+      ".split-feature .feature-copy h2": "통합·가계부·일정의 세 가지 화면을 전환합니다.",
+      ".split-feature .feature-copy > p:not(.section-label)": "통합, 가계부, 일정 상태를 같은 캘린더 기반에서 표시하고 선택한 날짜의 상세 정보를 화면 안에서 확인합니다.",
+      ".split-feature .feature-copy li": ["통합: 일정과 수입·지출을 함께 표시", "가계부: 월 수입·지출과 내역 표시", "일정: 일정만 표시"],
+      "#iteration h2": "홈 버튼으로 모드를 전환하는 방법을 이해하기 어려웠습니다.",
+      "#iteration .section-copy p": "출시 후 행동 관찰에서 홈 버튼을 누를 때 세 캘린더가 전환된다는 점을 이해하기 어렵다는 것을 확인했습니다.",
+      ".blinq-reasoning strong": ["하나의 Home 버튼이 세 가지 화면을 전환했습니다.", "문제는 정보 모델이 아니라 이동 목적지를 보여주는 방식이었습니다.", "다섯 개 목적지를 Tab Bar에 표시했습니다."],
+      ".blinq-reasoning p": ["버튼을 누르기 전에는 어떤 화면이 나올지 예측하기 어려웠습니다.", "날짜 중심 정보 모델은 유지하고 내비게이션만 변경했습니다.", "항목 수는 늘지만 현재 위치와 이동 목적지를 조작 전에 확인할 수 있습니다."],
+      "#iteration .visual-caption p": "전환식 3개 모드를 예산, 가계부, 홈, 일정, 설정의 5개 항목으로 변경했습니다.",
+      "#outcome h2": "숨겨진 모드 전환을 5개의 Tab Bar 항목으로 변경했습니다.",
+      "#outcome .section-copy p": "홈 버튼을 반복해서 누르는 조작이 불명확해 예산, 가계부, 홈, 일정, 설정을 각각 표시했습니다.",
+      "#outcome .decision-grid h3": ["날짜로 맥락 통합", "출시 후 행동 관찰", "목적지를 명시"],
+      "#outcome .decision-grid p": ["일정과 지출을 같은 시간축에서 다뤄 사건의 배경까지 돌아보게 했습니다.", "실제 조작에서 설명이 필요한 내비게이션 구조를 발견했습니다.", "숨겨진 모드 전환을 예측 가능한 Tab Bar 목적지로 변경했습니다."],
+      ".reflection blockquote": "정보 모델은 유지하고 사용자가 이해하기 어려웠던 Tab Bar 조작을 변경했습니다.",
+    },
+  };
+
+const projectOriginalContent = new WeakMap();
+const projectTrackedNodes = [];
+
+function rememberProjectOriginal(node) {
+  if (projectOriginalContent.has(node)) return;
+  projectOriginalContent.set(node, node.innerHTML);
+  projectTrackedNodes.push(node);
+}
+
+function trackProjectTranslationNodes() {
+  const dictionaries = projectTranslations[projectKey] || {};
+  const selectors = new Set(Object.values(dictionaries).flatMap((dictionary) => Object.keys(dictionary)));
+  selectors.forEach((selector) => document.querySelectorAll(selector).forEach(rememberProjectOriginal));
+  document.querySelectorAll("[data-case-en]").forEach(rememberProjectOriginal);
+}
+
 function applyProjectTranslation(language) {
-  document.documentElement.lang = language === "ko" ? "ko" : language === "en" ? "en" : "ja";
-  if (!projectKey || language === "ja") return;
-  const dictionary = projectTranslations[projectKey]?.[language];
-  if (!dictionary) return;
+  const normalizedLanguage = ["ja", "en", "ko"].includes(language) ? language : "ja";
+  document.documentElement.lang = normalizedLanguage;
+  const dictionary = projectTranslations[projectKey]?.[normalizedLanguage] || {};
+
+  projectTrackedNodes.forEach((node) => {
+    node.innerHTML = projectOriginalContent.get(node);
+  });
 
   Object.entries(dictionary).forEach(([selector, value]) => {
     const nodes = [...document.querySelectorAll(selector)];
@@ -418,10 +685,27 @@ function applyProjectTranslation(language) {
       nodes[0].innerHTML = value;
     }
   });
+
+  document.querySelectorAll("[data-case-en]").forEach((node) => {
+    rememberProjectOriginal(node);
+    const value = normalizedLanguage === "en" ? node.dataset.caseEn : normalizedLanguage === "ko" ? node.dataset.caseKo : null;
+    node.innerHTML = value || projectOriginalContent.get(node);
+  });
+
+  document.querySelectorAll(".project-language-switch .lang-button").forEach((button) => {
+    const active = button.dataset.lang === normalizedLanguage;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
-applyProjectTranslation(projectLanguage);
-document.querySelectorAll("[data-case-en]").forEach((node) => {
-  const value = projectLanguage === "en" ? node.dataset.caseEn : projectLanguage === "ko" ? node.dataset.caseKo : null;
-  if (value) node.textContent = value;
+document.querySelectorAll(".project-language-switch .lang-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const language = button.dataset.lang;
+    localStorage.setItem("portfolio-language", language);
+    applyProjectTranslation(language);
+  });
 });
+
+trackProjectTranslationNodes();
+applyProjectTranslation(projectLanguage);
