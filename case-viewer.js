@@ -22,7 +22,7 @@ imageDialog.addEventListener("click", (event) => {
   const bounds = imageDialog.getBoundingClientRect();
   if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) imageDialog.close();
 });
-const screenFigures = document.querySelectorAll(".experience-screen figure, .interface-gallery figure, .visual-band, .feature-media, .navigation-after-shot, figure.project-hero-visual");
+const screenFigures = document.querySelectorAll(".experience-screen figure, .interface-gallery figure, .visual-band, .feature-media, .navigation-after-shot, figure.project-hero-visual, .product-shot, .design-system-shot");
 screenFigures.forEach((figure) => {
   const images = [...figure.querySelectorAll("img")];
   if (!images.length) return;

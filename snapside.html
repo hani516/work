@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="snapside.css" />
     <link rel="stylesheet" href="portfolio-design.css" />
     <link rel="stylesheet" href="case-layout.css" />
+    <link rel="stylesheet" href="portfolio-final.css" />
   </head>
   <body class="project-snapside">
     <header class="case-header project-page-header">
@@ -33,11 +34,7 @@
           <div class="case-meta" aria-label="Project metadata"><span>Product Strategy / UX / UI / Design System</span><span>Web / Responsive / macOS</span><span>Notion / Figma / GitHub / Vercel / Supabase / Google Drive</span><span>Codex / Claude Code MCP</span></div>
           <div class="case-links"><a href="https://app.snapside.io" target="_blank" rel="noreferrer">Live product ↗</a></div>
         </div>
-        <div class="project-hero-visual snapside-history-preview" role="img" aria-label="複数サービスの変更を時系列でまとめたSnapsideのProduct History構造図">
-          <div class="preview-toolbar"><img src="assets/snapside/snapside-logo.png" alt="" /><span>Week 32</span></div>
-          <div class="preview-summary"><div><small>Connected sources</small><strong>6</strong></div><div><small>Changes this week</small><strong>24</strong></div><div class="preview-activity"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-          <ol class="preview-timeline"><li><b>Notion</b><span>Product brief updated</span><time>09:20</time></li><li><b>Figma</b><span>Timeline interaction revised</span><time>11:45</time></li><li><b>GitHub</b><span>Pull request merged</span><time>15:10</time></li><li><b>Vercel</b><span>Production deployed</span><time>16:05</time></li></ol>
-        </div>
+        <figure class="project-hero-visual snapside-hero-screen"><img src="assets/snapside/snapside-overview.png" alt="Snapside Project Overview screen" /></figure>
       </section>
 
 
@@ -104,24 +101,20 @@
       </section>
 
       <section class="snap-section screens-section" id="screens" aria-labelledby="screens-title">
-        <div class="section-intro"><p class="section-index">09 / Key Screens</p><div><h2 id="screens-title">画面は役割ごとに分け、<br />同じEvent modelを共有する。</h2><p>以下は実際のProduct UIを配置する領域です。DashboardからDesktop Appまで、同じHistoryを異なる閲覧目的に合わせて見せます。</p></div></div>
-        <div class="screen-grid screen-grid-primary">
-<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 01</span><strong>Project Dashboard</strong><small>1440 × 900</small></div><figcaption>複数Projectと週間Activityを比較する。</figcaption></figure>
-<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 02</span><strong>Project Overview</strong><small>1440 × 900</small></div><figcaption>接続状態、最近の変更、活動量をまとめる。</figcaption></figure>
-<figure class="screen-placeholder"><div><span>SCREENSHOT 03</span><strong>Weekly Timeline</strong><small>1440 × 900</small></div><figcaption>週を基本単位として変更の流れを読む。</figcaption></figure>
+        <div class="section-intro"><p class="section-index">09 / Key Screens</p><div><h2 id="screens-title">画面は役割ごとに分け、<br />同じEvent modelを共有する。</h2><p>Overviewでは全体状態、Timelineでは変更の順序、Integrationsでは収集元を確認します。Mobileでは履歴の確認と原文への移動を優先しました。</p></div></div>
+        <div class="product-screen-story">
+          <figure class="product-shot is-overview"><img src="assets/snapside/snapside-overview.png" alt="Snapside Project Overview screen" /><figcaption><span>01 / Overview</span><strong data-case-en="Review connections, recent changes, and activity in one screen." data-case-ko="연결 상태, 최근 변경, 활동량을 한 화면에서 확인합니다.">接続状態、最近の変更、活動量を一つの画面で確認する。</strong></figcaption></figure>
+          <figure class="product-shot is-timeline"><img src="assets/snapside/snapside-timeline.png" alt="Snapside weekly timeline screen" /><figcaption><span>02 / Timeline</span><strong data-case-en="Read the sequence of changes across tools, week by week." data-case-ko="도구를 넘나드는 변경 순서를 주 단위로 확인합니다.">週を基本単位にして、ツールをまたぐ変更の順序を読む。</strong></figcaption></figure>
+          <div class="product-shot-pair">
+            <figure class="product-shot"><img src="assets/snapside/snapside-integrations.png" alt="Snapside integrations and MCP connection screen" /><figcaption><span>03 / Integrations</span><strong data-case-en="Manage the connection status of sources and AI agents." data-case-ko="Source와 AI Agent의 연결 상태를 관리합니다.">SourceとAI Agentの接続状態を管理する。</strong></figcaption></figure>
+            <figure class="product-shot is-mobile"><img src="assets/snapside/snapside-mobile.png" alt="Snapside responsive mobile overview screen" /><figcaption><span>04 / Mobile</span><strong data-case-en="Prioritize history review and source access on small screens." data-case-ko="작은 화면에서는 이력 확인과 원문 이동을 우선합니다.">小さい画面では履歴の確認と原文への移動を優先する。</strong></figcaption></figure>
+          </div>
         </div>
-        <details class="case-disclosure screen-details"><summary><span data-case-en="More product screens" data-case-ko="추가 제품 화면 보기">その他の製品画面を見る</span><small>Daily / Workstream / Integrations / Diff / Desktop / Mobile</small></summary><div class="screen-grid">
-<figure class="screen-placeholder"><div><span>SCREENSHOT 04</span><strong>Daily Timeline</strong><small>1440 × 900</small></div><figcaption>選択した一日のEventだけに集中する。</figcaption></figure>
-<figure class="screen-placeholder"><div><span>SCREENSHOT 05</span><strong>Workstream</strong><small>1440 × 900</small></div><figcaption>企画からReleaseまでを機能単位で追う。</figcaption></figure>
-<figure class="screen-placeholder"><div><span>SCREENSHOT 06</span><strong>Integrations / MCP</strong><small>1440 × 900</small></div><figcaption>SourceとAI接続の状態を管理する。</figcaption></figure>
-<figure class="screen-placeholder is-wide"><div><span>SCREENSHOT 07</span><strong>Notion Diff</strong><small>1440 × 900</small></div><figcaption>Snapshot間の追加・削除・修正を確認する。</figcaption></figure>
-<figure class="screen-placeholder is-desktop"><div><span>SCREENSHOT 08</span><strong>macOS App</strong><small>Desktop</small></div><figcaption>Local GitとAI作業環境をProject Contextへつなぐ。</figcaption></figure>
-<figure class="screen-placeholder is-mobile"><div><span>SCREENSHOT 09</span><strong>Responsive Mobile</strong><small>390 × 844</small></div><figcaption>小さい画面ではTimelineの閲覧とSourceへの移動を優先する。</figcaption></figure>
-        </div></details>
       </section>
 
       <section class="snap-section design-system-section" aria-labelledby="design-system-title">
         <div class="section-intro"><p class="section-index">10 / Design System</p><div><h2 id="design-system-title">ブランドは暖かく、<br />履歴画面は静かに。</h2><p>Orange Gradientはブランドと重要な進行状態に限定し、記録を読む面はWhiteとCharcoalを中心に構成しました。</p></div></div>
+        <figure class="design-system-shot"><img src="assets/snapside/snapside-design-system.png" alt="Snapside design system overview" /></figure>
         <div class="token-layout"><div class="token-scale"><span>Primitive</span><i>#FF5314</i><i>#FF9F20</i><i>#FFD25A</i><i>#18181A</i><i>#FFFFFF</i></div><i>→</i><div class="token-scale semantic"><span>Semantic</span><i>Brand</i><i>Foreground</i><i>Surface</i><i>Border</i><i>Status</i></div><i>→</i><div class="component-list"><span>Component</span><b>Button</b><b>Input</b><b>Tabs</b><b>Badge</b><b>Card</b><b>Modal</b><b>Tooltip</b><b>Navigation</b></div></div>
         <p class="accessibility-note"><b>Interaction states</b> Hover、Focus、Loading、Error、Disabledを共通Tokenで管理し、Light / Dark modeのContrastを同じSemantic roleで維持する。</p>
       </section>
