@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/wivlo/wivlo-icon.png" />
-    <link rel="stylesheet" href="site-header.css" />
+    <link rel="stylesheet" href="site-header.css?v=2" />
     <link rel="stylesheet" href="project-hero.css" />
-    <link rel="stylesheet" href="wivlo-v2.css" />
+    <link rel="stylesheet" href="wivlo-v2.css?v=3" />
     <link rel="stylesheet" href="portfolio-design.css" />
     <link rel="stylesheet" href="case-layout.css" />
     <link rel="stylesheet" href="portfolio-final.css?v=9" />
@@ -20,7 +20,7 @@
     <header class="case-header project-page-header">
       <a class="back-link" href="index.html#projects">Portfolio</a>
       <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#research">Research</a><a href="#strategy">Strategy</a><a href="#experience">Experience</a><a href="#ai-design">AI Design</a><a href="#learnings">Learnings</a>
+        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#research">Research</a><a href="#strategy">Strategy</a><a href="#information-architecture">IA</a><a href="#experience">Experience</a><a href="#ai-design">AI Design</a><a href="#design-system">Design System</a><a href="#learnings">Learnings</a>
       </nav>
       <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
     </header>
@@ -131,8 +131,25 @@
         </div>
       </section>
 
+      <section class="case-section wivlo-ia-section" id="information-architecture" aria-labelledby="wivlo-ia-title">
+        <div class="section-heading split-heading"><div><p class="section-index">05 / Information Architecture</p><h2 id="wivlo-ia-title">Editorを中心に、<br />情報とAIを配置する。</h2></div><p>Notes、Collections、Tagsは文脈を作り、SearchとReferenceは必要な情報へ戻る経路を作ります。AI ChatとAI Actionは別の目的地ではなく、Editorで文書を完成させるための支援として配置しました。</p></div>
+        <div class="wivlo-ia-map" aria-label="Wivlo information architecture">
+          <div class="wivlo-ia-global"><span>Global navigation</span><div><b>Home</b><b>Collections</b><b>Search</b><b>AI Chat</b></div></div>
+          <div class="wivlo-ia-context"><span>Organize &amp; retrieve</span><div><b>Notes</b><small>Document</small></div><div><b>Collections</b><small>Intentional scope</small></div><div><b>Tags</b><small>Cross-topic context</small></div></div>
+          <i aria-hidden="true">→</i>
+          <div class="wivlo-ia-editor"><span>Primary workspace</span><img src="assets/wivlo/wivlo-icon.png" alt="" /><strong>Editor</strong><small>Write · Review · Continue</small><div><b>@ Reference</b><b>/ AI Action</b><b>Branch · Link</b></div></div>
+          <i aria-hidden="true">→</i>
+          <div class="wivlo-ia-output"><span>Document outcome</span><b>Preview source</b><b>Insert / Quote</b><b>Review change</b><b>Final document</b></div>
+        </div>
+        <div class="wivlo-ia-decisions">
+          <article><span>01 / Object</span><h3>Note is the source</h3><p>AIの会話ではなく、編集可能なNoteを情報と成果物の基本単位にする。</p></article>
+          <article><span>02 / Scope</span><h3>Collection sets intent</h3><p>Projectや目的ごとに参照範囲を作り、関連するNoteを同じ作業文脈で扱う。</p></article>
+          <article><span>03 / Relationship</span><h3>Reference and Branch differ</h3><p>根拠として参照するLinkと、選択した文章から派生するBranchを分けて保存する。</p></article>
+        </div>
+      </section>
+
       <section class="case-section experience-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading split-heading"><div><p class="section-index">05 / Core Experience</p><h2 id="experience-title">Co-writeするときも、<br />Delegateするときも同じ文脈を使う。</h2></div><p>短い修正はEditor内で共同編集し、調査や長い初稿はAgentへ委任します。二つのモードがCurrent document、Project、外部Sourceを共有するように設計しました。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">06 / Core Experience</p><h2 id="experience-title">Co-writeするときも、<br />Delegateするときも同じ文脈を使う。</h2></div><p>短い修正はEditor内で共同編集し、調査や長い初稿はAgentへ委任します。二つのモードがCurrent document、Project、外部Sourceを共有するように設計しました。</p></div>
         <div class="experience-screen"><figure class="interface-main"><img src="assets/wivlo/wivlo-live-editor-current.jpg" alt="EditorとWivlo AI Panelを同時に表示した実際のWivlo Web画面" /><figcaption><b>Editor with Wivlo AI</b><span data-case-en="Write in the document while reviewing AI suggestions and references beside it." data-case-ko="문서를 작성하면서 옆에서 AI 제안과 레퍼런스를 확인합니다.">文書を書きながら、隣でAIの提案とReferenceを確認する。</span></figcaption></figure></div>
         <div class="experience-modes">
           <article class="mode-card"><header><span>01 / Co-write</span><strong>書きながら、必要な根拠を使う</strong></header><div class="mode-workspace co-write-model" aria-label="Co-write interaction model"><div class="mock-editor"><small>Product brief</small><i></i><i></i><i></i><em>@ Reference</em></div><aside><small>Sources</small><b>2025 Research</b><b>Meeting notes</b><button type="button" tabindex="-1">Insert quote</button></aside></div><p>Notion、Slack、Drive、Wivlo内の記録を検索し、Previewした内容だけを挿入・引用する。</p></article>
@@ -143,7 +160,7 @@
       </section>
 
       <section class="ai-section" id="ai-design" aria-labelledby="ai-title"><div class="ai-inner">
-        <div class="section-heading split-heading"><div><p class="section-index">06 / AI Interaction Design</p><h2 id="ai-title">AIが動く条件と、<br />人が判断する境界を設計する。</h2></div><p>AI機能を一つのボタンとして扱わず、Intentの理解、Context探索、Sourceの順位付け、生成、引用、Reviewまでを連続したInteractionとして定義しました。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">07 / AI Interaction Design</p><h2 id="ai-title">AIが動く条件と、<br />人が判断する境界を設計する。</h2></div><p>AI機能を一つのボタンとして扱わず、Intentの理解、Context探索、Sourceの順位付け、生成、引用、Reviewまでを連続したInteractionとして定義しました。</p></div>
         <div class="ai-architecture" aria-label="Wivlo AI interaction architecture">
           <article><span>01</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg><b>User intent</b><small>Goal / instruction</small></article><i>→</i>
           <article><span>02</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><b>Retrieve</b><small>Project / sources</small></article><i>→</i>
@@ -161,7 +178,7 @@
       </div></section>
 
       <section class="case-section interface-section" id="interfaces" aria-labelledby="interface-title">
-        <div class="section-heading split-heading"><div><p class="section-index">07 / Key Interfaces</p><h2 id="interface-title">機能一覧ではなく、<br />判断が起きる画面だけを残す。</h2></div><p>DesktopではEditorとSourceの比較、Mobileでは記録と検索を優先しました。同じデータを使いながら、作業環境に合わせて操作密度を変えています。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">08 / Key Interfaces</p><h2 id="interface-title">機能一覧ではなく、<br />判断が起きる画面だけを残す。</h2></div><p>DesktopではEditorとSourceの比較、Mobileでは記録と検索を優先しました。同じデータを使いながら、作業環境に合わせて操作密度を変えています。</p></div>
         <div class="wivlo-mobile-gallery" aria-label="Wivlo iOS product screenshots">
           <figure class="wivlo-mobile-shot"><img src="assets/wivlo/wivlo-appstore-01.webp" alt="Wivlo iOSのHomeとノート一覧" /><figcaption><span>01</span><strong>Home</strong></figcaption></figure>
           <figure class="wivlo-mobile-shot"><img src="assets/wivlo/wivlo-appstore-02.webp" alt="Wivlo iOSのノートEditor" /><figcaption><span>02</span><strong>Editor</strong></figcaption></figure>
@@ -173,19 +190,35 @@
         </div>
       </section>
 
+      <section class="case-section wivlo-design-system-section" id="design-system" aria-labelledby="wivlo-system-title">
+        <div class="section-heading split-heading"><div><p class="section-index">09 / Design System</p><h2 id="wivlo-system-title">文書を読む静けさと、<br />操作の一貫性を両立する。</h2></div><p>画面を装飾するためではなく、長い文書を読み書きしながら現在の状態と次の操作を判断できるようにToken、Component、Web / Mobile patternを定義しました。</p></div>
+        <div class="wivlo-token-flow" aria-label="Wivlo design system layers">
+          <article class="wivlo-system-layer"><span>01 / Primitive</span><strong>Color · Type · Space</strong><div class="wivlo-swatches"><i class="is-page" title="Page"></i><i class="is-ink" title="Text"></i><i class="is-accent" title="Accent #3182F6"></i><i class="is-soft" title="Surface"></i></div></article>
+          <i aria-hidden="true">→</i>
+          <article class="wivlo-system-layer"><span>02 / Semantic</span><strong>Purpose before value</strong><div class="wivlo-semantic-list"><b>Text</b><b>Surface</b><b>Accent</b><b>Danger</b><b>Focus</b></div></article>
+          <i aria-hidden="true">→</i>
+          <article class="wivlo-system-layer is-components"><span>03 / Component</span><strong>Reusable interaction</strong><div class="wivlo-component-samples"><button type="button" tabindex="-1">Primary</button><label><span>Search notes</span></label><em>Reference</em><nav><b>Home</b><b class="is-active">Search</b></nav></div></article>
+        </div>
+        <div class="wivlo-platform-patterns">
+          <article><span>Web pattern</span><h3>Dense, document-first</h3><p>Sidebar、Header、Hover、Keyboardを使い、EditorとSourceを同時に比較できる情報密度を保つ。</p><div class="platform-wireframe is-web"><i></i><div><b></b><b></b><b></b></div><aside></aside></div></article>
+          <article><span>Mobile pattern</span><h3>Thumb-first editing</h3><p>Home、Collections、Searchと右端のNew Noteを分け、入力中はKeyboard toolbarへ編集操作を集約する。</p><div class="platform-wireframe is-mobile"><div><b></b><b></b><b></b></div><footer><i></i><i></i><i></i><i class="is-active"></i></footer></div></article>
+        </div>
+        <p class="wivlo-system-rule"><strong>Interaction rule</strong><span>44pt touch target · Visible focus · Light / Dark mode · Reduce transparency · Reduced motion</span></p>
+      </section>
+
       <section class="case-section iteration-section" id="decisions" aria-labelledby="iteration-title">
-        <div class="section-heading split-heading"><div><p class="section-index">08 / Design Decisions</p><h2 id="iteration-title">AIの存在感より、<br />執筆の主導権を優先した。</h2></div><p>AIを目立たせるほど価値が伝わるとは限りません。書く、根拠を確かめる、変更を採用するという判断がユーザー側に残るようにInteractionを調整しました。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">10 / Design Decisions</p><h2 id="iteration-title">AIの存在感より、<br />執筆の主導権を優先した。</h2></div><p>AIを目立たせるほど価値が伝わるとは限りません。書く、根拠を確かめる、変更を採用するという判断がユーザー側に残るようにInteractionを調整しました。</p></div>
         <div class="decision-table"><article><span>01 / Workspace</span><div><small>Instead of</small><p>AI Chatを主画面にする</p></div><i>→</i><div><small>Decision</small><strong>Editorを中心に、AIをSide Panelへ置く</strong></div></article><article><span>02 / Output</span><div><small>Instead of</small><p>生成結果で原文を置き換える</p></div><i>→</i><div><small>Decision</small><strong>変更理由とSourceを確認して適用する</strong></div></article><article><span>03 / Relationships</span><div><small>Instead of</small><p>すべての接続を同じLinkにする</p></div><i>→</i><div><small>Decision</small><strong>派生するBranchと参照するLinkを分ける</strong></div></article></div>
       </section>
 
       <section class="case-section build-section" aria-labelledby="build-title">
-        <div class="section-heading split-heading"><div><p class="section-index">09 / Designer to Builder</p><h2 id="build-title">設計判断を、動く製品まで<br />自分でつなげた。</h2></div><p>1人でProduct Strategy、UX/UI、AIの実行条件、データ構造、Web/iOS実装、QA、配信を担当しました。開発は技術の展示ではなく、Interactionの仮説を実際に検証する手段として扱いました。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">11 / Designer to Builder</p><h2 id="build-title">設計判断を、動く製品まで<br />自分でつなげた。</h2></div><p>1人でProduct Strategy、UX/UI、AIの実行条件、データ構造、Web/iOS実装、QA、配信を担当しました。開発は技術の展示ではなく、Interactionの仮説を実際に検証する手段として扱いました。</p></div>
         <div class="build-loop" aria-label="Wivlo solo product development loop"><span>Frame</span><i>→</i><span>Design</span><i>→</i><span>Prototype</span><i>→</i><span>Build</span><i>→</i><span>QA</span><i>→</i><span>Release</span><i>↺</i></div>
         <div class="build-scope"><span>Next.js</span><span>React</span><span>Expo</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span><span>App Store</span><span>Codex-assisted development</span></div>
       </section>
 
       <section class="case-section learning-section" id="learnings" aria-labelledby="learning-title">
-        <div class="section-heading split-heading"><div><p class="section-index">10 / Launch &amp; Learnings</p><h2 id="learning-title">リリース後は、<br />プロダクトと獲得を同時に検証する。</h2></div><p>WebとiOSを公開し、現在は初期ユーザー獲得の段階です。利用成果を断定せず、製品内の行動データと流入経路を計測できる状態を整えています。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">12 / Launch &amp; Learnings</p><h2 id="learning-title">リリース後は、<br />プロダクトと獲得を同時に検証する。</h2></div><p>WebとiOSを公開し、現在は初期ユーザー獲得の段階です。利用成果を断定せず、製品内の行動データと流入経路を計測できる状態を整えています。</p></div>
         <div class="launch-grid"><article><span>Shipped</span><strong>Web / iOS</strong><p>Editor、Reference、AI workflow、Mobile captureと検索を公開。</p></article><article><span>Acquisition</span><strong>Blog / SEO / AEO</strong><p>検索意図に対応する記事と製品情報を継続的に公開。</p></article><article><span>Distribution</span><strong>Threads / Instagram Ads</strong><p>ターゲットと訴求軸を検証するための初期流入を作る。</p></article><article><span>Validation next</span><strong>Activation / AI apply / Return</strong><p>初回文書作成、AI変更の適用、継続利用を今後検証する。</p></article></div>
         <blockquote class="final-learning">AI Writingの価値は、文章を自動生成することではなく、必要な根拠を探す負担を減らし、人が書くことに集中できる状態を作ることにある。</blockquote>
         <div class="next-direction"><span>Next hypothesis</span><p>Notion、Slack、Driveとの接続を広げ、ユーザーが情報を探しに行かなくても、執筆に必要な文脈がWorkspaceへ集まる状態を検証する。</p></div>
@@ -193,7 +226,7 @@
       </section>
     </main>
     <footer class="wivlo-footer"><a href="lalatulle.html">LaLaTulle</a><a href="snapside.html">Snapside</a></footer>
-    <script src="project-i18n.js?v=20260906-3"></script>
+    <script src="project-i18n.js?v=20260907-1"></script>
     <script src="case-reveal.js"></script>
     <script src="case-viewer.js"></script>
   </body>

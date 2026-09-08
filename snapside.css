@@ -135,17 +135,30 @@ body .snapside-hero .project-hero-visual { display: grid; align-content: center;
 .principle-grid b { display: block; margin-top: 48px; font-size: 15px; }
 .principle-grid p { margin: 13px 0 0; color: var(--snap-text); font-size: 10px; line-height: 1.75; }
 
-.ia-map { padding: 44px; background: var(--snap-surface); }
-.ia-root { display: flex; width: max-content; align-items: center; gap: 12px; padding: 14px 18px; background: var(--snap-ink); color: #fff; }
-.ia-root img { width: 28px; height: 34px; object-fit: contain; }
-.ia-root b { font-size: 13px; }
-.ia-branches { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 38px; }
-.ia-branches article { position: relative; min-height: 115px; padding: 20px; border: 1px solid var(--snap-line); background: #fff; }
-.ia-branches article::before { position: absolute; top: -39px; left: 26px; width: 1px; height: 38px; background: #cfcfd4; content: ""; }
-.ia-branches article.is-primary { border-color: #ffbd7f; background: #fff8ef; }
-.ia-branches span,.ia-branches small { display: block; }
-.ia-branches span { font-size: 13px; font-weight: 650; }
-.ia-branches small { margin-top: 25px; color: var(--snap-muted); font-size: 9px; }
+.ia-blueprint { display: grid; gap: 18px; padding: 38px; background: var(--snap-surface); color: var(--snap-ink); }
+.ia-hierarchy { display: grid; grid-template-columns: 1fr 30px 1fr 30px 1fr; align-items: stretch; }
+.ia-hierarchy article { min-height: 128px; padding: 22px; border: 1px solid var(--snap-line); background: #fff; }
+.ia-hierarchy article.is-current { border-color: #ffb278; background: #fff2e6; }
+.ia-hierarchy small,.ia-project-label small { display: block; margin-bottom: 26px; color: var(--snap-muted); font-size: 8px; font-weight: 700; text-transform: uppercase; }
+.ia-hierarchy b { display: block; font-size: 15px; }.ia-hierarchy p { margin: 8px 0 0; color: var(--snap-muted); font-size: 9px; line-height: 1.6; }
+.ia-hierarchy > i { align-self: center; color: var(--snap-orange); font-style: normal; text-align: center; }
+.ia-project-shell { padding: 26px; border: 1px solid var(--snap-line); background: #fff; }
+.ia-project-label { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.ia-project-label img { width: 36px; height: 36px; object-fit: contain; }.ia-project-label small { margin: 0 0 4px; }.ia-project-label b { font-size: 12px; }
+.ia-destinations { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+.ia-destinations article { position: relative; min-height: 190px; padding: 20px; background: var(--snap-surface); }
+.ia-destinations article.is-home { background: #fff2e6; box-shadow: inset 0 3px 0 var(--snap-orange); }
+.ia-destinations article > span { position: absolute; top: 15px; right: 15px; padding: 5px 8px; background: var(--snap-ink); color: #fff; font-size: 7px; font-weight: 700; text-transform: uppercase; }
+.ia-destinations svg { width: 22px; height: 22px; color: var(--snap-orange); }.ia-destinations b { display: block; margin-top: 46px; font-size: 13px; }.ia-destinations p { margin: 10px 0 0; color: var(--snap-muted); font-size: 9px; line-height: 1.65; }
+.ia-future { display: grid; grid-template-columns: 210px 130px 1fr; align-items: center; gap: 18px; margin-top: 10px; padding: 18px 20px; border: 1px dashed #c8c8cc; color: var(--snap-muted); }
+.ia-future span { font-size: 8px; font-weight: 700; text-transform: uppercase; }.ia-future b { color: var(--snap-ink); font-size: 11px; }.ia-future p { margin: 0; font-size: 9px; line-height: 1.6; }
+.ia-ownership { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--snap-line); }
+.ia-ownership article { min-height: 190px; padding: 24px; background: #fff; }.ia-ownership span { color: var(--snap-orange); font-size: 8px; font-weight: 700; text-transform: uppercase; }.ia-ownership h3 { margin: 44px 0 0; font-size: 13px; }.ia-ownership p { margin: 10px 0 0; color: var(--snap-muted); font-size: 9px; line-height: 1.7; }
+.ia-object-model { display: grid; grid-template-columns: 230px 1fr; gap: 20px 26px; padding: 28px; background: var(--snap-ink); color: #fff; }
+.ia-object-model header span { color: #ff9f20; font-size: 8px; font-weight: 700; text-transform: uppercase; }.ia-object-model header p { margin: 12px 0 0; color: #b9b9bf; font-size: 9px; line-height: 1.7; }
+.ia-object-chain { display: flex; align-items: center; gap: 8px; overflow-x: auto; }.ia-object-chain b { flex: 0 0 auto; padding: 13px 15px; background: #2a2a2e; font-size: 9px; }.ia-object-chain i { flex: 0 0 auto; color: #ff9f20; font-size: 8px; font-style: normal; }
+.ia-object-branch { grid-column: 2; display: flex; align-items: center; gap: 8px; }.ia-object-branch span { color: #85858d; font-size: 8px; text-transform: uppercase; }.ia-object-branch i { color: #ff9f20; font-style: normal; }.ia-object-branch b { padding: 9px 12px; border: 1px solid #4a4a50; font-size: 8px; }
+.ia-validation-note { margin: 0; padding: 14px 18px; border-left: 3px solid var(--snap-orange); background: #fff; color: var(--snap-muted); font-size: 9px; line-height: 1.7; }.ia-validation-note b { margin-right: 12px; color: var(--snap-ink); text-transform: uppercase; }
 
 .core-flow { display: flex; margin: 0; padding: 0; overflow-x: auto; background: var(--snap-surface); list-style: none; scroll-snap-type: x mandatory; }
 .core-flow li { position: relative; min-width: 190px; min-height: 230px; padding: 24px; border-right: 1px solid var(--snap-line); background: #fff; scroll-snap-align: start; }
@@ -204,6 +217,14 @@ body .snapside-hero .project-hero-visual { display: grid; align-content: center;
 .token-layout > i { color: var(--snap-orange); font-style: normal; }
 .accessibility-note { margin: 18px 0 0; padding: 24px; background: var(--snap-ink); color: #bebec3; font-size: 11px; line-height: 1.75; }
 .accessibility-note b { margin-right: 22px; color: #fff; }
+.snap-system-patterns { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 18px; }
+.snap-system-patterns article { min-height: 210px; padding: 24px; background: #242428; color: #fff; }
+.snap-system-patterns span { color: var(--snap-orange); font-size: 9px; font-weight: 700; text-transform: uppercase; }
+.snap-system-patterns strong { display: block; margin-top: 42px; font-size: 14px; }
+.snap-system-patterns p { margin: 12px 0 0; color: #b9b9bf; font-size: 10px; line-height: 1.75; }
+.design-system-section .token-scale,.design-system-section .component-list { border-color: #3d3d42; background: #242428; }
+.design-system-section .token-scale > span,.design-system-section .component-list > span { color: #aaaab1; }
+.design-system-section .component-list b { color: var(--snap-ink); }
 
 .outcome-grid { display: grid; grid-template-columns: repeat(4,1fr); border-block: 1px solid var(--snap-line); }
 .outcome-grid article { min-height: 230px; padding: 24px; border-right: 1px solid var(--snap-line); }
@@ -232,6 +253,9 @@ body .snapside-hero .project-hero-visual { display: grid; align-content: center;
   .system-model > div { min-width: 220px; }
   .token-layout { grid-template-columns: 1fr; }
   .token-layout > i { transform: rotate(90deg); text-align: center; }
+  .ia-destinations { grid-template-columns: repeat(2,1fr); }
+  .ia-object-model { grid-template-columns: 1fr; }
+  .ia-object-branch { grid-column: 1; }
 }
 
 @media (max-width: 760px) {
@@ -259,7 +283,13 @@ body .snapside-hero .project-hero-visual { display: grid; align-content: center;
   .boundary-flow { min-height: 72px; }
   .boundary-flow i { width: 48px; }
   .landscape-decision { grid-template-columns: 1fr; gap: 16px; }
-  .ia-map { padding: 26px 18px; }
+  .ia-blueprint { padding: 22px 14px; }
+  .ia-hierarchy { grid-template-columns: 1fr; }.ia-hierarchy > i { padding: 8px; transform: rotate(90deg); }
+  .ia-destinations,.ia-ownership { grid-template-columns: 1fr; }
+  .ia-destinations article { min-height: 168px; }
+  .ia-future { grid-template-columns: 1fr; gap: 8px; }
+  .ia-object-model { padding: 24px 18px; }.ia-object-chain { align-items: stretch; flex-direction: column; overflow: visible; }.ia-object-chain i { transform: rotate(90deg); text-align: center; }.ia-object-branch { align-items: flex-start; flex-wrap: wrap; }
+  .snap-system-patterns { grid-template-columns: 1fr; }
   .ia-branches article::before { content: none; }
   .diff-comparison { grid-template-columns: 1fr; }
   .diff-result { grid-template-columns: repeat(3,1fr); }
