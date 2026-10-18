@@ -146,3 +146,13 @@ body.project-snapside .sp-gallery [hidden] { display:none; }
 body.project-snapside .sp-gallery figure { position:relative; margin:0; padding:0; border:1px solid #363636; border-radius:10px; overflow:hidden; background:#111; }
 body.project-snapside .sp-gallery figure > img { display:block; width:100%; height:auto; margin:0; padding:0; border:0; border-radius:0; box-shadow:none; }
 @media(max-width:600px) { body.project-snapside .sp-gallery { margin-top:32px; } body.project-snapside .sp-gallery-tabs { width:100%; gap:2px; } body.project-snapside .sp-gallery-tabs button { flex:1; min-width:0; padding:10px 5px; font-size:10px; } }
+
+/* Selected public reactions, linked to the original replies. */
+body.project-snapside .sp-feedback-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+body.project-snapside .sp-feedback-card { display:flex; flex-direction:column; min-width:0; margin:0; padding:30px; border:1px solid #363a33; border-radius:12px; background:linear-gradient(145deg,#20241e,#181b17); }
+body.project-snapside .sp-feedback-card h3 { margin:0 0 28px; font-size:12px; line-height:1.6; font-weight:400; color:#a7b69b; }
+body.project-snapside .sp-feedback-card blockquote { margin:0 0 32px; font-size:clamp(18px,1.8vw,24px); font-weight:500; letter-spacing:-.025em; line-height:1.65; color:#eee; }
+body.project-snapside .sp-feedback-card blockquote::before { content:'“'; display:block; height:38px; font-family:Georgia,serif; font-size:56px; line-height:1; color:#8e9c80; }
+body.project-snapside .sp-feedback-card figcaption { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:auto; padding-top:20px; border-top:1px solid #363a33; font-size:11px; color:#aab1a5; }
+body.project-snapside .sp-feedback-card figcaption a { color:#e2e8db; text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:800px) { body.project-snapside .sp-feedback-grid { grid-template-columns:1fr; gap:16px; } body.project-snapside .sp-feedback-card { padding:26px; } body.project-snapside .sp-feedback-card h3 { margin-bottom:16px; } body.project-snapside .sp-feedback-card blockquote { font-size:22px; margin-bottom:24px; } }

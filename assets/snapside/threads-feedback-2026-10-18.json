@@ -1,0 +1,57 @@
+{
+  "reviewed_at": "2026-10-18",
+  "source": "Public Threads replies read in Chrome; parent posts checked for Snapside context",
+  "classification": "Early public reactions, not verified customer usage reviews",
+  "items": [
+    {
+      "author": "buidlermason",
+      "url": "https://www.threads.com/@buidlermason/post/DeamD6QkWWG",
+      "parent": "https://www.threads.com/@haniworkon/post/DeZuw3KjeAF",
+      "topic": [
+        "Design work counts",
+        "디자인 작업도 기록으로",
+        "デザインの作業も記録に"
+      ],
+      "quote": [
+        "Even days spent working only in Figma, with no GitHub activity, would leave a record.",
+        "깃허브 잔디는 비었는데 피그마만 열심히 고친 날도 기록에 남겠네요ㅋㅋ",
+        "GitHubに活動がなくても、Figmaを頑張って直した日も記録に残るんですね。"
+      ],
+      "original_language": "ko",
+      "original_quote": "깃허브 잔디는 비었는데 피그마만 열심히 고친 날도 기록에 남겠네요ㅋㅋ"
+    },
+    {
+      "author": "sela.dams",
+      "url": "https://www.threads.com/@sela.dams/post/DeaClYbFuRb",
+      "parent": "https://www.threads.com/@haniworkon/post/DeZvrKMjQr-",
+      "topic": [
+        "A focus on solo builders",
+        "혼자 만드는 사람을 위한 방향",
+        "個人開発者に向けた設計"
+      ],
+      "quote": [
+        "This feels genuinely thoughtful—independent developers could really use something this focused.",
+        "세심하게 고민한 제품 같아요. 개인 개발자에게는 이렇게 목적이 명확한 도구가 유용할 것 같아요.",
+        "よく考えられた製品だと感じます。個人開発者には、ここまで目的を絞ったツールが役立ちそうです。"
+      ],
+      "original_language": "en"
+    },
+    {
+      "author": "nattty.k",
+      "url": "https://www.threads.com/@nattty.k/post/Ddr8H5CGko-",
+      "parent": "https://www.threads.com/@haniworkon/post/Ddp8TpqnxQR",
+      "topic": [
+        "Curiosity about Figma integration",
+        "Figma 연동을 써보고 싶다는 반응",
+        "Figma連携への関心"
+      ],
+      "quote": [
+        "Would be curious to try what you built, especially how it incorporates Figma",
+        "만드신 제품을 써보고 싶어요. 특히 Figma가 어떻게 연동되는지 궁금해요.",
+        "作られた製品を試してみたいです。特にFigmaがどのようにつながるのか気になります。"
+      ],
+      "original_language": "en",
+      "excerpt": true
+    }
+  ]
+}
