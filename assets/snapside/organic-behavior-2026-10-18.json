@@ -1,0 +1,207 @@
+{
+  "as_of": "2026-10-18",
+  "property": {
+    "name": "Snapside / snapside-web",
+    "id": "552808316"
+  },
+  "period": {
+    "start": "2026-09-20",
+    "end": "2026-10-17",
+    "timezone": "GA4 property reporting timezone; not independently verified"
+  },
+  "filter": {
+    "dimension": "Session default channel group",
+    "match": "exactly matches",
+    "value": "Organic Search",
+    "scope": "session; excludes Organic Social"
+  },
+  "traffic_acquisition": {
+    "sessions": 26,
+    "engaged_sessions": 20,
+    "engagement_rate_percent": 76.92,
+    "average_engagement_time_per_session_seconds": 29,
+    "event_count": 2157,
+    "key_events": 0,
+    "all_channel_sessions": 277
+  },
+  "landing_page": {
+    "active_users": 13,
+    "new_users": 12,
+    "sessions": 26,
+    "groups": [
+      {
+        "group": "blog posts",
+        "sessions": 12
+      },
+      {
+        "group": "home /",
+        "sessions": 10
+      },
+      {
+        "group": "other known pages",
+        "sessions": 2
+      },
+      {
+        "group": "not set",
+        "sessions": 2
+      }
+    ],
+    "rows": [
+      {
+        "path": "/",
+        "sessions": 10,
+        "active_users": 1,
+        "new_users": 0,
+        "average_engagement_seconds_per_session": 40
+      },
+      {
+        "path": "/blog/ko/notion-work-history",
+        "sessions": 3
+      },
+      {
+        "path": "(not set)",
+        "sessions": 2
+      },
+      {
+        "path": "/blog/it/figma-work-history-codex-mcp",
+        "sessions": 2
+      },
+      {
+        "path": "/blog/ko/figma-work-history-codex-mcp",
+        "sessions": 2
+      },
+      {
+        "path": "/blog/ru/figma-plan-seat-history-limits",
+        "sessions": 1
+      },
+      {
+        "path": "/blog/ru/notion-work-history",
+        "sessions": 1
+      },
+      {
+        "path": "/de",
+        "sessions": 1
+      },
+      {
+        "path": "/de/blog/notion-work-history",
+        "sessions": 1
+      },
+      {
+        "path": "/desktop",
+        "sessions": 1
+      },
+      {
+        "path": "/ja/blog/figma-work-history-codex-mcp",
+        "sessions": 1
+      },
+      {
+        "path": "/ko/blog/vibe-coding-project-memory",
+        "sessions": 1
+      }
+    ]
+  },
+  "pages_and_screens": {
+    "views": 117,
+    "active_users": 13,
+    "average_engagement_seconds_per_active_user": 58,
+    "selected_rows": [
+      {
+        "path": "/projects/[redacted]/timeline",
+        "views": 14,
+        "active_users": 1
+      },
+      {
+        "path": "/projects/[redacted]/issues",
+        "views": 4,
+        "active_users": 1
+      },
+      {
+        "path": "/projects/[redacted]/notes",
+        "views": 3,
+        "active_users": 1
+      }
+    ],
+    "note": "Project identifiers removed. Do not sum overlapping active users or infer ordered navigation."
+  },
+  "events": [
+    {
+      "event": "scroll",
+      "count": 26,
+      "total_users": 8
+    },
+    {
+      "event": "button_click",
+      "count": 100,
+      "total_users": 2
+    },
+    {
+      "event": "login",
+      "count": 1,
+      "total_users": 1
+    },
+    {
+      "event": "first_visit",
+      "count": 12,
+      "total_users": 12
+    },
+    {
+      "event": "button_impression",
+      "count": 1188,
+      "total_users": 12
+    }
+  ],
+  "button_click_examples": [
+    {
+      "button_id": "select_content",
+      "count": 18,
+      "total_users": 2
+    },
+    {
+      "button_id": "navigate_project_timeline",
+      "count": 7,
+      "total_users": 1
+    },
+    {
+      "button_id": "project_tab_issues",
+      "count": 5,
+      "total_users": 1
+    },
+    {
+      "button_id": "project_tab_notes",
+      "count": 3,
+      "total_users": 1
+    }
+  ],
+  "calculations": {
+    "blog_entry_share_percent": 46.2,
+    "engagement_rate_percent": 76.92
+  },
+  "limitations": [
+    "Small descriptive sample, no causal attribution or sequential funnel.",
+    "Internal/test traffic exclusion not verified; root landing repeated sessions were attributed to one active user.",
+    "No sign_up event row in the reviewed filtered event table. Zero reported key events is not proof of zero real signups.",
+    "New users are first visitors, not new registered accounts.",
+    "Scroll event counts do not establish reading comprehension.",
+    "Traffic, landing, pages and events totals reconcile at 26 sessions / 13 active users / 2157 events where applicable.",
+    "Reported data quality badge: 100% of available data; does not establish complete instrumentation."
+  ],
+  "sources": [
+    {
+      "report": "landing",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25&r=landing-page&ruid=landing-page,business-objectives,generate-leads&collectionId=business-objectives"
+    },
+    {
+      "report": "pages",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25&r=all-pages-and-screens&ruid=all-pages-and-screens,business-objectives,raise-brand-awareness&collectionId=business-objectives"
+    },
+    {
+      "report": "events",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25&r=top-events&ruid=top-events,business-objectives,examine-user-behavior&collectionId=business-objectives"
+    },
+    {
+      "report": "clicks",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D100%26_r.explorerCard..seldim%3D%5B%22eventName%22,%22customDimensionsGroup2Slot06%22%5D%26_r.explorerCard..filterTerm%3Dbutton_click&r=top-events&ruid=top-events,business-objectives,examine-user-behavior&collectionId=business-objectives"
+    }
+  ],
+  "method": "Read aggregated authenticated GA4 reports through browser UI. No account email, individual user ID, or project ID retained."
+}
