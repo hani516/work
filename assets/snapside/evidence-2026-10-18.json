@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-18",
+  "timezone_for_as_of": "Asia/Tokyo",
+  "registered_accounts": {
+    "value": 9,
+    "source": "Supabase > Snapside > main Production > Authentication > Users",
+    "definition": "Total registered auth accounts shown by the dashboard; internal and test accounts are not excluded. Not paying or retained customers.",
+    "period": "snapshot on 2026-10-18"
+  },
+  "ga4": {
+    "property_name": "Snapside / snapside-web",
+    "source": "Google Analytics reports snapshot and Home, All Users",
+    "period": {
+      "start": "2026-09-20",
+      "end": "2026-10-17"
+    },
+    "previous_period": {
+      "start": "2026-08-23",
+      "end": "2026-09-19"
+    },
+    "active_users": 210,
+    "active_users_change_percent": 79.5,
+    "new_users": 206,
+    "average_engagement_seconds_per_active_user": 35,
+    "first_user_google_organic_active_users": 12,
+    "scope_note": "Web active users include site visitors; not registered product users. Internal/test traffic exclusions were not verified. The Home comparison is against the prior 28 days."
+  },
+  "search_console": {
+    "property": "sc-domain:snapside.io",
+    "search_type": "Web",
+    "source": "Search Console > Performance > compare last 28 days with previous period",
+    "period": {
+      "start": "2026-09-19",
+      "end": "2026-10-16"
+    },
+    "previous_period": {
+      "start": "2026-08-22",
+      "end": "2026-09-18"
+    },
+    "clicks": {
+      "previous": 2,
+      "current": 22
+    },
+    "impressions": {
+      "previous": 9,
+      "current": 1297
+    },
+    "ctr_percent": {
+      "previous": 22.2,
+      "current": 1.7
+    },
+    "average_position": {
+      "previous": 13.6,
+      "current": 9.3
+    },
+    "scope_note": "All web-search queries/pages/countries/devices. Small launch-period baseline. Observed growth is not causal attribution to an individual SEO or UX change. Search Console and GA4 periods differ by one day."
+  },
+  "seo_sources": [
+    "https://github.com/hani516/snapside/blob/main/docs/seo/2026-09-17-keyword-strategy.md",
+    "https://github.com/hani516/snapside/blob/main/src/app/sitemap.ts",
+    "https://github.com/hani516/snapside/blob/main/src/lib/i18n/landing-metadata.ts",
+    "https://github.com/hani516/snapside/commit/bac8ceb392b93be6ef9f286494fc57fb47bc3998"
+  ],
+  "competitor_sources": [
+    "https://linear.app/docs/conceptual-model",
+    "https://www.atlassian.com/software/jira/guides/boards/overview",
+    "https://help.asana.com/s/article/asana-hierarchy?language=en_US"
+  ],
+  "method": "Aggregate values read from authenticated source UIs on 2026-10-18; competitor structure read from official documentation; no individual user information retained."
+}
