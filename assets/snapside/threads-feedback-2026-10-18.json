@@ -18,7 +18,10 @@
         "GitHubに活動がなくても、Figmaを頑張って直した日も記録に残るんですね。"
       ],
       "original_language": "ko",
-      "original_quote": "깃허브 잔디는 비었는데 피그마만 열심히 고친 날도 기록에 남겠네요ㅋㅋ"
+      "original_quote": "깃허브 잔디는 비었는데 피그마만 열심히 고친 날도 기록에 남겠네요ㅋㅋ",
+      "japanese_translation": "GitHubの活動はなくても、Figmaだけを頑張って修正した日も記録に残るんですね（笑）。",
+      "screenshot": "threads-buidlermason-20261018.jpg",
+      "screenshot_method": "Unmodified Chrome screenshot clipped to the original reply, including author and reaction controls"
     },
     {
       "author": "sela.dams",
@@ -34,7 +37,11 @@
         "세심하게 고민한 제품 같아요. 개인 개발자에게는 이렇게 목적이 명확한 도구가 유용할 것 같아요.",
         "よく考えられた製品だと感じます。個人開発者には、ここまで目的を絞ったツールが役立ちそうです。"
       ],
-      "original_language": "en"
+      "original_language": "en",
+      "original_quote": "This feels genuinely thoughtful—independent developers could really use something this focused.",
+      "japanese_translation": "本当によく考えられた製品だと感じます。個人開発者には、これほど目的を絞ったツールが役立ちそうです。",
+      "screenshot": "threads-sela-dams-20261018.jpg",
+      "screenshot_method": "Unmodified Chrome screenshot clipped to the original reply, including author and reaction controls"
     },
     {
       "author": "nattty.k",
@@ -51,7 +58,10 @@
         "作られた製品を試してみたいです。特にFigmaがどのようにつながるのか気になります。"
       ],
       "original_language": "en",
-      "excerpt": true
+      "original_quote": "I feel the pain! Working on my portfolio currently and also mashed up a bunch of skills to make things easier. Would be curious to try what you built, especially how it incorporates Figma (I wasn’t able to do this part successfully)",
+      "japanese_translation": "その大変さ、分かります！ 私もちょうどポートフォリオを作っていて、作業を楽にするためにいろいろなスキルを組み合わせています。作られた製品を試してみたいです。特にFigmaがどのように連携するのか気になります（私はこの部分をうまく実現できませんでした）。",
+      "screenshot": "threads-nattty-k-20261018.jpg",
+      "screenshot_method": "Unmodified Chrome screenshot clipped to the original reply, including author and reaction controls"
     }
   ]
 }

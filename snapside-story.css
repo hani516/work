@@ -147,12 +147,17 @@ body.project-snapside .sp-gallery figure { position:relative; margin:0; padding:
 body.project-snapside .sp-gallery figure > img { display:block; width:100%; height:auto; margin:0; padding:0; border:0; border-radius:0; box-shadow:none; }
 @media(max-width:600px) { body.project-snapside .sp-gallery { margin-top:32px; } body.project-snapside .sp-gallery-tabs { width:100%; gap:2px; } body.project-snapside .sp-gallery-tabs button { flex:1; min-width:0; padding:10px 5px; font-size:10px; } }
 
-/* Selected public reactions, linked to the original replies. */
-body.project-snapside .sp-feedback-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
-body.project-snapside .sp-feedback-card { display:flex; flex-direction:column; min-width:0; margin:0; padding:30px; border:1px solid #363a33; border-radius:12px; background:linear-gradient(145deg,#20241e,#181b17); }
-body.project-snapside .sp-feedback-card h3 { margin:0 0 28px; font-size:12px; line-height:1.6; font-weight:400; color:#a7b69b; }
-body.project-snapside .sp-feedback-card blockquote { margin:0 0 32px; font-size:clamp(18px,1.8vw,24px); font-weight:500; letter-spacing:-.025em; line-height:1.65; color:#eee; }
-body.project-snapside .sp-feedback-card blockquote::before { content:'“'; display:block; height:38px; font-family:Georgia,serif; font-size:56px; line-height:1; color:#8e9c80; }
-body.project-snapside .sp-feedback-card figcaption { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-top:auto; padding-top:20px; border-top:1px solid #363a33; font-size:11px; color:#aab1a5; }
-body.project-snapside .sp-feedback-card figcaption a { color:#e2e8db; text-decoration:underline; text-underline-offset:4px; }
-@media(max-width:800px) { body.project-snapside .sp-feedback-grid { grid-template-columns:1fr; gap:16px; } body.project-snapside .sp-feedback-card { padding:26px; } body.project-snapside .sp-feedback-card h3 { margin-bottom:16px; } body.project-snapside .sp-feedback-card blockquote { font-size:22px; margin-bottom:24px; } }
+/* Original Threads screenshots with Japanese translations. */
+body.project-snapside .sp-feedback-grid { display:grid; gap:24px; max-width:800px; margin-inline:auto; }
+body.project-snapside .sp-feedback-card { display:grid; grid-template-columns:1fr; align-items:start; gap:26px; min-width:0; padding:32px; border:1px solid #343830; border-radius:12px; background:#191c17; }
+body.project-snapside .sp-feedback-capture { position:relative; margin:0; width:100%; overflow:hidden; border:1px solid #30312e; border-radius:9px; background:#101010; }
+body.project-snapside .sp-feedback-capture img { display:block; width:100%; height:auto; margin:0; border:0; border-radius:0; box-shadow:none; }
+body.project-snapside .sp-feedback-capture .screen-zoom { top:8px; right:8px; width:28px; height:28px; opacity:0; transition:opacity .2s; }
+body.project-snapside .sp-feedback-capture:hover .screen-zoom,body.project-snapside .sp-feedback-capture:focus-within .screen-zoom { opacity:1; }
+body.project-snapside .sp-feedback-translation { min-width:0; }
+body.project-snapside .sp-feedback-translation h3 { margin:0 0 20px; font-size:18px; font-weight:500; line-height:1.5; color:#eef0e9; }
+body.project-snapside .sp-translation-label { display:block; margin-bottom:8px; color:#a7b69b; font-size:10px; letter-spacing:.08em; }
+body.project-snapside .sp-feedback-translation p { margin:0 0 20px; color:#c6ccbf; font-size:14px; line-height:1.9; }
+body.project-snapside .sp-feedback-translation>a { color:#a9b29e; font-size:11px; text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:800px) { body.project-snapside .sp-feedback-card { grid-template-columns:1fr; gap:24px; padding:24px; } body.project-snapside .sp-feedback-translation h3 { font-size:18px; margin-bottom:16px; } }
+@media(max-width:480px) { body.project-snapside .sp-feedback-card { padding:18px; gap:20px; } body.project-snapside .sp-feedback-translation p { font-size:13px; } body.project-snapside .sp-feedback-capture .screen-zoom { opacity:1; } }
