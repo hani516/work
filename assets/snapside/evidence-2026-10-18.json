@@ -61,10 +61,12 @@
     "https://github.com/hani516/snapside/blob/main/src/lib/i18n/landing-metadata.ts",
     "https://github.com/hani516/snapside/commit/bac8ceb392b93be6ef9f286494fc57fb47bc3998"
   ],
-  "competitor_sources": [
-    "https://linear.app/docs/conceptual-model",
-    "https://www.atlassian.com/software/jira/guides/boards/overview",
-    "https://help.asana.com/s/article/asana-hierarchy?language=en_US"
-  ],
-  "method": "Aggregate values read from authenticated source UIs on 2026-10-18; competitor structure read from official documentation; no individual user information retained."
+  "method": "Aggregate values read from authenticated source UIs on 2026-10-18; no individual user information retained.",
+  "product_origin": {
+    "source": "Founder clarification in portfolio task, 2026-10-18",
+    "audience": "Solo vibe coders",
+    "problem": "Manually logging work in Notion is easy to forget. Later, the reasons behind changes in Notion and Figma become hard to recover.",
+    "design_direction": "Automatically collect changes from connected tools and revisit them alongside context recorded in issues and notes.",
+    "measurement_note": "Founder motivation, not a claim established by user research or measured outcomes."
+  }
 }

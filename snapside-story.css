@@ -127,3 +127,12 @@ body.project-snapside .sp-organic-grid p.sp-organic-caption { margin-top:22px; f
 body.project-snapside .sp-organic-reading { margin-top:40px; background:#1b2018; padding:30px; border-radius:10px; }
 @media(max-width:900px) { body.project-snapside .sp-organic-grid { gap:30px; } body.project-snapside .sp-organic-bar-row { grid-template-columns:80px minmax(0,1fr) 25px; gap:10px; } }
 @media(max-width:620px) { body.project-snapside .sp-organic-metrics { grid-template-columns:1fr 1fr; gap:26px 20px; padding-block:24px; } body.project-snapside .sp-organic-metrics strong { font-size:35px; } body.project-snapside .sp-organic-metrics article>span { font-size:11px; } body.project-snapside .sp-organic-grid { grid-template-columns:1fr; gap:34px; margin-top:30px; } body.project-snapside .sp-organic-grid h3,body.project-snapside .sp-organic-reading h3 { font-size:20px; } body.project-snapside .sp-organic-reading { padding:23px; } body.project-snapside .sp-organic-scope { font-size:11px; } body.project-snapside .sp-organic-actions dd>span { font-size:11px; } }
+
+body.project-snapside .cc-hero h1 { display:flex; align-items:center; gap:12px; }
+body.project-snapside .sp-hero-logo { width:110px; height:110px; flex-shrink:0; margin:-15px -10px -15px -22px; object-fit:contain; }
+body.project-snapside .sp-history-hub>img { width:72px; height:72px; margin:-12px auto 0; }
+body.project-snapside .sp-origin-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
+body.project-snapside .sp-origin-steps article { padding:28px; border:1px solid var(--sp-rule); border-radius:10px; background:var(--sp-panel); }
+body.project-snapside .sp-origin-steps h3 { font-size:21px; font-weight:500; letter-spacing:-.035em; line-height:1.5; margin:0 0 16px; color:var(--cc-ink); }
+body.project-snapside .sp-origin-steps p { margin:0; font-size:13px; line-height:1.85; color:var(--sp-soft); }
+@media(max-width:620px){body.project-snapside .sp-origin-steps { grid-template-columns:1fr; gap:16px; }body.project-snapside .sp-origin-steps article { padding:24px; }body.project-snapside .sp-hero-logo { width:68px; height:68px; margin:-10px -10px -10px -16px; }body.project-snapside .cc-hero h1 { gap:4px; }}
