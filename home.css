@@ -83,3 +83,22 @@ h1 { font-size:clamp(92px,14.9vw,222px); line-height:.86; letter-spacing:-.085em
 }
 @media (max-width:360px) { .nav-links { display:none; } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none !important; } }
+
+.panel-snapside .panel-visual { background: #151716; padding: 0; }
+.panel-snapside .panel-visual img { object-fit: contain; object-position: center; border-radius: 0; box-shadow: none; }
+
+/* Two selected projects: company work and product design. */
+.panel-snapside { grid-column: span 5; margin-top: 106px; }
+.panel-snapside .panel-visual { aspect-ratio: .97; }
+@media (max-width: 900px) { .panel-snapside { margin-top: 75px; } }
+@media (max-width: 600px) { .panel-snapside { grid-column: 1; margin-top: 0; } .panel-snapside .panel-visual { aspect-ratio: 1.2; } .panel-snapside .panel-visual img { width: 100%; max-width: 100%; transform: none; } .panel-snapside:hover .panel-visual img { transform: none; } }
+
+.upcoming-project { grid-column: 1 / -1; display: grid; grid-template-columns: 80px 1fr auto; align-items: center; gap: 24px; padding: 28px 0; border-block: 1px solid var(--line); }
+.upcoming-index { color: var(--muted); font-size: 10px; }
+.upcoming-project h3 { margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -1.1px; }
+.upcoming-project p { margin: 8px 0 0; font-size: 11px; color: var(--muted); }
+.upcoming-status { color: var(--muted); font-size: 10px; border: 1px solid var(--line); border-radius: 30px; padding: 8px 12px; white-space: nowrap; }
+@media (max-width: 600px) { .upcoming-project { grid-template-columns: 35px 1fr auto; gap: 12px; padding: 24px 0; } .upcoming-project h3 { font-size: 24px; } .upcoming-status { font-size: 9px; padding: 7px 10px; } }
+.panel-snapside .panel-visual { aspect-ratio: 1.25; align-items: center; }
+.panel-snapside .panel-visual img { height: 100%; }
+@media (max-width: 600px) { .panel-snapside .panel-visual { aspect-ratio: 1.4; } }

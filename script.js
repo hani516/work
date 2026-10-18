@@ -1,5 +1,6 @@
 const translations = {
   ja: {
+    moneychatType: "家計簿アプリ", moneychatStatus: "制作予定",
     navAbout: "プロフィール", navCompany: "会社プロジェクト", navProjects: "プロジェクト", navContact: "連絡",
     heroTitle: "使いやすさを、かたちに。",
     heroBody: "課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。",
@@ -21,7 +22,7 @@ const translations = {
     readCase: "ケーススタディを見る",
     personalLabel: "Personal & Collaborative Projects", personalTitle: "個人リリースプロダクト",
     personalIntro: "プロダクトの定義からUX、UI、実装または開発連携まで担当しました。",
-    selectedLabel: "Selected work", selectedTitle: "5つのプロジェクト。", selectedIntro: "個人プロダクト、協業プロダクト、会社で担当した改善プロジェクトを紹介します。",
+    selectedLabel: "Selected work", selectedTitle: "2つのプロジェクト。", selectedIntro: "個人プロダクト、協業プロダクト、会社で担当した改善プロジェクトを紹介します。",
     wivloBody: "記録を次のアイデアにつなぐ、AIワークスペース。",
     snapsideBody: "プロダクトの変化を記録するワークスペース。",
     tramiBody: "記録と振り返りをつなぐフィットネスアプリ。",
@@ -29,6 +30,7 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
+    moneychatType: "Expense tracker", moneychatStatus: "Planned",
     navAbout: "Profile", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
     heroTitle: "Thoughtful products. Simple experiences.",
     heroBody: "I am a Product Designer who connects problem discovery, information architecture, UI, implementation, and post-launch validation.",
@@ -50,7 +52,7 @@ const translations = {
     readCase: "Read case study",
     personalLabel: "Personal & Collaborative Projects", personalTitle: "Independently released products",
     personalIntro: "My scope spans product definition, UX, UI, implementation, and developer collaboration.",
-    selectedLabel: "Selected work", selectedTitle: "Five projects.", selectedIntro: "Independent products, a collaborative mobile product, and product improvements delivered at work.",
+    selectedLabel: "Selected work", selectedTitle: "Two projects.", selectedIntro: "Independent products, a collaborative mobile product, and product improvements delivered at work.",
     wivloBody: "An AI workspace for notes and ideas.",
     snapsideBody: "A workspace for your product’s history.",
     tramiBody: "Workout tracking, made simple.",
@@ -58,6 +60,7 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
+    moneychatType: "가계부 앱", moneychatStatus: "제작 예정",
     navAbout: "소개", navCompany: "회사 프로젝트", navProjects: "프로젝트", navContact: "연락",
     heroTitle: "쓰기에 편한, 보기에 명쾌한 디자인.",
     heroBody: "문제 발견부터 정보 구조, UI, 구현, 출시 후 검증까지 연결해서 생각하는 Product Designer입니다.",
@@ -79,7 +82,7 @@ const translations = {
     readCase: "케이스 스터디 보기",
     personalLabel: "Personal & Collaborative Projects", personalTitle: "개인 출시 프로덕트",
     personalIntro: "프로덕트 정의부터 UX, UI, 구현 또는 개발 협업까지 담당했습니다.",
-    selectedLabel: "Selected work", selectedTitle: "5개의 프로젝트.", selectedIntro: "개인 프로덕트, 협업 프로덕트와 회사에서 진행한 제품 개선 프로젝트를 소개합니다.",
+    selectedLabel: "Selected work", selectedTitle: "2개의 프로젝트.", selectedIntro: "개인 프로덕트, 협업 프로덕트와 회사에서 진행한 제품 개선 프로젝트를 소개합니다.",
     wivloBody: "기록을 다음 아이디어로 연결하는 AI 워크스페이스.",
     snapsideBody: "프로덕트의 변화를 기록하는 워크스페이스.",
     tramiBody: "운동 기록과 회고를 하나로.",

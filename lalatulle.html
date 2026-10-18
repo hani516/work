@@ -15,39 +15,37 @@
     <link rel="stylesheet" href="portfolio-design.css" />
     <link rel="stylesheet" href="case-layout.css" />
     <link rel="stylesheet" href="portfolio-final.css" />
+    <link rel="stylesheet" href="case-compact.css?v=1" />
   </head>
-  <body class="project-lalatulle">
+  <body class="project-lalatulle compact-case">
     <header class="case-header project-page-header">
       <a class="back-link" href="index.html#projects">Portfolio</a>
-      <nav class="case-nav" aria-label="LaLaTulle projects">
-        <a href="#halloween">Halloween Page</a>
-        <a href="#landing">Landing Page / PDP</a>
-      </nav>
+      <nav class="case-nav" aria-label="LaLaTulle projects"><a data-case-en="Overview" data-case-ko="개요" href="#cc-overview">概要</a><a data-case-en="Design" data-case-ko="디자인" href="#cc-decisions">デザイン</a><a data-case-en="Outcome" data-case-ko="결과" href="#cc-result">結果</a></nav>
       <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
     </header>
 
-    <main>
-      <section class="case-shell case-hero project-hero">
-        <div class="project-hero-copy">
-          <div class="case-brand"><p class="case-kicker">Company UX Improvement</p></div>
-          <h1>LaLaTulle</h1>
-          <h2>集客から購入まで、ページ単位で改善した。</h2>
-          <p class="case-lead">Halloween PageのSEOと情報構造、Landing Pageの商品探索、PDPの購入判断を対象に、分析・設計・検証を行いました。</p>
-          <div class="case-meta" aria-label="Project metadata">
-            <span>2025.08 - 2025.10</span>
-            <span>SEO / Information Architecture / UIUX</span>
-            <span>GA4 / Search Console / Clarity / Lighthouse</span>
-            <span>UT / AB Test · Company Work</span>
-          </div>
-          <div class="case-links">
-            <a href="https://www.lalatulle.jp/c/costume/halloween" target="_blank" rel="noreferrer">Halloween Page</a>
-            <a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">LaLaTulle Top</a>
-          </div>
-        </div>
-        <figure class="hero-visual project-hero-visual">
-          <img src="assets/lalatulle/lalatulle-live-home.jpg" alt="特集Carouselと商品検索を表示した実際のLaLaTulle Top Page" />
-        </figure>
-      </section>
+    <main class="cc-main">
+<section class="cc-hero cc-shell" id="cc-overview"><div class="cc-eyebrow"><span>E-commerce UX improvement</span><span>2025 · Company project · Web</span></div>
+<h1>LaLaTulle</h1>
+<h2 class="cc-title" data-case-en="Make products easier to find and choose." data-case-ko="상품을 찾기 쉽게, 선택은 명확하게." >商品を探しやすく。選びやすく。</h2>
+<div class="cc-hero-bottom"><p class="cc-premise" data-case-en="Improve discovery and purchase decisions, page by page." data-case-ko="검색 유입부터 구매 판단까지 페이지별로 개선." >検索流入から購入判断まで、ページごとに改善。</p><span class="cc-role">Analysis / Information architecture / UX·UI</span></div>
+<div class="cc-links"><a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">Live site ↗</a></div>
+<figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="LaLaTulle product overview" fetchpriority="high" /></figure></section>
+<section class="cc-work cc-shell" id="cc-decisions"><div class="cc-section-label"><span>Design decisions</span><span>01 — 03</span></div>
+<article class="cc-decision"><div class="cc-decision-copy"><span class="cc-kicker" data-case-en="01 / Discovery" data-case-ko="01 / Discovery" >01 / Discovery</span><h3 data-case-en="Reorganize headings and product paths." data-case-ko="제목 구조와 상품 탐색 경로 정리." >見出しと商品導線を整理。</h3><p data-case-en="Reworked SEO and information structure on the Halloween page." data-case-ko="할로윈 특집의 SEO와 정보 구조를 정비했습니다." >Halloween特集のSEOと情報構造を見直した。</p>
+</div>
+<figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-seo-before-after.webp" alt="LaLaTulle — Reorganize headings and product paths." loading="lazy" /></figure>
+</article>
+<article class="cc-decision"><div class="cc-decision-copy"><span class="cc-kicker" data-case-en="02 / Navigation" data-case-ko="02 / Navigation" >02 / Navigation</span><h3 data-case-en="Keep purchase actions within reach." data-case-ko="구매에 필요한 조작을 중심으로." >購入に必要な操作を残す。</h3><p data-case-en="Simplified navigation around search, favorites and cart." data-case-ko="검색·즐겨찾기·장바구니 중심으로 내비게이션을 정리했습니다." >検索・お気に入り・カートを残し、ナビゲーションを整理。</p>
+</div>
+<div class="cc-pair"><div><span>Before</span><figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-navigation-before.png" alt="LaLaTulle navigation Before" loading="lazy" /></figure></div><div><span>After</span><figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-navigation-after.png" alt="LaLaTulle navigation After" loading="lazy" /></figure></div></div>
+</article>
+<article class="cc-decision"><div class="cc-decision-copy"><span class="cc-kicker" data-case-en="03 / Experiment" data-case-ko="03 / Experiment" >03 / Experiment</span><h3 data-case-en="Evaluate the whole purchase funnel." data-case-ko="장바구니 추가율만으로 성공을 판단하지 않기." >追加率だけで、成功と判断しない。</h3><p data-case-en="Tested viewer-count UI on product pages; ended it after reviewing the funnel and operating cost." data-case-ko="PDP 조회 인원 UI를 실험하고 구매 흐름과 운영 비용을 기준으로 종료했습니다." >PDPの閲覧人数UIを試し、購入フローと運用コストから終了を判断。</p>
+</div>
+<figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-ab-ui.webp" alt="LaLaTulle — Evaluate the whole purchase funnel." loading="lazy" /></figure>
+</article>
+</section><section class="cc-result cc-shell" id="cc-result"><span class="cc-kicker">Outcome & validation</span><p data-case-en="Documented search and behavior changes without attributing causality to a single change." data-case-ko="검색 순위와 행동 지표의 변화를 기록했으며, 개별 변경의 인과적 효과로 단정하지 않습니다." >検索順位・行動指標の変化を記録。施策単独の効果とは断定しない。</p></section>
+<div class="cc-shell cc-notes-shell"><details class="cc-notes"><summary><span data-case-en="Read research &amp; decision evidence" data-case-ko="리서치와 판단 근거 더 보기" >リサーチ・判断の根拠を読む</span><span class="cc-expand" aria-hidden="true">+</span></summary><div class="cc-archive">
 
       <section class="case-shell project-scope-nav case-index is-two" aria-label="LaLaTulle project scope">
         <a href="#halloween"><span>01</span><strong>Halloween Page</strong><small>SEO / Structure / Visual</small></a>
@@ -73,7 +71,7 @@
             <span>Goal</span><strong>Visual refresh</strong><i></i><strong>CVR hypothesis</strong><i></i><strong>HTML / SEO</strong><i></i><strong>New content</strong>
           </div>
           <figure class="actual-site-shot">
-            <img src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="改善後のHalloween Pageに表示されたメインビジュアルとカテゴリ導線" />
+            <img loading="lazy" src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="改善後のHalloween Pageに表示されたメインビジュアルとカテゴリ導線" />
             <figcaption><strong>Live Halloween Page</strong><span data-case-en="The released page combines the renewed visual direction with category navigation and structured content." data-case-ko="실제 공개 페이지에서 개선한 비주얼 방향, 카테고리 탐색, 구조화된 콘텐츠를 확인할 수 있습니다.">改善したVisual、カテゴリ導線、構造化したContentを実際の公開ページで確認できます。</span></figcaption>
           </figure>
         </div>
@@ -142,7 +140,7 @@
             <article><span>06</span><h3>Visual direction</h3><p>カジュアルなBannerを、商品単価に合う表現へ変更。</p></article>
           </div>
           <figure class="visual-band halloween-structure-shot">
-            <img src="assets/lalatulle/lalatulle-seo-before-after.webp" alt="Halloween Pageの見出し構造と商品配置の改善前後" />
+            <img loading="lazy" src="assets/lalatulle/lalatulle-seo-before-after.webp" alt="Halloween Pageの見出し構造と商品配置の改善前後" />
           </figure>
         </div>
       </section>
@@ -191,7 +189,7 @@
             <article><span>Bounce rate</span><strong>-4.57%</strong><small>19.24% → 18.36%</small></article>
           </div>
           <figure class="analytics-shot">
-            <img src="assets/lalatulle/lalatulle-ga4-behavior.png" alt="Halloween Pageのユーザー当たり行動指標を比較したGA4画面" />
+            <img loading="lazy" src="assets/lalatulle/lalatulle-ga4-behavior.png" alt="Halloween Pageのユーザー当たり行動指標を比較したGA4画面" />
             <figcaption><strong>Directional comparison</strong><span>Sep 14–16, 2025 vs Aug 1–31, 2025 · unequal date ranges</span></figcaption>
           </figure>
           <div class="halloween-outcomes">
@@ -233,12 +231,12 @@
           <div class="navigation-compare" aria-label="Navigation改善前後">
             <article class="navigation-state before-state">
               <div class="state-heading"><span>Before</span><strong>6 navigation icons</strong></div>
-              <figure class="navigation-before-shot"><img src="assets/lalatulle/lalatulle-navigation-before.png" alt="新商品、ブログ、ランキング、検索、カート、お気に入りを表示していた改善前Navigation" /></figure>
+              <figure class="navigation-before-shot"><img loading="lazy" src="assets/lalatulle/lalatulle-navigation-before.png" alt="新商品、ブログ、ランキング、検索、カート、お気に入りを表示していた改善前Navigation" /></figure>
               <p>異なる目的の6項目が同じ階層に並んでいました。</p>
             </article>
             <article class="navigation-state after-state">
               <div class="state-heading"><span>After</span><strong>3 primary actions</strong></div>
-              <figure class="navigation-after-shot"><img src="assets/lalatulle/lalatulle-navigation-after.png" alt="検索、お気に入り、カートを残した改善後Navigation" /></figure>
+              <figure class="navigation-after-shot"><img loading="lazy" src="assets/lalatulle/lalatulle-navigation-after.png" alt="検索、お気に入り、カートを残した改善後Navigation" /></figure>
               <div class="secondary-menu"><b>Secondary</b><span>Brand</span><span>Category</span><span>New</span><span>Sale</span><span>Ranking</span></div>
               <p>日常的な操作と商品カテゴリを上下の階層に分けました。</p>
             </article>
@@ -291,7 +289,7 @@
             <p>商品が直近24時間で一定回数以上閲覧された場合だけ、リアルタイム閲覧人数を表示しました。表示は10秒後に消し、常時購買を急かさない条件にしました。</p>
             <ul><li>A: 購入促進UIなし</li><li>B: 条件成立時のみ閲覧人数を表示</li><li>Firebaseで表示条件を検証</li></ul>
           </div>
-          <figure class="feature-media"><img src="assets/lalatulle/lalatulle-ab-ui.webp" alt="PDPのリアルタイム閲覧人数UIを検証したABテスト" /></figure>
+          <figure class="feature-media"><img loading="lazy" src="assets/lalatulle/lalatulle-ab-ui.webp" alt="PDPのリアルタイム閲覧人数UIを検証したABテスト" /></figure>
         </div>
       </section>
 
@@ -313,10 +311,11 @@
         <blockquote>一つの順位やCVだけで判断せず、検索流入、ページ内行動、購入Flowを分けて検証した。</blockquote>
         <p>Reflection / LaLaTulle</p>
       </section>
-    </main>
+    </div></details></div>
+<nav class="cc-next cc-shell" aria-label="Next project"><span>Next project</span><a href="snapside.html">Snapside <span aria-hidden="true">↗</span></a></nav></main>
 
-    <footer class="case-shell case-footer"><a href="index.html#projects">All projects</a><a href="wivlo.html">Wivlo</a></footer>
-    <script src="project-i18n.js?v=20260906-3"></script>
+
+    <script src="project-i18n.js?v=20261018-2"></script>
     <script src="case-reveal.js"></script>
     <script src="case-viewer.js"></script>
   </body>
