@@ -312,3 +312,23 @@ body .snapside-hero .project-hero-visual { display: grid; align-content: center;
   html { scroll-behavior: auto; }
   .scroll-reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* Commit-backed UX decisions: keep rationale separate from implementation. */
+body.project-snapside .evidence-case { padding: 30px 0 36px; border-top: 1px solid #dcdfe3; }
+.evidence-case > header { display: flex; align-items: baseline; gap: 18px; margin-bottom: 24px; }
+.evidence-case .decision-number { color: #767d89; font-size: 12px; font-variant-numeric: tabular-nums; }
+body.project-snapside .evidence-case h3 { margin: 0; font-size: clamp(20px, 2.6vw, 30px); line-height: 1.5; letter-spacing: -.04em; }
+.decision-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #dce0e5; border: 1px solid #dce0e5; border-radius: 8px; overflow: hidden; }
+.decision-comparison > div { background: #f5f6f8; padding: 22px; }
+.decision-comparison > div:last-child { background: #eef2f8; }
+.decision-comparison small { color: #697487; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
+body.project-snapside .decision-comparison p { margin: 12px 0 0; font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; }
+body.project-snapside .evidence-caption { margin: 9px 0 24px; font-size: 10px; color: #7b828d; }
+.decision-reasoning { margin: 0; }
+.decision-reasoning > div { display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 15px 0; border-bottom: 1px solid #eceef1; }
+.decision-reasoning dt { font-size: 11px; font-weight: 600; line-height: 1.9; color: #526079; }
+.decision-reasoning dd { margin: 0; font-size: 13px; line-height: 1.95; color: #59616e; }
+.commit-evidence { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 22px; font-size: 10px; color: #737b88; }
+.commit-evidence a { color: #314f86; text-decoration: underline; text-underline-offset: 4px; }
+body.project-snapside .decision-scope { padding: 20px 24px; border-left: 2px solid #7891b8; background: #f3f5f8; font-size: 12px; line-height: 1.9; color: #59616e; }
+@media (max-width: 620px) { .decision-comparison { grid-template-columns: 1fr; } .decision-comparison > div { padding: 18px; } .decision-reasoning > div { grid-template-columns: 1fr; gap: 6px; } .evidence-case > header { gap: 12px; } .commit-evidence { align-items: flex-start; flex-direction: column; } }
