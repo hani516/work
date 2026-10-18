@@ -1,6 +1,6 @@
 const translations = {
   ja: {
-    moneychatType: "家計簿アプリ", moneychatStatus: "制作予定",
+    moneymateBody: "会話から始まる家計簿アプリ。",
     navAbout: "プロフィール", navCompany: "会社プロジェクト", navProjects: "プロジェクト", navContact: "連絡",
     heroTitle: "使いやすさを、かたちに。",
     heroBody: "課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。",
@@ -30,7 +30,7 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
-    moneychatType: "Expense tracker", moneychatStatus: "Planned",
+    moneymateBody: "An expense tracker that starts with a conversation.",
     navAbout: "Profile", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
     heroTitle: "Thoughtful products. Simple experiences.",
     heroBody: "I am a Product Designer who connects problem discovery, information architecture, UI, implementation, and post-launch validation.",
@@ -60,7 +60,7 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
-    moneychatType: "가계부 앱", moneychatStatus: "제작 예정",
+    moneymateBody: "대화로 시작하는 가계부 앱.",
     navAbout: "소개", navCompany: "회사 프로젝트", navProjects: "프로젝트", navContact: "연락",
     heroTitle: "쓰기에 편한, 보기에 명쾌한 디자인.",
     heroBody: "문제 발견부터 정보 구조, UI, 구현, 출시 후 검증까지 연결해서 생각하는 Product Designer입니다.",

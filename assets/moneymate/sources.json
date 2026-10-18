@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-10-19",
+  "status": "Development; internal TestFlight testing documented in project implementation notes",
+  "screens": "Unmodified iOS preview screenshots; sample data, not real customer finances",
+  "assets": {
+    "chat.png": "clean-ui/01-chat",
+    "shared-space.png": "clean-ui/context-shared",
+    "statistics.png": "clean-ui/03-statistics",
+    "subscriptions.png": "subscription-final/subscription-services"
+  },
+  "copy_sources": [
+    "MoneyMate README",
+    "docs/PRODUCT.md",
+    "docs/IMPLEMENTATION_STATUS.md"
+  ]
+}
