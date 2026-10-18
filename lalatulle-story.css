@@ -8,3 +8,21 @@ body.project-lalatulle .lt-footer-grid { display:grid; grid-template-columns:rep
 body.project-lalatulle .lt-footer-grid article { border-top:2px solid #c3a3ae; padding-top:20px; }
 body.project-lalatulle .lt-footer-grid h4 { font-size:18px; font-weight:500; line-height:1.4; letter-spacing:-.025em; margin:0 0 12px; color:#714451; }
 @media(max-width:620px) { body.project-lalatulle .lt-footer-improvement { padding:22px; margin-top:30px; } body.project-lalatulle .lt-footer-grid { grid-template-columns:1fr; gap:22px; margin-top:22px; } body.project-lalatulle .lt-footer-grid article { padding-top:16px; } body.project-lalatulle .lt-footer-grid h4 { font-size:17px; margin-bottom:8px; } }
+
+body.project-lalatulle .lt-scroll-compare { margin:0; }
+body.project-lalatulle .lt-compare-toolbar { display:flex; flex-wrap:wrap; justify-content:space-between; gap:18px; align-items:center; margin-bottom:20px; }
+body.project-lalatulle .lt-compare-toolbar h3 { margin:0; }
+body.project-lalatulle .lt-compare-controls { display:flex; flex-wrap:wrap; gap:20px; align-items:center; }
+body.project-lalatulle .lt-compare-controls label { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--cc-muted); }
+body.project-lalatulle .lt-compare-controls input { width:16px; height:16px; accent-color:#714451; }
+body.project-lalatulle .lt-compare-controls select { font:inherit; color:var(--cc-ink); background:#fff; border:1px solid var(--cc-line); border-radius:6px; padding:7px; }
+body.project-lalatulle .lt-compare-panels { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+body.project-lalatulle .lt-compare-panel { min-width:0; border:1px solid #dfd6da; border-radius:12px; overflow:hidden; background:#f5f1f3; }
+body.project-lalatulle .lt-compare-panel>header { padding:17px 22px; border-bottom:1px solid #dfd6da; background:#faf8f9; }
+body.project-lalatulle .lt-compare-panel h4 { margin:0; font-size:14px; font-weight:500; color:#714451; }
+body.project-lalatulle .lt-compare-figure { position:relative; margin:0; }
+body.project-lalatulle .lt-compare-viewport { height:600px; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; scrollbar-width:auto; scrollbar-color:#ad8c9a #eee7eb; }
+body.project-lalatulle .lt-compare-viewport:focus-visible { outline:2px solid #714451; outline-offset:-3px; }
+body.project-lalatulle .lt-compare-viewport img { display:block; width:var(--compare-image-width,100%); max-width:none; height:auto; max-height:none; border-radius:0; }
+body.project-lalatulle .lt-scroll-compare p.lt-compare-caption { margin-top:16px; font-size:11px; line-height:1.8; color:var(--cc-muted); }
+@media(max-width:620px) { body.project-lalatulle .lt-compare-panels { grid-template-columns:1fr; gap:22px; } body.project-lalatulle .lt-compare-viewport { height:440px; } body.project-lalatulle .lt-compare-toolbar { gap:14px; } body.project-lalatulle .lt-compare-controls { gap:18px; } body.project-lalatulle .lt-compare-controls label { font-size:11px; } body.project-lalatulle .lt-compare-panel>header { padding:15px 18px; } }
