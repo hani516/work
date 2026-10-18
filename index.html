@@ -9,14 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="landing.css" />
-    <link rel="stylesheet" href="site-header.css" />
-    <link rel="stylesheet" href="portfolio-design.css" />
-    <link rel="stylesheet" href="portfolio-final.css?v=9" />
+    <link rel="stylesheet" href="home.css?v=3" />
   </head>
   <body>
     <header class="site-header" data-elevate>
-      <a class="brand" href="#top" aria-label="Go to top"><span class="brand-mark">Y</span><span>Yohan</span></a>
+      <a class="brand" href="#top" aria-label="Go to top"><span>YOHAN KIM</span></a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about" data-i18n="navAbout">プロフィール</a>
         <a href="#projects" data-i18n="navProjects">プロジェクト</a>
@@ -31,75 +28,36 @@
 
     <main id="top">
       <section class="profile-hero page-shell" id="about">
-        <figure class="profile-photo reveal"><img src="assets/profile/yohan-profile.webp" alt="Kim Yohan profile photo" /></figure>
-        <div class="profile-copy">
-          <p class="section-label reveal">Product Designer · Osaka, Japan</p>
-          <h1 class="reveal">Kim Yohan<span class="name-period">.</span></h1>
-          <h2 class="profile-statement reveal" data-i18n="heroTitle">ユーザーデータと行動観察から、プロダクトを作り、改善する。</h2>
-          <p class="profile-lead reveal" data-i18n="heroBody">課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。</p>
-          <div class="profile-actions reveal">
-            <a class="button primary magnetic" href="#projects" data-i18n="viewProjects">View Project</a>
-            <a class="button secondary magnetic" href="#contact" data-i18n="contactButton">Contact</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-band">
-        <div class="page-shell about-layout">
-          <div class="section-heading reveal"><p class="section-label" data-i18n="aboutLabel">Profile</p><h2 data-i18n="aboutTitle">デザインと実装、両方の視点で考えます。</h2></div>
-          <div class="profile-facts reveal">
-            <article><span data-i18n="experienceLabel">Experience</span><strong>Tika & Gross</strong><p data-i18n="experienceBody">2022.03〜 / 大阪<br />LaLaTulleのUIUX、ページ分析・改善、クリエイティブ制作</p></article>
-            <article><span data-i18n="educationLabel">Education</span><strong>Sangmyung University</strong><p data-i18n="educationBody">2020.02 卒業 / Seoul<br />Global Business・Geography 専攻</p></article>
-            <article><span data-i18n="focusLabel">Focus</span><strong>Product Design</strong><p data-i18n="focusBody">UX Strategy / UI Design<br />Prototype / Frontend / Analytics</p></article>
-            <article><span data-i18n="languageLabel">Languages</span><strong>JP / KR / EN</strong><p data-i18n="languageBody">日本語を中心に、韓国語と英語にも対応</p></article>
-          </div>
-          <div class="capability-heading reveal">
-            <p class="section-label" data-i18n="capabilityLabel">Capabilities</p>
-            <p data-i18n="capabilityIntro">課題の発見から検証と実装まで、プロダクトづくりに必要な工程を横断して担当します。</p>
-          </div>
-          <div class="capability-grid reveal" aria-label="Product design capabilities">
-            <article>
-              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#target"></use></svg></span><div><small>01</small><h3>Product / UX</h3></div></header>
-              <ul data-i18n="uxSkills"><li>課題定義</li><li>ユーザーリサーチ</li><li>インタビュー・行動観察</li><li>情報設計・User Flow</li><li>Interaction Design</li><li>Usability Test・A/B Test</li></ul>
-            </article>
-            <article>
-              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#pencil"></use></svg></span><div><small>02</small><h3>UI / Visual</h3></div></header>
-              <ul data-i18n="uiSkills"><li>UI Design</li><li>Design System</li><li>Prototyping</li><li>Responsive Design</li><li>Figma</li><li>Photoshop</li></ul>
-            </article>
-            <article>
-              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#chart"></use></svg></span><div><small>03</small><h3>Data / Analysis</h3></div></header>
-              <ul data-i18n="dataSkills"><li>GA4</li><li>Search Console</li><li>Clarity・Heatmap</li><li>Lighthouse</li><li>仮説検証</li><li>Data-informed Iteration</li></ul>
-            </article>
-            <article>
-              <header><span class="capability-icon"><svg aria-hidden="true"><use href="assets/ui-icons.svg#file-text"></use></svg></span><div><small>04</small><h3>Build</h3></div></header>
-              <ul data-i18n="buildSkills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Codex</li><li>AI-assisted Development</li><li>Prototype Implementation</li></ul>
-            </article>
-          </div>
+        <div class="hero-eyebrow"><span>Independent thinking. Thoughtful products.</span><span>Based in Osaka, JP <span class="status-dot" aria-hidden="true"></span></span></div>
+        <h1>Product<br /><span class="designer-line">Designer</span></h1>
+        <div class="hero-bottom">
+          <div class="designer-note"><img src="assets/profile/yohan-profile.webp" alt="Kim Yohan" /><div><span>Kim Yohan</span><p data-i18n="heroTitle">使いやすさを、かたちに。</p></div></div>
+          <a class="work-jump" href="#projects"><span data-i18n="selectedLabel">Selected work</span><span aria-hidden="true">↓</span></a>
         </div>
       </section>
 
       <section class="portfolio-section selected-projects" id="projects">
         <div class="page-shell">
-          <div class="section-heading reveal"><p class="section-label" data-i18n="selectedLabel">Selected Projects</p><h2 data-i18n="selectedTitle">5つのプロジェクト。</h2><p data-i18n="selectedIntro">個人プロダクト、協業プロダクト、会社で担当した改善プロジェクトを紹介します。</p></div>
+          <div class="section-heading reveal"><h2 data-i18n="selectedLabel">Selected work</h2><span class="work-count">01 — 05 / 2022–2026</span></div>
           <div class="project-panels reveal" aria-label="Selected project case studies">
             <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
-              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">Company UX Improvement</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ハロウィン特集ページのSEOと情報構造を改善し、PDPでは購入促進UIのABテストまで実施しました。</p></div>
+              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ECサイトのUX・SEO改善。</p></div>
               <div class="panel-visual" aria-hidden="true"><img src="assets/lalatulle/lalatulle-live-home.jpg" alt="" /></div>
             </article>
             <article class="project-panel panel-wivlo" data-project-href="wivlo.html">
-              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">自分の記録をReferenceとして呼び出し、AIと一緒に次の文書へ再利用するナレッジワークスペース。</p></div>
+              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Personal · Web / iOS</span><div class="panel-title"><img src="assets/wivlo/wivlo-icon.png" alt="" /><h3><a href="wivlo.html">Wivlo</a></h3></div><p data-i18n="wivloBody">記録を次のアイデアにつなぐ、AIワークスペース。</p></div>
               <div class="panel-visual panel-visual-wivlo" aria-hidden="true"><img src="assets/wivlo/wivlo-live-dashboard.jpg" alt="" /></div>
             </article>
             <article class="project-panel panel-snapside" data-project-href="snapside.html">
-              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-icon.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトが作られた過程を自動で記録し、変更の履歴を振り返れるProduct History Workspace。</p></div>
+              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-icon.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトの変化を記録するワークスペース。</p></div>
               <div class="panel-visual panel-visual-snapside" aria-hidden="true"><img src="assets/snapside/snapside-live-overview.jpg" alt="" /></div>
             </article>
             <article class="project-panel panel-trami" data-project-href="trami.html">
-              <div class="panel-copy"><span class="panel-number">04</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><img src="assets/trami/trami-icon.png" alt="" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">運動を始めるまでの入力を減らし、記録と振り返りを一つの流れにしたフィットネスアプリ。</p></div>
+              <div class="panel-copy"><span class="panel-number">04</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><img src="assets/trami/trami-icon.png" alt="" /><h3><a href="trami.html">Trami</a></h3></div><p data-i18n="tramiBody">記録と振り返りをつなぐフィットネスアプリ。</p></div>
               <div class="panel-visual panel-visual-mobile" aria-hidden="true"><img src="assets/trami/trami-hero-ui.webp" alt="" /></div>
             </article>
             <article class="project-panel panel-blinq" data-project-href="blinq.html">
-              <div class="panel-copy"><span class="panel-number">05</span><span class="panel-type">Collaborative · Mobile</span><div class="panel-title"><img src="assets/blinq/blinq-icon.png" alt="" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出を同じ日付で確認できるように設計した、デザイナーと開発者の協業モバイルプロダクト。</p></div>
+              <div class="panel-copy"><span class="panel-number">05</span><span class="panel-type">Collaborative · Mobile</span><div class="panel-title"><img src="assets/blinq/blinq-icon.png" alt="" /><h3><a href="blinq.html">Blinq</a></h3></div><p data-i18n="blinqBody">予定と支出をひとつのカレンダーに。</p></div>
               <div class="panel-visual panel-visual-mobile" aria-hidden="true"><img src="assets/blinq/blinq-hero-ui.webp" alt="" /></div>
             </article>
           </div>
@@ -107,16 +65,16 @@
       </section>
 
       <section class="contact-section page-shell" id="contact">
-        <div class="contact-copy reveal"><p class="section-label">Contact</p><h2 data-i18n="contactTitle">プロダクトとUXについて、話しましょう。</h2><p data-i18n="contactBody">採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。</p></div>
+        <div class="contact-copy reveal"><p class="section-label">Have something in mind?</p><h2 data-i18n="contactTitle">一緒に、つくりましょう。</h2></div>
         <div class="contact-links reveal">
-          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>プロフィールを見る</strong></a>
+          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong aria-hidden="true">↗</strong></a>
           <button class="contact-link email-copy magnetic" type="button" data-copy-email><span>Email</span><strong>kim93yohan@gmail.com</strong></button>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer page-shell"><span>© 2026 Kim Yohan</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
+    <footer class="site-footer page-shell"><span>© 2026 YOHAN KIM</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=8"></script>
   </body>
 </html>
