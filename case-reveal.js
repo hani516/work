@@ -27,7 +27,7 @@ function updateCaseNavigation() {
   const marker = window.scrollY + headerHeight + window.innerHeight * 0.22;
   let current = caseNavSections[0];
   caseNavSections.forEach((item) => {
-    if (item.section.offsetTop <= marker) current = item;
+    if (item.section.getBoundingClientRect().top + window.scrollY <= marker) current = item;
   });
   caseNavSections.forEach(({ link }) => {
     const active = link === current.link;
