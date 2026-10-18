@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-10-18",
+  "source": "https://app.snapside.io",
+  "method": "Direct browser viewport screenshots of the live product",
+  "theme": "dark",
+  "width": 1356,
+  "height": 971,
+  "screens": [
+    {
+      "view": "Overview",
+      "file": "snapside-overview-20261018.jpg"
+    },
+    {
+      "view": "Log",
+      "file": "snapside-log-20261018.jpg"
+    },
+    {
+      "view": "Workflow",
+      "file": "snapside-workflow-20261018.jpg"
+    },
+    {
+      "view": "Issue",
+      "file": "snapside-issue-20261018.jpg"
+    },
+    {
+      "view": "Note",
+      "file": "snapside-note-20261018.jpg"
+    }
+  ]
+}
