@@ -231,3 +231,25 @@ body.project-lalatulle .lt-primary-result .lt-relative-changes li:first-child st
   body.project-lalatulle .lt-relative-changes strong { font-size:30px; }
   body.project-lalatulle .lt-primary-result .lt-relative-changes li:first-child strong { font-size:46px; }
 }
+
+/* Supplied Halloween implementation, rendered as static evidence. */
+body.project-lalatulle #lt-halloween-footer { scroll-margin-top:30px; }
+body.project-lalatulle .lt-footer-improvement > h3 { font-size:36px; line-height:1.4; margin-bottom:20px; }
+body.project-lalatulle .lt-footer-improvement > p { max-width:860px; }
+body.project-lalatulle .lt-footer-previews { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:26px; align-items:start; margin-top:34px; }
+body.project-lalatulle .lt-footer-previews .lt-story-shot { padding:20px; background:#f7f5f6; }
+body.project-lalatulle .lt-footer-previews img { width:100%; height:auto; object-fit:contain; border-radius:0; }
+body.project-lalatulle .lt-footer-overview { grid-column:1; grid-row:1/3; }
+body.project-lalatulle .lt-footer-overview img { max-height:820px; }
+body.project-lalatulle .lt-footer-color { grid-column:2; grid-row:1; }
+body.project-lalatulle .lt-footer-color img { max-height:500px; }
+body.project-lalatulle .lt-footer-answer { grid-column:2; grid-row:2; }
+body.project-lalatulle .lt-footer-answer img { max-height:350px; }
+body.project-lalatulle .lt-footer-previews figcaption { display:block; font-size:13px; line-height:1.7; color:var(--cc-muted); padding-top:16px; }
+@media(max-width:620px) {
+  body.project-lalatulle .lt-footer-improvement > h3 { font-size:29px; }
+  body.project-lalatulle .lt-footer-previews { grid-template-columns:minmax(0,1fr); gap:22px; margin-top:26px; }
+  body.project-lalatulle .lt-footer-previews .lt-story-shot { padding:12px; grid-column:auto; grid-row:auto; }
+  body.project-lalatulle .lt-footer-previews img { max-height:none; }
+  body.project-lalatulle .lt-footer-previews figcaption { font-size:12px; }
+}
