@@ -1,5 +1,13 @@
 const translations = {
   ja: {
+    homeLead: "データで課題を見つけ、<br />使えるプロダクトへ。",
+    homeBody: "EC実務で培った分析の視点をもとに、UX・UIの設計から実装まで取り組みます。",
+    homeViewProjects: "3つの事例を見る",
+    homeWorkCount: "3つの事例 · 分析から設計・実装まで",
+    homeLalatulleBody: "行動データをもとに、ECのUX・SEOを改善。",
+    homeSnapsideBody: "プロダクトの変化を記録。設計・実装から初期運営まで。",
+    homeMoneymateBody: "会話から始まる家計簿を設計・実装。内部テスト中。",
+
     moneymateBody: "会話から始まる家計簿アプリ。",
     navAbout: "プロフィール", navCompany: "会社プロジェクト", navProjects: "プロジェクト", navContact: "連絡",
     heroTitle: "使いやすさを、かたちに。",
@@ -30,6 +38,14 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
+    homeLead: "Find problems in data.<br />Shape them into products.",
+    homeBody: "Drawing on hands-on e-commerce analytics, I work across UX, UI design, and implementation.",
+    homeViewProjects: "Explore 3 case studies",
+    homeWorkCount: "3 case studies · Analysis, design & build",
+    homeLalatulleBody: "Using behavioral data to improve e-commerce UX and SEO.",
+    homeSnapsideBody: "A workspace for product history. Designed, built, and in early operation.",
+    homeMoneymateBody: "A conversational expense tracker. Designed, built, and in internal testing.",
+
     moneymateBody: "An expense tracker that starts with a conversation.",
     navAbout: "Profile", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
     heroTitle: "Thoughtful products. Simple experiences.",
@@ -60,6 +76,14 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
+    homeLead: "데이터로 문제를 찾고,<br />제품으로 구체화합니다.",
+    homeBody: "이커머스 실무에서 쌓은 분석 경험을 바탕으로 UX·UI 설계부터 직접 구현까지 이어갑니다.",
+    homeViewProjects: "3개 사례 살펴보기",
+    homeWorkCount: "3개 사례 · 분석부터 설계·구현까지",
+    homeLalatulleBody: "행동 데이터를 바탕으로 이커머스 UX·SEO 개선.",
+    homeSnapsideBody: "프로덕트의 변화를 기록하는 공간. 설계·구현 후 초기 운영 중.",
+    homeMoneymateBody: "대화로 시작하는 가계부를 설계·구현. 내부 테스트 중.",
+
     moneymateBody: "대화로 시작하는 가계부 앱.",
     navAbout: "소개", navCompany: "회사 프로젝트", navProjects: "프로젝트", navContact: "연락",
     heroTitle: "쓰기에 편한, 보기에 명쾌한 디자인.",

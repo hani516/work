@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="home.css?v=10" />
+    <link rel="stylesheet" href="home.css?v=11" />
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -28,22 +28,30 @@
 
     <main id="top">
       <section class="profile-hero page-shell" id="about">
-        <div class="hero-intro"><h1>Design with<br /><em>clarity.</em></h1></div>
+        <div class="hero-intro">
+          <p class="hero-eyebrow">UI/UX · Product Design</p>
+          <h1 lang="en">Design with<br /><em>clarity.</em></h1>
+        </div>
+        <div class="hero-summary">
+          <p class="hero-lead" data-i18n="homeLead">データで課題を見つけ、<br />使えるプロダクトへ。</p>
+          <p class="hero-description" data-i18n="homeBody">EC実務で培った分析の視点をもとに、UX・UIの設計から実装まで取り組みます。</p>
+          <a class="hero-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
+        </div>
       </section>
 
       <section class="portfolio-section selected-projects" id="projects">
         <div class="page-shell">
-          <div class="section-heading reveal"><h2 data-i18n="selectedLabel">Selected work</h2></div>
+          <div class="section-heading reveal"><h2 data-i18n="selectedLabel" lang="en">Selected work</h2><span class="work-count" data-i18n="homeWorkCount">3つの事例 · 分析から設計・実装まで</span></div>
           <div class="project-panels reveal" aria-label="Selected project case studies">
             <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
-              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="lalatulleBody">ECサイトのUX・SEO改善。</p></div>
+              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="homeLalatulleBody">行動データをもとに、ECのUX・SEOを改善。</p></div>
               <div class="panel-visual cover-fashion" aria-hidden="true"><div class="cover-label"><strong>LaLaTulle</strong></div><div class="fashion-screens"><div class="fashion-screen screen-one"><img src="assets/lalatulle/lalatulle-live-home.jpg" alt="" /></div><div class="fashion-screen screen-two"><img src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="" /></div></div></div>
             </article>
             <article class="project-panel panel-snapside" data-project-href="snapside.html">
-              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="snapsideBody">プロダクトの変化を記録するワークスペース。</p></div>
+              <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="homeSnapsideBody">プロダクトの変化を記録。設計・実装から初期運営まで。</p></div>
               <div class="panel-visual cover-product" aria-hidden="true"><div class="cover-label"><strong><img src="assets/snapside/snapside-logo-white.png" alt="" />Snapside</strong></div><div class="product-screen"><div class="browser-bar"><i></i><i></i><i></i><span>Snapside — Overview</span></div><div class="product-screen-crop"><img src="assets/snapside/snapside-overview-20261018.jpg" alt="" /></div></div></div>
             </article>
-            <article class="project-panel panel-moneymate" data-project-href="moneymate.html"><div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><h3><a href="moneymate.html">MoneyMate</a></h3></div><p data-i18n="moneymateBody">会話から始まる家計簿アプリ。</p></div><div class="panel-visual cover-moneymate" aria-hidden="true"><div class="cover-label"><strong><img src="assets/moneymate/app-icon.png" alt="" />MoneyMate</strong></div><div class="mm-cover-phones"><img src="assets/moneymate/statistics.png" alt="" /><img src="assets/moneymate/chat.png" alt="" /></div></div></article>
+            <article class="project-panel panel-moneymate" data-project-href="moneymate.html"><div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">Personal · iOS</span><div class="panel-title"><h3><a href="moneymate.html">MoneyMate</a></h3></div><p data-i18n="homeMoneymateBody">会話から始まる家計簿を設計・実装。内部テスト中。</p></div><div class="panel-visual cover-moneymate" aria-hidden="true"><div class="cover-label"><strong><img src="assets/moneymate/app-icon.png" alt="" />MoneyMate</strong></div><div class="mm-cover-phones"><img src="assets/moneymate/statistics.png" alt="" /><img src="assets/moneymate/chat.png" alt="" /></div></div></article>
           </div>
         </div>
       </section>
@@ -59,6 +67,6 @@
 
     <footer class="site-footer page-shell"><span>© 2026 YOHAN KIM</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js?v=11"></script>
+    <script src="script.js?v=12"></script>
   </body>
 </html>
