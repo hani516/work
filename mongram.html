@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mongram — Dog-centered Care UX | Yohan Kim</title>
+<meta name="description" content="家族の愛犬ケアをきっかけに、散歩・写真・家族を犬ごとにつなぐMongramのUX設計事例。TestFlightで検証・公開準備中。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="site-header.css?v=2" />
+<link rel="stylesheet" href="mongram.css?v=1" />
+</head>
+<body class="project-mongram">
+<header class="case-header project-page-header">
+<a class="back-link" href="index.html#projects">Portfolio</a>
+<nav class="case-nav" aria-label="Mongram sections">
+<a href="#overview">Mongram</a>
+<a data-case-en="Design" data-case-ko="설계" href="#decisions">設計</a>
+<a data-case-en="Validation" data-case-ko="검증" href="#status">検証</a>
+</nav>
+<div class="project-language-switch" aria-label="Language selector">
+<button class="lang-button" type="button" data-lang="ja">JP</button>
+<button class="lang-button" type="button" data-lang="en">EN</button>
+<button class="lang-button" type="button" data-lang="ko">KR</button>
+</div>
+</header>
+<main>
+<section class="mg-hero mg-shell" id="overview">
+<div class="mg-hero-copy">
+<p class="eyebrow">Personal project · iOS · UX / UI</p>
+<h1 data-case-en="Mongram" data-case-ko="멍그램" >Mongram</h1>
+<h2 data-case-en="Everyday care,&lt;br /&gt;centered on your dog." data-case-ko="함께 돌보는 일상을,&lt;br /&gt;강아지 중심으로." >一緒に過ごす毎日を、<br />愛犬の視点で。</h2>
+<p data-case-en="A care experience connecting walks, photos and caregivers around each dog, shaped by caring for a dog with my family." data-case-ko="가족이 함께 반려견을 돌보는 경험에서 출발해, 강아지를 중심으로 산책·사진·보호자의 기록을 연결했습니다." class="hero-lead">家族で愛犬をケアする経験から、散歩・写真・家族の記録を犬ごとにつなぐ体験を設計しました。</p>
+<span data-case-en="TestFlight validation · Preparing for release" data-case-ko="TestFlight 검증 및 출시 준비 중" class="status-pill">TestFlightで検証・公開準備中</span>
+</div>
+<div class="mg-hero-visual">
+<span class="diagram-label">DESIGN CONCEPT</span>
+<div class="orbit">
+<span class="orbit-node node-walk">
+<b data-case-en="Walks" data-case-ko="산책" >散歩</b>
+</span>
+<span class="orbit-node node-photo">
+<b data-case-en="Photos" data-case-ko="사진" >写真</b>
+</span>
+<span class="orbit-node node-family">
+<b data-case-en="Family" data-case-ko="가족" >家族</b>
+</span>
+<div class="dog-center">
+<svg viewBox="0 0 100 100" aria-hidden="true">
+<path d="M28 34C8 12 5 49 17 64L31 54M72 34C92 12 95 49 83 64L69 54" fill="#bc8b65"/>
+<path d="M24 39Q23 20 50 22Q77 20 76 39L79 63Q78 88 50 88Q22 88 21 63Z" fill="#fff8ee"/>
+<ellipse cx="38" cy="54" rx="3" ry="4" fill="#443a31"/>
+<ellipse cx="62" cy="54" rx="3" ry="4" fill="#443a31"/>
+<path d="M44 67Q50 62 56 67L50 73Z" fill="#443a31"/>
+</svg>
+<strong data-case-en="One dog" data-case-ko="한 마리의 강아지" >一匹の愛犬</strong>
+</div>
+</div>
+<p data-case-en="Show whose care it is&lt;br /&gt;before organizing it by account." data-case-ko="사람의 계정보다 먼저,&lt;br /&gt;누구의 기록인지 보여줍니다." class="concept-caption">人のアカウントより先に、<br />誰の記録なのかを見せる。</p>
+</div>
+</section>
+<section class="mg-summary mg-shell">
+<div>
+<span class="eyebrow">MY CONTRIBUTION</span>
+<h2 data-case-en="From a personal problem&lt;br /&gt;to design and validation." data-case-ko="문제 발견부터,&lt;br /&gt;설계와 검증까지." >課題の発見から、<br />設計と検証まで。</h2>
+</div>
+<div>
+<p data-case-en="I own product planning, information architecture and UI design. I implement with GPT / Codex assistance and iterate on the experience through use on a device." data-case-ko="기획·정보 구조·UI 디자인을 직접 담당했습니다. GPT / Codex의 도움으로 구현하고, 기기에서 사용하며 발견한 문제를 수정하고 있습니다." >企画・情報設計・UIデザインを担当。GPT / Codexの支援で実装を進め、実機での使用感をもとに修正を重ねています。</p>
+<p data-case-en="This case draws on family care experience and feedback from use. It does not claim findings from a large user study or measured improvement rates." data-case-ko="가족의 돌봄 경험과 실사용 피드백을 바탕으로 한 사례입니다. 대규모 사용자 조사나 정량적 개선 효과를 주장하지 않습니다." class="scope-note">この事例は家族でのケア経験と使用時のフィードバックに基づきます。大規模なユーザー調査や定量的な改善効果を示すものではありません。</p>
+</div>
+</section>
+<section class="mg-section mg-shell" id="problem">
+<div class="section-title">
+<span class="section-index">01 · CONTEXT</span>
+<h2 data-case-en="Shared care,&lt;br /&gt;separate memories." data-case-ko="함께 돌봐도,&lt;br /&gt;기록은 사람마다 흩어집니다." >家族でケアしても、<br />記録は人ごとに分かれる。</h2>
+</div>
+<p data-case-en="Caring for a dog with my family made me want one place to check walks, photos and upcoming care for that dog. I made the dog’s day the starting point, before the person using the app." data-case-ko="가족과 반려견을 돌보며 산책 상황, 찍어 둔 사진, 다음 일정을 강아지 기준으로 함께 확인할 필요를 느꼈습니다. 누가 앱을 쓰는지보다 어느 강아지의 하루인지를 시작점으로 삼았습니다." class="section-intro">家族で愛犬をケアする中で、散歩の状況、撮った写真、次の予定を、犬を軸にまとめて確認する必要を感じました。誰が操作するかよりも、どの犬の一日なのかを起点にしました。</p>
+<div class="mg-cards">
+<article>
+<h3 data-case-en="Whose walk?" data-case-ko="누구의 산책인가요?" >誰の散歩？</h3>
+<p data-case-en="Make the dog being recorded clear, including in a multi-dog household." data-case-ko="여러 마리를 키워도 지금 기록하는 강아지가 누구인지 먼저 확인하도록." >多頭飼いでも、記録する対象を最初に確認できるように。</p>
+</article>
+<article>
+<h3 data-case-en="Where does it belong?" data-case-ko="어디에 남기나요?" >どこに残す？</h3>
+<p data-case-en="Connect walks, photos and schedules to the same dog." data-case-ko="산책·사진·일정을 같은 강아지의 맥락으로 연결하도록." >散歩、写真、予定を犬ごとに結びつける。</p>
+</article>
+<article>
+<h3 data-case-en="Who can join?" data-case-ko="누구와 공유하나요?" >誰と共有する？</h3>
+<p data-case-en="Use one dog as the unit of sharing." data-case-ko="가족 전체가 아닌 강아지 한 마리를 공유 단위로." >家族全体ではなく、犬一匹を共有の単位に。</p>
+</article>
+</div>
+</section>
+<section class="mg-section mg-shell" id="decisions">
+<div class="section-title">
+<span class="section-index">02 · HOME</span>
+<h2 data-case-en="Put the dog&lt;br /&gt;at the center of Home." data-case-ko="홈의 중심을,&lt;br /&gt;기능에서 강아지로." >ホームの主役を、<br />機能から愛犬へ。</h2>
+</div>
+<p data-case-en="Keep the dog and name centered on a Home screen that needs no scrolling. Swipe sideways between dogs, with a preview of the next dog’s face to make the gesture discoverable. Notifications and settings share a common header." data-case-ko="스크롤 없이 중앙에 강아지와 이름을 배치했습니다. 좌우 스와이프로 다견을 전환하고 다음 강아지 얼굴을 살짝 보여 조작을 알립니다. 알림과 설정은 공통 헤더에 모았습니다." class="section-intro">スクロールなしで中央に愛犬と名前を表示。左右のスワイプで犬を切り替え、次の犬の顔を少し見せて切り替えを伝えます。通知と設定は共通ヘッダーにまとめました。</p>
+<figure class="home-concept">
+<figcaption class="diagram-label">INFORMATION ARCHITECTURE · DESIGN CONCEPT</figcaption>
+<div class="concept-header">
+<span>Mongram</span>
+<span data-case-en="Alerts · Settings" data-case-ko="알림 · 설정" >通知 · 設定</span>
+</div>
+<div class="dog-switch">
+<span class="side-dog" aria-hidden="true">‹</span>
+<div class="selected-dog">
+<span class="dog-dot" aria-hidden="true">●</span>
+<strong data-case-en="Selected dog" data-case-ko="선택한 강아지" >今選んでいる愛犬</strong>
+<small data-case-en="Swipe to switch dogs" data-case-ko="좌우 스와이프로 전환" >左右スワイプで切り替え</small>
+</div>
+<span class="next-dog" aria-hidden="true">●</span>
+</div>
+<div class="concept-bottom">
+<span data-case-en="Today’s walk metrics → Walk history" data-case-ko="오늘의 산책 지표 → 산책 기록" >今日の散歩指標 → 散歩履歴</span>
+</div>
+</figure>
+<p data-case-en="Schematic, not an app screenshot. After a walk, remove the map and arrow from Home and link the metrics to walk history." data-case-ko="앱 캡처가 아닌 정보 구조 개념도입니다. 산책 후 홈의 지도와 화살표를 제거하고, 지표를 누르면 산책 기록으로 이동하도록 설계했습니다." class="figure-note">模式図：アプリ画面のキャプチャではありません。散歩後のホームから地図と矢印を外し、指標をタップすると散歩履歴へ移動する構造です。</p>
+</section>
+<section class="mg-section mg-shell">
+<div class="section-title">
+<span class="section-index">03 · WALK STATES</span>
+<h2 data-case-en="One flow.&lt;br /&gt;Before, during and after a walk." data-case-ko="산책 전·중·후를,&lt;br /&gt;하나의 흐름으로." >散歩の前・中・後を、<br />一つの流れに。</h2>
+</div>
+<p data-case-en="Keep the information hierarchy consistent across states, using background and content changes to signal progress. The aim is to make the next action clear without relearning each screen." data-case-ko="상태가 바뀌어도 정보의 위치 관계를 유지하고, 배경과 표시 내용으로 변화를 전달합니다. 매번 화면을 다시 읽지 않고 다음 행동으로 이어지도록 했습니다." class="section-intro">状態が変わっても情報の位置関係を保ち、背景と表示内容で変化を伝えます。毎回画面を読み直さず、次の行動に進めることを目指しました。</p>
+<div class="state-flow">
+<article>
+<span class="state-dot">
+</span>
+<h3 data-case-en="Before" data-case-ko="산책 전" >散歩前</h3>
+<p data-case-en="Confirm the dog and start a walk." data-case-ko="강아지를 확인하고 산책을 시작합니다." >愛犬を確認して、散歩を開始。</p>
+</article>
+<article>
+<span class="state-dot">
+</span>
+<h3 data-case-en="During" data-case-ko="산책 중" >散歩中</h3>
+<p data-case-en="Check distance, time and progress." data-case-ko="거리·시간·진행 상태를 확인합니다." >距離・時間・状態をその場で確認。</p>
+</article>
+<article>
+<span class="state-dot">
+</span>
+<h3 data-case-en="After" data-case-ko="산책 후" >散歩後</h3>
+<p data-case-en="Open history from metrics; keep photos with the same dog." data-case-ko="지표에서 기록으로, 사진도 같은 강아지에게." >指標から履歴へ。写真も同じ犬に。</p>
+</article>
+</div>
+</section>
+<section class="mg-section mg-shell">
+<div class="section-title">
+<span class="section-index">04 · EVERYDAY CARE</span>
+<h2 data-case-en="Open a day.&lt;br /&gt;Keep the layout steady." data-case-ko="날짜를 열어도,&lt;br /&gt;화면이 흔들리지 않도록." >日付を開いても、<br />レイアウトは動かさない。</h2>
+</div>
+<p data-case-en="Use a fixed-height date popup in the calendar. Separate ads below and reserve their space before loading to prevent content shifts. Provide quick entries for vet visits, medication and travel." data-case-ko="달력 날짜 팝업의 높이를 고정하고, 광고는 하단에 분리해 로드 전부터 공간을 확보했습니다. 광고가 뜬 뒤 내용이 밀리지 않도록 한 설계입니다. 일정은 동물병원·약·여행으로 간단히 진입합니다." class="section-intro">カレンダーの日付ポップアップは高さを固定。広告は下部に分け、読み込み前から領域を確保して内容が押し下がるのを防ぐ設計にしました。予定は動物病院・薬・旅行から簡単に入力できる入口を用意しました。</p>
+<div class="mg-cards two">
+<article>
+<h3 data-case-en="A stable place to look" data-case-ko="보는 위치를 안정적으로" >見る場所を安定させる</h3>
+<p data-case-en="Keep records and controls in a consistent place when changing dates." data-case-ko="날짜를 바꿔도 기록과 조작 위치를 유지합니다." >日付を変えても、記録と操作の位置を保つ。</p>
+</article>
+<article>
+<h3 data-case-en="Keep a local copy" data-case-ko="사진은 기기에도" >写真を手元にも残す</h3>
+<p data-case-en="Design for saving album photos individually or as a multi-selection to the device." data-case-ko="앨범 사진을 개별 또는 다중 선택해 기기에 저장하도록 설계했습니다." >アルバムの写真は一枚ずつ、または複数選択して端末へ保存する設計。</p>
+</article>
+</div>
+</section>
+<section class="mg-section mg-shell">
+<div class="section-title">
+<span class="section-index">05 · SHARING</span>
+<h2 data-case-en="Invite a caregiver.&lt;br /&gt;Share this dog." data-case-ko="가족을 초대해도,&lt;br /&gt;공유는 이 강아지 한 마리만." >家族を招待する。<br />共有するのは、この一匹。</h2>
+</div>
+<p data-case-en="A code alone does not grant access. A caregiver requests to join using a dog-specific code, then the owner approves. Other dogs stay outside that sharing scope, and the caregiver keeps dogs already registered in their own account." data-case-ko="코드를 아는 것만으로 접근할 수 없도록 했습니다. 강아지별 코드로 참가를 요청하고 주인이 승인하는 흐름입니다. 다른 강아지는 공유 범위에 포함하지 않고, 참가자가 기존에 등록한 강아지도 유지합니다." class="section-intro">参加コードを知っているだけではアクセスできません。犬ごとのコードから参加を申請し、飼い主が承認する流れにしました。別の犬は共有対象にせず、参加する人がすでに登録した犬も残します。</p>
+<ol class="approval-flow">
+<li>
+<span>01</span>
+<strong data-case-en="Dog-specific code" data-case-ko="강아지별 코드" >犬ごとのコード</strong>
+</li>
+<li>
+<span>02</span>
+<strong data-case-en="Join request" data-case-ko="참가 요청" >参加リクエスト</strong>
+</li>
+<li>
+<span>03</span>
+<strong data-case-en="Owner approval" data-case-ko="주인 승인" >飼い主が承認</strong>
+</li>
+<li>
+<span>04</span>
+<strong data-case-en="Access to this dog" data-case-ko="이 강아지만 공유" >この犬だけ共有</strong>
+</li>
+</ol>
+<p data-case-en="Sharing flow design. End-to-end validation across devices is still pending." data-case-ko="가족 공유의 설계 흐름입니다. 기기 간 전체 흐름 검증은 아직 남아 있습니다." class="figure-note">共有フローの設計。端末をまたいだ一連の動作検証は継続中です。</p>
+</section>
+<section class="mg-section mg-shell" id="status">
+<div class="section-title">
+<span class="section-index">06 · ITERATION</span>
+<h2 data-case-en="Use it.&lt;br /&gt;Notice friction. Iterate." data-case-ko="써 보며 발견한 불편을,&lt;br /&gt;다음 수정으로 연결합니다." >使って見つけた違和感を、<br />次の修正につなげる。</h2>
+</div>
+<p data-case-en="Feedback from use is guiding ongoing work on route readability, drawing routes behind profile markers, orange running segments and distance updates in Live Activity. The latest changes are not all distributed or validated yet." data-case-ko="실사용 피드백을 바탕으로 지도 경로 가독성, 프로필 마커 뒤로 경로 그리기, 주황색 달리기 구간, Live Activity 거리 갱신 등을 개선 중입니다. 최신 변경이 모두 배포·검증된 상태는 아닙니다." class="section-intro">実使用のフィードバックをもとに、地図上の経路の見やすさ、プロフィールマーカーの背後への経路描画、走った区間のオレンジ表示、Live Activityの距離更新などを改善中です。最新の変更がすべて配布・検証済みという状態ではありません。</p>
+<div class="status-grid">
+<article>
+<span data-case-en="CURRENT STAGE" data-case-ko="현재 단계" class="eyebrow">現在の段階</span>
+<h3 data-case-en="Validating in TestFlight" data-case-ko="TestFlight 검증 중" >TestFlightで検証中</h3>
+<p data-case-en="TestFlight 1.0 (41) has been distributed for testing. I am checking the design against device behavior as I prepare for release." data-case-ko="TestFlight 1.0 (41) 테스트 배포 이력이 있습니다. 출시를 준비하며 설계와 기기에서의 동작을 대조하고 있습니다." >1.0 (41)のテスト配布履歴があります。リリースに向けて、設計と実機での挙動を照合しています。</p>
+</article>
+<article>
+<span data-case-en="STILL TO VERIFY" data-case-ko="남은 검증" class="eyebrow">残る確認</span>
+<h3 data-case-en="Complete the core flows" data-case-ko="주요 흐름을 끝까지" >主要フローを最後まで</h3>
+<p data-case-en="Successful Google sign-in, the full family-sharing flow, and subscription creation and purchase remain unverified." data-case-ko="Google 실제 로그인 성공, 가족 공유 전체 흐름, 구독 생성·구매는 아직 확인하지 못했습니다." >Googleログインの実成功、家族共有の全工程、サブスクリプションの作成・購入は未確認です。</p>
+</article>
+</div>
+<div class="design-note">
+<h3 data-case-en="Separate design coverage from validation." data-case-ko="설계 산출물과 동작 검증을 구분합니다." >設計成果物と、動作確認を分ける。</h3>
+<p data-case-en="The Figma work includes 42 added screens and 32 components covering authentication, walks, records, family, settings and exception states. These are design deliverables, not proof of shipped functionality." data-case-ko="Figma에는 인증·산책·기록·가족·설정·예외 상태를 정리한 42개 화면과 32개 컴포넌트를 추가했습니다. 이는 설계 산출물이며 배포된 기능의 증거는 아닙니다." >Figmaには42画面・32コンポーネントを追加しました。認証から散歩、記録、家族、設定、例外状態までを整理した設計成果物であり、配布済み機能の証明ではありません。</p>
+<a href="https://www.figma.com/design/22BFbqteFdtfb2KgHKAxl8?node-id=63-175" target="_blank" rel="noreferrer">
+<span data-case-en="View the Figma design ↗" data-case-ko="Figma 설계 보기 ↗" >Figmaの設計を見る ↗</span>
+</a>
+</div>
+</section>
+<section class="mg-reflection mg-shell">
+<blockquote data-case-en="Before adding another feature,&lt;br /&gt;ask whose day we are caring for." data-case-ko="기능을 하나 더 늘리기 전에,&lt;br /&gt;어느 강아지의 어떤 하루인지." >一つの機能を増やす前に、<br />どの犬の、どんな一日なのか。</blockquote>
+<p data-case-en="Connecting walks, photos and family to one dog is the information model guiding continued implementation and validation." data-case-ko="산책·사진·가족을 한 마리의 강아지에 연결하는 정보 구조를 중심으로 구현과 검증을 이어 갑니다." >散歩、写真、家族を一匹の犬に結びつける。その情報構造を軸に、実装と検証を続けています。</p>
+</section>
+</main>
+<footer class="mg-footer mg-shell">
+<a href="index.html#projects">← <span data-case-en="All projects" data-case-ko="전체 프로젝트" >プロジェクト一覧</span>
+</a>
+<span>© 2026 YOHAN KIM</span>
+</footer>
+<script src="project-i18n.js?v=7">
+</script>
+</body>
+</html>
