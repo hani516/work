@@ -8,7 +8,7 @@ const translations = {
     homeSnapsideBody: "プロダクトの変化を記録。設計・実装から初期運営まで。",
     homeMoneymateBody: "会話から始まる家計簿を設計・実装。内部テスト中。",
     homeMongramName: "Mongram",
-    homeMongramBody: "家族のケアを、愛犬中心につなぐUX。TestFlightで検証中。",
+    homeMongramBody: "一緒に歩けなくても、愛犬の一日を家族と。タイムラプスと共有のUX設計。",
 
     moneymateBody: "会話から始まる家計簿アプリ。",
     navAbout: "プロフィール", navCompany: "会社プロジェクト", navProjects: "プロジェクト", navContact: "連絡",
@@ -48,7 +48,7 @@ const translations = {
     homeSnapsideBody: "A workspace for product history. Designed, built, and in early operation.",
     homeMoneymateBody: "A conversational expense tracker. Designed, built, and in internal testing.",
     homeMongramName: "Mongram",
-    homeMongramBody: "Dog-centered UX for shared family care. Validating in TestFlight.",
+    homeMongramBody: "Share a dog’s day, even apart. Designing walk timelapse and family sharing.",
 
     moneymateBody: "An expense tracker that starts with a conversation.",
     navAbout: "Profile", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
@@ -88,7 +88,7 @@ const translations = {
     homeSnapsideBody: "프로덕트의 변화를 기록하는 공간. 설계·구현 후 초기 운영 중.",
     homeMoneymateBody: "대화로 시작하는 가계부를 설계·구현. 내부 테스트 중.",
     homeMongramName: "멍그램",
-    homeMongramBody: "가족의 돌봄을 강아지 중심으로 연결한 UX. TestFlight 검증 중.",
+    homeMongramBody: "함께 걷지 못해도 강아지의 하루를 가족과. 타임랩스·공유 경험 설계.",
 
     moneymateBody: "대화로 시작하는 가계부 앱.",
     navAbout: "소개", navCompany: "회사 프로젝트", navProjects: "프로젝트", navContact: "연락",
