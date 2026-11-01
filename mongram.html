@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 <link rel="icon" href="data:," />
 <link rel="stylesheet" href="site-header.css?v=2" />
-<link rel="stylesheet" href="mongram.css?v=1" />
+<link rel="stylesheet" href="mongram.css?v=2" />
 </head>
 <body class="project-mongram">
 <header class="case-header project-page-header">
@@ -35,31 +35,10 @@
 <p data-case-en="A care experience connecting walks, photos and caregivers around each dog, shaped by caring for a dog with my family." data-case-ko="가족이 함께 반려견을 돌보는 경험에서 출발해, 강아지를 중심으로 산책·사진·보호자의 기록을 연결했습니다." class="hero-lead">家族で愛犬をケアする経験から、散歩・写真・家族の記録を犬ごとにつなぐ体験を設計しました。</p>
 <span data-case-en="TestFlight validation · Preparing for release" data-case-ko="TestFlight 검증 및 출시 준비 중" class="status-pill">TestFlightで検証・公開準備中</span>
 </div>
-<div class="mg-hero-visual">
-<span class="diagram-label">DESIGN CONCEPT</span>
-<div class="orbit">
-<span class="orbit-node node-walk">
-<b data-case-en="Walks" data-case-ko="산책" >散歩</b>
-</span>
-<span class="orbit-node node-photo">
-<b data-case-en="Photos" data-case-ko="사진" >写真</b>
-</span>
-<span class="orbit-node node-family">
-<b data-case-en="Family" data-case-ko="가족" >家族</b>
-</span>
-<div class="dog-center">
-<svg viewBox="0 0 100 100" aria-hidden="true">
-<path d="M28 34C8 12 5 49 17 64L31 54M72 34C92 12 95 49 83 64L69 54" fill="#bc8b65"/>
-<path d="M24 39Q23 20 50 22Q77 20 76 39L79 63Q78 88 50 88Q22 88 21 63Z" fill="#fff8ee"/>
-<ellipse cx="38" cy="54" rx="3" ry="4" fill="#443a31"/>
-<ellipse cx="62" cy="54" rx="3" ry="4" fill="#443a31"/>
-<path d="M44 67Q50 62 56 67L50 73Z" fill="#443a31"/>
-</svg>
-<strong data-case-en="One dog" data-case-ko="한 마리의 강아지" >一匹の愛犬</strong>
-</div>
-</div>
-<p data-case-en="Show whose care it is&lt;br /&gt;before organizing it by account." data-case-ko="사람의 계정보다 먼저,&lt;br /&gt;누구의 기록인지 보여줍니다." class="concept-caption">人のアカウントより先に、<br />誰の記録なのかを見せる。</p>
-</div>
+<figure class="mg-hero-visual">
+<img class="mg-real-screen" src="assets/mongram/home-local37-20261031.png" alt="Mongram actual Japanese Home screen after a walk, captured October 31, 2026, local37" width="1206" height="2622" fetchpriority="high" />
+<figcaption data-case-en="Actual app capture · October 31, 2026&lt;br /&gt;local37 · Home after a walk (Japanese UI)" data-case-ko="실제 앱 캡처 · 2026.10.31&lt;br /&gt;local37 · 산책 후 홈 (일본어 UI)" class="capture-caption">実際のアプリ画面 · 2026.10.31<br />local37 · 散歩後のホーム（日本語UI）</figcaption>
+</figure>
 </section>
 <section class="mg-summary mg-shell">
 <div>
@@ -97,27 +76,10 @@
 <span class="section-index">02 · HOME</span>
 <h2 data-case-en="Put the dog&lt;br /&gt;at the center of Home." data-case-ko="홈의 중심을,&lt;br /&gt;기능에서 강아지로." >ホームの主役を、<br />機能から愛犬へ。</h2>
 </div>
-<p data-case-en="Keep the dog and name centered on a Home screen that needs no scrolling. Swipe sideways between dogs, with a preview of the next dog’s face to make the gesture discoverable. Notifications and settings share a common header." data-case-ko="스크롤 없이 중앙에 강아지와 이름을 배치했습니다. 좌우 스와이프로 다견을 전환하고 다음 강아지 얼굴을 살짝 보여 조작을 알립니다. 알림과 설정은 공통 헤더에 모았습니다." class="section-intro">スクロールなしで中央に愛犬と名前を表示。左右のスワイプで犬を切り替え、次の犬の顔を少し見せて切り替えを伝えます。通知と設定は共通ヘッダーにまとめました。</p>
-<figure class="home-concept">
-<figcaption class="diagram-label">INFORMATION ARCHITECTURE · DESIGN CONCEPT</figcaption>
-<div class="concept-header">
-<span>Mongram</span>
-<span data-case-en="Alerts · Settings" data-case-ko="알림 · 설정" >通知 · 設定</span>
+<p data-case-en="The actual Home screen brings the dog, the book, notification and settings controls, and walk metrics into one view. This October 31 local37 capture still includes the route label and dog-switching arrows." data-case-ko="실제 홈은 중앙 강아지, 상단의 책·알림·설정, 하단 산책 지표를 한 화면에 모았습니다. 10월 31일 local37 캡처에는 경로 표시와 강아지 전환 화살표가 남아 있습니다." class="section-intro">実際のホーム画面では、中央の愛犬、上部の本・通知・設定、下部の散歩指標を一画面にまとめています。2026年10月31日のlocal37キャプチャには、ルート表示と犬の切り替え矢印も残っています。</p>
+<div class="home-design-notes">
+<span data-case-en="DESIGN AFTER THIS CAPTURE" data-case-ko="이 캡처 이후의 설계" class="eyebrow">キャプチャ以降の設計</span><p data-case-en="The next design adds the dog’s name, uses sideways swipes and a preview of the next dog’s face, removes the route label and arrows after a walk, and links walk metrics to history. These changes are not represented in the capture above." data-case-ko="이후 개선안은 중앙에 이름을 더하고, 좌우 스와이프와 다음 강아지 얼굴 미리보기로 전환을 알리는 방향입니다. 산책 후 경로 표시·화살표를 제거하고 지표에서 산책 기록으로 이동하도록 정리하고 있습니다. 위 캡처에는 반영되지 않은 설계입니다." >次の改善では、中央に犬の名前を加え、左右スワイプと次の犬の顔のプレビューで切り替えを伝える方針に。散歩後のルート表示と矢印を外し、散歩指標から履歴へ移動する構造に整理しています。これらは上のキャプチャには反映されていません。</p>
 </div>
-<div class="dog-switch">
-<span class="side-dog" aria-hidden="true">‹</span>
-<div class="selected-dog">
-<span class="dog-dot" aria-hidden="true">●</span>
-<strong data-case-en="Selected dog" data-case-ko="선택한 강아지" >今選んでいる愛犬</strong>
-<small data-case-en="Swipe to switch dogs" data-case-ko="좌우 스와이프로 전환" >左右スワイプで切り替え</small>
-</div>
-<span class="next-dog" aria-hidden="true">●</span>
-</div>
-<div class="concept-bottom">
-<span data-case-en="Today’s walk metrics → Walk history" data-case-ko="오늘의 산책 지표 → 산책 기록" >今日の散歩指標 → 散歩履歴</span>
-</div>
-</figure>
-<p data-case-en="Schematic, not an app screenshot. After a walk, remove the map and arrow from Home and link the metrics to walk history." data-case-ko="앱 캡처가 아닌 정보 구조 개념도입니다. 산책 후 홈의 지도와 화살표를 제거하고, 지표를 누르면 산책 기록으로 이동하도록 설계했습니다." class="figure-note">模式図：アプリ画面のキャプチャではありません。散歩後のホームから地図と矢印を外し、指標をタップすると散歩履歴へ移動する構造です。</p>
 </section>
 <section class="mg-section mg-shell">
 <div class="section-title">
