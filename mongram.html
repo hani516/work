@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 <link rel="icon" href="data:," />
 <link rel="stylesheet" href="site-header.css?v=2" />
-<link rel="stylesheet" href="mongram.css?v=2" />
+<link rel="stylesheet" href="mongram.css?v=3" />
 </head>
 <body class="project-mongram">
 <header class="case-header project-page-header">
@@ -35,10 +35,12 @@
 <p data-case-en="So family can share a dog’s day, even when they cannot join the walk. I designed a way to follow the moments of a walk afterward." data-case-ko="함께 산책하지 못해도, 우리 강아지의 하루를 가족과 나눌 수 있도록. 산책의 순간을 나중에 따라가 볼 수 있는 경험을 설계했습니다." class="hero-lead">一緒に散歩できなくても、愛犬の一日を家族と分かち合えるように。あとから散歩をたどれる体験を設計しました。</p>
 <span class="status-pill">Personal project · TestFlight</span>
 </div>
-<figure class="mg-hero-visual">
-<img class="mg-real-screen" src="assets/mongram/home-local37-20261031.png" alt="Mongram actual Japanese Home screen after a walk, captured October 31, 2026, local37" width="1206" height="2622" fetchpriority="high" />
-<figcaption data-case-en="Actual app capture · October 31, 2026&lt;br /&gt;local37 · Home after a walk (Japanese UI)" data-case-ko="실제 앱 캡처 · 2026.10.31&lt;br /&gt;local37 · 산책 후 홈 (일본어 UI)" class="capture-caption">実際のアプリ画面 · 2026.10.31<br />local37 · 散歩後のホーム（日本語UI）</figcaption>
+<figure class="shot-slot shot-phone mg-hero-visual" data-screenshot-slot="hero-home">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Home" data-case-ko="홈" >ホーム</figcaption>
 </figure>
+
 </section>
 <section class="mg-summary mg-shell">
 <div><span class="eyebrow">MY CONTRIBUTION</span>
@@ -71,6 +73,18 @@
 </div>
 <p data-case-en="I made the walk timelapse central to sharing with family. The design connects the route, running segments, toileting events, photos and their capture locations along a timeline, so another caregiver can follow the walk afterward." data-case-ko="타임랩스를 가족과 나누는 경험의 중심에 두었습니다. 경로, 달린 구간, 배변, 사진과 촬영 위치를 시간 흐름에 연결해 다른 보호자가 나중에 산책을 따라가 볼 수 있도록 설계하고 있습니다." class="section-intro">散歩のタイムラプスを、家族と共有する体験の中心に置きました。経路、走った区間、排泄の記録、写真と撮影位置を時間の流れにつなげ、別の家族があとから散歩をたどれるように設計しています。</p>
 <p data-case-en="Alongside how far and how long the dog walked, I want to convey where they ran and which moments became photos. The structure is designed around sharing those moments with family who stayed behind." data-case-ko="몇 미터를 걸었고 몇 분이 걸렸는지에 더해, 어디서 달렸고 어떤 장면을 사진으로 남겼는지 전하고 싶었습니다. 산책에 가지 않은 가족도 그날의 순간을 살펴볼 수 있는 구성을 생각했습니다." class="section-intro">何メートル歩いたか、何分かかったかに加えて、どこで走り、どんな場面を写真に残したのか。散歩に行かなかった家族にも、その日の瞬間が伝わる構成を考えました。</p>
+<div class="shot-grid">
+<figure class="shot-slot shot-phone " data-screenshot-slot="walk-timelapse">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Walk timelapse" data-case-ko="산책 타임랩스" >散歩タイムラプス</figcaption>
+</figure>
+<figure class="shot-slot shot-phone " data-screenshot-slot="family-sharing">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Family sharing" data-case-ko="가족 공유" >家族との共有</figcaption>
+</figure>
+</div>
 </section>
 <section class="mg-section mg-shell" id="home-design">
 <div class="section-title">
@@ -79,8 +93,20 @@
 </div>
 <p data-case-en="The early Home wireframe included a map, schedules and dates for heartworm medication. As I developed the design, I chose to reduce the information on Home so sharing a walk with family would remain its focus." data-case-ko="초기 홈 와이어프레임에는 지도, 일정, 사상충 약 날짜 같은 정보를 배치했습니다. 설계를 진행하며 산책을 가족과 나누는 앱의 핵심에 집중하기 위해 홈에 놓는 정보를 줄이기로 판단했습니다." class="section-intro">初期のワイヤーフレームには、地図、予定、フィラリア予防薬の日付などを置いていました。設計を進める中で、散歩を家族と分かち合うアプリの中心が見えるよう、ホームに置く情報を減らす判断をしました。</p>
 <div class="home-design-notes">
-<span data-case-en="THE CAPTURE AND LATER DECISIONS" data-case-ko="실제 화면과 이후의 결정" class="eyebrow">実際の画面と、その後の判断</span>
-<p data-case-en="The actual capture above is local37 from October 31, 2026, and still shows a route label and dog-switching arrows. Later design decisions remove those after a walk, center the dog and name, introduce sideways swipes with a preview of the next dog’s face, and connect walk metrics to history." data-case-ko="위의 실제 화면은 2026년 10월 31일 local37 캡처로, 경로 표시와 강아지 전환 화살표가 남아 있습니다. 이후 설계에서는 산책 후 해당 표시를 덜어내고, 중앙의 강아지와 이름, 좌우 스와이프와 다음 강아지 얼굴 미리보기, 산책 지표에서 기록으로 이어지는 흐름으로 정리하고 있습니다." >上の実際の画面は2026年10月31日のlocal37で、ルート表示と犬の切り替え矢印が残っています。その後の設計では散歩後の表示からそれらを外し、中央の愛犬と名前、左右スワイプと次の犬の顔のプレビュー、散歩指標から履歴への移動へと整理しています。</p>
+<span data-case-en="HOME DESIGN DECISIONS" data-case-ko="홈 정리의 방향" class="eyebrow">ホームを整理する判断</span>
+<p data-case-en="The design removes the route label and dog-switching arrows after a walk, centers the dog and name, introduces sideways swipes with a preview of the next dog’s face, and connects walk metrics to history." data-case-ko="산책 후 경로 표시와 강아지 전환 화살표를 덜어내고, 중앙의 강아지와 이름, 좌우 스와이프와 다음 강아지 얼굴 미리보기, 산책 지표에서 기록으로 이어지는 흐름으로 정리하고 있습니다." >散歩後のルート表示と犬の切り替え矢印を外し、中央の愛犬と名前、左右スワイプと次の犬の顔のプレビュー、散歩指標から履歴への移動へと整理しています。</p>
+</div>
+<div class="shot-grid">
+<figure class="shot-slot shot-phone " data-screenshot-slot="home-before">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Home before" data-case-ko="정리 전 홈" >整理前のホーム</figcaption>
+</figure>
+<figure class="shot-slot shot-phone " data-screenshot-slot="home-after">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Home after" data-case-ko="정리 후 홈" >整理後のホーム</figcaption>
+</figure>
 </div>
 </section>
 <section class="mg-section mg-shell" id="character">
@@ -89,7 +115,18 @@
 <h2 data-case-en="A friendly character&lt;br /&gt;for a dog’s everyday life." data-case-ko="반려견 앱답게,&lt;br /&gt;귀엽고 친근한 모습으로." >愛犬のいるアプリらしく、<br />かわいく、親しみやすく。</h2>
 </div>
 <p data-case-en="I am developing dog characters that vary by breed and state. The visual direction is cute and approachable, suited to an app about a dog’s everyday life." data-case-ko="견종과 상태에 따라 모습이 달라지는 강아지 캐릭터를 다룹니다. 반려견의 일상을 담는 앱에 맞게 귀엽고 친근한 시각 방향을 잡았습니다." class="section-intro">犬種や状態によって姿が変わるキャラクターを考えています。目指したのは、愛犬の毎日を扱うアプリに合う、かわいく親しみやすい見た目です。</p>
-<p data-case-en="The real Home capture on this page shows a resting toy poodle. That is the character appearance presented here." data-case-ko="이 페이지의 실제 홈 캡처에서는 누워 있는 토이푸들을 볼 수 있습니다. 캐릭터의 모습은 이 실제 화면에 담긴 상태로 보여 줍니다." class="section-intro">掲載している実際のホームでは、横になったトイプードルを確認できます。このページで見せるキャラクターは、そのキャプチャに写っている姿です。</p>
+<div class="shot-grid">
+<figure class="shot-slot shot-phone " data-screenshot-slot="character-selection">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Character selection" data-case-ko="캐릭터 선택" >キャラクター選択</figcaption>
+</figure>
+<figure class="shot-slot shot-phone " data-screenshot-slot="character-resting">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Resting character" data-case-ko="휴식 상태" >休憩中のキャラクター</figcaption>
+</figure>
+</div>
 </section>
 <section class="mg-section mg-shell" id="island">
 <div class="section-title">
@@ -98,6 +135,18 @@
 </div>
 <p data-case-en="I am designing Dynamic Island and Live Activity to show time and distance without reopening the app. Including the dog’s face visually connects this glanceable view with the character on Home." data-case-ko="Dynamic Island와 Live Activity는 앱을 다시 열지 않고 시간·거리 상태를 확인하도록 설계하고 있습니다. 강아지 얼굴을 함께 보여 홈의 캐릭터와 산책 중 표시가 시각적으로 이어지게 했습니다." class="section-intro">Dynamic IslandとLive Activityでは、アプリを開き直さずに時間や距離を確認できるように設計しています。犬の顔を添えることで、ホームのキャラクターと散歩中の表示に視覚的なつながりを持たせています。</p>
 <p data-case-en="In my own use, being able to glance at the walk’s status was a part I particularly liked." data-case-ko="직접 사용하며 산책 상태가 바로 눈에 들어오는 점이 특히 마음에 들었던 부분입니다." class="section-intro">自分で使う中でも、散歩中の状態がすぐ目に入る点が特に気に入った部分です。</p>
+<div class="shot-grid">
+<figure class="shot-slot shot-island " data-screenshot-slot="dynamic-island">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Dynamic Island" data-case-ko="Dynamic Island" >Dynamic Island</figcaption>
+</figure>
+<figure class="shot-slot shot-activity " data-screenshot-slot="live-activity">
+<div class="shot-placeholder"><span data-case-en="Screenshot pending" data-case-ko="스크린샷 준비 중" >スクリーンショット準備中</span>
+</div>
+<figcaption data-case-en="Live Activity" data-case-ko="Live Activity" >Live Activity</figcaption>
+</figure>
+</div>
 </section>
 <section class="mg-section mg-shell" id="status">
 <div class="section-title">

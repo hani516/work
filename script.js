@@ -1,5 +1,7 @@
 const translations = {
   ja: {
+    mongramScreenshotPending: "スクリーンショット準備中",
+    mongramScreenshotHome: "ホーム",
     homeLead: "データで課題を見つけ、<br />使えるプロダクトへ。",
     homeBody: "EC実務で培った分析の視点をもとに、UX・UIの設計から実装まで取り組みます。",
     homeViewProjects: "4つの事例を見る",
@@ -40,6 +42,8 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
+    mongramScreenshotPending: "Screenshot pending",
+    mongramScreenshotHome: "Home",
     homeLead: "Find problems in data.<br />Shape them into products.",
     homeBody: "Drawing on hands-on e-commerce analytics, I work across UX, UI design, and implementation.",
     homeViewProjects: "Explore 4 case studies",
@@ -80,6 +84,8 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
+    mongramScreenshotPending: "스크린샷 준비 중",
+    mongramScreenshotHome: "홈",
     homeLead: "데이터로 문제를 찾고,<br />제품으로 구체화합니다.",
     homeBody: "이커머스 실무에서 쌓은 분석 경험을 바탕으로 UX·UI 설계부터 직접 구현까지 이어갑니다.",
     homeViewProjects: "4개 사례 살펴보기",
