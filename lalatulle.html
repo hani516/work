@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="case-layout.css" />
     <link rel="stylesheet" href="portfolio-final.css" />
     <link rel="stylesheet" href="case-compact.css?v=1" />
-    <link rel="stylesheet" href="lalatulle-story.css?v=7" />
+    <link rel="stylesheet" href="lalatulle-story.css?v=8" />
   </head>
   <body class="project-lalatulle compact-case">
     <header class="case-header project-page-header">
@@ -32,306 +32,77 @@
 <div class="cc-hero-bottom"><p class="cc-premise" data-case-en="E-commerce behavior analysis, information structure, UI implementation, and A/B testing." data-case-ko="이커머스 행동 분석부터 구조 개선·UI 구현·A/B 테스트까지.">ECの行動分析から、構造改善・UI実装・A/Bテストまで。</p></div>
 <div class="cc-links"><a href="https://www.lalatulle.jp" target="_blank" rel="noreferrer">Live site ↗</a></div>
 <figure class="cc-media product-shot"><img src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="LaLaTulle product overview" fetchpriority="high" /></figure></section>
-<section class="lt-story cc-shell" id="cc-decisions">
-<article class="lt-chapter" id="lt-halloween">
-<header class="lt-story-intro"><span class="lt-story-number">01</span><div><h2 data-case-en="A ranking dip.&lt;br /&gt;Not an automatic rollback." data-case-ko="순위가 내려가도,&lt;br /&gt;바로 되돌리지 않기.">順位だけで、<br />元に戻さない。</h2><p data-case-en="Halloween Page · Redesigning search discovery and product browsing." data-case-ko="Halloween Page · 검색 유입과 상품 탐색 구조 개선.">Halloween Page · 検索と商品探索を再設計。</p></div></header>
-<div class="lt-rank-decision" id="lt-rank-decision">
-<div class="lt-story-row"><div><h3 data-case-en="Around #15. Observe for one more week." data-case-ko="약 15위로 하락. 그래도 1주일 더 관찰.">約15位へ低下。それでも、1週間観察。</h3><p data-case-en="Per-user behavior in GA4 had not worsened. I proposed continuing observation rather than reverting the structure." data-case-ko="GA4의 사용자당 행동은 악화되지 않았습니다. 이전 구조로 되돌리지 않고 관찰을 이어가자고 제안했습니다.">GA4のユーザー当たり行動は悪化せず。旧構造へ戻さず、観察を続ける判断を提案しました。</p></div><div class="lt-rank-steps"><div><strong>7–9</strong><span data-case-en="Before" data-case-ko="개선 전">改修前</span></div><span aria-hidden="true">→</span><div><strong>15</strong><span data-case-en="Initial dip" data-case-ko="개선 직후">改修直後</span></div><span aria-hidden="true">→</span><div><strong>2</strong><span data-case-en="Sep 28–Oct 1" data-case-ko="9/28–10/1">9/28–10/1</span></div><span aria-hidden="true">→</span><div><strong>7–9</strong><span data-case-en="Early October" data-case-ko="10월 초">10月初旬</span></div></div></div><p class="lt-story-note" data-case-en="Tracked keyword observations in 2025. Average #2 covers Sep 28–Oct 1; it is neither the current ranking nor proof of a causal effect from the structural change." data-case-ko="2025년 주요 키워드 관측입니다. 평균 2위는 9/28–10/1의 기록이며 현재 순위나 구조 변경의 인과적 효과를 뜻하지 않습니다.">2025年の主要キーワードの観測。平均2位は9/28–10/1の記録で、現在の順位や構造変更の因果的な効果を示すものではありません。</p>
-<figure class="lt-behavior-evidence lt-story-shot product-shot"><img src="assets/lalatulle/lalatulle-ga4-behavior.png" alt="GA4 source: views per active user 1.51 to 1.71; events per active user 6.82 to 7.42; September 14–16 versus August 1–31, 2025" loading="lazy" /><figcaption data-case-en="GA4 · Sep 14–16 vs Aug 1–31, 2025" data-case-ko="GA4 · 2025/9/14–9/16과 2025/8/1–8/31">GA4 · 2025/9/14–9/16 と 2025/8/1–8/31</figcaption></figure><p class="lt-story-note" data-case-en="The date ranges differ in length. Total users and events were excluded; per-user metrics and rates were used only as directional evidence." data-case-ko="기간 길이가 달라 총 사용자·총 이벤트는 평가에서 제외했습니다. 사용자당 지표와 비율은 방향성 확인에만 사용했습니다.">期間の長さが異なるため、総Users・総Eventsは評価から除外。ユーザー当たり指標とRateを、方向性の確認に限定して使いました。</p></div>
-<div class="lt-story-metrics"><div><span>Lighthouse SEO</span><strong>92<span>/100</span></strong><p data-case-ko="HTML·제목 구조 정비 후 확인한 SEO 점수." data-case-en="SEO score recorded after HTML and heading improvements.">HTML・見出し構造を整備した後のSEOスコア。</p></div><div><span data-case-ko="Search Console 검색 순위" data-case-en="Search Console position">Search Console 検索順位</span><strong>2</strong><p data-case-ko="2025.9.28–10.1 주요 키워드 평균 순위." data-case-en="Average position for the tracked keyword, Sep 28–Oct 1, 2025.">2025/9/28–10/1の主要キーワード平均。</p></div></div>
-<div class="lt-evolution"><article><h3 data-case-ko="개선 전" data-case-en="Before">改修前</h3><p data-case-ko="카테고리별 상품이 세로로 이어져 하단까지 이동이 길었습니다." data-case-en="Product categories ran down a long page.">カテゴリ別の商品が縦に続き、下部までの移動が長かった。</p></article><span aria-hidden="true">→</span><article><h3 data-case-ko="1차 개선" data-case-en="First iteration">1次改善</h3><p data-case-ko="제목·상품 탐색·비주얼을 재설계하고 SEO를 정비했습니다." data-case-en="Reworked headings, product paths, visual direction and SEO.">見出し・商品導線・ビジュアルを見直し、SEOを整備。</p></article><span aria-hidden="true">→</span><article><h3 data-case-ko="시즌 종료 후 재개선" data-case-en="Post-season iteration">シーズン終了後の再改善</h3><p data-case-ko="카테고리 전환으로 화면을 압축해 스크롤을 대폭 줄였습니다." data-case-en="Consolidated browsing with category switching to substantially reduce scrolling.">カテゴリ切替で表示をまとめ、スクロール量を大幅に削減。</p></article></div>
-<section class="lt-scroll-compare" id="lt-screen-comparison" aria-label="Halloween page before and after" data-scroll-compare><div class="lt-compare-toolbar"><h3 data-case-en="From a long list to a browsable structure." data-case-ko="긴 목록을, 탐색할 수 있는 구조로.">長い一覧を、探せる構造へ。</h3><div class="lt-compare-controls"><label><input type="checkbox" data-compare-sync checked /><span  data-case-ko="스크롤 동기화" data-case-en="Sync scrolling">スクロールを同期</span></label><label><span  data-case-ko="배율" data-case-en="Zoom">倍率</span><select data-compare-zoom aria-label="Screenshot zoom"><option value="1">100%</option><option value="1.25">125%</option><option value="1.5">150%</option></select></label></div></div><div class="lt-compare-panels"><div class="lt-compare-panel"><header><h4  data-case-ko="개선 전" data-case-en="Before">改善前</h4></header><figure class="lt-compare-figure product-shot"><div class="lt-compare-viewport" tabindex="0" role="region" aria-label="Before screenshot, scroll to explore" data-compare-viewport><img src="assets/lalatulle/lalatulle-halloween-before-full.webp" alt="Halloween page Before — extracted from the original portfolio PDF" loading="lazy" /></div></figure></div><div class="lt-compare-panel"><header><h4  data-case-ko="1차 개선 후" data-case-en="After first iteration">1次改善後</h4></header><figure class="lt-compare-figure product-shot"><div class="lt-compare-viewport" tabindex="0" role="region" aria-label="After first iteration screenshot, scroll to explore" data-compare-viewport><img src="assets/lalatulle/lalatulle-halloween-after-full.webp" alt="Halloween page After first iteration — extracted from the original portfolio PDF" loading="lazy" /></div></figure></div></div><p class="lt-compare-caption" data-case-ko="각 화면 안에서 스크롤해 비교할 수 있습니다. 기존 포트폴리오 PDF에 실린 화면을 고해상도로 추출했습니다." data-case-en="Scroll inside each screen to compare. Screens were extracted at high resolution from the original portfolio PDF.">各画面の中をスクロールして比較できます。既存ポートフォリオPDFの掲載画面を高解像度で抽出しています。</p></section>
-<div class="lt-footer-improvement" id="lt-halloween-footer"><h3 data-case-en="At the end of the page,&lt;br /&gt;another way to choose." data-case-ko="페이지 끝에서도,&lt;br /&gt;다시 선택할 수 있도록.">ページの最後も、<br />選び直せる場所に。</h3><p data-case-en="I added recommendations, category, size, price and color links, and Q&amp;A. I designed the UI and implemented it with GPT assistance." data-case-ko="추천 상품 동선, 카테고리·사이즈·가격·색상별 링크와 Q&amp;A를 새로 추가했습니다. 직접 디자인하고 GPT를 활용해 구현했습니다.">おすすめ商品への導線、カテゴリ・サイズ・価格・色別のリンク、Q&Aを新設。デザインと、GPTを活用した実装を担当しました。</p><div class="lt-footer-previews"><figure class="lt-story-shot product-shot lt-footer-overview"><img src="assets/lalatulle/footer/halloween-footer-overview.webp" alt="Provided 2025 footer HTML reproduced locally: four closed Quick Search sections and seven Q&A questions" width="780" height="1550" loading="lazy" /><figcaption data-case-en="Closed overview · Quick Search and Q&amp;A" data-case-ko="닫힌 상태 · 간편 검색과 Q&amp;A">閉じた状態 · 簡単検索とQ&A</figcaption></figure><figure class="lt-story-shot product-shot lt-footer-color"><img src="assets/lalatulle/footer/halloween-footer-color.webp" alt="Provided 2025 footer HTML reproduced locally: color section expanded with ten color links" width="780" height="1236" loading="lazy" /><figcaption data-case-en="Color links expanded" data-case-ko="색상별 링크 펼침">カラー別のリンクを展開</figcaption></figure><figure class="lt-story-shot product-shot lt-footer-answer"><img src="assets/lalatulle/footer/halloween-footer-qa.webp" alt="Provided 2025 footer HTML reproduced locally: first Q&A answer expanded" width="780" height="682" loading="lazy" /><figcaption data-case-en="Open a question to read the answer" data-case-ko="질문을 열어 답변 확인">質問を開いて、回答を読む</figcaption></figure></div><p class="lt-story-note" data-case-en="Screens shown: Quick Search and Q&amp;A reproduced locally from the supplied 2025 HTML." data-case-ko="제공된 2025년판 HTML의 간편 검색·Q&amp;A를 로컬에서 재현한 화면입니다.">掲載画面：提供された2025年版HTMLの「簡単検索・Q&A」をローカルで再現。</p></div>
-<div class="lt-current-layout"><div><h3 data-case-ko="계속 내리는 구조에서, 선택해 바꾸는 구조로." data-case-en="From scrolling through categories to switching between them.">スクロールし続ける構造から、選んで切り替える構造へ。</h3><p data-case-ko="할로윈 종료 후에도 개선을 이어갔습니다. 현재 페이지는 테마별 탭으로 상품을 전환해 세로로 나열되는 양을 줄였습니다." data-case-en="After Halloween, I continued refining the page. The current design switches product themes in tabs instead of stacking every theme vertically.">Halloween終了後も改善を継続。現在のページではテーマ別タブで商品を切り替え、縦に並べる量を抑えました。</p><a class="lt-live-link" href="https://www.lalatulle.jp/c/costume/halloween" target="_blank" rel="noreferrer"><span data-case-ko="현재 페이지 보기 ↗" data-case-en="View current page ↗">現在のページを見る ↗</span></a></div><figure class="lt-story-shot product-shot"><img src="assets/lalatulle/lalatulle-halloween-current-tabs.png" alt="Current Halloween page: category tabs with Cat selected" loading="lazy" /><figcaption><span data-case-ko="현재 공개 화면 · 카테고리 전환" data-case-en="Current live UI · category switching">現在の公開画面 · カテゴリ切替</span></figcaption></figure></div>
-<p class="lt-story-note" data-case-ko="스크롤 감소는 구조 변경으로 기록했으며, 측정하지 않은 감소율은 표기하지 않았습니다." data-case-en="Scroll reduction is documented as a structural change; no unmeasured reduction percentage is shown.">スクロール削減は構造変更として記録。削減率は未計測のため掲載していません。</p>
+<section class="lt-story cc-shell lt-concise">
+<article class="lt-chapter" id="lt-halloween"><header class="lt-story-intro"><span class="lt-story-number">01</span><div><h2 data-case-en="Observe the ranking dip&lt;br /&gt;before reverting." data-case-ko="순위 하락을 관찰한 뒤,&lt;br /&gt;되돌릴지 판단했습니다." >順位だけで、<br />元に戻さない。</h2>
+</div></header>
+<dl class="lt-three-lines">
+<div><dt data-case-en="Problem" data-case-ko="문제" >問題</dt>
+<dd data-case-en="Stacked categories made the page long to browse." data-case-ko="상품이 세로로 이어져 하단까지 이동이 길었습니다." >商品が縦に続き、下部までの移動が長い。</dd>
+</div>
+<div><dt data-case-en="Decision" data-case-ko="판단·변경" >判断・変更</dt>
+<dd data-case-en="Reorganized headings and category paths; reduced the product grid." data-case-ko="제목·카테고리 동선을 정리하고 상품 그리드를 줄였습니다." >見出し・カテゴリ導線を整理し、商品グリッドを縮小。</dd>
+</div>
+<div><dt data-case-en="Observed" data-case-ko="확인" >確認</dt>
+<dd data-case-en="GA4 per-user activity moved upward across the observed periods." data-case-ko="GA4 사용자당 행동은 비교 기간에 상승했습니다." >GA4のユーザー当たり行動は、比較期間で上向き。</dd>
+</div>
+</dl>
+<section class="lt-scroll-compare" id="lt-screen-comparison" aria-label="Halloween page before and after" data-scroll-compare><div class="lt-compare-toolbar"><h3 data-case-en="From a long list to a browsable structure." data-case-ko="긴 목록을, 탐색할 수 있는 구조로.">長い一覧を、探せる構造へ。</h3><div class="lt-compare-controls"><label><input type="checkbox" data-compare-sync checked /><span  data-case-ko="스크롤 동기화" data-case-en="Sync scrolling">スクロールを同期</span></label><label><span  data-case-ko="배율" data-case-en="Zoom">倍率</span><select data-compare-zoom aria-label="Screenshot zoom"><option value="1">100%</option><option value="1.25">125%</option><option value="1.5">150%</option></select></label></div></div><div class="lt-compare-panels"><div class="lt-compare-panel"><header><h4  data-case-ko="개선 전" data-case-en="Before">改善前</h4></header><figure class="lt-compare-figure product-shot"><div class="lt-compare-viewport" tabindex="0" role="region" aria-label="Before screenshot, scroll to explore" data-compare-viewport><img src="assets/lalatulle/lalatulle-halloween-before-full.webp" alt="Halloween page Before — extracted from the original portfolio PDF" loading="lazy" /></div></figure></div><div class="lt-compare-panel"><header><h4  data-case-ko="1차 개선 후" data-case-en="After first iteration">1次改善後</h4></header><figure class="lt-compare-figure product-shot"><div class="lt-compare-viewport" tabindex="0" role="region" aria-label="After first iteration screenshot, scroll to explore" data-compare-viewport><img src="assets/lalatulle/lalatulle-halloween-after-full.webp" alt="Halloween page After first iteration — extracted from the original portfolio PDF" loading="lazy" /></div></figure></div></div><p class="lt-compare-caption" data-case-ko="각 화면 안에서 스크롤해 비교할 수 있습니다. 기존 포트폴리오 PDF에 실린 화면을 고해상도로 추출했습니다." data-case-en="Scroll inside each screen to compare. Screens were extracted at high resolution from the original portfolio PDF.">各画面の中をスクロールして比較できます。既存ポートフォリオPDFの掲載画面を高解像度で抽出しています。</p></section><div class="lt-safe-table"><table><caption><span data-case-en="GA4 · Relative change in per-user activity" data-case-ko="GA4 · 사용자당 행동의 상대 변화" >GA4 · ユーザー当たり行動の相対変化</span>
+</caption><thead><tr><th data-case-en="Metric" data-case-ko="지표" scope="col">指標</th>
+<th data-case-en="Relative change" data-case-ko="변화율" scope="col">変化率</th>
+</tr></thead><tbody><tr><th data-case-en="Views / active user" data-case-ko="조회수 / 활성 사용자" scope="row">表示回数 / Active user</th>
+<td>+13.34%</td></tr><tr><th data-case-en="Events / active user" data-case-ko="이벤트 수 / 활성 사용자" scope="row">イベント数 / Active user</th>
+<td>+8.71%</td></tr></tbody></table></div>
+<p data-case-en="Sep 14–16 vs Aug 1–31, 2025. Denominator: active users; source-reported relative changes, not percentage points or purchase conversion. Unequal periods and traffic mix limit this to directional evidence, without causal attribution." data-case-ko="2025/9/14–16과 8/1–31 비교. 분모는 활성 사용자이며 원자료의 상대 변화율입니다(pp·구매전환율 아님). 기간 길이·유입 구성이 달라 방향성만 확인하며 변경의 인과효과는 단정하지 않습니다." class="lt-story-note">2025/9/14–16 と 8/1–31。分母はActive users、値は原資料の相対変化率（pp・購入転換率ではありません）。期間長・流入構成が異なるため方向性のみで、改修の因果効果は断定しません。</p>
+<figure class="lt-focus-shot product-shot"><div class="lt-category-crop"><img src="assets/lalatulle/lalatulle-halloween-current-tabs.png" alt="Actual later Halloween UI, enlarged category-switching controls" loading="lazy" /></div><figcaption data-case-en="Later iteration · Actual category-switching controls" data-case-ko="후속 개선 · 실제 카테고리 전환 영역 확대" >後続の改修 · テーマをタブで切り替える実際の画面</figcaption>
+</figure>
+<details class="lt-measurement-notes"><summary><span data-case-en="Ranking and iteration context" data-case-ko="순위와 개선 단계 근거" >順位と改修段階の補足</span>
+</summary><div><p data-case-en="The tracked keyword moved from 7–9 to about 15 just after the 2025 change, averaged 2 on Sep 28–Oct 1, then returned to 7–9 in early October. I continued observation rather than reversing on the short-term dip. This is historical observation with seasonal and other factors, not the current rank." data-case-ko="2025년 주요 키워드는 7~9위→개선 직후 약15위→9/28–10/1 평균2위→10월 초7~9위로 관측됐습니다. 단기 하락만으로 되돌리지 않고 관찰을 이어 갔습니다. 현재 순위가 아니며 계절성과 다른 요인이 포함된 관측입니다." >2025年の主要キーワードは7〜9位→改修直後約15位→9/28–10/1平均2位→10月初旬7〜9位。短期順位だけで戻さず観察を継続しました。現在順位ではなく、季節性や他要因を含む観測です。</p>
+<p data-case-en="The paired screenshots show the first iteration; the tab screenshot is a separate post-season iteration. No scroll reduction percentage was measured." data-case-ko="전후 이미지는1차 개선, 탭 이미지는시즌 이후의 별도 단계입니다. 같은 변경으로 묶어 비교하지 않으며 스크롤 감소율은 측정하지 않았습니다." >前後画像は初回改修。タブ画像はシーズン後の別段階で、同じ変更として比較していません。スクロール削減率は未計測です。</p>
+</div></details>
 </article>
-<article class="lt-chapter lt-discovery" id="lt-navigation">
-<header class="lt-story-intro"><span class="lt-story-number">02</span><div><h2 data-case-en="Popular dresses,&lt;br /&gt;closer at hand." data-case-ko="자주 찾는 드레스,&lt;br /&gt;더 가까운 곳에.">よく探すドレスを、<br />もっと近くに。</h2><p data-case-en="Home · Reposition Quick Search and reorganize the header." data-case-ko="Home · 간편 검색 위치와 헤더 구성 개선.">Home · 簡単検索の配置とヘッダーを再構成。</p></div></header>
-<div class="lt-discovery-reason"><div><span class="lt-evidence-kicker" data-case-en="Observation" data-case-ko="관찰">観察</span><h3 data-case-en="Chosen even near the bottom." data-case-ko="하단에서도, 선택되고 있었다.">下部でも、選ばれていた。</h3><p data-case-en="Clarity showed strong interest in mini dress among dress types." data-case-ko="Clarity에서 드레스 유형 중 미니드레스로 향하는 탭이 두드러졌습니다.">Clarityでは、ドレスタイプの中でもミニドレスへのタップが目立っていました。</p></div><div><span class="lt-evidence-kicker" data-case-en="Decision" data-case-ko="판단">判断</span><h3 data-case-en="Shorten the path to the category." data-case-ko="카테고리까지의 이동을 짧게.">探すまでの移動を、短く。</h3><p data-case-en="I moved Quick Search higher to make the mini-dress route easier to find. Reducing abandonment was the design hypothesis; a bounce-rate reduction has not been verified." data-case-ko="간편 검색을 상단으로 옮겨 미니드레스 진입점을 찾기 쉽게 했습니다. 탐색 중 이탈을 줄이려는 설계 가설이며, 이탈률 감소는 검증하지 않았습니다.">簡単検索を上部へ移し、ミニドレスへの入口を見つけやすくしました。探索中の離脱を抑える狙いで、離脱率の低下は未検証です。</p></div></div>
-<figure class="lt-placement-figure"><div class="lt-placement-flow"><div><span data-case-en="Previously · Lower on the page" data-case-ko="기존 · 페이지 하단">従来 · ページ下部</span><strong data-case-en="Quick Search" data-case-ko="간편 검색">簡単検索</strong></div><span class="lt-placement-arrow" aria-hidden="true">→</span><div><span data-case-en="Change · Higher on the page" data-case-ko="변경 · 더 위쪽으로">変更 · より上部へ</span><strong data-case-en="Quick Search" data-case-ko="간편 검색">簡単検索</strong></div></div><figcaption data-case-en="Placement concept based on the project owner’s account. Exact position and distance moved were not measured." data-case-ko="담당자 설명에 따른 배치 개념도입니다. 정확한 위치와 이동량은 측정하지 않았습니다.">配置の概念図 · 担当者の説明に基づく。正確な位置・移動量は未計測。</figcaption></figure>
-<div class="lt-header-support"><span class="lt-evidence-kicker" data-case-en="Alongside it, simplify the header." data-case-ko="함께 정리한 헤더.">あわせて、ヘッダーも整理。</span><h3 data-case-en="Six icons become three core actions." data-case-ko="6개의 아이콘을 3개의 핵심 액션으로.">6つのアイコンを、3つの主要操作へ。</h3><p data-case-en="Keep search, favorites, and cart in the top row; move product navigation to a separate row." data-case-ko="검색·찜·장바구니를 상단에 남기고, 상품 탐색 메뉴를 별도 행으로 재구성했습니다.">検索・お気に入り・カートを上段に残し、商品探索メニューを別の行へ。</p>
-<div class="lt-navigation-shots"><div><h4 data-case-en="Before" data-case-ko="변경 전">変更前</h4><figure class="lt-story-shot product-shot"><img src="assets/lalatulle/lalatulle-navigation-before.png" alt="Existing portfolio UI source: six header icons above the BRAND and CATEGORY row" loading="lazy" width="810" height="168" /></figure></div><div><h4 data-case-en="After" data-case-ko="변경 후">変更後</h4><figure class="lt-story-shot product-shot"><img src="assets/lalatulle/lalatulle-navigation-after.png" alt="Existing portfolio UI source: search, favorites and cart above a separate product-navigation row" loading="lazy" width="996" height="160" /></figure></div></div><p class="lt-story-note" data-case-en="Existing portfolio UI sources, not heatmap captures." data-case-ko="기존 포트폴리오의 UI 자료이며 히트맵 캡처가 아닙니다.">既存ポートフォリオのUI資料。ヒートマップのキャプチャではありません。</p></div>
-<div class="lt-discovery-results" id="lt-discovery-results"><header><h3 data-case-en="More reach. More taps per page view." data-case-ko="목적지 도달과 탭 빈도에서 관찰한 변화.">目的地への到達と、タップ頻度に変化。</h3><p class="lt-result-period">2026.02.03–09 → 02.10–16</p></header><div class="lt-result-pair"><section class="lt-primary-result"><h4 data-case-en="GA4 · Home to destination" data-case-ko="GA4 · 홈에서 목적지로">GA4 · ホームから目的地へ</h4><p class="lt-metric-definition" data-case-en="Configured funnel reach rate · Relative change" data-case-ko="설정된 퍼널 도달률 · 상대 변화">設定済みファネルの到達率 · 相対変化</p><ul class="lt-relative-changes" data-metric="ga4"><li><span data-case-en="Mini dress" data-case-ko="미니드레스">ミニドレス</span><strong>+50.8%</strong></li><li><span data-case-en="Search" data-case-ko="검색">検索</span><strong>+18.8%</strong></li><li><span data-case-en="Cart" data-case-ko="장바구니">カート</span><strong>+21.4%</strong></li></ul><p class="lt-story-note" data-case-en="Reach to each destination is measured against active users at the home step. This does not describe an increase in user counts or a one-click transition rate." data-case-ko="home 단계 Active users를 분모로 각 목적지 도달률을 비교했습니다. 인원 증가나 한 번 클릭한 이동률이 아닙니다.">home段階のActive usersを分母に、各目的地への到達率を比較。人数の増加や1クリックでの移動率ではありません。</p></section><section><h4 data-case-en="Clarity · Mobile home" data-case-ko="Clarity · 모바일 홈">Clarity · モバイルホーム</h4><p class="lt-metric-definition" data-case-en="Tap frequency per 100 page views · Relative change" data-case-ko="100PV당 탭 빈도 · 상대 변화">100PV当たりのタップ頻度 · 相対変化</p><ul class="lt-relative-changes" data-metric="clarity"><li><span data-case-en="Mini dress" data-case-ko="미니드레스">ミニドレス</span><strong>+56.9%</strong></li><li><span data-case-en="Search" data-case-ko="검색">検索</span><strong>+82.9%</strong></li><li><span data-case-en="Cart" data-case-ko="장바구니">カート</span><strong>+69.6%</strong></li></ul><p class="lt-story-note" data-case-en="Related link, icon, and text taps are combined. This is not CTR or a unique-user rate." data-case-ko="대응 링크·아이콘·텍스트 탭을 합산했습니다. CTR이나 고유 이용자율이 아닙니다.">対応するリンク・アイコン・テキストのタップを合算。CTRやユニーク利用者率ではありません。</p></section></div><p class="lt-story-note" data-case-en="These are observations across two periods. Concurrent changes and traffic differences prevent attributing the changes to one intervention." data-case-ko="두 기간의 전후 관찰입니다. 동시 변경과 유입 구성 차이가 있어 단일 변경의 인과효과는 확정하지 않았습니다.">前後2期間の観測です。同時変更と流入構成の差があり、単一変更の因果効果は確定していません。</p></div>
-<details class="lt-measurement-notes"><summary><span data-case-en="Measurement definitions and scope" data-case-ko="측정 정의와 범위">測定の定義と範囲</span></summary><div><p data-case-en="Comparison: Feb 3–9 vs Feb 10–16, 2026. Values are relative percentage changes, not percentage-point differences. The actual deployment date and timezone are unconfirmed." data-case-ko="2026/2/3–2/9와 2/10–2/16의 비교입니다. 표시값은 상대 변화율이며 퍼센트포인트 차이가 아닙니다. 실제 배포일과 시간대는 미확인입니다.">2026/2/3–2/9と2/10–2/16の比較。表示値は相対変化率で、パーセントポイント差ではありません。実際の変更日とタイムゾーンは未確認です。</p><p data-case-en="Clarity normalizes related mobile-home taps by page views. GA4 uses independent Session start → home → destination funnels; device filters, detailed paths, and direct/indirect follow-up settings are not available in the supplied evidence." data-case-ko="Clarity는 모바일 홈의 대응 탭을 PV로 정규화했습니다. GA4는 Session start → home → 각 목적지의 독립 퍼널이며, 기기·상세 경로 조건과 직접·간접 후속 설정은 자료에서 확인할 수 없습니다.">Clarityはモバイルホームの対応タップをPVで正規化。GA4はSession start → home → 各目的地の独立したファネルで、端末条件・詳細なパス条件・直接／間接の後続設定は資料から確認できません。</p><p data-case-en="The tools do not link the same users. These results do not measure search success, add-to-cart or purchase conversion, revenue, or reduced bounce." data-case-ko="두 도구에서 같은 사용자를 연결한 분석이 아닙니다. 검색 성공률·상품 담기율·구매전환율·매출·이탈률 개선을 나타내지 않습니다.">両ツールで同一利用者をつないだ分析ではありません。検索成功率、カートへの商品追加率、購入転換率、売上や離脱率の改善を示すものではありません。</p></div></details>
+<article class="lt-chapter" id="lt-navigation"><header class="lt-story-intro"><span class="lt-story-number">02</span><div><h2 data-case-en="Popular dresses,&lt;br /&gt;closer at hand." data-case-ko="자주 찾는 드레스,&lt;br /&gt;더 가까운 곳에." >よく探すドレスを、<br />もっと近くに。</h2>
+</div></header>
+<dl class="lt-three-lines">
+<div><dt data-case-en="Problem" data-case-ko="문제" >問題</dt>
+<dd data-case-en="Clarity showed mini-dress taps even in the lower Quick Search." data-case-ko="하단 간편 검색에서도 미니드레스 탭이 두드러졌습니다." >下部の簡単検索でも、ミニドレスへのタップが目立つ。</dd>
+</div>
+<div><dt data-case-en="Decision" data-case-ko="판단·변경" >判断・変更</dt>
+<dd data-case-en="Moved Quick Search higher; kept search, favorites and cart in the header." data-case-ko="간편 검색을 위로 옮기고 헤더는 검색·찜·장바구니로 정리했습니다." >簡単検索を上へ、ヘッダーは検索・お気に入り・カートに整理。</dd>
+</div>
+<div><dt data-case-en="Observed" data-case-ko="확인" >確認</dt>
+<dd data-case-en="Six header icons became three; reduced abandonment is unverified." data-case-ko="헤더 주요 아이콘을6개에서3개로 정리했습니다. 이탈률 개선은 미확인입니다." >ヘッダーの主要アイコンを6つから3つへ。離脱率の改善は未確認。</dd>
+</div>
+</dl>
+<div class="lt-header-pair"><figure class="lt-focus-shot product-shot"><div class="lt-header-crop"><img src="assets/lalatulle/lalatulle-navigation-before.png" alt="Actual before header controls, CSS crop of original screenshot" loading="lazy" /></div><figcaption data-case-en="Before · enlarged controls" data-case-ko="개선 전 · 조작 영역 확대" >改修前 · 操作部分を拡大</figcaption>
+</figure><figure class="lt-focus-shot product-shot"><div class="lt-header-crop"><img src="assets/lalatulle/lalatulle-navigation-after.png" alt="Actual after header controls, CSS crop of original screenshot" loading="lazy" /></div><figcaption data-case-en="After · enlarged controls" data-case-ko="개선 후 · 조작 영역 확대" >改修後 · 操作部分を拡大</figcaption>
+</figure></div><details class="lt-measurement-notes"><summary><span data-case-en="Placement and measurement scope" data-case-ko="배치와 측정 범위" >配置と測定の範囲</span>
+</summary><div><p data-case-en="Quick Search placement is based on the owner’s account; exact movement was not measured. Existing reach-rate and tap-frequency figures are omitted from this concise case pending rechecking their source aggregations." data-case-ko="간편 검색 상단 이동은 담당자 기록에 따른 것이며 정확한 이동량은 미측정입니다. 기존 도달률·탭 빈도 수치는 원집계표 재확인 전까지 이 축약 사례에서 제외했습니다." >簡単検索の上部移動は担当者の記録に基づき、正確な移動距離は未計測です。既存の到達率・タップ頻度の数値は原集計表の再確認まで、この短い事例から外しています。</p>
+</div></details>
 </article>
-<article class="lt-chapter" id="lt-abtest">
-<header class="lt-story-intro"><span class="lt-story-number">03</span><div><h2 data-case-en="Look beyond the cart.&lt;br /&gt;End the test." data-case-ko="장바구니 다음까지 보고,&lt;br /&gt;테스트를 종료.">カートの先まで見て、<br />テストを終了。</h2><p data-case-en="PDP · Test viewer-count UI and evaluate the full purchase funnel." data-case-ko="PDP · 조회 인원 UI를 실험하고 구매 흐름 전체로 판단.">PDP · 閲覧人数UIを試し、購入フロー全体で判断。</p></div></header>
-<div class="lt-ab-layout"><div><div class="lt-variants"><article><strong>A</strong><p data-case-ko="조회 인원 표시 없음" data-case-en="No viewer-count UI">閲覧人数の表示なし</p></article><article><strong>B</strong><p data-case-ko="조건 충족 시 조회 인원 표시" data-case-en="Viewer count shown when conditions are met">条件成立時のみ閲覧人数を表示</p></article></div><p data-case-ko="최근 24시간 조회가 일정 기준 이상인 상품에 인원을 표시하고 10초 후 숨겼습니다. Firebase로 표시 조건을 구현하고 Google Analytics로 A/B의 행동 차이를 비교했습니다." data-case-en="Displayed the count for products above a recent 24-hour view threshold, then hid it after ten seconds. Firebase handled display conditions; Google Analytics measured behavior across A/B variants.">直近24時間の閲覧が一定回数以上の商品に表示し、10秒後に非表示。Firebaseで表示条件を実装し、Google AnalyticsでA/Bの行動差を比較しました。</p></div><figure class="lt-story-shot product-shot"><img src="assets/lalatulle/lalatulle-ab-ui.webp" alt="Product page viewer-count UI used in the add-to-cart A/B test" loading="lazy" /></figure></div>
-<div class="lt-ab-funnel"><article><h3 data-case-ko="장바구니 추가율" data-case-en="Add-to-cart rate">カート追加率</h3><strong>+0.9<span>pp</span></strong></article><article><h3 data-case-ko="구매 시작률" data-case-en="Checkout-start rate">購入開始率</h3><strong>−2<span>pp</span></strong></article><article><h3 data-case-ko="구매율" data-case-en="Purchase rate">購入率</h3><strong>+0.17<span>pp</span></strong></article></div>
-<div class="lt-test-decision"><h3 data-case-en="The whole purchase funnel comes first." data-case-ko="국소적인 상승보다, 구매 흐름 전체.">局所的な上昇より、購入フロー全体。</h3><p data-case-ko="추가율과 구매율은 올랐지만 구매 시작률은 낮아졌습니다. 구매 흐름 전체와 운영 비용을 비교해 테스트를 종료했습니다." data-case-en="Add-to-cart and purchase rates rose while checkout starts fell. I reviewed the full purchase funnel and operating cost, then ended the test.">追加率と購入率は上がった一方、購入開始率は低下。購入フロー全体と運用コストを比較し、テスト終了を判断しました。</p></div>
-<p class="lt-story-note" data-case-en="Values are observed rate differences in Google Analytics (percentage points). The UI source is dated Aug 10–20, 2025; the metric aggregation dates, sample sizes, and statistical significance are not published." data-case-ko="값은 Google Analytics에서 관측한 비율 차이(pp)입니다. UI 자료의 표기 기간은 2025/8/10–8/20이며, 차이의 집계 기간·표본 수·통계적 유의성은 미공개입니다.">値はGoogle Analyticsで観測した率の差（pp）。UI資料の記載期間は2025/8/10–8/20。差分の集計期間・標本数・統計的有意性は未掲載です。</p>
-</article></section>
-<div class="cc-shell cc-notes-shell"><details class="cc-notes"><summary><span data-case-en="Read research &amp; decision evidence" data-case-ko="리서치와 판단 근거 더 보기" >リサーチ・判断の根拠を読む</span><span class="cc-expand" aria-hidden="true">+</span></summary><div class="cc-archive">
-
-      <section class="case-shell project-scope-nav case-index is-two" aria-label="LaLaTulle project scope">
-        <a href="#halloween"><span>01</span><strong>Halloween Page</strong><small>SEO / Structure / Visual</small></a>
-        <a href="#landing"><span>02</span><strong>Landing Page / PDP</strong><small>Navigation / Discovery / Experiment</small></a>
-      </section>
-
-      <section class="case-section chapter-start halloween-context" id="halloween">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">01 / Halloween Page · Why</p>
-            <div class="section-copy">
-              <h2>検索順位、古い構造、長いスクロールを同時に見直す。</h2>
-              <p>数年間、大きな構造変更がなく、主要キーワードの順位は7〜9位で停滞していました。ページは長い一方で下部までの到達率が低く、コスプレカテゴリの売上にも大きな増減がありませんでした。</p>
-            </div>
-          </div>
-          <div class="lalatulle-signal-grid">
-            <article><span>Search</span><strong>7〜9位</strong><p>主要キーワードの検索順位が停滞。</p></article>
-            <article><span>Business</span><strong>売上横ばい</strong><p>数年間、コスプレカテゴリの売上に大きな変化がない。</p></article>
-            <article><span>Structure</span><strong>構造更新なし</strong><p>前回改修はBannerと背景の変更が中心。</p></article>
-            <article><span>Behavior</span><strong>低い到達率</strong><p>長いページに対して下部までのScroll Reachが低い。</p></article>
-          </div>
-          <div class="lalatulle-goal-line" aria-label="Halloween Page goals">
-            <span>Goal</span><strong>Visual refresh</strong><i></i><strong>CVR hypothesis</strong><i></i><strong>HTML / SEO</strong><i></i><strong>New content</strong>
-          </div>
-          <figure class="actual-site-shot">
-            <img loading="lazy" src="assets/lalatulle/lalatulle-live-halloween.jpg" alt="改善後のHalloween Pageに表示されたメインビジュアルとカテゴリ導線" />
-            <figcaption><strong>Live Halloween Page</strong><span data-case-en="The released page combines the renewed visual direction with category navigation and structured content." data-case-ko="실제 공개 페이지에서 개선한 비주얼 방향, 카테고리 탐색, 구조화된 콘텐츠를 확인할 수 있습니다.">改善したVisual、カテゴリ導線、構造化したContentを実際の公開ページで確認できます。</span></figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-section benchmark-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Research / Benchmark</p>
-            <div class="section-copy">
-              <h2>競合調査から、今回の改修範囲を絞った。</h2>
-              <p>Sugar、VanityME、Clearstone、BODYLINEを比較し、Halloween Pageの構造変更に直接関係する5つの観点を整理しました。</p>
-            </div>
-          </div>
-          <div class="benchmark-matrix" aria-label="競合ページの比較対象">
-            <article><b>01</b><strong>Sugar</strong></article>
-            <article><b>02</b><strong>VanityME</strong></article>
-            <article><b>03</b><strong>Clearstone</strong></article>
-            <article><b>04</b><strong>BODYLINE</strong></article>
-            <footer><span>Compared by</span><p>Mobile UI</p><p>Category structure</p><p>Visual / Performance</p></footer>
-          </div>
-          <div class="benchmark-findings" aria-label="競合調査から得た改善観点">
-            <article>
-              <span class="benchmark-icon" aria-hidden="true">01</span>
-              <div><strong>Mobile UI</strong><p>SugarとVanityMEは、タッチ操作と画面幅に合わせて商品探索を整理。LaLaTulleはDesktop中心の長い構成が残っていました。</p></div>
-            </article>
-            <article>
-              <span class="benchmark-icon" aria-hidden="true">02</span>
-              <div><strong>Category structure</strong><p>競合はカテゴリの選択肢を短い導線で提示。LaLaTulleはカテゴリごとの商品が縦に続き、目的の商品までのScroll量が多い状態でした。</p></div>
-            </article>
-            <article>
-              <span class="benchmark-icon" aria-hidden="true">03</span>
-              <div><strong>Content depth</strong><p>商品一覧だけでなく、選び方やFAQを持つページがありました。検索意図に答える補助情報を下部に追加する判断につなげました。</p></div>
-            </article>
-            <article>
-              <span class="benchmark-icon" aria-hidden="true">04</span>
-              <div><strong>Visual direction</strong><p>LaLaTulleの高価格帯商品に対して、既存のカジュアルな表現が一致していませんでした。商品価値が伝わるVisualへ変更しました。</p></div>
-            </article>
-            <article>
-              <span class="benchmark-icon" aria-hidden="true">05</span>
-              <div><strong>Page weight</strong><p>画像とScriptが多い点を技術課題として分離。HTML構造と画像運用を見直し、Lighthouseで確認する方針にしました。</p></div>
-            </article>
-          </div>
-          <div class="benchmark-scope-note">
-            <span>Scope decision</span>
-            <p>商品数、価格帯、App開発、SNS施策はページ改修だけでは解決できないため、今回の実装範囲から分離しました。</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section halloween-execution">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Decision / Execution</p>
-            <div class="section-copy">
-              <h2>HTML、カテゴリ移動、下部コンテンツ、ビジュアルを再設計した。</h2>
-              <p>見た目だけを更新せず、検索エンジンが読む構造とユーザーが移動する構造を同時に整理しました。</p>
-            </div>
-          </div>
-          <div class="execution-grid">
-            <article><span>01</span><h3>Heading hierarchy</h3><p>同じ階層のカテゴリに混在していたh2・h3を整理。</p></article>
-            <article><span>02</span><h3>Category tabs</h3><p>縦に並んでいたカテゴリをTab切り替えに変更し、Scroll量を削減。</p></article>
-            <article><span>03</span><h3>FAQ schema</h3><p>FAQを追加し、FAQPageの構造化データを実装。</p></article>
-            <article><span>04</span><h3>Internal links</h3><p>下位カテゴリからHalloween Pageへ戻るリンクを追加。</p></article>
-            <article><span>05</span><h3>Bottom contents</h3><p>Recommend slider、簡単検索、Q&amp;Aを下部に追加。</p></article>
-            <article><span>06</span><h3>Visual direction</h3><p>カジュアルなBannerを、商品単価に合う表現へ変更。</p></article>
-          </div>
-          <figure class="visual-band halloween-structure-shot">
-            <img loading="lazy" src="assets/lalatulle/lalatulle-seo-before-after.webp" alt="Halloween Pageの見出し構造と商品配置の改善前後" />
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-section rank-decision-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Risk / Decision</p>
-            <div class="section-copy">
-              <h2>順位低下だけで戻さず、ページ内行動を併せて判断した。</h2>
-              <p>構造変更後、9月10日頃に検索順位が約15位まで低下しました。SEO・広告担当者、店舗責任者と旧構造へ戻す案を議論し、ユーザー当たり指標が悪化していなかったため、1週間観察を続ける判断を提案しました。</p>
-            </div>
-          </div>
-          <div class="rank-decision-layout">
-            <div class="rank-chart" aria-label="Halloween Page search rank timeline">
-              <div class="rank-chart-head"><span>Search position</span><strong>Lower is better</strong></div>
-              <svg viewBox="0 0 760 280" role="img" aria-label="7位から15位へ低下後、平均2位まで回復し、10月初旬に7位から9位へ変化した推移">
-                <g class="rank-grid"><line x1="50" y1="50" x2="730" y2="50"/><line x1="50" y1="120" x2="730" y2="120"/><line x1="50" y1="190" x2="730" y2="190"/><line x1="50" y1="250" x2="730" y2="250"/></g>
-                <polyline points="70,130 230,230 390,165 555,58 705,138" />
-                <g class="rank-points"><circle cx="70" cy="130" r="7"/><circle cx="230" cy="230" r="7"/><circle cx="390" cy="165" r="7"/><circle cx="555" cy="58" r="7"/><circle cx="705" cy="138" r="7"/></g>
-              </svg>
-              <div class="rank-labels"><span><b>Before</b>7〜9位</span><span><b>9/10頃</b>約15位</span><span><b>9/15〜</b>回復開始</span><span><b>9/28〜10/1</b>平均2位</span><span><b>10月初旬</b>7〜9位</span></div>
-            </div>
-            <aside class="decision-dialogue">
-              <article><span>Concern</span><p>検索順位の低下を受け、旧デザインへ戻す案が出た。</p></article>
-              <article class="is-decision"><span>My decision</span><p>順位とページ内行動を分け、1週間観察してから判断する。</p></article>
-              <article><span>Reason</span><p>Views・Events per active userとEngagement rateは悪化していなかった。</p></article>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section analytics-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Behavior Check / GA4</p>
-            <div class="section-copy">
-              <h2>検索順位の変動中も、ユーザー当たり行動は悪化していなかった。</h2>
-              <p>9月14〜16日と8月全体の比較です。期間の長さが異なるため総Users・総Event数は評価に使わず、ユーザー当たり指標とRateを方向性の確認に限定して使用しました。</p>
-            </div>
-          </div>
-          <div class="behavior-metrics">
-            <article><span>Views / active user</span><strong>+13.34%</strong><small>1.51 → 1.71</small></article>
-            <article><span>Events / active user</span><strong>+8.71%</strong><small>6.82 → 7.42</small></article>
-            <article><span>Engagement rate</span><strong>+1.09%</strong><small>80.76% → 81.64%</small></article>
-            <article><span>Bounce rate</span><strong>-4.57%</strong><small>19.24% → 18.36%</small></article>
-          </div>
-          <figure class="analytics-shot">
-            <img loading="lazy" src="assets/lalatulle/lalatulle-ga4-behavior.png" alt="Halloween Pageのユーザー当たり行動指標を比較したGA4画面" />
-            <figcaption><strong>Directional comparison</strong><span>Sep 14–16, 2025 vs Aug 1–31, 2025 · unequal date ranges</span></figcaption>
-          </figure>
-          <div class="halloween-outcomes">
-            <article><span>Lighthouse SEO</span><strong>92</strong><p>HTMLと構造化データを再整備。</p></article>
-            <article><span>Search rank</span><strong>平均2位</strong><p>9/28〜10/1の主要キーワード。</p></article>
-            <article><span>Organic</span><strong>前年比増加</strong><p>Organic経由の購入が前年を上回った。</p></article>
-          </div>
-          <p class="outcome-caveat">10月初旬は上部コンテンツ変更、商品削除、新商品の減少後に7〜9位へ変化しました。構造だけを成果要因として断定せず、コンテンツと商品状態も併せて記録しています。</p>
-        </div>
-      </section>
-
-      <section class="case-section navigation-redesign chapter-start" id="landing">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">02 / Landing Page · Product Discovery</p>
-            <div class="section-copy">
-              <h2>顧客の購買目的に合わせて、入口の優先順位を変更した。</h2>
-              <p>Navigation、First View、簡単検索の順序を見直し、PDPではUTから得た課題をABテストまで進めました。</p>
-            </div>
-          </div>
-          <div class="landing-decision-summary">
-            <article><span>01</span><strong>6 → 3 icons</strong><p>検索・お気に入り・カートを上段に残す。</p></article>
-            <article><span>02</span><strong>Feature first</strong><p>特集・BlogをFirst Viewの中心にする。</p></article>
-            <article><span>03</span><strong>Quick Search up</strong><p>カテゴリ探索を上部へ移動する。</p></article>
-            <article><span>04</span><strong>UT → AB Test</strong><p>PDPの仮説を購買Flowで検証する。</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section landing-navigation-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Landing / Navigation</p>
-            <div class="section-copy">
-              <h2>6つのメニューアイコンから3つに減らす。</h2>
-              <p>上段は検索・お気に入り・カートに限定しました。新商品・ランキング・セールはロゴ下のNavigationへ移し、利用の少なかったBlogの独立アイコンは削除しました。</p>
-            </div>
-          </div>
-          <div class="navigation-compare" aria-label="Navigation改善前後">
-            <article class="navigation-state before-state">
-              <div class="state-heading"><span>Before</span><strong>6 navigation icons</strong></div>
-              <figure class="navigation-before-shot"><img loading="lazy" src="assets/lalatulle/lalatulle-navigation-before.png" alt="新商品、ブログ、ランキング、検索、カート、お気に入りを表示していた改善前Navigation" /></figure>
-              <p>異なる目的の6項目が同じ階層に並んでいました。</p>
-            </article>
-            <article class="navigation-state after-state">
-              <div class="state-heading"><span>After</span><strong>3 primary actions</strong></div>
-              <figure class="navigation-after-shot"><img loading="lazy" src="assets/lalatulle/lalatulle-navigation-after.png" alt="検索、お気に入り、カートを残した改善後Navigation" /></figure>
-              <div class="secondary-menu"><b>Secondary</b><span>Brand</span><span>Category</span><span>New</span><span>Sale</span><span>Ranking</span></div>
-              <p>日常的な操作と商品カテゴリを上下の階層に分けました。</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section sale-priority-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">Landing / First View</p>
-            <div class="section-copy">
-              <h2>Saleを削除せず、First Viewでの優先度を下げた。</h2>
-              <p>顧客は20代半ば〜30代半ばのプロのキャストが中心で、主力商品は20,000〜30,000円です。主力ブランドは値引き対象外で、Landing PageからSale Pageへの移動も少ない状態でした。</p>
-            </div>
-          </div>
-          <div class="sale-evidence-grid">
-            <article><span>Audience</span><strong>20代半ば〜30代半ば</strong><p>プロとして着用するDressを探す顧客。</p></article>
-            <article><span>Price</span><strong>¥20,000〜30,000</strong><p>中心となる商品価格帯。</p></article>
-            <article><span>Constraint</span><strong>主力BrandはSale不可</strong><p>Outletと一部Brandのみ値引き可能。</p></article>
-            <article><span>Behavior</span><strong>Sale流入が少ない</strong><p>Mini・Long Dressカテゴリへの移動が多い。</p></article>
-          </div>
-          <div class="banner-priority-diagram" aria-label="First View banner priority">
-            <article class="is-primary"><span>First View</span><strong>Feature / Blog carousel</strong><p>商品と読み物を中心に表示。</p></article>
-            <div><article><span>Row 01</span><strong>LINE · ¥2,500 points</strong></article><article><span>Row 02</span><strong>Sale banner</strong></article></div>
-          </div>
-          <p class="banner-decision-note">Sale導線は残しながら、正方形Carouselの下に細い横Bannerとして配置しました。改善後はFeature・Blogへの流入が増え、Sale経由売上への大きな悪影響は確認されませんでした。</p>
-        </div>
-      </section>
-
-      <section class="case-section quick-search-section">
-        <div class="case-shell search-priority">
-          <div class="search-priority-copy">
-            <p class="section-label">Landing / Quick Search</p>
-            <h3>下部でも使われていた簡単検索を、Main Carouselの直下へ移動した。</h3>
-            <p>Heatmapで下部配置時にもClickが確認できました。Mini Dress、Long Dressなど商品カテゴリへの移動を増やすため、より発見しやすい位置へ変更しました。</p>
-          </div>
-          <div class="page-position-diagram" aria-label="簡単検索の配置変更">
-            <div><span>Before</span><b>Main carousel</b><i></i><strong>Quick Search</strong></div>
-            <div><span>After</span><b>Main carousel</b><strong>Quick Search</strong><i></i><b>Feature / Blog</b></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="case-section pdp-test-section" id="pdp">
-        <div class="case-shell split-feature">
-          <div class="feature-copy">
-            <p class="section-label">Landing / PDP · UT &amp; AB Test</p>
-            <h2>UTで購入判断を観察し、PDPの仮説をABテストした。</h2>
-            <p>商品が直近24時間で一定回数以上閲覧された場合だけ、リアルタイム閲覧人数を表示しました。表示は10秒後に消し、常時購買を急かさない条件にしました。</p>
-            <ul><li>A: 購入促進UIなし</li><li>B: 条件成立時のみ閲覧人数を表示</li><li>Firebaseで表示条件を検証</li></ul>
-          </div>
-          <figure class="feature-media"><img loading="lazy" src="assets/lalatulle/lalatulle-ab-ui.webp" alt="PDPのリアルタイム閲覧人数UIを検証したABテスト" /></figure>
-        </div>
-      </section>
-
-      <section class="case-section pdp-result-section">
-        <div class="case-shell">
-          <div class="section-intro">
-            <p class="section-label">PDP / Result &amp; Trade-off</p>
-            <div class="section-copy">
-              <h2>一部指標は改善したが、購入Flow全体の改善には至らなかった。</h2>
-              <p>Cart追加率と購入率はわずかに上がりましたが、購入開始率は低下しました。局所的な効果とFirebaseの運用コストを比較し、テストを終了しました。</p>
-            </div>
-          </div>
-          <div class="metric-grid"><article><strong>+0.9%P</strong><span>Cart追加率</span></article><article><strong>-2%P</strong><span>購入開始率</span></article><article><strong>+0.17%P</strong><span>購入率</span></article></div>
-          <div class="decision-grid"><article><span class="index-no">Learn</span><h3>局所改善と全体成果を分ける</h3><p>Cart追加だけで購入体験全体の成功と判断しない。</p></article><article><span class="index-no">Measure</span><h3>主要CV区間まで追う</h3><p>購入開始と完了まで連続して評価する。</p></article><article><span class="index-no">Stop</span><h3>終了も設計判断にする</h3><p>限定的な効果と運用コストを比較して継続しないと判断した。</p></article></div>
-        </div>
-      </section>
-
-      <section class="case-shell reflection">
-        <blockquote>一つの順位やCVだけで判断せず、検索流入、ページ内行動、購入Flowを分けて検証した。</blockquote>
-        <p>Reflection / LaLaTulle</p>
-      </section>
-    </div></details></div>
+<article class="lt-chapter" id="lt-abtest"><header class="lt-story-intro"><span class="lt-story-number">03</span><div><h2 data-case-en="Follow the purchase flow.&lt;br /&gt;End the test." data-case-ko="장바구니 다음까지 보고,&lt;br /&gt;테스트를 종료했습니다." >カートの先まで確認し、<br />テストを終了。</h2>
+</div></header>
+<dl class="lt-three-lines">
+<div><dt data-case-en="Problem" data-case-ko="문제" >問題</dt>
+<dd data-case-en="The purchase flow needed evaluation beyond product views." data-case-ko="상품 조회 이후 구매 흐름을 살펴볼 필요가 있었습니다." >商品閲覧から購入への流れを改善したい。</dd>
+</div>
+<div><dt data-case-en="Decision" data-case-ko="판단·변경" >判断・変更</dt>
+<dd data-case-en="Compared A/B behavior with a conditional viewer-count message." data-case-ko="조건부 조회 인원 UI를 표시해 A/B 행동을 비교했습니다." >閲覧人数UIを条件付きで表示し、A/Bの行動を比較。</dd>
+</div>
+<div><dt data-case-en="Observed" data-case-ko="확인" >確認</dt>
+<dd data-case-en="Some rates rose while checkout starts fell; operating cost informed ending the test." data-case-ko="일부 비율은 올랐지만 구매 시작률은 하락해 운영 비용과 함께 판단해 종료했습니다." >一部の率は上昇、購入開始率は低下。運用コストも含め終了。</dd>
+</div>
+</dl>
+<figure class="lt-focus-shot product-shot"><div class="lt-ab-crop"><img src="assets/lalatulle/lalatulle-ab-ui.webp" alt="Actual test UI: enlarged viewer-count message on product detail page" loading="lazy" /></div><figcaption data-case-en="Variant B · Actual viewer-count message" data-case-ko="B안 · 실제 조회 인원 메시지 확대" >B案 · 閲覧人数メッセージの実際の表示</figcaption>
+</figure><details class="lt-measurement-notes"><summary><span data-case-en="Evidence limits" data-case-ko="확인 가능한 범위" >検証できる範囲</span>
+</summary><div><p data-case-en="UI source: Aug 10–20, 2025. Earlier rate differences were labeled in percentage points, but aggregation dates, denominators and sample sizes cannot be rechecked from the available source; numerical cells stay blank. No statistical significance or causal lift is claimed." data-case-ko="UI 원자료는2025/8/10–20입니다. 기존 비율 차이는pp 표기였으나 집계 기간·분모·표본 수를 원자료로 재확인하지 못해 수치 칸은 비웁니다. 통계적 유의성이나 인과적 개선은 주장하지 않습니다." >UI原資料は2025/8/10–20。旧事例の率差はpp表記ですが、集計期間・分母・標本数を原資料で再確認できないため数値は空欄とします。統計的有意性や因果的改善は主張しません。</p>
+<table class="lt-missing-rates"><tbody><tr><th data-case-en="Add-to-cart rate difference" data-case-ko="장바구니 추가율 차이" scope="row">カート追加率の差</th>
+<td>—</td></tr><tr><th data-case-en="Checkout-start rate difference" data-case-ko="구매 시작률 차이" scope="row">購入開始率の差</th>
+<td>—</td></tr><tr><th data-case-en="Purchase rate difference" data-case-ko="구매율 차이" scope="row">購入率の差</th>
+<td>—</td></tr></tbody></table></div></details>
+</article>
+</section>
 <nav class="cc-next cc-shell" aria-label="Next project"><span>Next project</span><a href="snapside.html">Snapside <span aria-hidden="true">↗</span></a></nav></main>
-
-
-    <script src="project-i18n.js?v=20261018-2"></script>
+<script src="project-i18n.js?v=20261018-2"></script>
     <script src="case-reveal.js"></script>
     <script src="case-viewer.js"></script>
     <script src="scroll-compare.js"></script>
