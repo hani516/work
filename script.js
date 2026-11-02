@@ -2,7 +2,7 @@ const translations = {
   ja: {
     lalatulleBefore: "改修前",
     lalatulleAfter: "改修後",
-    lalatulleHeaderChange: "6アイコン → 3つの主要操作",
+    lalatulleHeaderChange: "ヘッダーのアイコンを6個から3個に整理",
 
     mongramScreenshotPending: "スクリーンショット準備中",
     mongramScreenshotHome: "ホーム",
@@ -10,7 +10,7 @@ const translations = {
     homeBody: "EC実務で培った分析の視点をもとに、UX・UIの設計から実装まで取り組みます。",
     homeViewProjects: "3つの事例を見る",
     homeWorkCount: "3つの事例 · 分析から設計・実装まで",
-    homeLalatulleBody: "行動データをもとに、ECのUX・SEOを改善。",
+    homeLalatulleBody: "特集・ホームの構成変更と、商品ページのA/Bテスト。",
     homeSnapsideBody: "プロダクトの変化を記録。設計・実装から初期運営まで。",
     homeMoneymateBody: "会話から始まる家計簿を設計・実装。内部テスト中。",
     homeMongramName: "Mongram",
@@ -48,7 +48,7 @@ const translations = {
   en: {
     lalatulleBefore: "Before",
     lalatulleAfter: "After",
-    lalatulleHeaderChange: "6 icons → 3 core actions",
+    lalatulleHeaderChange: "Header icons changed from 6 to 3",
 
     mongramScreenshotPending: "Screenshot pending",
     mongramScreenshotHome: "Home",
@@ -56,7 +56,7 @@ const translations = {
     homeBody: "Drawing on hands-on e-commerce analytics, I work across UX, UI design, and implementation.",
     homeViewProjects: "Explore 3 case studies",
     homeWorkCount: "3 case studies · Analysis, design & build",
-    homeLalatulleBody: "Using behavioral data to improve e-commerce UX and SEO.",
+    homeLalatulleBody: "Changed campaign and Home structures; A/B tested product-page UI.",
     homeSnapsideBody: "A workspace for product history. Designed, built, and in early operation.",
     homeMoneymateBody: "A conversational expense tracker. Designed, built, and in internal testing.",
     homeMongramName: "Mongram",
@@ -94,7 +94,7 @@ const translations = {
   ko: {
     lalatulleBefore: "개선 전",
     lalatulleAfter: "개선 후",
-    lalatulleHeaderChange: "6개 아이콘 → 3개 주요 액션",
+    lalatulleHeaderChange: "헤더 아이콘을 6개에서 3개로 정리",
 
     mongramScreenshotPending: "스크린샷 준비 중",
     mongramScreenshotHome: "홈",
@@ -102,7 +102,7 @@ const translations = {
     homeBody: "이커머스 실무에서 쌓은 분석 경험을 바탕으로 UX·UI 설계부터 직접 구현까지 이어갑니다.",
     homeViewProjects: "3개 사례 살펴보기",
     homeWorkCount: "3개 사례 · 분석부터 설계·구현까지",
-    homeLalatulleBody: "행동 데이터를 바탕으로 이커머스 UX·SEO 개선.",
+    homeLalatulleBody: "특집·홈 구조 변경과 상품 페이지 UI의 A/B 테스트.",
     homeSnapsideBody: "프로덕트의 변화를 기록하는 공간. 설계·구현 후 초기 운영 중.",
     homeMoneymateBody: "대화로 시작하는 가계부를 설계·구현. 내부 테스트 중.",
     homeMongramName: "멍그램",
