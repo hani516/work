@@ -267,3 +267,6 @@ body.project-lalatulle #lt-halloween .lt-visual-summary{max-width:980px;margin:0
 
 /* Tall source captures should scroll at readable width, not shrink into empty dialog space. */
 body.project-lalatulle .image-dialog{max-width:1000px;overflow:auto}body.project-lalatulle .image-dialog .dialog-images{display:block}body.project-lalatulle .image-dialog .dialog-images img{width:100%;max-width:100%;max-height:none;height:auto;object-fit:initial;display:block;margin-bottom:20px}
+
+body.project-lalatulle .lt-story p.lt-header-intent{font-size:24px;line-height:1.8;margin:0 0 32px;max-width:1040px;color:var(--cc-ink);letter-spacing:-.02em}
+@media(max-width:620px){body.project-lalatulle .lt-story p.lt-header-intent{font-size:20px;line-height:1.85;margin-bottom:26px}}
