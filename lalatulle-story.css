@@ -283,3 +283,56 @@ body.project-lalatulle .lt-process-role{font-size:15px!important;color:var(--cc-
 @media(max-width:620px){body.project-lalatulle .lt-process-map{gap:12px 20px;padding:20px 0}body.project-lalatulle .lt-process-map a{font-size:14px}body.project-lalatulle .lt-reason-pair{grid-template-columns:1fr;gap:0}body.project-lalatulle .lt-reason-pair .lt-process-stage{padding:24px 0;border-top:1px solid var(--cc-line)}body.project-lalatulle .lt-banner-comparison{grid-template-columns:1fr;gap:26px}body.project-lalatulle .lt-banner-window{height:390px}body.project-lalatulle .lt-banner-proof figcaption{font-size:16px}body.project-lalatulle .lt-process-role{font-size:14px!important}body.project-lalatulle #lt-hw-solution>.lt-focus-shot .lt-category-crop{aspect-ratio:2.1}}
 
 body.project-lalatulle #lt-halloween .lt-banner-proof figcaption,body.project-lalatulle #lt-halloween .lt-focus-shot figcaption{display:block}
+
+/* Inline evidence: show complete navigation and readable Halloween details without a viewer. */
+body.project-lalatulle .lt-header-pair.lt-inline-evidence{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin:32px 0}
+body.project-lalatulle .lt-inline-evidence figure{margin:0;min-width:0}
+body.project-lalatulle .lt-inline-evidence img{display:block;width:100%;height:auto;border:1px solid #e7e0e2}
+body.project-lalatulle .lt-inline-evidence figcaption{display:block;margin-top:10px;color:#666;font-size:14px;line-height:1.7}
+body.project-lalatulle .lt-halloween-evidence{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;margin:30px 0}
+
+/* Halloween case: restrained editorial hierarchy. */
+body.project-lalatulle #lt-halloween{color:#252323}
+body.project-lalatulle #lt-halloween .lt-story-intro{margin-bottom:32px}
+body.project-lalatulle #lt-halloween .lt-process-intro{font-size:clamp(19px,2.2vw,25px)!important;line-height:1.75;letter-spacing:-.025em;max-width:760px;margin:0 0 14px}
+body.project-lalatulle #lt-halloween .lt-process-role{margin:0 0 48px;color:#777;font-size:13px!important}
+body.project-lalatulle #lt-halloween .lt-process-map{display:flex;gap:16px 32px;padding:18px 0;margin:0 0 56px;border-top:1px solid #292727;border-bottom:1px solid #dedcdb}
+body.project-lalatulle #lt-halloween .lt-process-map a{border:0;padding:0;color:#65615f;font-size:13px;text-decoration:none}
+body.project-lalatulle #lt-halloween .lt-process-map a:hover{text-decoration:underline;text-underline-offset:4px}
+body.project-lalatulle #lt-halloween .lt-reason-pair{gap:64px;margin-bottom:32px}
+body.project-lalatulle #lt-halloween .lt-reason-pair .lt-process-stage{padding:0 0 20px;border:0}
+body.project-lalatulle #lt-halloween .lt-process-stage{padding:48px 0;border-top:1px solid #dedcdb}
+body.project-lalatulle #lt-halloween .lt-process-stage>header{gap:16px;align-items:baseline;margin-bottom:18px}
+body.project-lalatulle #lt-halloween .lt-process-stage>header>span{color:#999;font-size:12px;letter-spacing:.08em}
+body.project-lalatulle #lt-halloween .lt-process-stage>header h3{font-size:clamp(23px,2.3vw,29px);font-weight:500;letter-spacing:-.03em}
+body.project-lalatulle #lt-halloween .lt-process-stage>p,body.project-lalatulle #lt-halloween .lt-reason-pair p{font-size:16px;line-height:1.95;color:#53504f;max-width:760px}
+body.project-lalatulle #lt-halloween .lt-iteration-label{margin:42px 0 24px}
+body.project-lalatulle #lt-halloween .lt-iteration-label h4{font-size:20px;font-weight:500;letter-spacing:-.02em;margin-bottom:12px}
+body.project-lalatulle #lt-halloween .lt-iteration-label p{font-size:16px;line-height:1.9;color:#53504f;max-width:760px}
+body.project-lalatulle #lt-halloween .lt-banner-window{border-radius:0;border-color:#e1dfdd;background:#f6f6f5}
+body.project-lalatulle #lt-halloween .lt-banner-proof figcaption{font-size:13px;color:#706c6a;margin-top:10px}
+body.project-lalatulle #lt-halloween .lt-full-page-detail{border-color:#dedcdb}
+body.project-lalatulle #lt-halloween .lt-full-page-detail>summary{color:#53504f;font-size:13px}
+@media(max-width:620px){
+ body.project-lalatulle #lt-halloween .lt-process-role{margin-bottom:32px}
+ body.project-lalatulle #lt-halloween .lt-process-map{margin-bottom:36px;gap:12px 20px}
+ body.project-lalatulle #lt-halloween .lt-reason-pair{gap:0;margin-bottom:12px}
+ body.project-lalatulle #lt-halloween .lt-reason-pair .lt-process-stage{padding:24px 0;border-top:1px solid #dedcdb}
+ body.project-lalatulle #lt-halloween .lt-process-stage{padding:32px 0}
+ body.project-lalatulle #lt-halloween .lt-process-stage>p,body.project-lalatulle #lt-halloween .lt-reason-pair p,body.project-lalatulle #lt-halloween .lt-iteration-label p{font-size:15px}
+}
+
+/* Reference-inspired case-study sections: a clear narrative with a restrained accent. */
+body.project-lalatulle #lt-halloween{--hw-accent:#8b5c69;--hw-tint:#f6f2f2}
+body.project-lalatulle #lt-halloween .lt-process-map a{font-weight:500}
+body.project-lalatulle #lt-halloween .lt-reason-pair{gap:16px;margin-bottom:56px}
+body.project-lalatulle #lt-halloween .lt-reason-pair .lt-process-stage{padding:30px;background:var(--hw-tint)}
+body.project-lalatulle #lt-halloween .lt-process-stage>header>span{color:var(--hw-accent);font-weight:700}
+body.project-lalatulle #lt-halloween #lt-hw-solution{border-top:1px solid #292727}
+body.project-lalatulle #lt-halloween .lt-iteration-label h4{padding-left:16px;border-left:3px solid var(--hw-accent)}
+body.project-lalatulle #lt-halloween #lt-hw-validation,body.project-lalatulle #lt-halloween #lt-hw-results{padding:38px 32px;margin:0 0 16px;border:0;background:#f8f7f6}
+@media(max-width:620px){
+ body.project-lalatulle #lt-halloween .lt-reason-pair{gap:12px;margin-bottom:36px}
+ body.project-lalatulle #lt-halloween .lt-reason-pair .lt-process-stage{padding:24px;border:0}
+ body.project-lalatulle #lt-halloween #lt-hw-validation,body.project-lalatulle #lt-halloween #lt-hw-results{padding:26px 22px}
+}
