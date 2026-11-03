@@ -270,3 +270,6 @@ body.project-lalatulle .image-dialog{max-width:1000px;overflow:auto}body.project
 
 body.project-lalatulle .lt-story p.lt-header-intent{font-size:24px;line-height:1.8;margin:0 0 32px;max-width:1040px;color:var(--cc-ink);letter-spacing:-.02em}
 @media(max-width:620px){body.project-lalatulle .lt-story p.lt-header-intent{font-size:20px;line-height:1.85;margin-bottom:26px}}
+
+body.project-lalatulle .lt-header-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin:0 0 34px}body.project-lalatulle .lt-header-actions article{border-top:2px solid #b89ba6;padding:22px 0 0;min-width:0}body.project-lalatulle .lt-action-label{font-size:14px;color:#714451;display:block;margin-bottom:14px}body.project-lalatulle .lt-header-actions h3{font-size:22px;line-height:1.6;margin:0 0 16px}body.project-lalatulle .lt-header-actions p{font-size:15px;line-height:1.9;margin:0}
+@media(max-width:620px){body.project-lalatulle .lt-header-actions{grid-template-columns:1fr;gap:24px}body.project-lalatulle .lt-header-actions article{padding-top:18px}body.project-lalatulle .lt-header-actions h3{font-size:21px;margin-bottom:12px}body.project-lalatulle .lt-header-actions p{font-size:15px}}
