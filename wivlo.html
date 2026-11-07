@@ -17,17 +17,16 @@
     <link rel="stylesheet" href="portfolio-final.css?v=9" />
     <link rel="stylesheet" href="wivlo-evidence.css?v=1" />
     <link rel="stylesheet" href="case-visual-stories.css?v=1" />
-  </head>
-  <body class="wivlo-product-page wivlo-case-study-page">
+  <link rel="stylesheet" href="case-concise.css?v=1" />
+</head>
+  <body class="wivlo-product-page wivlo-case-study-page brief-case">
     <header class="case-header project-page-header">
       <a class="back-link" href="index.html#projects">Portfolio</a>
-      <nav class="case-nav" aria-label="Wivlo case study sections">
-        <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#research">Research</a><a href="#strategy">Strategy</a><a href="#information-architecture">IA</a><a href="#experience">Experience</a><a href="#ai-design">AI Design</a><a href="#design-system">Design System</a><a href="#learnings">Learnings</a>
-      </nav>
+      <nav class="case-nav" aria-label="Case sections"><a href="#brief-overview">Overview</a><a href="#brief-design">Design</a><a href="#brief-result">Outcome</a></nav>
       <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
     </header>
 
-    <main>
+    <main class="brief-main"><section class="brief-hero" id="brief-overview"><p class="brief-brand">Wivlo</p><h1 data-case-en="Turn saved thoughts into the next draft." data-case-ko="남겨둔 노트를, 다음 문서의 시작으로.">残したノートを、次の一稿へ。</h1><figure class="brief-image product-shot "><img src="assets/wivlo/wivlo-editor-desktop-light.png" alt="Wivlo web editor and AI panel" loading="lazy" /></figure><p class="brief-role" data-case-en="Solo project. Product strategy, UX/UI, AI interactions and implementation." data-case-ko="개인 프로젝트. 제품 전략·UX/UI·AI 경험·구현.">個人開発。プロダクト戦略・UX/UI・AI体験・実装。</p></section><div id="brief-design"><section class="brief-chapter"><div class="brief-chapter-head"><span>01</span><h2 data-case-en="Write, reference, ask AI. In one place." data-case-ko="작성·참조·AI를, 한 화면에서.">書く・参照する・AIに頼むを、一つに。</h2><p data-case-en="Placed context and AI suggestions beside the editor for review." data-case-ko="에디터 옆에서 맥락을 확인하고 AI의 제안을 검토하도록 구성했습니다.">Editorの隣で文脈を確認し、AIの提案を検討できる構成。</p></div><figure class="brief-image product-shot "><img src="assets/wivlo/wivlo-live-agent-current.jpg" alt="Wivlo AI panel" loading="lazy" /></figure></section><section class="brief-chapter"><div class="brief-chapter-head"><span>02</span><h2 data-case-en="Capture the thought while it is there." data-case-ko="떠오른 생각을, 손안에서 바로.">思いついたら、手元で残す。</h2><p data-case-en="Designed iOS entry points for capturing and editing notes." data-case-ko="iOS에서도 노트 작성과 편집으로 바로 이어지도록 설계했습니다.">iOSでもノート作成と編集へすぐ進めるように。</p></div><div class="brief-pair brief-phones"><figure class="brief-image product-shot "><img src="assets/wivlo/wivlo-appstore-01.webp" alt="Wivlo iOS home" loading="lazy" /></figure><figure class="brief-image product-shot "><img src="assets/wivlo/wivlo-appstore-02.webp" alt="Wivlo iOS editor" loading="lazy" /></figure></div></section></div><section class="brief-outcome" id="brief-result"><span>OUTCOME / NEXT</span><h2 data-case-en="8 of 17 accounts had notes. Next focus: first-note creation and reuse." data-case-ko="17개 계정 중 8개에 노트가 있었습니다. 다음 과제는 첫 작성과 재사용입니다.">17アカウント中8にノートが存在。次は初回作成と再利用を改善。</h2><p class="brief-note" data-case-en="DB checked Nov 7, 2026; known owner account excluded. Unidentified tests may remain. This is not retention." data-case-ko="2026.11.07 DB 확인. 확인된 본인 계정 제외, 미확인 테스트 포함 가능. 유지율 지표가 아닙니다.">2026.11.07 DB確認。既知の本人アカウントを除外。未特定テストを含む可能性あり。継続率ではありません。</p></section><details class="brief-evidence"><summary><span data-case-en="Design rationale, research and evidence" data-case-ko="설계 배경·조사·검증 범위 보기">判断の背景・調査・検証範囲を見る</span></summary><div class="brief-archive">
       <section class="project-hero wivlo-hero" id="overview">
         <div class="project-hero-copy">
           <div class="case-brand"><img src="assets/wivlo/wivlo-icon.png" alt="Wivlo app icon" /><p class="case-kicker">AI Writing Workspace</p></div>
@@ -318,7 +317,7 @@ A starting point for your next draft." data-case-ko="휴대폰에 남긴 생각�
 <blockquote class="final-learning" data-case-en="Signup signals interest. Designing for continued use requires understanding both the first saved note and the reason to open it again." data-case-ko="가입은 관심의 신호였습니다. 지속 사용을 설계하려면 첫 기록을 남기는 과정과 다시 열어볼 이유를 함께 확인해야 했습니다.">登録は関心の兆候。継続利用を設計するには、最初の記録と、次に開く理由の両方を確かめる必要がありました。</blockquote>
 <p class="scope-note" data-case-en="Scope and limits: small early sample, possibly including unidentified test accounts. The DB contains current state and partial logs; GA4 is a separate aggregate. Stored counts are not lifetime use, logins are not visits, and AI screens are not successful requests. D1/D7 and improvement outcomes remain unverified. No identifiers or note contents are published." data-case-ko="범위와 한계: 작은 초기 표본이며 미확인 테스트 계정이 포함될 수 있습니다. DB는 현재 상태와 일부 로그, GA4는 별도 집계입니다. 저장 건수를 평생 사용량, 로그인을 재방문, AI 화면 조회를 성공으로 취급하지 않았습니다. D1·D7과 개선 효과는 미검증입니다. 개인 식별 정보와 노트 내용은 공개하지 않았습니다.">範囲と限界：小規模な初期サンプルで、未知のTestアカウントが含まれる可能性があります。DBは現在状態と一部ログ、GA4は別の匿名集計です。保存件数を生涯利用、Loginを再訪問、AI画面表示を成功とは扱っていません。D1/D7や改善効果は未検証。個人識別情報やノート本文は掲載していません。</p>
 </section>
-    </main>
+    </div></details></main>
     <footer class="wivlo-footer"><a href="lalatulle.html">LaLaTulle</a><a href="snapside.html">Snapside</a></footer>
     <script src="project-i18n.js?v=20260907-1"></script>
     <script src="case-reveal.js"></script>
