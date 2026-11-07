@@ -1,0 +1,27 @@
+/* Post-launch evidence: scoped to Wivlo's launch chapter. */
+.learning-section .evidence-method,.learning-section .evidence-caption{color:#686870;font-size:13px;line-height:1.8;max-width:900px}
+.learning-section .usage-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:36px 0 18px}
+.learning-section .usage-metrics article{border-top:2px solid #18181a;padding:24px 0}
+.learning-section .usage-metrics strong{font-size:clamp(34px,4vw,54px);line-height:1.1;font-weight:600;letter-spacing:-.04em}
+.learning-section .usage-metrics p{margin:14px 0 0;font-size:14px;color:#5f5f66}
+.learning-section h3{font-size:23px;line-height:1.5;margin:52px 0 22px;font-weight:600}
+.learning-section h4{font-size:16px;line-height:1.6;margin:0 0 8px;font-weight:600}
+.learning-section p{line-height:1.85}
+.learning-section .usage-records article{display:grid;grid-template-columns:240px 1fr;gap:40px;padding:24px 0;border-top:1px solid #e7e7ea}
+.learning-section .usage-records strong{font-size:13px;font-weight:500;color:#3182f6}
+.learning-section .usage-records p{font-size:14px;color:#5f5f66;margin:0}
+.learning-section .usage-insight{padding:28px 32px;margin:30px 0;background:#f6f6f8;border-left:3px solid #3182f6}
+.learning-section .usage-insight h3{font-size:20px;margin:0 0 12px}
+.learning-section .usage-insight p{margin:0;font-size:14px;color:#5f5f66}
+.learning-section .return-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.learning-section .return-grid article{padding:24px;border:1px solid #e7e7ea}
+.learning-section .return-grid span{font-size:11px;text-transform:uppercase;letter-spacing:.03em;color:#5f5f66;display:block}
+.learning-section .return-grid strong{font-size:24px;line-height:1.4;display:block;margin:16px 0}
+.learning-section .return-grid p{font-size:13px;margin:0;color:#5f5f66}
+.learning-section .usage-details{margin:24px 0}
+.learning-section .usage-details p{font-size:14px;padding:20px 0;color:#5f5f66}
+.learning-section .usage-next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:24px 0 44px}
+.learning-section .usage-next span{display:block;font-size:12px;color:#3182f6;margin-bottom:16px}
+.learning-section .usage-next p{font-size:14px;color:#5f5f66;margin:0}
+.learning-section .scope-note{font-size:12px;line-height:1.9;color:#686870}
+@media(max-width:760px){.learning-section .usage-metrics{gap:16px}.learning-section .usage-metrics p{font-size:12px}.learning-section .usage-records article{grid-template-columns:1fr;gap:12px}.learning-section .return-grid,.learning-section .usage-next{grid-template-columns:1fr;gap:16px}.learning-section .usage-insight{padding:24px}.learning-section .return-grid article{padding:24px}.learning-section h3{font-size:21px}.learning-section .usage-next article{padding:20px 0;border-top:1px solid #e7e7ea}}
