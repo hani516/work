@@ -1,23 +1,14 @@
 {
-  "home-local37-20261031.png": {
-    "kind": "existing actual app screenshot",
-    "capture_date": "2026-10-31",
-    "capture_version": "local37",
-    "locale": "ja",
-    "screen": "Home after a walk",
-    "source_project_id": "appgprj_6ae419e6aea4819189d9241280bf2418",
-    "source_commit": "e1bf70e4e20337948786cc9e95c61ea0c58db2b6",
-    "source_path": "dist/assets/onegram-home-current.png",
-    "sha256": "d315d8a115f85de970b95d447865476e405104b8db7a756d8c060d35b9b2c24d",
-    "dimensions": [
-      1206,
-      2622
-    ],
-    "usage": [
-      "portfolio home card",
-      "Mongram case study hero"
-    ],
-    "pixel_changes": false,
-    "review": "Visually inspected: no account details, addresses or map routes. Not presented as latest design or release proof."
-  }
+  "captured_at": "2026-11-05",
+  "capture_type": "Native simulator with isolated in-memory demonstration data",
+  "latest_release_proof": false,
+  "photos": "Illustrative generated images, not actual location photographs",
+  "screens": {
+    "04-character": "home-demo",
+    "06-recording": "walk-demo",
+    "02-replay": "replay-demo",
+    "03-family": "history-demo",
+    "05-lockscreen": "lockscreen-demo"
+  },
+  "character_assets": "Original 18-breed app character reference sheet"
 }

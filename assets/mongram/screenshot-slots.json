@@ -1,65 +1,11 @@
 {
-  "status": "awaiting user-provided device screenshots",
-  "slots": [
-    {
-      "slot": "home-card",
-      "screen": "Portfolio Home card",
-      "shape": "card",
-      "suggested_file": "hero-home.png"
-    },
-    {
-      "slot": "hero-home",
-      "screen": "Home",
-      "shape": "phone",
-      "suggested_file": "hero-home.png"
-    },
-    {
-      "slot": "walk-timelapse",
-      "screen": "Walk timelapse",
-      "shape": "phone",
-      "suggested_file": "walk-timelapse.png"
-    },
-    {
-      "slot": "family-sharing",
-      "screen": "Family sharing",
-      "shape": "phone",
-      "suggested_file": "family-sharing.png"
-    },
-    {
-      "slot": "home-before",
-      "screen": "Home before",
-      "shape": "phone",
-      "suggested_file": "home-before.png"
-    },
-    {
-      "slot": "home-after",
-      "screen": "Home after",
-      "shape": "phone",
-      "suggested_file": "home-after.png"
-    },
-    {
-      "slot": "character-selection",
-      "screen": "Character selection",
-      "shape": "phone",
-      "suggested_file": "character-selection.png"
-    },
-    {
-      "slot": "character-resting",
-      "screen": "Resting character",
-      "shape": "phone",
-      "suggested_file": "character-resting.png"
-    },
-    {
-      "slot": "dynamic-island",
-      "screen": "Dynamic Island",
-      "shape": "island",
-      "suggested_file": "dynamic-island.png"
-    },
-    {
-      "slot": "live-activity",
-      "screen": "Live Activity",
-      "shape": "activity",
-      "suggested_file": "live-activity.png"
-    }
+  "status": "Published visual slots use dated demo captures or original character assets; unsupported pending slots removed",
+  "screens": [
+    "home-demo",
+    "walk-demo",
+    "replay-demo",
+    "history-demo",
+    "lockscreen-demo",
+    "route-demo"
   ]
 }
