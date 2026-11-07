@@ -1,0 +1,7 @@
+/* Original app icon in front of the dated simulator Home capture. */
+.cover-mongram{background:radial-gradient(ellipse at 25% 30%,#fafbf6,#e4e9df);isolation:isolate;overflow:hidden;border:1px solid #e3e7dc}
+.cover-mongram .mg-card-phone{position:absolute;z-index:1;width:47%;height:auto;right:8%;top:11%;border:4px solid #252a24;border-radius:24px;box-shadow:0 22px 40px #2636222b;transform:rotate(10deg);transition:transform .5s}
+.cover-mongram .mg-card-icon{position:absolute;z-index:2;width:37%;height:auto;left:10%;top:32%;border:1px solid #e6e8e2;border-radius:24%;box-shadow:0 18px 34px #293a251c;transform:rotate(-7deg);transition:transform .5s}
+.project-panel:hover .mg-card-phone{transform:rotate(7deg) translateY(-4px)}
+.project-panel:hover .mg-card-icon{transform:rotate(-3deg) translateY(-3px)}
+@media(prefers-reduced-motion:reduce){.cover-mongram .mg-card-phone,.cover-mongram .mg-card-icon{transition:none}}
