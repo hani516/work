@@ -70,3 +70,10 @@ body.lt-narrative .lt-position-decision p{font-size:16px;line-height:1.8;max-wid
 @media(max-width:760px){.lt-position-facts,.lt-priority-flow{grid-template-columns:1fr;gap:12px}.lt-position-fact{padding:22px 22px 22px 90px;position:relative}.lt-strategy-icon{position:absolute;left:22px;top:22px;margin:0}body.lt-narrative .lt-position-facts strong,body.lt-narrative .lt-priority-flow strong{font-size:24px}.lt-position-decision{padding:24px 8px 30px}body.lt-narrative .lt-position-decision strong{font-size:25px}.lt-priority-flow>div{padding:22px}.lt-priority-number{margin-bottom:12px}}
 body.lt-narrative .ln-stage.lt-brand-strategy{display:block}
 body.lt-narrative .lt-brand-strategy>.ln-stage-copy{margin-bottom:32px;max-width:900px}
+
+/* Match Mongram's home-demo presentation frame. */
+body.lt-narrative .ln-cover-image{padding:48px;background:#eef0e8;border-radius:16px}
+body.lt-narrative .ln-cover-image>.ln-image-link{max-width:340px;border-radius:20px;box-shadow:0 14px 40px #29322512;overflow:hidden}
+body.lt-narrative .ln-cover-image>.ln-image-link>img{display:block;width:100%;height:auto;max-height:none;border-radius:20px}
+@media(max-width:720px){body.lt-narrative .ln-cover-image{padding:24px 16px;border-radius:12px}body.lt-narrative .ln-cover-image>.ln-image-link,body.lt-narrative .ln-cover-image>.ln-image-link>img{border-radius:12px}}
+@media(max-width:600px){body.lt-narrative .ln-cover-image{padding:26px 18px}body.lt-narrative .ln-cover-image>.ln-image-link{max-width:300px}}
