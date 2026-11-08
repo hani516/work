@@ -42,13 +42,12 @@
   .project-panel:hover :is(.lt-cover-phones,.mg-cover-screens),.project-panel:has(:focus-visible) :is(.lt-cover-phones,.mg-cover-screens){transform:none}
 }
 
-/* Shared columns align every tool row; labels may wrap only inside their own cell. */
+/* Seven tools occupy one equal three-column grid, including on small screens. */
 .hero-summary{min-width:0}
-.hero-tools{width:min(100%,360px);margin-top:24px}
+.hero-tools{width:min(100%,380px);margin-top:24px}
 .tools-label{font-size:10px;line-height:1.5;margin:0 0 12px}
-.tools-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr) minmax(0,.7fr);align-items:center;gap:10px 12px}
-.tools-row+.tools-row{margin-top:12px}
-.tools-row li{min-width:0;min-height:24px;gap:8px;font-size:11px;line-height:1.5;white-space:normal}
+.tools-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:minmax(40px,auto);align-items:center;gap:8px 12px}
+.tools-row li{min-width:0;min-height:40px;gap:8px;font-size:11px;line-height:1.5;white-space:normal}
 .tools-row li>span:last-child{min-width:0;overflow-wrap:normal}
 .tool-mark{width:20px;height:20px}
 .tool-mark img{width:18px;height:18px}
