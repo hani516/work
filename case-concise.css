@@ -1,0 +1,48 @@
+/* The primary story is intentionally short. Full source evidence stays available on demand. */
+body.brief-case .brief-main{max-width:1320px;width:calc(100% - 96px);margin:0 auto;padding-top:136px}
+body.brief-case .brief-brand{font-size:20px;font-weight:600;margin:0 0 26px;color:inherit}
+body.brief-case .brief-hero h1{font-size:clamp(42px,5.7vw,82px);line-height:1.2;letter-spacing:-.045em;max-width:1150px;margin:0 0 48px;font-weight:500;text-wrap:balance;color:inherit}
+body.brief-case .brief-image{margin:0;min-width:0;border-radius:18px;overflow:hidden;background:#f2f3f5}
+body.brief-case .brief-image img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;margin:0;border:0;box-shadow:none}
+body.brief-case .brief-image figcaption{font-size:14px;padding:16px 20px;color:#686970}
+body.brief-case .brief-pair{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+body.brief-case .brief-phones{padding:48px max(32px,12%);background:#edf1f7;border-radius:24px;gap:52px}
+body.brief-case .brief-phones .brief-image{background:transparent;border-radius:22px}
+body.brief-case .brief-phones .brief-image img{border-radius:22px}
+body.brief-case .brief-role{font-size:16px;line-height:1.7;color:#6a6c74;margin:26px 0 0}
+body.brief-case .brief-chapter{padding-top:110px}
+body.brief-case .brief-chapter-head{max-width:1000px;margin-bottom:38px}
+body.brief-case .brief-chapter-head>span{display:block;font-size:14px;color:#8a8d96;margin-bottom:20px}
+body.brief-case .brief-chapter-head h2{font-size:clamp(34px,4.2vw,60px);line-height:1.28;letter-spacing:-.04em;margin:0 0 20px;color:inherit;font-weight:500}
+body.brief-case .brief-chapter-head p{font-size:19px;line-height:1.8;margin:0;color:#686970;max-width:880px}
+body.brief-case .brief-outcome{margin-top:100px;padding:50px 0 44px;border-top:1px solid #dddfe4}
+body.brief-case .brief-outcome>span{font-size:13px;letter-spacing:.08em;color:#767982}
+body.brief-case .brief-outcome h2{font-size:clamp(26px,3vw,40px);line-height:1.4;font-weight:500;max-width:1000px;margin:24px 0 18px;color:inherit}
+body.brief-case .brief-note{font-size:14px;line-height:1.8;color:#72757d;max-width:900px;margin:0}
+body.brief-case .brief-evidence{border-top:1px solid #dddfe4;border-bottom:1px solid #dddfe4;margin-bottom:80px}
+body.brief-case .brief-evidence>summary{cursor:pointer;padding:26px 0;font-size:16px;line-height:1.6}
+body.brief-case .brief-archive{padding-top:30px}
+body.brief-case .brief-archive .scroll-reveal{opacity:1;transform:none}
+body.brief-case.project-snapside .brief-image{background:#20231f}
+body.brief-case.project-snapside :is(.brief-role,.brief-chapter-head p,.brief-note){color:#aeb5aa}
+body.brief-case.project-snapside :is(.brief-outcome,.brief-evidence){border-color:#383e34}
+body.brief-case.project-lalatulle .brief-fashion{background:#f3ebeb;max-width:900px;margin-inline:auto}
+body.brief-case.project-lalatulle .brief-fashion img{max-height:760px;object-fit:contain}
+body.brief-case.project-lalatulle .brief-before-after{grid-template-columns:1fr;background:#f7f0f2;padding:32px;border-radius:18px}
+body.brief-case.project-mongram .brief-phones{background:#f5eee4}
+@media(max-width:760px){
+ body.brief-case .brief-main{width:calc(100% - 36px);padding-top:100px}
+ body.brief-case .brief-hero h1{font-size:40px;margin-bottom:30px}
+ body.brief-case .brief-brand{font-size:18px;margin-bottom:20px}
+ body.brief-case .brief-pair{gap:18px}
+ body.brief-case .brief-phones{gap:18px;padding:24px 18px;border-radius:14px}
+ body.brief-case .brief-phones .brief-image,body.brief-case .brief-phones .brief-image img{border-radius:12px}
+ body.brief-case .brief-image{border-radius:10px}
+ body.brief-case .brief-chapter{padding-top:64px}
+ body.brief-case .brief-chapter-head{margin-bottom:28px}
+ body.brief-case .brief-chapter-head h2{font-size:32px}
+ body.brief-case .brief-chapter-head p{font-size:17px}
+ body.brief-case .brief-role{font-size:14px;margin-top:20px}
+ body.brief-case .brief-outcome{margin-top:64px;padding-top:32px}
+ body.brief-case.project-lalatulle .brief-before-after{padding:16px}
+}
