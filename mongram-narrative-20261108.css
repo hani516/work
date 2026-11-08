@@ -75,3 +75,4 @@
 .narrative-case .mg-hero-screens .shot-slot>img{display:block;width:100%;height:auto;max-height:none;border-radius:20px;box-shadow:0 14px 40px #29322512}
 @media(max-width:720px){.narrative-case .mg-hero{gap:30px}.narrative-case .mg-hero-screens{gap:18px;padding:24px 16px;border-radius:12px}.narrative-case .mg-hero-screens .shot-slot>img{border-radius:12px}}
 @media(max-width:600px){.narrative-case .mg-hero-screens{grid-template-columns:minmax(0,300px);gap:32px;padding:26px 18px}}
+.n-validation-grid dl{margin:24px 0 0;display:grid;gap:20px}.n-validation-grid dt{font-size:11px;font-weight:600;letter-spacing:.06em;color:#b7cdbb;margin-bottom:8px}.n-validation-grid dd{font-size:15px;line-height:1.75;color:#d6e1d7;margin:0}

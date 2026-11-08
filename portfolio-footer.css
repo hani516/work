@@ -17,3 +17,15 @@ body .portfolio-project-navigation{border:0}
 .portfolio-footer__contacts a::before{content:"";display:block;flex:0 0 16px;width:16px;height:16px;background-image:var(--footer-contact-icon);background-position:center;background-size:contain;background-repeat:no-repeat}
 .portfolio-footer__contacts a[href="https://www.linkedin.com/in/yohan-kim-291aa5351"]{--footer-contact-icon:url("assets/footer/linkedin.svg")}
 .portfolio-footer__contacts a[href="mailto:kim93yohan@gmail.com"]{--footer-contact-icon:url("assets/footer/envelope.svg")}
+
+/* A full-width transition band, not a background limited to its button. */
+body .portfolio-next-section{--next-bg:#edf0ea;--next-ink:#294034;display:flex;align-items:center;justify-content:space-between;gap:24px;width:calc(100% - 80px);max-width:1160px;margin:64px auto 0;padding:48px 0;background:var(--next-bg);color:var(--next-ink);box-shadow:0 0 0 100vmax var(--next-bg);clip-path:inset(0 -100vmax);border:0}
+body.project-snapside .portfolio-next-section{--next-bg:#242921;--next-ink:#f0f2eb}
+body.lt-narrative .portfolio-next-section{--next-bg:#eae3e9;--next-ink:#443640;width:100%;padding:48px 0}
+body.wivlo-case-study-page .portfolio-next-section{--next-bg:#e7eef7;--next-ink:#253e60}
+body.project-moneymate .portfolio-next-section{--next-bg:#e9edf5;--next-ink:#303c58}
+body .portfolio-next-section>span,body .portfolio-next-section a>span{font:500 12px/1.5 Inter,sans-serif;color:var(--next-ink);opacity:.7}
+body .portfolio-next-section>a{font-size:clamp(28px,4vw,48px);line-height:1.25;font-weight:500;letter-spacing:-.03em;color:var(--next-ink);text-decoration:none}
+body.lt-narrative .portfolio-next-section .ln-next-card{display:flex;justify-content:space-between;align-items:center;width:100%;padding:0;min-height:0;background:transparent;border-radius:0;color:var(--next-ink)}
+body.lt-narrative .portfolio-next-section .ln-next-card strong{font-size:clamp(28px,4vw,48px);font-family:Inter,sans-serif;font-weight:500}
+@media(max-width:600px){body .portfolio-next-section{width:calc(100% - 40px);margin-top:40px;padding:36px 0}body.lt-narrative .portfolio-next-section{padding:36px 0}}

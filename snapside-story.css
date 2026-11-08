@@ -168,3 +168,7 @@ body.project-snapside .sp-film video { display:block; width:100%; height:auto; a
 body.project-snapside .sp-film figcaption { display:flex; justify-content:space-between; gap:16px; padding:16px 2px 0; color:#a5ac9c; font-size:11px; }
 body.project-snapside .sp-film figcaption strong { font-size:14px; font-weight:500; color:#e8ece2; }
 @media(max-width:700px) { body.project-snapside .sp-film-grid { grid-template-columns:1fr; gap:32px; } }
+
+/* Preserve the complete Workflow capture, including its project sidebar. */
+body.project-snapside .sp-zoom-figure[data-view="workflow"] .sp-ui-crop{aspect-ratio:auto;overflow:visible}
+body.project-snapside .sp-zoom-figure[data-view="workflow"] .sp-ui-crop>img{position:static;display:block;width:100%;max-width:100%;height:auto;left:auto;top:auto;object-fit:contain}
