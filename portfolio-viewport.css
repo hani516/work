@@ -1,0 +1,2 @@
+/* Preserve desktop typography in the fixed-width mobile layout. Browser zoom stays available. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
