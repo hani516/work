@@ -27,29 +27,42 @@
       "guidelines": "https://openai.com/brand/",
       "usage": "Unmodified actual Codex product icon used only to identify the tool. OpenAI owns the mark. No sponsorship or endorsement is implied. Conditional brand permission applies.",
       "sha256": "de7d43f3386105ab20952958c2c25beb0d903e2aeb6e1aef57c49a648c0d1c07"
+    },
+    {
+      "file": "photoshop.svg",
+      "source": "https://raw.githubusercontent.com/gilbarbara/logos/main/logos/adobe-photoshop.svg",
+      "source_type": "Third-party vector of the Photoshop product icon, not an Adobe official asset download",
+      "asset_license": "CC0-1.0; see LICENSE-gilbarbara-logos.txt. Trademark rights are excluded.",
+      "guidelines": "https://www.adobe.com/legal/permissions/icons-web-logos.html",
+      "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
+      "sha256": "05db8ed73d5d59406bec2e942dd38ee6122a6b382007476680232daedb63c252"
+    },
+    {
+      "file": "claude-code.svg",
+      "source": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/claudecode-color.svg",
+      "source_type": "LobeHub vector of the Claude Code product mascot, not an Anthropic official asset download",
+      "asset_license": "MIT; copyright (c) 2023 LobeHub. See LICENSE-lobe-icons.txt. Trademark rights are separate.",
+      "guidelines": "https://code.claude.com/docs/en/legal-and-compliance",
+      "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
+      "sha256": "670b3d8d749d0815ad8f7e62a59d51cb5e2053cb19403f3541a8aed7036a877f"
+    },
+    {
+      "file": "google-analytics.svg",
+      "source": "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg",
+      "source_type": "Official Google hosted product icon; exact URL supplied by the user for this use",
+      "guidelines": "https://partnermarketinghub.withgoogle.com/brands/google/branding-guidelines/how-to-show-googles-brand/",
+      "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
+      "sha256": "aa7d39ae684b9dc29b319257ad078f97fd90350aa6ace71fc9cfb66eb316c045"
+    },
+    {
+      "file": "clarity.png",
+      "source": "https://clarity.microsoft.com/blog/wp-content/uploads/2025/02/siteIcon.png",
+      "source_type": "Official Microsoft Clarity product icon",
+      "reference": "https://clarity.microsoft.com/blog/a-behind-the-scenes-look-the-new-clarity-app-icon/",
+      "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
+      "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
+      "sha256": "71c524b91e4d51c0dc59bd7abfa781891532c410f010e03aa3e4532f925de9ae"
     }
   ],
-  "text_only": [
-    {
-      "name": "Photoshop",
-      "reason": "Adobe product icon policy requires partnership permission; permission for this use was not verified.",
-      "guidelines": "https://www.adobe.com/legal/permissions/icons-web-logos.html"
-    },
-    {
-      "name": "GA4",
-      "reason": "Permission for a portfolio tool-list product icon was not verified; API branding permission does not clearly apply.",
-      "guidelines": "https://partnermarketinghub.withgoogle.com/brands/google/branding-guidelines/how-to-show-googles-brand/"
-    },
-    {
-      "name": "Microsoft Clarity",
-      "reason": "Microsoft product-icon guidance requires express licensing; permission for this use was not verified.",
-      "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks"
-    },
-    {
-      "name": "Claude Code",
-      "reason": "Official Anthropic trademark guidance requires specific permission for logo usage; permission for this portfolio use was not verified.",
-      "guidelines": "https://code.claude.com/docs/en/legal-and-compliance",
-      "trademark_guidelines": "https://assets.claude.com/f7874b435aabdaee5f836e888b4439b9b56a934b.pdf"
-    }
-  ]
+  "rights_note": "These marks identify third-party products used by the portfolio author. Product names and trademarks belong to their respective owners. Asset copyright licenses do not grant trademark rights. No partnership, sponsorship, or endorsement is represented. No separate trademark license has been obtained."
 }
