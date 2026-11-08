@@ -62,6 +62,14 @@
       "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks",
       "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
       "sha256": "71c524b91e4d51c0dc59bd7abfa781891532c410f010e03aa3e4532f925de9ae"
+    },
+    {
+      "file": "notion.svg",
+      "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/notion.svg",
+      "source_type": "Simple Icons vector; geometry verified identical to the existing SnapSide Notion tool icon",
+      "asset_license": "CC0-1.0; see LICENSE-simple-icons.md. Trademark rights are separate.",
+      "usage": "Unmodified source bytes; small descriptive mark next to the readable product name. No endorsement implied.",
+      "sha256": "b17d2a2b592a06252efef522d5205f0c7a958f748d40df1011ed081417e42f85"
     }
   ],
   "rights_note": "These marks identify third-party products used by the portfolio author. Product names and trademarks belong to their respective owners. Asset copyright licenses do not grant trademark rights. No partnership, sponsorship, or endorsement is represented. No separate trademark license has been obtained."

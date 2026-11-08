@@ -52,7 +52,7 @@
   .project-panel:hover :is(.lt-cover-phones,.mg-cover-screens),.project-panel:has(:focus-visible) :is(.lt-cover-phones,.mg-cover-screens){transform:none}
 }
 
-/* Keep all seven tools in two equal columns on every screen size. */
+/* Keep tools in two equal columns on every screen size. */
 .hero-summary{min-width:0}
 .hero-tools{width:min(100%,380px);margin-top:24px}
 .tools-label{font-size:10px;line-height:1.5;margin:0 0 12px}
