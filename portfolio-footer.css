@@ -11,3 +11,9 @@
 .portfolio-footer .portfolio-footer__copyright{margin:0;color:#77777c;font-size:10px;line-height:1.6}
 body .portfolio-project-navigation{border:0}
 @media(max-width:600px){.portfolio-footer{width:calc(100% - 40px);margin-top:48px;padding:28px 0;gap:14px}.portfolio-footer__contacts{flex-direction:column;gap:0}.portfolio-footer__contacts a{font-size:11px}}
+
+/* Empty decorative pseudo-elements preserve each link's existing accessible name. */
+.portfolio-footer__contacts a{gap:8px}
+.portfolio-footer__contacts a::before{content:"";display:block;flex:0 0 16px;width:16px;height:16px;background-image:var(--footer-contact-icon);background-position:center;background-size:contain;background-repeat:no-repeat}
+.portfolio-footer__contacts a[href="https://www.linkedin.com/in/yohan-kim-291aa5351"]{--footer-contact-icon:url("assets/footer/linkedin.svg")}
+.portfolio-footer__contacts a[href="mailto:kim93yohan@gmail.com"]{--footer-contact-icon:url("assets/footer/envelope.svg")}

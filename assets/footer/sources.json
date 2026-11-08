@@ -1,0 +1,17 @@
+{
+  "source": "Bootstrap Icons v1.13.1",
+  "license": "MIT; see LICENSE.txt",
+  "purpose": "Small decorative icons accompanying visible footer link labels. LinkedIn trademark belongs to its owner; no endorsement is implied.",
+  "assets": [
+    {
+      "file": "linkedin.svg",
+      "source": "https://raw.githubusercontent.com/twbs/icons/v1.13.1/icons/linkedin.svg",
+      "sha256": "ddcbb2735eea12f090ea0ee371d1b9a3462531dc11efd0e944adc2d38c71e2df"
+    },
+    {
+      "file": "envelope.svg",
+      "source": "https://raw.githubusercontent.com/twbs/icons/v1.13.1/icons/envelope.svg",
+      "sha256": "46354ede34e6acffd9828377884007ae3090db3b892e4b4a8fb8eec3e1017d63"
+    }
+  ]
+}
