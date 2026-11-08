@@ -1,0 +1,13 @@
+/* Shared, centered contact and language footer across the portfolio. */
+.portfolio-footer{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;width:min(1120px,calc(100% - 48px));margin:64px auto 0;padding:40px 0 36px;border:0;text-align:center;color:#202023;font-family:Inter,'Noto Sans JP','Noto Sans KR',sans-serif}
+.portfolio-footer__contacts{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 24px;margin:0;padding:0}
+.portfolio-footer__contacts a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:4px 0;border:0;color:#202023;font-size:12px;font-weight:500;line-height:1.6;text-decoration:none;overflow-wrap:anywhere}
+.portfolio-footer__contacts a:hover{color:#575cd6}
+.portfolio-footer .footer-language-switch{display:flex;align-items:center;justify-content:center;gap:6px;margin:0;padding:0}
+.portfolio-footer .lang-button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0 11px;border:0;border-radius:6px;background:transparent;color:#696970;font:500 12px/1.4 Inter,'Noto Sans JP','Noto Sans KR',sans-serif;text-decoration:none;cursor:pointer}
+.portfolio-footer .lang-button:hover{background:#f0f0f2;color:#202023}
+.portfolio-footer .lang-button.active,.portfolio-footer .lang-button[aria-pressed="true"]{background:#202023;color:#fff;text-decoration:none}
+.portfolio-footer a:focus-visible,.portfolio-footer button:focus-visible{outline:2px solid #575cd6;outline-offset:4px}
+.portfolio-footer .portfolio-footer__copyright{margin:0;color:#77777c;font-size:10px;line-height:1.6}
+body .portfolio-project-navigation{border:0}
+@media(max-width:600px){.portfolio-footer{width:calc(100% - 40px);margin-top:48px;padding:28px 0;gap:14px}.portfolio-footer__contacts{flex-direction:column;gap:0}.portfolio-footer__contacts a{font-size:11px}}

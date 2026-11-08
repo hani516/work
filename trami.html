@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="project-hero.css" />
     <link rel="stylesheet" href="portfolio-final.css" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
+    <link rel="stylesheet" href="portfolio-footer.css?v=20261108" />
 </head>
   <body class="project-trami">
     <header class="case-header project-page-header">
@@ -22,7 +23,7 @@
       <nav class="case-nav" aria-label="Trami sections">
         <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#insight">Insight</a><a href="#strategy">Strategy</a><a href="#experience">Experience</a><a href="#outcome">Outcome</a>
       </nav>
-      <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
+
     </header>
 
     <main>
@@ -123,7 +124,20 @@
       </div></section>
     </main>
 
-    <footer class="case-shell case-footer"><a href="snapside.html">Snapside</a><a href="blinq.html">Blinq</a></footer>
-    <script src="project-i18n.js?v=20260906-3"></script><script src="case-reveal.js"></script>
+    <nav class="case-shell case-footer portfolio-project-navigation" aria-label="Project navigation"><a href="snapside.html">Snapside</a><a href="blinq.html">Blinq</a></nav>
+
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
+<script src="project-i18n.js?v=20260906-3"></script><script src="case-reveal.js"></script>
   </body>
 </html>

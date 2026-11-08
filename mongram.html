@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="mongram.css?v=4" />
 <link rel="stylesheet" href="mongram-narrative-20261108.css?v=1" />
   <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
+    <link rel="stylesheet" href="portfolio-footer.css?v=20261108" />
 </head>
 <body class="project-mongram narrative-case">
 <header class="case-header project-page-header">
@@ -22,11 +23,7 @@
 <a data-case-en="Design" data-case-ko="설계" href="#decisions">設計</a>
 <a data-case-en="Next steps" data-case-ko="다음 단계" href="#status">次のステップ</a>
 </nav>
-<div class="project-language-switch" aria-label="Language selector">
-<button class="lang-button" type="button" data-lang="ja">JP</button>
-<button class="lang-button" type="button" data-lang="en">EN</button>
-<button class="lang-button" type="button" data-lang="ko">KR</button>
-</div>
+
 </header>
 <main class="n-main">
 <section class="mg-hero mg-shell" id="overview">
@@ -124,11 +121,24 @@
 <blockquote data-case-en="Even when we cannot walk together,&lt;br /&gt;we can share our dog’s day." data-case-ko="함께 걷지 못한 날에도,&lt;br /&gt;우리 강아지의 하루를 가족과." >一緒に歩けない日も、<br />愛犬の一日を家族と。</blockquote>
 </section>
 </main>
-<footer class="mg-footer mg-shell">
+<nav class="mg-footer mg-shell portfolio-project-navigation" aria-label="Project navigation">
 <a href="index.html#projects">← <span data-case-en="All projects" data-case-ko="전체 프로젝트" >プロジェクト一覧</span>
 </a>
-<span>© 2026 YOHAN KIM</span>
-</footer>
+
+</nav>
+
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
 <script src="project-i18n.js?v=7">
 </script>
 </body>

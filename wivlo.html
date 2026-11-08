@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="portfolio-final.css?v=9" />
     <link rel="stylesheet" href="wivlo-evidence.css?v=1" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
+    <link rel="stylesheet" href="portfolio-footer.css?v=20261108" />
 </head>
   <body class="wivlo-product-page wivlo-case-study-page">
     <header class="case-header project-page-header">
@@ -24,7 +25,7 @@
       <nav class="case-nav" aria-label="Wivlo case study sections">
         <a href="#overview">Overview</a><a href="#problem">Problem</a><a href="#research">Research</a><a href="#strategy">Strategy</a><a href="#information-architecture">IA</a><a href="#experience">Experience</a><a href="#ai-design">AI Design</a><a href="#design-system">Design System</a><a href="#learnings">Learnings</a>
       </nav>
-      <div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div>
+
     </header>
 
     <main>
@@ -312,8 +313,21 @@
 <p class="scope-note" data-case-en="Scope and limits: small early sample, possibly including unidentified test accounts. The DB contains current state and partial logs; GA4 is a separate aggregate. Stored counts are not lifetime use, logins are not visits, and AI screens are not successful requests. D1/D7 and improvement outcomes remain unverified. No identifiers or note contents are published." data-case-ko="범위와 한계: 작은 초기 표본이며 미확인 테스트 계정이 포함될 수 있습니다. DB는 현재 상태와 일부 로그, GA4는 별도 집계입니다. 저장 건수를 평생 사용량, 로그인을 재방문, AI 화면 조회를 성공으로 취급하지 않았습니다. D1·D7과 개선 효과는 미검증입니다. 개인 식별 정보와 노트 내용은 공개하지 않았습니다.">範囲と限界：小規模な初期サンプルで、未知のTestアカウントが含まれる可能性があります。DBは現在状態と一部ログ、GA4は別の匿名集計です。保存件数を生涯利用、Loginを再訪問、AI画面表示を成功とは扱っていません。D1/D7や改善効果は未検証。個人識別情報やノート本文は掲載していません。</p>
 </section>
     </main>
-    <footer class="wivlo-footer"><a href="lalatulle.html">LaLaTulle</a><a href="snapside.html">Snapside</a></footer>
-    <script src="project-i18n.js?v=20260907-1"></script>
+    <nav class="wivlo-footer portfolio-project-navigation" aria-label="Project navigation"><a href="lalatulle.html">LaLaTulle</a><a href="snapside.html">Snapside</a></nav>
+
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
+<script src="project-i18n.js?v=20260907-1"></script>
     <script src="case-reveal.js"></script>
     <script src="case-viewer.js"></script>
   </body>

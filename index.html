@@ -11,6 +11,7 @@
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="home.css?v=23" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
+    <link rel="stylesheet" href="portfolio-footer.css?v=20261108" />
 </head>
   <body>
     <header class="site-header" data-elevate>
@@ -20,11 +21,7 @@
         <a href="#projects" data-i18n="navProjects">プロジェクト</a>
         <a href="#contact" data-i18n="navContact">連絡</a>
       </nav>
-      <div class="language-switch" aria-label="Language selector">
-        <button class="lang-button active" type="button" data-lang="ja">JP</button>
-        <button class="lang-button" type="button" data-lang="en">EN</button>
-        <button class="lang-button" type="button" data-lang="ko">KR</button>
-      </div>
+
     </header>
 
     <main id="top">
@@ -87,16 +84,20 @@
           </div>
         </div>
       </section>
-
-      <section class="contact-section page-shell" id="contact" aria-label="Contact">
-        <div class="contact-links reveal">
-          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span></a>
-          <button class="contact-link email-copy magnetic" type="button" data-copy-email><span>Email</span><strong>kim93yohan@gmail.com</strong></button>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer page-shell"><span>© 2026 YOHAN KIM</span><a href="#top" data-i18n="backTop">Back to top</a></footer>
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
     <script src="script.js?v=22"></script>
   </body>

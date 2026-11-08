@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/blinq/blinq-icon.png" /><link rel="stylesheet" href="case-study.css?v=2" /><link rel="stylesheet" href="site-header.css" /><link rel="stylesheet" href="project-hero.css" /><link rel="stylesheet" href="portfolio-final.css" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
+    <link rel="stylesheet" href="portfolio-footer.css?v=20261108" />
 </head>
   <body class="project-blinq">
-    <header class="case-header project-page-header"><a class="back-link" href="index.html#projects">Portfolio</a><nav class="case-nav" aria-label="Blinq sections"><a href="#problem">Problem</a><a href="#model">Model</a><a href="#iteration">Iteration</a><a href="#outcome">Outcome</a></nav><div class="project-language-switch" aria-label="Language selector"><button class="lang-button" type="button" data-lang="ja">JP</button><button class="lang-button" type="button" data-lang="en">EN</button><button class="lang-button" type="button" data-lang="ko">KR</button></div></header>
+    <header class="case-header project-page-header"><a class="back-link" href="index.html#projects">Portfolio</a><nav class="case-nav" aria-label="Blinq sections"><a href="#problem">Problem</a><a href="#model">Model</a><a href="#iteration">Iteration</a><a href="#outcome">Outcome</a></nav></header>
     <main>
       <section class="case-shell case-hero project-hero">
         <div class="project-hero-copy"><div class="case-brand"><img src="assets/blinq/blinq-icon.png" alt="Blinq アイコン" /><p class="case-kicker">Team Product / Released</p></div><h1>Blinq</h1><h2>予定と支出を同じカレンダーに表示する。</h2><p class="case-lead">Blinqは、家計簿とカレンダーを統合し、同じ日付の予定と支出を確認できるモバイルアプリです。</p><div class="case-meta" aria-label="Project metadata"><span>2025.03 - 2025.08</span><span>Product Design / UIUX / Visual Design</span><span>1 Designer / 1 Developer</span><span>Mobile</span></div></div>
@@ -23,7 +24,20 @@
       <section class="case-section" id="outcome"><div class="case-shell"><div class="section-intro"><p class="section-label">04 / Learning</p><div class="section-copy"><h2>隠れていたモード切替を、5つのTab Bar項目に変更した。</h2><p>ホームボタンを繰り返し押す操作では移動先が分かりにくかったため、予算、家計簿、ホーム、スケジュール、設定を個別に表示しました。</p></div></div><div class="decision-grid"><article><span class="index-no">Model</span><h3>日付で予定と支出を統合</h3><p>予定と支出を同じ日付で確認できるようにした。</p></article><article><span class="index-no">Observe</span><h3>リリース後の操作を確認</h3><p>説明が必要なナビゲーション構造を改善対象として確認した。</p></article><article><span class="index-no">Update</span><h3>5つの移動先を表示</h3><p>隠れたモード切替をやめ、各機能をTab Barに配置した。</p></article></div></div></section>
       <section class="case-shell reflection"><blockquote>情報モデルは維持し、分かりにくかったTab Barの操作方法を変更した。</blockquote><p>Reflection / Blinq</p></section>
     </main>
-    <footer class="case-shell case-footer"><a href="trami.html">Trami</a><a href="index.html#projects">All projects</a></footer>
-    <script src="project-i18n.js?v=20260906-3"></script><script src="case-reveal.js"></script>
+    <nav class="case-shell case-footer portfolio-project-navigation" aria-label="Project navigation"><a href="trami.html">Trami</a><a href="index.html#projects">All projects</a></nav>
+
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
+<script src="project-i18n.js?v=20260906-3"></script><script src="case-reveal.js"></script>
   </body>
 </html>
