@@ -251,3 +251,5 @@ body.lt-narrative .ln-footer-part:last-child>.ln-image-link{border-radius:0 0 8p
 .lt-narrative .ln-footer-part h4{font-size:22px;line-height:1.5;margin:0 0 14px}
 .lt-narrative .ln-footer-part p{font-size:16px;line-height:1.85;margin:0;color:var(--muted)}
 @media(max-width:760px){.lt-narrative .ln-footer-evidence>.ln-footer-part{grid-template-columns:1fr;gap:0;margin-bottom:32px}.lt-narrative .ln-footer-evidence>.ln-footer-part:last-child{margin-bottom:0}.lt-narrative .ln-footer-part figcaption{padding:20px 0 0}.lt-narrative .ln-footer-part h4{font-size:21px;margin-bottom:10px}body.lt-narrative .ln-footer-part>.ln-image-link{border-radius:8px}}
+/* Keep the mobile-screen hero beside its introduction on desktop. */
+@media(min-width:861px){.lt-narrative .ln-cover{grid-template-columns:minmax(0,1.35fr) minmax(300px,.8fr);gap:64px;align-items:center}.lt-narrative .ln-cover-image{padding:28px 24px 18px}.lt-narrative .ln-cover-image>.ln-image-link{max-width:270px}}
