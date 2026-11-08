@@ -54,3 +54,17 @@
 .tool-mark-figma img{width:30.72px;height:38.4px}
 .hero-project-link{justify-content:center;min-height:44px;margin-top:24px;padding:10px 16px;gap:0;border-radius:8px;background:var(--ink);color:#fff;font-size:12px;font-weight:500;line-height:1.5}
 .hero-project-link:hover{background:#414149;color:#fff}
+
+/* Wivlo: existing Web and iOS screens in the same product-first cover language. */
+.cover-wivlo{background:#edecf6;color:#272537}
+.wv-cover-brand{position:absolute;left:7%;right:7%;top:8%;display:flex;align-items:center;gap:12px}
+.wv-cover-brand img{display:block;width:13%;height:auto;border-radius:22%}
+.wv-cover-brand strong{font-size:clamp(28px,3.1vw,44px);font-weight:500;letter-spacing:-.055em}
+.wv-cover-screens{position:absolute;inset:30% 7% 5%;transition:transform .6s;transform-origin:50% 65%}
+.wv-cover-desktop{position:absolute;display:block;width:100%;height:auto;left:-3%;top:12%;border:1px solid #d5d3e1;border-radius:8px;box-shadow:0 12px 28px #3b35501c}
+.wv-cover-phone{position:absolute;display:block;width:auto;height:100%;right:0;bottom:0;border:3px solid #33313e;border-radius:14px;box-shadow:0 12px 28px #3b355026}
+.project-panel:has(:focus-visible) .wv-cover-screens{transform:rotate(2deg) translateY(-6px)}
+@media(hover:hover) and (pointer:fine){.project-panel:hover .wv-cover-screens{transform:rotate(2deg) translateY(-6px)}}
+@media(max-width:600px){.wv-cover-brand strong{font-size:36px}}
+@media(max-width:360px){.wv-cover-brand strong{font-size:30px}.wv-cover-phone{border-width:2px;border-radius:12px}}
+@media(prefers-reduced-motion:reduce){.wv-cover-screens{transition:none}.project-panel:hover .wv-cover-screens,.project-panel:has(:focus-visible) .wv-cover-screens{transform:none}}
