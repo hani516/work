@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="144" viewBox="0 0 112 144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+  <title>pomeranian / seated — outline</title>
+  <style>svg{color:#111214}@media(prefers-color-scheme:dark){svg{color:#f0f0f2}}</style>
+  <defs>
+    <clipPath id="outside-head" clipPathUnits="userSpaceOnUse">
+      <path d="M-400 -400 H500 V500 H-400 Z M30 35 L28 17 C28 12 32 13 40 24 L47 21 L53 24 L60 21 L67 24 L77 14 C82 10 84 16 82 33 L90 39 L85 43 L92 49 L86 53 L89 59 L81 62 L79 69 L70 69 L66 75 L57 73 L49 76 L43 71 L35 71 L33 65 L25 62 L28 55 L21 50 L28 45 L24 40 Z" stroke-width="2.3" clip-rule="evenodd" />
+    </clipPath>
+    <path d="M30 35 L28 17 C28 12 32 13 40 24 L47 21 L53 24 L60 21 L67 24 L77 14 C82 10 84 16 82 33 L90 39 L85 43 L92 49 L86 53 L89 59 L81 62 L79 69 L70 69 L66 75 L57 73 L49 76 L43 71 L35 71 L33 65 L25 62 L28 55 L21 50 L28 45 L24 40 Z" stroke-width="2.3" id="head-stencil" />
+  </defs>
+  <g clip-path="url(#outside-head)">
+    <g id="body">
+      <path d="M38 66 L33 73 L36 78 L28 83 L31 89 L24 97 C21 110 24 124 35 129 L43 127 L49 132 L57 130 L63 133 L70 129 L78 130 C87 127 87 115 83 101 L79 87 L80 77 L73 66" stroke-width="2.3" />
+    </g>
+    <g id="tail">
+      <path d="M25 105 C9 105 8 89 18 87 C27 85 31 96 24 99 C18 101 16 96 19 94" stroke-width="2.3" />
+    </g>
+    <g id="legs">
+      <path d="M47 102 C45 114 47 125 56 130 M67 102 C66 114 69 124 74 129" stroke-width="1.8" />
+    </g>
+  </g>
+  <g id="head-motion" transform="">
+    <g id="head">
+      <path d="M30 35 L28 17 C28 12 32 13 40 24 L47 21 L53 24 L60 21 L67 24 L77 14 C82 10 84 16 82 33 L90 39 L85 43 L92 49 L86 53 L89 59 L81 62 L79 69 L70 69 L66 75 L57 73 L49 76 L43 71 L35 71 L33 65 L25 62 L28 55 L21 50 L28 45 L24 40 Z" stroke-width="2.3" />
+    </g>
+    <g id="ears">
+      <path d="M32 22 L35 32 L40 29" stroke-width="1.8" />
+      <path d="M78 22 L75 32 L70 29" stroke-width="1.8" />
+    </g>
+    <g id="faceDetails">
+      <path d="M35 54 C38 59 42 61 46 61 M67 61 C72 61 77 58 79 54" stroke-width="1.8" />
+    </g>
+    <g id="mouth">
+      <path d="M57 57.7 L57 60.8 C55.8 63.3 52.6 63.2 52 60.5 M57 60.8 C58.3 63 61.3 62.6 61.8 60.2" stroke-width="1.4" />
+    </g>
+    <g id="nose">
+      <ellipse cx="57" cy="55" rx="3.3" ry="2" stroke-width="1.4" />
+    </g>
+    <g id="eyes">
+      <ellipse id="eye-0" cx="45" cy="44" rx="1.5" ry="1.9" stroke-width="1.4" />
+      <ellipse id="eye-1" cx="68" cy="44" rx="1.5" ry="1.9" stroke-width="1.4" />
+    </g>
+  </g>
+</svg>
