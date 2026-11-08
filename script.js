@@ -1,6 +1,6 @@
 const translations = {
   ja: {
-    profileEducation: "Geography・Global Business<br />2020.02 卒業",
+    profileEducation: "グローバル経営学科・地理学科<br />2020.02 卒業",
     lalatulleBefore: "改修前",
     lalatulleAfter: "改修後",
     lalatulleHeaderChange: "ヘッダーのアイコンを6個から3個に整理",
@@ -47,7 +47,7 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
-    profileEducation: "Geography · Global Business<br />Graduated Feb 2020",
+    profileEducation: "Departments of Global Business and Geography<br />Graduated Feb 2020",
     lalatulleBefore: "Before",
     lalatulleAfter: "After",
     lalatulleHeaderChange: "Header icons changed from 6 to 3",
@@ -94,7 +94,7 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
-    profileEducation: "지리학·글로벌경영학<br />2020.02 졸업",
+    profileEducation: "글로벌경영학과·지리학과<br />2020.02 졸업",
     lalatulleBefore: "개선 전",
     lalatulleAfter: "개선 후",
     lalatulleHeaderChange: "헤더 아이콘을 6개에서 3개로 정리",
