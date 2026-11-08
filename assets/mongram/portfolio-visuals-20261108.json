@@ -1,0 +1,23 @@
+{
+  "created": "2026-11-08",
+  "method": "OpenAI built-in image generation",
+  "type": "Concept illustrations, not photographs or user research evidence",
+  "style": "Flat editorial illustration, coral / teal / navy, inspired by the user-provided style references",
+  "scenarios": [
+    {
+      "file": "scenario-shared-care-20261108.jpg",
+      "subject": "One family shares dog walking and household tasks",
+      "generated_source": "exec-f4319407-1aa7-420a-986c-e05d98b712c7.png"
+    },
+    {
+      "file": "scenario-family-apart-20261108.jpg",
+      "subject": "Family in different homes share the dog\u2019s day",
+      "generated_source": "exec-c5263ec8-f3f1-45d2-9f3b-3cc54bfaf062.png"
+    }
+  ],
+  "screenshot_replacements": {
+    "home-demo.png": "Actual November 5 simulator capture, seated poodle; current Figma image hash verified November 8",
+    "walk-demo.png": "Actual November 5 simulator capture, green route; current Figma image hash verified November 8"
+  },
+  "limits": "Neither screenshot is verified as the latest shipped app build. Illustrations are conceptual."
+}
