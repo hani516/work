@@ -1,0 +1,320 @@
+{
+  "as_of": "2026-11-08",
+  "property": {
+    "name": "Snapside / snapside-web",
+    "id": "552808316"
+  },
+  "period": {
+    "start": "2026-09-20",
+    "end": "2026-11-03",
+    "timezone": "GA4 property reporting timezone; not independently verified"
+  },
+  "filter": {
+    "dimension": "Session default channel group",
+    "match": "exactly matches",
+    "value": "Organic Search",
+    "scope": "session; excludes Organic Social"
+  },
+  "traffic_acquisition": {
+    "sessions": 55,
+    "engaged_sessions": 37,
+    "engagement_rate_percent": 67.27,
+    "average_engagement_time_per_session_seconds": 25,
+    "event_count": 3321,
+    "key_events": 1,
+    "all_channel_sessions": 319
+  },
+  "landing_page": {
+    "active_users": 38,
+    "new_users": 37,
+    "sessions": 55,
+    "groups": [
+      {
+        "group": "blog posts",
+        "sessions": 32
+      },
+      {
+        "group": "home /",
+        "sessions": 10
+      },
+      {
+        "group": "other known pages",
+        "sessions": 8
+      },
+      {
+        "group": "not set",
+        "sessions": 5
+      }
+    ],
+    "rows": [
+      {
+        "path": "/",
+        "sessions": 10
+      },
+      {
+        "path": "(not set)",
+        "sessions": 5
+      },
+      {
+        "path": "/en",
+        "sessions": 4
+      },
+      {
+        "path": "/ko/blog/notion-work-history",
+        "sessions": 4
+      },
+      {
+        "path": "/blog/ko/notion-work-history",
+        "sessions": 3
+      },
+      {
+        "path": "/blog/ru/figma-plan-seat-history-limits",
+        "sessions": 3
+      },
+      {
+        "path": "/ja/blog/figma-work-history-codex-mcp",
+        "sessions": 3
+      },
+      {
+        "path": "/ja/blog/notion-work-history",
+        "sessions": 3
+      },
+      {
+        "path": "/blog/it/figma-work-history-codex-mcp",
+        "sessions": 2
+      },
+      {
+        "path": "/blog/ko/figma-work-history-codex-mcp",
+        "sessions": 2
+      },
+      {
+        "path": "/zh-TW/blog/notion-work-history",
+        "sessions": 2
+      },
+      {
+        "path": "/blog/ru/notion-work-history",
+        "sessions": 1
+      },
+      {
+        "path": "/de",
+        "sessions": 1
+      },
+      {
+        "path": "/de/blog/notion-work-history",
+        "sessions": 1
+      },
+      {
+        "path": "/desktop",
+        "sessions": 1
+      },
+      {
+        "path": "/en/blog/figma-work-history-codex-mcp",
+        "sessions": 1
+      },
+      {
+        "path": "/en/blog/vibe-coding-project-memory",
+        "sessions": 1
+      },
+      {
+        "path": "/es/blog/manage-project-history-with-notion",
+        "sessions": 1
+      },
+      {
+        "path": "/es/product",
+        "sessions": 1
+      },
+      {
+        "path": "/fr/product",
+        "sessions": 1
+      },
+      {
+        "path": "/it/blog/notion-work-history",
+        "sessions": 1
+      },
+      {
+        "path": "/ko/blog/vibe-coding-project-memory",
+        "sessions": 1
+      },
+      {
+        "path": "/sv/blog/vibe-coding-beginners-guide",
+        "sessions": 1
+      },
+      {
+        "path": "/zh-CN/blog/figma-plan-seat-history-limits",
+        "sessions": 1
+      },
+      {
+        "path": "/zh-TW/blog/vibe-coding-beginners-guide",
+        "sessions": 1
+      }
+    ]
+  },
+  "pages_and_screens": {
+    "views": 175,
+    "active_users": 38,
+    "average_engagement_seconds_per_active_user": 36,
+    "selected_rows": [
+      {
+        "path": "/projects/[redacted]/timeline",
+        "views": 18,
+        "active_users": 1
+      },
+      {
+        "path": "/projects/[redacted]/issues",
+        "views": 4,
+        "active_users": 1
+      },
+      {
+        "path": "/projects/[redacted]/notes",
+        "views": 4,
+        "active_users": 1
+      }
+    ],
+    "note": "Project identifiers removed. Do not sum overlapping active users or infer ordered navigation."
+  },
+  "events": [
+    {
+      "event": "button_impression",
+      "count": 1787,
+      "total_users": 37
+    },
+    {
+      "event": "scroll_depth",
+      "count": 296,
+      "total_users": 31
+    },
+    {
+      "event": "page_view",
+      "count": 175,
+      "total_users": 38
+    },
+    {
+      "event": "page_context",
+      "count": 170,
+      "total_users": 38
+    },
+    {
+      "event": "page_entry_context",
+      "count": 165,
+      "total_users": 38
+    },
+    {
+      "event": "button_click",
+      "count": 154,
+      "total_users": 7
+    },
+    {
+      "event": "screen_viewed",
+      "count": 143,
+      "total_users": 38
+    },
+    {
+      "event": "button_unique_click",
+      "count": 127,
+      "total_users": 7
+    },
+    {
+      "event": "active_time_milestone",
+      "count": 68,
+      "total_users": 22
+    },
+    {
+      "event": "session_start",
+      "count": 55,
+      "total_users": 38
+    },
+    {
+      "event": "user_engagement",
+      "count": 53,
+      "total_users": 29
+    },
+    {
+      "event": "scroll",
+      "count": 40,
+      "total_users": 17
+    },
+    {
+      "event": "first_visit",
+      "count": 37,
+      "total_users": 37
+    },
+    {
+      "event": "select_content",
+      "count": 26,
+      "total_users": 4
+    },
+    {
+      "event": "timeline_view_changed",
+      "count": 8,
+      "total_users": 1
+    },
+    {
+      "event": "integration_status_snapshot",
+      "count": 7,
+      "total_users": 1
+    },
+    {
+      "event": "click",
+      "count": 3,
+      "total_users": 3
+    },
+    {
+      "event": "control_change",
+      "count": 2,
+      "total_users": 2
+    },
+    {
+      "event": "login_started",
+      "count": 2,
+      "total_users": 2
+    },
+    {
+      "event": "form_start",
+      "count": 1,
+      "total_users": 1
+    },
+    {
+      "event": "login",
+      "count": 1,
+      "total_users": 1
+    },
+    {
+      "event": "sign_up",
+      "count": 1,
+      "total_users": 1
+    }
+  ],
+  "calculations": {
+    "blog_entry_share_percent": 58.2,
+    "engagement_rate_percent": 67.27
+  },
+  "limitations": [
+    "Small descriptive sample; no causal attribution or sequential funnel.",
+    "Internal/test traffic exclusion not verified; root landing repeated sessions were attributed to one active user.",
+    "sign_up is a recorded GA4 event, not independently verified account creation, paid conversion or retention.",
+    "New users are first visitors, not new registered accounts.",
+    "Landing page group home / intentionally includes only the root path, matching the earlier grouping. Localized home pages remain in other known pages.",
+    "Scroll event counts do not establish reading comprehension.",
+    "Traffic, landing, pages and events reconcile at 55 sessions / 38 active users / 3321 events where applicable.",
+    "The GA4 data quality indicator showed 100% of available data; this does not establish complete instrumentation."
+  ],
+  "sources": [
+    {
+      "report": "traffic",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_u.comparisonOption%3Ddisabled%26_u.date00%3D20260920%26_u.date01%3D20261103%26_r.explorerCard..seldim%3D%5B%22sessionDefaultChannelGrouping%22%5D&r=lifecycle-traffic-acquisition-v2&ruid=lifecycle-traffic-acquisition-v2,business-objectives,generate-leads&collectionId=business-objectives"
+    },
+    {
+      "report": "events",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25%26_u.comparisonOption%3Ddisabled%26_u.date00%3D20260920%26_u.date01%3D20261103&r=top-events&ruid=top-events,business-objectives,examine-user-behavior&collectionId=business-objectives"
+    },
+    {
+      "report": "pages",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25%26_u.comparisonOption%3Ddisabled%26_u.date00%3D20260920%26_u.date01%3D20261103&r=all-pages-and-screens&ruid=all-pages-and-screens,business-objectives,raise-brand-awareness&collectionId=business-objectives"
+    },
+    {
+      "report": "landing",
+      "url": "https://analytics.google.com/analytics/web/#/a406923214p552808316/reports/explorer?params=_u..nav%3Dmaui%26_r..dataFilters%3D%5B%7B%22type%22:1,%22fieldName%22:%22sessionDefaultChannelGrouping%22,%22evaluationType%22:1,%22expressionList%22:%5B%22Organic%20Search%22%5D,%22complement%22:false,%22isCaseSensitive%22:true,%22expression%22:%22%22%7D%5D%26_r.explorerCard..startRow%3D0%26_r.explorerCard..rowsPerPage%3D25%26_u.comparisonOption%3Ddisabled%26_u.date00%3D20260920%26_u.date01%3D20261103&r=landing-page&ruid=landing-page,business-objectives,generate-leads&collectionId=business-objectives"
+    }
+  ],
+  "method": "Read aggregated authenticated GA4 reports through browser UI. No account email, individual user ID or project ID retained."
+}
