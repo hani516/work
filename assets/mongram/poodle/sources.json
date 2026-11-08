@@ -1,0 +1,21 @@
+{
+  "source_commit": "916fa07",
+  "sources": [
+    "Mongram/Design/HomeDogs/toyPoodle-seated.svg",
+    "Mongram/Design/HomeDogs/toyPoodle-resting.svg",
+    "Mongram/Mongram/Core/HomePoodleMotion.swift",
+    "Mongram/Mongram/Views/HomeDogIllustration.swift",
+    "Mongram/scripts/generate_home_dog_interactions.py"
+  ],
+  "notes": "Geometry and bounded motion values reused from app source. Gallery repeats isolated actions to make each state visible; it is not a screen recording. Standing is omitted because the HomeDogIllustration selects seated/resting.",
+  "states": [
+    "seated",
+    "resting",
+    "ears",
+    "head",
+    "blink",
+    "yawn",
+    "paw",
+    "tail"
+  ]
+}
