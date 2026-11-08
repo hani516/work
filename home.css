@@ -41,3 +41,17 @@
   .project-panel:hover .product-screen,.project-panel:has(:focus-visible) .product-screen{transform:rotate(-7deg)}
   .project-panel:hover :is(.lt-cover-phones,.mg-cover-screens),.project-panel:has(:focus-visible) :is(.lt-cover-phones,.mg-cover-screens){transform:none}
 }
+
+/* Shared columns align every tool row; labels may wrap only inside their own cell. */
+.hero-summary{min-width:0}
+.hero-tools{width:min(100%,360px);margin-top:24px}
+.tools-label{font-size:10px;line-height:1.5;margin:0 0 12px}
+.tools-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr) minmax(0,.7fr);align-items:center;gap:10px 12px}
+.tools-row+.tools-row{margin-top:12px}
+.tools-row li{min-width:0;min-height:24px;gap:8px;font-size:11px;line-height:1.5;white-space:normal}
+.tools-row li>span:last-child{min-width:0;overflow-wrap:normal}
+.tool-mark{width:20px;height:20px}
+.tool-mark img{width:18px;height:18px}
+.tool-mark-figma img{width:30.72px;height:38.4px}
+.hero-project-link{justify-content:center;min-height:44px;margin-top:24px;padding:10px 16px;gap:0;border-radius:8px;background:var(--ink);color:#fff;font-size:12px;font-weight:500;line-height:1.5}
+.hero-project-link:hover{background:#414149;color:#fff}
