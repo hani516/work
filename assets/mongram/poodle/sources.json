@@ -7,7 +7,7 @@
     "Mongram/Mongram/Views/HomeDogIllustration.swift",
     "Mongram/scripts/generate_home_dog_interactions.py"
   ],
-  "notes": "Geometry and bounded motion values reused from app source. Gallery repeats isolated actions to make each state visible; it is not a screen recording. Standing is omitted because the HomeDogIllustration selects seated/resting.",
+  "notes": "Original app SVG geometry and source-evaluated motion. Gallery repetition and per-card controls are presentation affordances, not a claim about the app idle schedule.",
   "states": [
     "seated",
     "resting",
@@ -17,5 +17,7 @@
     "yawn",
     "paw",
     "tail"
-  ]
+  ],
+  "motion_frames": "app-motion.json",
+  "motion_extraction": "Original Swift HomePoodleMotion executed at 24fps; durations, breathing, blinking and easing unchanged. Each card replays an 8.4-second source segment and can be restarted by clicking."
 }
