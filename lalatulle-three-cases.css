@@ -51,3 +51,22 @@ body.lt-narrative #navigation .lt-case-brief dt::before{content:"0" counter(deci
 body.lt-narrative :is(figure,.ln-image-link):has(>img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"])),
 body.lt-narrative figure:has(>.ln-image-link>img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"])),
 body.lt-narrative img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"]){border-radius:0}
+
+/* Brand positioning, shown as context → decision → hierarchy. */
+body.lt-narrative .lt-brand-strategy .ln-stage-copy{max-width:none}
+.lt-position-facts,.lt-priority-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lt-position-facts{margin:32px 0 0}
+.lt-position-fact{padding:28px;border:1px solid #ded8dd;border-radius:12px;background:#f1edf0}
+.lt-strategy-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin-bottom:24px;background:#e2d7df;border-radius:50%;font-size:25px;color:#65445d}
+body.lt-narrative .lt-position-facts strong,body.lt-narrative .lt-priority-flow strong{display:block;font-size:27px;line-height:1.35;font-weight:600;letter-spacing:-.03em}
+body.lt-narrative .lt-position-facts p,body.lt-narrative .lt-priority-flow p{margin:12px 0 0;font-size:15px;line-height:1.6;color:#625b62}
+.lt-position-decision{text-align:center;padding:30px 24px 36px}
+.lt-position-decision>span{display:block;font-size:34px;color:#8d7185;margin-bottom:18px}
+body.lt-narrative .lt-position-decision strong{display:block;font-size:30px;line-height:1.5}
+body.lt-narrative .lt-position-decision p{font-size:16px;line-height:1.8;max-width:760px;margin:16px auto 0;color:#625b62}
+.lt-priority-flow{margin-bottom:48px}
+.lt-priority-flow>div{padding:28px;background:#e8eeeb;border-radius:12px;border-top:4px solid #64796f}
+.lt-priority-number{display:block;font-size:13px;letter-spacing:.08em;color:#5c6c62;margin-bottom:18px}
+@media(max-width:760px){.lt-position-facts,.lt-priority-flow{grid-template-columns:1fr;gap:12px}.lt-position-fact{padding:22px 22px 22px 90px;position:relative}.lt-strategy-icon{position:absolute;left:22px;top:22px;margin:0}body.lt-narrative .lt-position-facts strong,body.lt-narrative .lt-priority-flow strong{font-size:24px}.lt-position-decision{padding:24px 8px 30px}body.lt-narrative .lt-position-decision strong{font-size:25px}.lt-priority-flow>div{padding:22px}.lt-priority-number{margin-bottom:12px}}
+body.lt-narrative .ln-stage.lt-brand-strategy{display:block}
+body.lt-narrative .lt-brand-strategy>.ln-stage-copy{margin-bottom:32px;max-width:900px}
