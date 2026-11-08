@@ -77,3 +77,29 @@ body.lt-narrative .ln-cover-image>.ln-image-link{max-width:340px;border-radius:2
 body.lt-narrative .ln-cover-image>.ln-image-link>img{display:block;width:100%;height:auto;max-height:none;border-radius:20px}
 @media(max-width:720px){body.lt-narrative .ln-cover-image{padding:24px 16px;border-radius:12px}body.lt-narrative .ln-cover-image>.ln-image-link,body.lt-narrative .ln-cover-image>.ln-image-link>img{border-radius:12px}}
 @media(max-width:600px){body.lt-narrative .ln-cover-image{padding:26px 18px}body.lt-narrative .ln-cover-image>.ln-image-link{max-width:300px}}
+/* User-provided viewer-count notification as the PDP case cover. */
+body.lt-narrative .lt-case-thumbnail.lt-case-notice{display:flex;align-items:center;justify-content:center;padding:24px;background:#e8e5e7}
+body.lt-narrative .lt-case-notice img{width:100%;max-width:304px;height:auto;object-fit:contain}
+@media(max-width:760px){body.lt-narrative .lt-case-entry:has(.lt-case-notice){grid-template-columns:1fr}body.lt-narrative .lt-case-notice{grid-row:auto;grid-column:1/-1;height:130px;aspect-ratio:auto;margin-bottom:10px}}
+/* One continuous layout sketch instead of three repeated action cards. */
+.lt-layout-map{margin:24px auto 56px;max-width:820px}
+.lt-layout-map>figcaption{font-size:13px;letter-spacing:.08em;color:#72646e;margin-bottom:16px}
+.lt-layout-screen{border:1px solid #d7cbd3;border-radius:12px;overflow:hidden;background:white;box-shadow:0 18px 50px #42313c0b}
+.lt-layout-bar{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid #e6dce3;color:#5f4858}
+.lt-layout-bar b{font-family:Georgia,serif;font-size:25px;font-weight:400}
+.lt-layout-brand{position:relative;overflow:hidden;padding:40px 34px 52px;background:#e8dce3;min-height:250px}
+.lt-layout-eyebrow{font-size:11px;letter-spacing:.16em;color:#745a6b}
+body.lt-narrative .lt-layout-brand strong{display:block;position:relative;z-index:1;font-size:clamp(28px,3vw,42px);line-height:1.35;margin:22px 0 14px;max-width:70%}
+body.lt-narrative .lt-layout-brand p{position:relative;z-index:1;font-size:16px;line-height:1.7;max-width:68%;margin:0;color:#6c5263}
+.lt-layout-art{position:absolute;right:30px;bottom:0;display:flex;gap:10px;align-items:flex-end;opacity:.65}
+.lt-layout-art span{display:block;width:50px;height:160px;background:#c9b1c1;border-radius:100px 100px 0 0;transform:rotate(-8deg)}
+.lt-layout-art span:nth-child(2){height:200px;background:#b89bb0;transform:rotate(4deg)}
+.lt-layout-art span:nth-child(3){height:130px;background:#d5bfcd;transform:rotate(12deg)}
+.lt-layout-sale{display:flex;align-items:center;gap:22px;padding:16px 28px;background:#f7f2f5;border-bottom:1px solid #e5dbe2}
+.lt-layout-sale>span,.lt-layout-search>span{font-size:12px;letter-spacing:.12em;color:#866477}
+body.lt-narrative .lt-layout-sale p{font-size:15px;line-height:1.5;margin:0;color:#71616c}
+.lt-layout-search{padding:28px}
+body.lt-narrative .lt-layout-search strong{display:block;font-size:25px;line-height:1.5;margin:12px 0 20px}
+.lt-layout-filters{display:flex;gap:10px}.lt-layout-filters span{flex:1;border-bottom:1px solid #cabec6;padding:10px 4px;color:#73616c;font-size:14px}.lt-layout-filters span:after{content:'⌄';float:right}
+body.lt-narrative .lt-layout-caption{font-size:12px;color:#7d7079;text-align:center;margin:14px 0 0}
+@media(max-width:600px){.lt-layout-bar{padding:15px 20px}.lt-layout-brand{padding:28px 22px 36px;min-height:245px}.lt-layout-art{right:12px;opacity:.35}.lt-layout-art span{width:32px}.lt-layout-sale{padding:14px 20px;gap:16px}.lt-layout-search{padding:24px 20px}body.lt-narrative .lt-layout-search strong{font-size:23px}body.lt-narrative .lt-layout-brand strong{max-width:95%}body.lt-narrative .lt-layout-brand p{max-width:85%}}
