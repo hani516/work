@@ -10,8 +10,8 @@ body.lt-narrative{--ink:#29232b;--muted:#716b71;--accent:#754e65;--line:#dcd6d8;
 .lt-narrative a{color:inherit}
 .lt-narrative figure{margin:0;min-width:0}
 .lt-narrative figure img{display:block;width:100%;height:auto}
-.lt-narrative .ln-image-link{display:block;text-decoration:none;transition:opacity .2s}
-.lt-narrative .ln-image-link:hover{opacity:.86}
+.lt-narrative .ln-image-link{display:block}
+
 .lt-narrative figcaption{display:block;font-size:10px;letter-spacing:.12em;line-height:1.6;color:var(--muted);padding:13px 0;text-align:left}
 .lt-narrative .ln-eyebrow,.lt-narrative .ln-heading>span,.lt-narrative .ln-meta span{font-size:10px;letter-spacing:.14em;font-weight:600;color:var(--accent);line-height:1.7}
 /* Cover: unmistakable brand, quieter thesis, one unaltered mobile viewport. */
