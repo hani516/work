@@ -225,3 +225,6 @@ body.lt-narrative .ln-image-link:has(>img[src$="e9b4c.png"]),body.lt-narrative .
 .lt-narrative .ln-next .ln-next-card:hover{background:#ded3dc}
 .lt-narrative .ln-next .ln-next-card:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 @media(max-width:600px){.lt-narrative .ln-next .ln-next-card{align-items:flex-start;flex-direction:column;gap:12px;padding:24px}.lt-narrative .ln-next-card strong{font-size:32px}}
+
+/* Keep the specified carousel screenshot square in both comparison columns. */
+body.lt-narrative .ln-image-link:has(>img[src$="cf041.png"]),body.lt-narrative .ln-image-link img[src$="cf041.png"]{border-radius:0}
