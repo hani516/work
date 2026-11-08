@@ -214,3 +214,7 @@ body.lt-narrative .ln-image-link:has(>img[src$="e9b4c.png"]),body.lt-narrative .
 .lt-narrative .ln-experiment-flow li{flex-direction:column;gap:14px}
 .lt-narrative .ln-experiment-flow svg{width:32px;height:32px;flex:0 0 32px;color:#75526c}
 @media(max-width:760px){.lt-narrative .ln-experiment-flow li{flex-direction:row;justify-content:flex-start;text-align:left;gap:16px;padding:18px 22px}.lt-narrative .ln-experiment-flow li span{font-size:16px;line-height:1.6}}
+
+/* Home and Halloween symbols remain decorative; translated text names each link. */
+.lt-narrative .ln-meta .ln-live-button .ln-live-icon{display:block;width:20px;height:20px;flex:0 0 20px}
+.lt-narrative .ln-meta .ln-live-button .ln-live-label{font:inherit;color:inherit;letter-spacing:0;text-transform:none}
