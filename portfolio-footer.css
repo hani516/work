@@ -29,3 +29,8 @@ body .portfolio-next-section>a{font-size:clamp(28px,4vw,48px);line-height:1.25;f
 body.lt-narrative .portfolio-next-section .ln-next-card{display:flex;justify-content:space-between;align-items:center;width:100%;padding:0;min-height:0;background:transparent;border-radius:0;color:var(--next-ink)}
 body.lt-narrative .portfolio-next-section .ln-next-card strong{font-size:clamp(28px,4vw,48px);font-family:Inter,sans-serif;font-weight:500}
 @media(max-width:600px){body .portfolio-next-section{width:calc(100% - 40px);margin-top:40px;padding:36px 0}body.lt-narrative .portfolio-next-section{padding:36px 0}}
+body .portfolio-next-section.mg-next-full{width:100%;max-width:none;padding:0;box-shadow:none;clip-path:none}
+body .portfolio-next-section.mg-next-full>a{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;padding:48px max(20px,calc((100% - 1160px)/2));color:var(--next-ink)}
+body .portfolio-next-section.mg-next-full strong{font:inherit}
+body .portfolio-next-section.mg-next-full>a:focus-visible{outline:3px solid #486946;outline-offset:-6px}
+@media(max-width:600px){body .portfolio-next-section.mg-next-full>a{padding:36px 20px}}
