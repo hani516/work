@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="home.css?v=15" />
+    <link rel="stylesheet" href="home.css?v=17" />
   </head>
   <body>
     <header class="site-header" data-elevate>
@@ -29,13 +29,16 @@
     <main id="top">
       <section class="profile-hero page-shell" id="about">
         <div class="hero-intro">
-          <p class="hero-eyebrow">UI/UX · Product Design</p>
-          <h1 lang="en">Design with<br /><em>clarity.</em></h1>
+          <div class="designer-note">
+            <img src="assets/profile/yohan-profile.webp" alt="Yohan Kim" width="1000" height="1286" fetchpriority="high" />
+            <div><p class="designer-name">Yohan Kim</p><p class="designer-role">Product Designer</p></div>
+          </div>
+          <h1 lang="en">From insight<br /><em>to product.</em></h1>
         </div>
         <div class="hero-summary">
           <p class="hero-lead" data-i18n="homeLead">データで課題を見つけ、<br />使えるプロダクトへ。</p>
           <p class="hero-description" data-i18n="homeBody">EC実務で培った分析の視点をもとに、UX・UIの設計から実装まで取り組みます。</p>
-          <a class="hero-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
+          <a class="hero-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span></a>
         </div>
       </section>
 
@@ -45,7 +48,13 @@
           <div class="project-panels reveal" aria-label="Selected project case studies">
             <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
               <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="homeLalatulleBody">特集・ホームの構成変更と、商品ページのA/Bテスト。</p></div>
-              <div class="panel-visual cover-lalatulle-compare" aria-hidden="true"><div class="cover-label"><strong>LaLaTulle</strong></div><div class="lt-cover-comparison"><div><span data-i18n="lalatulleBefore">改修前</span><div><img src="assets/lalatulle/lalatulle-navigation-before.png" alt="" /></div></div><div><span data-i18n="lalatulleAfter">改修後</span><div><img src="assets/lalatulle/lalatulle-navigation-after.png" alt="" /></div></div></div><p class="lt-cover-summary" data-i18n="lalatulleHeaderChange">ヘッダーのアイコンを6個から3個に整理</p></div>
+              <div class="panel-visual cover-lalatulle-mobile" aria-hidden="true">
+                <div class="lt-cover-brand"><strong>LaLaTulle</strong></div>
+                <div class="lt-cover-phones">
+                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-home-20261108.jpg" alt="" width="585" height="1266" loading="lazy" /></div>
+                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-halloween-20261108.jpg" alt="" width="585" height="1266" loading="lazy" /></div>
+                </div>
+              </div>
             </article>
             <article class="project-panel panel-snapside" data-project-href="snapside.html">
               <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">Product History · Web / macOS</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="homeSnapsideBody">プロダクトの変化を記録。設計・実装から初期運営まで。</p></div>
@@ -56,10 +65,9 @@
         </div>
       </section>
 
-      <section class="contact-section page-shell" id="contact">
-        <div class="contact-copy reveal"><h2 data-i18n="contactTitle">一緒に、つくりましょう。</h2></div>
+      <section class="contact-section page-shell" id="contact" aria-label="Contact">
         <div class="contact-links reveal">
-          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong aria-hidden="true">↗</strong></a>
+          <a class="contact-link magnetic" href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noreferrer"><span>LinkedIn</span></a>
           <button class="contact-link email-copy magnetic" type="button" data-copy-email><span>Email</span><strong>kim93yohan@gmail.com</strong></button>
         </div>
       </section>
