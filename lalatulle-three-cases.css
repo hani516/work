@@ -125,3 +125,19 @@ body.lt-narrative .ln-chapters.lt-case-index{grid-template-columns:repeat(4,minm
 body.lt-narrative .lt-case-entry[href="#navigation"] .lt-case-thumbnail{display:flex;align-items:center;justify-content:center;padding:14px;background:#fff}body.lt-narrative .lt-case-entry[href="#navigation"] .lt-case-thumbnail img{width:100%;height:auto;max-height:100%;object-fit:contain;object-position:center}
 body.lt-narrative .lt-case-entry[href="#first-view"] .lt-case-thumbnail{display:flex;align-items:center;justify-content:center;background:#eee8eb}body.lt-narrative .lt-case-entry[href="#first-view"] .lt-case-thumbnail img{width:100%;height:100%;object-fit:contain;object-position:center}
 body.lt-narrative #halloween .lt-case-brief>div{border:0}
+
+/* Case dates name implementation milestones or measurement windows explicitly. */
+body.lt-narrative .ln-heading .ln-case-period{max-width:none;margin:0;font-size:17px;font-weight:400;line-height:1.6;color:var(--muted);letter-spacing:0;text-wrap:balance}
+
+/* Open the live campaign after reading its case study. */
+.lt-narrative .ln-case-cta{display:flex;justify-content:center;margin:44px 0 0}
+.lt-narrative .ln-case-cta .ln-live-button{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 24px;border:1px solid var(--ink);border-radius:5px;background:var(--ink);color:#fff;font-size:16px;font-weight:500;line-height:1.5;text-decoration:none;text-align:center}
+.lt-narrative .ln-case-cta .ln-live-button:hover{background:var(--accent);border-color:var(--accent)}
+.lt-narrative .ln-case-cta .ln-live-button:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+
+/* Read the first-view priorities vertically, at headline scale. */
+body.lt-narrative #first-view .ln-decisions{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin:40px 0 64px}
+body.lt-narrative #first-view .ln-decisions li{align-items:baseline;gap:24px;min-width:0}
+body.lt-narrative #first-view .ln-decisions b{flex:0 0 40px;padding-top:0;font-size:22px;line-height:1.5;color:var(--accent)}
+body.lt-narrative #first-view .ln-decisions span{font-size:clamp(28px,3.2vw,42px);line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+html[lang="ja"] body.lt-narrative #first-view .ln-decisions span{word-break:normal}
