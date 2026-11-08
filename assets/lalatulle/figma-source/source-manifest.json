@@ -1,0 +1,98 @@
+{
+  "retrieved": "2026-11-08",
+  "figmaFile": "FjEflM1sG0tm09iLjL2tIX",
+  "frame": "1:618",
+  "provenance": "Individual original image assets supplied in Figma. Not exports of full case-study frames. Home before/after is an HTML composition of these supplied assets, not a raw screenshot.",
+  "assets": [
+    {
+      "variable": "img",
+      "file": "74861.png"
+    },
+    {
+      "variable": "img1",
+      "file": "f99cc.png"
+    },
+    {
+      "variable": "imgBunny",
+      "file": "4b8f8.png"
+    },
+    {
+      "variable": "imgBunny1",
+      "file": "b94da.png"
+    },
+    {
+      "variable": "img93",
+      "file": "782b0.png"
+    },
+    {
+      "variable": "img62",
+      "file": "22c7c.png"
+    },
+    {
+      "variable": "img2",
+      "file": "34327.png"
+    },
+    {
+      "variable": "img3",
+      "file": "e0e7f.png"
+    },
+    {
+      "variable": "img4",
+      "file": "d018a.png"
+    },
+    {
+      "variable": "imgQA",
+      "file": "f6bc3.png"
+    },
+    {
+      "variable": "imgBeforeProvidedScreenshot",
+      "file": "b5fe8.png"
+    },
+    {
+      "variable": "imgAfterProvidedScreenshot",
+      "file": "655e4.png"
+    },
+    {
+      "variable": "imgCarouselSourceCompositionPreviousBanner",
+      "file": "5f2af.png"
+    },
+    {
+      "variable": "imgCarouselSourceCompositionMainBanner",
+      "file": "e9b4c.png"
+    },
+    {
+      "variable": "imgCarouselSourceCompositionNextBanner",
+      "file": "cf041.png"
+    },
+    {
+      "variable": "imgTopicsProvidedScreenshot",
+      "file": "edc00.png"
+    },
+    {
+      "variable": "imgCarouselSourceCompositionMainBanner1",
+      "file": "11771.png"
+    },
+    {
+      "variable": "imgMembershipCoupon",
+      "file": "e4b49.png"
+    },
+    {
+      "variable": "imgSaleCoupon",
+      "file": "e99cc.png"
+    },
+    {
+      "variable": "imgSimpleSearchProvidedScreenshot",
+      "file": "473ac.png"
+    },
+    {
+      "variable": "imgUiUiProvidedScreenshot",
+      "file": "39b3c.png"
+    }
+  ],
+  "notes": [
+    "Local HTML requested for direct capture was not rendered: file:// browser access denied. See ../local-html-20261108/source-manifest.json.",
+    "Current live screenshots dated 2026-11-08 remain distinct from historical evidence.",
+    "Metric text verified against Figma integrated nodes 20:247,28:316,28:348,28:395. Search point delta omitted because rounded Figma display and unrounded source report differ.",
+    "Primary narrative is fully visible; no accordion."
+  ]
+}

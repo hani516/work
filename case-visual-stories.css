@@ -1,0 +1,129 @@
+/* Editorial, image-led case studies. Scoped so the homepage and Mongram remain independent. */
+body:is(.project-snapside,.project-lalatulle) .cc-shell{width:min(1320px,calc(100% - 96px))}
+body:is(.project-snapside,.project-lalatulle) .cc-hero{padding-top:72px}
+body:is(.project-snapside,.project-lalatulle) .cc-hero h1{font-size:clamp(72px,10vw,148px);line-height:1.02;margin:32px 0}
+body:is(.project-snapside,.project-lalatulle) .cc-hero .cc-title{font-size:clamp(34px,4.5vw,64px);line-height:1.28;max-width:1080px;letter-spacing:-.045em}
+body:is(.project-snapside,.project-lalatulle) .cc-premise{font-size:19px;line-height:1.85;max-width:780px}
+body:is(.project-snapside,.project-lalatulle) .cc-links a{font-size:15px}
+body.project-snapside .sp-gallery{margin-top:60px}
+body.project-snapside .sp-gallery .product-shot{max-width:none;width:100%;margin:0}
+body.project-snapside .sp-gallery .product-shot img{width:100%;max-height:none;height:auto;object-fit:contain}
+body.project-snapside .sp-gallery-tabs{gap:12px;padding-bottom:20px}
+body.project-snapside .sp-gallery-tabs button{font-size:15px;padding:12px 20px}
+body.project-snapside .sp-section,body.project-snapside .cc-work{padding-top:112px}
+body.project-snapside .sp-section-head h2{font-size:clamp(36px,5vw,70px);max-width:1040px;line-height:1.24}
+body.project-snapside .sp-section-head p{font-size:18px;max-width:820px}
+body.project-snapside .cc-decision{grid-template-columns:1fr;gap:36px;padding-block:68px}
+body.project-snapside .cc-decision-copy{max-width:900px}
+body.project-snapside .cc-decision h3{font-size:clamp(34px,4vw,56px);line-height:1.25}
+body.project-snapside .cc-decision-copy>p{font-size:18px;max-width:760px}
+body.project-snapside .sp-design-visual{gap:24px}
+body.project-snapside .sp-zoom-figure{border-radius:14px}
+body.project-snapside .sp-origin-steps p,body.project-snapside .sp-plan-decisions p,body.project-snapside .sp-seo-steps p{font-size:16px;line-height:1.8}
+body.project-snapside .sp-origin-steps h3,body.project-snapside .sp-plan-decisions h3,body.project-snapside .sp-seo-steps h3{font-size:23px}
+body.project-snapside .sp-facts strong{font-size:clamp(48px,6vw,86px)}
+body.project-snapside .sp-facts>div>span,body.project-snapside .sp-facts>div p,body.project-snapside .sp-fact-note,body.project-snapside .sp-footnote{font-size:13px}
+body.project-snapside .sp-system-map{padding:48px;gap:24px;border-radius:16px}
+body.project-snapside .sp-tool-stack>div,body.project-snapside .sp-action-stack strong{font-size:16px}
+body.project-snapside .sp-action-stack div span{font-size:13px}
+/* Fashion case: a quiet magazine cover, then large evidence pairs. */
+body.project-lalatulle{background:#fcfaf8}
+body.project-lalatulle .lt-visual-cover{margin:56px 0 0;background:#eee4e4;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:1fr .55fr;align-items:end}
+body.project-lalatulle .lt-visual-cover img{width:100%;max-height:820px;object-fit:contain;object-position:center;display:block}
+body.project-lalatulle .lt-visual-cover figcaption{font-family:Georgia,'Noto Sans JP','Noto Sans KR',serif;font-size:clamp(26px,3.2vw,46px);line-height:1.5;letter-spacing:-.04em;padding:48px;color:#714451}
+body.project-lalatulle .lt-chapter{padding:100px 0}
+body.project-lalatulle .lt-story h2{font-size:clamp(36px,4.6vw,66px);line-height:1.28}
+body.project-lalatulle .lt-story p{font-size:18px;line-height:1.85}
+body.project-lalatulle .lt-story h3{font-size:28px}
+body.project-lalatulle .lt-story-number{font-size:60px}
+body.project-lalatulle .lt-header-pair{gap:36px;margin-block:48px}
+body.project-lalatulle .lt-header-pair figure{padding:30px;background:white;border-radius:12px}
+body.project-lalatulle .lt-header-pair img{width:100%;max-height:none;object-fit:contain}
+body.project-lalatulle .lt-story figcaption,body.project-lalatulle .lt-story p.lt-story-note{font-size:14px;line-height:1.75}
+body.project-lalatulle .lt-banner-proof img{max-height:none}
+body.project-lalatulle .lt-full-comparison{margin-block:60px}
+/* Wivlo: let the product precede the longer research narrative. */
+body.wivlo-case-study-page{--wivlo-content:1320px}
+body.wivlo-case-study-page .wivlo-hero{width:min(1320px,calc(100% - 96px));display:block;padding-top:132px}
+body.wivlo-case-study-page .project-hero-copy{max-width:1060px}
+body.wivlo-case-study-page .wivlo-hero h1{font-size:clamp(80px,10vw,148px);line-height:1.02;letter-spacing:-.06em}
+body.wivlo-case-study-page .wivlo-hero h2{font-size:clamp(36px,4.5vw,64px);line-height:1.28;max-width:1050px}
+body.wivlo-case-study-page .case-lead{font-size:19px;line-height:1.85;max-width:840px}
+body.wivlo-case-study-page .wivlo-hero-screen{width:100%;max-width:none;margin:56px 0 0;padding:32px;background:#eaf1fb;border-radius:20px;overflow:hidden}
+body.wivlo-case-study-page .wivlo-hero-screen img{width:100%;height:auto;max-height:none;object-fit:contain;border-radius:10px}
+body.wivlo-case-study-page .case-section,body.wivlo-case-study-page .ai-inner,body.wivlo-case-study-page .case-index{width:min(1320px,calc(100% - 96px))}
+body.wivlo-case-study-page .section-heading h2{font-size:clamp(34px,4.2vw,60px);line-height:1.3;letter-spacing:-.035em}
+body.wivlo-case-study-page .section-heading>p,body.wivlo-case-study-page .section-heading>div+p{font-size:18px;line-height:1.85}
+body.wivlo-case-study-page .split-heading{grid-template-columns:1.25fr 1fr;gap:64px}
+body.wivlo-case-study-page .experience-screen .interface-main{width:100%;max-width:none}
+body.wivlo-case-study-page .interface-main>img{aspect-ratio:auto;object-fit:contain;width:100%}
+body.wivlo-case-study-page .wivlo-mobile-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+body.wivlo-case-study-page .wivlo-mobile-shot img{width:100%;max-height:none;object-fit:contain}
+body.wivlo-case-study-page .wivlo-first-look{width:min(1320px,calc(100% - 96px));margin:90px auto;background:#edf3fc;border-radius:24px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;overflow:hidden}
+body.wivlo-case-study-page .visual-eyebrow{font-size:13px;letter-spacing:.1em;color:#4e6f9e}
+body.wivlo-case-study-page .visual-interlude h2{font-size:clamp(32px,3.3vw,48px);line-height:1.35;letter-spacing:-.035em;margin:24px 0;white-space:pre-line}
+body.wivlo-case-study-page .visual-interlude p{font-size:17px;line-height:1.8;color:#5f6b7b}
+body.wivlo-case-study-page .visual-phone-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+body.wivlo-case-study-page .visual-phone-pair figure{margin:0}
+body.wivlo-case-study-page .visual-phone-pair figure+figure{margin-top:72px}
+body.wivlo-case-study-page .visual-phone-pair img{width:100%;border-radius:16px;box-shadow:0 18px 40px #163b6912}
+body.wivlo-case-study-page .learning-section .usage-metrics strong{font-size:clamp(48px,5.5vw,76px)}
+@media(max-width:900px){
+ body:is(.project-snapside,.project-lalatulle) .cc-shell,body.wivlo-case-study-page :is(.wivlo-hero,.case-section,.ai-inner,.case-index,.wivlo-first-look){width:calc(100% - 48px)}
+ body.wivlo-case-study-page .split-heading{grid-template-columns:1fr;gap:24px}
+ body.wivlo-case-study-page .wivlo-first-look{padding:36px;gap:30px}
+ body.project-lalatulle .lt-visual-cover{grid-template-columns:1fr}
+ body.project-lalatulle .lt-visual-cover img{max-height:720px}
+ body.project-lalatulle .lt-visual-cover figcaption{padding:28px 36px}
+ body.project-snapside .sp-system-map{padding:28px}
+}
+@media(max-width:620px){
+ body:is(.project-snapside,.project-lalatulle) .cc-shell,body.wivlo-case-study-page :is(.wivlo-hero,.case-section,.ai-inner,.case-index,.wivlo-first-look){width:calc(100% - 36px)}
+ body:is(.project-snapside,.project-lalatulle) .cc-hero{padding-top:30px}
+ body:is(.project-snapside,.project-lalatulle) .cc-hero h1{font-size:clamp(55px,16vw,88px);margin-block:26px}
+ body:is(.project-snapside,.project-lalatulle) .cc-hero .cc-title{font-size:32px;line-height:1.35}
+ body:is(.project-snapside,.project-lalatulle) .cc-premise{font-size:17px}
+ body.project-snapside .sp-gallery{margin-top:32px}
+ body.project-snapside .sp-gallery-tabs{gap:6px;overflow-x:auto}
+ body.project-snapside .sp-gallery-tabs button{font-size:13px;padding:10px 12px;flex-shrink:0}
+ body.project-snapside .sp-section,body.project-snapside .cc-work{padding-top:70px}
+ body.project-snapside .cc-decision{padding-block:42px}
+ body.project-snapside .sp-section-head p,body.project-snapside .cc-decision-copy>p{font-size:17px}
+ body.project-snapside .sp-facts strong{font-size:40px}
+ body.project-snapside .sp-facts>div{padding:20px 10px}
+ body.project-snapside .sp-facts>div>span{font-size:12px}
+ body.project-snapside .sp-action-stack{grid-template-columns:1fr}
+ body.project-snapside .sp-system-map{padding:22px}
+ body.project-lalatulle .lt-visual-cover{margin-top:36px;border-radius:12px}
+ body.project-lalatulle .lt-visual-cover figcaption{padding:24px;font-size:27px}
+ body.project-lalatulle .lt-chapter{padding:64px 0}
+ body.project-lalatulle .lt-story h2{font-size:34px}
+ body.project-lalatulle .lt-story h3{font-size:24px}
+ body.project-lalatulle .lt-story p{font-size:17px}
+ body.project-lalatulle .lt-story-number{font-size:32px}
+ body.project-lalatulle .lt-header-pair{gap:22px;margin-block:30px}
+ body.project-lalatulle .lt-header-pair figure{padding:16px}
+ body.wivlo-case-study-page .wivlo-hero{padding-top:94px}
+ body.wivlo-case-study-page .wivlo-hero h1{font-size:80px}
+ body.wivlo-case-study-page .wivlo-hero h2{font-size:34px}
+ body.wivlo-case-study-page .case-lead{font-size:17px}
+ body.wivlo-case-study-page .wivlo-hero-screen{margin-top:32px;padding:12px;border-radius:12px}
+ body.wivlo-case-study-page .wivlo-first-look{grid-template-columns:1fr;padding:28px 20px;margin-block:56px;gap:26px}
+ body.wivlo-case-study-page .visual-interlude h2{font-size:32px}
+ body.wivlo-case-study-page .visual-phone-pair{gap:14px}
+ body.wivlo-case-study-page .visual-phone-pair figure+figure{margin-top:36px}
+ body.wivlo-case-study-page .wivlo-mobile-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+ body.wivlo-case-study-page .section-heading>p,body.wivlo-case-study-page .section-heading>div+p{font-size:17px}
+}
+body.wivlo-case-study-page .wivlo-hero{padding-top:100px}
+body.wivlo-case-study-page .wivlo-hero h1{margin-block:18px 28px}
+body.wivlo-case-study-page .visual-project-context{display:grid;grid-template-columns:1.3fr 1fr;gap:24px 56px;padding-top:36px}
+body.wivlo-case-study-page .visual-project-context .case-meta{margin:0;padding-top:0;border:0}
+body.wivlo-case-study-page .visual-project-context .case-links{margin:0}
+body.project-snapside .sp-gallery-tabs{display:flex;width:max-content;max-width:100%;overflow-x:auto}
+body.project-snapside .sp-gallery-tabs button{white-space:nowrap;word-break:normal;flex:0 0 auto}
+@media(max-width:620px){
+ body.wivlo-case-study-page .wivlo-hero{padding-top:94px}
+ body.wivlo-case-study-page .visual-project-context{grid-template-columns:1fr;gap:20px;padding-top:28px}
+ body.project-snapside .sp-gallery-tabs button{padding:10px 11px;font-size:12px}
+}
