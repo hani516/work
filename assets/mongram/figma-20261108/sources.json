@@ -1,0 +1,69 @@
+{
+  "reference": "https://www.figma.com/design/FjEflM1sG0tm09iLjL2tIX/Portfolio?node-id=1-2",
+  "checked_at": "2026-11-08",
+  "adaptation": "Existing T7 dog icon and full-size Home/walk introduction preserved. Missing Figma story sections reflowed for web; hypotheses and design rationale remain visible. Phone pairs stack on small screens.",
+  "existing_images": "Five November 5 app/simulator screenshots were downloaded again from current Figma contexts on November 8 and SHA-256 matched the earlier candidate files. Reused unchanged in the T7 portfolio.",
+  "new_assets": [
+    {
+      "file": "poodle-seated.png",
+      "node": "4:49",
+      "type": "Figma original illustration export"
+    },
+    {
+      "file": "maltese-seated.png",
+      "node": "4:81",
+      "type": "Figma original illustration export"
+    },
+    {
+      "file": "breeds-figma.png",
+      "node": "4:196",
+      "type": "Figma original character-library export"
+    }
+  ],
+  "limits": "No new app capture. Initial Home diagram reconstructed, not historical screenshot. Demand and retention unvalidated.",
+  "verified_codebase": {
+    "frameworks": [
+      "Swift",
+      "SwiftUI",
+      "SwiftData"
+    ],
+    "evidence": "Native app entry point imports SwiftUI and SwiftData; Swift package manifest confirms Swift."
+  },
+  "screenshots": {
+    "history-demo.png": {
+      "node": "4:740",
+      "sha256": "99bacae793be93d97b7cc44e1bd80b258018ecd0ecf0bf8bb2dcd2b21c00ae1c",
+      "capture_date": "2026-11-05",
+      "kind": "simulator demonstration",
+      "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence."
+    },
+    "replay-demo.png": {
+      "node": "4:743",
+      "sha256": "c3b3adc5a48caace82abf8d7eb91f52f15218eb63de2bbf6bc4585e4b51a38e2",
+      "capture_date": "2026-11-05",
+      "kind": "simulator demonstration",
+      "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence."
+    },
+    "home-demo.png": {
+      "node": "4:144",
+      "sha256": "65dcdc1a80bf1d3080d40dc3236583178b604595a0ac69e138aed51fc30cd527",
+      "capture_date": "2026-11-05",
+      "kind": "simulator demonstration",
+      "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence."
+    },
+    "walk-demo.png": {
+      "node": "4:726",
+      "sha256": "3ac801c7b3d2b533ea3f01be55210267c2791626788d95a914d77343f1dac102",
+      "capture_date": "2026-11-05",
+      "kind": "simulator demonstration",
+      "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence."
+    },
+    "lockscreen-demo.png": {
+      "node": "4:729",
+      "sha256": "2e9296e02136576e3424d3788521619ed7d6c09536e0ef4a0892e2941a285746",
+      "capture_date": "2026-11-05",
+      "kind": "simulator demonstration",
+      "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence."
+    }
+  }
+}
