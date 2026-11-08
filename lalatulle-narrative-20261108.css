@@ -228,3 +228,26 @@ body.lt-narrative .ln-image-link:has(>img[src$="e9b4c.png"]),body.lt-narrative .
 
 /* Keep the specified carousel screenshot square in both comparison columns. */
 body.lt-narrative .ln-image-link:has(>img[src$="cf041.png"]),body.lt-narrative .ln-image-link img[src$="cf041.png"]{border-radius:0}
+
+/* The density reduction and the later tab interaction are separate stages. */
+.lt-narrative .ln-category-update .ln-next-iteration{margin-top:0}
+.lt-narrative .ln-tab-screen{width:100%;max-width:520px;justify-self:center}
+.lt-narrative .ln-category-continuation{margin-top:24px}
+.lt-narrative .ln-category-continuation p{font-size:16px;line-height:1.6;margin:0 0 14px;text-align:center}
+.lt-narrative .ln-category-continuation ol{display:grid;gap:24px;list-style:none;margin:0;padding:0}
+.lt-narrative .ln-category-continuation li{position:relative;padding:12px;text-align:center;background:#fff;border-radius:6px;font-size:18px;line-height:1.4}
+.lt-narrative .ln-category-continuation li::before{content:"↓";position:absolute;top:-24px;left:0;width:100%;color:var(--muted);font-size:18px}
+.lt-narrative .ln-category-continuation li:first-child::before{content:none}
+.lt-narrative .ln-category-continuation li:last-child{background:none;padding:0}
+
+/* Footer crops stay in their original vertical sequence; purposes sit beside them. */
+.lt-narrative .ln-footer-stage{margin:80px 0}
+.lt-narrative .ln-footer-evidence{display:block;max-width:960px;margin:36px auto 0;padding:0}
+.lt-narrative .ln-footer-evidence>.ln-footer-part{display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);align-items:center;gap:40px;margin:0;padding:0}
+body.lt-narrative .ln-footer-part>.ln-image-link,body.lt-narrative .ln-footer-part>.ln-image-link>img{border-radius:0}
+body.lt-narrative .ln-footer-part:first-child>.ln-image-link{border-radius:8px 8px 0 0}
+body.lt-narrative .ln-footer-part:last-child>.ln-image-link{border-radius:0 0 8px 8px}
+.lt-narrative .ln-footer-part figcaption{padding:24px 0;letter-spacing:0}
+.lt-narrative .ln-footer-part h4{font-size:22px;line-height:1.5;margin:0 0 14px}
+.lt-narrative .ln-footer-part p{font-size:16px;line-height:1.85;margin:0;color:var(--muted)}
+@media(max-width:760px){.lt-narrative .ln-footer-evidence>.ln-footer-part{grid-template-columns:1fr;gap:0;margin-bottom:32px}.lt-narrative .ln-footer-evidence>.ln-footer-part:last-child{margin-bottom:0}.lt-narrative .ln-footer-part figcaption{padding:20px 0 0}.lt-narrative .ln-footer-part h4{font-size:21px;margin-bottom:10px}body.lt-narrative .ln-footer-part>.ln-image-link{border-radius:8px}}
