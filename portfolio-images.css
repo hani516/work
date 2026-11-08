@@ -1,0 +1,11 @@
+/* Slight rounding for content images. Device frames, portraits and icons keep their own shapes. */
+:root{--portfolio-image-radius:8px}
+:where(.ln-image-link img,.n-character-library img,.product-shot img,.product-screen-crop img,.wivlo-hero-screen img,.interface-main img,.ai-product-visual img,.wivlo-mobile-shot img){border-radius:var(--portfolio-image-radius)}
+/* Clip LaLaTulle evidence at its visible edge, including cropped source images. */
+body.lt-narrative .ln-image-link{border-radius:var(--portfolio-image-radius);overflow:hidden}
+body.lt-narrative .ln-phone-screen .ln-image-link{border-radius:inherit}
+body.lt-narrative .ln-grid-after{border-radius:var(--portfolio-image-radius)}
+body.lt-narrative .ln-fomo-visual>figure{border-radius:var(--portfolio-image-radius)}
+/* Standalone desktop captures and presentation boards have no device frame to retain. */
+html body.wivlo-case-study-page :is(.wivlo-hero-screen,.interface-main,.ai-product-visual,.wivlo-mobile-shot)>img{border-radius:var(--portfolio-image-radius)}
+body.narrative-case .n-character-library img{border-radius:var(--portfolio-image-radius)}
