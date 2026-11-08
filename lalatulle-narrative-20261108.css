@@ -137,3 +137,26 @@ body.lt-narrative #halloween{background:transparent}
 body.lt-narrative .case-header.project-page-header{border-bottom:0;box-shadow:none}
 
 body.lt-narrative :is(.ln-meta,.ln-chapters,.ln-heading>span,.ln-stage,.ln-result,.ln-metric,.ln-note,.ln-seo,.ln-home-composition,.ln-next){border:0}
+
+/* Landing-page results pair a clear metric name with its increase. */
+.lt-narrative .ln-growth-metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin:38px 0 32px}
+.lt-narrative .ln-growth-metrics .ln-metric p{font-size:19px;font-weight:500;line-height:1.5;color:var(--ink);margin:0 0 14px}
+.lt-narrative .ln-growth-metrics .ln-metric strong{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;font-size:clamp(42px,4.8vw,64px);line-height:1.15}
+.lt-narrative .ln-growth-metrics .ln-metric strong span{font-size:16px;font-weight:500;letter-spacing:0;line-height:1.5}
+@media(max-width:760px){
+ .lt-narrative .ln-growth-metrics{grid-template-columns:1fr;gap:28px;margin:28px 0}
+ .lt-narrative .ln-growth-metrics .ln-metric{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:18px}
+ .lt-narrative .ln-growth-metrics .ln-metric p{font-size:17px;margin:0;max-width:200px}
+ .lt-narrative .ln-growth-metrics .ln-metric strong{display:block;font-size:44px;text-align:right;white-space:nowrap}
+ .lt-narrative .ln-growth-metrics .ln-metric strong span{display:block;font-size:13px;margin-top:3px}
+}
+@media(max-width:360px){
+ .lt-narrative .ln-growth-metrics .ln-metric p{font-size:16px}
+ .lt-narrative .ln-growth-metrics .ln-metric strong{font-size:38px}
+}
+
+/* This category comparison reads top to bottom, at one shared image scale. */
+.lt-narrative .ln-category-pair{grid-template-columns:1fr;gap:14px;width:100%;max-width:650px;margin-inline:auto}
+.lt-narrative .ln-category-pair .ln-category-before{width:67.9507%;justify-self:center}
+.lt-narrative .ln-category-pair figure:last-child{width:100%;justify-self:center}
+.lt-narrative .ln-compare-arrow{display:block;text-align:center;color:var(--accent);font-size:32px;font-weight:400;line-height:1;padding:4px 0 14px}
