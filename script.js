@@ -1,5 +1,7 @@
 const translations = {
   ja: {
+    homeCompanyProjects: "会社プロジェクト",
+    homePersonalProjects: "個人プロジェクト",
     lalatulleBefore: "改修前",
     lalatulleAfter: "改修後",
     lalatulleHeaderChange: "ヘッダーのアイコンを6個から3個に整理",
@@ -47,6 +49,8 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
+    homeCompanyProjects: "Company project",
+    homePersonalProjects: "Personal projects",
     lalatulleBefore: "Before",
     lalatulleAfter: "After",
     lalatulleHeaderChange: "Header icons changed from 6 to 3",
@@ -94,6 +98,8 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
+    homeCompanyProjects: "회사 프로젝트",
+    homePersonalProjects: "개인 프로젝트",
     lalatulleBefore: "개선 전",
     lalatulleAfter: "개선 후",
     lalatulleHeaderChange: "헤더 아이콘을 6개에서 3개로 정리",
