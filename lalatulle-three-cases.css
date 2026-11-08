@@ -36,16 +36,16 @@ body.lt-narrative .lt-experiment-result .lt-result-scope{font-size:14px;color:va
 }
 
 /* Home landing: four clearly separated decision cards. */
-body.lt-narrative #navigation .lt-case-brief{gap:16px;padding:0;margin:36px 0 42px;counter-reset:decision}
-body.lt-narrative #navigation .lt-case-brief>div{counter-increment:decision;padding:24px;border:1px solid #e2dce0;border-radius:12px;background:#f1ecef}
-body.lt-narrative #navigation .lt-case-brief>div:nth-child(2){background:#eeedf3}
-body.lt-narrative #navigation .lt-case-brief>div:nth-child(3){background:#eaf0ef}
-body.lt-narrative #navigation .lt-case-brief>div:nth-child(4){background:#e7eee7;border-color:#d5dfd5}
-body.lt-narrative #navigation .lt-case-brief dt{display:flex;align-items:center;gap:10px;font-size:14px;color:#594454}
-body.lt-narrative #navigation .lt-case-brief dt::before{content:"0" counter(decision);font-size:12px;font-weight:500;color:#766a73}
-@media(max-width:1050px){body.lt-narrative #navigation .lt-case-brief{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){body.lt-narrative #navigation .lt-case-brief{gap:12px;margin:26px 0 32px}body.lt-narrative #navigation .lt-case-brief>div{padding:18px 16px}}
-@media(max-width:360px){body.lt-narrative #navigation .lt-case-brief{grid-template-columns:1fr}}
+body.lt-narrative .ln-section .lt-case-brief{gap:16px;padding:0;margin:36px 0 42px;counter-reset:decision}
+body.lt-narrative .ln-section .lt-case-brief>div{counter-increment:decision;padding:24px;border:1px solid #e2dce0;border-radius:12px;background:#f1ecef}
+body.lt-narrative .ln-section .lt-case-brief>div:nth-child(2){background:#eeedf3}
+body.lt-narrative .ln-section .lt-case-brief>div:nth-child(3){background:#eaf0ef}
+body.lt-narrative .ln-section .lt-case-brief>div:nth-child(4){background:#e7eee7;border-color:#d5dfd5}
+body.lt-narrative .ln-section .lt-case-brief dt{display:flex;align-items:center;gap:10px;font-size:14px;color:#594454}
+body.lt-narrative .ln-section .lt-case-brief dt::before{content:"0" counter(decision);font-size:12px;font-weight:500;color:#766a73}
+@media(max-width:1050px){body.lt-narrative .ln-section .lt-case-brief{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){body.lt-narrative .ln-section .lt-case-brief{gap:12px;margin:26px 0 32px}body.lt-narrative .ln-section .lt-case-brief>div{padding:18px 16px}}
+@media(max-width:360px){body.lt-narrative .ln-section .lt-case-brief{grid-template-columns:1fr}}
 
 /* Preserve the original rectangular campaign/banner artwork. */
 body.lt-narrative :is(figure,.ln-image-link):has(>img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"])),
