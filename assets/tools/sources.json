@@ -17,6 +17,16 @@
       "guidelines": "https://cursor.com/brand",
       "usage": "Official brand kit supplied for accurate representation. Original SVG bytes preserved; use the name Cursor.",
       "sha256": "c483c02f78eb2619778fdd959e72a9adfac4844854472cd2653d4cbfd60e4d71"
+    },
+    {
+      "file": "codex.png",
+      "source": "Installed official OpenAI macOS app, Contents/Resources/icon-codex-light.png",
+      "app_bundle_identifier": "com.openai.codex",
+      "app_version": "26.1103.41825 (25679)",
+      "signing_authority": "OpenAI OpCo, LLC (2DC432GLL2)",
+      "guidelines": "https://openai.com/brand/",
+      "usage": "Unmodified actual Codex product icon used only to identify the tool. OpenAI owns the mark. No sponsorship or endorsement is implied. Conditional brand permission applies.",
+      "sha256": "de7d43f3386105ab20952958c2c25beb0d903e2aeb6e1aef57c49a648c0d1c07"
     }
   ],
   "text_only": [
@@ -34,11 +44,6 @@
       "name": "Microsoft Clarity",
       "reason": "Microsoft product-icon guidance requires express licensing; permission for this use was not verified.",
       "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks"
-    },
-    {
-      "name": "Codex",
-      "reason": "A Codex-specific official product icon with verified usage terms was not found in the reviewed official brand resources. No generic OpenAI or ChatGPT mark is substituted.",
-      "guidelines": "https://openai.com/brand/"
     },
     {
       "name": "Claude Code",
