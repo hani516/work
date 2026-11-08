@@ -47,6 +47,21 @@ body.lt-narrative .ln-section .lt-case-brief dt::before{content:"0" counter(deci
 @media(max-width:760px){body.lt-narrative .ln-section .lt-case-brief{gap:12px;margin:26px 0 32px}body.lt-narrative .ln-section .lt-case-brief>div{padding:18px 16px}}
 @media(max-width:360px){body.lt-narrative .ln-section .lt-case-brief{grid-template-columns:1fr}}
 
+/* Give every case process a clear, larger reading hierarchy. */
+body.lt-narrative .ln-section .lt-case-brief{gap:20px;margin:40px 0 48px}
+body.lt-narrative .ln-section .lt-case-brief>div{padding:28px;border:0}
+body.lt-narrative .ln-section .lt-case-brief dt{gap:12px;margin-bottom:24px;font-size:20px;line-height:1.4}
+body.lt-narrative .ln-section .lt-case-brief dt::before{font-size:28px;font-weight:500;line-height:1;letter-spacing:-.04em;color:var(--accent)}
+body.lt-narrative .ln-section .lt-case-brief dd{font-size:24px;font-weight:500;line-height:1.6;letter-spacing:-.025em;overflow-wrap:anywhere;text-wrap:pretty}
+html[lang="ko"] body.lt-narrative .ln-section .lt-case-brief dd{word-break:keep-all}
+@media(max-width:760px){
+ body.lt-narrative .ln-section .lt-case-brief{gap:16px;margin:30px 0 36px}
+ body.lt-narrative .ln-section .lt-case-brief>div{padding:24px}
+ body.lt-narrative .ln-section .lt-case-brief dt{font-size:18px;margin-bottom:18px}
+ body.lt-narrative .ln-section .lt-case-brief dd{font-size:22px}
+}
+@media(max-width:520px){body.lt-narrative .ln-section .lt-case-brief{grid-template-columns:1fr}}
+
 /* Preserve the original rectangular campaign/banner artwork. */
 body.lt-narrative :is(figure,.ln-image-link):has(>img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"])),
 body.lt-narrative figure:has(>.ln-image-link>img:is([src$="/11771.png"],[src$="/5f2af.png"],[src$="/e4b49.png"],[src$="/e99cc.png"])),
