@@ -72,7 +72,7 @@ body.lt-narrative .ln-cover-image>.ln-image-link{width:100%;max-width:340px;marg
 .lt-narrative .ln-seo>p:not(.ln-eyebrow){grid-column:2;font-size:13px}
 .lt-narrative .ln-seo>.ln-note{margin-top:0;font-size:11px!important}
 /* Compact navigation evidence retains equal 486px desktop canvases. */
-.lt-narrative .ln-nav-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;background:var(--wash);padding:28px;max-width:100%;align-items:start}
+.lt-narrative .ln-nav-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;background:var(--wash);padding:28px;max-width:100%;align-items:stretch}
 .lt-narrative .ln-nav-comparison figure{padding:16px;background:white}
 .lt-narrative .ln-home-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:0;align-items:start}
 .lt-narrative .ln-home-pair>figure>figcaption{padding-top:0}
