@@ -1,65 +1,30 @@
 {
-  "status": "awaiting user-provided device screenshots",
+  "status": "Populated with verified November 5 simulator demonstrations; historical or diagram views identified separately.",
   "slots": [
     {
       "slot": "home-card",
-      "screen": "Portfolio Home card",
-      "shape": "card",
-      "suggested_file": "hero-home.png"
+      "screen": "Home and active walk",
+      "files": [
+        "home-demo.png",
+        "walk-demo.png"
+      ]
     },
     {
       "slot": "hero-home",
       "screen": "Home",
-      "shape": "phone",
-      "suggested_file": "hero-home.png"
+      "file": "home-demo.png"
     },
     {
-      "slot": "walk-timelapse",
-      "screen": "Walk timelapse",
-      "shape": "phone",
-      "suggested_file": "walk-timelapse.png"
-    },
-    {
-      "slot": "family-sharing",
-      "screen": "Family sharing",
-      "shape": "phone",
-      "suggested_file": "family-sharing.png"
-    },
-    {
-      "slot": "home-before",
-      "screen": "Home before",
-      "shape": "phone",
-      "suggested_file": "home-before.png"
-    },
-    {
-      "slot": "home-after",
-      "screen": "Home after",
-      "shape": "phone",
-      "suggested_file": "home-after.png"
-    },
-    {
-      "slot": "character-selection",
-      "screen": "Character selection",
-      "shape": "phone",
-      "suggested_file": "character-selection.png"
-    },
-    {
-      "slot": "character-resting",
-      "screen": "Resting character",
-      "shape": "phone",
-      "suggested_file": "character-resting.png"
-    },
-    {
-      "slot": "dynamic-island",
-      "screen": "Dynamic Island",
-      "shape": "island",
-      "suggested_file": "dynamic-island.png"
-    },
-    {
-      "slot": "live-activity",
-      "screen": "Live Activity",
-      "shape": "activity",
-      "suggested_file": "live-activity.png"
+      "slot": "hero-walk",
+      "screen": "Active walk",
+      "file": "walk-demo.png"
     }
-  ]
+  ],
+  "case_assets": {
+    "history": "history-demo.png",
+    "replay": "replay-demo.png",
+    "live_activity": "lockscreen-demo.png",
+    "early_home": "HTML structure diagram, not a screenshot"
+  },
+  "source_manifest": "figma-20261108/sources.json"
 }

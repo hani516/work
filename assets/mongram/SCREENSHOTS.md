@@ -1,9 +1,9 @@
 # Mongram screenshots
 
-Awaiting device screenshots from the user. No app capture is currently displayed.
+The portfolio displays November 5, 2026 simulator demonstrations. Their source Figma contexts were checked again on November 8; hashes are recorded in `figma-20261108/sources.json`.
 
-Stable slot names are declared as `data-screenshot-slot` in `index.html` and `mongram.html`, and listed in `screenshot-slots.json`.
+The homepage card and case-study hero use `home-demo.png` (seated poodle) and `walk-demo.png` (active walk). `history-demo.png`, `replay-demo.png` and `lockscreen-demo.png` support the case study. These use fictional demonstration data and some generated photos, and are not proof of the latest released build.
 
-For a detail slot, replace only its `.shot-placeholder` with an `<img src="assets/mongram/FILE.png" alt="SCREEN DESCRIPTION" width="ACTUAL WIDTH" height="ACTUAL HEIGHT" />`. Preserve the figure and translated caption. The Home card uses `.mg-card-placeholder`; replace it with the provided image and keep `.panel-visual` dimensions. Home card and hero may use the same new Home image.
+`dog-app-icon.png` is the existing Mongram app icon. `home-local37-20261031.png` and `walk-recording.png` are preserved historical assets, not current page references. The early Home layout is explicitly shown as a reconstructed structure diagram rather than a historical screenshot.
 
-Keep original screenshot pixels; do not draw device UI or substitute mock screens. Check for account details, addresses and private map routes before publishing. The existing `home-local37-20261031.png` is retained as an archived source asset and is not referenced by either page.
+Keep original screenshot pixels and inspect for private information before publication. Generated scenario illustrations are documented separately in `portfolio-visuals-20261108.json`.

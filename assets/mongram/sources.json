@@ -14,10 +14,58 @@
       2622
     ],
     "usage": [
+      "archived source asset; not referenced by current pages"
+    ],
+    "pixel_changes": false,
+    "review": "Historical asset retained unchanged; superseded by November 5 simulator demonstrations."
+  },
+  "walk-recording.png": {
+    "kind": "existing local app asset",
+    "source_path": "/Volumes/T7/Mongram/docs/screenshots/recording.png",
+    "screen": "Walk recording",
+    "sha256": "fc28d9a492e74e290000b8491ad5fdc3c7d1004b0bf26e6cfb98a38e05dabfb7",
+    "usage": [
+      "archived source asset; not referenced by current pages"
+    ],
+    "pixel_changes": false,
+    "review": "Historical asset retained unchanged; superseded by November 5 simulator demonstrations."
+  },
+  "dog-app-icon.png": {
+    "kind": "existing local app asset",
+    "source_path": "/Volumes/T7/Mongram/Mongram/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+    "screen": "Dog app icon",
+    "sha256": "a8778ee165bdca4889eb41839d0de6ddc8f6d961f8dcf4d6dc70d5830d4a809c",
+    "usage": [
       "portfolio home card",
       "Mongram case study hero"
     ],
     "pixel_changes": false,
-    "review": "Visually inspected: no account details, addresses or map routes. Not presented as latest design or release proof."
+    "review": "Visually inspected for local portfolio use; not presented as latest release proof."
+  },
+  "home-demo.png": {
+    "node": "4:144",
+    "sha256": "65dcdc1a80bf1d3080d40dc3236583178b604595a0ac69e138aed51fc30cd527",
+    "capture_date": "2026-11-05",
+    "kind": "simulator demonstration",
+    "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence.",
+    "usage": [
+      "portfolio home card",
+      "Mongram case study"
+    ],
+    "pixel_changes": false,
+    "reference": "https://www.figma.com/design/FjEflM1sG0tm09iLjL2tIX/Portfolio?node-id=1-2"
+  },
+  "walk-demo.png": {
+    "node": "4:726",
+    "sha256": "3ac801c7b3d2b533ea3f01be55210267c2791626788d95a914d77343f1dac102",
+    "capture_date": "2026-11-05",
+    "kind": "simulator demonstration",
+    "data": "Fictional names, public route, some generated photographs; not current-release or real-use evidence.",
+    "usage": [
+      "portfolio home card",
+      "Mongram case study"
+    ],
+    "pixel_changes": false,
+    "reference": "https://www.figma.com/design/FjEflM1sG0tm09iLjL2tIX/Portfolio?node-id=1-2"
   }
 }

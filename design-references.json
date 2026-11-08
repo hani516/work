@@ -1,9 +1,45 @@
 {
-  "reviewed": "2026-10-18",
+  "reviewed": "2026-11-03",
   "references": [
-    {"creator": "Armaan Hawes", "url": "https://www.behance.net/gallery/241760741/UXUI-PORTFOLIO-%282026%29", "applied": "Product-first project covers, composed UI screens, restrained metadata"},
-    {"creator": "dble ui", "url": "https://notefolio.net/dble/412545", "applied": "Layered mobile screens and a cohesive project-specific color field"},
-    {"creator": "Artiom Yakushev", "url": "https://www.behance.net/gallery/214633131/Artiom-Yakushev-Identity-Website", "applied": "Editorial serif/sans contrast and a compact identity introduction"}
+    {
+      "creator": "Armaan Hawes",
+      "url": "https://www.behance.net/gallery/241760741/UXUI-PORTFOLIO-%282026%29",
+      "applied": "Product-first project covers, composed UI screens, restrained metadata"
+    },
+    {
+      "creator": "dble ui",
+      "url": "https://notefolio.net/dble/412545",
+      "applied": "Layered mobile screens and a cohesive project-specific color field"
+    },
+    {
+      "creator": "Artiom Yakushev",
+      "url": "https://www.behance.net/gallery/214633131/Artiom-Yakushev-Identity-Website",
+      "applied": "Editorial serif/sans contrast and a compact identity introduction"
+    },
+    {
+      "creator": "glassj013",
+      "url": "https://notefolio.net/glassj013/420751",
+      "applied": "Large project identity and a single cohesive color field",
+      "scope": "local Mongram cover review"
+    },
+    {
+      "creator": "김태현",
+      "url": "https://notefolio.net/nuyh2.mik/325483",
+      "applied": "Prominent app icon paired with two primary product screens",
+      "scope": "local Mongram cover review"
+    },
+    {
+      "creator": "김가현",
+      "url": "https://notefolio.net/maygirl_gh5591/411741",
+      "applied": "Product screens as the cover focus with restrained surrounding copy",
+      "scope": "local Mongram cover review"
+    },
+    {
+      "creator": "이지은",
+      "url": "https://notefolio.net/jieun056/356703",
+      "applied": "Clear project title hierarchy and generous spacing",
+      "scope": "local Mongram cover review"
+    }
   ],
   "assets": "All product images come from the existing portfolio assets. Reference artworks are not redistributed."
 }

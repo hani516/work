@@ -15,3 +15,22 @@
 .mg-detail{margin:24px 0 0 256px;max-width:740px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:12px;line-height:1.9}.mg-detail summary{cursor:pointer;width:fit-content;color:#596450;font-size:12px}.mg-detail>p{margin-top:18px}.mg-detail .section-intro{margin:18px 0 0;max-width:none;font-size:12px}.mg-detail .home-design-notes{margin:18px 0 0;padding:18px 0;border:0;background:none}.mg-detail .mg-cards{gap:12px;margin-top:20px}.mg-detail .mg-cards article{padding:20px}.mg-detail .mg-cards h3{font-size:14px}.mg-detail .mg-cards p{font-size:12px}
 @media(max-width:1000px){.mg-detail{margin-left:198px}}
 @media(max-width:720px){.mg-detail{margin-left:0}.mg-section{padding-block:36px}.section-title h2{font-size:27px}.section-intro{margin-bottom:24px}}
+
+
+/* Full-size Home and walk evidence, with the original dog icon. */
+.mg-hero { grid-template-columns:minmax(0,1fr); gap:42px; padding-top:64px; }
+.mg-hero-copy { max-width:850px; }
+.mg-brand { display:flex; align-items:center; gap:24px; margin-bottom:24px; }
+.mg-brand img { display:block; width:112px; height:112px; border-radius:24px; }
+.mg-brand h1 { margin:0; font-size:32px; }
+.mg-hero-screens { display:grid; grid-template-columns:repeat(2,minmax(0,340px)); justify-content:center; gap:48px; padding:48px; background:#eef0e8; border-radius:16px; }
+.mg-hero-screens .shot-slot { min-width:0; }
+.mg-hero-screens .shot-slot>img { display:block; width:100%; height:auto; max-height:none; border-radius:20px; box-shadow:0 14px 40px #29322512; }
+@media(max-width:720px) {
+  .mg-hero { padding-top:40px; gap:30px; }
+  .mg-brand { gap:18px; }
+  .mg-brand img { width:88px; height:88px; border-radius:20px; }
+  .mg-brand h1 { font-size:28px; }
+  .mg-hero-screens { gap:18px; padding:24px 16px; border-radius:12px; }
+  .mg-hero-screens .shot-slot>img { border-radius:12px; }
+}
