@@ -1,0 +1,39 @@
+{
+  "verified_date": "2026-11-08",
+  "purpose": "Small descriptive tool marks beside readable product names in a personal portfolio. No endorsement is implied.",
+  "assets": [
+    {
+      "file": "figma.svg",
+      "source": "https://static.figma.com/uploads/4fbf4d754dbbc027ba1530205f8747cd97d532e5",
+      "archive_entry": "Figma Brand Assets/Figma Icon (Full-color)/Figma Icon (Full-color).svg",
+      "guidelines": "https://www.figma.com/using-the-figma-brand/",
+      "usage": "Official guidelines allow truthful informational website references. Original SVG bytes preserved; supplied canvas whitespace is handled by CSS.",
+      "sha256": "9798b710e015c7f3fa6101779e323568d6a5a022651d427021262ce850467b07"
+    },
+    {
+      "file": "cursor.svg",
+      "source": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/brand/cursor-brand-assets.zip",
+      "archive_entry": "General Logos/Cube/SVG/CUBE_2D_LIGHT.svg",
+      "guidelines": "https://cursor.com/brand",
+      "usage": "Official brand kit supplied for accurate representation. Original SVG bytes preserved; use the name Cursor.",
+      "sha256": "c483c02f78eb2619778fdd959e72a9adfac4844854472cd2653d4cbfd60e4d71"
+    }
+  ],
+  "text_only": [
+    {
+      "name": "Photoshop",
+      "reason": "Adobe product icon policy requires partnership permission; permission for this use was not verified.",
+      "guidelines": "https://www.adobe.com/legal/permissions/icons-web-logos.html"
+    },
+    {
+      "name": "GA4",
+      "reason": "Permission for a portfolio tool-list product icon was not verified; API branding permission does not clearly apply.",
+      "guidelines": "https://partnermarketinghub.withgoogle.com/brands/google/branding-guidelines/how-to-show-googles-brand/"
+    },
+    {
+      "name": "Microsoft Clarity",
+      "reason": "Microsoft product-icon guidance requires express licensing; permission for this use was not verified.",
+      "guidelines": "https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks"
+    }
+  ]
+}
