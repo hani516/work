@@ -1,0 +1,22 @@
+/* Full source screens, a separate photo annotation, and a labelled album plan. */
+.mg-photo-case .mg-photo-evidence{margin:0;display:flex;flex-direction:column;gap:12px;flex:1;min-width:0}
+.mg-photo-case .mg-photo-evidence-frame{position:relative;min-width:0;background:#f3f3f3;border:1px solid #ececec;border-radius:10px;padding:16px 47px}
+.mg-photo-case .mg-photo-screen-image img{display:block;position:static;width:100%;height:auto;max-height:none;max-width:100%;border-radius:0;box-shadow:none}
+.mg-photo-case .mg-photo-evidence-location{padding:16px 78px 16px 16px}
+.mg-photo-case .mg-photo-annotated-screen{position:relative}
+.mg-photo-case .mg-photo-position-marker{position:absolute;inset:0;width:100%;height:100%;overflow:visible;fill:none;stroke:#444;stroke-width:1.8;pointer-events:none}
+.mg-photo-case .mg-photo-position-marker circle{stroke-width:2.5}
+.mg-photo-case .mg-photo-position-label{position:absolute;left:calc(100% + 16px);top:74.5305%;transform:translateY(-50%);width:58px;font-size:11px;font-weight:500;line-height:1.6;color:#555;word-break:keep-all;overflow-wrap:normal;pointer-events:none}
+.n-section .mg-photo-case .mg-photo-evidence figcaption,.n-section .mg-photo-case .mg-photo-plan-note{font-size:10px;line-height:1.8;color:#888;margin:0;word-break:keep-all}
+.mg-photo-case .mg-photo-plan-visual{display:flex;flex-direction:column;gap:12px}
+.mg-photo-case .mg-photo-after{margin-top:0;min-height:0;justify-content:center;gap:12px;padding:14px 18px;background:#f5f5f5;border:1px dashed #d6d6d6}
+.mg-photo-case .mg-photo-after>.mg-diagram-label{text-align:center;font-size:12px;line-height:1.7;color:#777}
+.mg-photo-case .mg-photo-after .mg-album-entry{border:1px dashed #a9a9a9;background:#fff}
+.mg-photo-case .mg-photo-after>div{gap:10px;justify-content:center}
+.mg-photo-case .mg-photo-after>div>span:not(.mg-flow-arrow){min-width:0;flex:1;padding:8px;flex-direction:row;gap:8px}
+.mg-photo-case .mg-photo-after svg{width:22px;height:22px}
+.mg-photo-case .mg-photo-after strong{font-size:12px}
+@media(max-width:900px){
+ .mg-photo-case .mg-photo-evidence-frame{width:100%;max-width:420px;align-self:center}
+ .mg-photo-case .mg-photo-plan-visual{width:100%;max-width:420px;align-self:center}
+}

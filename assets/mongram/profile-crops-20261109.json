@@ -15,13 +15,13 @@
   },
   {
     "asset": "profile-guardian-crop.png",
-    "source": "/Volumes/T7/Mongram-UI-Validation-20261105/Screenshots/profile-scrolled-dark.png",
-    "source_sha256": "dd94a2bbb40ff19329cad26abb533abe145964affbcd3b59e8416018c4e9677c",
+    "source": "/Volumes/T7/Mongram-UI-Validation-20261105/Screenshots/profile-pending-light.png",
+    "source_sha256": "34b9687e4e35c264f0248d5e774a668862ad2f7da43bb9ccf4972e68857f2bfa",
     "crop_box": [
       32,
-      350,
+      476,
       718,
-      610
+      736
     ],
     "kind": "Actual simulator UI verification capture, 2026-11-05; synthetic QA data",
     "alterations": "Crop only. No UI reconstruction. Debug status and unrelated errors outside crop.",

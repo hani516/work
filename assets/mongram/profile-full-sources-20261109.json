@@ -1,0 +1,52 @@
+{
+  "captured_on": "2026-11-09",
+  "captured_at_utc": "2026-11-09T13:47:17.057254+00:00",
+  "simulator": "Mongram-Screenshot-20261105",
+  "simulator_udid": "783DB9D7-51BA-4AF5-ADB0-14C4DF241250",
+  "device": "iPhone 16 Pro",
+  "runtime": "iOS 26.5",
+  "bundle_id": "com.wonder.dogwalk",
+  "app_version": "1.0.1",
+  "build": "59",
+  "locale": "ja",
+  "appearance": "light",
+  "kind": "Fresh captures of the existing app-rendered screenshot fixture, using fictional demo data",
+  "launch_arguments": [
+    "--capture-home",
+    "--capture-language=ja",
+    "-AppleLanguages",
+    "(ja)",
+    "-AppleLocale",
+    "ja_JP"
+  ],
+  "navigation": "Opened the dog profile tab, captured the top viewport, then scrolled to the guardian name/edit row and captured that viewport. No profile edits saved.",
+  "data": "Demo dog モモ and fictional guardians. Existing generated demo photos may be partly visible at the album edge. No real account identifiers or credentials are visible.",
+  "review": "Both output files visually inspected. No visible debug overlays, error messages, dialogs, or simulator window chrome. Entire native 1206x2622 viewport retained.",
+  "limitations": "Historical screenshot-fixture build, not proof of the latest released version or of participant test sessions. The two images illustrate navigation hierarchy; no redesigned UI was implemented.",
+  "assets": [
+    {
+      "asset": "profile-top-full-light-20261109.png",
+      "capture_path": "/tmp/mongram-profile-capture-20261109/profile-top-full-light.png",
+      "dimensions": [
+        1206,
+        2622
+      ],
+      "sha256": "1123f1fea02e2fc696673f3d4f22170519421fd383d468f1f04088cce0c05c26",
+      "alterations": "None. Full native simulator viewport PNG, not cropped, stitched, rebuilt or retouched."
+    },
+    {
+      "asset": "profile-guardian-full-light-20261109.png",
+      "capture_path": "/tmp/mongram-profile-capture-20261109/profile-guardian-full-light.png",
+      "dimensions": [
+        1206,
+        2622
+      ],
+      "sha256": "0085af88e251224b7add8e047571628058b79f320ce62d19a47558222993d851",
+      "alterations": "None. Full native simulator viewport PNG, not cropped, stitched, rebuilt or retouched."
+    }
+  ],
+  "verified_capture_source": "/Volumes/T7/Mongram-Capture-Localized-20261105/source",
+  "matching_build_artifact": "/Volumes/T7/Mongram-Capture-Localized-20261105/DerivedData/Build/Products/Debug-iphonesimulator/Wonder.app/Wonder.debug.dylib",
+  "installed_and_artifact_debug_sha256": "68189c6cedbb0bd7c5536295953bdcea022627624abb41ef4ee76894e5af4daa",
+  "fixture_safety": "Matching capture source uses in-memory models, fictional identities, a no-location driver and disabled backend bootstrap. No sign-in or external account edits were performed."
+}

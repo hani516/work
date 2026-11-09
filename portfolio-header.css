@@ -1,0 +1,112 @@
+/* Readable navigation, shared across the home and project pages.
+   Keep each page's existing colors and the 1440px mobile composition. */
+:root {
+  --portfolio-header-height: 88px;
+  --portfolio-home-header-height: 104px;
+  --portfolio-header-offset: 104px;
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: var(--portfolio-home-header-height);
+  gap: 40px;
+  background: rgba(255, 255, 255, .96);
+  transition: height .2s ease;
+}
+.site-header + main { padding-top: var(--portfolio-home-header-height); }
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  flex: 0 0 auto;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -.6px;
+}
+.site-header .nav-links {
+  align-items: center;
+  gap: 36px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.site-header .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+body .case-header.project-page-header {
+  min-height: var(--portfolio-header-height);
+  --header-offset: var(--portfolio-header-offset);
+  transition: min-height .2s ease;
+}
+body .case-header.project-page-header .back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  flex: 0 0 auto;
+  font-size: 24px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+body .case-header.project-page-header .case-nav {
+  gap: clamp(20px, 2vw, 30px);
+  margin-inline: 28px 0;
+}
+body .case-header.project-page-header .case-nav a {
+  min-height: 44px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+body .case-header.project-page-header + main {
+  padding-top: var(--portfolio-header-height);
+}
+html:has(.site-header) { scroll-padding-top: 88px; }
+html:has(.project-page-header) {
+  scroll-padding-top: var(--portfolio-header-offset);
+}
+
+/* Compact the fixed header without shifting the content below it. */
+.site-header.is-scrolled { height: 72px; }
+.site-header.is-scrolled .brand { font-size: 22px; }
+.site-header.is-scrolled .nav-links { font-size: 17px; }
+body .case-header.project-page-header.is-scrolled { min-height: 64px; }
+body .case-header.project-page-header.is-scrolled .back-link { font-size: 20px; }
+body .case-header.project-page-header.is-scrolled .case-nav a { font-size: 16px; }
+.site-header .brand,
+.site-header .nav-links,
+body .case-header.project-page-header .back-link,
+body .case-header.project-page-header .case-nav a { transition: font-size .2s ease; }
+
+@media (max-width: 900px) {
+  body .case-header.project-page-header { display: flex; }
+  .site-header { gap: 24px; }
+  .site-header .nav-links { gap: 24px; font-size: 18px; }
+}
+
+@media (max-width: 620px) {
+  :root {
+    --portfolio-header-height: 72px;
+    --portfolio-home-header-height: 88px;
+    --portfolio-header-offset: 88px;
+  }
+  .site-header { gap: 20px; }
+  .site-header .brand { font-size: 22px; }
+  .site-header .nav-links { gap: 18px; font-size: 16px; }
+  .site-header .nav-links a:first-child { display: none; }
+  .site-header.is-scrolled { height: 64px; }
+  .site-header.is-scrolled .brand { font-size: 20px; }
+  .site-header.is-scrolled .nav-links { font-size: 15px; }
+  body .case-header.project-page-header .back-link { font-size: 22px; }
+  body .case-header.project-page-header.is-scrolled { min-height: 60px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header .brand,
+  .site-header .nav-links,
+  body .case-header.project-page-header,
+  body .case-header.project-page-header a { transition: none; }
+}

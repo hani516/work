@@ -149,7 +149,35 @@ body.lt-narrative .lt-search-decision dt,
 body.lt-narrative .lt-pdp-review dt {margin-bottom:24px;}
 body.lt-narrative .lt-search-decision dd,
 body.lt-narrative .lt-pdp-review dd {line-height:1.75;}
-body.lt-narrative .lt-search-decision dd > span + span,
+body.lt-narrative .lt-search-decision dd > span + span {margin-top:6px;}
 body.lt-narrative .lt-pdp-review dd > span + span {margin-top:20px;}
 body.lt-narrative .ln-rank-result h4 {margin-bottom:18px;}
 body.lt-narrative .ln-pending-results h4 {margin-bottom:22px;}
+/* Keep the remaining qualitative PDP result full-width after removing the rate. */
+body.lt-narrative .lt-experiment-result .ln-metrics {grid-template-columns:minmax(0,1fr);}
+
+
+/* Make the entire LaLaTulle next-project band one native, keyboard-accessible link. */
+body.lt-narrative .portfolio-next-section.lt-next-full {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  box-shadow: none;
+  clip-path: none;
+}
+body.lt-narrative .portfolio-next-section.lt-next-full .ln-next-card {
+  padding: 48px max(40px, calc((100% - 1120px) / 2));
+}
+body.lt-narrative .portfolio-next-section.lt-next-full .ln-next-card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -6px;
+}
+@media (max-width: 760px) {
+  body.lt-narrative .portfolio-next-section.lt-next-full .ln-next-card { padding-inline: 20px; }
+}
+@media (max-width: 600px) {
+  body.lt-narrative .portfolio-next-section.lt-next-full .ln-next-card { padding-block: 36px; }
+}
+@media (max-width: 360px) {
+  body.lt-narrative .portfolio-next-section.lt-next-full .ln-next-card { padding-inline: 16px; }
+}

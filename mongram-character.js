@@ -4,13 +4,19 @@
 (() => {
   const gallery = document.querySelector('.mg-poodle-gallery');
   if (!gallery) return;
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const toggle = gallery.querySelector('.mg-motion-toggle');
   const cards = [...gallery.querySelectorAll('[data-motion]')];
   const ns = 'http://www.w3.org/2000/svg';
   const smooth = t => { t = Math.max(0, Math.min(1, t)); return t * t * (3 - 2 * t); };
-  let paused = reduced.matches, frame = 0, last = 0, motionData;
+  let paused = false, frame = 0, last = 0, motionData, galleryVisible = false;
   const rigs = [];
+  // Repeat the action, not the long idle tail of the app's 8.4-second export.
+  // Source frame timing stays at 24 fps; only gallery replay windows change.
+  const replay = {
+    seated: [0, 8.4], resting: [0, 8.4], ears: [0, 2.7],
+    head: [0, 1.65], blink: [4.8, 1.5], yawn: [0, 3.9],
+    paw: [0, 2.7], tail: [0, 2.7]
+  };
   const labels = {
     ja: ['動きを止める', '動きを再生'],
     en: ['Pause motion', 'Play motion'],
@@ -95,7 +101,10 @@
   }
   function draw(rig, seconds) {
     const track = motionData.tracks[rig.kind];
-    const index = Math.min(track.length-1, Math.floor((seconds % motionData.duration) * motionData.fps));
+    const [start, duration] = replay[rig.kind];
+    const sourceSeconds = start + seconds % duration;
+    const index = Math.min(track.length-1, Math.floor(sourceSeconds * motionData.fps));
+    rig.card.dataset.motionCycle = String(Math.floor(seconds / duration));
     if (index === rig.lastFrame) return;
     rig.lastFrame = index;
     const [breath,blink,head,dx,dy,nose,mouth,tail,ear,paw] = track[index];
@@ -122,14 +131,14 @@
     if (rig.kind==='ears') for (const [e,d] of rig.earFrames[earIndex]) e.setAttribute('d',d);
     if (rig.kind==='paw') for (const [e,d] of rig.pawFrames[pawIndex]) e.setAttribute('d',d);
   }
-  function allowed() { return !paused && !document.hidden && rigs.some(rig => rig.visible); }
+  function allowed() { return !paused && !document.hidden && galleryVisible && rigs.length > 0; }
   function tick(now) {
     frame = 0;
     if (!allowed()) { last = 0; return; }
     // Use wall-clock time on any display refresh rate; draw only new 24fps source frames.
     const delta = last ? (now-last)/1000 : 0;
     last = now;
-    for (const rig of rigs) if (rig.visible) { rig.elapsed = (rig.elapsed + delta) % motionData.duration; draw(rig,rig.elapsed); }
+    for (const rig of rigs) { rig.elapsed += delta; draw(rig,rig.elapsed); }
     frame = requestAnimationFrame(tick);
   }
   function sync() {
@@ -137,34 +146,29 @@
     else if (!frame) frame = requestAnimationFrame(tick);
   }
   toggle.addEventListener('click',() => { paused = !paused; updateLabel(); sync(); });
-  reduced.addEventListener('change',() => { if (reduced.matches) paused = true; updateLabel(); sync(); });
   document.addEventListener('visibilitychange',sync);
   new MutationObserver(updateLabel).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  // Observe the gallery as a whole so every preview keeps its place while
+  // scrolling between rows. Offscreen/hidden tabs resume rather than restart.
   const observer = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      const rig = rigs.find(rig => rig.card === entry.target);
-      if (!rig) continue;
-      if (entry.isIntersecting && !rig.visible) { rig.elapsed = 0; draw(rig,0); }
-      rig.visible = entry.isIntersecting;
-    }
+    galleryVisible = entries.some(entry => entry.isIntersecting);
     sync();
-  },{threshold:.15});
-  Promise.all([
-    ...['seated','resting'].map(async pose => {
-      const response = await fetch(`assets/mongram/poodle/${pose}.svg`);
-      if (!response.ok) throw new Error('Could not load poodle source');
-      const document = new DOMParser().parseFromString(await response.text(),'image/svg+xml');
-      if (document.querySelector('parsererror')) throw new Error('Invalid poodle source');
-      return document.documentElement;
-    }),
-    fetch('assets/mongram/poodle/app-motion.json').then(response => {
-      if (!response.ok) throw new Error('Could not load original motion');
-      return response.json();
-    })
-  ]).then(([seated,resting,data]) => {
+  }, {threshold: 0});
+  // A classic-script bundle also works when the portfolio is opened as a local
+  // file, where browsers block fetch() for the original SVG and JSON assets.
+  Promise.resolve().then(() => {
+    const bundle = window.mongramMotionAssets;
+    if (!bundle) throw new Error('Could not load poodle motion assets');
+    const [seated, resting] = ['seated', 'resting'].map(pose => {
+      const source = new DOMParser().parseFromString(bundle[pose], 'image/svg+xml');
+      if (source.querySelector('parsererror')) throw new Error('Invalid poodle source');
+      return source.documentElement;
+    });
+    const data = bundle.motion;
     motionData=data;
     cards.forEach((card,index) => rigs.push(prepare((card.dataset.motion==='resting'?resting:seated).cloneNode(true),card,index)));
-    rigs.forEach(rig => { draw(rig,0); observer.observe(rig.card); });
+    rigs.forEach(rig => draw(rig,0));
+    observer.observe(gallery);
     gallery.dataset.motionState='ready';
     toggle.hidden=false; updateLabel(); sync();
   }).catch(() => {

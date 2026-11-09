@@ -1,0 +1,46 @@
+{
+  "created": "2026-11-09",
+  "scope": "Walk-photo internal-testing section",
+  "assets": [
+    {
+      "file": "assets/mongram/walk-demo.png",
+      "source": "Existing portfolio asset; November 5 simulator demonstration",
+      "sha256": "3ac801c7b3d2b533ea3f01be55210267c2791626788d95a914d77343f1dac102",
+      "pixel_changes": false,
+      "display": "Full original simulator screen shown without cropping, at its original aspect ratio. Retained as observation evidence.",
+      "limitations": "Fictional demo data; not latest-release evidence"
+    },
+    {
+      "file": "assets/mongram/camera-preview-20261008.png",
+      "source": "/Volumes/T7/Mongram/docs/screenshots/walk-camera-redesign.png",
+      "source_date": "2026-10-08",
+      "sha256": "217564635bcdfbddd85c6af752a8c8f698ce0ea688604992380aed41c7039e05",
+      "dimensions": [
+        1206,
+        2622
+      ],
+      "pixel_changes": false,
+      "display": "Full original screen shown without cropping, with its original aspect ratio; copied byte-for-byte",
+      "limitations": "Existing simulator design preview, no recent photo loaded; not proof of latest released build"
+    },
+    {
+      "file": "assets/mongram/walk-photo-location-user.png",
+      "source": "User-provided attachment: In Progress.png",
+      "library_file_id": "libfile_00e586bd37f08191b868dbbb1d1dd671",
+      "sha256": "182dac4a4cc096633a2672778254ff4df72553228cd70d6232219eb7239e6bd5",
+      "dimensions": [
+        393,
+        852
+      ],
+      "pixel_changes": false,
+      "display": "Full image shown in the improvement-plan column at its original aspect ratio. A separate HTML/SVG annotation points to the captured-photo thumbnail at (352, 635).",
+      "limitations": "Supplied screen; build, capture date and implementation status are unverified. Not evidence that album access is implemented."
+    }
+  ],
+  "code_verification": {
+    "date": "2026-11-09",
+    "RecordingView.swift": "Lines 105-108 show camera button; lines 165-175 open WalkCamera with the latest photo. No active-walk album entry found.",
+    "WalkCamera.swift": "Lines 59-67 show the recent-photo control; lines 90-99 show one-photo review sheet."
+  },
+  "plan": "Album entry is a labelled concept diagram, not a product screenshot or an implemented feature."
+}

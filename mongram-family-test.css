@@ -68,10 +68,15 @@
 .mg-profile-crop{background:#f5f5f5;border:1px solid #eeeeef;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:300px;flex:1;padding:16px}
 .mg-profile-evidence img{display:block;max-width:100%;height:auto;object-fit:contain;box-shadow:none;border-radius:0}
 .mg-profile-evidence-dog img{width:auto;max-height:340px}
-.mg-profile-evidence-guardian .mg-profile-crop{background:#121415}
+.mg-profile-evidence-guardian .mg-profile-crop{background:#f5f5f5}
 .mg-profile-evidence-guardian img{width:100%}
 .n-section .mg-profile-evidence figcaption,.n-section .mg-profile-plan-note{font-size:10px;line-height:1.8;color:#888;margin:0;word-break:keep-all}
-.mg-family-case:first-of-type .mg-profile-after{flex:1;min-height:300px;max-height:none;margin-top:0}
+.mg-family-case:first-of-type .mg-profile-after{flex:0 0 auto;min-height:300px;max-height:none;margin-top:0}
 .n-section .mg-profile-plan-note{margin-top:12px}
 @media(max-width:900px){.mg-profile-crop{min-height:0;padding:20px}.mg-profile-evidence-dog img{max-height:400px}.mg-profile-evidence-guardian .mg-profile-crop{padding:32px 16px}.mg-family-case:first-of-type .mg-profile-after{min-height:170px}}
 .n-section .mg-family-step>.mg-profile-plan-note{font-size:10px;line-height:1.8;min-height:0;margin:12px 0 0;color:#888}
+
+/* Whole app screens: preserve the original aspect ratio without cropping. */
+.mg-profile-evidence .mg-profile-screen{display:flex;align-items:flex-start;justify-content:center;padding:0;background:#fff;border:1px solid #eeeeef;border-radius:12px;overflow:hidden}
+.mg-profile-evidence .mg-profile-screen img{display:block;width:100%;height:auto;max-height:none;max-width:100%;object-fit:contain;border-radius:0}
+@media(max-width:900px){.mg-profile-evidence .mg-profile-screen{width:min(100%,380px);margin-inline:auto}}

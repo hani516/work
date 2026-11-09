@@ -16,7 +16,10 @@ const translations = {
     homeSnapsideBody: "プロダクトの変化を記録。設計・実装から初期運営まで。",
     homeWivloBody: "情報の参照とAI共同編集をひとつに。Web・iOSの設計から実装・公開まで。",
     homeMoneymateBody: "会話から始まる家計簿を設計・実装。内部テスト中。",
-    homeMongramName: "Mongram",
+    homeMongramName: "ワングラム",
+    homeMongramCoverName: "ワングラム",
+    homeMongramHomeAlt: "ワングラム：座った犬がいるホーム画面",
+    homeMongramWalkAlt: "ワングラム：散歩中の画面",
     homeMongramBody: "散歩の記録を家族と共有するiOSアプリ。再生体験と散歩を始めやすいホームを設計。",
 
     moneymateBody: "会話から始まる家計簿アプリ。",
@@ -66,6 +69,9 @@ const translations = {
     homeWivloBody: "References and AI co-writing in one workspace. Designed, built, and released for Web and iOS.",
     homeMoneymateBody: "A conversational expense tracker. Designed, built, and in internal testing.",
     homeMongramName: "Mongram",
+    homeMongramCoverName: "Mongram",
+    homeMongramHomeAlt: "Mongram seated-dog Home, November 5 simulator demo",
+    homeMongramWalkAlt: "Mongram active-walk interface, November 5 simulator demo",
     homeMongramBody: "An iOS app for sharing dog walks with family. I designed walk replay and a walk-focused home screen.",
 
     moneymateBody: "An expense tracker that starts with a conversation.",
@@ -115,6 +121,9 @@ const translations = {
     homeWivloBody: "자료 참조와 AI 공동 작성을 한 공간에서. Web·iOS 설계부터 구현·출시까지.",
     homeMoneymateBody: "대화로 시작하는 가계부를 설계·구현. 내부 테스트 중.",
     homeMongramName: "멍그램",
+    homeMongramCoverName: "Mongram",
+    homeMongramHomeAlt: "Mongram seated-dog Home, November 5 simulator demo",
+    homeMongramWalkAlt: "Mongram active-walk interface, November 5 simulator demo",
     homeMongramBody: "강아지 산책을 가족과 공유하는 iOS 앱. 산책 다시보기와 산책 중심 홈을 설계했습니다.",
 
     moneymateBody: "대화로 시작하는 가계부 앱.",
@@ -163,6 +172,10 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = dictionary[node.dataset.i18n];
     if (value) node.innerHTML = value;
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
+    const value = dictionary[node.dataset.i18nAlt];
+    if (value) node.alt = value;
   });
   document.querySelectorAll(".lang-button").forEach((button) => {
     const active = button.dataset.lang === currentLanguage;
@@ -243,7 +256,6 @@ if (reduceMotion) {
 }
 
 window.addEventListener("scroll", () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 16);
   updateLandingNavigation();
 }, { passive: true });
 setLanguage(localStorage.getItem("portfolio-language") || "ja");

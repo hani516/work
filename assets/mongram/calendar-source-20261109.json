@@ -1,0 +1,17 @@
+{
+  "asset": "calendar-demo.png",
+  "kind": "Existing app-rendered simulator demonstration prepared for App Store screenshots",
+  "source_path": "/Users/yohan/Documents/Codex/2026-11-04/task-3/deliverables/Mongram_JA_06_Calendar_1206x2622.png",
+  "raw_source_path": "/Users/yohan/Documents/Codex/2026-11-04/task-3/raw-captures/ja-calendar.png",
+  "source_manifest": "/Users/yohan/Documents/Codex/2026-11-04/task-3/final-png-files.json",
+  "provenance_notes": "/Users/yohan/Documents/Codex/2026-11-04/task-3/screenshot-provenance-notes.txt",
+  "locale": "ja",
+  "dimensions": [
+    1206,
+    2622
+  ],
+  "sha256": "458f1c60a539871c05d8e6fecdfa34c619fdc945296fa1a0b725ef83dcdfb801",
+  "pixel_changes": false,
+  "data": "Fictional walk distances, care appointments and generated dog photographs. Not evidence of a real user, current release, or App Store submission/approval.",
+  "review": "Visually inspected 2026-11-09. Existing app UI, no private account identifiers or identifiable people visible."
+}

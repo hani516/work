@@ -1,0 +1,104 @@
+/* Shared LaLaTulle type scale and spacing; retain SnapSide's dark palette. */
+body.project-snapside.compact-case .cc-shell {max-width:1120px;width:calc(100% - 80px)}
+body.project-snapside .sp-section {padding-top:140px}
+body.project-snapside .sp-section-head {padding-top:0;margin-bottom:64px}
+body.project-snapside .sp-section-head h2 {font-size:58px;line-height:1.5;margin:0 0 32px;font-weight:500}
+body.project-snapside .sp-section-head p,
+body.project-snapside.compact-case .cc-decision-copy > p {font-size:14px;line-height:1.95}
+body.project-snapside.compact-case .cc-work {padding-top:140px}
+body.project-snapside.compact-case .cc-decision {gap:48px;padding:56px 0;margin-top:24px}
+body.project-snapside.compact-case .cc-decision h3 {font-size:32px;line-height:1.5;margin-bottom:30px}
+body.project-snapside .sp-origin-steps,
+body.project-snapside .sp-plan-decisions,
+body.project-snapside .sp-seo-steps {gap:20px}
+body.project-snapside .sp-origin-steps article,
+body.project-snapside .sp-plan-decisions article,
+body.project-snapside .sp-seo-steps article {padding:28px 22px;border-radius:12px;background:var(--sp-panel);min-width:0}
+body.project-snapside .sp-origin-steps h3,
+body.project-snapside .sp-plan-decisions h3,
+body.project-snapside .sp-seo-steps h3,
+body.project-snapside .sp-feedback-translation h3 {font-size:22px;line-height:1.45;font-weight:600;margin-bottom:22px}
+html[lang="ja"] body.project-snapside :is(.sp-origin-steps,.sp-plan-decisions,.sp-seo-steps) h3 {font-size:20px}
+body.project-snapside .sp-origin-steps p,
+body.project-snapside .sp-plan-decisions p,
+body.project-snapside .sp-seo-steps p,
+body.project-snapside .sp-feedback-translation p {font-size:15px;line-height:1.7}
+body.project-snapside .sp-feedback-card {padding:28px 32px;border-radius:12px}
+body.project-snapside .sp-system-map,
+body.project-snapside .sp-organic-reading,
+body.project-snapside .cc-flow-visual {border-radius:12px}
+body.project-snapside .sp-growth-heading h3,
+body.project-snapside .sp-organic-grid h3,
+body.project-snapside .sp-organic-reading h3 {font-size:24px;line-height:1.5;margin-bottom:22px}
+body.project-snapside .sp-organic-grid p,
+body.project-snapside .sp-organic-reading p {font-size:14px;line-height:1.95}
+body.project-snapside .sp-organic-bar-row,
+body.project-snapside .sp-organic-actions dt {font-size:14px}
+body.project-snapside .sp-organic-actions dd {flex-wrap:wrap}
+body.project-snapside .sp-organic-actions dd > span,
+body.project-snapside .sp-organic-metrics article > span,
+body.project-snapside .sp-organic-scope {font-size:13px;line-height:1.7}
+body.project-snapside .sp-organic-metrics {gap:32px}
+@media(max-width:900px){
+ body.project-snapside .sp-section-head h2{font-size:42px}
+ body.project-snapside .sp-section,body.project-snapside.compact-case .cc-work{padding-top:100px}
+ body.project-snapside .sp-origin-steps{gap:24px}
+}
+@media(max-width:600px){
+ body.project-snapside.compact-case .cc-shell{width:calc(100% - 40px)}
+ body.project-snapside .sp-section,body.project-snapside.compact-case .cc-work{padding-top:80px}
+ body.project-snapside .sp-section-head h2{font-size:32px;line-height:1.5}
+ body.project-snapside .sp-section-head p{font-size:14px;line-height:1.95}
+ body.project-snapside.compact-case .cc-decision{gap:32px;padding:32px 0}
+ body.project-snapside.compact-case .cc-decision h3{font-size:27px;line-height:1.5;margin-bottom:30px}
+ body.project-snapside :is(.sp-origin-steps,.sp-plan-decisions,.sp-seo-steps) {grid-template-columns:minmax(0,1fr);gap:24px}
+ body.project-snapside :is(.sp-origin-steps,.sp-plan-decisions,.sp-seo-steps) article{padding:28px 22px}
+ body.project-snapside :is(.sp-origin-steps,.sp-plan-decisions,.sp-seo-steps) h3{font-size:24px}
+ body.project-snapside .sp-feedback-card{padding:24px 22px;gap:24px}
+ body.project-snapside .sp-organic-metrics{gap:28px 20px}
+ body.project-snapside .sp-organic-reading{padding:28px 22px}
+ body.project-snapside .sp-organic-actions dl > div{gap:12px}
+ body.project-snapside .sp-organic-actions dd > span{font-size:12px}
+}
+
+/* Case study: put decisions and validation beside the implemented screens. */
+body.project-snapside.compact-case .sp-case-decisions .cc-decision {grid-template-columns:minmax(0, .85fr) minmax(0,1.65fr);align-items:start}
+body.project-snapside.compact-case .sp-case-decisions .cc-decision-copy {max-width:none}
+body.project-snapside .sp-case-reasoning {margin:0;display:grid;gap:24px}
+body.project-snapside .sp-case-reasoning dt {margin:0 0 8px;color:var(--cc-ink);font-size:13px;font-weight:600;line-height:1.6}
+body.project-snapside .sp-case-reasoning dd {margin:0;color:var(--cc-muted);font-size:14px;line-height:1.95}
+body.project-snapside .sp-case-source {display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;font-size:11px;color:var(--cc-muted)}
+body.project-snapside .sp-case-source a {color:var(--cc-muted);text-decoration:underline;text-underline-offset:3px}
+body.project-snapside .sp-case-decisions .sp-zoom-figure {border-radius:12px}
+body.project-snapside .sp-case-decisions .sp-zoom-figure[data-view="overview"] .sp-ui-crop {aspect-ratio:auto;overflow:visible}
+body.project-snapside .sp-case-decisions .sp-zoom-figure[data-view="overview"] .sp-ui-crop>img {position:static;display:block;width:100%;max-width:100%;height:auto;left:auto;top:auto;object-fit:contain}
+body.project-snapside .sp-seo-steps {grid-template-columns:repeat(3,minmax(0,1fr))}
+body.project-snapside .sp-web-baseline {display:flex;align-items:center;gap:24px;padding:28px 0;border-bottom:1px solid var(--cc-line);margin-top:24px}
+body.project-snapside .sp-web-baseline>strong {font-size:40px;line-height:1.2;font-weight:500;color:var(--cc-ink);letter-spacing:-.04em}
+body.project-snapside .sp-web-baseline p {font-size:14px;line-height:1.7;color:var(--cc-muted);margin:0 0 4px}
+body.project-snapside .sp-web-baseline span {font-size:12px;line-height:1.7;color:var(--cc-muted)}
+body.project-snapside .sp-feedback-details {border-block:1px solid var(--cc-line)}
+body.project-snapside .sp-feedback-details summary {display:flex;justify-content:space-between;gap:24px;padding:24px 0;color:var(--cc-ink);font-size:14px;cursor:pointer;list-style:none}
+body.project-snapside .sp-feedback-details summary::-webkit-details-marker {display:none}
+body.project-snapside .sp-feedback-details[open] .sp-feedback-grid {padding:16px 0 40px}
+body.project-snapside .sp-feedback-details[open] summary>span:last-child {transform:rotate(45deg)}
+body.project-snapside .sp-feedback-details summary:focus-visible {outline:2px solid var(--cc-ink);outline-offset:4px}
+@media(max-width:900px){body.project-snapside.compact-case .sp-case-decisions .cc-decision{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:32px}}
+@media(max-width:700px){
+ body.project-snapside.compact-case .sp-case-decisions .cc-decision{grid-template-columns:minmax(0,1fr);gap:32px}
+ body.project-snapside .sp-case-decisions .sp-design-visual{grid-row:2}
+ body.project-snapside .sp-case-reasoning{gap:20px}
+ body.project-snapside .sp-seo-steps{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:480px){
+ body.project-snapside .sp-plan-decisions article,body.project-snapside .sp-seo-steps article{display:block}
+ body.project-snapside .sp-web-baseline{gap:20px}
+ body.project-snapside .sp-web-baseline span{font-size:11px}
+}
+
+/* Concise reading: screenshots first, details on demand. */
+body.project-snapside .sp-case-decisions .sp-section-head {margin-bottom:40px}
+body.project-snapside .sp-case-reasoning {gap:20px}
+body.project-snapside #sp-growth>.sp-feedback-details {margin-top:36px}
+body.project-snapside .sp-behavior-details {margin-top:32px}
+body.project-snapside .sp-behavior-details .sp-organic-grid {margin:12px 0 32px}
