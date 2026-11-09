@@ -172,3 +172,19 @@ body.project-snapside .sp-film figcaption strong { font-size:14px; font-weight:5
 /* Preserve the complete Workflow capture, including its project sidebar. */
 body.project-snapside .sp-zoom-figure[data-view="workflow"] .sp-ui-crop{aspect-ratio:auto;overflow:visible}
 body.project-snapside .sp-zoom-figure[data-view="workflow"] .sp-ui-crop>img{position:static;display:block;width:100%;max-width:100%;height:auto;left:auto;top:auto;object-fit:contain}
+
+/* Keep the portfolio navigation consistent with Mongram and LaLaTulle. */
+body.project-snapside.compact-case.cc-dark .project-page-header {
+  color-scheme:light;
+  background:#fff;
+  border-bottom:0;
+  box-shadow:none;
+}
+body.project-snapside.compact-case.cc-dark .project-page-header .case-nav a { color:#66666d; }
+body.project-snapside.compact-case.cc-dark .project-page-header .back-link,
+body.project-snapside.compact-case.cc-dark .project-page-header .back-link:hover,
+body.project-snapside.compact-case.cc-dark .project-page-header .case-nav a:hover,
+body.project-snapside.compact-case.cc-dark .project-page-header .case-nav a.is-active { color:#18181a; }
+body.project-snapside.compact-case.cc-dark .project-page-header .case-nav a::after { background:#18181a; }
+body.project-snapside.compact-case.cc-dark .project-page-header a:focus-visible { outline-color:#7284d1; }
+body.project-snapside.compact-case.cc-dark .project-page-header .back-link { font-weight:700; }
