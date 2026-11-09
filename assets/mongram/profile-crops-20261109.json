@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "profile-dog-crop.png",
+    "source": "/Volumes/T7/Mongram-UI-Validation-20261105/Screenshots/profile-top-light.png",
+    "source_sha256": "5b19f2d1a6b8395f3ccd92d0655e78063ad65b3e59d5ddfa847febb49aabde13",
+    "crop_box": [
+      0,
+      80,
+      750,
+      954
+    ],
+    "kind": "Actual simulator UI verification capture, 2026-11-05; synthetic QA data",
+    "alterations": "Crop only. No UI reconstruction. Debug status and unrelated errors outside crop.",
+    "not_evidence_of": "Latest release, participant test session, or implemented hierarchy redesign"
+  },
+  {
+    "asset": "profile-guardian-crop.png",
+    "source": "/Volumes/T7/Mongram-UI-Validation-20261105/Screenshots/profile-scrolled-dark.png",
+    "source_sha256": "dd94a2bbb40ff19329cad26abb533abe145964affbcd3b59e8416018c4e9677c",
+    "crop_box": [
+      32,
+      350,
+      718,
+      610
+    ],
+    "kind": "Actual simulator UI verification capture, 2026-11-05; synthetic QA data",
+    "alterations": "Crop only. No UI reconstruction. Debug status and unrelated errors outside crop.",
+    "not_evidence_of": "Latest release, participant test session, or implemented hierarchy redesign"
+  }
+]
