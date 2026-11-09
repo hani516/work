@@ -45,7 +45,7 @@
   function prepare(svg, card, index) {
     const byId = id => svg.querySelector(`[id="${id}"]`);
     const resting = card.dataset.motion === 'resting';
-    const rig = {svg, card, resting, kind: card.dataset.motion, head: byId('head-motion'), tail: byId('tail'), nose: byId('nose'), mouth: byId('mouth'), eyes: byId('eyes'), paths: [], elapsed:0, visible:false, lastReplay:-Infinity};
+    const rig = {svg, card, resting, kind: card.dataset.motion, head: byId('head-motion'), tail: byId('tail'), nose: byId('nose'), mouth: byId('mouth'), eyes: byId('eyes'), paths: [], elapsed:0, visible:false};
     rig.clip = svg.querySelector('clipPath');
     // clipPath accepts direct geometry; flatten the source resting transform.
     for (const group of [...rig.clip.querySelectorAll('g')]) {
@@ -79,16 +79,9 @@
     for (const e of svg.querySelectorAll('[clip-path]')) e.setAttribute('clip-path', `url(#poodle-${index}-outside-head)`);
     const stage = card.querySelector('.mg-poodle-stage');
     stage.replaceChildren(svg);
-    stage.disabled = false;
     rig.breath = document.createElementNS(ns, 'g');
     for (const child of [...svg.children]) if (child.tagName !== 'defs') rig.breath.append(child);
     svg.append(rig.breath);
-    stage.addEventListener('click', () => {
-      const now = performance.now();
-      if (now - rig.lastReplay < 350) return;
-      rig.lastReplay = now; rig.elapsed = 0; paused = false;
-      updateLabel(); draw(rig,0); sync();
-    });
     rig.earFrames = [-1,-.5,0,.5,1].map(amount => rig.paths.filter(p => ['head','ears','faceDetails','mask'].includes(p.part)).map(p => [p.element, warpPath(p.d,(x,y) => {
       const side = x < 56 ? -1 : 1;
       const weight = smooth(x < 56 ? (34-x)/12 : (x-78)/12) * smooth((74-y)/22);
@@ -136,7 +129,7 @@
     // Use wall-clock time on any display refresh rate; draw only new 24fps source frames.
     const delta = last ? (now-last)/1000 : 0;
     last = now;
-    for (const rig of rigs) if (rig.visible) { rig.elapsed += delta; draw(rig,rig.elapsed); }
+    for (const rig of rigs) if (rig.visible) { rig.elapsed = (rig.elapsed + delta) % motionData.duration; draw(rig,rig.elapsed); }
     frame = requestAnimationFrame(tick);
   }
   function sync() {

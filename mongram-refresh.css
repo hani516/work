@@ -104,8 +104,3 @@
 @media(max-width:600px){.narrative-case .mg-cover-meta{grid-template-columns:1fr 1fr}.mg-cover-meta>div{min-width:0}.mg-cover-meta .eyebrow{letter-spacing:.09em}}
 
 /* Replay uses the untouched app motion frames, including natural breathing and blinking. */
-button.mg-poodle-stage{width:100%;border:0;border-radius:0;background:transparent;cursor:pointer;color:inherit}
-button.mg-poodle-stage:disabled{cursor:default}
-button.mg-poodle-stage:not(:disabled):hover{background:#eeeeee}
-button.mg-poodle-stage:focus-visible{outline:2px solid #777;outline-offset:-4px}
-.mg-motion-replay-icon{color:#999;font-size:14px;line-height:1}
