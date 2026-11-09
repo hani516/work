@@ -156,3 +156,18 @@ body.lt-narrative .ln-priority ol{align-items:stretch}
 body.lt-narrative .ln-priority li{align-items:center;text-align:center;gap:14px;min-height:176px}
 body.lt-narrative .ln-priority .ln-priority-icon{display:block;width:30px;height:30px;flex:0 0 30px;color:var(--accent)}
 @media(max-width:650px){body.lt-narrative .ln-priority li{justify-content:center;gap:16px;min-height:0}}
+
+/* Label the observed scroll evidence without inventing a metric or chart. */
+body.lt-narrative #halloween .lt-observation-source{display:table;margin:0 0 14px;padding:4px 10px;border-radius:5px;background:rgb(255 255 255 / 65%);color:var(--accent);font-size:14px;font-weight:500;line-height:1.5;letter-spacing:0}
+
+/* Separate observed search demand, a design hypothesis, and the placement decision. */
+body.lt-narrative .lt-search-decision{margin:0 0 64px}
+body.lt-narrative .lt-search-decision h3{font-size:clamp(26px,3vw,34px);line-height:1.4;margin:0 0 24px}
+body.lt-narrative .lt-search-decision dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0}
+body.lt-narrative .lt-search-decision dl>div{min-width:0;padding:26px;background:rgb(255 255 255 / 55%);border-radius:10px}
+body.lt-narrative .lt-search-decision dt{margin:0 0 16px;font-size:15px;line-height:1.5;font-weight:600;color:var(--accent)}
+body.lt-narrative .lt-search-decision dd{margin:0;font-size:22px;font-weight:500;line-height:1.6;letter-spacing:-.025em;overflow-wrap:anywhere}
+body.lt-narrative .lt-search-decision dd>span{display:block}
+body.lt-narrative .lt-search-decision dd>span+span{margin-top:14px}
+html[lang="ko"] body.lt-narrative .lt-search-decision dd{word-break:keep-all}
+@media(max-width:760px){body.lt-narrative .lt-search-decision dl{grid-template-columns:1fr;gap:14px}body.lt-narrative .lt-search-decision dl>div{padding:24px}}
