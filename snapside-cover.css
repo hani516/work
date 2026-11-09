@@ -1,23 +1,23 @@
 /* Cover follows Mongram / LaLaTulle: brand, story, preview, supporting details. */
-body.project-snapside .sp-cover{background:#fff;color:#292929;padding:64px 0 36px;scroll-margin-top:66px}
+body.project-snapside .sp-cover{background:var(--cc-bg);color:var(--cc-ink);padding:64px 0 36px;scroll-margin-top:66px}
 .sp-cover-inner{width:min(1120px,calc(100% - 80px));margin-inline:auto}
 .sp-cover-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:64px;align-items:center;min-height:520px}
 .sp-cover-copy{min-width:0}
-body.project-snapside .sp-cover-brand{display:flex;align-items:center;gap:14px;margin:24px 0 34px;color:#292929;font-size:clamp(60px,7.1vw,100px);font-weight:500;letter-spacing:-.065em;line-height:1.05}
-body.project-snapside .sp-cover .sp-hero-logo{width:64px;height:64px;margin:0;filter:invert(1)}
-body.project-snapside .sp-cover h1{display:block;margin:26px 0;color:#292929;font-size:clamp(32px,3.3vw,46px);line-height:1.4;font-weight:500;letter-spacing:-.045em;text-wrap:balance}
-body.project-snapside .sp-cover .cc-premise{margin:0;color:#636363;font-size:15px;line-height:1.8}
-body.project-snapside .sp-cover .sp-gallery{width:100%;margin:0;padding:24px;border-radius:16px;background:#f0f0f0}
-body.project-snapside .sp-cover .sp-gallery-tabs{width:100%;gap:2px;padding:4px;margin:0 0 16px;border:0;background:#e4e4e4;border-radius:8px}
-body.project-snapside .sp-cover .sp-gallery-tabs button{flex:1;min-width:0;padding:10px 4px;font-size:11px;color:#666}
-body.project-snapside .sp-cover .sp-gallery-tabs button[aria-selected="true"]{background:#292929;color:#fff}
-body.project-snapside .sp-cover .sp-gallery-tabs button:focus-visible{outline-color:#292929}
+body.project-snapside .sp-cover-brand{display:flex;align-items:center;gap:14px;margin:24px 0 34px;color:var(--cc-ink);font-size:clamp(60px,7.1vw,100px);font-weight:500;letter-spacing:-.065em;line-height:1.05}
+body.project-snapside .sp-cover .sp-hero-logo{width:64px;height:64px;margin:0;filter:none}
+body.project-snapside .sp-cover h1{display:block;margin:26px 0;color:var(--cc-ink);font-size:clamp(32px,3.3vw,46px);line-height:1.4;font-weight:500;letter-spacing:-.045em;text-wrap:balance}
+body.project-snapside .sp-cover .cc-premise{margin:0;color:#b5b8b2;font-size:15px;line-height:1.8}
+body.project-snapside .sp-cover .sp-gallery{width:100%;margin:0;padding:24px;border-radius:16px;background:#1b1d1b}
+body.project-snapside .sp-cover .sp-gallery-tabs{width:100%;gap:2px;padding:4px;margin:0 0 16px;border:0;background:#252725;border-radius:8px}
+body.project-snapside .sp-cover .sp-gallery-tabs button{flex:1;min-width:0;padding:10px 4px;font-size:11px;color:#b5b8b2}
+body.project-snapside .sp-cover .sp-gallery-tabs button[aria-selected="true"]{background:#f0f0ec;color:#111212}
+body.project-snapside .sp-cover .sp-gallery-tabs button:focus-visible{outline-color:var(--cc-ink)}
 body.project-snapside .sp-cover .sp-gallery figure{border:0;border-radius:8px}
 .sp-cover-meta{display:flex;align-items:center;justify-content:space-between;gap:36px;padding-top:26px;margin-top:8px}
-body.project-snapside .sp-cover .sp-fact-note{margin:0;max-width:720px;font-size:12px;line-height:1.8;color:#747474}
+body.project-snapside .sp-cover .sp-fact-note{margin:0;max-width:720px;font-size:12px;line-height:1.8;color:#a2a5a0}
 body.project-snapside .sp-cover .cc-links{margin:0;flex-shrink:0}
-body.project-snapside .sp-cover .cc-links a{display:inline-flex;min-height:48px;min-width:164px;align-items:center;justify-content:center;padding:12px 20px;background:#292929;border-radius:5px;color:#fff;font-size:14px;text-decoration:none}
-body.project-snapside .sp-cover .cc-links a:hover{background:#505050}
+body.project-snapside .sp-cover .cc-links a{display:inline-flex;min-height:48px;min-width:164px;align-items:center;justify-content:center;padding:12px 20px;background:#f0f0ec;border-radius:5px;color:#111212;font-size:14px;text-decoration:none}
+body.project-snapside .sp-cover .cc-links a:hover{background:#d8dad4}
 @media(max-width:1000px){.sp-cover-grid{gap:36px}body.project-snapside .sp-cover-brand{font-size:68px}body.project-snapside .sp-cover .sp-hero-logo{width:48px;height:48px}}
 @media(max-width:860px){.sp-cover-grid{grid-template-columns:1fr;gap:32px;min-height:0}.sp-cover-meta{align-items:flex-start}}
 @media(max-width:600px){body.project-snapside .sp-cover{padding-top:36px}.sp-cover-inner{width:calc(100% - 40px)}body.project-snapside .sp-cover-brand{font-size:62px;margin:16px 0 26px;gap:10px}body.project-snapside .sp-cover .sp-hero-logo{width:40px;height:40px}body.project-snapside .sp-cover h1{font-size:34px;margin:20px 0}body.project-snapside .sp-cover .sp-gallery{padding:18px;border-radius:12px}.sp-cover-meta{flex-direction:column;gap:20px}}
