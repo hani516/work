@@ -81,7 +81,7 @@
 
 /* Company work leads on its own; personal projects sit together below. */
 .project-group+.project-group{margin-top:64px}
-.project-group-title{margin:0 0 24px;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:-.025em}
+.project-group-title{margin:0 0 24px;font-size:28px;font-weight:600;line-height:1.5;letter-spacing:-.025em}
 .company-project-panels{grid-template-columns:minmax(0,1fr)}
 .company-project-panels .project-panel{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;gap:40px}
 .company-project-panels .panel-copy{padding:0;gap:12px}
@@ -89,7 +89,7 @@
 .company-project-panels .panel-title h3{font-size:32px}
 .company-project-panels .panel-type{font-size:12px}
 .company-project-panels .panel-copy p{font-size:14px;max-width:30em}
-@media(max-width:700px){.project-group+.project-group{margin-top:48px}.project-group-title{font-size:14px;margin-bottom:18px}.company-project-panels .project-panel{display:flex;flex-direction:column-reverse;gap:0}.company-project-panels .panel-visual{width:100%;aspect-ratio:1.28}.company-project-panels .panel-copy{width:100%;padding-top:18px;gap:8px}.company-project-panels .panel-title h3{font-size:26px}.company-project-panels .panel-type{font-size:10px}.company-project-panels .panel-copy p{font-size:12px}}
+@media(max-width:700px){.project-group+.project-group{margin-top:48px}.project-group-title{font-size:22px;margin-bottom:18px}.company-project-panels .project-panel{display:flex;flex-direction:column-reverse;gap:0}.company-project-panels .panel-visual{width:100%;aspect-ratio:1.28}.company-project-panels .panel-copy{width:100%;padding-top:18px;gap:8px}.company-project-panels .panel-title h3{font-size:26px}.company-project-panels .panel-type{font-size:10px}.company-project-panels .panel-copy p{font-size:12px}}
 
 /* Two visible personal projects fill the row; the archived Wivlo page is unchanged. */
 .personal-project-panels{grid-template-columns:repeat(2,minmax(0,1fr))}
