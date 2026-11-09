@@ -131,3 +131,25 @@ body.lt-narrative .ln-pending-results {display:grid;grid-template-columns:repeat
 body.lt-narrative .ln-pending-results article {padding:28px 32px;background:#eee8ed;border-radius:10px;}
 body.lt-narrative .ln-pending-results h4 {font-size:23px;line-height:1.5;margin:0 0 14px;}
 body.lt-narrative .ln-pending-results p {font-size:22px;color:#796b76;margin:0;}
+
+/* Give copy room to breathe without extending the chapter-divider spacing. */
+body.lt-narrative .ln-section > .ln-heading,
+body.lt-narrative #navigation > .ln-heading {gap:32px;margin-bottom:64px;}
+body.lt-narrative .ln-section > .ln-heading h2 {line-height:1.5;}
+body.lt-narrative .ln-stage-copy > h3 {margin-bottom:30px;}
+body.lt-narrative .ln-stage-copy > p + p {margin-top:28px;}
+body.lt-narrative .ln-section .lt-case-brief dt {margin-bottom:32px;}
+body.lt-narrative .ln-section .lt-case-brief dd {line-height:1.75;}
+body.lt-narrative #halloween .lt-halloween-problems > span + span {margin-top:20px;}
+body.lt-narrative .ln-stage {margin-top:80px;}
+body.lt-narrative .ln-footer-part h4 {margin-bottom:22px;}
+body.lt-narrative .ln-result > h3 {margin-bottom:40px;}
+body.lt-narrative .ln-growth-metrics .ln-metric p {margin-bottom:22px;}
+body.lt-narrative .lt-search-decision dt,
+body.lt-narrative .lt-pdp-review dt {margin-bottom:24px;}
+body.lt-narrative .lt-search-decision dd,
+body.lt-narrative .lt-pdp-review dd {line-height:1.75;}
+body.lt-narrative .lt-search-decision dd > span + span,
+body.lt-narrative .lt-pdp-review dd > span + span {margin-top:20px;}
+body.lt-narrative .ln-rank-result h4 {margin-bottom:18px;}
+body.lt-narrative .ln-pending-results h4 {margin-bottom:22px;}
