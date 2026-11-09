@@ -79,24 +79,29 @@
 @media(max-width:360px){.wv-cover-brand strong{font-size:30px}.wv-cover-phone{border-width:2px;border-radius:12px}}
 @media(prefers-reduced-motion:reduce){.wv-cover-screens{transition:none}.project-panel:hover .wv-cover-screens,.project-panel:has(:focus-visible) .wv-cover-screens{transform:none}}
 
-/* Company work leads on its own; personal projects sit together below. */
-.project-group+.project-group{margin-top:64px}
-.project-group-title{margin:0 0 24px;font-size:28px;font-weight:600;line-height:1.5;letter-spacing:-.025em}
+/* Compact project gallery: one professional card and two personal cards.
+   Keep the same composition on phones through the existing fixed viewport. */
+.selected-projects > .page-shell{display:grid;grid-template-columns:minmax(0,calc((100% - 72px)/3)) minmax(0,1fr);gap:48px;align-items:start}
+.project-group{min-width:0}
+.project-group-title{margin:0 0 20px;font-size:24px;font-weight:600;line-height:1.5;letter-spacing:-.025em}
 .company-project-panels{grid-template-columns:minmax(0,1fr)}
-.company-project-panels .project-panel{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);align-items:center;gap:40px}
-.company-project-panels .panel-copy{padding:0;gap:12px}
-.company-project-panels .panel-visual{aspect-ratio:1.45}
-.company-project-panels .panel-title h3{font-size:32px}
-.company-project-panels .panel-type{font-size:12px}
-.company-project-panels .panel-copy p{font-size:14px;max-width:30em}
-@media(max-width:700px){.project-group+.project-group{margin-top:48px}.project-group-title{font-size:22px;margin-bottom:18px}.company-project-panels .project-panel{display:flex;flex-direction:column-reverse;gap:0}.company-project-panels .panel-visual{width:100%;aspect-ratio:1.28}.company-project-panels .panel-copy{width:100%;padding-top:18px;gap:8px}.company-project-panels .panel-title h3{font-size:26px}.company-project-panels .panel-type{font-size:10px}.company-project-panels .panel-copy p{font-size:12px}}
-
-/* Two visible personal projects fill the row; the archived Wivlo page is unchanged. */
 .personal-project-panels{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media(max-width:600px){.personal-project-panels{grid-template-columns:minmax(0,1fr)}}
-/* Color and space distinguish company and personal work without divider lines. */
-.project-group{padding:32px;border-radius:16px}
-.project-group-company{background:#f8f1f4}
-.project-group-personal{background:#f3f5f7}
-.project-group+.project-group{margin-top:72px}
-@media(max-width:600px){.project-group{padding:18px;border-radius:12px}.project-group+.project-group{margin-top:48px}}
+.selected-projects .project-panels{gap:24px}
+.selected-projects .project-panel{display:flex;flex-direction:column-reverse;gap:0}
+.selected-projects .panel-visual{width:100%;aspect-ratio:1.5;border-radius:12px}
+.selected-projects .panel-copy{padding-top:14px;gap:6px}
+.selected-projects .panel-title h3{font-size:22px;line-height:1.35}
+.selected-projects .panel-type{font-size:11px;line-height:1.5}
+.selected-projects .panel-copy p{font-size:12px;line-height:1.7;max-width:34em}
+.selected-projects .cover-label{left:7%;right:7%;top:7%}
+.selected-projects .cover-label>strong{font-size:32px;margin:0;gap:10px}
+.selected-projects .cover-label>strong img{width:28px;height:28px}
+.selected-projects .product-screen{width:96%;left:9%;top:35%}
+.selected-projects .lt-cover-brand strong{font-size:32px}
+.selected-projects .lt-cover-phones{inset:28% 7% 6%;gap:7%}
+.selected-projects .lt-cover-phone{border-width:2px;border-radius:11px}
+.selected-projects .mg-cover-brand{top:7%;gap:10px}
+.selected-projects .mg-cover-brand img{width:36px}
+.selected-projects .mg-cover-brand strong{font-size:28px}
+.selected-projects .mg-cover-screens{inset:28% 7% 6%}
+.selected-projects .mg-cover-screens img{border-radius:9px}
