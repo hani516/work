@@ -1,0 +1,64 @@
+/* Small-sample observations, explicit design hypotheses, and implementation boundaries. */
+.mg-family-testing{background:#f7f7f7}
+.n-section .mg-family-kicker{font-size:11px;font-weight:600;line-height:1.6;letter-spacing:.1em;color:#777;margin:0 0 22px}
+.mg-family-testing .n-intro{max-width:830px}
+.mg-family-case{padding:34px;background:#fff;border-radius:16px;margin:28px 0}
+.mg-family-case-heading{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px;align-items:center;margin-bottom:32px}
+.mg-family-number{font-size:13px;color:#999;font-variant-numeric:tabular-nums}
+.n-section .mg-family-case-heading h3{font-size:28px;font-weight:500;line-height:1.5;margin:0;text-wrap:balance}
+.mg-family-status{display:inline-block;padding:8px 12px;border:1px solid #dedede;border-radius:5px;font-size:10px;line-height:1.5;color:#777;white-space:nowrap}
+.mg-family-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.mg-family-step{min-width:0;display:flex;flex-direction:column}
+.n-section .mg-family-step-label{font-size:11px;line-height:1.6;font-weight:600;letter-spacing:.07em;color:#777;margin:0 0 16px}
+.n-section .mg-family-step>p{font-size:17px;line-height:1.8;color:#3d3d3d;min-height:92px;margin:0 0 22px;word-break:keep-all;overflow-wrap:anywhere}
+.mg-family-diagram{display:flex;min-height:194px;padding:22px 18px;background:#f5f5f5;border-radius:10px;margin-top:auto;color:#585858}
+.mg-family-diagram svg{display:block;flex:0 0 auto;width:30px;height:30px}
+.mg-family-diagram strong{font-size:13px;font-weight:500;line-height:1.6}
+.mg-diagram-label{display:block;font-size:10px;font-weight:500;color:#999;line-height:1.5}
+.mg-profile-before{flex-direction:column;gap:16px}
+.mg-profile-dog{display:flex;align-items:center;gap:14px;padding:11px 12px;background:white;border-radius:6px}
+.mg-profile-hidden{display:flex;align-items:center;gap:10px;font-size:10px;line-height:1.7;color:#999;padding:0 4px}
+.mg-profile-hidden svg{width:16px;height:16px}
+.mg-expectation{flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:12px;background:#fafafa}
+.mg-expectation>span{font-size:10px;line-height:1.7;color:#999;max-width:240px}
+.mg-profile-after{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:#ededed}
+.mg-profile-after>div{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px 8px;background:#fff;border-radius:6px;text-align:center}
+.mg-photo-before{align-items:center;justify-content:center;gap:16px}
+.mg-photo-before>div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;flex:1}
+.mg-flow-arrow{font-size:18px;color:#aaa}
+.mg-photo-missing{opacity:.58}
+.mg-photo-after{flex-direction:column;justify-content:center;gap:20px;background:#ededed}
+.mg-photo-after>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mg-photo-after>div>span:not(.mg-flow-arrow){display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding:16px 10px;min-width:82px}
+.mg-album-entry{background:#fff;border-radius:6px}
+.n-section .mg-family-implementation{font-size:12px;line-height:1.8;color:#888;margin:24px 0 0}
+.n-section .mg-family-limits{font-size:12px;line-height:1.9;color:#888;max-width:940px;margin:30px 0 0}
+@media(max-width:1000px){
+ .mg-family-case{padding:28px}
+ .mg-family-case-heading{grid-template-columns:auto minmax(0,1fr);gap:10px 16px}
+ .mg-family-status{grid-column:2;justify-self:start}
+ .mg-family-steps{gap:18px}
+ .mg-family-diagram{padding:18px 12px}
+ .n-section .mg-family-step>p{font-size:16px;min-height:122px}
+ .mg-profile-after{gap:8px}
+ .mg-photo-after>div>span:not(.mg-flow-arrow){min-width:60px;padding:12px 8px}
+}
+@media(max-width:900px){
+ .mg-family-case{padding:28px 22px;margin:24px 0}
+ .n-section .mg-family-case-heading h3{font-size:24px}
+ .mg-family-steps{grid-template-columns:1fr;gap:28px}
+ .n-section .mg-family-step>p{font-size:17px;min-height:0;margin-bottom:18px}
+ .n-section .mg-family-step-label{margin-bottom:12px}
+ .mg-family-diagram{min-height:170px;padding:22px}
+ .mg-profile-after>div{min-height:125px}
+ .mg-photo-after>div{justify-content:center;gap:25px}
+ .mg-photo-after>div>span:not(.mg-flow-arrow){min-width:82px}
+ .n-section .mg-family-implementation{margin-top:28px}
+}
+@media(max-width:360px){
+ .mg-family-case{padding:24px 18px}
+ .n-section .mg-family-case-heading h3{font-size:22px}
+ .mg-family-diagram{padding:18px 14px}
+ .mg-photo-after>div{gap:15px}
+ .mg-photo-after>div>span:not(.mg-flow-arrow){min-width:68px}
+}
