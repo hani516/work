@@ -108,3 +108,26 @@ body.lt-narrative .lt-case-index .lt-case-entry:focus-visible {
 }
 
 html[lang="ja"] body.lt-narrative .lt-case-index .lt-case-entry strong { font-size: 20px; letter-spacing: -.04em; }
+
+/* Large, quiet chapter markers replace the tiny case-study captions. */
+body.lt-narrative .ln-section > .ln-heading > .ln-case-marker {
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  max-width: 100%; margin: 0 0 12px; padding: 0; border: 0; line-height: 1;
+}
+body.lt-narrative .ln-case-marker b {
+  display: block; font-family: Inter, sans-serif; font-size: 128px;
+  font-weight: 500; line-height: 1; letter-spacing: -.065em; color: #92858d;
+}
+body.lt-narrative .ln-case-marker small {
+  font-size: 18px; font-weight: 500; line-height: 1.5;
+  letter-spacing: .12em; color: #796b76;
+}
+
+/* The campaign starts from three user-confirmed problems. */
+body.lt-narrative #halloween .lt-halloween-problems > span {display:block;}
+body.lt-narrative #halloween .lt-halloween-problems > span + span {margin-top:12px;}
+/* Pending result slots contain no invented values or improvement claims. */
+body.lt-narrative .ln-pending-results {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:44px 0 0;}
+body.lt-narrative .ln-pending-results article {padding:28px 32px;background:#eee8ed;border-radius:10px;}
+body.lt-narrative .ln-pending-results h4 {font-size:23px;line-height:1.5;margin:0 0 14px;}
+body.lt-narrative .ln-pending-results p {font-size:22px;color:#796b76;margin:0;}
