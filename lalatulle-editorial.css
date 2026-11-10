@@ -53,6 +53,16 @@ button { font: inherit; }
 .lt-nav-icon-primary { color: var(--lt-accent); }
 .lt-nav-icon-muted { color: #a58b96; }
 .lt-case-notice img { height: auto; object-fit: contain; }
+/* Keep complete campaign artwork inside an unmistakable carousel preview. */
+.lt-case-banners { display: flex; flex-direction: column; justify-content: center; gap: 12px; background: #e8e1de; }
+.lt-banner-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 10px; width: 180%; flex-shrink: 0; }
+.lt-case-banners .lt-banner-track img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; transform: scale(.86); opacity: .5; transition: none; }
+.lt-case-banners .lt-banner-track .lt-banner-active { transform: none; opacity: 1; box-shadow: 0 8px 18px #37232d26; }
+.lt-case-entry:hover .lt-banner-track img { transform: scale(.86); }
+.lt-case-entry:hover .lt-banner-track .lt-banner-active { transform: none; }
+.lt-banner-dots { display: flex; align-items: center; justify-content: center; gap: 5px; height: 6px; }
+.lt-banner-dots span { display: block; width: 4px; height: 4px; border-radius: 4px; background: #baa8ae; }
+.lt-banner-dots .is-active { width: 16px; background: var(--lt-accent); }
 .lt-case-notice { padding: 20px; }
 .lt-case-entry strong { font-size: 21px; font-weight: 600; line-height: 1.6; letter-spacing: -.035em; }
 .ln-section { padding-top: 160px; margin-top: 80px; border-top: 1px solid var(--lt-line); }
