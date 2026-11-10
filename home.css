@@ -145,6 +145,12 @@
 .hero-tools .tool-mark img{width:18px;height:18px}
 .hero-tools .tool-mark-figma img{width:30.72px;height:38.4px}
 
+/* Reserve the complete title layout while each letter is typed once. */
+@media(prefers-reduced-motion:no-preference){
+  .hero-headline.is-typing .type-character{opacity:0;animation:hero-type-in 1ms step-end var(--type-at) forwards}
+}
+@keyframes hero-type-in{to{opacity:1}}
+
 /* Reveal content once as it enters the viewport; never hide content without JS. */
 .motion-ready .reveal{transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
 .motion-ready .reveal:not(.is-visible){opacity:0;transform:translateY(24px)}

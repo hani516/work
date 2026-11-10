@@ -162,6 +162,45 @@ const header = document.querySelector("[data-elevate]");
 const copyToast = document.querySelector(".copy-toast");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (!reduceMotion) document.documentElement.classList.add("motion-ready");
+// Animate only the home title. The heading keeps its complete accessible name,
+// and hidden letters retain their space so nothing moves as the text is typed.
+function initHeroTyping() {
+  const title = document.querySelector(".statement-hero .hero-headline");
+  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!title || motionPreference.matches || window.location.hash) return;
+
+  const lines = [...title.querySelectorAll("[data-type-line]")];
+  if (!lines.length) return;
+  const text = lines.map((line) => line.textContent);
+  let delay = 180;
+  lines.forEach((line, index) => {
+    const fragment = document.createDocumentFragment();
+    for (const character of text[index]) {
+      const letter = document.createElement("span");
+      letter.className = "type-character";
+      letter.textContent = character;
+      letter.style.setProperty("--type-at", `${delay}ms`);
+      fragment.appendChild(letter);
+      delay += character === " " ? 30 : 48;
+    }
+    line.replaceChildren(fragment);
+    delay += 170;
+  });
+  title.classList.add("is-typing");
+
+  const finish = () => {
+    window.clearTimeout(timer);
+    title.classList.remove("is-typing");
+    lines.forEach((line, index) => { line.textContent = text[index]; });
+    motionPreference.removeEventListener("change", finish);
+    window.removeEventListener("pagehide", finish);
+  };
+  const timer = window.setTimeout(finish, delay);
+  motionPreference.addEventListener("change", finish, { once: true });
+  window.addEventListener("pagehide", finish, { once: true });
+}
+initHeroTyping();
+
 let currentLanguage = "ja";
 let toastTimer;
 
