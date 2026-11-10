@@ -84,6 +84,9 @@
     for (const e of svg.querySelectorAll('[id]')) e.id = `poodle-${index}-${e.id}`;
     for (const e of svg.querySelectorAll('[clip-path]')) e.setAttribute('clip-path', `url(#poodle-${index}-outside-head)`);
     const stage = card.querySelector('.mg-poodle-stage');
+    const description = stage.querySelector('img')?.alt;
+    stage.setAttribute('role', 'img');
+    stage.setAttribute('aria-label', description || `Toy poodle: ${card.dataset.motion}`);
     stage.replaceChildren(svg);
     rig.breath = document.createElementNS(ns, 'g');
     for (const child of [...svg.children]) if (child.tagName !== 'defs') rig.breath.append(child);
@@ -173,7 +176,9 @@
     toggle.hidden=false; updateLabel(); sync();
   }).catch(() => {
     gallery.dataset.motionState='error';
-    const note=gallery.querySelector('.mg-poodle-note');
+    const note=gallery.querySelector('.mg-poodle-note') || document.createElement('p');
+    note.className='mg-poodle-note';
+    if (!note.isConnected) gallery.append(note);
     note.setAttribute('role','status');
     note.textContent=({ja:'動きを読み込めませんでした。ページを再読み込みしてください。',en:'Motion could not load. Please refresh the page.',ko:'움직임을 불러오지 못했어요. 페이지를 새로고침해 주세요.'})[document.documentElement.lang] || 'Motion could not load. Please refresh the page.';
   });

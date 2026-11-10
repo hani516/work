@@ -1,0 +1,41 @@
+/* Images and short, readable explanations replace repeated captions. */
+.project-mongram .mg-hero-copy .hero-lead,
+.project-mongram .n-section .n-intro {font-size:22px;line-height:1.8;max-width:900px}
+.project-mongram .mg-cover-meta .eyebrow {font-size:14px;letter-spacing:.05em}
+.project-mongram .mg-cover-meta p {font-size:17px;line-height:1.75}
+.project-mongram .mg-cover-meta {column-gap:32px}
+.project-mongram .n-compare-badge {font-size:18px;letter-spacing:.03em}
+.project-mongram .mg-poodle-stage {padding:24px 12px;height:210px}
+.project-mongram .mg-motion-toggle {font-size:15px;padding:10px 14px}
+.project-mongram .n-section .mg-poodle-heading h3 {font-size:24px;margin:0}
+.project-mongram .mg-family-case {padding:42px;margin:32px 0}
+.project-mongram .mg-family-case-heading {display:block;margin-bottom:24px}
+.project-mongram .n-section .mg-case-summary {font-size:21px;line-height:1.8;max-width:920px;margin:0 0 36px;color:#555}
+.project-mongram .mg-family-diagram strong {font-size:18px;line-height:1.6}
+.project-mongram .mg-photo-case .mg-photo-evidence-frame,
+.project-mongram .mg-photo-case .mg-photo-evidence-location {padding:0;overflow:hidden;background:white;border-radius:12px}
+.project-mongram .mg-photo-case .mg-photo-position-marker path {display:none}
+.project-mongram .mg-next-plans {display:grid;gap:64px;margin-top:60px}
+.project-mongram .mg-next-plan {padding-top:40px;border-top:1px solid #ffffff35}
+.project-mongram .n-section .mg-next-plan h3 {font-size:32px;margin:0 0 30px;color:#fafafa;font-weight:500}
+.project-mongram .n-section .mg-next-plan p {font-size:21px;line-height:1.85;max-width:900px;margin:30px 0 0;color:#e2e2e2}
+.project-mongram .n-section .mg-poodle-note {font-size:18px}
+@media(max-width:900px){
+ .project-mongram .mg-family-case {padding:30px}
+ .project-mongram .mg-family-steps {gap:28px}
+}
+@media(max-width:600px){
+ .project-mongram .mg-hero-copy .hero-lead,
+ .project-mongram .n-section .n-intro,
+ .project-mongram .n-section .mg-case-summary,
+ .project-mongram .n-section .mg-next-plan p {font-size:18px;line-height:1.8}
+ .project-mongram .mg-family-case {padding:26px 20px}
+ .project-mongram .mg-cover-meta p {font-size:16px}
+ .project-mongram .mg-cover-meta .eyebrow {font-size:13px}
+ .project-mongram .n-section .mg-next-plan h3 {font-size:27px}
+ .project-mongram .n-section .mg-poodle-heading h3 {font-size:21px}
+ .project-mongram .mg-poodle-heading {flex-wrap:wrap}
+ .project-mongram .mg-poodle-stage {height:180px}
+ .project-mongram .mg-motion-toggle {font-size:14px}
+ .project-mongram .mg-next-plans {gap:40px;margin-top:36px}
+}

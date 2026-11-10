@@ -1,0 +1,40 @@
+/* A few clear sentences beside the product, without stacked micro-labels. */
+body.project-snapside .sp-section-head p,
+body.project-snapside.compact-case .cc-decision-copy > .sp-decision-summary,
+body.project-snapside .sp-organic-reading p {font-size:22px;line-height:1.85;max-width:900px}
+body.project-snapside.compact-case .cc-decision-copy > .sp-decision-summary {font-size:21px;margin:0}
+body.project-snapside.compact-case .sp-case-decisions .cc-decision {grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:48px;align-items:center}
+body.project-snapside .sp-case-decisions .sp-zoom-figure .sp-ui-crop {aspect-ratio:auto;overflow:visible}
+body.project-snapside .sp-case-decisions .sp-zoom-figure .sp-ui-crop>img {position:static;display:block;width:100%;max-width:100%;height:auto;left:auto;top:auto;object-fit:contain}
+body.project-snapside .sp-organic-scope {font-size:17px;line-height:1.8;max-width:960px;margin:0 0 28px}
+body.project-snapside .sp-organic-scope a {color:inherit;text-underline-offset:4px}
+body.project-snapside .sp-organic-metrics article>span,
+body.project-snapside .sp-organic-actions dd>span,
+body.project-snapside .sp-web-baseline span,
+body.project-snapside .sp-fact-note {font-size:17px;line-height:1.7}
+body.project-snapside .sp-web-baseline p,
+body.project-snapside .sp-organic-actions dt,
+body.project-snapside .sp-organic-bar-row {font-size:18px;line-height:1.6}
+body.project-snapside .sp-organic-bar-row {grid-template-columns:140px minmax(0,1fr) 34px}
+body.project-snapside .sp-feedback-details summary {font-size:18px;padding:28px 0}
+body.project-snapside .sp-feedback-translation p {font-size:19px;line-height:1.8}
+body.project-snapside .sp-feedback-translation a {font-size:16px;line-height:1.7}
+body.project-snapside .sp-organic-reading {padding:34px 0;border-top:1px solid var(--cc-line);background:none;border-radius:0}
+body.project-snapside .sp-cover-meta strong {font-size:14px;letter-spacing:.05em}
+@media(max-width:900px){
+ body.project-snapside.compact-case .sp-case-decisions .cc-decision {grid-template-columns:1fr;gap:32px}
+ body.project-snapside .sp-case-decisions .sp-design-visual {grid-row:auto}
+ body.project-snapside .sp-organic-grid {grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:600px){
+ body.project-snapside .sp-section-head p,
+ body.project-snapside.compact-case .cc-decision-copy > .sp-decision-summary,
+ body.project-snapside .sp-organic-reading p,
+ body.project-snapside .sp-feedback-translation p {font-size:18px;line-height:1.8}
+ body.project-snapside .sp-organic-scope,
+ body.project-snapside .sp-web-baseline span,
+ body.project-snapside .sp-organic-actions dd>span,
+ body.project-snapside .sp-organic-metrics article>span {font-size:16px}
+ body.project-snapside .sp-organic-bar-row {grid-template-columns:110px minmax(0,1fr) 30px;font-size:16px}
+ body.project-snapside .sp-organic-actions dl>div {flex-wrap:wrap}
+}
