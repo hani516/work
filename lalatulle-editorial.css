@@ -45,8 +45,14 @@ button { font: inherit; }
 .lt-case-thumbnail { display: grid; place-items: center; width: 100%; aspect-ratio: 1.2; background: var(--lt-surface); overflow: hidden; margin-bottom: 24px; }
 .lt-case-thumbnail img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s cubic-bezier(.22,.7,.2,1); }
 .lt-case-entry:hover .lt-case-thumbnail img { transform: scale(1.035); }
-.lt-case-entry[href="#navigation"] .lt-case-thumbnail { padding: 20px; }
-.lt-case-entry[href="#navigation"] img, .lt-case-notice img { height: auto; object-fit: contain; }
+/* A loose constellation of the destinations explored in the navigation case. */
+.lt-case-navigation { position: relative; color: #876675; }
+.lt-case-navigation .lt-nav-logo { position: absolute; inset: 50% auto auto 50%; width: 74%; height: auto; object-fit: contain; mix-blend-mode: multiply; transform: translate(-50%, -50%); transition: none; }
+.lt-case-entry:hover .lt-nav-logo { transform: translate(-50%, -50%); }
+.lt-nav-icons { display: block; width: 100%; height: 100%; }
+.lt-nav-icon-primary { color: var(--lt-accent); }
+.lt-nav-icon-muted { color: #a58b96; }
+.lt-case-notice img { height: auto; object-fit: contain; }
 .lt-case-notice { padding: 20px; }
 .lt-case-entry strong { font-size: 21px; font-weight: 600; line-height: 1.6; letter-spacing: -.035em; }
 .ln-section { padding-top: 160px; margin-top: 80px; border-top: 1px solid var(--lt-line); }
