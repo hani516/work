@@ -76,14 +76,20 @@ button { font: inherit; }
 .ln-category-pair, .ln-banner-pair { display: grid; gap: 32px; padding: 40px; background: var(--lt-surface); }
 .lt-banner-refresh { display: block; }
 .lt-banner-refresh > .ln-stage-copy { margin-bottom: 36px; }
-.lt-banner-comparisons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 1000px; margin-inline: auto; }
-.lt-banner-comparison h4 { font-size: 20px; letter-spacing: -.02em; margin-bottom: 14px; }
-.lt-banner-comparison .ln-banner-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 16px; padding: 16px; }
-.lt-banner-comparison .ln-comparison-label { font-size: 11px; margin-bottom: 10px; }
+/* Compare all four old banners on the left with their replacements on the right. */
+.lt-banner-comparisons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 760px; margin-inline: auto; }
+.lt-banner-column { min-width: 0; }
+.lt-banner-column > .ln-comparison-label { margin-bottom: 24px; }
+.lt-banner-column figure + figure { margin-top: 24px; }
+.lt-banner-caption { font-size: 14px; font-weight: 500; line-height: 1.5; margin-bottom: 10px; }
+.lt-banner-column .ln-image-link { aspect-ratio: 40 / 11; }
+.lt-banner-column img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .lt-banner-source { background: #383838 url('assets/lalatulle/category-banner-original-background.jpg') center / 100% auto; }
 @media (max-width: 760px) {
-  .lt-banner-comparisons { grid-template-columns: 1fr; gap: 24px; max-width: 520px; }
-  .lt-banner-comparison .ln-banner-pair { gap: 12px; padding: 12px; }
+  .lt-banner-comparisons { gap: 16px; }
+  .lt-banner-column > .ln-comparison-label { font-size: 11px; margin-bottom: 18px; }
+  .lt-banner-column figure + figure { margin-top: 18px; }
+  .lt-banner-caption { font-size: 12px; margin-bottom: 8px; }
 }
 .ln-category-pair .ln-image-link { width: 100%; margin-inline: auto; }
 .ln-category-pair > figure > .ln-image-link img, .ln-banner-pair img { width: 100%; }
@@ -100,6 +106,14 @@ button { font: inherit; }
 .lt-story-frame { padding: 0; background: transparent; color: var(--lt-ink); }
 .lt-story-frame figcaption { display: flex; justify-content: space-between; gap: 20px; font-size: 12px; color: var(--lt-accent); margin-bottom: 20px; font-weight: 500; }
 .lt-story-image img { width: 100%; max-height: 560px; object-fit: contain; object-position: top; }
+/* Faint extracts from the archived page show more categories continuing beyond Bunny. */
+.lt-story-repetition { position: relative; isolation: isolate; overflow: hidden; }
+.lt-story-main { position: relative; z-index: 2; width: 68%; height: 100%; }
+.lt-story-frame .lt-story-repetition .lt-story-main img { object-position: left top; }
+.lt-story-echo { position: absolute; z-index: 1; left: 36%; top: 4%; width: 54%; height: 92%; overflow: hidden; opacity: .32; mask-image: linear-gradient(#000 75%, transparent); }
+.lt-story-echo-next { left: 59%; top: 8%; opacity: .17; z-index: 0; }
+.lt-story-frame .lt-story-repetition .lt-story-echo img { width: 100%; height: auto; max-height: none; transform: translateY(-64%); }
+.lt-story-frame .lt-story-repetition .lt-story-echo-next img { transform: translateY(-72%); }
 .ln-footer-stage { margin-top: 112px; }
 .ln-footer-stage > h3 { max-width: 680px; margin-bottom: 48px; }
 /* Join the image column edge to edge while keeping each original note at its right. */
@@ -144,7 +158,14 @@ button { font: inherit; }
 .ln-rank-value { color: var(--lt-accent); font-size: 62px; font-weight: 500; line-height: 1; letter-spacing: -.05em; }
 .ln-rank-value small { font-size: 20px; }
 .ln-case-cta { margin-top: 32px; }
-.ln-intro { max-width: 800px; font-size: 23px; line-height: 1.9; margin-top: 0; }
+.ln-google-search-block { max-width: 680px; margin-top: 32px; }
+.ln-google-search-label { font-size: 16px; margin-bottom: 12px; }
+.ln-google-search { display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 14px 20px; background: #fff; border: 1px solid var(--lt-line); border-radius: 30px; box-shadow: 0 2px 6px #24212508; transition: border-color .2s, box-shadow .2s; }
+.ln-google-search span { flex: 1; min-width: 0; font-size: 16px; }
+.ln-google-search svg { flex: none; color: var(--lt-muted); }
+.ln-google-search:is(:hover, :focus-visible) { border-color: #b29ba4; box-shadow: 0 3px 10px #24212514; }
+.ln-intro { max-width: 800px; font-size: 23px; line-height: 1.9; margin-top: 0; text-wrap: pretty; }
+.lt-phrase { white-space: nowrap; }
 /* Restore the centered, tinted priority cards from the earlier design. */
 .ln-priority { max-width: 900px; margin: 42px auto 56px; }
 .ln-priority > h3, .ln-priority > p { margin-inline: auto; text-align: center; }
@@ -169,6 +190,13 @@ button { font: inherit; }
 .lt-brand-strategy { display: block; }
 .lt-body-copy { max-width: 850px; font-size: 20px; line-height: 1.85; margin-top: 28px; color: var(--lt-muted); }
 .ln-result-context { max-width: 850px; font-size: 16px; color: var(--lt-muted); margin-block: 28px; }
+.ln-nav-changes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 32px; }
+.ln-nav-changes > div { border-top: 1px solid var(--lt-line); padding-top: 20px; }
+.ln-nav-changes dt { font-size: 18px; font-weight: 600; line-height: 1.6; margin-bottom: 10px; }
+.ln-nav-changes dd { font-size: 16px; line-height: 1.8; color: var(--lt-muted); }
+@media (max-width: 760px) {
+  .ln-nav-changes { grid-template-columns: 1fr; gap: 24px; }
+}
 .lt-search-decision { margin-top: 88px; }
 .lt-search-decision dl { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 40px; margin-top: 36px; }
 .lt-search-decision dt { color: var(--lt-accent); font-size: 16px; font-weight: 500; margin-bottom: 18px; }
