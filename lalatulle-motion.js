@@ -78,10 +78,10 @@
   }
 
   // Reveal copy and artwork independently, without animating entire long sections.
-  document.querySelectorAll('.ln-heading, .ln-stage-copy, .ln-intro, .ln-priority > h3, .ln-footer-stage > h3, .lt-position-decision, .lt-search-decision > h3, .lt-experiment-result > h3').forEach(element => { element.dataset.ltReveal = 'copy'; });
+  document.querySelectorAll('.ln-heading, .ln-stage-copy, .ln-intro, .lt-body-copy, .ln-priority > h3, .ln-footer-stage > h3, .lt-search-decision > h3, .lt-experiment-result > h3').forEach(element => { element.dataset.ltReveal = 'copy'; });
   document.querySelectorAll('.ln-category-pair > figure, .ln-banner-pair > figure, .ln-footer-part, .ln-nav-comparison > figure, .ln-home-pair > figure, .ln-fomo-visual, .lt-case-entry').forEach(element => { element.dataset.ltReveal = 'image'; });
-  document.querySelectorAll('.ln-metric, .lt-position-fact, .ln-decisions > li, .ln-experiment-flow > li').forEach(element => { element.dataset.ltReveal = 'copy'; });
-  document.querySelectorAll('.ln-chapters, .ln-metrics, .ln-footer-evidence, .lt-position-facts, .ln-decisions, .ln-experiment-flow, .ln-home-pair, .ln-nav-comparison').forEach(group => {
+  document.querySelectorAll('.ln-metric').forEach(element => { element.dataset.ltReveal = 'copy'; });
+  document.querySelectorAll('.ln-chapters, .ln-metrics, .ln-footer-evidences, .ln-home-pair, .ln-nav-comparison').forEach(group => {
     [...group.children].forEach((element, index) => { element.style.setProperty('--lt-delay', `${Math.min(index, 3) * 90}ms`); });
   });
 
