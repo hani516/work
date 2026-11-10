@@ -23,7 +23,7 @@ const translations = {
     homeMongramBody: "散歩の記録を家族と共有するiOSアプリ。再生体験と散歩を始めやすいホームを設計。",
 
     moneymateBody: "会話から始まる家計簿アプリ。",
-    navAbout: "プロフィール", navCompany: "会社プロジェクト", navProjects: "プロジェクト", navContact: "連絡",
+    navAbout: "About", navCompany: "会社プロジェクト", navProjects: "Projects", navContact: "Contact",
     heroTitle: "使いやすさを、かたちに。",
     heroBody: "課題の発見から情報設計、UI、実装、公開後の検証までをつなげて考えるProduct Designerです。",
     viewProjects: "View Project", contactButton: "Contact", emailCopied: "メールアドレスをコピーしました",
@@ -75,7 +75,7 @@ const translations = {
     homeMongramBody: "An iOS app for sharing dog walks with family. I designed walk replay and a walk-focused home screen.",
 
     moneymateBody: "An expense tracker that starts with a conversation.",
-    navAbout: "Profile", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
+    navAbout: "About", navCompany: "Company work", navProjects: "Projects", navContact: "Contact",
     heroTitle: "Thoughtful products. Simple experiences.",
     heroBody: "I am a Product Designer who connects problem discovery, information architecture, UI, implementation, and post-launch validation.",
     viewProjects: "View Project", contactButton: "Contact", emailCopied: "Email address copied",
@@ -127,7 +127,7 @@ const translations = {
     homeMongramBody: "강아지 산책을 가족과 공유하는 iOS 앱. 산책 다시보기와 산책 중심 홈을 설계했습니다.",
 
     moneymateBody: "대화로 시작하는 가계부 앱.",
-    navAbout: "소개", navCompany: "회사 프로젝트", navProjects: "프로젝트", navContact: "연락",
+    navAbout: "About", navCompany: "회사 프로젝트", navProjects: "Projects", navContact: "Contact",
     heroTitle: "쓰기에 편한, 보기에 명쾌한 디자인.",
     heroBody: "문제 발견부터 정보 구조, UI, 구현, 출시 후 검증까지 연결해서 생각하는 Product Designer입니다.",
     viewProjects: "View Project", contactButton: "Contact", emailCopied: "이메일 주소를 복사했습니다",
