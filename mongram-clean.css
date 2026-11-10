@@ -39,3 +39,15 @@
  .project-mongram .mg-motion-toggle {font-size:14px}
  .project-mongram .mg-next-plans {gap:40px;margin-top:36px}
 }
+
+/* Concise implementation labels and optional measurement details. */
+.project-mongram .n-section .mg-design-label {font-size:17px;line-height:1.6;color:#666;margin:0 0 16px}
+.project-mongram .mg-next-plan {border:0;padding-top:0}
+.project-mongram .n-section .mg-next-plan .mg-plan-metrics {display:block;font-size:22px;font-weight:500;color:#fff;margin-top:26px}
+.project-mongram .n-section .mg-next-plan .mg-plan-action {margin-top:12px}
+.project-mongram .mg-plan-events {max-width:900px;margin-top:22px;color:#bbb}
+.project-mongram .mg-plan-events summary {width:fit-content;cursor:pointer;font-size:16px;line-height:1.7;padding:6px 0}
+.project-mongram .mg-plan-events summary:focus-visible {outline:2px solid #fff;outline-offset:5px}
+.project-mongram .mg-plan-events[open] summary {color:#fff}
+.project-mongram .n-section .mg-next-plan .mg-plan-definition {font-size:17px;line-height:1.8;margin-top:14px;color:#ccc}
+.project-mongram .n-section .mg-next-plan .mg-event-names {font-size:15px;line-height:1.8;margin-top:12px;color:#bbb;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
