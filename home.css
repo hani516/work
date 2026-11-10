@@ -120,46 +120,57 @@
 @media(max-width:600px){.selected-projects > .page-shell{--project-card-width:100%}.project-group-company,.project-group-personal{width:100%}.personal-project-panels{grid-template-columns:1fr}}
 
 
-/* A centered introduction, followed by the design approach and tools. */
-.profile-hero{flex-direction:column;align-items:center;justify-content:flex-start;text-align:center;padding-block:64px 80px;gap:52px}
-.hero-intro{width:100%;max-width:1100px}
-.designer-note{flex-direction:column;justify-content:center;gap:20px}
-.designer-note img{width:96px;height:116px;border-radius:16px}
-.designer-note .designer-name{font-size:36px;line-height:1.25;letter-spacing:-.035em}
-.designer-note .designer-role{font-size:18px;margin-top:8px}
+/* Two clear rows: identity and headline, followed by approach and tools. */
+.profile-hero{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;max-width:1080px;padding-block:64px 72px;gap:44px;text-align:left}
+.hero-intro{display:grid;grid-template-columns:300px minmax(0,1fr);align-items:center;gap:64px;width:100%;max-width:none}
+.designer-note{flex-direction:row;align-items:center;justify-content:flex-start;gap:20px}
+.designer-note img{width:88px;height:108px;border-radius:12px;flex:none}
+.designer-note .designer-name{font-size:28px;line-height:1.25;letter-spacing:-.035em}
+.designer-note .designer-role{font-size:14px;line-height:1.5;margin-top:6px}
 .designer-education{margin-top:12px}
-.designer-education,.designer-education a{font-size:15px;line-height:1.6}
-.hero-headline{font-size:clamp(42px,5.6vw,80px);line-height:1.12;margin:36px 0 0;letter-spacing:-.055em}
-.hero-summary{flex:auto;width:100%;max-width:680px;padding:0}
-.hero-lead{font-size:clamp(24px,2.3vw,32px);line-height:1.55}
-.hero-description{max-width:40em;margin:18px auto 0;font-size:16px;line-height:1.9}
-.hero-tools{margin:30px auto 0}
-.tools-label{font-size:12px;margin-bottom:16px}
-.tools-row{text-align:left;gap:12px 24px}
-.tools-row li{font-size:13px;gap:10px}
-@media(max-width:600px){
-  .profile-hero{padding-block:36px 56px;gap:36px}
-  .designer-note img{width:80px;height:96px}
-  .designer-note .designer-name{font-size:30px}
-  .designer-note .designer-role{font-size:16px}
-  .designer-education,.designer-education a{font-size:12px}
-  .hero-headline{font-size:clamp(34px,8vw,48px);margin-top:28px}
-  .hero-description{font-size:14px}
-  .tools-row{gap:10px 14px}
-  .tools-row li{font-size:12px}
+.designer-education,.designer-education a{font-size:12px;line-height:1.6}
+.hero-headline{font-size:clamp(42px,4vw,58px);line-height:1.14;letter-spacing:-.055em;margin:0}
+.hero-headline em{display:inline-block;letter-spacing:-.055em}
+.hero-summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:start;gap:64px;flex:auto;width:100%;max-width:none;padding:16px 0 0}
+.hero-copy{min-width:0}
+.hero-lead{font-size:26px;line-height:1.55;letter-spacing:-.035em;margin:0}
+.hero-description{max-width:32em;font-size:14px;line-height:1.85;margin:14px 0 0}
+.hero-tools{width:100%;max-width:490px;margin:0;padding-top:4px}
+.tools-label{font-size:11px;line-height:1.5;letter-spacing:.1em;margin:0 0 18px;text-align:center}
+.hero-tools .tools-row{display:flex;flex-wrap:nowrap;justify-content:center;gap:22px;text-align:left}
+.hero-tools .tools-row+.tools-row{margin-top:14px}
+.hero-tools .tools-row li{min-height:24px;gap:8px;font-size:12px;white-space:nowrap;flex:0 1 auto}
+.hero-tools .tool-mark{width:20px;height:20px}
+.hero-tools .tool-mark img{width:18px;height:18px}
+.hero-tools .tool-mark-figma img{width:30.72px;height:38.4px}
+
+/* Desktop windows can narrow; phones retain the site's 1440px viewport. */
+@media(max-width:1100px){
+  .hero-intro{grid-template-columns:270px minmax(0,1fr);gap:40px}
+  .hero-headline{font-size:44px}
+  .designer-note{gap:16px}
+  .designer-note img{width:76px;height:94px}
+  .designer-note .designer-name{font-size:26px}
+  .hero-summary{gap:40px}
+  .hero-lead{font-size:24px}
+  .hero-tools .tools-row{gap:16px}
+  .hero-tools .tools-row li{font-size:11px}
 }
-
-
-/* Three centered tool rows: design, AI development, analytics/documentation. */
-.hero-tools{width:min(100%,560px)}
-.hero-tools .tools-row{display:flex;flex-wrap:nowrap;justify-content:center;gap:24px}
-.hero-tools .tools-row+.tools-row{margin-top:12px}
-.hero-tools .tools-row li{white-space:nowrap;flex:0 1 auto}
-@media(max-width:600px){
-  .hero-tools .tools-row{gap:14px}
-  .hero-tools .tools-row li{font-size:11px;gap:6px}
+@media(max-width:800px){
+  .profile-hero{padding-block:40px 56px;gap:32px}
+  .hero-intro{grid-template-columns:1fr;gap:28px}
+  .designer-note img{width:64px;height:78px}
+  .hero-headline{font-size:clamp(34px,6.3vw,48px)}
+  .hero-summary{grid-template-columns:1fr;gap:28px;padding-top:28px}
+  .hero-description{max-width:36em}
+  .hero-tools{max-width:none;padding-top:0}
+  .tools-label{text-align:left;margin-bottom:14px}
+  .hero-tools .tools-row{justify-content:flex-start;gap:22px}
+}
+@media(max-width:400px){
+  .hero-tools .tools-row{gap:12px}
+  .hero-tools .tools-row li{font-size:10px;gap:5px}
   .hero-tools .tool-mark{width:16px;height:18px}
   .hero-tools .tool-mark img{width:16px;height:16px}
   .hero-tools .tool-mark-figma img{width:24.576px;height:30.72px}
 }
-@media(max-width:360px){.hero-tools .tools-row{gap:9px}.hero-tools .tools-row li{font-size:10px;gap:4px}}
