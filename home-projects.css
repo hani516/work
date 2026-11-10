@@ -4,7 +4,7 @@
 .selected-projects .project-group-title{gap:24px;margin:0 0 20px;font-size:18px;font-weight:500;letter-spacing:-.025em}
 .selected-projects .project-group-title::after{background:#e4e4e5}
 .selected-projects .project-panels{grid-template-columns:minmax(0,1fr);gap:28px}
-.selected-projects .project-panel{position:relative;display:grid;grid-template-columns:33% minmax(0,1fr);height:288px;gap:0;overflow:hidden;border:0;border-radius:18px;isolation:isolate;transition:box-shadow .25s,opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.selected-projects .project-panel{position:relative;display:grid;grid-template-columns:33% minmax(0,1fr);height:288px;gap:0;overflow:hidden;border:0;border-radius:18px;isolation:isolate;transition:box-shadow .25s}
 .selected-projects .panel-copy{position:relative;z-index:3;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:28px 0 28px 38px;gap:0}
 .selected-projects .panel-number{display:none}
 .selected-projects .panel-type{order:2;max-width:270px;margin-top:17px;font-size:10px;line-height:1.8;letter-spacing:.025em;color:inherit;opacity:.75}
@@ -49,6 +49,21 @@
 .selected-projects .project-panel:hover .product-screen{transform:rotate(-3deg) translateY(-4px)}
 .selected-projects .project-panel:hover .lt-cover-phones{transform:rotate(-5deg) translateY(-4px)}
 .selected-projects .project-panel:hover .mg-cover-screens{transform:rotate(4deg) translateY(-4px)}
+}
+/* Keep the card still while its contents resolve from copy to imagery, left to right. */
+@media(prefers-reduced-motion:no-preference){
+.motion-ready .selected-projects .project-panel.reveal{opacity:1;transform:none}
+.motion-ready .selected-projects .project-panel.reveal :is(.panel-title,.panel-copy>p,.panel-type,.lt-cover-phone,.product-screen,.mg-cover-screens>img){
+  --enter-delay:0s;
+  translate:0 0;
+  transition:opacity .55s ease var(--enter-delay),translate .75s cubic-bezier(.22,1,.36,1) var(--enter-delay),transform .6s;
+}
+.motion-ready .selected-projects .project-panel.reveal .panel-copy>p{--enter-delay:.08s}
+.motion-ready .selected-projects .project-panel.reveal .panel-type{--enter-delay:.16s}
+.motion-ready .selected-projects .project-panel.reveal :is(.lt-cover-phone,.product-screen,.mg-cover-screens>img){--enter-delay:.24s}
+.motion-ready .selected-projects .project-panel.reveal :is(.lt-cover-phone:nth-child(2),.mg-cover-screens>img:nth-child(2)){--enter-delay:.36s}
+.motion-ready .selected-projects .project-panel.reveal:not(.is-visible):not(:focus-within) :is(.panel-title,.panel-copy>p,.panel-type,.lt-cover-phone,.product-screen,.mg-cover-screens>img){opacity:0;translate:-24px 0}
+.motion-ready .selected-projects .project-panel.reveal:focus-within :is(.panel-title,.panel-copy>p,.panel-type,.lt-cover-phone,.product-screen,.mg-cover-screens>img){transition:none}
 }
 @media(prefers-reduced-motion:reduce){
 .selected-projects .project-panel,.selected-projects .project-panel *{transition:none!important}
