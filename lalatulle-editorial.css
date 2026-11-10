@@ -73,10 +73,20 @@ button { font: inherit; }
 .ln-stage-copy p { font-size: 19px; color: var(--lt-muted); margin-top: 26px; }
 .ln-comparison-label { font-size: 14px; color: var(--lt-accent); letter-spacing: .09em; font-weight: 600; margin-bottom: 18px; }
 .ln-category-pair, .ln-banner-pair { display: grid; gap: 32px; padding: 40px; background: var(--lt-surface); }
+.lt-banner-refresh { display: block; }
+.lt-banner-refresh > .ln-stage-copy { margin-bottom: 36px; }
+.lt-banner-comparisons { display: grid; gap: 36px; }
+.lt-banner-comparison h4 { font-size: 20px; letter-spacing: -.02em; margin-bottom: 14px; }
+.lt-banner-comparison .ln-banner-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 24px; padding: 24px; }
+.lt-banner-source { background: #383838 url('assets/lalatulle/category-banner-original-background.jpg') center / 100% auto; }
+@media (max-width: 600px) {
+  .lt-banner-comparison .ln-banner-pair { grid-template-columns: 1fr; gap: 24px; padding: 20px; }
+}
 .ln-category-before .ln-image-link { max-width: 300px; margin-inline: auto; }
 .ln-category-pair > figure > .ln-image-link img, .ln-banner-pair img { width: 100%; }
 .ln-category-pair > figure + figure { border-top: 1px solid #d5ccd0; padding-top: 32px; }
-#category-sequence { display: block; background: #28232a; color: #f9f4f6; padding: 64px; margin-inline: -32px; }
+/* Extend only the scene background to the viewport edges; keep its content grid aligned. */
+#category-sequence { display: block; background: #28232a; box-shadow: 0 0 0 100vmax #28232a; clip-path: inset(0 -100vmax); color: #f9f4f6; padding: 64px; margin-inline: -32px; }
 #category-sequence > .ln-stage-copy { max-width: 700px; margin-bottom: 56px; }
 #category-sequence > .ln-stage-copy h3 { font-size: clamp(30px,3.4vw,48px); }
 .lt-scroll-story { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 64px; align-items: center; position: relative; }
@@ -84,7 +94,7 @@ button { font: inherit; }
 .lt-story-date { color: #cbbac4; font-size: 15px; margin-bottom: 24px; letter-spacing: .02em; }
 .lt-story-step h4 { font-size: clamp(28px,3vw,42px); line-height: 1.5; }
 .lt-story-step > p:last-child { font-size: 19px; color: #c8bec4; margin-top: 24px; }
-.lt-story-frame { padding: 24px; background: #f0e9ec; color: var(--lt-ink); border-radius: 2px; }
+.lt-story-frame { padding: 0; background: transparent; color: var(--lt-ink); }
 .lt-story-frame figcaption { display: flex; justify-content: space-between; gap: 20px; font-size: 12px; color: var(--lt-accent); margin-bottom: 20px; font-weight: 500; }
 .lt-story-image img { width: 100%; max-height: 560px; object-fit: contain; object-position: top; }
 .ln-footer-stage { margin-top: 112px; }
@@ -230,7 +240,7 @@ button { font: inherit; }
   .lt-story-date { margin-bottom: 16px; font-size: 14px; }
   .lt-story-step h4 { font-size: 28px; }
   .lt-story-step > p:last-child { font-size: 17px; margin-top: 18px; }
-  .lt-story-frame { max-width: 440px; width: 100%; margin: 0 auto 32px; padding: 20px; }
+  .lt-story-frame { max-width: 440px; width: 100%; margin: 0 auto 32px; padding: 0; }
   .lt-story-image img { max-height: none; }
   .ln-footer-stage { margin-top: 72px; }
   .ln-footer-stage > h3 { margin-bottom: 32px; }
