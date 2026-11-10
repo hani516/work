@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="home.css?v=38" />
+    <link rel="stylesheet" href="home.css?v=20261110-hero" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261109" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
-    <link rel="stylesheet" href="home-projects.css?v=20261110" />
+    <link rel="stylesheet" href="home-projects.css?v=20261110-short" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
 </head>
   <body>
@@ -29,8 +29,12 @@
     </header>
 
     <main id="top">
-      <section class="profile-hero page-shell" id="about">
-        <div class="hero-intro">
+      <section class="statement-hero page-shell" aria-label="Introduction">
+        <h1 class="hero-headline" lang="en">Curious by nature.<br /><em>Designing smarter with AI.</em></h1>
+      </section>
+
+      <section class="profile-hero page-shell" id="about" aria-label="Profile">
+        <div class="hero-intro reveal">
           <div class="designer-note">
             <img src="assets/profile/yohan-profile.webp" alt="Yohan Kim" width="1000" height="1286" fetchpriority="high" />
             <div>
@@ -41,14 +45,13 @@
               </div>
             </div>
           </div>
-          <h1 class="hero-headline" lang="en">Curious by nature.<br /><em>Designing smarter with AI.</em></h1>
         </div>
         <div class="hero-summary">
-          <div class="hero-copy">
+          <div class="hero-copy reveal">
             <p class="hero-lead" data-i18n="homeLead">データで課題を見つけ、<br />使えるプロダクトへ。</p>
             <p class="hero-description" data-i18n="homeBody">ECの分析経験をもとにUX・UIを設計し、AI開発ツールを使って実装・公開まで担当しました。</p>
           </div>
-          <div class="hero-tools" aria-labelledby="tools-label">
+          <div class="hero-tools reveal" aria-labelledby="tools-label">
             <p class="tools-label" id="tools-label">TOOLS</p>
             <ul class="tools-row tools-list" aria-label="Design tools">
               <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
@@ -72,8 +75,8 @@
         <div class="page-shell">
           <section class="project-group project-group-company" aria-labelledby="company-projects-title">
             <h2 class="project-group-title" id="company-projects-title" data-i18n="homeCompanyProjects">実務プロジェクト</h2>
-            <div class="project-panels company-project-panels reveal">
-              <article class="project-panel panel-lalatulle" data-project-href="lalatulle.html">
+            <div class="project-panels company-project-panels">
+              <article class="project-panel reveal panel-lalatulle" data-project-href="lalatulle.html">
               <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="homeLalatulleBody">特集・ホームの構成変更と、商品ページのA/Bテスト。</p></div>
               <div class="panel-visual cover-lalatulle-mobile" aria-hidden="true">
                 <div class="lt-cover-brand"><strong>LaLaTulle</strong></div>
@@ -87,12 +90,12 @@
           </section>
           <section class="project-group project-group-personal" aria-labelledby="personal-projects-title">
             <h2 class="project-group-title" id="personal-projects-title" data-i18n="homePersonalProjects">個人プロジェクト</h2>
-            <div class="project-panels personal-project-panels reveal">
-              <article class="project-panel panel-snapside" data-project-href="snapside.html">
+            <div class="project-panels personal-project-panels">
+              <article class="project-panel reveal panel-snapside" data-project-href="snapside.html">
               <div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">TECH STACK · Next.js · Electron · Supabase · Vercel</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="homeSnapsideBody">プロダクトの変化を記録。設計・実装から初期運営まで。</p></div>
               <div class="panel-visual cover-product" aria-hidden="true"><div class="cover-label"><strong><img src="assets/snapside/snapside-logo-white.png" alt="" />Snapside</strong></div><div class="product-screen"><div class="browser-bar"><i></i><i></i><i></i><span>Snapside — Overview</span></div><div class="product-screen-crop"><img src="assets/snapside/snapside-overview-20261018.jpg" alt="" /></div></div></div>
             </article>
-              <article class="project-panel panel-mongram" data-project-href="mongram.html"><div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">TECH STACK · Swift · Supabase</span><div class="panel-title"><h3><a href="mongram.html" data-i18n="homeMongramName">ワングラム</a></h3></div><p data-i18n="homeMongramBody">散歩の記録を家族と共有するiOSアプリ。再生体験と散歩を始めやすいホームを設計。</p></div><div class="panel-visual cover-mongram" data-screenshot-slot="home-card"><div class="mg-cover-brand"><img src="assets/mongram/dog-app-icon.png" alt="" width="1024" height="1024" /><strong data-i18n="homeMongramCoverName">ワングラム</strong></div><div class="mg-cover-screens"><img src="assets/mongram/home-demo.png" data-i18n-alt="homeMongramHomeAlt" alt="ワングラム：座った犬がいるホーム画面" width="1206" height="2622" loading="lazy" /><img src="assets/mongram/walk-demo.png" data-i18n-alt="homeMongramWalkAlt" alt="ワングラム：散歩中の画面" width="1206" height="2622" loading="lazy" /></div></div></article>
+              <article class="project-panel reveal panel-mongram" data-project-href="mongram.html"><div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">TECH STACK · Swift · Supabase</span><div class="panel-title"><h3><a href="mongram.html" data-i18n="homeMongramName">ワングラム</a></h3></div><p data-i18n="homeMongramBody">散歩の記録を家族と共有するiOSアプリ。再生体験と散歩を始めやすいホームを設計。</p></div><div class="panel-visual cover-mongram" data-screenshot-slot="home-card"><div class="mg-cover-brand"><img src="assets/mongram/dog-app-icon.png" alt="" width="1024" height="1024" /><strong data-i18n="homeMongramCoverName">ワングラム</strong></div><div class="mg-cover-screens"><img src="assets/mongram/home-demo.png" data-i18n-alt="homeMongramHomeAlt" alt="ワングラム：座った犬がいるホーム画面" width="1206" height="2622" loading="lazy" /><img src="assets/mongram/walk-demo.png" data-i18n-alt="homeMongramWalkAlt" alt="ワングラム：散歩中の画面" width="1206" height="2622" loading="lazy" /></div></div></article>
             </div>
           </section>
         </div>

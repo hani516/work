@@ -4,8 +4,8 @@
 .selected-projects .project-group-title{gap:24px;margin:0 0 20px;font-size:18px;font-weight:500;letter-spacing:-.025em}
 .selected-projects .project-group-title::after{background:#e4e4e5}
 .selected-projects .project-panels{grid-template-columns:minmax(0,1fr);gap:28px}
-.selected-projects .project-panel{position:relative;display:grid;grid-template-columns:33% minmax(0,1fr);height:416px;gap:0;overflow:hidden;border:0;border-radius:18px;isolation:isolate;transition:box-shadow .25s}
-.selected-projects .panel-copy{position:relative;z-index:3;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:44px 0 44px 38px;gap:0}
+.selected-projects .project-panel{position:relative;display:grid;grid-template-columns:33% minmax(0,1fr);height:288px;gap:0;overflow:hidden;border:0;border-radius:18px;isolation:isolate;transition:box-shadow .25s,opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.selected-projects .panel-copy{position:relative;z-index:3;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:28px 0 28px 38px;gap:0}
 .selected-projects .panel-number{display:none}
 .selected-projects .panel-type{order:2;max-width:270px;margin-top:17px;font-size:10px;line-height:1.8;letter-spacing:.025em;color:inherit;opacity:.75}
 .selected-projects .panel-title{order:0;align-items:center}
@@ -17,16 +17,16 @@
 /* Fashion: real storefront and campaign as a paired editorial spread. */
 .selected-projects .panel-lalatulle{background:#f2e9e7;color:#493731}
 .selected-projects .panel-lalatulle .panel-title h3{font-family:Georgia,'Times New Roman',serif;font-size:48px;font-weight:400;letter-spacing:-.065em}
-.selected-projects .company-project-panels .lt-cover-phones{inset:0;gap:26px;align-items:flex-start;justify-content:center;padding:38px 16px 0 12px;transform:rotate(-5deg);transform-origin:center}
-.selected-projects .lt-cover-phone{width:208px;height:450px;flex:none;border:5px solid #fff;border-radius:13px;box-shadow:0 15px 40px #67483e1c}
-.selected-projects .lt-cover-phone:nth-child(2){margin-top:50px}
+.selected-projects .company-project-panels .lt-cover-phones{inset:0;gap:26px;align-items:flex-start;justify-content:center;padding:18px 16px 0 12px;transform:rotate(-5deg);transform-origin:center}
+.selected-projects .lt-cover-phone{width:160px;height:346px;flex:none;border:5px solid #fff;border-radius:13px;box-shadow:0 15px 40px #67483e1c}
+.selected-projects .lt-cover-phone:nth-child(2){margin-top:28px}
 .selected-projects .lt-cover-phone img{object-fit:cover;object-position:top}
 /* Software: expose the original overview instead of the former zoomed-in crop. */
 .selected-projects .panel-snapside{background:#202220;color:#f6f4ed}
 .selected-projects .panel-snapside .panel-copy p{opacity:.73}
 .selected-projects .panel-snapside .panel-type{opacity:.5}
 .selected-projects .cover-product::after{display:none}
-.selected-projects .product-screen{width:650px;left:25px;top:40px;border:1px solid #50534b;border-radius:10px;transform:rotate(-3deg);transform-origin:center;background:#171815;box-shadow:0 24px 50px #0005}
+.selected-projects .product-screen{width:520px;left:68px;top:18px;border:1px solid #50534b;border-radius:10px;transform:rotate(-3deg);transform-origin:center;background:#171815;box-shadow:0 24px 50px #0005}
 .selected-projects .browser-bar{height:23px;background:#30322c;padding-inline:12px;gap:5px}
 .selected-projects .browser-bar i{width:5px;height:5px;background:#73776a}
 .selected-projects .browser-bar span{font-size:8px;color:#b4b8aa}
@@ -35,9 +35,9 @@
 /* Companion app: complete screens keep the dog and walking experience visible. */
 .selected-projects .panel-mongram{background:#eaf0e3;color:#354232}
 .selected-projects .panel-mongram .panel-title h3{font-size:38px;letter-spacing:-.045em}
-.selected-projects .mg-cover-screens{inset:0;padding:20px 22px 0 0;align-items:flex-start;justify-content:center;gap:28px;transform:rotate(4deg);transform-origin:center}
-.selected-projects .mg-cover-screens img{width:169px;height:auto;max-width:none;object-fit:contain;border:4px solid #fff;border-radius:23px;box-shadow:0 15px 35px #40513b1c}
-.selected-projects .mg-cover-screens img:nth-child(2){margin-top:18px}
+.selected-projects .mg-cover-screens{inset:0;padding:10px 22px 0 0;align-items:flex-start;justify-content:center;gap:24px;transform:rotate(4deg);transform-origin:center}
+.selected-projects .mg-cover-screens img{width:128px;height:auto;max-width:none;object-fit:contain;border:4px solid #fff;border-radius:23px;box-shadow:0 15px 35px #40513b1c}
+.selected-projects .mg-cover-screens img:nth-child(2){margin-top:8px}
 .selected-projects .project-panel:focus-within{outline:2px solid #575cd6;outline-offset:5px}
 .selected-projects .project-panel:has(:focus-visible) .panel-visual{box-shadow:none}
 .selected-projects .project-panel:has(:focus-visible) .product-screen{transform:rotate(-3deg) translateY(-4px)}
