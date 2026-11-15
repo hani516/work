@@ -4,11 +4,11 @@
 (() => {
   const gallery = document.querySelector('.mg-poodle-gallery');
   if (!gallery) return;
-  const toggle = gallery.querySelector('.mg-motion-toggle');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const cards = [...gallery.querySelectorAll('[data-motion]')];
   const ns = 'http://www.w3.org/2000/svg';
   const smooth = t => { t = Math.max(0, Math.min(1, t)); return t * t * (3 - 2 * t); };
-  let paused = false, frame = 0, last = 0, motionData, galleryVisible = false;
+  let frame = 0, last = 0, motionData, galleryVisible = false;
   const rigs = [];
   // Repeat the action, not the long idle tail of the app's 8.4-second export.
   // Source frame timing stays at 24 fps; only gallery replay windows change.
@@ -17,15 +17,6 @@
     head: [0, 1.65], blink: [4.8, 1.5], yawn: [0, 3.9],
     paw: [0, 2.7], tail: [0, 2.7]
   };
-  const labels = {
-    ja: ['動きを止める', '動きを再生'],
-    en: ['Pause motion', 'Play motion'],
-    ko: ['움직임 멈추기', '움직임 재생']
-  };
-  function updateLabel() {
-    toggle.textContent = (labels[document.documentElement.lang] || labels.ja)[paused ? 1 : 0];
-    toggle.setAttribute('aria-pressed', String(paused));
-  }
   // The exported app assets use absolute M/L/C/H/V paths only.
   function warpPath(d, warp) {
     const tokens = d.match(/[A-Za-z]|[-+]?(?:\d*\.\d+|\d+)(?:[eE][-+]?\d+)?/g);
@@ -134,7 +125,7 @@
     if (rig.kind==='ears') for (const [e,d] of rig.earFrames[earIndex]) e.setAttribute('d',d);
     if (rig.kind==='paw') for (const [e,d] of rig.pawFrames[pawIndex]) e.setAttribute('d',d);
   }
-  function allowed() { return !paused && !document.hidden && galleryVisible && rigs.length > 0; }
+  function allowed() { return !reducedMotion.matches && !document.hidden && galleryVisible && rigs.length > 0; }
   function tick(now) {
     frame = 0;
     if (!allowed()) { last = 0; return; }
@@ -148,9 +139,8 @@
     if (!allowed()) { cancelAnimationFrame(frame); frame = 0; last = 0; }
     else if (!frame) frame = requestAnimationFrame(tick);
   }
-  toggle.addEventListener('click',() => { paused = !paused; updateLabel(); sync(); });
   document.addEventListener('visibilitychange',sync);
-  new MutationObserver(updateLabel).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  reducedMotion.addEventListener('change', sync);
   // Observe the gallery as a whole so every preview keeps its place while
   // scrolling between rows. Offscreen/hidden tabs resume rather than restart.
   const observer = new IntersectionObserver(entries => {
@@ -173,7 +163,7 @@
     rigs.forEach(rig => draw(rig,0));
     observer.observe(gallery);
     gallery.dataset.motionState='ready';
-    toggle.hidden=false; updateLabel(); sync();
+    sync();
   }).catch(() => {
     gallery.dataset.motionState='error';
     const note=gallery.querySelector('.mg-poodle-note') || document.createElement('p');
