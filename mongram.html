@@ -71,7 +71,10 @@
 </div></article>
 </div></section>
 <section id="status" class="n-section n-dark"><div class="n-wrap">
+<!-- Subscription-validation heading retained for later restoration:
 <h2 data-case-en="After release, I will evaluate walking, family sharing and subscriptions." data-case-ko="배포 후 산책·가족 공유·구독을 검증합니다.">公開後は、散歩・家族共有・サブスクを検証します。</h2>
+-->
+<h2 data-case-en="After release, I will evaluate walking and family sharing." data-case-ko="배포 후 산책·가족 공유를 검증합니다.">公開後は、散歩・家族共有を検証します。</h2>
 <p class="n-intro" data-case-en="After verifying event delivery on a real device, I plan to compare behavior before and after changes using data from consenting users." data-case-ko="실기기에서 이벤트 수신을 확인한 뒤, 동의한 사용자의 행동 데이터를 기준으로 개선 전후를 비교할 계획입니다.">実機でイベントの受信を確認した後、同意したユーザーの行動データで改善前後を比較する計画です。</p>
 <div class="mg-next-plans">
 <article class="mg-next-plan">
@@ -88,6 +91,8 @@
 <p class="mg-plan-action" data-case-en="Drop-off before connection will guide invitation and approval changes; drop-off afterward will guide notifications and access to records." data-case-ko="연결 전 이탈은 초대·승인 흐름을, 연결 후 이탈은 알림과 기록 진입을 개선하는 데 활용합니다.">接続前の離脱は招待・承認の流れに、接続後の離脱は通知と記録への導線の改善に活かします。</p>
 <details class="mg-plan-events"><summary data-case-en="Measures and events" data-case-ko="측정 기준과 이벤트">計測基準とイベント</summary><div><p class="mg-plan-definition" data-case-en="Separate invitation and join requests from confirmed connections. Measure viewing another guardian’s record within seven days of connection, keeping notification opens distinct from receipt." data-case-ko="초대 코드 발급·참여 신청과 실제 연결 성공을 구분합니다. 연결 후 7일 이내 다른 보호자의 기록을 연 비율을 확인하고, 알림 열기를 알림 수신으로 간주하지 않습니다.">招待コード発行・参加申請と接続成功を分けます。接続後7日以内にほかの飼い主の記録を開いた割合を確認し、通知を開く操作と受信を区別します。</p><p class="mg-event-names">family_invite · family_join · operation_result</p></div></details>
 </article>
+<!-- Temporarily hidden subscription validation plan; retained for restoration. -->
+<template id="subscription-validation-plan">
 <article class="mg-next-plan">
 <h3 data-case-en="From the plan screen to a successful purchase" data-case-ko="구독 화면에서 구매 성공까지">プラン画面から購入成功まで</h3>
 <div class="mg-plan-path"><div class="mg-plan-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg><strong data-case-en="View plan" data-case-ko="구독 화면">プラン表示</strong></div><span class="mg-plan-arrow" aria-hidden="true">→</span><div class="mg-plan-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h3"/></svg><strong data-case-en="Attempt purchase" data-case-ko="구매 시도">購入開始</strong></div><span class="mg-plan-arrow" aria-hidden="true">→</span><div class="mg-plan-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><strong data-case-en="Apply subscription" data-case-ko="구독 적용">プラン反映</strong></div></div>
@@ -95,6 +100,7 @@
 <p class="mg-plan-action" data-case-en="Use pre-purchase drop-off to improve benefit explanations, and payment outcomes to improve error handling and recovery." data-case-ko="구매 전 이탈은 혜택 안내를, 결제 중 이탈은 오류 안내와 복구 흐름을 개선하는 기준으로 삼습니다.">購入前の離脱は特典の伝え方を、決済中の離脱はエラー案内と復旧の流れを見直す基準にします。</p>
 <details class="mg-plan-events"><summary data-case-en="Measures and events" data-case-ko="측정 기준과 이벤트">計測基準とイベント</summary><div><p class="mg-plan-definition" data-case-en="Count success after transaction approval and entitlement application. Separate pending, cancelled and failed attempts, restores and renewals from new purchases, and exclude test transactions." data-case-ko="승인된 거래와 구독 적용을 확인한 뒤 성공으로 집계합니다. 보류·취소·실패, 복원·갱신을 신규 구매와 분리하고 테스트 결제를 제외합니다.">承認済み取引とプラン反映を確認して成功と数えます。保留・取消・失敗、復元・更新は新規購入と分け、テスト決済を除外します。</p><p class="mg-event-names">plan_view → purchase_attempt → purchase_status · operation_result</p></div></details>
 </article>
+</template>
 </div></div></section>
 <nav class="portfolio-next-section mg-next-full" aria-label="Next project"><a href="wivlo.html"><span>Next project</span><strong>Wivlo</strong></a></nav></main>
 <nav class="mg-footer mg-shell portfolio-project-navigation" aria-label="Project navigation">
