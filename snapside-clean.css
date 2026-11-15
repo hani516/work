@@ -21,6 +21,27 @@ body.project-snapside .sp-feedback-translation p {font-size:19px;line-height:1.8
 body.project-snapside .sp-feedback-translation a {font-size:16px;line-height:1.7}
 body.project-snapside .sp-organic-reading {padding:34px 0;border-top:1px solid var(--cc-line);background:none;border-radius:0}
 body.project-snapside .sp-cover-meta strong {font-size:14px;letter-spacing:.05em}
+body.project-snapside .sp-section {padding-top:clamp(64px,9vw,112px)}
+body.project-snapside .sp-section-head {margin-bottom:32px;padding-top:20px}
+body.project-snapside .sp-section-head h2 {font-size:clamp(30px,4.6vw,52px);line-height:1.35;margin-bottom:16px}
+.project-snapside #sp-plan .sp-section-head {margin-bottom:18px}
+.sp-source-tools {display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;margin:0;padding:0}
+.sp-source-tools li {display:flex;align-items:center;gap:6px;color:var(--cc-muted);font-size:13px}
+.sp-source-tools img {width:22px;height:22px;padding:3px;border-radius:4px;background:var(--cc-ink);object-fit:contain}
+.project-snapside .sp-result-heading {display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:clamp(21px,2.5vw,28px);line-height:1.4}
+.sp-result-heading img {flex:none;width:24px;height:24px;object-fit:contain}
+.sp-measurement-group {margin-top:48px;scroll-margin-top:86px}
+.project-snapside #sp-growth {padding-bottom:clamp(56px,8vw,96px)}
+.project-snapside .sp-validation-note {margin:12px 0 0;color:var(--cc-muted);font-size:15px;line-height:1.75}
+.project-snapside .sp-web-baseline {padding-block:18px;gap:12px;margin-top:0;border-bottom:0}
+.project-snapside .sp-web-baseline>strong {font-size:26px}
+.project-snapside .portfolio-footer {margin-top:0;border-top:1px solid var(--cc-line)}
+.project-snapside .portfolio-footer__contacts a {color:var(--cc-ink)}
+.project-snapside .portfolio-footer__contacts a::before {filter:invert(1)}
+.project-snapside .portfolio-footer .lang-button,
+.project-snapside .portfolio-footer__copyright {color:var(--cc-muted)}
+.project-snapside .portfolio-footer .lang-button:is(:hover,[aria-pressed="true"]) {background:var(--cc-ink);color:var(--cc-bg)}
+.project-snapside .portfolio-footer :is(a,button):focus-visible {outline-color:var(--cc-ink)}
 @media(max-width:900px){
  body.project-snapside.compact-case .sp-case-decisions .cc-decision {grid-template-columns:1fr;gap:32px}
  body.project-snapside .sp-case-decisions .sp-design-visual {grid-row:auto}
