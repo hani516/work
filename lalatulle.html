@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="lalatulle-editorial.css?v=20261115-case-evidence" />
+    <link rel="stylesheet" href="lalatulle-editorial.css?v=20261115-experiment-tools" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261109" />
     <script src="lalatulle-motion.js?v=20261110-continuous-footer" defer></script>
 </head>
@@ -196,6 +196,12 @@
 <section class="ln-section" id="experiment">
 <header class="ln-heading"><h2 class="" data-case-en="Evaluating the effect of viewer counts on purchases" data-case-ko="조회 인원 표시가 구매에 미치는 영향 검증">閲覧人数表示が購入に与える影響を検証</h2></header><p class="ln-intro" data-case-en="Compared with sister brands, add-to-cart was lower and exits were higher. I tested whether showing the past 24 hours’ viewer count on product pages could encourage purchases." data-case-ko="사내 다른 브랜드보다 <span class='lt-phrase'>카트 추가율이 낮고</span> <span class='lt-phrase'>이탈률이 높았습니다.</span> 상품 상세에 <span class='lt-phrase'>최근 24시간 조회 인원</span>을 표시해 <span class='lt-phrase'>구매를 도울지</span> 검증했습니다.">社内の他ブランドよりカート追加率が低く、離脱率が高い状況でした。過去24時間の閲覧人数をPDPに表示し、購入を後押しするか検証しました。</p>
 
+<dl class="lt-experiment-tools">
+  <div><dt>Firebase</dt><dd data-case-en="A/B test database and display rules" data-case-ko="A/B 테스트용 데이터베이스와 표시 조건 구현">A/Bテスト用データベースと表示条件の実装</dd></div>
+  <div><dt>Figma</dt><dd data-case-en="Viewer-count toast design" data-case-ko="조회 인원 토스트 UI 디자인">閲覧人数トーストのUIデザイン</dd></div>
+  <div><dt>ChatGPT</dt><dd data-case-en="HTML, CSS, and JavaScript for the toast" data-case-ko="토스트 UI의 HTML·CSS·JavaScript 작성">トーストUIのHTML・CSS・JavaScript作成</dd></div>
+  <div><dt>Google Analytics</dt><dd data-case-en="Compare conversion rates across A/B variants" data-case-ko="A/B 그룹의 전환율 비교">A/Bグループのコンバージョン率比較</dd></div>
+</dl>
 <div class="ln-fomo-visual">
 <figure class=""><div class="ln-image-link"><img src="assets/lalatulle/figma-source/39b3c.png" alt="Product-detail comparison without and with viewer-count UI" loading="lazy" decoding="async" width="910" height="935"/></div></figure>
 </div><div class="lt-experiment-result"><p class="ln-result-period" data-case-en="Implementation and evaluation: Jul 23–Aug 21, 2025 / Analysis: Aug 20–21" data-case-ko="설치·검증: 2025.07.23–08.21 / 분석: 08.20–21">設置・検証：2025.07.23–08.21 / 分析：08.20–21</p><h3 data-case-en="I retired the display after finding no clear purchase-rate difference." data-case-ko="구매율 차이가 뚜렷하지 않아 표시를 중단했습니다.">購入率の明確な差を確認できず、表示を終了しました。</h3>
@@ -205,7 +211,7 @@
   <div><dt data-case-en="Checkout-start rate" data-case-ko="구매 시작률">購入開始率</dt><dd>−2 <span data-case-en="pp" data-case-ko="%p">pt</span></dd></div>
   <div><dt data-case-en="Purchase rate" data-case-ko="구매율">購入率</dt><dd>+0.17 <span data-case-en="pp" data-case-ko="%p">pt</span></dd></div>
 </dl>
-<aside class="lt-test-limitations" aria-labelledby="test-limitations-title"><h4 id="test-limitations-title" data-case-en="Limitations of this test" data-case-ko="이번 테스트의 한계">今回のテストの限界</h4><p data-case-en="The effect remains inconclusive because implementation and measurement conditions need verification." data-case-ko="구현·집계 조건이 미확인 상태여서 효과를 단정할 수 없습니다.">実装・集計条件が未確認のため、効果は断定できません。</p><p class="lt-limitations-label" data-case-en="This test did not sufficiently examine:" data-case-ko="충분히 확인하지 못한 항목">十分に確認できなかった項目</p><ul><li data-case-en="Behavior after exposure" data-case-ko="노출 후 행동">表示後の行動</li><li data-case-en="Time to first purchase" data-case-ko="첫 구매까지 걸린 시간">初回購入までの時間</li><li data-case-en="The post-cart journey" data-case-ko="장바구니 이후 동선">カート追加後の導線</li></ul></aside></div></section>
+<aside class="lt-test-limitations" aria-labelledby="test-limitations-title"><h4 id="test-limitations-title" data-case-en="Limitations of this test" data-case-ko="이번 테스트의 한계">今回のテストの限界</h4><p data-case-en="The available record does not include sample sizes or statistical test results for the A/B groups, so we cannot tell whether the 0.17-point purchase-rate difference reflects a real improvement." data-case-ko="당시 기록에서 A/B 그룹별 표본 수와 통계 검정 결과를 확인할 수 없어, 구매율 차이 +0.17%p를 개선 효과로 판단하기 어렵습니다.">当時の記録ではA/B各グループのサンプル数と統計検定の結果を確認できず、購入率の差＋0.17ポイントを改善効果とは判断できません。</p><p class="lt-limitations-label" data-case-en="This test did not sufficiently examine:" data-case-ko="충분히 확인하지 못한 항목">十分に確認できなかった項目</p><ul><li data-case-en="Behavior after exposure" data-case-ko="노출 후 행동">表示後の行動</li><li data-case-en="Time to first purchase" data-case-ko="첫 구매까지 걸린 시간">初回購入までの時間</li><li data-case-en="The post-cart journey" data-case-ko="장바구니 이후 동선">カート追加後の導線</li></ul></aside></div></section>
 </main>
 <nav class="ln-next portfolio-next-section lt-next-full" aria-label="Next project"><a class="ln-next-card" href="snapside.html"><span>Next project</span><strong>Snapside</strong></a></nav>
     <footer class="portfolio-footer" id="contact">
