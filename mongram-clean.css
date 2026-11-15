@@ -70,3 +70,10 @@
 .project-mongram .n-section .mg-measure-node .mg-plan-metrics {font-size:16px;color:#fff;font-weight:600}
 .project-mongram .n-section .mg-measure-node .mg-plan-definition {font-size:15px;color:#bbb;border-top:1px solid #666;padding-top:16px;margin-top:20px}
 @media(max-width:900px){.project-mongram .mg-measure-diagram {grid-template-columns:1fr;gap:16px}.project-mongram .mg-measure-arrow {transform:rotate(90deg)}.project-mongram .mg-measure-node {padding:24px}}
+
+/* Short, plain-language evaluation plans. */
+.project-mongram .mg-measure-diagram {grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);margin-top:24px}
+.project-mongram .mg-measure-node {padding:28px}
+.project-mongram .mg-measure-heading {font-size:20px;margin-bottom:16px}
+.project-mongram .n-section .mg-measure-node .mg-measure-copy {font-size:19px;line-height:1.75;margin:0}
+@media(max-width:900px){.project-mongram .mg-measure-diagram {grid-template-columns:1fr}.project-mongram .mg-measure-node {padding:24px}}
