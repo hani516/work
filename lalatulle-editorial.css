@@ -44,8 +44,8 @@ button { font: inherit; }
 .ln-live-button:is(:hover, :focus-visible) { background: #603043; color: #fff; }
 .ln-live-icon { display: none; }
 .ln-chapters { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; padding-top: 64px; }
-.lt-case-entry { display: flex; flex-direction: column; align-items: flex-start; }
-.lt-case-thumbnail { display: grid; place-items: center; width: 100%; aspect-ratio: 1.2; background: var(--lt-surface); overflow: hidden; margin-bottom: 24px; transition: background-color .3s ease, box-shadow .3s ease; }
+.lt-case-entry { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.lt-case-thumbnail { display: grid; place-items: center; width: 100%; aspect-ratio: 1.2; background: var(--lt-surface); overflow: hidden; margin-top: auto; transition: background-color .3s ease, box-shadow .3s ease; }
 .lt-case-thumbnail img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .6s cubic-bezier(.22,.7,.2,1); }
 .lt-case-entry:is(:hover, :focus-visible) .lt-case-thumbnail:not(.lt-case-navigation):not(.lt-case-banners) img { transform: scale(1.035); }
 /* A loose constellation of the destinations explored in the navigation case. */
@@ -70,7 +70,7 @@ button { font: inherit; }
 .lt-banner-dots .is-active { width: 16px; background: var(--lt-accent); }
 .lt-case-notice { padding: 20px; }
 .lt-case-caption { display: flex; align-items: baseline; gap: clamp(8px, 1vw, 14px); }
-.lt-card-number { color: var(--lt-accent); font-size: clamp(34px, 4.5vw, 64px); font-weight: 600; line-height: 1; }
+.lt-card-number { color: #ad8e9a; font-size: clamp(34px, 4.5vw, 64px); font-weight: 600; line-height: 1; }
 .lt-card-nowrap { white-space: nowrap; }
 .lt-case-entry strong { font-size: 21px; font-weight: 600; line-height: 1.6; letter-spacing: -.035em; }
 .ln-section { padding-top: clamp(72px, 9vw, 128px); margin-top: 80px; border-top: 1px solid var(--lt-line); }
@@ -78,7 +78,6 @@ button { font: inherit; }
 .ln-heading h2 { font-size: clamp(34px,4.4vw,62px); line-height: 1.4; white-space: pre-line; }
 .ln-numbered-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(12px, 2.5vw, 32px); align-items: baseline; }
 .ln-case-number { color: var(--lt-accent); font-size: clamp(64px, 8vw, 112px); font-weight: 600; line-height: .9; font-variant-numeric: tabular-nums; }
-.ln-case-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 350px); align-items: start; gap: clamp(24px, 4vw, 64px); }
 .ln-case-heading { max-width: none; margin-bottom: 0; }
 .ln-case-heading .ln-intro { margin-top: 12px; }
 html:lang(ja) #navigation .ln-case-heading > div { container-type: inline-size; }
@@ -303,31 +302,17 @@ html:lang(ja) .ln-footer-search-copy {
 .lt-case-tool-mark img { flex: none; width: 22px; height: 22px; object-fit: contain; }
 .lt-case-tool-mark-figma img { width: 29px; height: 36px; max-width: none; }
 .lt-case-tools dd { min-width: 0; font-size: 13px; line-height: 1.55; color: var(--lt-muted); }
-.ln-case-intro > .lt-case-tools { align-self: end; }
 .ln-case-heading .lt-case-tools { margin-top: 20px; }
-#navigation .lt-case-tools {
+:is(#halloween, #navigation) .lt-case-tools {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 28px;
 }
-#navigation .lt-case-tools > div { display: block; }
-#navigation .lt-case-tool-mark { flex-basis: 13px; height: 13px; }
-#navigation .lt-case-tool-mark img { width: 11px; height: 11px; }
-#navigation .lt-case-tool-mark-figma img { width: 18px; height: 22px; }
-#navigation .lt-case-tools dd { margin-inline-start: 19px; }
-#halloween .ln-case-intro { grid-template-columns: minmax(0, 1fr) minmax(300px, 375px); }
-#halloween .ln-case-intro > .lt-case-tools {
-  align-self: center;
-  padding-inline-start: 16px;
-  border-inline-start: 1px solid var(--lt-line);
-  row-gap: 8px;
-  max-width: 100%;
-}
-#halloween .lt-case-tools > div:nth-child(4) { padding-top: 10px; border-top: 1px solid var(--lt-line); }
-@media (max-width: 900px) {
-  .ln-case-intro, #halloween .ln-case-intro { grid-template-columns: minmax(0, 1fr); }
-  #halloween .ln-case-intro > .lt-case-tools { padding: 0; border: 0; }
-}
+:is(#halloween, #navigation) .lt-case-tools > div { display: block; }
+:is(#halloween, #navigation) .lt-case-tool-mark { flex-basis: 13px; height: 13px; }
+:is(#halloween, #navigation) .lt-case-tool-mark img { width: 11px; height: 11px; }
+:is(#halloween, #navigation) .lt-case-tool-mark-figma img { width: 18px; height: 22px; }
+:is(#halloween, #navigation) .lt-case-tools dd { margin-inline-start: 19px; }
 .ln-fomo-visual { margin-top: 48px; }
 .ln-fomo-visual .ln-image-link { max-width: 800px; margin-inline: auto; }
 .ln-fomo-visual img { width: 100%; }
@@ -403,7 +388,7 @@ html:lang(ja) .ln-footer-search-copy {
   .ln-site-links .ln-live-button { width: 100%; padding-inline: 8px; }
   .ln-live-button { font-size: 15px; }
   .ln-chapters { grid-template-columns: 1fr 1fr; gap: 36px 20px; padding-top: 48px; }
-  .lt-case-thumbnail { margin-bottom: 18px; aspect-ratio: 1.1; }
+  .lt-case-thumbnail { aspect-ratio: 1.1; }
   .lt-case-entry strong { font-size: 19px; }
   .ln-section { padding-top: 72px; margin-top: 72px; }
   .ln-heading { margin-bottom: 40px; }
