@@ -68,6 +68,12 @@
       "sha256": "aa7d39ae684b9dc29b319257ad078f97fd90350aa6ace71fc9cfb66eb316c045"
     },
     {
+      "file": "google-search-console.png",
+      "source": "https://www.gstatic.com/search-console/scfe/favicon.png",
+      "reference": "https://search.google.com/search-console/about",
+      "sha256": "07d2941182aa30ebf71476edda87b1db006a9b988d5cc874bbc32ff008883684"
+    },
+    {
       "file": "clarity.png",
       "source": "https://clarity.microsoft.com/blog/wp-content/uploads/2025/02/siteIcon.png",
       "source_type": "Official Microsoft Clarity product icon",
