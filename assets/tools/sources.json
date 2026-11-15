@@ -47,6 +47,19 @@
       "sha256": "670b3d8d749d0815ad8f7e62a59d51cb5e2053cb19403f3541a8aed7036a877f"
     },
     {
+      "file": "firebase.png",
+      "source": "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+      "guidelines": "https://firebase.google.com/brand-guidelines/",
+      "sha256": "eabcc1fb1125fdc7e1783ecc3ffd429c83d345e7fdd3d3f16f0d1ad1ad0abc95"
+    },
+    {
+      "file": "chatgpt.png",
+      "source": "Installed ChatGPT macOS app, Contents/Resources/icon-chatgpt.png",
+      "usage": "Resized to 128 pixels for the web.",
+      "guidelines": "https://openai.com/brand/",
+      "sha256": "f94c21d4a0c8f64637f397c58acacc92c039e85fe0d9ed2124335a35144ec44b"
+    },
+    {
       "file": "google-analytics.svg",
       "source": "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg",
       "source_type": "Official Google hosted product icon; exact URL supplied by the user for this use",
