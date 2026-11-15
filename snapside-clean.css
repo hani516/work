@@ -31,7 +31,23 @@ body.project-snapside .sp-section-head h2 {font-size:clamp(30px,4.6vw,52px);line
 .project-snapside .sp-result-heading {display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:clamp(21px,2.5vw,28px);line-height:1.4}
 .sp-result-heading img {flex:none;width:24px;height:24px;object-fit:contain}
 .sp-measurement-group {margin-top:48px;scroll-margin-top:86px}
-.project-snapside #sp-growth {padding-bottom:clamp(56px,8vw,96px)}
+.project-snapside #sp-growth {
+  position:relative;
+  isolation:isolate;
+  margin-top:clamp(44px,7vw,96px);
+  padding-block:clamp(48px,7vw,88px) clamp(56px,8vw,96px);
+}
+.project-snapside #sp-growth::before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  background:var(--sp-panel);
+  box-shadow:0 0 0 100vmax var(--sp-panel);
+  clip-path:inset(0 -100vmax);
+}
+body.project-snapside #sp-growth > .sp-section-head {border-top:0;padding-top:0;margin-bottom:clamp(32px,5vw,64px)}
+#sp-growth :is(.sp-marketing-observed,.sp-measurement-group) {border-top:1px solid var(--sp-rule);padding-top:28px}
 .project-snapside .sp-validation-note {margin:12px 0 0;color:var(--cc-muted);font-size:15px;line-height:1.75}
 .project-snapside .sp-web-baseline {padding-block:18px;gap:12px;margin-top:0;border-bottom:0}
 .project-snapside .sp-web-baseline>strong {font-size:26px}
