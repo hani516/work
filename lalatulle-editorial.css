@@ -217,10 +217,13 @@ button { font: inherit; }
 }
 .lt-body-copy { max-width: 850px; font-size: 20px; line-height: 1.85; margin-top: 28px; color: var(--lt-muted); }
 .ln-result-context { max-width: 850px; font-size: 16px; color: var(--lt-muted); margin-block: 28px; }
+#navigation { position: relative; isolation: isolate; padding-bottom: clamp(48px, 7vw, 96px); }
+#navigation::before { content: ''; position: absolute; z-index: -1; inset: 0; background: #f2e9ed; box-shadow: 0 0 0 100vmax #f2e9ed; clip-path: inset(0 -100vmax); }
 .ln-nav-changes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 32px; }
 .ln-nav-changes > div { border-top: 1px solid var(--lt-line); padding-top: 20px; }
 .ln-nav-changes dt { font-size: 18px; font-weight: 600; line-height: 1.6; margin-bottom: 10px; }
 .ln-nav-changes dd { font-size: 16px; line-height: 1.8; color: var(--lt-muted); }
+.ln-nav-pictogram { display: block; width: min(100%, 190px); height: auto; margin-bottom: 12px; color: var(--lt-accent); }
 @media (max-width: 760px) {
   .ln-nav-changes { grid-template-columns: 1fr; gap: 24px; }
 }
