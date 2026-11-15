@@ -82,7 +82,7 @@ button { font: inherit; }
 .ln-stage-copy p { font-size: 19px; color: var(--lt-muted); margin-top: 26px; }
 .ln-stage-number { display: block; margin-bottom: 8px; color: var(--lt-accent); font-size: clamp(24px, 3vw, 36px); font-weight: 600; line-height: 1.2; }
 .ln-comparison-label { font-size: clamp(19px, 2vw, 28px); color: var(--lt-accent); letter-spacing: .04em; font-weight: 700; margin-bottom: 16px; }
-.ln-category-pair { display: grid; gap: 18px; min-width: 0; }
+.ln-category-pair { display: grid; gap: 18px; min-width: 0; width: min(90%, 590px); margin-inline: auto; }
 .lt-banner-refresh { display: block; }
 .lt-banner-refresh > .ln-stage-copy { margin-bottom: 36px; }
 /* Compare all four old banners on the left with their replacements on the right. */
