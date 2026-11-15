@@ -159,7 +159,6 @@ button { font: inherit; }
 .ln-rank-value { color: var(--lt-accent); font-size: 62px; font-weight: 500; line-height: 1; letter-spacing: -.05em; }
 .ln-case-cta { margin-top: 32px; }
 .ln-google-search-block { max-width: 680px; margin-top: 32px; }
-.ln-google-search-label { font-size: 16px; margin-bottom: 12px; }
 .ln-google-search { display: flex; align-items: center; gap: 14px; min-height: 56px; padding: 14px 20px; background: #fff; border: 1px solid var(--lt-line); border-radius: 30px; box-shadow: 0 2px 6px #24212508; transition: border-color .2s, box-shadow .2s; }
 .ln-google-search span { flex: 1; min-width: 0; font-size: 16px; }
 .ln-google-search svg { flex: none; color: var(--lt-muted); }
