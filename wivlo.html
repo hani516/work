@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1440, minimum-scale=0.1, user-scalable=yes" />
     <title>Wivlo — AI Writing Workspace | Product Design Case Study</title>
-    <meta name="description" content="分散した情報を参照しながら、AIと文書を作るWriting Workspaceを設計・実装したProduct Design Case Study。" />
+    <meta name="description" content="別々の場所にある情報を見ながら、AIと文章を作れるサービスを開発した事例です。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
@@ -49,7 +49,7 @@
       <nav class="case-index" aria-label="Case study chapters">
         <a href="#research"><span>01 / Problem &amp; research</span><strong data-case-en="What makes past work hard to reuse?" data-case-ko="기존 기록은 왜 재사용하기 어려운가">既存の記録を、なぜ再利用しにくいのか。</strong></a>
         <a href="#experience"><span>02 / Experience &amp; interaction</span><strong data-case-en="Writing, references, and AI in one flow" data-case-ko="작성·참조·AI를 하나의 흐름으로">執筆・参照・AIを一つの流れにする。</strong></a>
-        <a href="#learnings"><span>03 / Build &amp; learn</span><strong data-case-en="From design decisions to release" data-case-ko="설계 판단에서 구현과 출시까지">設計判断を実装と公開までつなぐ。</strong></a>
+        <a href="#learnings"><span>03 / Build &amp; learn</span><strong data-case-en="From design decisions to release" data-case-ko="설계 판단에서 구현과 출시까지">考えた画面を作り、公開する</strong></a>
       </nav>
       <section class="case-section overview-section" aria-labelledby="overview-title">
         <div class="section-heading split-heading"><div><p class="section-index">01 / Overview</p><h2 id="overview-title">ノートを増やすのではなく、<br />既存の知識から成果物を作る。</h2></div><p>企画書、リサーチ、会議資料、ブログなどを作るとき、必要な情報を探す作業と書く作業が分断されます。WivloではEditorを中心に、ReferenceとAI Agentを同じ作業フローへ統合しました。</p></div>
@@ -219,7 +219,7 @@
       </section>
 
       <section class="case-section build-section" aria-labelledby="build-title">
-        <div class="section-heading split-heading"><div><p class="section-index">11 / Designer to Builder</p><h2 id="build-title">設計判断を、動く製品まで<br />自分でつなげた。</h2></div><p>1人でProduct Strategy、UX/UI、AIの実行条件、データ構造、Web/iOS実装、QA、配信を担当しました。開発は技術の展示ではなく、Interactionの仮説を実際に検証する手段として扱いました。</p></div>
+        <div class="section-heading split-heading"><div><p class="section-index">11 / Designer to Builder</p><h2 id="build-title">設計判断を、動く製品まで<br />自分でつなげた。</h2></div><p>一人で企画と画面づくりを担当し、AIが動く条件やデータの持ち方も考えました。Web版とiOS版を作り、テストして公開しました。実際に使える形にして、考えた操作で使いやすくなるかを確かめました。</p></div>
         <div class="build-loop" aria-label="Wivlo solo product development loop"><span>Frame</span><i>→</i><span>Design</span><i>→</i><span>Prototype</span><i>→</i><span>Build</span><i>→</i><span>QA</span><i>→</i><span>Release</span><i>↺</i></div>
         <div class="build-scope"><span>Next.js</span><span>React</span><span>Expo</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span><span>App Store</span><span>Codex-assisted development</span></div>
       </section>
@@ -298,7 +298,7 @@
 </summary>
 <p data-case-en="Home content viewed by 9 users; notes opened from Home by 3; create clicked by 4; note-created events by 3; saved by 4; deleted by 2; search focused by 2; settings changed by 6. This is not a sequential post-signup funnel." data-case-ko="홈 콘텐츠 조회 9명, 홈에서 노트 열기 3명, 작성 버튼 클릭 4명, 노트 생성 완료 이벤트 3명, 저장 4명, 삭제 2명, 검색 입력 포커스 2명, 설정 변경 6명입니다. 가입 후로 제한된 순차 퍼널은 아닙니다.">Homeコンテンツ閲覧9人、HomeからNoteを開く3人、作成ボタン4人、Note作成完了イベント3人、保存4人、削除2人、検索入力Focus2人、設定変更6人。これは登録後に限定した順次ファネルではありません。</p>
 </details>
-<h3 data-case-en="I plan to test first saves, reuse and AI execution." data-case-ko="첫 저장·재사용·AI 실행을 검증할 계획입니다.">初回保存・再利用・AIの実行を検証する予定です。</h3>
+<h3 data-case-en="I plan to test first saves, reuse and AI execution." data-case-ko="첫 저장·재사용·AI 실행을 검증할 계획입니다.">初めての保存、記録の使い直し、AIの利用を確認します。</h3>
 <div class="usage-next">
 <article><span>01</span>
 <h4 data-case-en="Verify the first-save journey" data-case-ko="첫 저장까지의 흐름 검증">初回保存までを確かめる</h4>
@@ -306,7 +306,7 @@
 </article>
 <article><span>02</span>
 <h4 data-case-en="Understand the reason to return" data-case-ko="다시 사용하는 상황 이해">再利用する場面を理解する</h4>
-<p data-case-en="Learn the purpose of repeat use and test the path back to previous notes." data-case-ko="반복 사용자의 목적을 확인하고 이전 노트를 다시 여는 동선을 검증합니다.">繰り返し利用した人の目的を確認し、過去のNoteを開き直す導線を検証する。</p>
+<p data-case-en="Learn the purpose of repeat use and test the path back to previous notes." data-case-ko="반복 사용자의 목적을 확인하고 이전 노트를 다시 여는 동선을 검증합니다.">繰り返し使う人の目的を聞き、以前のノートを開き直しやすいか確かめます。</p>
 </article>
 <article><span>03</span>
 <h4 data-case-en="Measure AI success and application" data-case-ko="AI 성공과 적용 측정">AIの成功と適用を計測する</h4>

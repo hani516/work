@@ -1,2 +1,16 @@
 /* Preserve desktop typography in the fixed-width mobile layout. Browser zoom stays available. */
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+
+/* Japanese copy can reflow at phrase boundaries as the available width changes. */
+html[lang="ja"] :is(.project-snapside, .project-lalatulle, .project-mongram) main :is(h1, h2, h3, h4, p, dt, dd, figcaption) {
+  line-break: strict;
+  word-break: auto-phrase;
+  overflow-wrap: break-word;
+}
+html[lang="ja"] :is(.project-snapside, .project-lalatulle, .project-mongram) main :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+html[lang="ja"] :is(.project-snapside, .project-lalatulle, .project-mongram) main :is(p, dd, figcaption) {
+  text-wrap: pretty;
+}
+.lt-date-range { white-space: nowrap; }
