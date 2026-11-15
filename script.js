@@ -8,11 +8,11 @@ const translations = {
 
     mongramScreenshotPending: "スクリーンショット準備中",
     mongramScreenshotHome: "ホーム",
-    homeLead: "データで課題を見つけ、<br />使えるプロダクトへ。",
+    homeLead: "データをもとに、使いやすいサービスを作る。",
     homeBody: "通販サイトのデータをもとに画面を考え、AIツールを使って開発から公開まで担当しました。",
     homeViewProjects: "3つの事例を見る",
     homeWorkCount: "3つの事例 · データ分析から開発まで",
-    homeLalatulleBody: "特集・ホームの構成変更と、商品ページのA/Bテスト。",
+    homeLalatulleBody: "特集ページとホームを見直し、商品ページでA/Bテストを行いました。",
     homeSnapsideBody: "ツールごとの変更を記録するサービス。画面づくり、開発、公開後の運営を担当しました。",
     homeWivloBody: "情報を見ながらAIと文章を編集できます。Web版とiOS版を作り、公開しました。",
     homeMoneymateBody: "会話で支出を記録する家計簿アプリを作りました。現在テスト中です。",
@@ -20,7 +20,7 @@ const translations = {
     homeMongramCoverName: "ワングラム",
     homeMongramHomeAlt: "ワングラム：座った犬がいるホーム画面",
     homeMongramWalkAlt: "ワングラム：散歩中の画面",
-    homeMongramBody: "散歩の記録を家族と共有するiOSアプリ。再生体験と散歩を始めやすいホームを設計。",
+    homeMongramBody: "家族と散歩を振り返れるiOSアプリ。ホームからすぐに散歩を始められます。",
 
     moneymateBody: "会話から始まる家計簿アプリ。",
     navAbout: "About", navCompany: "会社プロジェクト", navProjects: "Projects", navContact: "Contact",

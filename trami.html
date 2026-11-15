@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="portfolio-final.css" />
     <link rel="stylesheet" href="portfolio-images.css?v=20261108" />
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
-    <link rel="stylesheet" href="portfolio-viewport.css?v=20261109" />
+    <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
 </head>
@@ -35,7 +35,7 @@
           <div class="case-brand"><img src="assets/trami/trami-icon.png" alt="Trami アイコン" /><p class="case-kicker">Personal Product / Released on iOS</p></div>
           <h1>Trami</h1>
           <h2>ホームから1タップで運動を開始する。</h2>
-          <p class="case-lead">運動を続けたい人が、記録の準備で立ち止まらないためのシンプルなフィットネスアプリです。</p>
+          <p class="case-lead">記録の準備に時間をかけず、すぐに運動を始められるフィットネスアプリです。</p>
           <div class="case-meta" aria-label="Project metadata"><span>2025.09 - 2025.12 / 2026.01 App Store Release</span><span>Planning / Research / Product Design / Development</span><span>Flutter / Firebase / iOS</span><span>Personal Product</span></div>
           <div class="case-links"><a href="https://apps.apple.com/jp/app/trami/id6753889745" target="_blank" rel="noreferrer">App Store</a></div>
         </div>
@@ -43,17 +43,17 @@
       </section>
 
       <section class="case-section" id="overview"><div class="case-shell">
-        <div class="section-intro"><p class="section-label">01 / Product Overview</p><div class="section-copy"><h2>運動、計画、確認の3機能で構成する。</h2><p>一人で企画し、10人に話を聞いて、画面づくりから開発、App Storeでの公開まで担当しました。</p></div></div>
+        <div class="section-intro"><p class="section-label">01 / Product Overview</p><div class="section-copy"><h2>運動する、次の予定を立てる、記録を見る</h2><p>一人で企画し、10人に話を聞いて、画面づくりから開発、App Storeでの公開まで担当しました。</p></div></div>
         <div class="trami-product-model" aria-label="Tramiの3つの役割"><article><span class="model-index">01</span><svg class="model-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#dumbbell"></use></svg><strong>Workout</strong><p>運動を開始し、時間を記録する。</p></article><article><span class="model-index">02</span><svg class="model-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#calendar"></use></svg><strong>Plan</strong><p>次に運動する日を決める。</p></article><article><span class="model-index">03</span><svg class="model-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#history"></use></svg><strong>Review</strong><p>終了後に記録を確認する。</p></article></div>
       </div></section>
 
       <section class="case-section" id="problem"><div class="case-shell">
-        <div class="section-intro"><p class="section-label">02 / Problem Framing</p><div class="section-copy"><h2>10名へのヒアリングで、開始前の負担と記録の手間を確認した。</h2><p>運動経験または関心のある10名との会話から、疲労や生活リズムに加え、「始めるまでのハードル」と「記録の面倒さ」が行動を止める要因だと整理しました。</p></div></div>
+        <div class="section-intro"><p class="section-label">02 / Problem Framing</p><div class="section-copy"><h2>10人に聞いて分かった、始めにくさと記録の手間</h2><p>運動の経験や関心がある10人に話を聞きました。疲れや生活リズムに加え、始め方が分かりにくいことや記録の手間が、運動を続けにくくしていました。</p></div></div>
         <div class="trami-field-research" aria-label="10名との会話と行動観察から整理した代表的な4タイプ">
           <header class="field-research-header">
             <p class="field-research-kicker">Field Research</p>
-            <h3>最近運動の経験がある、または興味がある人を対象に、運動習慣と継続できなくなるポイントを会話ベースで観察しました。</h3>
-            <p class="field-research-note">計10名との会話と行動観察から、代表的な4タイプを整理しています。定量結果ではなく、初期仮説を作るための探索的リサーチです。</p>
+            <h3>最近運動した人や運動に興味がある人に、普段の習慣と、続けにくくなる場面を聞きました。</h3>
+            <p class="field-research-note">10人との会話と行動をもとに、代表的な4つの状況をまとめました。初期の設計を考える手がかりにした調査です。</p>
           </header>
           <div class="participant-grid" aria-label="代表的な参加者の発話">
             <article class="participant-card">
@@ -78,7 +78,7 @@
             </article>
           </div>
           <div class="field-synthesis" aria-label="リサーチから得たプロダクトインサイト">
-            <div class="synthesis-node"><svg aria-hidden="true"><use href="assets/ui-icons.svg#target"></use></svg><div><span>Lifestyle pattern</span><p>疲労、始め方、場所への心理的ハードルが運動開始を止める。</p></div></div>
+            <div class="synthesis-node"><svg aria-hidden="true"><use href="assets/ui-icons.svg#target"></use></svg><div><span>Lifestyle pattern</span><p>疲れや始め方への不安、ジムへの行きづらさが、運動を始める妨げになります。</p></div></div>
             <b class="synthesis-connector" aria-hidden="true">+</b>
             <div class="synthesis-node"><svg aria-hidden="true"><use href="assets/ui-icons.svg#layers"></use></svg><div><span>Usability pattern</span><p>記録の工程が多いと、運動後にアプリを使い続けにくい。</p></div></div>
             <i class="synthesis-connector" aria-hidden="true">→</i>
@@ -94,7 +94,7 @@
           <figure class="media-placeholder competitor-placeholder" role="img" aria-label="FiNCの画面を配置する画像エリア"><span>IMAGE 03-B</span><strong>FiNC</strong><small>Home information density</small></figure>
           <figure class="media-placeholder competitor-placeholder" role="img" aria-label="MyFitnessPalの画面を配置する画像エリア"><span>IMAGE 03-C</span><strong>MyFitnessPal</strong><small>Multi-purpose tracking</small></figure>
         </div>
-        <div class="trami-comparison" aria-label="既存アプリとTramiの設計比較"><article><span>Existing products</span><h3>多くの情報と選択肢</h3><p>幅広い目的を支える一方、開始前に理解・選択する項目が増える。</p></article><div class="comparison-shift" aria-hidden="true">→</div><article class="is-trami"><span>Trami</span><h3>1タップで運動開始</h3><p>ホームの主要CTAを一つに絞り、最初の行動を明確にする。</p></article></div>
+        <div class="trami-comparison" aria-label="既存アプリとTramiの設計比較"><article><span>Existing products</span><h3>多くの情報と選択肢</h3><p>幅広い目的を支える一方、開始前に理解・選択する項目が増える。</p></article><div class="comparison-shift" aria-hidden="true">→</div><article class="is-trami"><span>Trami</span><h3>1タップで運動開始</h3><p>ホームで目立つボタンを一つに絞り、すぐに運動を始められるようにしました。</p></article></div>
       </div></section>
 
       <section class="case-section" id="strategy"><div class="case-shell">
@@ -110,7 +110,7 @@
 
       <section class="case-section" id="experience"><div class="case-shell">
         <div class="section-intro"><p class="section-label">05 / Core Experience</p><div class="section-copy"><h2>ホーム、タイマー、保存、レポートの4画面で構成する。</h2><p>ホームから1タップで計測を開始し、終了後に保存してレポートを表示します。</p></div></div>
-        <div class="trami-experience-flow" aria-label="Tramiのコアユーザーフロー"><article><span>01</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#play"></use></svg><strong>Start</strong><p>主要CTAから開始</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>02</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#timer"></use></svg><strong>Track</strong><p>タイマーに集中</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>03</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#check"></use></svg><strong>Finish</strong><p>記録を保存</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>04</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#clipboard"></use></svg><strong>Review</strong><p>レポートを確認</p></article></div>
+        <div class="trami-experience-flow" aria-label="Tramiのコアユーザーフロー"><article><span>01</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#play"></use></svg><strong>Start</strong><p>ホームから始める</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>02</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#timer"></use></svg><strong>Track</strong><p>タイマーに集中</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>03</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#check"></use></svg><strong>Finish</strong><p>記録を保存</p></article><i class="flow-arrow" aria-hidden="true">→</i><article><span>04</span><svg class="flow-step-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#clipboard"></use></svg><strong>Review</strong><p>レポートを確認</p></article></div>
         <div class="flow-screen-grid" aria-label="開始からレポートまでの4画面を配置する画像エリア">
           <figure class="media-placeholder flow-screen" role="img" aria-label="運動開始画面を配置する画像エリア"><span>IMAGE 04-A</span><strong>Start</strong><small>Home / Primary CTA</small></figure>
           <figure class="media-placeholder flow-screen" role="img" aria-label="運動計測画面を配置する画像エリア"><span>IMAGE 04-B</span><strong>Track</strong><small>Workout timer</small></figure>
@@ -120,7 +120,7 @@
       </div></section>
 
       <section class="case-section" id="outcome"><div class="case-shell">
-        <div class="section-intro"><p class="section-label">06 / Interaction &amp; Outcome</p><div class="section-copy"><h2>タイマーを優先し、詳細記録は任意にする。</h2><p>運動中は詳細項目を前面に出さず、タイマーと終了操作を中心にしました。種目やセットを残したい場合だけ追加でき、記録後はレポートで結果を確認できます。</p></div></div>
+        <div class="section-intro"><p class="section-label">06 / Interaction &amp; Outcome</p><div class="section-copy"><h2>運動中はタイマーを中心に、記録は必要に応じて</h2><p>運動中は詳細項目を前面に出さず、タイマーと終了操作を中心にしました。種目やセットを残したい場合だけ追加でき、記録後はレポートで結果を確認できます。</p></div></div>
         <div class="trami-interaction-layout"><figure class="media-placeholder interaction-placeholder" role="img" aria-label="運動中の詳細記録インタラクションを配置する画像エリア"><span>IMAGE 05</span><strong>Optional workout details</strong><small>Interaction states</small></figure><div class="trami-interaction-decisions"><article><svg class="decision-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#eye"></use></svg><div><span>During workout</span><h3>タイマーと終了操作を優先する</h3><p>補助情報はタイマーより小さく表示する。</p></div></article><article><svg class="decision-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#plus"></use></svg><div><span>When needed</span><h3>詳細を追加する</h3><p>追加ボタンから運動種目、セット、回数を入力する。</p></div></article><article><svg class="decision-symbol" aria-hidden="true"><use href="assets/ui-icons.svg#chart"></use></svg><div><span>After workout</span><h3>保存後にレポートを表示する</h3><p>保存した運動時間と詳細記録を確認できる。</p></div></article></div></div>
         <div class="trami-outcomes" aria-label="プロジェクトの成果"><article><strong>1 tap</strong><span>ホームから運動開始</span></article><article><strong>End-to-end</strong><span>調査から画面づくりと開発まで担当</span></article><article><strong>Released</strong><span>2026.01 App Store公開</span></article></div>
         <div class="trami-learning"><span>Learning</span><blockquote>運動開始前の入力項目を減らし、詳細記録を開始後に分ける設計が必要だった。</blockquote><p>公開後、どれくらい使い続けてもらえるか、どのくらいの頻度で使われるかは今後確認します。</p></div>
