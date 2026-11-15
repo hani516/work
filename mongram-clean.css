@@ -57,3 +57,16 @@
 @media(max-width:700px){.project-mongram .n-scenario-art figcaption {font-size:21px;margin-top:18px}}
 
 .project-mongram .mg-plan-events-heading {font-size:16px;font-weight:500;line-height:1.7;margin:0;color:#fff}
+
+/* Measurement plans: evidence collection, calculation, and interpretation in one diagram. */
+.project-mongram .mg-measure-plan-label {font-size:15px;line-height:1.6;color:#bbb;margin:12px 0 24px}
+.project-mongram .mg-measure-diagram {display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1.35fr) 24px minmax(0,1fr);align-items:stretch;gap:12px}
+.project-mongram .mg-measure-node {min-width:0;padding:24px;background:#414141;border:1px solid #666;border-radius:12px}
+.project-mongram .mg-measure-heading {font-size:20px;line-height:1.5;margin:0 0 20px;color:#fff}
+.project-mongram .mg-measure-arrow {align-self:center;text-align:center;font-size:24px;color:#bbb}
+.project-mongram .n-section .mg-measure-node p {font-size:17px;line-height:1.8;margin:14px 0 0;color:#ddd;overflow-wrap:anywhere}
+.project-mongram .n-section .mg-measure-node .mg-measure-flow {font-weight:600;color:#fff}
+.project-mongram .n-section .mg-measure-node .mg-event-names {font-size:14px;padding:12px;background:#333;border-radius:6px;color:#fff}
+.project-mongram .n-section .mg-measure-node .mg-plan-metrics {font-size:16px;color:#fff;font-weight:600}
+.project-mongram .n-section .mg-measure-node .mg-plan-definition {font-size:15px;color:#bbb;border-top:1px solid #666;padding-top:16px;margin-top:20px}
+@media(max-width:900px){.project-mongram .mg-measure-diagram {grid-template-columns:1fr;gap:16px}.project-mongram .mg-measure-arrow {transform:rotate(90deg)}.project-mongram .mg-measure-node {padding:24px}}
