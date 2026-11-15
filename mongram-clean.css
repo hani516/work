@@ -73,5 +73,7 @@
 .project-mongram .mg-measure-diagram {grid-template-columns:minmax(0,1fr) 24px minmax(0,1fr) 24px minmax(0,1fr);margin-top:24px}
 .project-mongram .mg-measure-node {padding:28px}
 .project-mongram .mg-measure-heading {font-size:20px;margin-bottom:16px}
+.project-mongram .mg-measure-heading:has(.mg-measure-icon) {display:flex;align-items:center;gap:8px}
+.mg-measure-icon {flex:none;color:#ddd}
 .project-mongram .n-section .mg-measure-node .mg-measure-copy {font-size:19px;line-height:1.75;margin:0}
 @media(max-width:900px){.project-mongram .mg-measure-diagram {grid-template-columns:1fr}.project-mongram .mg-measure-node {padding:24px}}

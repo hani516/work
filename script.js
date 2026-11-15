@@ -9,7 +9,7 @@ const translations = {
     mongramScreenshotPending: "スクリーンショット準備中",
     mongramScreenshotHome: "ホーム",
     homeLead: "データをもとに、使いやすいサービスを作る。",
-    homeBody: "通販サイトのデータをもとに画面を考え、AIツールを使って開発から公開まで担当しました。",
+    homeBody: "ECサイトのデータから改善点を見つけ、画面づくりから開発・公開まで担当しました。",
     homeViewProjects: "3つの事例を見る",
     homeWorkCount: "3つの事例 · データ分析から開発まで",
     homeLalatulleBody: "特集ページとホームを見直し、商品ページでA/Bテストを行いました。",
