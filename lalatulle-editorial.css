@@ -239,6 +239,7 @@ button { font: inherit; }
 .lt-search-mock-quick-tags { grid-template-columns: auto auto; justify-self: center; }
 .lt-search-mock-quick-tags span:last-child { grid-column: 1 / -1; justify-self: center; }
 .lt-search-mock-keywords { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.lt-search-mock-keywords-label { grid-column: 1 / -1; font-weight: 600; }
 .lt-search-mock-categories { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
 .lt-search-mock-categories i { aspect-ratio: 1; }
 .lt-search-mock-heat { position: relative; isolation: isolate; }
