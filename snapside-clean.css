@@ -57,6 +57,21 @@ body.project-snapside #sp-growth > .sp-section-head {border-top:0;padding-top:0;
 .project-snapside .sp-public-feedback .sp-feedback-grid {margin-inline:0}
 .project-snapside .sp-next-link {display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%}
 .project-snapside .sp-next-link strong {font:inherit}
+.project-snapside .sp-next-measure {padding-bottom:clamp(64px,8vw,104px)}
+.project-snapside .sp-next-measure .sp-section-head {border-top:1px solid var(--sp-rule);padding-top:24px}
+.project-snapside .sp-next-measure .sp-next-eyebrow {margin:0 0 22px;color:var(--sp-soft);font-size:14px;line-height:1.4;letter-spacing:.12em}
+.sp-next-measure-grid {display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);border-block:1px solid var(--sp-rule)}
+.sp-next-rate {display:flex;flex-direction:column;justify-content:center;gap:8px;padding:44px 52px 44px 0;border-right:1px solid var(--sp-rule)}
+.sp-next-rate>span {font-size:18px;color:var(--cc-muted)}
+.sp-next-rate>strong {font-size:clamp(76px,9vw,132px);font-weight:500;line-height:1.05;letter-spacing:-.07em;color:var(--cc-ink);font-variant-numeric:tabular-nums}
+.sp-next-rate>small {font-size:16px;color:var(--cc-muted)}
+.sp-next-steps {list-style:none;margin:0;padding:20px 0 20px 52px}
+.sp-next-steps li {display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start;padding:18px 0}
+.sp-next-steps li+li {border-top:1px solid var(--sp-rule)}
+.sp-next-steps li>span {padding-top:5px;color:var(--sp-soft);font-size:17px;font-variant-numeric:tabular-nums}
+.sp-next-steps strong {display:block;font-size:21px;font-weight:500;color:var(--cc-ink)}
+.sp-next-steps p {margin:8px 0 0;font-size:16px;line-height:1.6;color:var(--cc-muted)}
+.sp-next-source {max-width:950px;margin:18px 0 0;color:var(--cc-muted);font-size:14px;line-height:1.7}
 .project-snapside .portfolio-footer {margin-top:0;border-top:1px solid var(--cc-line)}
 .project-snapside .portfolio-footer__contacts a {color:var(--cc-ink)}
 .project-snapside .portfolio-footer__contacts a::before {filter:invert(1)}
