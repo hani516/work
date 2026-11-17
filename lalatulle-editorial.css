@@ -311,6 +311,8 @@ html:lang(ja) .ln-footer-search-copy {
 .lt-case-tool-mark-figma img { width: 18px; height: 22px; max-width: none; }
 .lt-case-tools dd { margin-inline-start: 19px; font-size: 13px; line-height: 1.55; color: var(--lt-muted); }
 .ln-case-heading .lt-case-tools { margin-top: 20px; }
+.ln-case-heading .lt-case-tools-compact { gap: 8px 14px; align-items: center; margin-bottom: 0; padding: 0; list-style: none; }
+.lt-case-tools-compact li { display: flex; align-items: center; gap: 6px; min-height: 24px; font-size: 13px; font-weight: 600; line-height: 1.35; }
 .ln-fomo-visual { margin-top: 48px; }
 .ln-fomo-visual .ln-image-link { max-width: 800px; margin-inline: auto; }
 .ln-fomo-visual img { width: 100%; }
