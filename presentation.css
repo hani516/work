@@ -260,6 +260,12 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   transform: none;
 }
 
+.slide-family-scenarios {
+  width: min(100%, 840px);
+  height: min(100%, 330px);
+  margin: 14px auto 0;
+}
+
 .slide-character-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
