@@ -1,0 +1,31 @@
+.result-conclusion,
+.project-mongram .n-section .result-conclusion {
+  margin: 32px 0 0;
+  padding: 22px 26px;
+  border-radius: 8px;
+  background: #eee9e6;
+  color: #282429;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 650;
+  line-height: 1.5;
+  line-break: strict;
+  text-wrap: pretty;
+}
+
+:is(.project-mongram, .slide.mg) .result-conclusion {background: #e8eee4}
+:is(.project-snapside, .slide.sp) .result-conclusion {background: #e7eaf0}
+
+.slide > .result-conclusion {
+  flex: none;
+  margin: 12px 0 0;
+  padding: 12px 20px;
+  font-size: 23px;
+}
+
+.has-result-conclusion .slide-ab-comparison {width: min(100%, 372px)}
+.has-result-conclusion .mg-evidence-comparison {--evidence-height: 276px}
+.has-result-conclusion .slide-observation .metrics {margin: 8px 0 12px}
+.has-result-conclusion .slide-observation .metric {padding-top: 6px}
+.slide.has-result-conclusion .slide-observation h3 {font-size: 20px}
+.slide.has-result-conclusion .slide-observation .metric strong {font-size: 34px}
+.has-result-conclusion .slide-observation .metric span {margin-top: 4px}
