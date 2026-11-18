@@ -47,8 +47,8 @@
 .project-mongram .n-section .mg-next-plan .mg-event-names {font-size:15px;line-height:1.8;margin-top:12px;color:#bbb;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 
 /* Readable context beneath each family-sharing illustration. */
-.project-mongram .n-scenario-art img {width:92%}
-.project-mongram .n-scenario-art figcaption {font-size:24px;font-weight:500;line-height:1.7;margin-top:24px;color:#333;word-break:normal;overflow-wrap:break-word}
+.project-mongram .n-scenario-art img {width:min(66%, 340px);margin-inline:auto}
+.project-mongram .n-scenario-art figcaption {text-align:center;font-size:24px;font-weight:500;line-height:1.7;margin-top:24px;color:#333;word-break:normal;overflow-wrap:break-word}
 @media(max-width:700px){.project-mongram .n-scenario-art figcaption {font-size:21px;margin-top:18px}}
 
 .project-mongram .mg-plan-events-heading {font-size:16px;font-weight:500;line-height:1.7;margin:0;color:#fff}
