@@ -212,6 +212,7 @@ html:lang(ja) .ln-footer-search-copy {
 .ln-metric-label svg { flex: none; color: var(--lt-accent); }
 .ln-metric strong { font-size: clamp(42px,5vw,72px); font-weight: 500; letter-spacing: -.065em; line-height: 1.15; color: var(--lt-accent); }
 .ln-metric strong span { font-size: 16px; letter-spacing: 0; font-weight: 400; }
+.ln-metric-approx { font-size: .45em; letter-spacing: 0; margin-inline-end: .12em; }
 .ln-rank-result { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px; margin-top: 36px; padding: 32px 0; border-top: 1px solid var(--lt-line); }
 .ln-rank-result h4 { font-size: 21px; }
 .ln-rank-result p { color: var(--lt-muted); font-size: 15px; margin-top: 8px; }
