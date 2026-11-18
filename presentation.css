@@ -23,7 +23,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .arrow{width:40px;flex:none;align-self:center;color:var(--accent)}
 .gallery.photos .frame{background:none;padding:0}
 .opening{background:#f9f9f7;justify-content:center;isolation:isolate}
-.opening::before{content:"";position:absolute;inset:0 0 0 48%;z-index:-1;background-image:radial-gradient(#757378 1.3px,transparent 1.7px);background-size:10px 10px;mask-image:radial-gradient(ellipse at 110% 60%,black,transparent 72%)}
+.opening-dots{position:absolute;top:0;right:0;width:680px;height:720px;z-index:-1;pointer-events:none}
 .opening h1,.end-title{font:500 115px/.94 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.085em}
 .opening .signature{font-size:24px;margin-top:35px}.opening small{position:absolute;left:80px;top:60px;font-size:14px;letter-spacing:.12em}
 .chapter{justify-content:center;isolation:isolate}
@@ -65,4 +65,30 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 /* Keep Japanese punctuation attached to its phrase in screen and print layouts. */
 .slide :is(h2, h3, p, figcaption, li, .metric span) {
   line-break: strict;
+}
+
+
+/* Leave room for the lower navigation labels in the fixed slide layout. */
+.slide .header-comparison-body .ln-nav-changes {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.slide .header-comparison-body .lt-icon-lower-labels {
+  display: grid;
+  grid-template-columns: 32% 40% 6% 22%;
+  height: auto;
+  padding-top: 10px;
+  line-height: 1.5;
+  justify-items: center;
+}
+
+.slide .header-comparison-body .lt-icon-lower-labels span {
+  position: static;
+  grid-column: 2;
+  transform: none;
+}
+
+.slide .header-comparison-body .lt-icon-lower-labels span + span {
+  grid-column: 4;
 }
