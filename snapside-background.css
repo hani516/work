@@ -22,9 +22,11 @@
 }
 
 .sp-background-flow {
+  --step-gap: 60px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 38px;
+  grid-template-columns: repeat(3, minmax(0, max-content));
+  justify-content: center;
+  gap: 36px var(--step-gap);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -34,9 +36,10 @@
 .sp-background-flow li + li::before {
   content: "›";
   position: absolute;
-  top: 0;
-  left: -24px;
-  color: var(--sp-theme-muted);
+  top: 2px;
+  left: calc(var(--step-gap) / -2);
+  transform: translateX(-50%);
+  color: var(--sp-theme-accent);
   font-size: 24px;
   line-height: 1;
 }
@@ -56,10 +59,8 @@
 .sp-background-shots img {
   display: block;
   width: 100%;
-  aspect-ratio: 2.3;
-  object-fit: cover;
-  object-position: top;
-  background: #1b1d1b;
+  height: auto;
+  outline: 1px solid var(--sp-theme-line);
   border-radius: 4px;
 }
 
@@ -76,23 +77,8 @@ body.project-snapside .sp-background .sp-section-head p {color: var(--sp-theme-m
   filter: invert(1);
 }
 
-.slide .sp-background-flow {
-  --step-gap: 60px;
-  grid-template-columns: repeat(3, max-content);
-  justify-content: center;
-  column-gap: var(--step-gap);
-}
-
-.slide .sp-background-flow li + li::before {
-  top: 2px;
-  left: calc(var(--step-gap) / -2);
-  transform: translateX(-50%);
-  color: var(--accent);
-}
-
 .slide .sp-background-shots figure {display: block}
 .slide .sp-background-shots {margin-top: 28px}
-.slide .sp-background-shots img {aspect-ratio: auto; height: auto; outline: 1px solid var(--line)}
 
 @media (max-width: 760px) {
   body.project-snapside .sp-section.sp-background {padding-block: 42px}
