@@ -75,3 +75,18 @@
 .header-comparison-body .ln-nav-changes > div { padding: 15px 21px; }
 .header-comparison-body .ln-nav-changes dd { margin: 0; }
 .header-comparison-body .ln-nav-pictogram { margin-bottom: 6px; }
+
+.pdp-ab-visual {
+  position: relative;
+}
+.pdp-ab-visual > .pdp-ab-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(54px, 10%);
+  height: auto;
+  color: var(--lt-accent, #763d51);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.slide .pdp-ab-visual > .pdp-ab-arrow { width: min(40px, 10%); }
