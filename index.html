@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
-    <link rel="stylesheet" href="home-projects.css?v=gallery-spacing" />
+    <link rel="stylesheet" href="home-projects.css?v=profile-intro" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
 <link rel="stylesheet" href="portfolio-type.css" />
 </head>
@@ -34,38 +34,23 @@
       <section class="statement-hero page-shell home-intro" id="about" aria-label="About Yohan Kim">
         <div class="intro-text">
           <h1 class="hero-headline" lang="en" aria-label="Product Design. Through a UX lens."><span data-type-line aria-hidden="true">Product Design</span><br /><em data-type-line aria-hidden="true">Through a UX lens.</em></h1>
+          <a class="intro-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="intro-profile">
+          <figure class="intro-portrait">
+            <img src="assets/profile/yohan-profile.webp" alt="Yohan Kim" width="1000" height="1286" />
+            <figcaption>
+              <strong>Yohan Kim</strong>
+              <span>Product Designer</span>
+              <a href="https://www.smu.ac.kr/eng1/index.do" target="_blank" rel="noopener noreferrer">Sangmyung University, Seoul, Korea</a>
+            </figcaption>
+          </figure>
           <div class="intro-bio">
             <p class="hero-lead" data-i18n="homeLead">使われ方を調べ、画面の改善につなげる。</p>
             <p class="hero-description" data-i18n="homeBody">ECサイトの改善に加え、個人アプリの企画・デザイン・開発・公開まで手がけています。</p>
           </div>
-          <a class="intro-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
         </div>
-        <figure class="intro-portrait">
-          <img src="assets/profile/yohan-profile.webp" alt="Yohan Kim" width="1000" height="1286" fetchpriority="high" />
-          <figcaption><strong>Yohan Kim</strong><span>Product Designer</span></figcaption>
-          <a href="https://www.smu.ac.kr/eng1/index.do" target="_blank" rel="noopener noreferrer">Sangmyung University, Seoul, Korea</a>
-        </figure>
       </section>
-      <div class="page-shell home-toolstrip">
-        <div class="hero-tools reveal" aria-labelledby="tools-label">
-            <p class="tools-label" id="tools-label">TOOLS</p>
-            <ul class="tools-row tools-list" aria-label="Design and documentation tools">
-              <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
-            </ul>
-            <ul class="tools-row tools-list" aria-label="AI development tools">
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
-            </ul>
-            <ul class="tools-row tools-list" aria-label="Analytics tools">
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
-            </ul>
-          </div>
-      </div>
-
       <section class="portfolio-section selected-projects" id="projects" aria-label="Projects">
         <div class="page-shell">
           <section class="project-group project-group-company" aria-labelledby="company-projects-title">
@@ -95,6 +80,25 @@
           </section>
         </div>
       </section>
+      <div class="page-shell home-toolstrip">
+        <div class="hero-tools reveal" aria-labelledby="tools-label">
+            <p class="tools-label" id="tools-label">TOOLS</p>
+            <ul class="tools-row tools-list" aria-label="Design and documentation tools">
+              <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
+            </ul>
+            <ul class="tools-row tools-list" aria-label="AI development tools">
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
+            </ul>
+            <ul class="tools-row tools-list" aria-label="Analytics tools">
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
+            </ul>
+          </div>
+      </div>
     </main>
 
     <footer class="portfolio-footer" id="contact">
