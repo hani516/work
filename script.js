@@ -297,8 +297,22 @@ if (reduceMotion) {
   document.querySelectorAll(".reveal").forEach((node) => observer.observe(node));
 }
 
+const scrollCue = document.querySelector(".home-scroll-cue");
+const opening = scrollCue?.closest(".home-intro");
+
+function updateScrollCue() {
+  if (!opening) return;
+  const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
+  const profileInView = opening.getBoundingClientRect().bottom < viewportHeight - 12;
+  scrollCue.classList.toggle("is-ring", profileInView);
+}
+
 window.addEventListener("scroll", () => {
   updateLandingNavigation();
+  updateScrollCue();
 }, { passive: true });
+window.addEventListener("resize", updateScrollCue);
+window.addEventListener("pageshow", updateScrollCue);
 setLanguage(localStorage.getItem("portfolio-language") || "ja");
 updateLandingNavigation();
+updateScrollCue();
