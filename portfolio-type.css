@@ -1,0 +1,81 @@
+:root {
+  --type-cover: 100px;
+  --type-title: 48px;
+  --type-subtitle: 28px;
+  --type-body: 18px;
+  --type-caption: 15px;
+  --type-label: 13px;
+  --type-metric: 64px;
+}
+
+body:has(.viewer .slide) {
+  --type-cover: 84px;
+  --type-body: 21px;
+  --type-caption: 17px;
+  --type-label: 14px;
+}
+
+.home-intro .hero-headline { font-size: var(--type-cover); }
+.home-intro .hero-headline em { font-size: 80px; }
+.selected-projects .project-group-title { font-size: var(--type-subtitle); }
+.selected-projects .project-panel .panel-title h3 { font-size: var(--type-subtitle); }
+.selected-projects .panel-copy p,
+.intro-bio .hero-description { font-size: var(--type-body); }
+.home-toolstrip .hero-tools .tools-row li,
+.selected-projects .panel-type,
+.selected-projects .panel-number,
+.intro-portrait > a { font-size: var(--type-label); }
+.intro-portrait figcaption { font-size: var(--type-caption); }
+
+.project-lalatulle .ln-cover .ln-brand,
+body.project-snapside .sp-cover .sp-cover-brand,
+.project-mongram .mg-hero .mg-brand-name { font-size: var(--type-cover); }
+
+.project-lalatulle .ln-cover h1,
+.project-mongram .mg-hero h1,
+body.project-snapside .sp-cover h1,
+.project-lalatulle.lt-narrative .lt-chapter-open h2,
+body.project-mongram .n-section h2,
+body.project-snapside .sp-section-head h2 { font-size: var(--type-title); line-height: 1.3; }
+
+.project-lalatulle main h3,
+.project-lalatulle main .ln-stage-copy h3,
+.project-lalatulle main #category-sequence .ln-stage-copy h3,
+.project-mongram .n-section .mg-next-plan h3,
+.project-mongram .n-section .mg-poodle-heading h3,
+.project-mongram .n-section .mg-family-case-heading h3,
+body.project-snapside.compact-case main .cc-decision-copy h3,
+body.project-snapside main .sp-result-heading,
+body.project-snapside main .sp-organic-grid h3 { font-size: var(--type-subtitle); }
+
+.project-lalatulle main :is(.ln-lead, .ln-stage-copy p, .lt-body-copy, .ln-intro, .lt-story-step > p:last-child),
+.project-mongram .n-section .n-intro,
+.project-mongram .mg-hero-copy .hero-lead,
+body.project-snapside .sp-cover .cc-premise,
+body.project-snapside .sp-section-head p,
+body.project-snapside.compact-case .cc-decision-copy > .sp-decision-summary,
+body.project-snapside .sp-organic-reading p { font-size: var(--type-body); }
+
+.project-lalatulle main :is(figcaption, .ln-result-context, .ln-rank-metrics dt, .ln-nav-changes dd),
+.project-mongram .n-section .n-wrap figure figcaption,
+.project-mongram .n-scenario-art figcaption,
+body.project-snapside main :is(figcaption, .sp-organic-scope, .sp-fact-note) { font-size: var(--type-caption); }
+
+.project-lalatulle main :is(.lt-chapter-count, .ln-case-period, .ln-stage-period, .ln-result-period, .ln-meta p),
+.project-mongram .mg-cover-meta .eyebrow,
+body.project-snapside .sp-organic-scope > strong,
+.project-edition { font-size: var(--type-label); }
+
+.project-lalatulle .ln-result :is(.ln-metric strong, .ln-rank-value, .lt-test-metrics dd),
+body.project-snapside .sp-organic-metrics article > strong { font-size: var(--type-metric); }
+
+.slide h2 { font-size: var(--type-title); }
+.slide.chapter h2,
+.slide.opening :is(h1, .end-title) { font-size: var(--type-cover); }
+.slide :is(h3, .index b) { font-size: var(--type-subtitle); }
+.slide :is(.lead, .rows li),
+.slide.chapter .lead,
+.slide.opening .signature { font-size: var(--type-body); }
+.slide :is(figcaption, .meta, .note, .metric span, .index p, .ln-nav-changes dd, .ln-nav-changes dt) { font-size: var(--type-caption); }
+.slide :is(.folio, .eyebrow, .tag, .tool, .chapter-no, .ln-comparison-label) { font-size: var(--type-label); }
+.slide .metric strong { font-size: var(--type-metric); }
