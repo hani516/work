@@ -131,15 +131,17 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide-banner-art {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .slide-banner-art > h3 {text-align:center}
 
 .slide-banner-art .gallery {
-  flex: 1;
+  width: min(100%, 586px);
+  height: 280px;
   min-height: 0;
-  height: auto;
 }
 
 .slide-test-metrics {
@@ -210,22 +212,52 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide-priority-list li:nth-child(5) {background: #f5f1f4}
 .slide-priority-list :is(b, svg) {color: #754e65}
 
-.slide-search-wireframe {
+.slide-search-body {
+  --lt-ink: var(--ink);
+  --lt-muted: var(--muted);
+  --lt-accent: var(--accent);
+  --lt-surface: #f8f7f5;
   display: grid;
-  gap: 14px;
-  width: 100%;
-  max-width: 220px;
-  text-align: center;
+  align-items: center;
 }
 
-.slide-search-wireframe b {padding: 38px 8px; border-radius: 6px; background: #ebd5d7}
-.slide-search-wireframe span {padding: 5px 8px; border-radius: 4px; background: #ebd5d7; font-size: 13px}
-.slide-quick-links {display: flex; flex-wrap: wrap; justify-content: center; gap: 6px}
-.slide-quick-links span:nth-child(2) {background: #dfaaae}
-.slide-search-categories b {padding: 10px 8px}
-.slide-search-categories div {display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px}
-.slide-search-categories i {aspect-ratio: 1; border-radius: 4px; background: #ebd5d7}
-.slide-search-categories i:nth-child(-n+2) {background: #dfaaae}
+.slide .lt-search-evidence {
+  width: 100%;
+  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) 40px minmax(0, 1.25fr);
+  grid-template-rows: auto 290px;
+  gap: 14px 18px;
+}
+
+.slide .lt-search-evidence > figure {
+  display: grid;
+  grid-row: 1 / span 2;
+  grid-template-rows: subgrid;
+}
+
+.slide .lt-search-evidence figcaption {
+  align-content: start;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.slide .lt-search-diagram {
+  min-height: 0;
+  align-content: center;
+}
+
+.slide .lt-search-mock {width: min(100%, 190px)}
+.slide .lt-search-mock-banner {font-size: 18px}
+.slide .lt-search-proposal-frame {width: min(100%, 328px)}
+.slide .lt-search-diagram-image img {display: block; height: auto}
+.slide .lt-search-arrow {
+  grid-row: 2;
+  align-self: center;
+  width: 40px;
+  color: var(--accent);
+  transform: none;
+}
 
 .slide-character-grid {
   display: grid;
