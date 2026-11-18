@@ -100,21 +100,6 @@
 .home-scroll-cue:hover {background: #f4f3f0}
 .home-scroll-cue:focus-visible {outline: 2px solid currentColor; outline-offset: 4px}
 
-.home-scroll-progress {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: conic-gradient(#232324 var(--scroll-progress, 0%), #dededb 0);
-  mask-image: radial-gradient(circle, transparent 7px, black 8px);
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.home-scroll-cue[hidden] { display: none; }
-
 @media (prefers-reduced-motion: no-preference) {
   .home-scroll-cue span {animation: home-scroll-bounce 1.4s ease-in-out infinite}
 }
