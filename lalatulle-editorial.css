@@ -83,10 +83,10 @@ button { font: inherit; }
 .ln-case-heading .lt-chapter-brand { margin: 0 0 8px; color: var(--lt-accent); font-size: 15px; font-weight: 600; }
 .lt-improvement-index { margin-top: 48px; }
 .lt-improvement-index h3 { margin: 0 0 16px; font-size: 22px; }
-.lt-improvement-index ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
-.lt-improvement-index a { display: grid; height: 100%; gap: 8px; padding: 16px; border: 1px solid var(--lt-line); border-radius: 8px; color: inherit; text-decoration: none; }
+.lt-improvement-index ol { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.lt-improvement-index a { display: grid; align-content: start; height: 100%; gap: 8px; padding: 16px; border: 1px solid var(--lt-line); border-radius: 8px; color: inherit; text-decoration: none; }
 .lt-improvement-index a span { color: var(--lt-accent); font-size: 14px; font-weight: 600; }
-.lt-improvement-index a strong { font-size: 17px; line-height: 1.5; }
+.lt-improvement-index a strong { font-size: 17px; line-height: 1.5; text-wrap: balance; }
 .lt-improvement-index a:is(:hover, :focus-visible) { border-color: var(--lt-accent); }
 #halloween :is(#category-redesign, #banner-refresh, #category-sequence, #footer-additions) { scroll-margin-top: 72px; }
 .ln-case-heading .ln-intro { margin-top: 12px; }
