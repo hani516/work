@@ -4,10 +4,10 @@
   --lt-paper: #f8f7f4;
   --lt-ink: #242125;
   --lt-muted: #706870;
-  --lt-line: #dcd7d7;
+  --lt-line: #dedcd7;
   --lt-accent: #763d51;
-  --lt-chapter: #f3ecef;
-  --lt-surface: #faf6f8;
+  --lt-chapter: #efeeeb;
+  --lt-surface: #f8f7f5;
   --lt-width: 1200px;
   --lt-gutter: clamp(24px, 5vw, 88px);
 }
@@ -40,9 +40,9 @@ button { font: inherit; }
 .ln-meta p { font-size: 16px; line-height: 1.8; }
 .ln-site-links { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; }
 .ln-site-links .ln-live-button { width: min(100%, 224px); min-width: 0; text-align: center; }
-.ln-live-button { display: inline-flex; min-width: 164px; min-height: 48px; justify-content: center; align-items: center; gap: 10px; padding: 10px 20px; border: 1px solid var(--lt-accent); border-radius: 5px; background: var(--lt-accent); color: #fff; font-size: 16px; font-weight: 500; }
-.ln-live-button + .ln-live-button { background: #eee4e8; color: var(--lt-accent); }
-.ln-live-button:is(:hover, :focus-visible) { background: #603043; color: #fff; }
+.ln-live-button { display: inline-flex; min-width: 164px; min-height: 48px; justify-content: center; align-items: center; gap: 10px; padding: 10px 20px; border: 1px solid var(--lt-ink); border-radius: 5px; background: var(--lt-ink); color: #fff; font-size: 16px; font-weight: 500; }
+.ln-live-button + .ln-live-button { background: white; color: var(--lt-ink); }
+.ln-live-button:is(:hover, :focus-visible) { background: #484543; color: #fff; }
 .ln-live-icon { display: none; }
 .ln-chapters { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 24px; padding-top: 64px; }
 .lt-case-entry { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -53,7 +53,7 @@ button { font: inherit; }
 .lt-case-navigation { position: relative; color: #876675; }
 .lt-case-navigation .lt-nav-logo { position: absolute; inset: 50% auto auto 50%; width: 74%; height: auto; object-fit: contain; mix-blend-mode: multiply; transform: translate(-50%, -50%); }
 .lt-case-entry:is(:hover, :focus-visible) .lt-nav-logo { transform: translate(-50%, -50%) scale(1.035); }
-.lt-case-entry:is(:hover, :focus-visible) .lt-case-navigation { background-color: #e5dce1; box-shadow: inset 0 0 0 1px #c8b5c0; }
+.lt-case-entry:is(:hover, :focus-visible) .lt-case-navigation { background-color: var(--lt-chapter); box-shadow: inset 0 0 0 1px var(--lt-line); }
 .lt-nav-icons { display: block; width: 100%; height: 100%; }
 .lt-nav-icon-primary { color: var(--lt-accent); }
 .lt-nav-icon-muted { color: #a58b96; }
@@ -196,11 +196,11 @@ html:lang(ja) .ln-footer-search-copy {
 .ln-priority > h3, .ln-priority > p { margin-inline: auto; text-align: center; }
 .ln-priority > p { max-width: 680px; color: var(--lt-muted); margin-top: 16px; font-size: 16px; line-height: 1.8; }
 .ln-priority ol { list-style: none; padding: 0; display: flex; align-items: stretch; gap: 12px; margin: 26px 0 0; }
-.ln-priority li { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; min-height: 176px; padding: 20px 14px; border-radius: 8px; background: #e1d5df; }
-.ln-priority li:nth-child(2) { background: #e8dfe6; }
-.ln-priority li:nth-child(3) { background: #ede6eb; }
-.ln-priority li:nth-child(4) { background: #f1ecf0; }
-.ln-priority li:nth-child(5) { background: #f5f1f4; }
+.ln-priority li { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; min-height: 176px; padding: 20px 14px; border-radius: 8px; background: #eae7e2; }
+.ln-priority li:nth-child(2) { background: #eeebe6; }
+.ln-priority li:nth-child(3) { background: #f2efeb; }
+.ln-priority li:nth-child(4) { background: #f5f3ef; }
+.ln-priority li:nth-child(5) { background: var(--lt-surface); }
 .ln-priority li b { font-size: 13px; font-weight: 700; color: #82647a; }
 .ln-priority li span { font-size: 18px; font-weight: 400; line-height: 1.5; }
 .ln-priority-icon { display: block; width: 30px; height: 30px; flex: 0 0 30px; color: #754e65; }
@@ -247,7 +247,7 @@ html:lang(ja) .ln-footer-search-copy {
   .lt-search-evidence figcaption { align-content: start; margin-bottom: 0; }
   .lt-search-arrow { grid-row: 2; }
 }
-.lt-search-diagram { display: grid; justify-items: center; align-content: start; min-height: clamp(270px, 28vw, 355px); padding: 24px clamp(12px, 2vw, 28px); background: radial-gradient(circle, #cfc3c8 1px, transparent 1.25px) 0 0 / 16px 16px, #f8f3f5; }
+.lt-search-diagram { display: grid; justify-items: center; align-content: start; min-height: clamp(270px, 28vw, 355px); padding: 24px clamp(12px, 2vw, 28px); background: radial-gradient(circle, #d1cbc5 1px, transparent 1.25px) 0 0 / 16px 16px, var(--lt-surface); }
 .lt-search-diagram-image { padding: 0; background: #f2f2f2; }
 .lt-search-diagram-image img { width: 100%; }
 .lt-search-proposal-frame { position: relative; width: 100%; }

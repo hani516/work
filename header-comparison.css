@@ -1,10 +1,10 @@
 .ln-nav-changes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 32px; }
-.ln-nav-changes > div { border: 1px solid var(--lt-line); border-radius: 10px; padding: clamp(18px, 2.4vw, 26px); background: #fffafc; }
+.ln-nav-changes > div { border: 1px solid var(--lt-line); border-radius: 10px; padding: clamp(18px, 2.4vw, 26px); background: #f8f7f5; }
 .ln-nav-changes dt { font-size: 18px; font-weight: 600; line-height: 1.6; margin-bottom: 10px; }
 .ln-nav-changes dd { font-size: 16px; line-height: 1.8; color: var(--lt-muted); }
 .ln-nav-pictogram { display: block; width: min(100%, 190px); height: auto; margin-bottom: 12px; color: var(--lt-accent); }
 .ln-nav-store-icons { padding: 7px 12px; }
-.ln-nav-icon-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); justify-items: center; align-items: center; min-height: 34px; padding-inline: 4px; border: 1px solid #ccb7c1; border-radius: 7px; background: #fffdfc; }
+.ln-nav-icon-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); justify-items: center; align-items: center; min-height: 34px; padding-inline: 4px; border: 1px solid var(--lt-line); border-radius: 7px; background: #fff; }
 .ln-nav-icon-strip img { width: 21px; height: 21px; }
 .ln-nav-cart-highlight { display: grid; place-items: center; width: min(100%, 40px); min-height: 26px; border-radius: 4px; background: var(--lt-accent); }
 .ln-nav-cart-highlight img { filter: invert(1); }
@@ -62,7 +62,7 @@
 .header-comparison-body {
   --lt-accent: #763d51;
   --lt-muted: #655f63;
-  --lt-line: #e4dcdf;
+  --lt-line: #dedcd7;
   margin-top: 22px;
 }
 .header-comparison-body .ln-nav-comparison {
