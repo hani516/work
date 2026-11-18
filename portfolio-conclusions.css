@@ -23,9 +23,13 @@
 }
 
 .has-result-conclusion .slide-ab-comparison {width: min(100%, 372px)}
-.has-result-conclusion .mg-evidence-comparison {--evidence-height: 276px}
-.has-result-conclusion .slide-observation .metrics {margin: 8px 0 12px}
+.has-result-conclusion .mg-evidence-comparison {--evidence-height: 246px}
+.has-result-conclusion .mg-photo-detail {flex-basis: 290px}
+.has-result-conclusion .slide-observation .metrics {margin: 6px 0 8px}
 .has-result-conclusion .slide-observation .metric {padding-top: 6px}
 .slide.has-result-conclusion .slide-observation h3 {font-size: 20px}
 .slide.has-result-conclusion .slide-observation .metric strong {font-size: 34px}
 .has-result-conclusion .slide-observation .metric span {margin-top: 4px}
+.slide.has-result-conclusion > .body:has(.slide-observation) {margin-top: 14px}
+.slide.has-result-conclusion > .body:has(> .rows) > .metrics {margin: 14px 0 20px}
+.slide.has-result-conclusion > .body > .rows li {padding-block: 8px}
