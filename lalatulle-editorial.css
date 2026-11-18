@@ -228,15 +228,21 @@ html:lang(ja) .ln-footer-search-copy {
 .ln-intro { max-width: 800px; font-size: 23px; line-height: 1.9; margin-top: 0; text-wrap: pretty; }
 .lt-phrase { white-space: nowrap; }
 /* Restore the centered, tinted priority cards from the earlier design. */
-.ln-priority { max-width: 900px; margin: clamp(64px, 8vw, 104px) auto 56px; }
+.ln-priority {
+  max-width: 980px;
+  margin: clamp(64px, 8vw, 104px) auto 56px;
+  padding: clamp(24px, 4vw, 48px) clamp(18px, 3vw, 40px);
+  border-radius: 12px;
+  background: #f1e9ed;
+}
 .ln-priority > h3, .ln-priority > p { margin-inline: auto; text-align: center; }
 .ln-priority > p { max-width: 680px; color: var(--lt-muted); margin-top: 16px; font-size: 16px; line-height: 1.8; }
 .ln-priority ol { list-style: none; padding: 0; display: flex; align-items: stretch; gap: 12px; margin: 26px 0 0; }
-.ln-priority li { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; min-height: 176px; padding: 20px 14px; border-radius: 8px; background: #eae7e2; }
-.ln-priority li:nth-child(2) { background: #eeebe6; }
-.ln-priority li:nth-child(3) { background: #f2efeb; }
-.ln-priority li:nth-child(4) { background: #f5f3ef; }
-.ln-priority li:nth-child(5) { background: var(--lt-surface); }
+.ln-priority li { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; min-height: 176px; padding: 20px 14px; border-radius: 8px; background: #e1d5df; }
+.ln-priority li:nth-child(2) { background: #e8dfe6; }
+.ln-priority li:nth-child(3) { background: #ede6eb; }
+.ln-priority li:nth-child(4) { background: #f1ecf0; }
+.ln-priority li:nth-child(5) { background: #f5f1f4; }
 .ln-priority li b { font-size: 13px; font-weight: 700; color: #82647a; }
 .ln-priority li span { font-size: 18px; font-weight: 400; line-height: 1.5; }
 .ln-priority-icon { display: block; width: 30px; height: 30px; flex: 0 0 30px; color: #754e65; }
