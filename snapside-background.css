@@ -63,10 +63,11 @@ body.project-snapside .sp-background .sp-section-head p {color: var(--sp-concept
 .sp-background-tools :is(.sp-source-tools li, .sp-dev-tools p) {color: var(--sp-concept-muted)}
 
 .slide.sp.sp-background {
+  --sp-concept-surface: var(--sp-slide-panel);
+  --sp-concept-ink: var(--ink);
+  --sp-concept-muted: var(--muted);
   background: var(--sp-concept-surface);
   color: var(--sp-concept-ink);
-  --line: #68716e;
-  --muted: var(--sp-concept-muted);
 }
 
 .slide .sp-background-shots figure {display: block}
