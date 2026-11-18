@@ -70,6 +70,20 @@ body.project-snapside .sp-background .sp-section-head p {color: var(--sp-concept
   color: var(--sp-concept-ink);
 }
 
+.slide .sp-background-flow {
+  --step-gap: 60px;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  column-gap: var(--step-gap);
+}
+
+.slide .sp-background-flow li + li::before {
+  top: 2px;
+  left: calc(var(--step-gap) / -2);
+  transform: translateX(-50%);
+  color: var(--accent);
+}
+
 .slide .sp-background-shots figure {display: block}
 .slide .sp-background-shots {margin-top: 28px}
 
