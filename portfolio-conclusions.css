@@ -14,7 +14,10 @@
 }
 
 :is(.project-mongram, .slide.mg) .result-conclusion {background: #e8eee4}
-:is(.project-snapside, .slide.sp) .result-conclusion {background: #e7eaf0}
+:is(.project-snapside, .slide.sp) .result-conclusion {
+  background: var(--sp-theme-raised);
+  color: var(--sp-theme-ink);
+}
 
 .slide > .result-conclusion {
   flex: none;

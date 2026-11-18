@@ -1,14 +1,22 @@
+.project-snapside,
+.slide.sp {
+  --sp-theme-bg: #1b1e23;
+  --sp-theme-panel: #232830;
+  --sp-theme-raised: #2d343f;
+  --sp-theme-ink: #f1f2f4;
+  --sp-theme-muted: #bdc5d0;
+  --sp-theme-line: #414a57;
+  --sp-theme-accent: #b2caeb;
+}
+
 .sp-background {
-  --sp-concept-surface: #38434d;
-  --sp-concept-ink: #f0f0ec;
-  --sp-concept-muted: #b9beb3;
-  background: var(--sp-concept-surface);
-  color: var(--sp-concept-ink);
+  background: var(--sp-theme-panel);
+  color: var(--sp-theme-ink);
 }
 
 .sp-background .sp-background-kicker {
   margin: 0 0 14px;
-  color: var(--sp-concept-muted);
+  color: var(--sp-theme-muted);
   font-size: 13px;
   font-weight: 500;
 }
@@ -28,7 +36,7 @@
   position: absolute;
   top: 0;
   left: -24px;
-  color: var(--sp-concept-muted);
+  color: var(--sp-theme-muted);
   font-size: 24px;
   line-height: 1;
 }
@@ -36,15 +44,15 @@
 .sp-background-flow strong {
   display: block;
   margin-bottom: 8px;
-  color: var(--sp-concept-ink);
+  color: var(--sp-theme-ink);
   font-size: 21px;
   font-weight: 600;
 }
 
-.sp-background-flow span {color: var(--sp-concept-muted); font-size: 16px}
+.sp-background-flow span {color: var(--sp-theme-muted); font-size: 16px}
 .sp-background-shots {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 36px}
 .sp-background-shots figure {min-width: 0; margin: 0}
-.sp-background-shots figcaption {margin-bottom: 8px; color: var(--sp-concept-muted); text-align: center; font-size: 14px}
+.sp-background-shots figcaption {margin-bottom: 8px; color: var(--sp-theme-muted); text-align: center; font-size: 14px}
 .sp-background-shots img {
   display: block;
   width: 100%;
@@ -57,17 +65,15 @@
 
 body.project-snapside .sp-section.sp-background {padding-block: 64px}
 body.project-snapside #sp-plan .sp-section-head {margin-bottom: 32px; padding: 0; border: 0}
-body.project-snapside .sp-background .sp-section-head h2 {color: var(--sp-concept-ink)}
-body.project-snapside .sp-background .sp-section-head p {color: var(--sp-concept-muted)}
+body.project-snapside .sp-background .sp-section-head h2 {color: var(--sp-theme-ink)}
+body.project-snapside .sp-background .sp-section-head p {color: var(--sp-theme-muted)}
 .sp-background-tools {margin-top: 30px}
-.sp-background-tools :is(.sp-source-tools li, .sp-dev-tools p) {color: var(--sp-concept-muted)}
+.sp-background-tools :is(.sp-source-tools li, .sp-dev-tools p) {color: var(--sp-theme-muted)}
 
-.slide.sp.sp-background {
-  --sp-concept-surface: var(--sp-slide-panel);
-  --sp-concept-ink: var(--ink);
-  --sp-concept-muted: var(--muted);
-  background: var(--sp-concept-surface);
-  color: var(--sp-concept-ink);
+.slide.sp.sp-background {background: var(--sp-theme-panel)}
+
+:is(.project-snapside .sp-source-tools, .slide.sp .tool) img:is([src$="notion.svg"], [src$="github.svg"], [src$="vercel.svg"]) {
+  filter: invert(1);
 }
 
 .slide .sp-background-flow {
