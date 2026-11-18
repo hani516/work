@@ -83,7 +83,7 @@
         </div>
         <p class="review-method-note">Wivloで想定する使い方に近いレビューを選び、書く・探す・前の記録を使うときに困る点をまとめました。</p>
 
-        <details class="case-disclosure research-details"><summary><span data-case-en="Review evidence by service" data-case-ko="서비스별 리뷰 근거 보기">サービスごとのレビューを見る</span><small>Notion / Obsidian / Apple Notes / Google Docs / Mem</small></summary>
+        <div class="research-details"><h3 data-case-en="Review evidence by service" data-case-ko="서비스별 리뷰 근거">サービスごとのレビュー</h3>
         <div class="review-analysis-grid" aria-label="App Store and Google Play review analysis">
           <article class="review-analysis-card is-wide">
             <header><img src="assets/wivlo/notion.png" alt="Notion logo" /><div><span>STRUCTURE / MOBILE</span><h3>Notion</h3></div></header>
@@ -111,7 +111,7 @@
             <footer><span>Design implication</span><strong>元の情報、引用箇所、変更点を見せ、反映する前に確認できるようにする。</strong><a href="https://apps.apple.com/us/app/mem-your-personal-ai-agent/id1578757028" target="_blank" rel="noreferrer">App Store reviews</a></footer>
           </article>
         </div>
-        </details>
+        </div>
 
         <div class="research-synthesis" aria-label="Cross-service research synthesis">
           <div class="synthesis-heading"><span>Cross-service synthesis</span><h3>保存後の整理や確認は、<br />どのサービスでもユーザーに残っていました。</h3></div>
@@ -293,11 +293,9 @@
 </div>
 <h3 data-case-en="Separate opening AI from a successful request" data-case-ko="AI 진입과 실행 성공을 분리했습니다">AIの入口と、実行の成功を分ける</h3>
 <p data-case-en="Over the latest 28 days, Google Analytics records 2 users opening the AI menu and 2 opening an AI action screen. The DB has zero AI request logs for that period. I cannot distinguish non-use from missing instrumentation, so this is not evidence of AI demand or success." data-case-ko="최근 28일 Google Analytics에는 AI 메뉴를 연 사용자 2명, AI 작업 화면을 연 사용자 2명이 있습니다. 같은 기간 DB AI 요청 로그는 0건입니다. 실제 미사용과 계측 누락을 구분할 수 없어 AI 수요나 성공을 단정하지 않았습니다.">直近28日のGoogle AnalyticsではAIメニューを開いたユーザー2人、AI操作画面を開いたユーザー2人を確認。一方、同期間のDBのAIリクエストログは0件でした。実際の未利用と計測漏れを区別できないため、AIの需要や成功を結論づけていません。</p>
-<details class="case-disclosure usage-details"><summary>
-<span data-case-en="View key interactions over 28 days" data-case-ko="최근 28일 주요 행동 보기">直近28日の主要操作を見る</span>
-</summary>
+<div class="usage-details"><h4 data-case-en="Key interactions over 28 days" data-case-ko="최근 28일 주요 행동">直近28日の主要操作</h4>
 <p data-case-en="Home content viewed by 9 users; notes opened from Home by 3; create clicked by 4; note-created events by 3; saved by 4; deleted by 2; search focused by 2; settings changed by 6. This is not a sequential post-signup funnel." data-case-ko="홈 콘텐츠 조회 9명, 홈에서 노트 열기 3명, 작성 버튼 클릭 4명, 노트 생성 완료 이벤트 3명, 저장 4명, 삭제 2명, 검색 입력 포커스 2명, 설정 변경 6명입니다. 가입 후로 제한된 순차 퍼널은 아닙니다.">Homeコンテンツ閲覧9人、HomeからNoteを開く3人、作成ボタン4人、Note作成完了イベント3人、保存4人、削除2人、検索入力Focus2人、設定変更6人。これは登録後に限定した順次ファネルではありません。</p>
-</details>
+</div>
 <h3 data-case-en="I plan to test first saves, reuse and AI execution." data-case-ko="첫 저장·재사용·AI 실행을 검증할 계획입니다.">初めての保存、記録の使い直し、AIの利用を確認します。</h3>
 <div class="usage-next">
 <article><span>01</span>
