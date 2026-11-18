@@ -1,0 +1,87 @@
+/* A common cover grid connects each case to its card on the home page. */
+body.project-lalatulle { --lt-paper: #fff; --lt-width: 1120px; }
+.project-lalatulle .case-header { background: rgb(255 255 255 / 96%); }
+.project-edition {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 0 26px;
+  color: #535450;
+  font: 500 13px/1.4 Inter, Arial, sans-serif;
+  letter-spacing: .035em;
+}
+.project-edition span { padding-right: 15px; border-right: 1px solid #babcb8; font-variant-numeric: tabular-nums; }
+.ln-cover, .project-mongram .mg-hero, .project-snapside .sp-cover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: 60px;
+  min-height: 0;
+}
+.ln-hero, body.project-snapside .sp-cover { padding-top: 52px; }
+.project-mongram .mg-hero { padding-block: 52px 32px; }
+.ln-cover-image, .project-mongram .mg-hero-screens {
+  height: 470px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ln-cover-image { background: #f1e7e4; padding: 24px; }
+.ln-cover-image .ln-image-link { width: 220px; height: 420px; border: 4px solid white; border-radius: 12px; }
+.project-mongram .mg-hero-screens { background: #eaf0e5; padding: 24px; gap: 20px; }
+.project-mongram .mg-hero-screens .shot-phone { margin: 0; width: 40%; max-width: 185px; flex: none; }
+.project-mongram .mg-hero-screens .shot-phone:first-child { transform: translateY(18px); }
+.project-mongram .mg-hero-screens .shot-phone:last-child { transform: translateY(-18px); }
+.project-mongram .mg-hero-screens .shot-phone img { width: 100%; height: auto; border-radius: 18px; }
+.ln-meta, .project-mongram .mg-cover-meta, body.project-snapside .sp-cover-meta {
+  margin-top: 28px;
+  padding-block: 24px;
+  border-block: 1px solid #dedfdb;
+}
+body.project-snapside .sp-cover { background: #fff; color: #202221; }
+body.project-snapside .sp-cover .sp-cover-brand,
+body.project-snapside .sp-cover h1 { color: #202221; }
+body.project-snapside .sp-cover .sp-hero-logo { filter: invert(1); }
+body.project-snapside .sp-cover :is(.cc-premise,.sp-fact-note,.sp-fact-note strong) { color: #535652; }
+body.project-snapside .sp-cover .cc-links a { background: #202221; color: white; border-radius: 30px; }
+body.project-snapside .sp-cover .sp-gallery { border-radius: 5px; padding: 24px; }
+.ln-meta .ln-live-button, .mg-cover-meta .n-project-links a { border-radius: 30px; }
+.lt-case-index .lt-case-entry { border-top: 1px solid #c9c6c7; padding-top: 16px; }
+.lt-case-index .lt-case-thumbnail { border-radius: 4px; }
+.project-mongram .mg-family-case-heading, .project-snapside .sp-section-head {
+  border-top: 1px solid currentColor;
+  padding-top: 26px;
+}
+.project-turn { width: min(1120px, 90%); margin: 80px auto 48px; }
+.project-turn a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 28px 0;
+  border-block: 1px solid currentColor;
+  color: inherit;
+  text-decoration: none;
+}
+.project-turn .turn-label { grid-column: 1 / -1; font-size: 14px; letter-spacing: .025em; }
+.project-turn strong { font-size: 46px; line-height: 1.2; letter-spacing: -.045em; }
+.project-turn a > span:last-child { font-size: 36px; transition: transform .2s; }
+.project-turn a:is(:hover,:focus-visible) > span:last-child { transform: translateX(5px); }
+.project-mongram .project-turn { background: #202221; color: white; border-radius: 4px; }
+.project-mongram .project-turn a { padding: 32px; border: 0; }
+
+/* A fine rule gives every metric a baseline without enclosing the results. */
+.project-lalatulle .ln-result :is(.ln-metrics,.lt-test-metrics) > div,
+body.project-snapside .sp-organic-metrics article {
+  border-top: 2px solid currentColor;
+  padding-top: 18px;
+}
+.project-lalatulle .ln-result dd, .project-snapside .sp-organic-metrics strong {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.project-mongram .mg-plan-metrics .mg-measure-node {
+  border-radius: 4px;
+  border-top: 2px solid #728773;
+}
