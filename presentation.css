@@ -367,3 +367,21 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide-home-callouts .slide-home-callout-below {color: var(--muted)}
 .slide-home-callouts .slide-home-callout-below::before {border-top-style: dashed}
 .slide-home-callouts span {display: block; margin-top: 4px; color: var(--muted); font-size: 12px; font-weight: 400; word-break: keep-all}
+
+.slide-ab-comparison {
+  width: min(100%, 440px);
+  justify-self: center;
+  gap: 8px;
+}
+
+.slide-ab-comparison figcaption {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  text-align: center;
+}
+
+.slide-ab-comparison img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
