@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" href="data:," />
-    <link rel="stylesheet" href="lalatulle-editorial.css?v=five-improvement-columns" />
+    <link rel="stylesheet" href="lalatulle-editorial.css?v=active-nav-compact-results" />
     <link rel="stylesheet" href="halloween-return.css" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <script src="lalatulle-motion.js?v=20261110-continuous-footer" defer></script>
-<link rel="stylesheet" href="project-gallery.css?v=clean-cover" />
+<link rel="stylesheet" href="project-gallery.css?v=compact-results" />
 <style id="lt-chapter-transitions">
 /* Only the four top-level case openings get a chapter band. */
 .lt-narrative .ln-section:has(> .lt-chapter-open){margin-top:clamp(88px,10vw,160px);padding-top:0;border:0;scroll-margin-top:78px}
@@ -26,7 +26,7 @@
 </style>
 <link rel="stylesheet" href="header-comparison.css?v=warm-neutral" /><link rel="stylesheet" href="portfolio-type.css" />
 </head>
-  <body class="project-lalatulle lt-narrative"><header class="case-header project-page-header"><a class="back-link" href="index.html#projects">Portfolio</a><nav class="case-nav"><a href="#overview" data-case-en="Overview" data-case-ko="개요">概要</a><a href="#halloween" data-case-en="Halloween" data-case-ko="할로윈">Halloween</a><a href="#navigation" data-case-en="Navigation" data-case-ko="내비게이션">ヘッダー</a><a href="#first-view" data-case-en="Hero banners" data-case-ko="첫 화면">最初の画面</a><a href="#experiment" data-case-en="PDP A/B test" data-case-ko="PDP A/B 테스트">PDP A/Bテスト</a></nav></header><main class="ln-main">
+  <body class="project-lalatulle lt-narrative"><header class="case-header project-page-header"><a class="back-link" href="index.html#projects">Portfolio</a><nav class="case-nav"><a href="#overview" aria-current="location" data-case-en="Overview" data-case-ko="개요">概要</a><a href="#halloween" data-case-en="Halloween" data-case-ko="할로윈">Halloween</a><a href="#navigation" data-case-en="Navigation" data-case-ko="내비게이션">ヘッダー</a><a href="#first-view" data-case-en="Hero banners" data-case-ko="첫 화면">最初の画面</a><a href="#experiment" data-case-en="PDP A/B test" data-case-ko="PDP A/B 테스트">PDP A/Bテスト</a></nav></header><main class="ln-main">
 <section class="ln-hero" id="overview"><div class="ln-cover"><div><p class="project-edition"><span>01 / 03</span> E-commerce</p>
 <p class="ln-brand">LaLaTulle</p>
 <h1 class="" data-case-en="Improving the shopping journey" data-case-ko="쇼핑 동선 개선">買い物の導線改善</h1>
@@ -314,8 +314,7 @@
 <div class="ln-fomo-visual">
 <figure class=""><div class="ln-image-link"><img src="assets/lalatulle/pdp-ab-comparison.png?v=20261118-arrow" alt="Product-detail comparison without and with viewer-count UI" loading="lazy" decoding="async" width="1572" height="1272"/></div></figure>
 </div><div class="ln-result lt-experiment-result"><h3 class="ln-results-title" data-case-en="Results" data-case-ko="결과">結果</h3>
-<p class="ln-result-period" data-case-en="Reporting period: 2025.08.08–08.20" data-case-ko="집계 기간: 2025.08.08–08.20">集計期間：2025.08.08–08.20</p>
-<p class="ln-result-period" data-case-en="Google Analytics · Popup displayed − hidden control group" data-case-ko="Google Analytics · 팝업 표시 그룹 − 비표시 대조군">Google Analytics・表示あり − 対照群（非表示）</p>
+<p class="ln-result-period" data-case-en="Google Analytics · 2025.08.08–08.20 · Popup vs. control" data-case-ko="Google Analytics · 2025.08.08–08.20 · 팝업 표시군과 대조군 비교">Google Analytics ／ 2025.08.08–08.20 ／ 表示ありと対照群の比較</p>
 <div class="ln-result-phase">
 <h4 data-case-en="No statistically significant difference in purchase rates was found." data-case-ko="구매율에서 통계적으로 유의한 차이를 확인하지 못했습니다.">購入率の有意差は確認できませんでした。</h4>
 <dl class="lt-test-metrics">
@@ -323,8 +322,11 @@
   <div><dt data-case-en="Cart-to-checkout rate" data-case-ko="장바구니 → 구매 시작률">カート→購入開始率</dt><dd>−2.02<span data-case-en=" pp">%p</span></dd></div>
   <div><dt data-case-en="Purchase rate" data-case-ko="구매율">購入率</dt><dd>+0.13<span data-case-en=" pp">%p</span></dd></div>
 </dl>
-<p class="ln-result-context" data-case-en="I used ChatGPT to run a two-proportion z-test. All p-values exceeded 0.05, so I retired the popup after weighing Firebase operating costs." data-case-ko="ChatGPT로 두 비율 Z-검정을 수행했습니다. 모든 비교에서 p값이 유의수준 0.05를 넘었고, Firebase 운영비를 고려해 팝업을 중단했습니다.">ChatGPTを使い、2標本比率のZ検定で購入率を比較しました。<br />p値はいずれも有意水準の0.05を上回り、<br />Firebaseの運用費も考慮して表示を終了しました。</p>
-<aside class="lt-test-limitations" aria-labelledby="test-limitations-title"><h4 id="test-limitations-title" data-case-en="Limitations of this test" data-case-ko="이번 테스트의 한계">今回のテストの限界</h4><p data-case-en="The test ran for a short period with a limited sample." data-case-ko="테스트 기간이 짧고 표본이 적었습니다.">テスト期間が短く、対象者も少数でした。</p><p class="lt-limitations-label" data-case-en="This test did not sufficiently examine:" data-case-ko="충분히 확인하지 못한 항목">十分に確認できなかった項目</p><ul><li data-case-en="Whether shoppers dismissed the popup or added the item to their cart after seeing it" data-case-ko="팝업을 본 뒤 닫았는지, 상품을 장바구니에 담았는지">ポップアップを閉じたか、表示後にカートへ追加したか</li><li data-case-en="Time to first purchase" data-case-ko="첫 구매까지 걸린 시간">初回購入までの時間</li><li data-case-en="The post-cart journey" data-case-ko="장바구니 이후 동선">カートに入れた後の動き</li></ul></aside></div></div></section>
+<p class="ln-result-context" data-case-en="The two-proportion z-test run with ChatGPT gave p &gt; 0.05. I stopped showing the popup after weighing Firebase costs." data-case-ko="ChatGPT로 두 비율 Z-검정을 한 결과 p &gt; 0.05였고, Firebase 운영비를 고려해 팝업을 중단했습니다.">ChatGPTで2標本比率のZ検定を行い、p &gt; 0.05でした。Firebaseの運用費も考慮し、表示を終了しました。</p>
+<aside class="lt-test-limitations" aria-labelledby="test-limitations-title">
+  <h4 id="test-limitations-title" data-case-en="Test limitations" data-case-ko="테스트 한계">テストの限界</h4>
+  <p data-case-en="The test was short and the sample small. Popup dismissals, time to first purchase, and behavior around adding to cart were unverified." data-case-ko="테스트 기간이 짧고 표본이 적었습니다. 팝업 닫기, 첫 구매까지 걸린 시간, 장바구니 추가 여부와 이후 행동은 확인하지 못했습니다.">短期間・少人数のテストでした。ポップアップを閉じたか、初回購入までの時間、カート追加の有無やその後の行動は未確認です。</p>
+</aside></div></div></section>
 </main>
 <nav class="project-turn" aria-label="Portfolio"><a href="mongram.html"><span class="turn-label">Next project</span><strong data-case-ko="멍그램" data-case-en="Mongram">ワングラム</strong><span aria-hidden="true">→</span></a></nav>
     <footer class="portfolio-footer" id="contact">

@@ -26,7 +26,20 @@ button { font: inherit; }
 .back-link { font-weight: 600; font-size: 20px; letter-spacing: -.04em; }
 .case-nav { display: flex; gap: 28px; align-items: center; }
 .case-nav a { display: flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--lt-muted); white-space: nowrap; transition: color .2s; }
-.case-nav a:hover, .case-nav a[aria-current="location"] { color: var(--lt-accent); }
+.case-nav a:hover { color: var(--lt-accent); }
+.case-nav a[aria-current="location"] {
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+}
+.case-nav a[aria-current="location"]::before {
+  position: absolute;
+  z-index: -1;
+  inset: 4px -8px;
+  border-radius: 6px;
+  background: var(--lt-accent);
+  content: "";
+}
 .ln-main { width: min(var(--lt-width), calc(100% - var(--lt-gutter) * 2)); margin-inline: auto; }
 .ln-hero { padding: clamp(64px,8vw,120px) 0 0; }
 .ln-cover { display: grid; grid-template-columns: 1.2fr .8fr; align-items: start; gap: clamp(32px,6vw,90px); }
@@ -300,7 +313,7 @@ html:lang(ja) .ln-footer-search-copy {
 .ln-fomo-visual .ln-image-link { max-width: 800px; margin-inline: auto; }
 .ln-fomo-visual img { width: 100%; }
 .ln-fomo-visual figcaption { margin-top: 24px; text-align: center; font-size: 16px; color: var(--lt-muted); }
-.lt-experiment-result .ln-result-period + .ln-result-period { margin-top: -16px; }
+.ln-result.lt-experiment-result { border: 0; }
 .lt-test-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .lt-test-metrics dt { color: var(--lt-muted); font-size: 16px; }
 .lt-test-metrics dd { color: var(--lt-accent); font-size: clamp(25px, 3vw, 40px); font-weight: 600; }
@@ -444,14 +457,6 @@ html:lang(ja) .ln-footer-search-copy {
   .lt-case-entry:is(:hover, :focus-visible) .lt-nav-logo { transform: translate(-50%, -50%); }
 }
 
-/* Make the limits of the evidence distinct from the experiment decision. */
-.lt-test-limitations { max-width: 850px; margin-top: 32px; padding: clamp(20px, 4vw, 36px); border: 1px solid var(--lt-line); border-radius: 12px; }
-.lt-test-limitations h4 { color: var(--lt-accent); font-size: 26px; line-height: 1.5; margin-bottom: 16px; }
-.lt-test-limitations > p { max-width: 850px; font-size: 18px; line-height: 1.8; }
-.lt-test-limitations .lt-limitations-label { margin-top: 24px; font-size: 14px; font-weight: 600; color: var(--lt-muted); }
-.lt-test-limitations ul { display: grid; gap: 8px; padding-left: 22px; margin-top: 12px; }
-.lt-test-limitations li { font-size: 18px; line-height: 1.8; }
-@media (max-width: 760px) {
-  .lt-test-limitations h4 { font-size: 23px; }
-  .lt-test-limitations > p, .lt-test-limitations li { font-size: 16px; }
-}
+.lt-test-limitations { max-width: 850px; margin-top: 24px; }
+.lt-test-limitations h4 { margin-bottom: 6px; font-size: 18px; line-height: 1.5; }
+.lt-test-limitations > p { color: var(--lt-muted); font-size: 16px; line-height: 1.75; }

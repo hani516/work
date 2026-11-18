@@ -73,7 +73,7 @@ body.project-snapside .sp-cover .sp-gallery { border-radius: 5px; padding: 24px;
 .project-mongram .project-turn a { padding: 32px; border: 0; }
 
 /* A fine rule gives every metric a baseline without enclosing the results. */
-.project-lalatulle .ln-result :is(.ln-metrics,.lt-test-metrics) > div,
+.project-lalatulle .ln-result .ln-metrics > div,
 body.project-snapside .sp-organic-metrics article {
   border-top: 2px solid currentColor;
   padding-top: 18px;
