@@ -110,8 +110,51 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: #dcd7d2;
+  background: var(--accent);
 }
+
+.slide .slide-case-context {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: .02em;
+}
+
+.slide-case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.slide-case-link:is(:hover, :focus-visible) {text-decoration: underline}
+
+.slide-case-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  padding: 3px 8px;
+  border: 1px solid #e4d5db;
+  border-radius: 4px;
+  background: #f5eef1;
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.case-opening .slide-case-number {
+  min-width: 50px;
+  padding-block: 5px;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+  font-size: 17px;
+}
+
+.slide-case-detail {padding-left: 12px; border-left: 1px solid var(--line); color: var(--muted)}
 
 .halloween-overview-preview {
   display: grid;
@@ -374,6 +417,8 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide-home-callouts .slide-home-callout-below {color: var(--muted)}
 .slide-home-callouts .slide-home-callout-below::before {border-top-style: dashed}
 .slide-home-callouts span {display: block; margin-top: 4px; color: var(--muted); font-size: 12px; font-weight: 400; word-break: keep-all}
+
+.has-result-conclusion > .body:has(.slide-ab-comparison) {margin-top: 11px}
 
 .slide-ab-comparison {
   width: min(100%, 440px);
