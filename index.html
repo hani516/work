@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
-    <link rel="stylesheet" href="home-projects.css?v=scroll-cue-ring" />
+    <link rel="stylesheet" href="home-projects.css?v=profile-tools" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
 <link rel="stylesheet" href="portfolio-type.css" />
 </head>
@@ -47,8 +47,27 @@
         <div class="intro-bio">
           <p class="hero-lead" data-i18n="homeLead">アクセスデータやユーザーの行動をもとに、ECサイトを改善しています。</p>
           <p class="hero-description" data-i18n="homeBody">個人では、アプリの企画からデザイン、開発、公開まで一人で行っています。</p>
-          <a class="intro-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
+          <div class="home-toolstrip">
+            <div class="hero-tools" aria-labelledby="tools-label">
+              <p class="tools-label" id="tools-label">TOOLS</p>
+              <ul class="tools-row tools-list" aria-label="Design and documentation tools">
+                <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
+              </ul>
+              <ul class="tools-row tools-list" aria-label="AI development tools">
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
+              </ul>
+              <ul class="tools-row tools-list" aria-label="Analytics tools">
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
+                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <a class="intro-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
       </section>
       <section class="portfolio-section selected-projects" id="projects" aria-label="Projects">
         <div class="page-shell">
@@ -79,25 +98,6 @@
           </section>
         </div>
       </section>
-      <div class="page-shell home-toolstrip">
-        <div class="hero-tools reveal" aria-labelledby="tools-label">
-            <p class="tools-label" id="tools-label">TOOLS</p>
-            <ul class="tools-row tools-list" aria-label="Design and documentation tools">
-              <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
-            </ul>
-            <ul class="tools-row tools-list" aria-label="AI development tools">
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
-            </ul>
-            <ul class="tools-row tools-list" aria-label="Analytics tools">
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
-              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
-            </ul>
-          </div>
-      </div>
     </main>
 
     <footer class="portfolio-footer" id="contact">
