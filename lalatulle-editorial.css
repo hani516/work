@@ -229,11 +229,8 @@ html:lang(ja) .ln-footer-search-copy {
 .lt-phrase { white-space: nowrap; }
 /* Restore the centered, tinted priority cards from the earlier design. */
 .ln-priority {
-  max-width: 980px;
+  max-width: 900px;
   margin: clamp(64px, 8vw, 104px) auto 56px;
-  padding: clamp(24px, 4vw, 48px) clamp(18px, 3vw, 40px);
-  border-radius: 12px;
-  background: #f1e9ed;
 }
 .ln-priority > h3, .ln-priority > p { margin-inline: auto; text-align: center; }
 .ln-priority > p { max-width: 680px; color: var(--lt-muted); margin-top: 16px; font-size: 16px; line-height: 1.8; }
