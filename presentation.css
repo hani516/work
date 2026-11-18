@@ -101,6 +101,22 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   background: #dcd7d2;
 }
 
+.halloween-overview-preview {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  justify-items: center;
+  height: 100%;
+  min-height: 0;
+  gap: 8px;
+}
+
+.halloween-overview-preview img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .slide-banner-art {
   display: flex;
   flex-direction: column;
