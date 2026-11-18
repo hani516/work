@@ -72,17 +72,15 @@
 .selected-projects .project-panel:is(:hover,:has(:focus-visible)) .mg-cover-screens{transform:rotate(4deg)}
 }
 
-/* The introduction and gallery share a single editorial grid. */
+/* Keep the opening statement centered in the space below the fixed header. */
 .home-intro.page-shell {
   display:grid;
   place-items:center;
-  min-height:100vh;
-  min-height:100svh;
+  min-height:calc(100vh - var(--portfolio-home-header-height));
+  min-height:calc(100svh - var(--portfolio-home-header-height));
   padding-block:48px;
   text-align:center;
 }
-.home-intro + .site-header {position:sticky}
-.home-intro + .site-header + main {padding-top:0}
 .intro-profile.page-shell {
   display:grid;
   grid-template-columns:1fr 1fr;
