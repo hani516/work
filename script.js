@@ -1,5 +1,6 @@
 const translations = {
   ja: {
+    navSlides: "スライド",
     homeCompanyProjects: "実務プロジェクト",
     homePersonalProjects: "個人プロジェクト",
     lalatulleBefore: "改修前",
@@ -52,6 +53,7 @@ const translations = {
     contactTitle: "一緒に、つくりましょう。", contactBody: "採用、ポートフォリオ、協業についてのご連絡はこちらからお願いします。", githubCta: "リポジトリを見る", backTop: "Back to top",
   },
   en: {
+    navSlides: "Slides (JP)",
     homeCompanyProjects: "Professional Work",
     homePersonalProjects: "Personal projects",
     lalatulleBefore: "Before",
@@ -104,6 +106,7 @@ const translations = {
     contactTitle: "Let’s make something.", contactBody: "For opportunities, portfolio questions, or collaboration, contact me here.", githubCta: "View repository", backTop: "Back to top",
   },
   ko: {
+    navSlides: "슬라이드 (일본어)",
     homeCompanyProjects: "실무 프로젝트",
     homePersonalProjects: "개인 프로젝트",
     lalatulleBefore: "개선 전",
