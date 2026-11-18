@@ -214,8 +214,6 @@ html:lang(ja) .ln-footer-search-copy {
 .ln-nav-comparison img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .lt-brand-strategy { display: block; }
 .lt-brand-strategy .ln-stage-copy h3 { font-size: clamp(24px, 2.8vw, 36px); line-height: 1.45; }
-.lt-published-home-title { margin-top: clamp(56px, 9vw, 120px); font-size: clamp(30px, 4vw, 52px); line-height: 1.3; }
-.lt-published-home-title + .ln-home-pair { margin-top: 32px; }
 .lt-decision-detail { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 320px); gap: 56px; align-items: center; }
 .lt-decision-detail .lt-body-copy { max-width: 700px; }
 .lt-decision-visual { width: 100%; margin: 0; }
