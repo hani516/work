@@ -79,18 +79,6 @@ button { font: inherit; }
 .ln-numbered-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(12px, 2.5vw, 32px); align-items: baseline; }
 .ln-case-number { color: var(--lt-accent); font-size: clamp(48px, 6vw, 84px); font-weight: 600; line-height: .9; font-variant-numeric: tabular-nums; }
 .ln-case-heading { max-width: none; margin-bottom: 0; }
-@media screen {
-  .ln-section:has(> .ln-case-heading) {
-    padding-top: 0;
-    border-top: 0;
-  }
-
-  .ln-section > .ln-case-heading {
-    padding-block: clamp(32px, 4.5vw, 64px);
-    /* Extend the color into the gutters without widening the heading grid. */
-    border-image: linear-gradient(#f3edef, #f3edef) fill 0 / 0 / 0 100vw;
-  }
-}
 .ln-case-heading .lt-chapter-brand { margin: 0 0 8px; color: var(--lt-accent); font-size: 15px; font-weight: 600; }
 .lt-improvement-index { margin-top: 48px; }
 .lt-improvement-index h3 { margin: 0 0 16px; font-size: 22px; }
