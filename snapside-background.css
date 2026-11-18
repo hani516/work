@@ -86,6 +86,7 @@ body.project-snapside .sp-background .sp-section-head p {color: var(--sp-concept
 
 .slide .sp-background-shots figure {display: block}
 .slide .sp-background-shots {margin-top: 28px}
+.slide .sp-background-shots img {aspect-ratio: auto; height: auto; outline: 1px solid var(--line)}
 
 @media (max-width: 760px) {
   body.project-snapside .sp-section.sp-background {padding-block: 42px}
