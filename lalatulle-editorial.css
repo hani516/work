@@ -123,8 +123,7 @@ html:lang(ja) #navigation .ln-case-heading h2 {
 }
 .ln-category-pair .ln-image-link { width: 100%; margin-inline: auto; }
 .ln-category-pair > figure > .ln-image-link img { width: 100%; }
-/* Use a soft surface to group the product-list comparison. */
-#category-sequence { display: block; background: var(--lt-surface); padding: 64px; margin-inline: -32px; }
+#category-sequence { display: block; padding: 64px; margin-inline: -32px; }
 #category-sequence > .ln-stage-copy { max-width: 700px; margin-bottom: 56px; }
 #category-sequence > .ln-stage-copy h3 { font-size: clamp(30px,3.4vw,48px); }
 .lt-scroll-story { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 64px; align-items: center; position: relative; }
