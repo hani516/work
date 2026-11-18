@@ -22,21 +22,16 @@
   font-weight: 600;
 }
 .ln-nav-comparison .ln-image-link { display: block; aspect-ratio: auto; background: transparent; }
-/* Numbers sit directly above each icon and match the legend below. */
-.lt-icon-labeled { width: 100%; }
-.lt-icon-markers { display: block; width: 100%; height: auto; }
-.lt-icon-markers text { fill: var(--lt-accent); font: 600 16px Inter, Arial, sans-serif; }
-.lt-icon-key {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 24px;
-  margin: 10px 0 0;
-  padding-left: 20px;
-  color: #484247;
-  font-size: 13px;
-  line-height: 1.5;
+/* Keep the labels in a single row and align the guides with the icon centers. */
+.lt-icon-labeled { position: relative; width: 100%; padding-top: 7.5%; }
+.lt-icon-guides { position: absolute; inset: 0 0 auto; width: 100%; height: auto; }
+.lt-icon-guides path { fill: none; stroke: #b8b4b6; stroke-width: 1; }
+.lt-icon-guides text {
+  fill: #484247;
+  text-anchor: middle;
+  font-size: 16px;
+  font-weight: 500;
 }
-.lt-icon-key li::marker { color: var(--lt-accent); font-weight: 600; }
 .lt-icon-lower-labels {
   position: relative;
   height: 25px;
