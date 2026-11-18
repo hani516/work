@@ -2,7 +2,7 @@
   --return-line: #747782;
   --return-accent: #bd6009;
   --return-row: 32px;
-  --return-gap: 14px;
+  --return-gap: 6px;
   max-width: 830px;
   margin: 32px auto;
   padding: 28px 34px 22px;
@@ -112,7 +112,7 @@
 .ln-return-directions > div:last-child { color: var(--return-accent); }
 .slide .ln-return-diagram {
   --return-row: 19px;
-  --return-gap: 3px;
+  --return-gap: 2px;
   width: 100%;
   margin: 0 auto;
   padding-block: 10px;

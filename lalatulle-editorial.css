@@ -115,13 +115,39 @@ html:lang(ja) #navigation .ln-case-heading h2 {
 .ln-stage-number { display: block; margin-bottom: 8px; color: var(--lt-accent); font-size: clamp(24px, 3vw, 36px); font-weight: 600; line-height: 1.2; }
 .ln-stage-copy .ln-stage-period { margin: 0 0 8px; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; }
 .ln-comparison-label { font-size: clamp(19px, 2vw, 28px); color: var(--lt-accent); letter-spacing: .04em; font-weight: 700; margin-bottom: 16px; }
-.ln-category-pair { display: grid; gap: 18px; min-width: 0; width: min(90%, 590px); margin-inline: auto; }
+#category-redesign { display: block; }
+#category-redesign > .ln-stage-copy { margin-bottom: 36px; }
+.ln-category-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: clamp(12px, 3vw, 44px);
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+.ln-category-pair > figure {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-width: 0;
+  text-align: center;
+}
+.ln-category-pair .ln-image-link {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-inline: auto;
+  background: transparent;
+}
+.ln-category-pair img {
+  width: 100%;
+  height: auto;
+}
+.ln-category-pair .ln-category-before .ln-image-link { max-width: 280px; }
+.ln-category-pair > .ln-comparison-arrow { margin-top: 36px; }
 .lt-banner-refresh { display: block; }
 .lt-banner-refresh > .ln-stage-copy { margin-bottom: 36px; }
 /* Compare all four old banners on the left with their replacements on the right. */
 .lt-banner-comparisons { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: clamp(8px, 2vw, 24px); max-width: 980px; margin-inline: auto; }
 .ln-comparison-arrow { place-self: center; width: clamp(26px, 4vw, 54px); height: auto; color: var(--lt-accent); }
-.ln-category-pair > .ln-comparison-arrow { transform: rotate(90deg); }
 .lt-banner-column { min-width: 0; }
 .lt-banner-column > .ln-comparison-label { margin-bottom: 24px; }
 .lt-banner-column figure + figure { margin-top: 24px; }
@@ -134,8 +160,6 @@ html:lang(ja) #navigation .ln-case-heading h2 {
   .lt-banner-column figure + figure { margin-top: 18px; }
   .lt-banner-caption { font-size: 12px; margin-bottom: 8px; }
 }
-.ln-category-pair .ln-image-link { width: 100%; margin-inline: auto; }
-.ln-category-pair > figure > .ln-image-link img { width: 100%; }
 #category-sequence { display: block; padding: 64px; margin-inline: -32px; }
 #category-sequence > .ln-stage-copy { max-width: 700px; margin-bottom: 56px; }
 #category-sequence > .ln-stage-copy h3 { font-size: clamp(30px,3.4vw,48px); }
