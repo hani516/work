@@ -266,13 +266,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   margin: 14px auto 0;
 }
 
-.slide-character-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.slide-character-grid img {display: block; width: 100%; aspect-ratio: 1; object-fit: contain}
 .metric small {display: block; margin-top: 6px; color: var(--muted)}
 .slide-observation .metrics {margin: 12px 0 18px}
 .slide-observation .metric {padding: 8px 0 0}
@@ -300,17 +293,24 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .chapter-cases a:hover {text-decoration: underline}
 .chapter-cases span {color: var(--accent); font-variant-numeric: tabular-nums}
 
-.slide-measure-flows {
+.slide .mg-evidence-comparison {--evidence-height: 328px; margin-top: 0}
+.slide .mg-evidence-note {margin-top: 12px}
+.slide .mg-evidence-photo {grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1.2fr)}
+.slide .mg-slide-plan {margin-top: 20px}
+.slide .mg-next-plans {display: grid; gap: 22px}
+.slide .mg-next-plan h3 {margin-bottom: 10px; font-size: 22px}
+.slide .mg-measure-diagram {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 36px;
-  margin-top: 24px;
+  grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1.35fr) 24px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 10px;
 }
-
-.slide-measure-flows article {padding-top: 20px; border-top: 1px solid var(--line)}
-.slide-measure-flows .meta {margin-top: 14px}
-.measure-flow {margin: 20px 0; font-weight: 600}
-.measure-flow span {margin-inline: 8px; color: var(--accent)}
+.slide .mg-measure-node {min-width:0; padding:12px 14px; border:1px solid #d8ded4; border-radius:8px; background:#fcfdfb}
+.slide .mg-measure-heading {display:flex; align-items:center; gap:7px; margin:0 0 6px; color:var(--accent); font-size:15px}
+.slide .mg-measure-heading svg {flex:none; width:17px; height:17px}
+.slide .mg-measure-node p {font-size:14px; line-height:1.55}
+.slide .mg-measure-arrow {align-self:center; color:#748271; text-align:center}
+.slide.mg.results:has(.mg-slide-plan) {background:#edf1e9}
 
 .slide-home-comparison {
   display: flex;

@@ -1,0 +1,119 @@
+.mg-evidence-comparison {
+  --evidence-height: 390px;
+  --evidence-line: #d4d5d1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+  align-items: center;
+  gap: 22px;
+  margin: 28px auto 0;
+}
+
+.mg-evidence-live {grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px}
+.mg-evidence-comparison > figure {display: grid; gap: 12px; min-width: 0; margin: 0}
+.mg-evidence-comparison figcaption {color: #515550; text-align: center; font-weight: 500; line-height: 1.4}
+
+.mg-evidence-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: var(--evidence-height);
+}
+
+.mg-evidence-screen {
+  position: relative;
+  flex: none;
+  height: 100%;
+}
+
+.mg-evidence-screen img {
+  display: block;
+  width: auto;
+  height: 100%;
+  border: 1px solid var(--evidence-line);
+  border-radius: 14px;
+}
+
+.mg-evidence-zoom {position: relative; flex: 0 1 220px; min-width: 0}
+.mg-evidence-zoom img {display: block; width: 100%; height: auto}
+
+.mg-evidence-screen + .mg-evidence-zoom::before {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 20px;
+  border-top: 1px solid var(--evidence-line);
+  content: "";
+}
+
+.mg-evidence-arrow {display: block; width: 40px; color: #646864}
+.mg-photo-detail {flex-basis: 330px}
+
+.mg-home-character {
+  flex: 0 1 134px;
+  aspect-ratio: 1;
+  padding: 22px;
+  border: 1px solid var(--evidence-line);
+  border-radius: 50%;
+}
+
+.mg-photo-detail::after,
+.mg-lock-screen::after,
+.mg-island-screen::after {
+  position: absolute;
+  border: 2px solid #df524b;
+  border-radius: 9px;
+  content: "";
+  pointer-events: none;
+}
+
+.mg-photo-detail::after {inset: 28% 4% auto auto; width: 14%; height: 19%}
+.mg-lock-screen::after {inset: 73% 3% auto; height: 12%}
+.mg-island-screen::after {inset: 1.3% 17% auto; height: 6.5%; border-radius: 20px}
+.mg-lock-pair .mg-evidence-zoom {align-self: flex-end; margin-bottom: 14%}
+.mg-island-pair .mg-evidence-zoom {align-self: flex-start}
+.mg-evidence-note {margin-top: 14px; color: #666b64; font-size: 14px}
+
+.project-mongram .n-section .mg-evidence-note {max-width: unset; margin: 18px 0 0; font-size: 14px; color: #666b64}
+.project-mongram :is(#home-design, #island) .mg-evidence-comparison {max-width: 1080px}
+
+@media (max-width: 900px) {
+  .project-mongram .mg-evidence-comparison {
+    --evidence-height: 320px;
+    grid-template-columns: 1fr;
+    max-width: 470px;
+  }
+  .project-mongram .mg-evidence-arrow {justify-self: center; transform: rotate(90deg)}
+}
+
+@media (max-width: 480px) {
+  .project-mongram .mg-evidence-comparison {--evidence-height: 250px}
+  .project-mongram .mg-family-case .mg-evidence-pair {gap: 12px}
+  .project-mongram .mg-family-case .mg-evidence-zoom::before {width: 12px}
+}
+
+/* Use the published full screenshots for the magnified evidence. */
+.mg-evidence-revised {aspect-ratio: 260 / 565}
+.mg-evidence-revised img {width: 100%; object-fit: cover; object-position: top}
+
+.mg-evidence-crop {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--crop-ratio);
+  border: 1px solid var(--evidence-line);
+  border-radius: 10px;
+}
+
+.mg-evidence-crop img {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: var(--crop-width, 100%);
+  max-width: none;
+  transform: translate(var(--crop-x, 0), var(--crop-y, 0));
+}
+
+.mg-crop-guardian {--crop-ratio: 370 / 244; --crop-width: 108%; --crop-x: -3.5%; --crop-y: -56%}
+.mg-crop-family {--crop-ratio: 370 / 275; --crop-width: 105%; --crop-x: -2.5%; --crop-y: -23%}
+.mg-crop-photo {--crop-ratio: 618 / 508; --crop-y: -59.5%}
+.mg-crop-lock {--crop-ratio: 365 / 119; --crop-width: 108%; --crop-x: -3.75%; --crop-y: -72%}
+.mg-crop-island {--crop-ratio: 365 / 96; --crop-width: 147%; --crop-x: -17%; --crop-y: -.3%}
