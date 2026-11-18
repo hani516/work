@@ -101,10 +101,9 @@
 .home-scroll-cue:focus-visible {outline: 2px solid currentColor; outline-offset: 4px}
 
 .home-scroll-progress {
-  position: fixed;
+  position: absolute;
   bottom: 36px;
   left: 50%;
-  z-index: 30;
   width: 24px;
   height: 24px;
   border-radius: 50%;
