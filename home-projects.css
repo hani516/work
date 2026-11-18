@@ -100,29 +100,24 @@
 .home-scroll-cue:hover {background: #f4f3f0}
 .home-scroll-cue:focus-visible {outline: 2px solid currentColor; outline-offset: 4px}
 
-.home-scroll-cue::after {
-  content: "";
-  position: absolute;
+.home-scroll-progress {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  z-index: 30;
   width: 24px;
   height: 24px;
-  border: 4px solid currentColor;
   border-radius: 50%;
-  opacity: 0;
-  scale: .7;
+  background: conic-gradient(#232324 var(--scroll-progress, 0%), #dededb 0);
+  mask-image: radial-gradient(circle, transparent 7px, black 8px);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
-.home-scroll-cue.is-ring {
-  border-color: transparent;
-  background: transparent;
-}
-.home-scroll-cue.is-ring span {opacity: 0}
-.home-scroll-cue.is-ring::after {opacity: 1; scale: 1}
+.home-scroll-cue[hidden] { display: none; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .home-scroll-cue {transition: border-color .2s, background-color .2s}
-  .home-scroll-cue span {transition: opacity .15s}
-  .home-scroll-cue::after {transition: opacity .18s, scale .2s}
-  .home-scroll-cue:not(.is-ring) span {animation: home-scroll-bounce 1.4s ease-in-out infinite}
+  .home-scroll-cue span {animation: home-scroll-bounce 1.4s ease-in-out infinite}
 }
 @keyframes home-scroll-bounce {
   0%, 60%, 100% {transform: translateY(0)}

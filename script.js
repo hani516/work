@@ -299,12 +299,23 @@ if (reduceMotion) {
 
 const scrollCue = document.querySelector(".home-scroll-cue");
 const opening = scrollCue?.closest(".home-intro");
+const scrollProgress = document.querySelector(".home-scroll-progress");
 
 function updateScrollCue() {
-  if (!opening) return;
+  if (!opening || !scrollProgress) return;
   const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
-  const profileInView = opening.getBoundingClientRect().bottom < viewportHeight - 12;
-  scrollCue.classList.toggle("is-ring", profileInView);
+  const scroller = document.scrollingElement;
+  const scrollTop = scroller.scrollTop;
+  const start = opening.getBoundingClientRect().bottom + scrollTop - viewportHeight + 12;
+  const end = scroller.scrollHeight - scroller.clientHeight;
+  const showProgress = scrollTop >= start && end > start;
+
+  scrollCue.hidden = showProgress;
+  scrollProgress.hidden = !showProgress;
+  if (showProgress) {
+    const progress = Math.min(1, (scrollTop - start) / (end - start));
+    scrollProgress.style.setProperty("--scroll-progress", `${progress * 100}%`);
+  }
 }
 
 window.addEventListener("scroll", () => {
@@ -312,6 +323,7 @@ window.addEventListener("scroll", () => {
   updateScrollCue();
 }, { passive: true });
 window.addEventListener("resize", updateScrollCue);
+window.visualViewport?.addEventListener("resize", updateScrollCue);
 window.addEventListener("pageshow", updateScrollCue);
 setLanguage(localStorage.getItem("portfolio-language") || "ja");
 updateLandingNavigation();
