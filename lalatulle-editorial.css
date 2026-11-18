@@ -36,7 +36,7 @@ button { font: inherit; }
 .ln-cover-image { position: relative; padding: 30px; background: var(--lt-chapter); border-radius: 2px; transform-origin: 50% 70%; }
 .ln-cover-image .ln-image-link { max-height: 650px; overflow: hidden; box-shadow: 0 22px 48px #31212a24; }
 .ln-cover-image img { width: 100%; }
-.ln-meta { display: grid; grid-template-columns: .75fr 1.5fr 1fr; gap: 28px; padding: 44px 0; margin-top: 72px; border-top: 1px solid var(--lt-line); border-bottom: 1px solid var(--lt-line); }
+.ln-meta { display: grid; grid-template-columns: .75fr 1.5fr 1fr; gap: 28px; margin-top: 36px; }
 .ln-meta p { font-size: 16px; line-height: 1.8; }
 .ln-site-links { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; }
 .ln-site-links .ln-live-button { width: min(100%, 224px); min-width: 0; text-align: center; }

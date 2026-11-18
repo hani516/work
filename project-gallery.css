@@ -1,6 +1,6 @@
 /* A common cover grid connects each case to its card on the home page. */
 body.project-lalatulle { --lt-paper: #fff; --lt-width: 1120px; }
-.project-lalatulle .case-header { background: rgb(255 255 255 / 96%); }
+.project-lalatulle .case-header { background: rgb(255 255 255 / 96%); border-bottom: 0; }
 .project-edition {
   display: flex;
   align-items: center;
@@ -29,13 +29,14 @@ body.project-lalatulle { --lt-paper: #fff; --lt-width: 1120px; }
   align-items: center;
 }
 .ln-cover-image { padding: 24px; }
-.ln-cover-image .ln-image-link { width: 220px; height: 420px; border: 4px solid white; border-radius: 12px; }
+.ln-cover-image .ln-image-link { width: 220px; height: 420px; border-radius: 12px; }
+.ln-cover .project-edition span { padding-right: 0; border-right: 0; }
 .project-mongram .mg-hero-screens { background: #eaf0e5; padding: 24px; gap: 20px; }
 .project-mongram .mg-hero-screens .shot-phone { margin: 0; width: 40%; max-width: 185px; flex: none; }
 .project-mongram .mg-hero-screens .shot-phone:first-child { transform: translateY(18px); }
 .project-mongram .mg-hero-screens .shot-phone:last-child { transform: translateY(-18px); }
 .project-mongram .mg-hero-screens .shot-phone img { width: 100%; height: auto; border-radius: 18px; }
-.ln-meta, .project-mongram .mg-cover-meta, body.project-snapside .sp-cover-meta {
+.project-mongram .mg-cover-meta, body.project-snapside .sp-cover-meta {
   margin-top: 28px;
   padding-block: 24px;
   border-block: 1px solid #dedfdb;
@@ -48,7 +49,6 @@ body.project-snapside .sp-cover :is(.cc-premise,.sp-fact-note,.sp-fact-note stro
 body.project-snapside .sp-cover .cc-links a { background: #202221; color: white; border-radius: 30px; }
 body.project-snapside .sp-cover .sp-gallery { border-radius: 5px; padding: 24px; }
 .ln-meta .ln-live-button, .mg-cover-meta .n-project-links a { border-radius: 30px; }
-.lt-case-index .lt-case-entry { border-top: 1px solid #c9c6c7; padding-top: 16px; }
 .lt-case-index .lt-case-thumbnail { border-radius: 4px; }
 .project-mongram .mg-family-case-heading, .project-snapside .sp-section-head {
   border-top: 1px solid currentColor;
