@@ -92,3 +92,31 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide .header-comparison-body .lt-icon-lower-labels span + span {
   grid-column: 4;
 }
+
+/* Match the full-width LaLaTulle case headings on the portfolio site. */
+.slide.case-opening > header {
+  flex: none;
+  margin: -56px -80px 0;
+  padding: 56px 80px 10px;
+  background: #efeeeb;
+}
+
+.slide-test-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.slide-test-metrics dt {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.slide-test-metrics dd {
+  margin: 8px 0 0;
+  color: var(--accent);
+  font-size: 28px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
