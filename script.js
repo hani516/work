@@ -9,8 +9,8 @@ const translations = {
 
     mongramScreenshotPending: "スクリーンショット準備中",
     mongramScreenshotHome: "ホーム",
-    homeLead: "使われ方を調べ、画面の改善につなげる。",
-    homeBody: "ECサイトの改善に加え、個人アプリの企画・デザイン・開発・公開まで手がけています。",
+    homeLead: "アクセスデータやユーザーの行動をもとに、ECサイトを改善しています。",
+    homeBody: "個人では、アプリの企画からデザイン、開発、公開まで一人で行っています。",
     homeViewProjects: "3つの事例を見る",
     homeWorkCount: "3つの事例 · データ分析から開発まで",
     homeLalatulleBody: "特集ページとホームを見直し、商品ページでA/Bテストを行いました。",
