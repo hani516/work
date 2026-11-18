@@ -61,3 +61,8 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
  .slide,.slide[hidden]{display:flex;break-inside:avoid;break-after:page}
  .slide:last-child{break-after:auto}.bar{display:none}
 }
+
+/* Keep Japanese punctuation attached to its phrase in screen and print layouts. */
+.slide :is(h2, h3, p, figcaption, li, .metric span) {
+  line-break: strict;
+}
