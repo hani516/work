@@ -22,7 +22,7 @@
 .selected-projects .lt-cover-phone:nth-child(2){margin-top:28px}
 .selected-projects .lt-cover-phone img{object-fit:cover;object-position:top}
 /* Software: expose the original overview instead of the former zoomed-in crop. */
-.selected-projects .panel-snapside{background:#202220;color:#f6f4ed}
+.selected-projects .panel-snapside{background:#111110;color:#f4f4f2}
 .selected-projects .panel-snapside .panel-copy p{opacity:.73}
 .selected-projects .panel-snapside .panel-type{opacity:.5}
 .selected-projects .cover-product::after{display:none}
@@ -163,7 +163,7 @@
 .selected-projects .project-panel .panel-visual {border-radius:4px}
 .selected-projects .panel-lalatulle .panel-visual {background:#efeeeb}
 .selected-projects .panel-mongram .panel-visual {background:#edf1e8}
-.selected-projects .panel-snapside .panel-visual {background:#252824}
+.selected-projects .panel-snapside .panel-visual {background:#1b1b19}
 .selected-projects .panel-snapside .panel-type {opacity:.75}
 
 .home-intro.page-shell, .intro-profile.page-shell {

@@ -1,13 +1,47 @@
 .project-snapside,
 .slide.sp {
-  --sp-theme-bg: #1b1e23;
-  --sp-theme-panel: #232830;
-  --sp-theme-raised: #2d343f;
-  --sp-theme-ink: #f1f2f4;
-  --sp-theme-muted: #bdc5d0;
-  --sp-theme-line: #414a57;
-  --sp-theme-accent: #b2caeb;
+  --sp-theme-bg: #111110;
+  --sp-theme-panel: #1b1b19;
+  --sp-theme-raised: #282825;
+  --sp-theme-ink: #f4f4f2;
+  --sp-theme-muted: #b4b4ae;
+  --sp-theme-line: #3c3c37;
+  --sp-theme-accent: #ffad72;
 }
+
+.sp-usage-grid, .sp-activation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.sp-activation-grid {grid-template-columns: repeat(2, minmax(0, 1fr))}
+:is(.sp-usage-grid, .sp-activation-grid) article {
+  padding: 24px;
+  border: 1px solid var(--sp-theme-line);
+  border-radius: 12px;
+  background: var(--sp-theme-panel);
+  color: var(--sp-theme-ink);
+}
+:is(.sp-usage-grid, .sp-activation-grid) h3 {margin: 0 0 8px; font-size: 23px}
+:is(.sp-usage-grid, .sp-activation-grid) p {margin: 6px 0; line-height: 1.6; font-size: 18px}
+:is(.project-snapside, .slide.sp) p.sp-data-scope {font-size: 14px; color: var(--sp-theme-muted); line-height: 1.55}
+.sp-channels, .sp-action-list {margin: 24px 0 0; padding: 0}
+.sp-channels li, .sp-action-list > div {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.sp-channels li {padding: 4px 0 7px; margin: 4px 0; border-bottom: 1px solid var(--sp-theme-line)}
+.sp-channels i {position: absolute; bottom: -1px; left: 0; height: 2px; background: var(--sp-theme-muted)}
+.sp-channels li:nth-child(2) i {background: var(--sp-theme-accent)}
+.sp-action-list > div {padding: 12px 0; border-bottom: 1px solid var(--sp-theme-line)}
+.sp-action-list dd {margin: 0; font-size: 23px}
+.sp-action-list small {font-size: 14px; color: var(--sp-theme-muted)}
+.sp-signup-value, .sp-activation-value {display: block; margin: 20px 0 8px; font-size: 54px; font-weight: 550; line-height: 1.1; color: var(--sp-theme-accent)}
+.sp-activation-grid .sp-data-scope {margin-top: 20px}
 
 .sp-background {
   background: var(--sp-theme-panel);
