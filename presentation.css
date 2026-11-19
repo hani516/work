@@ -53,27 +53,49 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .chapter.lt .toolset { display: grid; grid-template-columns: repeat(3, max-content); }
 .tool{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#524f55}.tool img{width:15px;height:15px;object-fit:contain}
 .slide.sp .tool{color:var(--muted)}
-.index{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;width:840px;max-width:100%;height:100%}
-.index a{display:grid;grid-template-columns:340px minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:3px 24px;padding-top:8px;border-top:1px solid var(--line);color:inherit;text-decoration:none}
-.index-visual {
-  grid-column: 2;
-  grid-row: 1 / 4;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-  min-height: 0;
-  overflow: hidden;
-  padding-top: 8px;
-  padding-inline: 36px;
-  border-radius: 4px;
+.index {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
-.index-visual-lt {background:#efeeeb}
-.index-visual-mg {background:#edf1e8}
-.index-visual-sp {background:#252824}
-.index-visual img {display:block;width:118px;height:auto;border-radius:9px}
-.index-visual-sp img {width:280px}
-.index b{font-size:29px}.index p{line-height:1.6;font-size:17px;color:var(--muted)}
+.index a {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.index-heading { display: flex; align-items: baseline; gap: 12px; line-height: 36px; }
+.index-heading .tag { line-height: 1; font-variant-numeric: tabular-nums; }
+.index p { margin: 8px 0 16px; color: var(--muted); line-height: 1.6; }
+.index-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 296px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.index-visual-lt { background: #f5edf0; }
+.index-visual-mg { background: #edf2eb; }
+.index-visual-sp { background: #edf1f5; }
+.index-visual img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: calc(50% - 8px);
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px #2423291c;
+}
+.index-visual-sp img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+#slide-2 > .body { margin-top: 52px; }
 .results{background:#faf9f7}.results.mg{background:#f8f8f8}
 .metrics{display:flex;gap:24px;margin:22px 0 32px}.metric{flex:1;border-top:2px solid var(--accent);padding:16px 0}
 .metric strong{display:block;font-size:64px;letter-spacing:-.065em;font-weight:500;line-height:1.16;color:var(--accent)}
