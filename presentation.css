@@ -172,11 +172,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 
 .slide.halloween-overview[hidden] {display: none}
 
-.slide .halloween-overview-copy h2 {
-  margin: 18px 0 8px;
-  font-size: 56px;
-}
-
 .halloween-overview-nav {margin-top: 38px}
 
 .slide .halloween-overview-nav h3 {
@@ -598,7 +593,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide.lt .slide-case-brand { flex: none; padding-right: 16px; border-right: 1px solid var(--line); }
 .slide.lt .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 7px; }
 .slide.lt .slide-case-detail { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.slide.lt header > .slide-case-context + h2 { margin: 0 0 8px; }
+.slide.lt header > .slide-case-context + h2 { margin: 0; font-size: 40px; }
 .slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
 .slide.lt .slide-improvement-index {
   flex: none; color: var(--accent); font-size: 26px; font-weight: 600;
@@ -624,7 +619,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-3 .toolset { position: static; width: 520px; margin-top: 54px; gap: 10px 16px; }
 #slide-3 .tool { font-size: 12px; color: var(--muted); }
 
-:is(#slide-4, #header-priorities)::before { display: none; }
+.slide.lt.case-opening::before { display: none; }
 #header-priorities .body { margin-top: 30px; }
 #header-priorities .body > :is(h3, .meta) { text-align: center; }
 #header-priorities .body > .meta { margin-top: 8px; }
