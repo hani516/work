@@ -659,3 +659,27 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 /* Both case-opening metadata strips share one exact height and top offset. */
 :is(#slide-4, #header-priorities) .slide-case-context { height: 40px; min-height: 40px; flex-wrap: nowrap; }
 #snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* CASE 01 and 02 opening bands extend to the 1280px slide edges. */
+:is(#slide-4, #header-priorities) .slide-case-context {
+  position: relative;
+  width: 1280px;
+  margin-left: -80px;
+  padding-inline: 92px;
+  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+:is(#slide-4, #header-priorities) .slide-case-link {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+:is(#slide-4, #header-priorities) .slide-case-index { font-size: 12px; font-weight: 650; letter-spacing: .06em; }
+:is(#slide-4, #header-priorities) .slide-case-index b { font-size: 29px; font-weight: 650; letter-spacing: -.03em; }
+/* Keep the CASE 01 preview below the full-width band, with its lower edge unchanged. */
+#slide-4 .halloween-overview-preview { margin-top: 34px; height: 546px; padding-block: 12px; }
+#slide-4 .halloween-overview-preview img { width: 216px; }
