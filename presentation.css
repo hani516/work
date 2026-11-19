@@ -31,6 +31,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .gallery.photos .frame{padding:0}
 .opening{background:#f9f9f7;justify-content:center;isolation:isolate}
 .opening-dots{position:absolute;top:0;right:0;width:680px;height:720px;z-index:-1;pointer-events:none}
+#slide-1 .opening-dots{top:50%;width:890px;height:auto;transform:translateY(-50%)}
 .opening h1,.end-title{font:500 115px/.98 Inter,sans-serif;letter-spacing:-.075em}
 .opening h1 em{display:inline-block;margin-top:8px;font:italic 400 .8em/1.12 Georgia,serif;letter-spacing:-.055em;color:#514e4c}
 .opening .signature{font-size:24px;margin-top:35px}.opening small{position:absolute;left:80px;top:60px;font-size:14px;letter-spacing:.12em}
