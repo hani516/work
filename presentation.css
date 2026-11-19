@@ -605,3 +605,22 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   background: var(--sp-theme-raised);
 }
 #slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
+
+/* Case numbers and improvement numbers have distinct, explicitly named levels. */
+.slide.lt .slide-case-index {
+  flex: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .06em;
+  font-variant-numeric: tabular-nums;
+}
+.slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
+.slide.lt .slide-improvement-index {
+  flex: none;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  font-variant-numeric: tabular-nums;
+}
