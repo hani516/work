@@ -659,3 +659,14 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   line-height: 1.3;
   letter-spacing: -.045em;
 }
+
+/* Every visible text element within the metadata strip uses the same type size. */
+.viewer .slide.lt .slide-case-context,
+.viewer .slide.lt .slide-case-context :is(a, span, b) {
+  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+  transform: none;
+}
