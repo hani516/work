@@ -26,7 +26,6 @@
   font-size: 23px;
 }
 
-.has-result-conclusion .slide-ab-comparison {width: min(100%, 372px)}
 .has-result-conclusion .mg-evidence-comparison {--evidence-height: 246px}
 .has-result-conclusion .mg-photo-detail {flex-basis: 290px}
 .has-result-conclusion .slide-observation .metrics {margin: 6px 0 8px}

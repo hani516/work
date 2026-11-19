@@ -509,7 +509,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   left: auto;
 }
 
-.has-result-conclusion > .body:has(.slide-ab-comparison) {margin-top: 11px}
+.slide .ab-test-preview { display: grid; align-items: center; }
 
 .slide-ab-comparison {
   width: min(100%, 440px);
