@@ -458,6 +458,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide.mg.results:has(.mg-slide-plan) {background:#edf1e9}
 
 .slide-home-comparison {
+  --home-preview-width: 166px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -467,13 +468,13 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide-home-preview {
   display: grid;
   flex: none;
-  grid-template-columns: 156px 270px;
+  grid-template-columns: var(--home-preview-width) 270px;
   grid-template-areas: "caption ." "screen callouts";
   gap: 12px 0;
 }
 
 .slide-home-preview-before {
-  grid-template-columns: 270px 156px;
+  grid-template-columns: 270px var(--home-preview-width);
   grid-template-areas: ". caption" "callouts screen";
 }
 
