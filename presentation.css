@@ -146,13 +146,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   background: var(--accent);
 }
 
-.slide .slide-case-context {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  letter-spacing: .02em;
-}
-
 .slide-case-link {
   display: inline-flex;
   align-items: center;
@@ -186,8 +179,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   color: white;
   font-size: 17px;
 }
-
-.slide-case-detail {padding-left: 12px; border-left: 1px solid var(--line); color: var(--muted)}
 
 .slide.halloween-overview {
   display: grid;
@@ -598,26 +589,26 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide.lt header:has(> .slide-case-context) { margin-top: 0; padding: 0; border: 0; }
 .slide.lt .slide-case-context {
   position: absolute;
-  inset: 30px 80px auto;
+  inset: 36px 80px auto;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin: 0;
-  padding: 0 0 10px;
-  border-bottom: 1px solid var(--line);
+  padding: 0;
   color: var(--ink);
 }
 .slide.lt .slide-case-context,
 .slide.lt .slide-case-context :is(a, span, b) {
   font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0;
 }
 .slide.lt .slide-case-context :is(a, span, b) { color: inherit; }
-.slide.lt .slide-case-brand { flex: none; padding-right: 16px; border-right: 1px solid var(--line); }
-.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 7px; }
+.slide.lt .slide-case-brand { flex: none; }
+.slide.lt .slide-case-link { gap: 8px; }
+.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 4px; }
 .slide.lt .slide-case-detail { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .slide.lt header > .slide-case-context + h2 { margin: 0; font-size: 40px; }
 .slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
