@@ -2,7 +2,7 @@
   --lt-result-bg: #232323;
   --lt-result-surface: #333333;
   --lt-result-summary: #e8e8e8;
-  --lt-result-accent: #f4f4f4;
+  --lt-result-accent: #e8afc0;
   --lt-result-ink: #f7f7f7;
   --lt-result-muted: #cfcfcf;
   --lt-result-line: #606060;
@@ -76,6 +76,16 @@
   color: var(--lt-result-muted);
   font-size: 16px;
   line-height: 1.5;
+}
+.lt-result-metric > :is(p, dt):not(.ln-metric-label)::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-inline-end: 8px;
+  border-radius: 50%;
+  background: var(--lt-result-accent);
+  vertical-align: .18em;
 }
 .lt-result-metric > p small { font-size: .82em; }
 .lt-result-metric .ln-metric-label { display: flex; align-items: center; gap: 8px; }
