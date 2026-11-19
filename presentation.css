@@ -640,6 +640,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   min-height: 52px;
   padding: 14px 80px 8px;
   align-items: center;
+  color: var(--ink);
 }
 .viewer .slide.lt .slide-case-link,
 .viewer .slide.lt .slide-case-link > span:not(.slide-case-index) {
@@ -669,10 +670,9 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   line-height: 1.2;
   letter-spacing: 0;
   transform: none;
+  color: inherit;
 }
-.viewer .slide.lt .slide-case-context .slide-case-period,
-.viewer .slide.lt .slide-case-period span {
-  color: var(--muted);
+.viewer .slide.lt .slide-case-context .slide-case-period {
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
