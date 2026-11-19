@@ -600,10 +600,10 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 }
 
 
-/* LaLaTulle case navigation shares the same inset on every case slide. */
-.viewer .slide.lt:has(.slide-case-context) { padding-top: 76px; }
-.slide.lt header:has(> .slide-case-context) { margin-top: 0; padding: 0; border: 0; }
-.slide.lt .slide-case-context {
+/* Project and section labels share the same position and type across the deck. */
+.viewer .slide:has(.slide-case-context) { padding-top: 76px; }
+.slide header:has(> .slide-case-context) { margin-top: 0; padding: 0; border: 0; }
+.slide .slide-case-context {
   position: absolute;
   inset: 36px 80px auto;
   display: flex;
@@ -613,20 +613,20 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   padding: 0;
   color: var(--ink);
 }
-.slide.lt .slide-case-context,
-.slide.lt .slide-case-context :is(a, span, b) {
+.slide .eyebrow.slide-case-context,
+.slide .slide-case-context :is(a, span, b) {
   font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0;
 }
-.slide.lt .slide-case-context :is(a, span, b) { color: inherit; }
-.slide.lt .slide-case-brand { flex: none; }
-.slide.lt .slide-case-link { gap: 8px; }
-.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 4px; }
-.slide.lt .slide-case-detail { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.slide.lt header > .slide-case-context + h2 { margin: 0; font-size: 40px; }
+.slide .slide-case-context :is(a, span, b) { color: inherit; }
+.slide .slide-case-brand { flex: none; }
+.slide .slide-case-link { gap: 8px; }
+.slide .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 4px; }
+.slide .slide-case-detail { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.slide header > .slide-case-context + h2 { margin: 0; font-size: 40px; }
 .slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
 .slide.lt .slide-improvement-index {
   flex: none; color: var(--accent); font-size: 26px; font-weight: 600;
@@ -639,7 +639,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-23 .sp-background-flow { padding: 18px 28px; border: 1px solid var(--sp-theme-line); border-radius: 12px; background: var(--sp-theme-raised); }
 #slide-23 .sp-background-flow strong { margin-bottom: 0; }
 #slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
-.slide#slide-23 .sp-background-kicker { color: var(--accent); }
 #snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 /* Align the LaLaTulle cover copy with the right-hand preview, not the slide center. */
