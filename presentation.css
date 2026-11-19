@@ -621,3 +621,14 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
 .slide#slide-23 .sp-background-kicker { color: var(--accent); }
 #snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* Align the LaLaTulle cover copy with the right-hand preview, not the slide center. */
+#slide-3 { justify-content: flex-start; padding-top: 84px; }
+#slide-3 > .eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .04em; }
+#slide-3 > h2 { margin: 18px 0 14px; }
+#slide-3 > .lead { font-size: 25px; font-weight: 600; line-height: 1.4; }
+#slide-3 .chapter-description { max-width: 520px; margin-top: 12px; font-size: 17px; line-height: 1.6; }
+#slide-3 .chapter-cases { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); gap: 14px 16px; }
+#slide-3 .chapter-cases a { font-size: 14px; line-height: 1.5; }
+#slide-3 .toolset { position: static; width: 520px; margin-top: 28px; gap: 10px 16px; }
+#slide-3 .tool { font-size: 12px; color: var(--muted); }
