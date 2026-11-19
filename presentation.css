@@ -570,3 +570,29 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   .bar #previous { left: max(16px, env(safe-area-inset-left)); }
   .bar #next { right: max(16px, env(safe-area-inset-right)); }
 }
+
+/* Case names, rather than nested numbering, orient each LaLaTulle slide. */
+.slide.lt .slide-case-context {
+  min-height: 26px;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.slide.lt .slide-case-brand {
+  flex: none;
+  padding-right: 16px;
+  border-right: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+.slide.lt .slide-case-link { color: var(--ink); font-weight: 650; }
+.slide.lt .slide-case-detail {
+  padding-left: 0;
+  border-left: 0;
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 400;
+}
+.slide.lt header > .slide-case-context + h2 { margin-top: 18px; }
