@@ -96,6 +96,8 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   max-width: 100%;
 }
 #slide-2 > .body { margin-top: 52px; }
+#slide-2 h2,
+#slide-2 .index-heading b { font-weight: 500; }
 .results{background:#faf9f7}.results.mg{background:#f8f8f8}
 .metrics{display:flex;gap:24px;margin:22px 0 32px}.metric{flex:1;border-top:2px solid var(--accent);padding:16px 0}
 .metric strong{display:block;font-size:64px;letter-spacing:-.065em;font-weight:500;line-height:1.16;color:var(--accent)}
