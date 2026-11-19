@@ -531,3 +531,42 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   width: 100%;
   height: auto;
 }
+
+/* Keep slide navigation clear of the desktop Dock without covering the slide. */
+@media screen {
+  .viewer { width: calc(100% - 144px); margin-inline: 72px; }
+  .bar #previous, .bar #next {
+    position: fixed;
+    top: calc(50% - 27px);
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    transform: translateY(-50%);
+    border: 1px solid #62646d;
+    border-radius: 16px;
+    background: #303138;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    box-shadow: 0 4px 16px #0002;
+    touch-action: manipulation;
+  }
+  .bar #previous { left: max(8px, env(safe-area-inset-left)); }
+  .bar #next { right: max(8px, env(safe-area-inset-right)); }
+  .bar #previous:disabled, .bar #next:disabled { opacity: .35; }
+  .bar #previous:not(:disabled):hover, .bar #next:not(:disabled):hover { background: #444651; }
+}
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .viewer { width: 100%; margin-inline: 0; }
+  .bar { gap: 10px; }
+  .bar #previous, .bar #next {
+    top: auto;
+    bottom: max(92px, calc(env(safe-area-inset-bottom) + 72px));
+    transform: none;
+  }
+  .bar #previous { left: max(16px, env(safe-area-inset-left)); }
+  .bar #next { right: max(16px, env(safe-area-inset-right)); }
+}
