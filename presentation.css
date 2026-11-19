@@ -624,3 +624,14 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   letter-spacing: .02em;
   font-variant-numeric: tabular-nums;
 }
+
+/* A vertical rule and large case numerals make the two levels visually distinct. */
+.slide.lt header:has(> .slide-case-context) {
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+}
+.slide.lt .slide-case-context { min-height: 42px; }
+.slide.lt .slide-case-link { gap: 14px; }
+.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; gap: 7px; font-size: 12px; }
+.slide.lt .slide-case-index b { font-size: 36px; font-weight: 650; line-height: 1; letter-spacing: -.03em; }
+.slide.lt .slide-improvement-index { font-size: 26px; color: var(--accent); font-weight: 600; }
