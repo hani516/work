@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yohan Kim — Product Design Portfolio</title><link rel="stylesheet" href="presentation.css?v=footer-and-brand-images"><script src="presentation.js" defer></script><link rel="stylesheet" href="header-comparison.css?v=system-arrow" /><link rel="stylesheet" href="portfolio-type.css" />
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Yohan Kim — Product Design Portfolio</title><link rel="stylesheet" href="presentation.css?v=ab-test-image-spacing"><script src="presentation.js" defer></script><link rel="stylesheet" href="header-comparison.css?v=system-arrow" /><link rel="stylesheet" href="portfolio-type.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
@@ -355,10 +355,17 @@
 <p class="lead">他ブランドよりカート追加率が低く、離脱率も高めでした。<br>そこで、商品詳細に直近24時間の閲覧人数を表示すると購入率が上がるか検証しました。</p>
 </header>
 <div class="body ab-test-preview">
-<figure class="slide-ab-comparison">
-  <figcaption><span>非表示</span><span>表示</span></figcaption>
-  <div class="pdp-ab-visual"><img src="assets/lalatulle/pdp-ab-comparison.png?v=system-arrow" width="1572" height="1272" alt="閲覧人数のポップアップ表示を比較した商品詳細画面"><svg class="ln-comparison-arrow pdp-ab-arrow" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 24h35M28 11l13 13-13 13"/></svg></div>
-</figure>
+<div class="slide-ab-comparison">
+  <figure>
+    <figcaption>非表示</figcaption>
+    <div class="ab-test-screen"><img src="assets/lalatulle/pdp-ab-comparison.png?v=system-arrow" width="1572" height="1272" alt="閲覧人数を表示していない商品詳細画面"></div>
+  </figure>
+  <svg class="arrow" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 24h35M28 11l13 13-13 13"/></svg>
+  <figure>
+    <figcaption>表示</figcaption>
+    <div class="ab-test-screen ab-test-screen-with-count"><img src="assets/lalatulle/pdp-ab-comparison.png?v=system-arrow" width="1572" height="1272" alt="閲覧人数のポップアップを表示した商品詳細画面"></div>
+  </figure>
+</div>
 </div>
 <footer class="folio"><span>18 / 33</span></footer>
 </section>

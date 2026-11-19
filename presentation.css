@@ -538,22 +538,26 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide .ab-test-preview { display: grid; align-items: center; }
 
 .slide-ab-comparison {
-  width: min(100%, 440px);
+  display: grid;
+  grid-template-columns: 220px 40px 220px;
+  align-items: center;
+  gap: 30px;
   justify-self: center;
-  gap: 8px;
 }
 
+.slide-ab-comparison figure { gap: 8px; }
 .slide-ab-comparison figcaption {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   text-align: center;
 }
+.slide-ab-comparison .arrow { margin-top: 32px; }
+.ab-test-screen { overflow: hidden; }
 
 .slide-ab-comparison img {
   display: block;
-  width: 100%;
+  width: 200%;
   height: auto;
 }
+.ab-test-screen-with-count img { margin-left: -100%; }
 
 /* Keep slide navigation clear of the desktop Dock without covering the slide. */
 @media screen {
