@@ -606,6 +606,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 
 /* SnapSide refinements remain scoped to their original slides. */
 #slide-23 .sp-background-flow { padding: 18px 28px; border: 1px solid var(--sp-theme-line); border-radius: 12px; background: var(--sp-theme-raised); }
+#slide-23 .sp-background-flow strong { margin-bottom: 0; }
 #slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
 .slide#slide-23 .sp-background-kicker { color: var(--accent); }
 #snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
