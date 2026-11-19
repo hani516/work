@@ -652,3 +652,6 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   border-radius: 0;
   background: #f1ecee;
 }
+
+/* Match slide 28's caption to the neighboring SnapSide eyebrow color. */
+.slide#slide-23 .sp-background-kicker { color: var(--accent); }
