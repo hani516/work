@@ -571,152 +571,53 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   .bar #next { right: max(16px, env(safe-area-inset-right)); }
 }
 
-/* Case names, rather than nested numbering, orient each LaLaTulle slide. */
+
+/* Shared metadata coordinates for every LaLaTulle case slide.
+   The opening background is decoration only, never a layout spacer. */
+.slide.lt header:has(> .slide-case-context) { margin-top: 0; padding: 0; border: 0; }
 .slide.lt .slide-case-context {
-  min-height: 26px;
-  gap: 16px;
-  font-size: 18px;
-  line-height: 1.4;
-  letter-spacing: 0;
+  position: absolute; top: 0; left: 0;
+  display: flex; align-items: center; flex-wrap: nowrap; gap: 12px;
+  width: 1280px; height: 40px; min-height: 40px;
+  margin: 0; padding: 5px 80px;
+  border: 0; border-radius: 0; box-shadow: none; background: transparent;
+  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: 0;
 }
+:is(#slide-4, #header-priorities) .slide-case-context { background: #f1ecee; }
 .slide.lt .slide-case-brand {
-  flex: none;
-  padding-right: 16px;
-  border-right: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 500;
+  flex: none; padding-right: 16px; border-right: 1px solid var(--line);
+  color: var(--muted); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0;
 }
-.slide.lt .slide-case-link { color: var(--ink); font-weight: 650; }
-.slide.lt .slide-case-detail {
-  padding-left: 0;
-  border-left: 0;
-  margin-left: auto;
-  font-size: 13px;
-  font-weight: 400;
+.slide.lt .slide-case-link,
+.slide.lt .slide-case-link > span:not(.slide-case-index) {
+  gap: 10px; color: var(--ink); font-family: inherit;
+  font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: 0;
 }
-.slide.lt header > .slide-case-context + h2 { margin-top: 18px; }
-
-/* Slide 28: keep the three steps and connecting arrows in one quiet panel. */
-#slide-23 .sp-background-flow {
-  padding: 18px 28px;
-  border: 1px solid var(--sp-theme-line);
-  border-radius: 12px;
-  background: var(--sp-theme-raised);
-}
-#slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
-
-/* Case numbers and improvement numbers have distinct, explicitly named levels. */
 .slide.lt .slide-case-index {
-  flex: none;
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 650;
-  letter-spacing: .06em;
-  font-variant-numeric: tabular-nums;
+  display: inline-flex; align-items: baseline; flex: none; gap: 7px;
+  color: var(--accent); font-size: 12px; font-weight: 650; line-height: 1.2;
+  letter-spacing: .06em; font-variant-numeric: tabular-nums;
+}
+.slide.lt .slide-case-index b { font-size: 29px; font-weight: 650; line-height: 1; letter-spacing: -.03em; }
+.slide.lt .slide-case-detail {
+  margin-left: auto; padding: 0; border: 0; color: var(--muted);
+  font-size: 13px; font-weight: 400; line-height: 1.2; letter-spacing: 0;
+}
+.slide.lt header > .slide-case-context + h2,
+#slide-4 .halloween-overview-copy h2 {
+  margin: 10px 0 8px; font-size: 48px; font-weight: 650; line-height: 1.3; letter-spacing: -.045em;
 }
 .slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
 .slide.lt .slide-improvement-index {
-  flex: none;
-  color: var(--muted);
-  font-size: 17px;
-  font-weight: 500;
-  letter-spacing: .02em;
-  font-variant-numeric: tabular-nums;
+  flex: none; color: var(--accent); font-size: 26px; font-weight: 600;
+  letter-spacing: .02em; font-variant-numeric: tabular-nums;
 }
-
-/* A vertical rule and large case numerals make the two levels visually distinct. */
-.slide.lt header:has(> .slide-case-context) {
-  border-left: 3px solid var(--accent);
-  padding-left: 18px;
-}
-.slide.lt .slide-case-context { min-height: 42px; }
-.slide.lt .slide-case-link { gap: 14px; }
-.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; gap: 7px; font-size: 12px; }
-.slide.lt .slide-case-index b { font-size: 36px; font-weight: 650; line-height: 1; letter-spacing: -.03em; }
-.slide.lt .slide-improvement-index { font-size: 26px; color: var(--accent); font-weight: 600; }
-
-/* Compact case header: retain both number levels without a decorative rule. */
-.slide.lt header:has(> .slide-case-context) { border-left: 0; padding-left: 0; }
-.slide.lt .slide-case-context { min-height: 30px; line-height: 1.2; gap: 12px; }
-.slide.lt .slide-case-link { gap: 10px; }
-.slide.lt .slide-case-index b { font-size: 29px; line-height: 1; }
-.slide.lt header > .slide-case-context + h2 { margin-top: 10px; }
-
-/* Only CASE 01/02 opening slides receive a quiet, square-edged metadata strip. */
-:is(#slide-4, #header-priorities) > header,
-#slide-4 .halloween-overview-copy > header { margin-top: -14px; }
-:is(#slide-4, #header-priorities) .slide-case-context {
-  padding: 5px 12px;
-  border: 0;
-  border-radius: 0;
-  background: #f1ecee;
-}
-
-/* Match slide 28's caption to the neighboring SnapSide eyebrow color. */
-.slide#slide-23 .sp-background-kicker { color: var(--accent); }
-
-/* Both case-opening metadata strips share one exact height and top offset. */
-:is(#slide-4, #header-priorities) .slide-case-context { height: 40px; min-height: 40px; flex-wrap: nowrap; }
-#snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
-/* CASE 01 and 02 opening bands extend to the 1280px slide edges. */
-:is(#slide-4, #header-priorities) .slide-case-context {
-  position: relative;
-  width: 1280px;
-  margin-left: -80px;
-  padding-inline: 92px;
-  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px;
-  font-weight: 650;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-:is(#slide-4, #header-priorities) .slide-case-link {
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 650;
-  letter-spacing: 0;
-}
-:is(#slide-4, #header-priorities) .slide-case-index { font-size: 12px; font-weight: 650; letter-spacing: .06em; }
-:is(#slide-4, #header-priorities) .slide-case-index b { font-size: 29px; font-weight: 650; letter-spacing: -.03em; }
-/* Keep the CASE 01 preview below the full-width band, with its lower edge unchanged. */
 #slide-4 .halloween-overview-preview { margin-top: 34px; height: 546px; padding-block: 12px; }
 #slide-4 .halloween-overview-preview img { width: 216px; }
 
-/* Extend the two opening bands upward to the slide edge without moving content. */
-:is(#slide-4, #header-priorities) .slide-case-context {
-  box-shadow: 0 -21px 0 21px #f1ecee;
-}
-
-/* A compact 40px band sits at y=0; the content below keeps its existing space. */
-#header-priorities > header,
-#slide-4 .halloween-overview-copy > header { padding-top: 40px; }
-:is(#slide-4, #header-priorities) .slide-case-context {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
-  height: 40px;
-  min-height: 40px;
-  margin: 0;
-  padding: 5px 92px;
-  box-shadow: none;
-  font-size: 18px;
-  font-weight: 650;
-  line-height: 1.2;
-}
-:is(#slide-4, #header-priorities) .slide-case-link,
-:is(#slide-4, #header-priorities) .slide-case-link > span:not(.slide-case-index) {
-  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px;
-  font-weight: 650;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-:is(#slide-4, #header-priorities) .slide-case-index { font-size: 12px; font-weight: 650; line-height: 1.2; }
-:is(#slide-4, #header-priorities) .slide-case-index b { font-size: 29px; font-weight: 650; line-height: 1; }
-:is(#slide-4, #header-priorities) .slide-case-brand { font-size: 13px; font-weight: 500; line-height: 1.2; }
-:is(#slide-4, #header-priorities) .slide-case-detail { font-size: 13px; font-weight: 400; line-height: 1.2; }
-#slide-4 .halloween-overview-copy h2,
-#header-priorities > header > h2 { font-size: 48px; font-weight: 650; line-height: 1.3; letter-spacing: -.045em; margin: 10px 0 8px; }
+/* SnapSide refinements remain scoped to their original slides. */
+#slide-23 .sp-background-flow { padding: 18px 28px; border: 1px solid var(--sp-theme-line); border-radius: 12px; background: var(--sp-theme-raised); }
+#slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
+.slide#slide-23 .sp-background-kicker { color: var(--accent); }
+#snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
