@@ -635,3 +635,10 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide.lt .slide-case-index { display: inline-flex; align-items: baseline; gap: 7px; font-size: 12px; }
 .slide.lt .slide-case-index b { font-size: 36px; font-weight: 650; line-height: 1; letter-spacing: -.03em; }
 .slide.lt .slide-improvement-index { font-size: 26px; color: var(--accent); font-weight: 600; }
+
+/* Compact case header: retain both number levels without a decorative rule. */
+.slide.lt header:has(> .slide-case-context) { border-left: 0; padding-left: 0; }
+.slide.lt .slide-case-context { min-height: 30px; line-height: 1.2; gap: 12px; }
+.slide.lt .slide-case-link { gap: 10px; }
+.slide.lt .slide-case-index b { font-size: 29px; line-height: 1; }
+.slide.lt header > .slide-case-context + h2 { margin-top: 10px; }
