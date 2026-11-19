@@ -1,11 +1,11 @@
 .lt-case-result {
-  --lt-result-bg: #232323;
-  --lt-result-surface: #333333;
-  --lt-result-summary: #e8e8e8;
-  --lt-result-accent: #e8afc0;
-  --lt-result-ink: #f7f7f7;
-  --lt-result-muted: #cfcfcf;
-  --lt-result-line: #606060;
+  --lt-result-bg: #f5f2f3;
+  --lt-result-surface: #fff;
+  --lt-result-summary: #ebdfe4;
+  --lt-result-accent: #8d4c63;
+  --lt-result-ink: #242125;
+  --lt-result-muted: #514b4e;
+  --lt-result-line: #d4cbd0;
   --lt-result-gap: 24px;
   --lt-result-card-padding: 24px;
   --lt-result-number-size: 54px;
@@ -61,7 +61,7 @@
 .lt-result-number { order: -1; }
 .lt-result-metric > :is(strong, dd) {
   margin: 0;
-  color: var(--lt-result-accent);
+  color: var(--lt-result-ink);
   font-size: var(--lt-result-number-size);
   font-weight: 550;
   line-height: 1.08;
@@ -125,7 +125,7 @@
 .lt-case-result > .result-conclusion {
   margin: var(--lt-result-gap) 0 0;
   background: var(--lt-result-summary);
-  color: var(--lt-result-bg);
+  color: var(--lt-result-ink);
   line-break: strict;
 }
 
