@@ -114,5 +114,5 @@
   align-items: center;
 }
 
-.slide .ln-return-diagram {margin: 0 auto}
+.slide .ln-return-diagram {margin: 0 auto; scale: 1.25}
 .slide#halloween-internal-links .ln-return-button-example {transform: translateY(12px)}
