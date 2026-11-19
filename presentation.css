@@ -719,3 +719,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-8 .metrics { margin: 12px 0 16px; }
 #slide-8 .metric { padding: 16px 20px; }
 #slide-8 .metric strong { font-size: 56px; }
+
+/* CASE 01 overview metadata spans the safe width, independently of its two columns. */
+.viewer #slide-4 .slide-case-context { width: 1120px; }
+#slide-4 .halloween-overview-preview { margin-top: 40px; height: 540px; }
