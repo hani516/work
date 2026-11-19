@@ -642,3 +642,13 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .slide.lt .slide-case-link { gap: 10px; }
 .slide.lt .slide-case-index b { font-size: 29px; line-height: 1; }
 .slide.lt header > .slide-case-context + h2 { margin-top: 10px; }
+
+/* Only CASE 01/02 opening slides receive a quiet, square-edged metadata strip. */
+:is(#slide-4, #header-priorities) > header,
+#slide-4 .halloween-overview-copy > header { margin-top: -14px; }
+:is(#slide-4, #header-priorities) .slide-case-context {
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 0;
+  background: #f1ecee;
+}
