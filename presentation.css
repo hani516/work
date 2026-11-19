@@ -671,10 +671,10 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   transform: none;
 }
 
-/* CASE 02 only: inset editorial headers, following the web case study. */
-:is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #slide-8, #header-priorities, #slide-9, #slide-10) { padding-top: 48px; }
+/* Inset editorial headers for CASE 01 and CASE 02. */
+:is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) { padding-top: 48px; }
 :is(#slide-4, #header-priorities)::before { display: none; }
-.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #slide-8, #header-priorities, #slide-9, #slide-10) .slide-case-context {
+.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) .slide-case-context {
   position: static;
   width: 100%;
   height: auto;
@@ -684,7 +684,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   background: transparent;
   border-bottom: 1px solid var(--line);
 }
-.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #slide-8, #header-priorities, #slide-9, #slide-10) header > .slide-case-context + h2 {
+.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) header > .slide-case-context + h2 {
   margin: 0 0 10px;
 }
 #header-priorities .body { margin-top: 30px; }
@@ -696,29 +696,8 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-9 .slide-header-evidence { padding: 18px 12px; background: #f5f1f3; border-radius: 8px; }
 #slide-9 .header-comparison-body .ln-nav-changes { margin-top: 20px; }
 
-/* A clearly contrasted results page, with all measures and caveats preserved. */
-:is(#slide-8, #slide-10) {
-  --ink: #fffafc;
-  --muted: #e1d3dc;
-  --accent: #ffc4df;
-  --line: #785c6d;
-  background: #382632;
-  color: var(--ink);
-}
-:is(#slide-8, #slide-10) .body { margin-top: 18px; }
-:is(#slide-8, #slide-10) .metrics { gap: 20px; margin: 16px 0 20px; }
-:is(#slide-8, #slide-10) .metric { padding: 20px 24px; border: 1px solid #785c6d; border-radius: 8px; background: #4b3543; }
-:is(#slide-8, #slide-10) .metric strong { color: #ffc4df; font-size: 64px; }
-:is(#slide-8, #slide-10) .metric span { color: #fffafc; }
-:is(#slide-8, #slide-10) .note { color: #e1d3dc; border-color: #ffc4df; font-size: 17px; }
-:is(#slide-8, #slide-10) > .result-conclusion { background: #f0e4ec; color: #382632; }
-:is(#slide-8, #slide-10) .folio { color: #e1d3dc; }
-
-/* CASE 01 dense evidence retains its content within the same editorial layout. */
+/* Keep the CASE 01 banner comparisons within the editorial layout. */
 #category-banners .lt-banner-comparisons { max-width: 700px; gap: 20px; }
-#slide-8 .metrics { margin: 12px 0 16px; }
-#slide-8 .metric { padding: 16px 20px; }
-#slide-8 .metric strong { font-size: 56px; }
 
 /* CASE 01 overview metadata spans the safe width, independently of its two columns. */
 .viewer #slide-4 .slide-case-context { width: 1120px; }
