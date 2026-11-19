@@ -596,3 +596,12 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   font-weight: 400;
 }
 .slide.lt header > .slide-case-context + h2 { margin-top: 18px; }
+
+/* Slide 28: keep the three steps and connecting arrows in one quiet panel. */
+#slide-23 .sp-background-flow {
+  padding: 18px 28px;
+  border: 1px solid var(--sp-theme-line);
+  border-radius: 12px;
+  background: var(--sp-theme-raised);
+}
+#slide-23 .sp-background-shots { --sp-shot-height: 280px; margin-top: 20px; }
