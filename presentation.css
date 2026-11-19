@@ -683,3 +683,8 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 /* Keep the CASE 01 preview below the full-width band, with its lower edge unchanged. */
 #slide-4 .halloween-overview-preview { margin-top: 34px; height: 546px; padding-block: 12px; }
 #slide-4 .halloween-overview-preview img { width: 216px; }
+
+/* Extend the two opening bands upward to the slide edge without moving content. */
+:is(#slide-4, #header-priorities) .slide-case-context {
+  box-shadow: 0 -42px 0 0 #f1ecee;
+}
