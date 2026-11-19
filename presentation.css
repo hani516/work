@@ -670,6 +670,12 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
   letter-spacing: 0;
   transform: none;
 }
+.viewer .slide.lt .slide-case-context .slide-case-period,
+.viewer .slide.lt .slide-case-period span {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
 
 /* Inset editorial headers for CASE 01 and CASE 02. */
 :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) { padding-top: 48px; }
