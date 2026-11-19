@@ -29,13 +29,15 @@
 }
 
 .lt-result-period,
-.lt-result-note {
+.lt-result-note,
+.lt-result-source {
   color: var(--lt-result-muted);
   font-size: 15px;
   line-height: 1.6;
 }
 
 .lt-result-header > .lt-result-period { margin: 8px 0 0; }
+.lt-result-source { margin: 12px 0 0; font-size: 13px; }
 .lt-result-content { margin-top: var(--lt-result-gap); }
 
 .lt-result-metrics {
@@ -182,6 +184,7 @@
   margin: 0;
 }
 .slide.lt-case-result .lt-result-content > .lt-result-note { margin-top: 10px; }
+.lt-case-result .lt-result-content > .lt-result-source + :is(.lt-result-note, .lt-result-notes) { margin-top: 8px; }
 .slide.lt-case-result > .result-conclusion { padding-block: 9px; font-size: 21px; }
 @media (max-width: 760px) {
   .project-lalatulle .lt-case-result {
