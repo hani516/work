@@ -655,3 +655,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 
 /* Match slide 28's caption to the neighboring SnapSide eyebrow color. */
 .slide#slide-23 .sp-background-kicker { color: var(--accent); }
+
+/* Both case-opening metadata strips share one exact height and top offset. */
+:is(#slide-4, #header-priorities) .slide-case-context { height: 40px; min-height: 40px; flex-wrap: nowrap; }
+#snapside-usage .sp-usage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
