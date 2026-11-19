@@ -124,21 +124,11 @@
   --muted: var(--lt-result-muted);
   --accent: var(--lt-result-accent);
   --line: var(--lt-result-line);
-  padding-top: 38px;
   --lt-result-gap: 14px;
   --lt-result-card-padding: 10px 18px;
   --lt-result-number-size: 46px;
 }
 
-.viewer .slide.lt-case-result .slide-case-context {
-  position: static;
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  margin: 0 0 12px;
-  padding: 0 0 10px;
-  border-bottom: 1px solid var(--lt-result-line);
-}
 .viewer .slide.lt.lt-case-result .lt-result-header h2 { margin: 0; font-size: 40px; }
 .slide.lt-case-result .lt-result-header > .lt-result-period { margin-top: 4px; }
 .slide.lt-case-result .lt-result-content { flex: 1; }

@@ -52,25 +52,25 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 .chapter.lt .toolset { display: grid; grid-template-columns: repeat(3, max-content); }
 .tool{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:#524f55}.tool img{width:15px;height:15px;object-fit:contain}
 .slide.sp .tool{color:var(--muted)}
-.index{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:16px;height:100%}
-.index a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,44%);grid-template-rows:auto auto 1fr;gap:3px 36px;padding-top:12px;border-top:1px solid var(--line);color:inherit;text-decoration:none}
+.index{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;height:100%}
+.index a{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,54%);grid-template-rows:auto auto 1fr;gap:3px 24px;padding-top:8px;border-top:1px solid var(--line);color:inherit;text-decoration:none}
 .index-visual {
   grid-column: 2;
   grid-row: 1 / 4;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 22px;
+  gap: 10px;
   min-height: 0;
   overflow: hidden;
-  padding-top: 12px;
+  padding-top: 8px;
   border-radius: 4px;
 }
 .index-visual-lt {background:#efeeeb}
 .index-visual-mg {background:#edf1e8}
 .index-visual-sp {background:#252824}
-.index-visual img {display:block;width:100px;height:auto;border-radius:9px}
-.index-visual-sp img {width:240px}
+.index-visual img {display:block;width:118px;height:auto;border-radius:9px}
+.index-visual-sp img {width:280px}
 .index b{font-size:29px}.index p{line-height:1.6;font-size:17px;color:var(--muted)}
 .results{background:#faf9f7}.results.mg{background:#f8f8f8}
 .metrics{display:flex;gap:24px;margin:22px 0 32px}.metric{flex:1;border-top:2px solid var(--accent);padding:16px 0}
@@ -572,42 +572,33 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 }
 
 
-/* Shared metadata coordinates for every LaLaTulle case slide.
-   The opening background is decoration only, never a layout spacer. */
+/* LaLaTulle case navigation shares the same inset on every case slide. */
+.viewer .slide.lt:has(.slide-case-context) { padding-top: 76px; }
 .slide.lt header:has(> .slide-case-context) { margin-top: 0; padding: 0; border: 0; }
 .slide.lt .slide-case-context {
-  position: absolute; top: 0; left: 0;
-  display: flex; align-items: center; flex-wrap: nowrap; gap: 12px;
-  width: 1280px; height: 40px; min-height: 40px;
-  margin: 0; padding: 5px 80px;
-  border: 0; border-radius: 0; box-shadow: none; background: transparent;
+  position: absolute;
+  inset: 30px 80px auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+.slide.lt .slide-case-context,
+.slide.lt .slide-case-context :is(a, span, b) {
   font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
-:is(#slide-4, #header-priorities) .slide-case-context { background: #f1ecee; }
-.slide.lt .slide-case-brand {
-  flex: none; padding-right: 16px; border-right: 1px solid var(--line);
-  color: var(--muted); font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: 0;
-}
-.slide.lt .slide-case-link,
-.slide.lt .slide-case-link > span:not(.slide-case-index) {
-  gap: 10px; color: var(--ink); font-family: inherit;
-  font-size: 18px; font-weight: 650; line-height: 1.2; letter-spacing: 0;
-}
-.slide.lt .slide-case-index {
-  display: inline-flex; align-items: baseline; flex: none; gap: 7px;
-  color: var(--accent); font-size: 12px; font-weight: 650; line-height: 1.2;
-  letter-spacing: .06em; font-variant-numeric: tabular-nums;
-}
-.slide.lt .slide-case-index b { font-size: 29px; font-weight: 650; line-height: 1; letter-spacing: -.03em; }
-.slide.lt .slide-case-detail {
-  margin-left: auto; padding: 0; border: 0; color: var(--muted);
-  font-size: 13px; font-weight: 400; line-height: 1.2; letter-spacing: 0;
-}
-.slide.lt header > .slide-case-context + h2,
-#slide-4 .halloween-overview-copy h2 {
-  margin: 10px 0 8px; font-size: 48px; font-weight: 650; line-height: 1.3; letter-spacing: -.045em;
-}
+.slide.lt .slide-case-context :is(a, span, b) { color: inherit; }
+.slide.lt .slide-case-brand { flex: none; padding-right: 16px; border-right: 1px solid var(--line); }
+.slide.lt .slide-case-index { display: inline-flex; align-items: baseline; flex: none; gap: 7px; }
+.slide.lt .slide-case-detail { margin-left: auto; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.slide.lt header > .slide-case-context + h2 { margin: 0 0 8px; }
 .slide.lt .slide-improvement-title { display: flex; align-items: baseline; gap: 16px; }
 .slide.lt .slide-improvement-index {
   flex: none; color: var(--accent); font-size: 26px; font-weight: 600;
@@ -633,66 +624,7 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 #slide-3 .toolset { position: static; width: 520px; margin-top: 28px; gap: 10px 16px; }
 #slide-3 .tool { font-size: 12px; color: var(--muted); }
 
-/* Give every LaLaTulle metadata row the same visible top breathing room. */
-.viewer .slide.lt .slide-case-context {
-  top: 0;
-  height: 52px;
-  min-height: 52px;
-  padding: 14px 80px 8px;
-  align-items: center;
-  color: var(--ink);
-}
-.viewer .slide.lt .slide-case-link,
-.viewer .slide.lt .slide-case-link > span:not(.slide-case-index) {
-  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px;
-  font-weight: 650;
-  line-height: 1.2;
-  letter-spacing: 0;
-}
-.viewer .slide.lt .slide-case-index { font-size: 12px; font-weight: 650; line-height: 1.2; }
-.viewer .slide.lt .slide-case-index b { font-size: 29px; font-weight: 650; line-height: 1; }
-.viewer .slide.lt .slide-case-detail { font-size: 13px; font-weight: 400; line-height: 1.2; }
-.viewer .slide.lt header > .slide-case-context + h2 {
-  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 48px;
-  font-weight: 650;
-  line-height: 1.3;
-  letter-spacing: -.045em;
-}
-
-/* Every visible text element within the metadata strip uses the same type size. */
-.viewer .slide.lt .slide-case-context,
-.viewer .slide.lt .slide-case-context :is(a, span, b) {
-  font-family: Inter, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0;
-  transform: none;
-  color: inherit;
-}
-.viewer .slide.lt .slide-case-context .slide-case-period {
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-/* Inset editorial headers for CASE 01 and CASE 02. */
-:is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) { padding-top: 48px; }
 :is(#slide-4, #header-priorities)::before { display: none; }
-.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) .slide-case-context {
-  position: static;
-  width: 100%;
-  height: auto;
-  min-height: 0;
-  margin: 0 0 20px;
-  padding: 0 0 14px;
-  background: transparent;
-  border-bottom: 1px solid var(--line);
-}
-.viewer :is(#slide-4, #slide-5, #category-banners, #slide-6, #slide-7, #halloween-internal-links, #header-priorities, #slide-9) header > .slide-case-context + h2 {
-  margin: 0 0 10px;
-}
 #header-priorities .body { margin-top: 30px; }
 #header-priorities .body > :is(h3, .meta) { text-align: center; }
 #header-priorities .body > .meta { margin-top: 8px; }
@@ -705,6 +637,4 @@ figcaption{font-size:18px;font-weight:600;line-height:1.4}
 /* Keep the CASE 01 banner comparisons within the editorial layout. */
 #category-banners .lt-banner-comparisons { max-width: 700px; gap: 20px; }
 
-/* CASE 01 overview metadata spans the safe width, independently of its two columns. */
-.viewer #slide-4 .slide-case-context { width: 1120px; }
 #slide-4 .halloween-overview-preview { margin-top: 40px; height: 540px; }
