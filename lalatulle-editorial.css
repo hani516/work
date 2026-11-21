@@ -27,19 +27,6 @@ button { font: inherit; }
 .case-nav { display: flex; gap: 28px; align-items: center; }
 .case-nav a { display: flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--lt-muted); white-space: nowrap; transition: color .2s; }
 .case-nav a:hover { color: var(--lt-accent); }
-.case-nav a:is([aria-current="location"], [aria-current="page"]) {
-  position: relative;
-  isolation: isolate;
-  color: #fff;
-}
-.case-nav a:is([aria-current="location"], [aria-current="page"])::before {
-  position: absolute;
-  z-index: -1;
-  inset: 4px -8px;
-  border-radius: 6px;
-  background: var(--lt-accent);
-  content: "";
-}
 .ln-main { width: min(var(--lt-width), calc(100% - var(--lt-gutter) * 2)); margin-inline: auto; }
 .ln-hero { padding: clamp(64px,8vw,120px) 0 0; }
 .ln-cover { display: grid; grid-template-columns: 1.2fr .8fr; align-items: start; gap: clamp(32px,6vw,90px); }
