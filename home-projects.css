@@ -102,12 +102,12 @@
 
 .intro-profile.page-shell {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: minmax(0, .8fr) minmax(0, 2fr) minmax(0, 1.28fr);
   align-items: start;
-  gap: 48px 80px;
-  padding-block: 76px 104px;
-  border-top: 1px solid #dededb;
-  scroll-margin-top: var(--portfolio-home-header-height);
+  gap: 16px 36px;
+  padding-block: 44px 36px;
+  border-bottom: 1px solid #dededb;
+  scroll-margin-top: 12px;
 }
 
 .home-intro .hero-headline {font-size:clamp(52px, 6vw, 84px);line-height:1.05;letter-spacing:-.065em}
@@ -120,22 +120,27 @@
 }
 
 
-.intro-bio .hero-lead {font-size:24px;font-weight:600;line-height:1.55}
-.intro-bio .hero-description {margin-top:12px;line-height:1.75;color:#514e4c}
+.intro-bio .hero-lead {font-size:20px;font-weight:600;line-height:1.55}
+.intro-bio .hero-description {margin-top:8px;line-height:1.65;color:#514e4c}
 
-.home-toolstrip {margin-top:24px}
-.home-toolstrip .hero-tools {display:grid;gap:8px;padding-top:16px;border-top:1px solid #dededb}
+.home-toolstrip {grid-column:3;grid-row:1 / span 2}
+.home-toolstrip .hero-tools {display:grid;gap:6px;padding:0;border:0}
 .home-toolstrip .tools-label {margin:0 0 4px;color:#686764}
 .home-toolstrip .hero-tools .tools-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 13px;
   margin: 0;
 }
 
-@media (max-width: 740px) {
-  .intro-profile.page-shell {grid-template-columns:1fr;gap:32px}
-  .home-toolstrip .hero-tools .tools-row {display:flex;flex-wrap:wrap}
+@media (max-width: 900px) {
+  .intro-profile.page-shell {grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);gap:20px 28px}
+  .home-toolstrip {grid-column:2;grid-row:auto}
+}
+
+@media (max-width: 600px) {
+  .intro-profile.page-shell {grid-template-columns:minmax(0, 1fr)}
+  .intro-profile .home-toolstrip {grid-column:1}
 }
 
 .selected-projects .project-panel {
@@ -191,16 +196,14 @@
   margin-inline:auto;
 }
 
-.intro-profile.page-shell {max-width:840px}
-
 @media (max-width: 740px) {
   .selected-projects .personal-project-panels {grid-template-columns:minmax(0,1fr)}
 }
 
 .github-activity {
   grid-column: 2;
-  width: min(100%, 474px);
-  margin: -20px 0 0;
+  width: min(100%, 400px);
+  margin: 0;
 }
 
 .github-activity figcaption {
@@ -216,6 +219,6 @@
 .github-activity [data-level="3"] { fill: #779678; }
 .github-activity [data-level="4"] { fill: #395f46; }
 
-@media (max-width: 740px) {
-  .github-activity { grid-column: 1; margin-top: 0; }
+@media (max-width: 600px) {
+  .github-activity { grid-column: 1; }
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
-    <link rel="stylesheet" href="home-projects.css?v=wivlo-card" />
+    <link rel="stylesheet" href="home-projects.css?v=about-first" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
 <link rel="stylesheet" href="portfolio-type.css?v=editorial-covers" />
 <link rel="stylesheet" href="portfolio-editorial.css?v=related-cases" />
@@ -23,8 +23,8 @@
     <header class="site-header" data-elevate>
       <a class="brand" href="#top" aria-label="Go to top"><span>YOHAN KIM</span></a>
       <nav class="nav-links" aria-label="Primary navigation" lang="en">
-        <a id="home-projects-link" href="#projects" data-i18n="navProjects">Projects</a>
-        <a href="#about" data-i18n="navAbout">About</a>
+        <a id="home-about-link" href="#about" data-i18n="navAbout">About</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
         <a href="presentation.html" data-i18n="navSlides">スライド</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
@@ -37,7 +37,43 @@
           <img class="home-intro-portrait" src="assets/profile/yohan-profile.webp" width="1000" height="1286" alt="" fetchpriority="high" />
           <h1 id="home-title" class="hero-headline" lang="en"><strong>I’m Yohan Kim.</strong> I like making things easier to find.</h1>
         </div>
-        <a class="home-scroll-cue" href="#projects" aria-labelledby="home-projects-link"><span aria-hidden="true">↓</span></a>
+        <a class="home-scroll-cue" href="#about" aria-labelledby="home-about-link"><span aria-hidden="true">↓</span></a>
+      </section>
+      <section class="intro-profile page-shell" id="about" aria-label="About Yohan Kim">
+        <div class="intro-portrait">
+          <div class="intro-profile-name">
+            <strong>Yohan Kim</strong>
+            <span>Product Designer</span>
+            <a href="https://www.smu.ac.kr/eng1/index.do" target="_blank" rel="noopener noreferrer">Sangmyung University, Seoul, Korea</a>
+          </div>
+        </div>
+        <div class="intro-bio">
+          <p class="hero-lead" data-i18n="homeLead">アクセスデータやユーザーの行動をもとに、ECサイトを改善しています。</p>
+          <p class="hero-description" data-i18n="homeBody">個人では、アプリの企画からデザイン、開発、公開まで一人で行っています。</p>
+        </div>
+        <div class="home-toolstrip">
+          <div class="hero-tools" aria-labelledby="tools-label">
+            <p class="tools-label" id="tools-label">TOOLS</p>
+            <ul class="tools-row tools-list" aria-label="Design and documentation tools">
+              <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
+            </ul>
+            <ul class="tools-row tools-list" aria-label="AI development tools">
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
+            </ul>
+            <ul class="tools-row tools-list" aria-label="Analytics tools">
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
+              <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
+            </ul>
+          </div>
+        </div>
+        <figure class="github-activity" id="github-activity" hidden data-calendar-url="https://raw.githubusercontent.com/hani516/work/portfolio-activity/calendar.json">
+          <figcaption data-i18n="githubActivity">GitHubでの活動 · 過去1年</figcaption>
+          <svg aria-hidden="true"></svg>
+        </figure>
       </section>
       <section class="portfolio-section selected-projects" id="projects" aria-label="Projects">
         <div class="page-shell">
@@ -90,42 +126,6 @@
           </section>
         </div>
       </section>
-      <section class="intro-profile page-shell" id="about" aria-label="About Yohan Kim">
-        <div class="intro-portrait">
-          <div class="intro-profile-name">
-            <strong>Yohan Kim</strong>
-            <span>Product Designer</span>
-            <a href="https://www.smu.ac.kr/eng1/index.do" target="_blank" rel="noopener noreferrer">Sangmyung University, Seoul, Korea</a>
-          </div>
-        </div>
-        <div class="intro-bio">
-          <p class="hero-lead" data-i18n="homeLead">アクセスデータやユーザーの行動をもとに、ECサイトを改善しています。</p>
-          <p class="hero-description" data-i18n="homeBody">個人では、アプリの企画からデザイン、開発、公開まで一人で行っています。</p>
-          <div class="home-toolstrip">
-            <div class="hero-tools" aria-labelledby="tools-label">
-              <p class="tools-label" id="tools-label">TOOLS</p>
-              <ul class="tools-row tools-list" aria-label="Design and documentation tools">
-                <li><span class="tool-mark tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" /></span><span>Figma</span></li>
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" /></span><span>Photoshop</span></li>
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/notion.svg" alt="" width="24" height="24" /></span><span>Notion</span></li>
-              </ul>
-              <ul class="tools-row tools-list" aria-label="AI development tools">
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/codex.png" alt="" width="1024" height="1024" /></span><span>Codex</span></li>
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/claude-code.svg" alt="" width="24" height="24" /></span><span>Claude Code</span></li>
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" /></span><span>Cursor</span></li>
-              </ul>
-              <ul class="tools-row tools-list" aria-label="Analytics tools">
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" /></span><span>Google Analytics</span></li>
-                <li><span class="tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" /></span><span>Microsoft Clarity</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <figure class="github-activity" id="github-activity" hidden data-calendar-url="https://raw.githubusercontent.com/hani516/work/portfolio-activity/calendar.json">
-          <figcaption data-i18n="githubActivity">GitHubでの活動 · 過去1年</figcaption>
-          <svg aria-hidden="true"></svg>
-        </figure>
-      </section>
     </main>
 
     <footer class="portfolio-footer" id="contact">
@@ -141,7 +141,7 @@
       <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
     </footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js?v=portfolio-activity"></script>
+    <script src="script.js?v=about-first"></script>
     <script src="github-activity.js" defer></script>
   </body>
 </html>

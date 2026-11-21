@@ -297,11 +297,17 @@ const landingNavSections = landingNavLinks
 
 function updateLandingNavigation() {
   if (!landingNavSections.length) return;
-  const marker = window.scrollY + (header?.offsetHeight || 66) + window.innerHeight * 0.22;
+  const marker = (header?.offsetHeight || 66) + 40;
   let current = landingNavSections[0];
   landingNavSections.forEach((item) => {
-    if (item.section.offsetTop <= marker) current = item;
+    if (item.section.getBoundingClientRect().top <= marker) current = item;
   });
+  const scroller = document.scrollingElement;
+  const atEnd = scroller && scroller.scrollHeight - scroller.clientHeight - scroller.scrollTop <= 2;
+  if (atEnd) {
+    const currentAnchor = landingNavSections.find(({ link }) => link.hash === location.hash);
+    if (currentAnchor?.section.getBoundingClientRect().top > marker) current = currentAnchor;
+  }
   landingNavSections.forEach(({ link }) => {
     const active = link === current.link;
     link.classList.toggle("is-active", active);
@@ -325,5 +331,6 @@ if (reduceMotion) {
 }
 
 window.addEventListener("scroll", updateLandingNavigation, { passive: true });
+window.addEventListener("hashchange", updateLandingNavigation);
 setLanguage(localStorage.getItem("portfolio-language") || "ja");
 updateLandingNavigation();
