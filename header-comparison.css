@@ -90,3 +90,39 @@
   pointer-events: none;
 }
 .slide .pdp-ab-visual > .pdp-ab-arrow { width: min(40px, 10%); }
+
+.lt-priority-scale {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 8px 0;
+  color: #754e65;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lt-priority-scale-arrow {
+  position: relative;
+  height: 1px;
+  margin-inline: 2px;
+  background: currentColor;
+}
+
+.lt-priority-scale-arrow::before,
+.lt-priority-scale-arrow::after {
+  position: absolute;
+  top: -3px;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  content: "";
+}
+
+.lt-priority-scale-arrow::before { left: 0; transform: rotate(-135deg); }
+.lt-priority-scale-arrow::after { right: 0; transform: rotate(45deg); }
+
+@media (max-width: 650px) {
+  .ln-priority .lt-priority-scale { display: none; }
+}
