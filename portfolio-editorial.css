@@ -104,7 +104,8 @@ body:has(.home-intro) { background: var(--editorial-paper); }
   border-color: #a5b1ca;
 }
 
-.home-case-art {
+.lt-case-art {
+  display: block;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -113,7 +114,7 @@ body:has(.home-intro) { background: var(--editorial-paper); }
   background: #e8e3e6;
 }
 
-.home-case-art img {
+.lt-case-art img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -125,13 +126,13 @@ body:has(.home-intro) { background: var(--editorial-paper); }
   object-position: top;
   transform: translateX(-50%);
 }
-.home-case-card[href="lalatulle-halloween.html"] .home-case-art img { width: 58%; object-position: 50% 21%; }
-.home-case-card[href="lalatulle-navigation.html"] .home-case-art { background: #efedf1; }
-.home-case-card[href="lalatulle-navigation.html"] .home-case-art img { width: 93%; object-fit: contain; object-position: center; }
-.home-case-card[href="lalatulle-first-view.html"] .home-case-art { background: #e7e4f1; }
-.home-case-card[href="lalatulle-first-view.html"] .home-case-art img { width: 60%; object-position: 50% 56%; }
-.home-case-card[href="lalatulle-experiment.html"] .home-case-art { background: #eee8e1; }
-.home-case-card[href="lalatulle-experiment.html"] .home-case-art img { width: 90%; object-fit: contain; object-position: center; }
+a[href="lalatulle-halloween.html"] .lt-case-art img { width: 58%; object-position: 50% 21%; }
+a[href="lalatulle-navigation.html"] .lt-case-art { background: #efedf1; }
+a[href="lalatulle-navigation.html"] .lt-case-art img { width: 93%; object-fit: contain; object-position: center; }
+a[href="lalatulle-first-view.html"] .lt-case-art { background: #e7e4f1; }
+a[href="lalatulle-first-view.html"] .lt-case-art img { width: 60%; object-position: 50% 56%; }
+a[href="lalatulle-experiment.html"] .lt-case-art { background: #eee8e1; }
+a[href="lalatulle-experiment.html"] .lt-case-art img { width: 90%; object-fit: contain; object-position: center; }
 
 .home-case-copy {
   display: grid;

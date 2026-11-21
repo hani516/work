@@ -138,39 +138,64 @@
 
 .lt-detail-story { margin-top: clamp(58px, 7vw, 104px); }
 
-.lt-detail-next {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin: 80px 0 56px;
+.lt-related-cases {
+  width: min(100%, 880px);
+  margin: 76px auto 56px;
 }
 
-.lt-detail-next a {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+.lt-related-header,
+.lt-related-card-label {
+  display: flex;
+  justify-content: space-between;
   align-items: baseline;
-  gap: 6px 16px;
-  padding: 22px 24px;
-  border: 1px solid var(--lt-line);
-  border-radius: 12px;
+  gap: 10px 16px;
 }
 
-.lt-detail-next a:is(:hover, :focus-visible) { background: var(--lt-cover-surface); }
-.lt-detail-next .lt-next-label {
-  grid-column: 1 / -1;
+.lt-related-header { flex-wrap: wrap; margin-bottom: 16px; }
+.lt-related-header h2 { font-size: 22px; line-height: 1.35; }
+.lt-related-header > a,
+.lt-related-next-project {
   color: var(--lt-muted);
   font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.lt-detail-next strong { font-size: 20px; }
+
+.lt-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.lt-related-card {
+  display: block;
+  padding: 6px;
+  border: 1px solid var(--lt-line);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.lt-related-card:is(:hover, :focus-visible) {
+  border-color: var(--lt-cover-ink);
+  background: var(--lt-cover-surface);
+}
+
+.lt-related-card-label {
+  padding: 10px 7px 7px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.lt-related-card-label strong { font-weight: 600; }
+.lt-related-next-project { display: inline-block; margin-top: 16px; }
 
 @media (max-width: 700px) {
   .lt-detail-art { height: 230px; }
   .lt-detail-navigation .lt-detail-art,
   .lt-detail-experiment .lt-detail-art { height: 165px; }
-  .lt-detail-next { grid-template-columns: 1fr; }
+  .lt-related-grid { grid-template-columns: 1fr; }
 }
 
 @media print {
   .lt-detail-cover { padding-top: 24px; }
-  .lt-detail-jump, .lt-detail-next { display: none; }
+  .lt-detail-jump, .lt-related-cases { display: none; }
 }
