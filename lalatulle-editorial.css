@@ -27,12 +27,12 @@ button { font: inherit; }
 .case-nav { display: flex; gap: 28px; align-items: center; }
 .case-nav a { display: flex; align-items: center; min-height: 44px; font-size: 14px; color: var(--lt-muted); white-space: nowrap; transition: color .2s; }
 .case-nav a:hover { color: var(--lt-accent); }
-.case-nav a[aria-current="location"] {
+.case-nav a:is([aria-current="location"], [aria-current="page"]) {
   position: relative;
   isolation: isolate;
   color: #fff;
 }
-.case-nav a[aria-current="location"]::before {
+.case-nav a:is([aria-current="location"], [aria-current="page"])::before {
   position: absolute;
   z-index: -1;
   inset: 4px -8px;

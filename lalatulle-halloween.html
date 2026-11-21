@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1440, minimum-scale=0.1, user-scalable=yes" />
+    <title>ハロウィンページ改善 | LaLaTulle · Yohan Kim</title>
+    <meta name="description" content="ハロウィンページの商品一覧やカテゴリの探しやすさを見直しました。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="lalatulle-editorial.css?v=separate-cases" />
+    <link rel="stylesheet" href="lalatulle-search-evidence.css" />
+    <link rel="stylesheet" href="halloween-return.css?v=branch-flow" />
+    <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
+    <script src="lalatulle-motion.js?v=separate-cases" defer></script>
+<link rel="stylesheet" href="project-gallery.css?v=editorial-covers" />
+<link rel="stylesheet" href="header-comparison.css?v=system-arrow" /><link rel="stylesheet" href="portfolio-type.css?v=editorial-covers" />
+<link rel="stylesheet" href="portfolio-conclusions.css?v=centered" />
+<link rel="stylesheet" href="lalatulle-results.css?v=reporting-periods" />
+<link rel="stylesheet" href="portfolio-editorial.css?v=case-gallery" />
+<link rel="stylesheet" href="lalatulle-case-pages.css" />
+</head>
+<body class="project-lalatulle lt-narrative lt-case-page lt-detail-halloween">
+  <header class="case-header project-page-header">
+  <a class="back-link" href="index.html#projects">Portfolio</a>
+  <nav class="case-nav" aria-label="LaLaTulle">
+    <a href="lalatulle.html" data-case-en="Overview" data-case-ko="개요">概要</a>
+    <a href="lalatulle-halloween.html" aria-current="page" data-case-en="Halloween" data-case-ko="할로윈">ハロウィンページ</a>
+    <a href="lalatulle-navigation.html" data-case-en="Header navigation" data-case-ko="헤더">ヘッダー</a>
+    <a href="lalatulle-first-view.html" data-case-en="First view" data-case-ko="첫 화면">ファーストビュー</a>
+    <a href="lalatulle-experiment.html" data-case-en="A/B test" data-case-ko="A/B 테스트">A/Bテスト</a>
+  </nav>
+  </header>
+<main class="ln-main lt-detail-main" id="halloween">
+  <header class="lt-detail-cover" aria-labelledby="lt-case-title">
+    <p class="lt-detail-kicker" lang="en"><a href="lalatulle.html#case-index">LaLaTulle</a><span aria-hidden="true"> / </span><span>01 / 04</span></p>
+    <h1 id="lt-case-title" data-case-en="Halloween page improvements" data-case-ko="할로윈 페이지 개선">ハロウィンページ改善</h1>
+    <p class="ln-case-period"><span data-case-en="Period" data-case-ko="기간">期間</span> <span aria-hidden="true">／</span> <time datetime="2025-09">2025.09</time>–<time datetime="2025-11">11</time></p>
+
+    <p class="lt-detail-intro" data-case-en="I updated the page design to make the product list easier to reach." data-case-ko="디자인을 정리해 상품 목록으로 더 쉽게 이동할 수 있게 했습니다.">デザインを見直して商品一覧へ進みやすくしました。</p>
+    <div class="lt-chapter-tool-row"><p class="lt-tools-label" id="halloween-tools" data-case-ko="사용 도구" data-case-en="Tools used">使用ツール</p><ul class="lt-case-tools lt-case-tools-compact" aria-labelledby="halloween-tools">
+      <li><span class="lt-case-tool-mark" aria-hidden="true"><img src="assets/tools/photoshop.svg" alt="" width="256" height="250" loading="lazy" /></span>Photoshop</li>
+      <li><span class="lt-case-tool-mark lt-case-tool-mark-figma" aria-hidden="true"><img src="assets/tools/figma.svg" alt="" width="1024" height="1280" loading="lazy" /></span>Figma</li>
+      <li><span class="lt-case-tool-mark" aria-hidden="true"><img src="assets/tools/cursor.svg" alt="" width="467" height="532" loading="lazy" /></span>Cursor</li>
+      <li><span class="lt-case-tool-mark" aria-hidden="true"><img src="assets/tools/clarity.png" alt="" width="256" height="256" loading="lazy" /></span>Microsoft Clarity</li>
+      <li><span class="lt-case-tool-mark" aria-hidden="true"><img src="assets/tools/google-analytics.svg" alt="" width="192" height="192" loading="lazy" /></span>Google Analytics</li>
+      <li><span class="lt-case-tool-mark" aria-hidden="true"><img src="assets/tools/google-search-console.png" alt="" width="32" height="32" loading="lazy" /></span>Google Search Console</li>
+    </ul></div>
+    <div class="lt-detail-art" aria-hidden="true">
+      <img src="assets/lalatulle/live-halloween-20261108.jpg" width="585" height="1266" alt="" fetchpriority="high" />
+    </div>
+    <div class="lt-detail-jump"><a href="#halloween-results" data-case-en="See results ↓" data-case-ko="결과 보기 ↓">結果を見る ↓</a></div>
+  </header>
+
+  <div class="lt-detail-story">
+<nav class="lt-improvement-index" aria-labelledby="halloween-improvements-title">
+  <h3 id="halloween-improvements-title" data-case-en="Five improvements" data-case-ko="다섯 가지 개선 포인트">5つの改善ポイント</h3>
+  <ol>
+    <li><a href="#category-redesign"><span aria-hidden="true">01</span><strong data-case-en="Category menu" data-case-ko="카테고리 메뉴">カテゴリメニュー</strong></a></li>
+    <li><a href="#banner-refresh"><span aria-hidden="true">02</span><strong data-case-en="Category banners" data-case-ko="카테고리 배너">カテゴリバナーの更新</strong></a></li>
+    <li><a href="#category-sequence"><span aria-hidden="true">03</span><strong data-case-en="Product lists and tabs" data-case-ko="상품 목록과 카테고리 탭">商品一覧とカテゴリタブ</strong></a></li>
+    <li><a href="#footer-additions"><span aria-hidden="true">04</span><strong data-case-en="Reducing exits at the page end" data-case-ko="페이지 끝에서 이탈 줄이기">ページ下部での離脱を防ぐ</strong></a></li>
+    <li><a href="#halloween-internal-links"><span aria-hidden="true">05</span><strong data-case-en="Internal links to the feature" data-case-ko="특집으로 돌아가는 내부 링크">ハロウィンページへの内部リンク</strong></a></li>
+  </ol>
+</nav>
+<div class="ln-stage" id="category-redesign"><div class="ln-stage-copy"><span class="ln-stage-number" aria-hidden="true">01</span><p class="ln-result-period ln-stage-period"><time datetime="2025-09">2025.09</time></p><h3 data-case-en="Category menu" data-case-ko="카테고리 메뉴">カテゴリメニュー</h3>
+<p class="" data-case-en="I grouped categories into a horizontal scrolling menu and added links to all products and sale items." data-case-ko="카테고리를 가로 스크롤 메뉴로 묶고 전체 상품·세일 링크를 추가했습니다.">カテゴリを横スクロールで選べるメニューを設け、<br />全商品とセールへのリンクを追加しました。</p>
+</div><div class="ln-category-pair">
+<figure class="ln-category-before"><figcaption class="ln-comparison-label">BEFORE</figcaption><div class="ln-image-link"><img src="assets/lalatulle/figma-source/74861.png" alt="Original vertically arranged Halloween categories" loading="lazy" decoding="async" width="882" height="1020"/></div></figure>
+<svg class="ln-comparison-arrow" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 24h35M28 11l13 13-13 13"/></svg>
+<figure class=""><figcaption class="ln-comparison-label">AFTER</figcaption><div class="ln-image-link"><img src="assets/lalatulle/figma-source/f99cc.png" alt="Horizontal Halloween categories with all products and sale" loading="lazy" decoding="async" width="1298" height="400"/></div></figure>
+</div></div>
+<div class="ln-stage lt-banner-refresh" id="banner-refresh"><div class="ln-stage-copy"><span class="ln-stage-number" aria-hidden="true">02</span><p class="ln-result-period ln-stage-period"><time datetime="2025-09">2025.09</time></p><h3 data-case-en="Category banners" data-case-ko="카테고리 배너">カテゴリバナーの更新</h3><p data-case-en="The category banners still used an older design, so I updated them." data-case-ko="카테고리 배너가 오래된 디자인이라 새 디자인으로 갱신했습니다.">バナーのデザインが古くなっていたため、作り直しました。</p></div>
+<div class="lt-banner-comparisons">
+<div class="lt-banner-column"><p class="ln-comparison-label">BEFORE</p>
+<figure><div class="ln-image-link"><img src="assets/lalatulle/figma-source/4b8f8.png" alt="Bunny category banner before redesign" loading="lazy" decoding="async" width="1646" height="478"/></div></figure>
+<figure><div class="ln-image-link lt-banner-source"><img src="assets/lalatulle/category-character-before.png" alt="Character category banner before redesign" loading="lazy" decoding="async" width="740" height="200"/></div></figure>
+<figure><div class="ln-image-link lt-banner-source"><img src="assets/lalatulle/category-animal-before.png" alt="Animal category banner before redesign" loading="lazy" decoding="async" width="740" height="200"/></div></figure>
+<figure><div class="ln-image-link lt-banner-source"><img src="assets/lalatulle/category-anier-before.png" alt="ANIER. category banner before redesign" loading="lazy" decoding="async" width="740" height="200"/></div></figure>
+</div>
+<svg class="ln-comparison-arrow" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 24h35M28 11l13 13-13 13"/></svg>
+<div class="lt-banner-column"><p class="ln-comparison-label">AFTER</p>
+<figure><div class="ln-image-link"><img src="assets/lalatulle/figma-source/b94da.png" alt="Bunny category banner after redesign" loading="lazy" decoding="async" width="800" height="220"/></div></figure>
+<figure><div class="ln-image-link"><img src="assets/lalatulle/category-character-after-20261110.png" alt="Character category banner after redesign" loading="lazy" decoding="async" width="800" height="220"/></div></figure>
+<figure><div class="ln-image-link"><img src="assets/lalatulle/category-animal-after-20261110.png" alt="Animal category banner after redesign" loading="lazy" decoding="async" width="800" height="220"/></div></figure>
+<figure><div class="ln-image-link"><img src="assets/lalatulle/category-anier-after-20261110.png" alt="ANIER. category banner after redesign" loading="lazy" decoding="async" width="800" height="220"/></div></figure>
+</div>
+</div></div>
+<div class="ln-stage ln-tint" id="category-sequence"><div class="ln-stage-copy"><span class="ln-stage-number" aria-hidden="true">03</span><h3 data-case-en="Product lists and tabs" data-case-ko="상품 목록과 카테고리 탭">商品一覧とカテゴリタブ</h3></div><div class="lt-scroll-story" data-scroll-story><article class="lt-story-step" data-story-step="0"><p class="lt-story-date">2023.09–2025.08</p><h4 data-case-en="A long list of products." data-case-ko="세로로 길게 이어지는 상품 목록.">縦に長い商品一覧</h4><p data-case-en="Each category showed nine products, requiring a long scroll to reach the product lists below." data-case-ko="카테고리마다 상품 9개가 표시되어 하단 상품 목록까지 긴 스크롤이 필요했습니다.">各カテゴリに商品を9点ずつ並べていたため、<br />下の商品まで何度もスクロールする必要がありました。</p></article><figure class="lt-story-frame" data-story-frame="0"><div class="lt-story-image"><img src="assets/lalatulle/figma-source/782b0.png" alt="Nine products in a three by three grid" loading="lazy" decoding="async" width="746" height="1384"/></div></figure><article class="lt-story-step" data-story-step="1"><span class="lt-story-next" aria-hidden="true">↓</span><p class="lt-story-date">2025.09–2025.10</p><h4 data-case-en="First, show fewer products." data-case-ko="먼저, 표시하는 상품 수를 줄이다.">まず、商品数を減らす</h4><p data-case-en="I reduced each grid from nine products to six, shortening the path to the next category." data-case-ko="상품을 9개에서 6개로 줄여 다음 카테고리까지의 거리를 줄였습니다.">各カテゴリの商品を9点から6点に減らし、<br />次のカテゴリまでのスクロールを短くしました。</p></article><figure class="lt-story-frame" data-story-frame="1"><div class="lt-story-image"><img src="assets/lalatulle/halloween-six-products-user-20261110.png" alt="User-provided six-product grid before category tabs, with a view-more link" loading="lazy" decoding="async" width="744" height="1532"/></div></figure><article class="lt-story-step" data-story-step="2"><p class="lt-story-date">2025.11</p><h4 data-case-en="Replacing stacked categories with tabs" data-case-ko="스크롤 배열을 없애고 탭 전환으로 간소화">カテゴリをタブで切り替え</h4><p data-case-en="Grouping categories into tabs made the page much shorter. Visitors could switch straight to the category they wanted." data-case-ko="카테고리를 탭으로 묶어 페이지 길이를 크게 줄였습니다. 보고 싶은 카테고리로 바로 전환할 수 있게 했습니다.">カテゴリをタブで切り替える方式を採用し、<br />ページを大幅に短縮しました。</p></article><figure class="lt-story-frame" data-story-frame="2"><div class="lt-story-image"><img src="assets/lalatulle/halloween-category-tabs-user-20261110.png" alt="November category-switching layout" loading="lazy" width="744" height="1222"/></div></figure></div></div>
+<div class="ln-footer-stage" id="footer-additions"><span class="ln-stage-number" aria-hidden="true">04</span><p class="ln-result-period"><time datetime="2025-09">2025.09</time>–<time datetime="2025-10">2025.10</time></p><h3 data-case-en="Reducing exits at the page end" data-case-ko="페이지 끝에서 이탈 줄이기">ページ下部での離脱を防ぐ</h3>
+<div class="ln-footer-evidence"><figure class="ln-footer-part"><div class="ln-image-link"><img src="assets/lalatulle/figma-source/e0e7f.png" alt="Recommended product area" loading="lazy" decoding="async" width="960" height="952"/></div><figcaption><h4 data-case-en="Recommended products" data-case-ko="추천 상품">おすすめ商品</h4><p data-case-en="I surfaced popular products again at the end of the page to invite further exploration." data-case-ko="페이지 끝에서 인기 상품을 다시 제안해, 떠나기 전에 탐색을 이어갈 입구를 만들었습니다.">ページの最後に人気商品を載せ、<br />続けて商品を探せるようにしました。</p></figcaption></figure><figure class="ln-footer-part"><div class="ln-image-link"><img src="assets/lalatulle/figma-source/d018a.png" alt="Simple-search filters for category, size, price and color" loading="lazy" decoding="async" width="956" height="546"/></div><figcaption><h4 data-case-en="Simple search" data-case-ko="간편 검색">簡単検索</h4><p class="ln-footer-search-copy" data-case-en="I added more ways to find products by category, size, color and other preferences." data-case-ko="카테고리·사이즈·색상 등 조건에 따라 상품을 찾을 수 있는 선택지를 늘렸습니다.">カテゴリ、サイズ、色などから探せるようにしました。</p></figcaption></figure><figure class="ln-footer-part"><div class="ln-image-link"><img src="assets/lalatulle/figma-source/f6bc3.png" alt="Halloween question and answer area" loading="lazy" decoding="async" width="958" height="808"/></div><figcaption><h4 data-case-en="Q&A" data-case-ko="Q&A">Q&A</h4><p data-case-en="I answered outfit and occasion questions and applied Schema.org FAQPage structured data." data-case-ko="의상 선택·활용 상황의 질문에 답하고, Schema.org FAQPage 구조화 데이터를 적용했습니다.">衣装の選び方や着用シーンに関する質問に答え、<br />schema.orgのFAQPage構造化データも追加しました。</p></figcaption></figure></div></div>
+<section id="halloween-internal-links">
+<span class="ln-stage-number" aria-hidden="true">05</span>
+<h3 data-case-en="Back to the Halloween feature from category pages" data-case-ko="카테고리에서 할로윈 특집으로 돌아가는 길">ハロウィンページへ戻るボタンを追加</h3>
+<p data-case-en="I added a return button to every relevant category page, including pages where the breadcrumbs offered no way back to the Halloween feature." data-case-ko="브레드크럼에서 할로윈 특집으로 돌아갈 수 없는 페이지까지 포함해, 모든 대상 카테고리 페이지에 복귀 버튼을 추가했습니다.">パンくずリストからハロウィンページに戻れないページも含め、対象のすべてのカテゴリページにボタンを追加しました。</p>
+<figure class="ln-return-diagram">
+  <p class="ln-return-hub" data-case-en="Halloween feature" data-case-ko="할로윈 특집">ハロウィンページ</p>
+  <svg class="ln-return-branches" viewBox="0 0 88 132" aria-hidden="true" focusable="false">
+    <path d="M1 66h21c22 0 20-48 44-48h20M22 66h64M22 66c22 0 20 48 44 48h20M81 13l5 5-5 5M81 61l5 5-5 5M81 109l5 5-5 5"/>
+  </svg>
+  <ul class="ln-return-categories" role="list">
+      <li data-case-en="Bunny" data-case-ko="버니">バニー</li>
+      <li data-case-en="Cat" data-case-ko="고양이">猫</li>
+      <li data-case-en="Animal" data-case-ko="애니멀">アニマル</li>
+      <li data-case-en="Chinese costumes" data-case-ko="차이나">チャイナ</li>
+      <li data-case-en="Police" data-case-ko="폴리스">ポリス</li>
+      <li data-case-en="anierROBE" data-case-ko="anierROBE">anierROBE</li>
+      <li data-case-en="Nurse" data-case-ko="간호사">ナース</li>
+      <li data-case-en="Angel" data-case-ko="천사">天使</li>
+      <li data-case-en="Devil" data-case-ko="악마">悪魔</li>
+      <li data-case-en="Oni" data-case-ko="오니">鬼</li>
+      <li data-case-en="Japanese outfits" data-case-ko="일본 전통 의상">和装</li>
+      <li data-case-en="Accessories" data-case-ko="소품">小物</li>
+    </ul>
+  <span class="ln-return-path" aria-hidden="true"></span>
+  <figcaption class="ln-return-button-example" lang="ja">ハロウィンTOPページを見る <span aria-hidden="true"></span></figcaption>
+</figure>
+</section>
+<section class="lt-case-result" id="halloween-results" aria-labelledby="halloween-results-title">
+<header class="lt-result-header"><h3 id="halloween-results-title" data-case-en="Halloween page results" data-case-ko="할로윈 페이지 개선 결과">ハロウィンページ改善結果</h3>
+<p class="lt-result-period" data-case-en="Reporting periods · Oct 1–31 of each year, 2024–2026" data-case-ko="집계 기간 · 2024~2026년 각 10월 1~31일">集計期間 ／ 2024–2026年の各10月1日〜31日</p>
+</header>
+<div class="lt-result-content">
+<div class="lt-result-groups">
+<section class="lt-result-group" aria-labelledby="halloween-results-2025">
+<h4 id="halloween-results-2025" data-case-en="October 2025 · Halloween season" data-case-ko="2025년 10월 · 할로윈 시즌">2025年10月・ハロウィンシーズン</h4>
+<p class="lt-result-period" title="2025.10.01–10.31" data-case-en="After the initial redesign · Halloween season Oct 1–31 · Compared with 2024" data-case-ko="첫 개선 후 · 할로윈 시즌 10월 1일~31일 · 2024년 대비">初回改善後 ／ 10月1日〜31日 ／ 2024年比</p>
+<div class="lt-result-metrics">
+<article class="lt-result-metric"><strong>+54% </strong>
+  <p data-case-en="Product-list views" data-case-ko="상품 목록 조회수">商品リスト閲覧数</p></article>
+<article class="lt-result-metric"><strong>+30% </strong>
+  <p data-case-en="Product-detail views" data-case-ko="상품 상세 조회수">商品詳細閲覧数</p></article>
+<article class="lt-result-metric"><strong>+9.33% </strong>
+  <p data-case-en="Revenue" data-case-ko="매출">売上</p></article>
+</div>
+</section>
+<section class="lt-result-group" aria-labelledby="halloween-results-2026">
+<h4 id="halloween-results-2026" data-case-en="October 2026 · Halloween season" data-case-ko="2026년 10월 · 할로윈 시즌">2026年10月・ハロウィンシーズン</h4>
+<p class="lt-result-period" title="2026.10.01–10.31" data-case-en="After switching to tabs · Halloween season Oct 1–31 · Same dates in 2025" data-case-ko="탭 전환 후 · 할로윈 시즌 10월 1일~31일 · 2025년 동기 대비">タブ切り替え後 ／ 10月1日〜31日 ／ 2025年比</p>
+<div class="lt-result-metrics"><article class="lt-result-metric"><strong data-case-en="<small class='ln-metric-qualifier'>≈</small>32.5% <small class='ln-metric-qualifier'>lower</small>" data-case-ko="<small class='ln-metric-qualifier'>약</small> 32.5% <small class='ln-metric-qualifier'>감소</small>"><small class="ln-metric-qualifier">約</small>32.5%<small class="ln-metric-qualifier">減</small></strong>
+  <p data-case-en="Bounce rate" data-case-ko="이탈률">直帰率</p></article></div>
+</section>
+<section class="lt-result-group" aria-labelledby="halloween-rank-title">
+    <h4 id="halloween-rank-title" data-case-en="Google search rankings" data-case-ko="Google 검색 순위">Google検索順位</h4>
+    <p class="lt-result-period" title="2025.10.01–10.31" data-case-en="Halloween season Oct 1–31 · 2025 vs. 2024" data-case-ko="할로윈 시즌 10월 1일~31일 · 2025년과 2024년 비교">シーズン 10月1日〜31日 ／ 2025年と2024年の比較</p>
+  <dl class="lt-result-metrics">
+    <div class="lt-result-metric"><dt data-case-en="Average position improvement" data-case-ko="평균 게재순위 개선">平均掲載順位の改善</dt><dd class="lt-result-number">+19.5%</dd></div>
+    <div class="lt-result-metric"><dt data-case-en="Best position" data-case-ko="최고 순위">最高順位</dt><dd class="lt-result-number">2<small data-case-en="nd" data-case-ko="위">位</small></dd></div>
+  </dl>
+</section>
+</div>
+</div>
+<p class="result-conclusion" data-case-en="Product list and detail views rose after the first redesign. The bounce rate was lower the following year, after the switch to tabs." data-case-ko="첫 개선 이후 상품 목록과 상세 조회가 늘었고, 탭으로 바꾼 뒤 맞이한 다음 시즌에는 이탈률이 낮아졌습니다.">初回改善後は商品一覧と詳細の閲覧が増え、<br>タブ切り替え後の翌年は直帰率が下がりました。</p>
+</section>
+<div class="ln-google-search-block"><p class="ln-google-search-label" id="google-search-label" data-case-en="See live Google search rankings" data-case-ko="실제 구글 검색순위 보기">Googleで実際の検索順位を見る</p><a aria-labelledby="google-search-label google-search-query" class="ln-google-search" href="https://www.google.com/search?q=%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B3%E3%82%B9%E3%83%97%E3%83%AC" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span id="google-search-query" lang="ja">ハロウィンコスプレ</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div>
+  </div>
+<nav class="lt-detail-next" aria-label="Portfolio">
+  <a href="lalatulle.html#case-index">
+    <span class="lt-next-label" data-case-en="All cases" data-case-ko="사례 목록">事例一覧</span>
+    <strong data-case-en="LaLaTulle" data-case-ko="LaLaTulle">LaLaTulle</strong>
+    <span aria-hidden="true">←</span>
+  </a>
+  <a href="lalatulle-navigation.html">
+    <span class="lt-next-label" data-case-en="Next case" data-case-ko="다음 사례">次の事例</span>
+    <strong data-case-en="Header navigation" data-case-ko="헤더">ヘッダー</strong>
+    <span aria-hidden="true">→</span>
+  </a>
+</nav>
+</main>
+    <footer class="portfolio-footer" id="contact">
+      <nav class="portfolio-footer__contacts" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/yohan-kim-291aa5351" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:kim93yohan@gmail.com">kim93yohan@gmail.com</a>
+      </nav>
+      <div class="footer-language-switch language-switch project-language-switch" role="group" aria-label="Language selector">
+        <button class="lang-button active" type="button" data-lang="ja" lang="ja" aria-label="日本語" aria-pressed="true">JP</button>
+        <button class="lang-button" type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="ko" lang="ko" aria-label="한국어" aria-pressed="false">KR</button>
+      </div>
+      <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
+    </footer>
+<script src="project-i18n.js?v=20261115-analytics-label"></script></body></html>

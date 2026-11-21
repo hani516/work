@@ -125,13 +125,13 @@ body:has(.home-intro) { background: var(--editorial-paper); }
   object-position: top;
   transform: translateX(-50%);
 }
-.home-case-card[href$="#halloween"] .home-case-art img { width: 58%; object-position: 50% 21%; }
-.home-case-card[href$="#navigation"] .home-case-art { background: #efedf1; }
-.home-case-card[href$="#navigation"] .home-case-art img { width: 93%; object-fit: contain; object-position: center; }
-.home-case-card[href$="#first-view"] .home-case-art { background: #e7e4f1; }
-.home-case-card[href$="#first-view"] .home-case-art img { width: 60%; object-position: 50% 56%; }
-.home-case-card[href$="#experiment"] .home-case-art { background: #eee8e1; }
-.home-case-card[href$="#experiment"] .home-case-art img { width: 90%; object-fit: contain; object-position: center; }
+.home-case-card[href="lalatulle-halloween.html"] .home-case-art img { width: 58%; object-position: 50% 21%; }
+.home-case-card[href="lalatulle-navigation.html"] .home-case-art { background: #efedf1; }
+.home-case-card[href="lalatulle-navigation.html"] .home-case-art img { width: 93%; object-fit: contain; object-position: center; }
+.home-case-card[href="lalatulle-first-view.html"] .home-case-art { background: #e7e4f1; }
+.home-case-card[href="lalatulle-first-view.html"] .home-case-art img { width: 60%; object-position: 50% 56%; }
+.home-case-card[href="lalatulle-experiment.html"] .home-case-art { background: #eee8e1; }
+.home-case-card[href="lalatulle-experiment.html"] .home-case-art img { width: 90%; object-fit: contain; object-position: center; }
 
 .home-case-copy {
   display: grid;
@@ -188,14 +188,6 @@ body.project-snapside.compact-case .sp-cover .sp-gallery {
 .project-mongram .mg-hero .mg-hero-screens { background: #eaf0e5; }
 body.project-snapside.compact-case .sp-cover .sp-gallery { width: min(100%, 800px); }
 
-/* Case introductions read as a chapter, with the proof sections retaining wide grids. */
-.project-lalatulle .lt-chapter-open {
-  max-width: 900px;
-  margin-inline: auto;
-  padding: 40px clamp(24px, 4.5vw, 60px);
-  background: #f2efee;
-}
-.project-lalatulle .lt-chapter-open .ln-intro { margin-top: 16px; }
 .project-lalatulle .lt-case-index-title { text-align: center; }
 
 .project-mongram #problem .n-wrap > :is(h2, .n-intro),

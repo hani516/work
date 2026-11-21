@@ -92,18 +92,4 @@
   addEventListener('pageshow', requestStoryUpdate);
   reducedMotion.addEventListener('change', () => { configureStory(); configureReveals(); });
   storyViewport.addEventListener('change', configureStory);
-
-  const sectionLinks = [...document.querySelectorAll('.case-nav a')];
-  if ('IntersectionObserver' in window) {
-    const sectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        sectionLinks.forEach(link => {
-          if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
-    document.querySelectorAll('.ln-hero, .ln-section').forEach(section => sectionObserver.observe(section));
-  }
 })();
