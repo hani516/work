@@ -49,13 +49,69 @@
 .mg-evidence-arrow {display: block; width: 40px; color: #646864}
 .mg-photo-detail {flex-basis: 330px}
 
-.mg-home-character {
-  flex: 0 1 134px;
-  aspect-ratio: 1;
-  padding: 22px;
-  border: 1px solid var(--evidence-line);
-  border-radius: 50%;
+.mg-home-pair {gap: 0}
+.mg-home-before {justify-content: flex-end}
+.mg-home-after {justify-content: flex-start}
+.mg-home-comparison figcaption {width: min(100%, calc(var(--evidence-height) * .46 + 180px))}
+.mg-home-comparison > figure:first-child figcaption {justify-self: end}
+.mg-home-comparison > figure:last-child figcaption {justify-self: start}
+
+.mg-home-notes {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 180px;
+  min-width: 0;
+  max-width: 180px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.mg-home-note {
+  --leader-offset: calc(var(--evidence-height) * var(--note-inset));
+  position: absolute;
+  inset: var(--note-y) 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline-start: 28px;
+  color: #454b45;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  transform: translateY(-50%);
+}
+
+.mg-home-before .mg-home-note {
+  justify-content: flex-end;
+  padding-inline: 0 28px;
+  text-align: right;
+}
+
+.mg-home-note::before,
+.mg-home-note::after {
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--leader-offset));
+  background: #738073;
+  content: "";
+}
+.mg-home-note::before {width: calc(21px + var(--leader-offset)); height: 1px}
+.mg-home-note::after {width: 5px; height: 5px; border-radius: 50%; transform: translate(-50%, -40%)}
+.mg-home-before .mg-home-note::before,
+.mg-home-before .mg-home-note::after {right: calc(-1 * var(--leader-offset)); left: auto}
+.mg-home-before .mg-home-note::after {transform: translate(50%, -40%)}
+
+.mg-home-note-map {--note-y: 27%; --note-inset: .05}
+.mg-home-note-plans {--note-y: 60%; --note-inset: .035}
+.mg-home-before .mg-home-note-start {--note-y: 81.5%; --note-inset: .07}
+.mg-home-note-status {--note-y: 27.7%; --note-inset: .115}
+.mg-home-note-dog {--note-y: 41%; --note-inset: .17}
+.mg-home-note-stats {--note-y: 65.5%; --note-inset: .16}
+.mg-home-after .mg-home-note-start {--note-y: 82.6%; --note-inset: .185}
+
+.mg-home-note-dog img {display: block; flex: none; width: 44px; height: auto}
 
 .mg-photo-detail::after,
 .mg-lock-screen::after,
@@ -86,12 +142,16 @@
     max-width: 470px;
   }
   .project-mongram .mg-evidence-arrow {justify-self: center; transform: rotate(90deg)}
+  .project-mongram .mg-home-pair {justify-content: center}
+  .project-mongram .mg-home-comparison > figure figcaption {justify-self: center}
 }
 
 @media (max-width: 480px) {
   .project-mongram .mg-evidence-comparison {--evidence-height: 250px}
   .project-mongram .mg-family-case .mg-evidence-pair {gap: 12px}
   .project-mongram .mg-family-case .mg-evidence-zoom::before {width: 12px}
+  .project-mongram .mg-home-note {font-size: 13px}
+  .project-mongram .mg-home-note-dog img {width: 32px}
 }
 
 /* Use the published full screenshots for the magnified evidence. */
