@@ -160,19 +160,30 @@
 .selected-projects .panel-mongram .panel-visual {background:#edf1e8}
 .selected-projects .panel-snapside .panel-visual {background:#1b1b19}
 .selected-projects .panel-snapside .panel-type {opacity:.75}
+.selected-projects .panel-wivlo .panel-visual {background:#e9edf8}
 
 .selected-projects .personal-project-panels {
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:stretch;
   gap:24px;
 }
 .selected-projects .personal-project-panels .project-panel {
   grid-template-columns:minmax(0,1fr);
-  grid-template-rows:270px 1fr;
+  grid-template-rows:240px 1fr;
   height:auto;
 }
 .selected-projects .personal-project-panels .panel-visual {grid-row:1}
-.selected-projects .personal-project-panels .panel-copy {justify-content:start;padding:26px 32px 32px}
+.selected-projects .personal-project-panels .panel-copy {justify-content:start;padding:24px 26px 28px}
 .selected-projects .panel-snapside .product-screen {width:82%;left:12%;top:24px}
+.selected-projects .panel-wivlo .product-screen {
+  top:32px;
+  left:9%;
+  width:88%;
+  border-color:#b9c1d8;
+  background:#fff;
+  box-shadow:0 14px 30px #32437325;
+}
+.selected-projects .panel-wivlo .product-screen-crop {aspect-ratio:auto}
 
 .home-intro.page-shell, .intro-profile.page-shell {
   width:calc(100% - 96px);
