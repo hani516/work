@@ -14,13 +14,6 @@
 .selected-projects .panel-copy p{text-wrap:balance;order:1;max-width:23em;margin-top:18px;padding-right:20px;font-size:13px;line-height:1.9;color:inherit;opacity:.8}
 .selected-projects .project-panel .panel-visual{width:100%;height:100%;aspect-ratio:auto;overflow:hidden;border:0;border-radius:0;background:transparent;box-shadow:none}
 .selected-projects :is(.lt-cover-brand,.cover-label,.mg-cover-brand){display:none}
-/* Fashion: real storefront and campaign as a paired editorial spread. */
-.selected-projects .panel-lalatulle{background:#f2e9e7;color:#493731}
-.selected-projects .panel-lalatulle .panel-title h3{font-family:Georgia,'Times New Roman',serif;font-size:48px;font-weight:400;letter-spacing:-.065em}
-.selected-projects .company-project-panels .lt-cover-phones{inset:0;gap:26px;align-items:flex-start;justify-content:center;padding:18px 16px 0 12px;transform:rotate(-5deg);transform-origin:center}
-.selected-projects .lt-cover-phone{width:160px;height:346px;flex:none;border:5px solid #fff;border-radius:13px;box-shadow:0 15px 40px #67483e1c}
-.selected-projects .lt-cover-phone:nth-child(2){margin-top:28px}
-.selected-projects .lt-cover-phone img{object-fit:cover;object-position:top}
 /* Software: expose the original overview instead of the former zoomed-in crop. */
 .selected-projects .panel-snapside{background:#111110;color:#f4f4f2}
 .selected-projects .panel-snapside .panel-copy p{opacity:.73}
@@ -118,7 +111,6 @@
 }
 
 .home-intro .hero-headline {font-size:clamp(52px, 6vw, 84px);line-height:1.05;letter-spacing:-.065em}
-.home-intro .hero-headline em {margin-top:10px;font:italic 400 clamp(30px, 3.6vw, 52px)/1.18 Georgia,serif;letter-spacing:-.04em;color:#514e4c}
 
 .intro-portrait {
   display: grid;
@@ -127,12 +119,6 @@
   margin: 0;
 }
 
-.intro-portrait img {display:block;width:170px;height:190px;object-fit:cover;object-position:50% 30%;border-radius:4px}
-.intro-portrait figcaption {display:grid;gap:4px;line-height:1.5}
-.intro-portrait figcaption strong {font-size:26px;line-height:1.2}
-.intro-portrait figcaption span {color:#514e4c}
-.intro-portrait figcaption a {margin-top:4px;font-size:13px;color:#626262;text-underline-offset:3px}
-.intro-portrait figcaption a:hover {text-decoration:underline}
 
 .intro-bio .hero-lead {font-size:24px;font-weight:600;line-height:1.55}
 .intro-bio .hero-description {margin-top:12px;line-height:1.75;color:#514e4c}
@@ -171,29 +157,9 @@
 }
 .selected-projects .panel-copy p {max-width:28em;padding:0;text-wrap:pretty}
 .selected-projects .project-panel .panel-visual {border-radius:0}
-.selected-projects .panel-lalatulle .panel-visual {background:#efeeeb}
 .selected-projects .panel-mongram .panel-visual {background:#edf1e8}
 .selected-projects .panel-snapside .panel-visual {background:#1b1b19}
 .selected-projects .panel-snapside .panel-type {opacity:.75}
-
-.selected-projects .company-project-panels {gap:12px}
-.home-case-links {
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:12px;
-}
-.home-case-links a {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  padding:14px 16px;
-  border:1px solid #e3e2df;
-  border-radius:8px;
-  font-size:14px;
-  line-height:1.5;
-}
-.home-case-links a:is(:hover,:focus-visible) {background:#f5f4f1;border-color:#b6b2ac}
 
 .selected-projects .personal-project-panels {
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -217,8 +183,28 @@
 .intro-profile.page-shell {max-width:840px}
 
 @media (max-width: 740px) {
-  .home-case-links {grid-template-columns:repeat(2,minmax(0,1fr))}
   .selected-projects .personal-project-panels {grid-template-columns:minmax(0,1fr)}
-  .selected-projects .company-project-panels .project-panel {grid-template-columns:minmax(0,1fr);height:auto}
-  .selected-projects .company-project-panels .panel-visual {height:260px}
+}
+
+.github-activity {
+  grid-column: 2;
+  width: min(100%, 474px);
+  margin: -20px 0 0;
+}
+
+.github-activity figcaption {
+  margin-bottom: 10px;
+  color: #555b56;
+  font-size: 13px;
+}
+
+.github-activity svg { display: block; width: 100%; height: auto; }
+.github-activity [data-level="0"] { fill: #efefec; }
+.github-activity [data-level="1"] { fill: #d9e5d6; }
+.github-activity [data-level="2"] { fill: #b3c9ad; }
+.github-activity [data-level="3"] { fill: #779678; }
+.github-activity [data-level="4"] { fill: #395f46; }
+
+@media (max-width: 740px) {
+  .github-activity { grid-column: 1; margin-top: 0; }
 }

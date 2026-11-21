@@ -1,0 +1,214 @@
+/* Shared framing for the cover, project index and case introductions. */
+:root {
+  --editorial-paper: #fbfaf8;
+  --editorial-ink: #242635;
+  --editorial-muted: #565963;
+  --editorial-line: #e2e0dc;
+  --editorial-accent: #354b77;
+}
+
+body:has(.home-intro) { background: var(--editorial-paper); }
+.site-header:has(+ main .home-intro) {
+  width: 100%;
+  padding-inline: max(48px, calc((100% - 1120px) / 2));
+  background: rgb(251 250 248 / 96%);
+}
+
+.site-header:has(+ main .home-intro) .brand {
+  color: var(--editorial-ink);
+  font-size: 20px;
+}
+
+.site-header:has(+ main .home-intro) .nav-links { gap: 8px; }
+.site-header:has(+ main .home-intro) .nav-links a {
+  padding-inline: 16px;
+  border-radius: 24px;
+  font-size: 15px;
+}
+
+.site-header .nav-links a:is(:hover, :focus-visible, [aria-current]) {
+  color: var(--editorial-accent);
+  background: #ecedf3;
+}
+
+.home-intro.page-shell {
+  min-height: 310px;
+  padding: 42px 58px 72px;
+  border-radius: 24px;
+  background: linear-gradient(115deg, #eef0f7 5%, #f4f0f3 100%);
+}
+
+.home-intro-copy {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: center;
+  gap: 32px;
+  width: min(760px, 100%);
+  margin-inline: auto;
+}
+
+.home-intro-portrait {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+.home-intro .hero-headline {
+  color: var(--editorial-accent);
+  font-size: clamp(36px, 3.75vw, 53px);
+  font-weight: 450;
+  line-height: 1.13;
+  letter-spacing: -.045em;
+}
+
+.home-intro .hero-headline strong {
+  display: block;
+  color: var(--editorial-ink);
+  font-weight: 600;
+}
+
+.home-scroll-cue { background: rgb(255 255 255 / 67%); }
+
+.selected-projects { padding-top: 54px; }
+.selected-projects .project-group-title { margin-bottom: 18px; }
+.selected-projects .project-group-title::after { content: none; }
+
+.home-company-heading { margin: 0 0 24px; }
+.home-company-heading h3 {
+  margin: 0 0 7px;
+  font: 400 40px/1.13 Georgia, serif;
+  letter-spacing: -.055em;
+}
+.home-company-heading h3 span { font: 400 19px/1 Inter, sans-serif; }
+.home-company-heading p { color: var(--editorial-muted); }
+
+.home-case-links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
+.home-case-links .home-case-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  align-items: start;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--editorial-line);
+  border-radius: 14px;
+  color: var(--editorial-ink);
+}
+.home-case-links .home-case-card:is(:hover, :focus-visible) {
+  background: #fff;
+  border-color: #a5b1ca;
+}
+
+.home-case-art {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 2.25;
+  border-radius: 8px;
+  background: #e8e3e6;
+}
+
+.home-case-art img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: top;
+  transform: translateX(-50%);
+}
+.home-case-card[href$="#halloween"] .home-case-art img { width: 58%; object-position: 50% 21%; }
+.home-case-card[href$="#navigation"] .home-case-art { background: #efedf1; }
+.home-case-card[href$="#navigation"] .home-case-art img { width: 93%; object-fit: contain; object-position: center; }
+.home-case-card[href$="#first-view"] .home-case-art { background: #e7e4f1; }
+.home-case-card[href$="#first-view"] .home-case-art img { width: 60%; object-position: 50% 56%; }
+.home-case-card[href$="#experiment"] .home-case-art { background: #eee8e1; }
+.home-case-card[href$="#experiment"] .home-case-art img { width: 90%; object-fit: contain; object-position: center; }
+
+.home-case-copy {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 15px;
+  padding: 15px 16px 13px;
+}
+.home-case-copy strong { font-size: 20px; font-weight: 580; }
+.home-case-copy .home-case-detail { grid-column: 1 / -1; color: var(--editorial-muted); }
+
+.selected-projects .personal-project-panels .project-panel { border-radius: 14px; }
+.intro-profile-name { display: grid; gap: 4px; line-height: 1.5; }
+.intro-profile-name strong { font-size: 26px; line-height: 1.2; }
+.intro-profile-name span { color: var(--editorial-muted); }
+.intro-profile-name a { margin-top: 4px; color: var(--editorial-muted); font-size: 13px; text-underline-offset: 3px; }
+.intro-profile-name a:hover { text-decoration: underline; }
+
+/* Each case opens with a centered introduction, then its product evidence. */
+.project-lalatulle .ln-cover,
+.project-mongram .mg-hero,
+body.project-snapside .sp-cover-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 38px;
+  justify-items: center;
+}
+
+.project-lalatulle .ln-cover > div:first-child,
+.project-mongram .mg-hero-copy,
+body.project-snapside .sp-cover-copy {
+  max-width: 740px;
+  text-align: center;
+}
+
+:is(.project-lalatulle, .project-mongram, .project-snapside) :is(.ln-cover, .mg-hero, .sp-cover) .project-edition,
+.project-mongram .mg-hero-copy .mg-brand,
+body.project-snapside .sp-cover .sp-cover-brand {
+  justify-content: center;
+}
+
+.project-lalatulle .ln-cover .ln-lead,
+.project-mongram .mg-hero-copy .hero-lead,
+body.project-snapside .sp-cover .cc-premise { margin-inline: auto; }
+
+.project-lalatulle .ln-cover-image,
+.project-mongram .mg-hero .mg-hero-screens,
+body.project-snapside.compact-case .sp-cover .sp-gallery {
+  width: min(100%, 900px);
+  margin: 0;
+  border-radius: 18px;
+}
+
+.project-lalatulle .ln-cover-image { gap: 24px; background: #f0edeb; }
+.project-lalatulle .ln-cover-image .ln-image-link { width: min(40%, 204px); }
+.project-mongram .mg-hero .mg-hero-screens { background: #eaf0e5; }
+body.project-snapside.compact-case .sp-cover .sp-gallery { width: min(100%, 800px); }
+
+/* Case introductions read as a chapter, with the proof sections retaining wide grids. */
+.project-lalatulle .lt-chapter-open {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 40px clamp(24px, 4.5vw, 60px);
+  background: #f2efee;
+}
+.project-lalatulle .lt-chapter-open .ln-intro { margin-top: 16px; }
+.project-lalatulle .lt-case-index-title { text-align: center; }
+
+.project-mongram #problem .n-wrap > :is(h2, .n-intro),
+body.project-snapside #sp-plan .sp-section-head {
+  max-width: 680px;
+  margin-inline: auto;
+}
+.project-mongram #problem .n-wrap > h2,
+body.project-snapside #sp-plan .sp-section-head h2 { text-align: center; }
+
+@media (max-width: 740px) {
+  .home-intro.page-shell { padding-inline: 26px; }
+  .home-intro-copy { grid-template-columns: 1fr; gap: 16px; }
+  .home-intro-portrait { width: 74px; height: 74px; }
+  .home-case-links { grid-template-columns: minmax(0,1fr); }
+}

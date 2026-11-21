@@ -1,0 +1,86 @@
+name: Refresh portfolio contribution calendar
+on:
+  schedule:
+    - cron: '23 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency:
+  group: portfolio-contribution-calendar
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      ACTIVITY_OWNER: ${{ github.repository_owner }}
+      ACTIVITY_BRANCH: portfolio-activity
+    steps:
+      - name: Read activity levels from GitHub
+        id: calendar
+        env:
+          ACTIVITY_TOKEN: ${{ secrets.PORTFOLIO_ACTIVITY_TOKEN }}
+        run: |
+          if [[ -z "$ACTIVITY_TOKEN" ]]; then
+            echo "::warning::Set the PORTFOLIO_ACTIVITY_TOKEN repository secret to enable refresh."
+            exit 0
+          fi
+
+          portfolio_end=$(date -u +%F)
+          portfolio_start=$(date -u -d "$portfolio_end 364 days ago" +%F)
+          GH_TOKEN="$ACTIVITY_TOKEN" gh api graphql \
+            -f from="${portfolio_start}T00:00:00Z" \
+            -f to="${portfolio_end}T23:59:59Z" \
+            -f query='query($from: DateTime!, $to: DateTime!) {
+              viewer {
+                login
+                contributionsCollection(from: $from, to: $to) {
+                  contributionCalendar {
+                    weeks { contributionDays { date contributionLevel } }
+                  }
+                }
+              }
+            }' > "$RUNNER_TEMP/contribution-response.json"
+          jq -e --arg owner "$ACTIVITY_OWNER" --arg first "$portfolio_start" --arg last "$portfolio_end" '
+            if (.data.viewer.login | ascii_downcase) != ($owner | ascii_downcase)
+            then error("The token must belong to the portfolio owner")
+            else .data.viewer.contributionsCollection.contributionCalendar.weeks
+            end
+            | {
+                start: $first,
+                levels: [
+                  .[].contributionDays[]
+                  | select(.date >= $first and .date <= $last)
+                ] | sort_by(.date) | map(.contributionLevel as $level
+                  | ["NONE", "FIRST_QUARTILE", "SECOND_QUARTILE", "THIRD_QUARTILE", "FOURTH_QUARTILE"]
+                  | index($level))
+              }
+            | if (.levels | length) != 365 or (.levels | any(. == null))
+              then error("Incomplete contribution calendar")
+              else .
+              end
+          ' "$RUNNER_TEMP/contribution-response.json" > "$RUNNER_TEMP/calendar.json"
+          echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish the calendar
+        if: steps.calendar.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh auth setup-git
+          git init "$RUNNER_TEMP/activity"
+          cd "$RUNNER_TEMP/activity"
+          git remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+          if [[ -n "$(git ls-remote --heads origin "$ACTIVITY_BRANCH")" ]]; then
+            git fetch --depth=1 origin "$ACTIVITY_BRANCH"
+            git switch -c "$ACTIVITY_BRANCH" FETCH_HEAD
+          else
+            git switch --orphan "$ACTIVITY_BRANCH"
+          fi
+          cp "$RUNNER_TEMP/calendar.json" calendar.json
+          git add calendar.json
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m 'Refresh contribution calendar'
+          git push origin "HEAD:refs/heads/$ACTIVITY_BRANCH"
