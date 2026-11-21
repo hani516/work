@@ -1,6 +1,10 @@
 /* A common cover grid connects each case to its card on the home page. */
 body.project-lalatulle { --lt-paper: #fff; --lt-width: 1120px; }
-.project-lalatulle .case-header { background: rgb(255 255 255 / 96%); border-bottom: 0; }
+.project-lalatulle .case-header {
+  padding-inline: max(var(--lt-gutter), calc((100% - var(--lt-width)) / 2));
+  background: rgb(255 255 255 / 96%);
+  border-bottom: 0;
+}
 .project-edition {
   display: flex;
   align-items: center;
@@ -13,33 +17,44 @@ body.project-lalatulle { --lt-paper: #fff; --lt-width: 1120px; }
 .project-edition span { padding-right: 15px; border-right: 1px solid #babcb8; font-variant-numeric: tabular-nums; }
 .ln-cover, .project-mongram .mg-hero, .project-snapside .sp-cover-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   align-items: center;
-  gap: 60px;
+  gap: clamp(40px, 5vw, 72px);
   min-height: 0;
 }
-.ln-hero, body.project-snapside .sp-cover { padding-top: 52px; }
-.project-mongram .mg-hero { padding-block: 52px 32px; }
+.ln-hero, body.project-snapside .sp-cover { padding-top: 56px; }
+.project-mongram .mg-hero { padding-block: 56px 32px; }
 .ln-cover-image, .project-mongram .mg-hero-screens {
-  height: 470px;
+  height: 440px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .ln-cover-image { padding: 24px; }
-.ln-cover-image .ln-image-link { width: 220px; height: 420px; border-radius: 12px; }
+.ln-cover-image .ln-image-link { width: 204px; height: 388px; border-radius: 12px; }
 .ln-cover .project-edition span { padding-right: 0; border-right: 0; }
 .project-mongram .mg-hero-screens { background: #eaf0e5; padding: 24px; gap: 20px; }
-.project-mongram .mg-hero-screens .shot-phone { margin: 0; width: 40%; max-width: 185px; flex: none; }
+.project-mongram .mg-hero-screens .shot-phone { margin: 0; width: 40%; max-width: 168px; flex: none; }
 .project-mongram .mg-hero-screens .shot-phone:first-child { transform: translateY(18px); }
 .project-mongram .mg-hero-screens .shot-phone:last-child { transform: translateY(-18px); }
 .project-mongram .mg-hero-screens .shot-phone img { width: 100%; height: auto; border-radius: 18px; }
-.project-mongram .mg-cover-meta, body.project-snapside .sp-cover-meta {
+.project-lalatulle .ln-meta,
+.project-mongram .mg-cover-meta,
+body.project-snapside .sp-cover-meta {
   margin-top: 28px;
   padding-block: 24px;
   border-block: 1px solid #dedfdb;
+}
+.project-lalatulle .ln-meta { grid-template-columns: minmax(110px, .7fr) minmax(190px, 1fr) auto; align-items: center; }
+.project-lalatulle .ln-meta-label { display: block; margin-bottom: 5px; color: var(--lt-muted); font-size: 12px; }
+@media (min-width: 1001px) {
+  .project-lalatulle .ln-site-links { flex-direction: row; }
+  .project-lalatulle .ln-site-links .ln-live-button { width: 200px; }
+}
+@media (max-width: 850px) {
+  .project-lalatulle .ln-meta { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 body.project-snapside .sp-cover { background: #fff; color: #202221; }
 body.project-snapside .sp-cover .sp-cover-brand,
@@ -47,7 +62,30 @@ body.project-snapside .sp-cover h1 { color: #202221; }
 body.project-snapside .sp-cover .sp-hero-logo { filter: invert(1); }
 body.project-snapside .sp-cover :is(.cc-premise,.sp-fact-note,.sp-fact-note strong) { color: #535652; }
 body.project-snapside .sp-cover .cc-links a { background: #202221; color: white; border-radius: 30px; }
-body.project-snapside .sp-cover .sp-gallery { border-radius: 5px; padding: 24px; }
+body.project-snapside .sp-cover .sp-gallery { border-radius: 12px; padding: 24px; }
+
+/* The covers share the same hierarchy while each preview keeps its product palette. */
+.project-lalatulle .ln-cover .ln-brand,
+.project-mongram .mg-hero .mg-brand-name,
+body.project-snapside .sp-cover .sp-cover-brand {
+  margin-bottom: 20px;
+}
+.project-mongram .mg-hero .mg-brand-name { margin-bottom: 0; }
+.project-lalatulle .ln-cover .ln-lead,
+.project-mongram .mg-hero-copy .hero-lead,
+body.project-snapside .sp-cover .cc-premise {
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 31em;
+}
+.project-lalatulle .ln-cover .ln-lead { margin-top: 18px; }
+
+.project-lalatulle .lt-chapter-open {
+  padding: 36px 40px;
+  border-radius: 12px;
+  background: #f5f4f1;
+}
+.project-lalatulle .lt-chapter-open .ln-intro { max-width: 42em; }
 .ln-meta .ln-live-button, .mg-cover-meta .n-project-links a { border-radius: 30px; }
 .lt-case-index .lt-case-thumbnail { border-radius: 4px; }
 .project-mongram .mg-family-case-heading, .project-snapside .sp-section-head {

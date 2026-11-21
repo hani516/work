@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="portfolio-footer.css?v=20261108-2" />
     <link rel="stylesheet" href="portfolio-viewport.css?v=20261115-ja-review" />
     <link rel="stylesheet" href="portfolio-header.css?v=20261109-scroll" />
-    <link rel="stylesheet" href="home-projects.css?v=snapside-theme" />
+    <link rel="stylesheet" href="home-projects.css?v=selected-work" />
     <script src="portfolio-header.js?v=20261109-scroll" defer></script>
-<link rel="stylesheet" href="portfolio-type.css" />
+<link rel="stylesheet" href="portfolio-type.css?v=editorial-covers" />
 </head>
   <body>
     <header class="site-header" data-elevate>
       <a class="brand" href="#top" aria-label="Go to top"><span>YOHAN KIM</span></a>
       <nav class="nav-links" aria-label="Primary navigation" lang="en">
-        <a id="home-about-link" href="#about" data-i18n="navAbout">About</a>
-        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a id="home-projects-link" href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#about" data-i18n="navAbout">About</a>
         <a href="presentation.html" data-i18n="navSlides">スライド</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
@@ -32,8 +32,43 @@
 
     <main id="top">
       <section class="statement-hero page-shell home-intro" aria-labelledby="home-title">
-        <h1 id="home-title" class="hero-headline" lang="en" aria-label="Product Design. Through a UX lens."><span data-type-line aria-hidden="true">Product Design</span><br /><em data-type-line aria-hidden="true">Through a UX lens.</em></h1>
-        <a class="home-scroll-cue" href="#about" aria-labelledby="home-about-link"><span aria-hidden="true">↓</span></a>
+        <h1 id="home-title" class="hero-headline" lang="en" aria-label="I’m Yohan Kim. I like making things easier to find."><span data-type-line aria-hidden="true">I’m Yohan Kim.</span><br /><em data-type-line aria-hidden="true">I like making things easier to find.</em></h1>
+        <a class="home-scroll-cue" href="#projects" aria-labelledby="home-projects-link"><span aria-hidden="true">↓</span></a>
+      </section>
+      <section class="portfolio-section selected-projects" id="projects" aria-label="Projects">
+        <div class="page-shell">
+          <section class="project-group project-group-company" aria-labelledby="company-projects-title">
+            <h2 class="project-group-title" id="company-projects-title" data-i18n="homeCompanyProjects">実務プロジェクト</h2>
+            <div class="project-panels company-project-panels">
+              <article class="project-panel reveal panel-lalatulle" data-project-href="lalatulle.html">
+              <div class="panel-copy"><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="homeLalatulleBody">特集ページとホームを見直し、商品ページでA/Bテストを行いました。</p></div>
+              <div class="panel-visual cover-lalatulle-mobile" aria-hidden="true">
+                <div class="lt-cover-brand"><strong>LaLaTulle</strong></div>
+                <div class="lt-cover-phones">
+                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-home-20261108.jpg?v=user-20261108" alt="" width="585" height="1266" loading="lazy" /></div>
+                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-halloween-20261108.jpg" alt="" width="585" height="1266" loading="lazy" /></div>
+                </div>
+              </div>
+            </article>
+              <nav class="home-case-links" aria-label="LaLaTulle">
+                <a href="lalatulle.html#halloween"><span data-i18n="homeCaseHalloween">ハロウィンページ</span><span aria-hidden="true">↗</span></a>
+                <a href="lalatulle.html#navigation"><span data-i18n="homeCaseHeader">ヘッダー改善</span><span aria-hidden="true">↗</span></a>
+                <a href="lalatulle.html#first-view"><span data-i18n="homeCaseFirstView">ファーストビュー</span><span aria-hidden="true">↗</span></a>
+                <a href="lalatulle.html#experiment"><span data-i18n="homeCaseExperiment">閲覧人数のA/Bテスト</span><span aria-hidden="true">↗</span></a>
+              </nav>
+            </div>
+          </section>
+          <section class="project-group project-group-personal" aria-labelledby="personal-projects-title">
+            <h2 class="project-group-title" id="personal-projects-title" data-i18n="homePersonalProjects">個人プロジェクト</h2>
+            <div class="project-panels personal-project-panels">
+              <article class="project-panel reveal panel-mongram" data-project-href="mongram.html"><div class="panel-copy"><span class="panel-type">iOS app</span><div class="panel-title"><h3><a href="mongram.html" data-i18n="homeMongramName">ワングラム</a></h3></div><p data-i18n="homeMongramBody">家族と散歩を振り返れるiOSアプリ。ホームからすぐに散歩を始められます。</p></div><div class="panel-visual cover-mongram" data-screenshot-slot="home-card"><div class="mg-cover-brand"><img src="assets/mongram/dog-app-icon.png" alt="" width="1024" height="1024" /><strong data-i18n="homeMongramCoverName">ワングラム</strong></div><div class="mg-cover-screens"><img src="assets/mongram/home-demo.png" data-i18n-alt="homeMongramHomeAlt" alt="ワングラム：座った犬がいるホーム画面" width="1206" height="2622" loading="lazy" /><img src="assets/mongram/walk-demo.png" data-i18n-alt="homeMongramWalkAlt" alt="ワングラム：散歩中の画面" width="1206" height="2622" loading="lazy" /></div></div></article>
+              <article class="project-panel reveal panel-snapside" data-project-href="snapside.html">
+              <div class="panel-copy"><span class="panel-type">Web app</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="homeSnapsideBody">複数のツールに残る変更をまとめるサービス。デザインから開発・運営まで担当しています。</p></div>
+              <div class="panel-visual cover-product" aria-hidden="true"><div class="cover-label"><strong><img src="assets/snapside/snapside-logo-white.png" alt="" />Snapside</strong></div><div class="product-screen"><div class="browser-bar"><i></i><i></i><i></i><span>Snapside — Overview</span></div><div class="product-screen-crop"><img src="assets/snapside/snapside-overview-20261018.jpg" alt="" /></div></div></div>
+            </article>
+            </div>
+          </section>
+        </div>
       </section>
       <section class="intro-profile page-shell" id="about" aria-label="About Yohan Kim">
         <figure class="intro-portrait">
@@ -67,36 +102,6 @@
             </div>
           </div>
         </div>
-        <a class="intro-project-link" href="#projects"><span data-i18n="homeViewProjects">3つの事例を見る</span><span aria-hidden="true">↓</span></a>
-      </section>
-      <section class="portfolio-section selected-projects" id="projects" aria-label="Projects">
-        <div class="page-shell">
-          <section class="project-group project-group-company" aria-labelledby="company-projects-title">
-            <h2 class="project-group-title" id="company-projects-title" data-i18n="homeCompanyProjects">実務プロジェクト</h2>
-            <div class="project-panels company-project-panels">
-              <article class="project-panel reveal panel-lalatulle" data-project-href="lalatulle.html">
-              <div class="panel-copy"><span class="panel-number">01</span><span class="panel-type" data-i18n="companyProjectType">E-commerce · UX</span><div class="panel-title panel-title-text"><h3><a href="lalatulle.html">LaLaTulle</a></h3></div><p data-i18n="homeLalatulleBody">特集ページとホームを見直し、商品ページでA/Bテストを行いました。</p></div>
-              <div class="panel-visual cover-lalatulle-mobile" aria-hidden="true">
-                <div class="lt-cover-brand"><strong>LaLaTulle</strong></div>
-                <div class="lt-cover-phones">
-                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-home-20261108.jpg?v=user-20261108" alt="" width="585" height="1266" loading="lazy" /></div>
-                  <div class="lt-cover-phone"><img src="assets/lalatulle/live-halloween-20261108.jpg" alt="" width="585" height="1266" loading="lazy" /></div>
-                </div>
-              </div>
-            </article>
-            </div>
-          </section>
-          <section class="project-group project-group-personal" aria-labelledby="personal-projects-title">
-            <h2 class="project-group-title" id="personal-projects-title" data-i18n="homePersonalProjects">個人プロジェクト</h2>
-            <div class="project-panels personal-project-panels">
-              <article class="project-panel reveal panel-mongram" data-project-href="mongram.html"><div class="panel-copy"><span class="panel-number">02</span><span class="panel-type">TECH STACK · Swift · Supabase</span><div class="panel-title"><h3><a href="mongram.html" data-i18n="homeMongramName">ワングラム</a></h3></div><p data-i18n="homeMongramBody">家族と散歩を振り返れるiOSアプリ。ホームからすぐに散歩を始められます。</p></div><div class="panel-visual cover-mongram" data-screenshot-slot="home-card"><div class="mg-cover-brand"><img src="assets/mongram/dog-app-icon.png" alt="" width="1024" height="1024" /><strong data-i18n="homeMongramCoverName">ワングラム</strong></div><div class="mg-cover-screens"><img src="assets/mongram/home-demo.png" data-i18n-alt="homeMongramHomeAlt" alt="ワングラム：座った犬がいるホーム画面" width="1206" height="2622" loading="lazy" /><img src="assets/mongram/walk-demo.png" data-i18n-alt="homeMongramWalkAlt" alt="ワングラム：散歩中の画面" width="1206" height="2622" loading="lazy" /></div></div></article>
-              <article class="project-panel reveal panel-snapside" data-project-href="snapside.html">
-              <div class="panel-copy"><span class="panel-number">03</span><span class="panel-type">TECH STACK · Next.js · Electron · Supabase · Vercel</span><div class="panel-title"><img class="snapside-panel-icon" src="assets/snapside/snapside-logo-white.png" alt="" /><h3><a href="snapside.html">Snapside</a></h3></div><p data-i18n="homeSnapsideBody">複数のツールに残る変更をまとめるサービス。デザインから開発・運営まで担当しています。</p></div>
-              <div class="panel-visual cover-product" aria-hidden="true"><div class="cover-label"><strong><img src="assets/snapside/snapside-logo-white.png" alt="" />Snapside</strong></div><div class="product-screen"><div class="browser-bar"><i></i><i></i><i></i><span>Snapside — Overview</span></div><div class="product-screen-crop"><img src="assets/snapside/snapside-overview-20261018.jpg" alt="" /></div></div></div>
-            </article>
-            </div>
-          </section>
-        </div>
       </section>
     </main>
 
@@ -113,6 +118,6 @@
       <p class="portfolio-footer__copyright">© 2026 YOHAN KIM</p>
     </footer>
     <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
-    <script src="script.js?v=scroll-arrow"></script>
+    <script src="script.js?v=selected-work"></script>
   </body>
 </html>

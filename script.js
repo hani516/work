@@ -2,6 +2,10 @@ const translations = {
   ja: {
     navSlides: "スライド",
     homeCompanyProjects: "実務プロジェクト",
+    homeCaseHalloween: "ハロウィンページ",
+    homeCaseHeader: "ヘッダー改善",
+    homeCaseFirstView: "ファーストビュー",
+    homeCaseExperiment: "閲覧人数のA/Bテスト",
     homePersonalProjects: "個人プロジェクト",
     lalatulleBefore: "改修前",
     lalatulleAfter: "改修後",
@@ -55,6 +59,10 @@ const translations = {
   en: {
     navSlides: "Slides (JP)",
     homeCompanyProjects: "Professional Work",
+    homeCaseHalloween: "Halloween page",
+    homeCaseHeader: "Header navigation",
+    homeCaseFirstView: "First view",
+    homeCaseExperiment: "Viewer-count A/B test",
     homePersonalProjects: "Personal projects",
     lalatulleBefore: "Before",
     lalatulleAfter: "After",
@@ -108,6 +116,10 @@ const translations = {
   ko: {
     navSlides: "슬라이드 (일본어)",
     homeCompanyProjects: "실무 프로젝트",
+    homeCaseHalloween: "할로윈 페이지",
+    homeCaseHeader: "헤더 개선",
+    homeCaseFirstView: "첫 화면",
+    homeCaseExperiment: "조회 인원 표시 A/B 테스트",
     homePersonalProjects: "개인 프로젝트",
     lalatulleBefore: "개선 전",
     lalatulleAfter: "개선 후",
