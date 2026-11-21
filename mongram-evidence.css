@@ -70,12 +70,14 @@
 .mg-photo-detail::after {inset: 28% 4% auto auto; width: 14%; height: 19%}
 .mg-lock-screen::after {inset: 73% 3% auto; height: 12%}
 .mg-island-screen::after {inset: 1.3% 17% auto; height: 6.5%; border-radius: 20px}
-.mg-lock-pair .mg-evidence-zoom {align-self: flex-end; margin-bottom: 14%}
+.mg-evidence-live .mg-evidence-zoom {flex: 1 1 0; max-width: 380px}
+.mg-lock-pair .mg-evidence-zoom {transform: translateY(calc(var(--evidence-height) * .29))}
 .mg-island-pair .mg-evidence-zoom {align-self: flex-start}
+.mg-island-pair .mg-evidence-zoom::before {top: calc(var(--evidence-height) * .045)}
 .mg-evidence-note {margin-top: 14px; color: #666b64; font-size: 14px}
 
 .project-mongram .n-section .mg-evidence-note {max-width: unset; margin: 18px 0 0; font-size: 14px; color: #666b64}
-.project-mongram :is(#home-design, #island) .mg-evidence-comparison {max-width: 1080px}
+.project-mongram #home-design .mg-evidence-comparison {max-width: 1080px}
 
 @media (max-width: 900px) {
   .project-mongram .mg-evidence-comparison {
