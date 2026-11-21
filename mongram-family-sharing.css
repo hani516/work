@@ -1,0 +1,63 @@
+.mg-sharing-scenes {
+  --sharing-height: clamp(225px, 25vw, 326px);
+  width: min(100%, 750px);
+  margin: 36px auto 0;
+}
+
+.mg-sharing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: 28px;
+}
+
+.mg-sharing-scenes .mg-sharing-grid figure { margin: 0; min-width: 0; }
+
+.mg-sharing-walk,
+.mg-sharing-chats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: var(--sharing-height);
+}
+
+.mg-sharing-grid img {
+  display: block;
+  width: auto;
+  height: 100%;
+  min-width: 0;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.mg-sharing-chats img { max-width: calc((100% - 12px) / 2); }
+.mg-sharing-walk img { max-width: 100%; }
+.mg-sharing-grid figcaption {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.mg-sharing-scenes .mg-sharing-note {
+  margin: 16px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: #606760;
+}
+
+.slide .mg-sharing-scenes {
+  --sharing-height: 288px;
+  margin-top: 8px;
+}
+
+.slide .mg-sharing-scenes figcaption { margin-top: 0; }
+.slide .mg-sharing-scenes .mg-sharing-note { margin-top: 10px; }
+
+@media (max-width: 740px) {
+  .project-mongram .mg-sharing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+}
