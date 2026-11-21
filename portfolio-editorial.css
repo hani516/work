@@ -147,7 +147,8 @@ a[href="lalatulle-experiment.html"] .lt-case-art img { width: 90%; object-fit: c
 .intro-profile-name { display: grid; gap: 4px; line-height: 1.5; }
 .intro-profile-name strong { font-size: 26px; line-height: 1.2; }
 .intro-profile-name span { color: var(--editorial-muted); }
-.intro-profile-name a { margin-top: 4px; color: var(--editorial-muted); font-size: 13px; text-underline-offset: 3px; }
+.intro-profile-name :is(a, .intro-location) { color: var(--editorial-muted); font-size: 13px; }
+.intro-profile-name a { margin-top: 4px; text-underline-offset: 3px; }
 .intro-profile-name a:hover { text-decoration: underline; }
 
 /* Each case opens with a centered introduction, then its product evidence. */
